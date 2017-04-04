@@ -1,0 +1,30 @@
+<ul id="menu-dropdown" class="dropdown-content">
+  {% if page.id == 'features' %}
+    <li class="yellow accent-2"><a href="{{ site.baseurl }}/" class="black-text">Home</a></li>
+  {% else %}
+    <li><a href="{{ site.baseurl }}/" class="blue-text text-darken-3">Home</a></li>
+  {% endif %}
+<!--
+  {% if page.id == 'projects' %}
+    <li class="yellow accent-2"><a href="{{ site.baseurl }}/projects" class="black-text">Projects</a></li>
+  {% else %}
+    <li><a href="{{ site.baseurl }}/projects" class="blue-text text-darken-3">Projects</a></li>
+  {% endif %}
+-->
+  <li><a href="http://ibm-cds-labs.github.io/team" class="blue-text text-darken-3" target="_blank">Team</a></li>
+</ul>
+<div class="navbar-fixed">
+  <nav class="blue darken-3 z-depth-0" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="{{ site.baseurl }}/" class="brand-logo">
+        <img src="img/watson_white.png"/>
+        <span>{{ site.title }}</span>
+      </a>
+      <ul class="right">
+        <li>
+          <a class="dropdown-button" href="#!" data-activates="menu-dropdown"><i class="material-icons">more_vert</i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

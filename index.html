@@ -1,0 +1,19 @@
+---
+layout: default
+title: advo showcase
+id: features
+---
+
+<div class="row container">
+  {% for feature in site.features %}
+  <div class="col {{ feature.col }} feature">
+      <a href="#" class="modal-trigger" data-target="modal-feature-{{ feature.id }}">{{ feature.title }}</a>
+      {% if feature.description %}
+      <p>{{ feature.description | markdownify }}</p>
+      {% else %}
+      {{ feature }}
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% include modal-feature.html %}

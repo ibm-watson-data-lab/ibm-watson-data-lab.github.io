@@ -1,0 +1,86 @@
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.row .col.feature {
+  /*min-height: 500px;*/
+  padding-bottom: 10px;
+  padding-top: 25px;
+}
+
+.repo .card-title{
+  font-weight: 500;
+  opacity: 0.9;
+}
+.col:nth-child(7n) > .repo {
+  background-color: #03A9F4;
+}
+.col:nth-child(7n+1) > .repo {
+  background-color: #8BC34A;
+}
+.col:nth-child(7n+2) > .repo {
+  background-color: #FF9800;
+}
+.col:nth-child(7n+3) > .repo {
+  background-color: #9C27B0;
+}
+.col:nth-child(7n+4) > .repo {
+  background-color: #607D8B;
+}
+.col:nth-child(7n+5) > .repo {
+  background-color: #F44336;
+}
+.col:nth-child(7n+6) > .repo {
+  background-color: #009688;
+}
+.col > .repo > .card-action {
+  background-color: #ffffff;
+}
+
+.brand-logo > span {
+  font-weight: 300;
+}
+.brand-logo img {
+  height: 40px;
+  vertical-align: sub;
+}
+
+.footer-copyright .fa {
+  float: right;
+  font-size: 23px;
+  margin-left: 18px;
+}
+.footer-copyright .fa:hover {
+  color: #000000;
+}
+
+.modal {
+  height: 100vh !important;
+  max-height: 100vh;
+  top: 0 !important;
+  width: 100%;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+
+.hoverable:hover h2,
+.hoverable:hover .card-title {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.col {
+  padding: 20px 50px !important;
+}
+a.grey-text i {
+    line-height: 50px;
+}
