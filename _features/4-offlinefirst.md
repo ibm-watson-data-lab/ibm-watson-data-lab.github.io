@@ -1,8 +1,7 @@
 ---
-title: Offline First
-permalink: offline-first
 col: s4
-description: >
+headline: Offline First
+story: >
   Design for your most constrained environment first: an unreliable network.
 ---
 

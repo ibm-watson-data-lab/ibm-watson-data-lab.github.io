@@ -1,8 +1,10 @@
 
 body {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 300;
+  min-height: 100vh;
 }
 
 main {
@@ -10,7 +12,6 @@ main {
 }
 
 .row .col.feature {
-  /*min-height: 500px;*/
   padding-bottom: 10px;
   padding-top: 25px;
 }
@@ -68,19 +69,240 @@ main {
   width: 100%;
 }
 
-.hoverable {
-  cursor: pointer;
+a.grey-text i {
+  line-height: 50px;
 }
 
-.hoverable:hover h2,
-.hoverable:hover .card-title {
-  opacity: 1;
+.search-wrapper {
+  margin: 50px 0 0 0;
+  position: relative;
+}
+.search-wrapper input.search-input {
+  display: inline-block;
+  font-size: 36px;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+  width: calc(100% - 40px);
+}
+.search-wrapper input.search-input:focus {
+  background-color: rgba(209, 209, 209, 0.1);
+  border: 1px solid #d1d1d1;
+  box-shadow: 0 0 0 0;
+}
+div.simplesearch-reset {
+  font-size: 56px;
+  left: initial !important;
+  position: absolute !important;
+  right: 15px;
+  top: 36px;
+}
+.dropdown-content li > a {
+  color: #1565c0 !important;
+}
+.dropdown-content li.active {
+  background-color: #ff0 !important;
+}
+.dropdown-content li.active > a {
+  color: #000 !important;
+}
+
+
+.languages {
+  clear: both;
+  word-wrap: break-word;
+}
+.separator {
+  clear: both;
+  color: #ccc;
+  font-size: 2rem;
+  margin: 1rem 0 5rem 0;
+}
+.search-label {
+  color: initial;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+
+
+/** FACETS **/
+.search-facets {
+  float: left;
+  font-family: "Helvetica Neue", monospace, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+.search-facets .simplesearch-facet {
+  float: left;
+  margin-left: 3%;
+  width: 30%;
+}
+.search-facets h4 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 0 0 .5rem 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+.search-facets ul {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.search-facets ul li {
+  color: #ccc;
+  float: left;
+  font-weight: 300;
+  margin: 0 0.5rem 0 0;
+  padding: 0;
+}
+.search-facets ul li span.simplesearch-facet-value-name {
+  color: blue;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
   text-decoration: underline;
 }
-
-.col {
-  padding: 20px 50px !important;
+.search-facets ul li span.simplesearch-facet-value-name:hover {
+  color: red;
 }
-a.grey-text i {
-    line-height: 50px;
+.search-facets ul li:after {
+  content: " / ";
+}
+.search-facets ul li:last-child:after {
+  content: none;
+}
+.search-facets .simplesearch-facet-value-count {
+  display: none;
+}
+
+
+/* RESULTS */
+.search-results {
+  float: left;
+  margin: 0;
+  padding: 5rem 0;
+  position: relative;
+  width: 100%;
+}
+.simplesearch-count {
+  float: right;
+  font-weight: 400;
+  padding: 0 0 2rem;
+}
+#team .search-results div.simplesearch-count {
+  display: none;
+}
+.search-results ul.simplesearch-list {
+  clear: both;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.search-results ul li {
+  float: left;
+  margin: 0 0 0 0;
+  padding: 0;
+  width: 100%;
+}
+.simplesearch-result img {
+  float: left;
+  margin: 0 2rem 1rem 0;
+}
+.simplesearch-result h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 0 0 .2rem 0;
+}
+.simplesearch-result p.specialties {
+  font-family: "Helvetica Neue", monospace, sans-serif;
+  font-size: 1.25rem;
+}
+.search-results ul.simplesearch-list li ul.social {
+  float: left;
+  list-style: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  width: 100%;
+}
+.search-results ul.simplesearch-list li ul.social li.site {
+  float: left;
+  font-family: "Helvetica Neue", monospace, sans-serif;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 1rem;
+  width: auto;
+}
+.search-results ul.simplesearch-list li ul.social li.site a {
+  color: blue;
+  display: block;
+  line-height: 1rem;
+  padding: 0;
+}
+.search-results ul.simplesearch-list li ul.social li.site a:hover {
+  border-color: red;
+  color: red;
+}
+.simplesearch-more {
+  background-color: #1565C0;
+  border: medium none;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  height: 54px;
+  letter-spacing: 0.5px;
+  line-height: 54px;
+  outline: 0 none;
+  padding: 0 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out 0s;
+  vertical-align: middle;
+}
+.simplesearch-more:hover {
+  background-color: #2196f3;
+}
+.simplesearch-more:disabled {
+  background-color: #dfdfdf !important;
+  box-shadow: none;
+  color: #9f9f9f !important;
+  cursor: default;
+  pointer-events: none;
+}
+
+.devcenter-result::after {
+  content: "\2026";
+  display: inline-block;
+  clear: both;
+  color: #ccc;
+  font-size: 2rem;
+  margin: 1rem 0 5rem;
+}
+.devcenter-result dt {
+  display: none;
+}
+.simplesearch-value-name {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin: 0 0 0.2rem;
+}
+.simplesearch-value-url {
+  font-size: 1.1rem;
+  margin: 0 0 0.6rem 0;
+}
+.simplesearch-value-description {
+  margin: 0;
 }

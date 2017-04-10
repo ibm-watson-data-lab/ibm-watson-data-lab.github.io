@@ -1,0 +1,24 @@
+---
+layout: default
+title: advo team
+id: team
+---
+
+<div class="container">
+  <section>
+    <form class="search-wrapper">
+      <label for="team-search" class="search-label">Find advocates who know about &#8628;</label>
+      <input id="team-search" class="search-input" type="text" value="*:*"
+        data-simple-search="http://simple-search-service-digitate-thema.mybluemix.net/"
+        data-search-list=".search-results" 
+        data-search-facets=".search-facets"
+        data-search-onbefore="devadvo.onBefore"
+        data-search-onsuccess="devadvo.teamOnSuccess"
+        data-search-onfail="devadvo.onFail">
+    </form>
+    <div class="search-facets"></div>
+  </section>
+  <section>
+    <div class="search-results"></div>
+  </section>
+</div>

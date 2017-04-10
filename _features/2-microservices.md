@@ -1,8 +1,7 @@
 ---
-title: Microservices
-permalink: microservices
 col: s4
-description: >
+headline: Microservices
+story: >
   Here, we'll show you how to apply these concepts in our **Simple
   Suite** of microservices
 ---

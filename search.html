@@ -1,0 +1,29 @@
+---
+layout: default
+title: advo search
+id: search
+---
+
+<div class="container">
+  <section>
+    <form class="search-wrapper">
+      <label for="devcenter-search" class="search-label">What do you want to learn about &#8628;</label>
+      <input id="devcenter-search" class="search-input" type="text" value="*:*" placeholder="Enter keyword or topic"
+        data-simple-search="https://d14f43e9-5102-45bc-b394-c92520c2c0bd-bluemix.cloudant.com"
+        data-search-viewpath="devcenter/_design/search/_search/search"
+        data-search-query='namespace:"Cloud Data Services"'
+        data-search-params='counts=["topic","technologies","languages"]'
+        data-search-deeplinking=true
+        data-search-list=".search-results" 
+        data-search-facets=".search-facets"
+        data-search-onbefore="devadvo.onBefore"
+        data-search-ondata="devadvo.searchOnData"
+        data-search-onsuccess="devadvo.searchOnSuccess"
+        data-search-onfail="devadvo.onFail">
+    </form>
+    <div class="search-facets"></div>
+  </section>
+  <section>
+    <div class="search-results"></div>
+  </section>
+</div>

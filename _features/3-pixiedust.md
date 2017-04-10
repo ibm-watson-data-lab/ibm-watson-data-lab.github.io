@@ -1,8 +1,7 @@
 ---
-title: PixieDust
-permalink: pixiedust
 col: s4
-description: A sprinkling of visualization magic for your data science notebook.
+headline: PixieDust
+story: A sprinkling of visualization magic for your data science notebook.
 ---
 
 # PixieDust
