@@ -1,6 +1,10 @@
 $(document).ready(function() {
   $('.modal').modal()
 
+  // do not include listed projects
+  // must be full name (i.e., 'ibm-cds-labs/pipes')
+  var skipRepos = []
+
   var onBefore = function(q, options, paging, searchurl) {
     $('.simplesearch-more').prop('disabled', true)
     $('.search-facets').slideUp(500)
@@ -96,5 +100,56 @@ $(document).ready(function() {
   $('.search-input').bind('click', function() {
     $('.search-facets').slideDown(750)
   })
+
+  if (typeof repos !== 'undefined' && repos !== null && repos.length > 0) {
+    var total = repos.length
+
+    // sort by stars
+    repos.sort(function(a, b) {
+      if (a.stargazers_count < b.stargazers_count) return 1;
+      else if (b.stargazers_count < a.stargazers_count) return -1;
+      else return 0
+    })
+
+    for (var i in repos) {
+      if (skipRepos.indexOf(repos[i].full_name) === -1) {
+        html = '<div class="repo">'
+        html += '<h3>' + repos[i].name + '</h3>'
+        html += '<a href="' + repos[i].html_url + '" target="_blank">' + repos[i].html_url + '</a>'
+        html += '<div><p>' + repos[i].description + '</p></div>'
+        html += '<div class="repo-meta">'
+        html += '<i class="fa fa-code-fork" aria-hidden="true"></i>' + repos[i].forks_count
+        html += '<i class="fa fa-star" aria-hidden="true"></i>' + repos[i].stargazers_count
+        html += '<i class="fa fa-eye" aria-hidden="true"></i>' + repos[i].watchers_count
+        html += '</div>'
+        // html += '<div>' + new Date(repos[i].updated_at) + '</div>'
+        html += '<p class="separator">&hellip;</p>'
+        html += '</div>'
+
+        $('.repos-list').append(html)
+      }
+    }
+
+    $('.repos-count').html('Showing ' + total + ' of ' + total)
+    var rows = $('.repo')
+
+    $('#repos-search').keyup(function() {
+      var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$';
+      var reg = RegExp(val, 'i')
+      var index = 0;
+      
+      rows.each(function(i, e) {
+        if (!reg.test($(this).text().replace(/\s+/g, ' '))) {
+          $(this).addClass('hidden')
+        }
+        else {
+          $(this).removeClass('hidden')
+          ++index
+        }
+      });
+
+      $('.repos-count').html('Showing ' + index + ' of ' + total)
+    });
+  }
 })
           
