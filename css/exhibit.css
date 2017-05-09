@@ -306,3 +306,8 @@ div.simplesearch-reset {
   font-weight: 400;
   padding: 0 0 2rem;
 }
+
+.brobes-style {
+  padding: 10px;
+  border-style: solid;
+}

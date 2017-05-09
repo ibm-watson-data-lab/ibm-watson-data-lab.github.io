@@ -9,7 +9,7 @@ id: home
   <div class="col {{ feature.col }} feature">
     {% if feature.headline %}
     <h5>
-      <a href="#" class="modal-trigger" data-target="modal-feature-{{ feature.id }}">{{ feature.headline }}</a>
+      <a href="{{ site.baseurl }}/{{feature._id}}">{{ feature.headline }}</a>
     </h5>
     {% endif %}
     {% if feature.story %}
