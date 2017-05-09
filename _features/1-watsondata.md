@@ -10,7 +10,7 @@ story: >
   a recommendation feature into your chatbot using a graph database.
 ---
 
-# Watson & Data
+<h1 class="brobes-style" id="watson--data">Watson &amp; Data</h1>
 
 ## Watson is smart, but Watson + data is even better.
 
