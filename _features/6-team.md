@@ -1,5 +1,5 @@
 ---
-col: s4
+col: m4 s12
 ---
 
 ##### [Our Developer Advocates]({{ site.baseurl }}/team)

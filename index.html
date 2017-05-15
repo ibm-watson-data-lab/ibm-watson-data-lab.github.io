@@ -5,19 +5,28 @@ id: home
 ---
 
 <div class="row container">
+  <div class="col s12">
+    <h1>Reaching the most ambitious developers</h1>
+  </div>
+
   {% for feature in site.features %}
   <div class="col {{ feature.col }} feature">
-    {% if feature.headline %}
-    <h5>
-      <a href="{{ site.baseurl }}/{{feature._id}}">{{ feature.headline }}</a>
-    </h5>
+    {% if feature.strategy %}
+      <h5 class="strat-head">{{feature.strategy}}</h5>
     {% endif %}
+
+    {% if feature.headline %}
+      <h5>
+        <a href="{{ site.baseurl }}/{{feature._id}}">{{ feature.headline }}</a>
+      </h5>
+    {% endif %}
+
     {% if feature.story %}
-    <p>{{ feature.story | markdownify }}</p>
+      <p>{{ feature.story | markdownify }}</p>
     {% else %}
-    {{ feature }}
+      {{ feature }}
     {% endif %}
   </div>
   {% endfor %}
+
 </div>
-{% include modal-feature.html %}

@@ -1,6 +1,7 @@
 ---
 _id: offlinefirst
-col: s4
+col: m4 s12
+strategy: Offline First
 headline: Offline First
 story: >
   Design for your most constrained environment first: an unreliable network.

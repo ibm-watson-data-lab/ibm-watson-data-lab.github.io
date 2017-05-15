@@ -1,8 +1,10 @@
 ---
 _id: pixiedust
-col: s4
+col: m4 s12
+strategy: Notebooks for Platform First
 headline: PixieDust
-story: A sprinkling of visualization magic for your data science notebook.
+story: >
+  A sprinkling of visualization magic for your data science notebook.
 ---
 
 # PixieDust

@@ -1,5 +1,5 @@
 ---
-col: s4
+col: m4 s12
 ---
 
 ##### [Developer Center]({{ site.baseurl }}/search)

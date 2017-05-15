@@ -1,6 +1,7 @@
 ---
 _id: microservices
-col: s4
+col: m4 s12
+strategy: Working with WDP
 headline: Microservices
 story: >
   Here, we'll show you how to apply these concepts in our **Simple

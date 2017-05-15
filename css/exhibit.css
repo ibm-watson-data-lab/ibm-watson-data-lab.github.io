@@ -311,3 +311,20 @@ div.simplesearch-reset {
   padding: 10px;
   border-style: solid;
 }
+
+.strat-head {
+  border-bottom: 2px solid #000;
+}
+
+.story-img {
+  float:left;
+  /*border: 1px groove #403f4c;*/
+  margin: 5px 15px 5px 0px;
+  width: 33%;
+  height: auto;
+}
+
+.story-icon {
+  border: 1px groove #403f4c;
+  padding: 0px 5px 0px 5px;
+}
