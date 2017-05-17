@@ -1,5 +1,7 @@
 ---
 _id: pixiedust
+permalink: pixiedust
+layout: default2
 col: m4 s12
 strategy: Notebooks for Platform First
 headline: PixieDust

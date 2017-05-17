@@ -29,4 +29,24 @@ id: home
   </div>
   {% endfor %}
 
+  {% for c in site.coc %}
+  <div class="col {{ c.col }} feature">
+    {% if c.strategy %}
+      <h5 class="strat-head">{{c.strategy}}</h5>
+    {% endif %}
+
+    {% if c.headline %}
+      <h5>
+        <a href="{{ site.baseurl }}/{{c._id}}">{{ c.headline }}</a>
+      </h5>
+    {% endif %}
+
+    {% if c.story %}
+      <p>{{ c.story | markdownify }}</p>
+    {% else %}
+      {{ c }}
+    {% endif %}
+  </div>
+  {% endfor %}
+
 </div>

@@ -1,5 +1,7 @@
 ---
 _id: watsondata
+permalink: watsondata
+layout: default2
 col: s12
 strategy: IBM Differentiators and Watson Data Platform
 headline: Watson is cool. Watson and data is even better.

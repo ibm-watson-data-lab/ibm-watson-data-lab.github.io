@@ -13,6 +13,8 @@ repository               : "ibm-cds-labs/showcase"
 collections:
   features:
     output: true
+  coc:
+    output: true
 
 exclude:
   - Gemfile

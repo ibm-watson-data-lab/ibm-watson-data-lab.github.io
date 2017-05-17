@@ -1,5 +1,7 @@
 ---
 _id: microservices
+permalink: microservices
+layout: default2
 col: m4 s12
 strategy: Working with WDP
 headline: Microservices

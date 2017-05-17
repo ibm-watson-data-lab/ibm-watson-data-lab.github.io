@@ -1,5 +1,7 @@
 ---
 _id: offlinefirst
+permalink: offlinefirst
+layout: default2
 col: m4 s12
 strategy: Offline First
 headline: Offline First
