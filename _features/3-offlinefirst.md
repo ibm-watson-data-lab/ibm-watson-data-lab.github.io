@@ -4,14 +4,16 @@ permalink: offlinefirst
 layout: default2
 col: m4 s12
 strategy: Offline First
-headline: Offline First
+strat_url: strategy-offline-first
+headline: Offline shouldn't be an error condition.
 story: >
-  Design for your most constrained environment first: an unreliable network.
+  <span class="headline">Application design should account for unreliable networks.</span>
+  <a href="img/offlinecamp-logo.jpeg"><img src="img/offlinecamp-logo.jpeg" class="story-img-4" /></a>
+  It's a design decision, it boosts performance, and it's a movement. Welcome to the community.
+  <a href="https://medium.com/offline-camp">Come join us at Offline Camp<span class="story-icon"><i class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></i></span></a>
 ---
 
-# Offline First
-
-## Design for your most constrained environment first&colon; an unreliable network.
+### Design for your most constrained environment first: an unreliable network.
 
 A natural extension of Responsive web design and Mobile First thinking, which treat
 screen size as your primary design constraint, Offline First treats the flakiness of

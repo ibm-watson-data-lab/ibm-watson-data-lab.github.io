@@ -4,12 +4,14 @@ permalink: pixiedust
 layout: default2
 col: m4 s12
 strategy: Notebooks for Platform First
-headline: PixieDust
+strat_url: strategy-notebooks-platform-first
+headline: Bring the tools of data science to the millions of devs solving data problems.
 story: >
-  A sprinkling of visualization magic for your data science notebook.
+  <span class="headline">Data science for the rest of us.</span>
+  <a href="img/pixiedust-logo.png"><img src="img/pixiedust-logo.png" class="story-img-4" /></a>
+  PixieDust is a helper library for Python notebooks. It makes working with data simpler.
+  <a href="https://medium.com/ibm-watson-data-lab/i-am-not-a-data-scientist-efe7ca6ceba2">Learn more about PixieDust<span class="story-icon"><i class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></i></span></a>
 ---
-
-# PixieDust
 
 ## A sprinkling of visualization magic for your data science notebook.
 

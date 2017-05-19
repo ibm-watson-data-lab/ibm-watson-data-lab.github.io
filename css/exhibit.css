@@ -316,7 +316,17 @@ div.simplesearch-reset {
   border-bottom: 2px solid #000;
 }
 
-.story-img {
+.strat-head a {
+  color: #000;
+  text-decoration: none;
+}
+
+.strat-head a:hover {
+  color: red;
+
+}
+
+.story-img-12 {
   float:left;
   /*border: 1px groove #403f4c;*/
   margin: 5px 15px 5px 0px;
@@ -324,7 +334,20 @@ div.simplesearch-reset {
   height: auto;
 }
 
+.story-img-4 {
+  float:left;
+  /*border: 1px groove #403f4c;*/
+  margin: 5px 15px 5px 0px;
+  width: 40%;
+  height: auto;
+}
+
 .story-icon {
-  border: 1px groove #403f4c;
+  border: 1px groove;
   padding: 0px 5px 0px 5px;
+  margin-left: 5px;
+}
+
+.headline {
+  font-weight: bold;
 }
