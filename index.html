@@ -15,8 +15,12 @@ id: home
       <h5 class="strat-head"><a href="{{ feature.strat_url }}" class="quiet-link">{{feature.strategy}}</a></h5>
     {% endif %}
 
+    {% if feature.section %}
+      <h5 class="strat-head">{{feature.section}}</h5>
+    {% endif %}
+
     {% if feature.headline %}
-      <span class="headline">
+      <span class="subhead">
         {{ feature.headline }}
       </span>
     {% endif %}
@@ -25,26 +29,6 @@ id: home
       <p>{{ feature.story | markdownify }}</p>
     {% else %}
       {{ feature }}
-    {% endif %}
-  </div>
-  {% endfor %}
-
-  {% for c in site.coc %}
-  <div class="col {{ c.col }} feature">
-    {% if c.strategy %}
-      <h5 class="strat-head"><a href="{{ c.strat_url }}" class="quiet-link">{{c.strategy}}</a></h5>
-    {% endif %}
-
-    {% if c.headline %}
-      <span class="headline">
-        <a href="{{ site.baseurl }}/{{c._id}}">{{ c.headline }}</a>
-      </span>
-    {% endif %}
-
-    {% if c.story %}
-      <p>{{ c.story | markdownify }}</p>
-    {% else %}
-      {{ c }}
     {% endif %}
   </div>
   {% endfor %}

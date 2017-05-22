@@ -5,12 +5,12 @@ layout: default2
 col: s12
 strategy: IBM Differentiators and Watson Data Platform
 strat_url: strategy-ibm-differentiators-watson
-headline: Some other description, Brad.
+headline: The cognitive APIs that set the IBM Cloud apart.
 story:
-  <a href="img/watson-convo.png"><img src="img/watson-convo.png" class="story-img-12" /></a>
-  <a href="watsondata"><span class="headline">Watson is cool. Watson and data is even better.</span></a>
+  <a href="watsondata"><img src="img/watson-convo.png" class="story-img-12" /></a>
+  <span class="introline">Watson is cool. Watson and data is even better.</span>
   Did you know that Watson Coversation is a stateless API? That means Watson devs have no idea what's going on with their apps.
-  <a href="watsondata"><span class="story-icon"><i class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></i></span></a>
+  Learn more in our series on building smarter chatbots<a href="watsondata"><span class="story-icon"><i class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></i></span></a>
 ---
 
 ### Watson is smart, but Watson + data is even better.

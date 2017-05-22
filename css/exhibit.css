@@ -9,6 +9,7 @@ body {
 
 main {
   flex: 1 0 auto;
+  margin-top: 50px;
 }
 
 .brand-logo > span {
@@ -307,11 +308,6 @@ div.simplesearch-reset {
   padding: 0 0 2rem;
 }
 
-.brobes-style {
-  padding: 10px;
-  border-style: solid;
-}
-
 .strat-head {
   border-bottom: 2px solid #000;
 }
@@ -328,17 +324,15 @@ div.simplesearch-reset {
 
 .story-img-12 {
   float:left;
-  /*border: 1px groove #403f4c;*/
-  margin: 5px 15px 5px 0px;
+  margin: 5px 15px 15px 0px;
   width: 33%;
   height: auto;
 }
 
 .story-img-4 {
   float:left;
-  /*border: 1px groove #403f4c;*/
-  margin: 5px 15px 5px 0px;
-  width: 40%;
+  margin: 5px 15px 15px 0px;
+  width: 33%;
   height: auto;
 }
 
@@ -348,6 +342,25 @@ div.simplesearch-reset {
   margin-left: 5px;
 }
 
-.headline {
-  font-weight: bold;
+.subhead {
+  font-weight: 400; /* 400 is normal */
+  color: darkgray;
 }
+
+.introline {
+  font-weight: 600; /* 700 is bold */
+}
+
+.nav-fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-bottom: 0px;
+    z-index: 997;
+  }
+
+main ul:not(.browser-default), main ul:not(.browser-default) li {
+  list-style-type: initial;
+}
+
