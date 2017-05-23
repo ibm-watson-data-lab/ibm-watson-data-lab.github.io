@@ -321,7 +321,11 @@ div.simplesearch-reset {
 
 .strat-head a:hover {
   color: red;
+}
 
+.sub-toc {
+  margin-top: 3rem;
+  border-top: 2px solid #000;
 }
 
 .story-img-12 {
@@ -362,8 +366,15 @@ div.simplesearch-reset {
     z-index: 997;
   }
 
-/* override some Materialize defualts */
-main ul:not(.browser-default), main ul:not(.browser-default) li {
+  .not-active, .not-active a {
+   pointer-events: none;
+   cursor: default;
+   color: grey;
+   opacity: 0.7;
+}
+
+/* override some Materialize defualt of not displaying bullets */
+col ul:not(.browser-default), col ul:not(.browser-default) li {
   list-style-type: initial;
 }
 
@@ -374,7 +385,7 @@ main ul:not(.browser-default), main ul:not(.browser-default) li {
 
 blockquote {
     margin: 20px 0;
-    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     border-left: 5px solid #1565C0;
     background: lightgrey;
 }
