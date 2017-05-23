@@ -1,10 +1,8 @@
 ---
-_id: watsondata
 permalink: watsondata
 layout: default2
 col: s12
 strategy: IBM Differentiators and Watson Data Platform
-strat_url: strategy-ibm-differentiators-watson
 headline: The cognitive APIs that set the IBM Cloud apart.
 story:
   <a href="watsondata"><img src="img/watson-convo.png" class="story-img-12" /></a>

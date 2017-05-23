@@ -1,8 +1,7 @@
 ---
-_id: workingwdp
+permalink: workingwwdp
 col: m4 s12
 strategy: Working with WDP
-strat_url: strategy-working-with-wdp
 headline: Platform is our strategy, and the work is never done.
 ---
 

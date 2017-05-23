@@ -1,9 +1,8 @@
 ---
-_id: offlinefirst
+permalink: offlinefirst
 layout: default2
 col: m4 s12
 strategy: Offline First
-strat_url: strategy-offline-first
 headline: Offline shouldn't be an error condition.
 story: >
   <span class="introline">Application design should account for unreliable networks.</span>

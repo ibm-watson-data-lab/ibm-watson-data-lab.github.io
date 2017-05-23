@@ -1,7 +1,6 @@
 ---
-_id: coc
-title: advo code of conduct
 permalink: coc
+title: advo code of conduct
 layout: default2
 col: s12
 strategy: Code of Conduct
@@ -18,8 +17,7 @@ These Community Participation Guidelines apply to anyone who contributes to the 
 #### Table of Contents:
 
 <ul class="browser-default">
-    <li>OS Contributor Guidelines</li>
-    <li>Code of Conduct</li>
-    <li>Support for Conferences and Events</li>
-    <li>Contributor Highlights</li>
+    <li><a href="contributor-guidelines">OS Contributor Guidelines</a></li>
+    <li><a href="code-of-conduct">Code of Conduct</a></li>
+    <li><a href="support-conf-events">Support for Conferences and Events</a></li>
 </ul>

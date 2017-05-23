@@ -1,10 +1,8 @@
 ---
-_id: notebooksplatformfirst
-permalink: pixiedust
+permalink: notebooksplatformfirst
 layout: default2
 col: m4 s12
 strategy: Notebooks for Platform First
-strat_url: strategy-notebooks-platform-first
 headline: Bring the tools of data science to the millions of devs solving data problems.
 story: >
   <span class="introline">Data science for the rest of us.</span>

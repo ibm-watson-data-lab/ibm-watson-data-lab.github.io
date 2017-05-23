@@ -308,6 +308,8 @@ div.simplesearch-reset {
   padding: 0 0 2rem;
 }
 
+
+/* brobes */
 .strat-head {
   border-bottom: 2px solid #000;
 }
@@ -356,11 +358,23 @@ div.simplesearch-reset {
     right: 0;
     left: 0;
     top: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     z-index: 997;
   }
 
+/* override some Materialize defualts */
 main ul:not(.browser-default), main ul:not(.browser-default) li {
   list-style-type: initial;
 }
 
+.nobullets, .nobullets li {
+  list-style: none !important;
+  padding-left: 0;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border-left: 5px solid #1565C0;
+    background: lightgrey;
+}

@@ -12,7 +12,7 @@ id: home
   {% for feature in site.features %}
   <div class="col {{ feature.col }} feature">
     {% if feature.strategy %}
-      <h5 class="strat-head"><a href="{{ feature.strat_url }}" class="quiet-link">{{feature.strategy}}</a></h5>
+      <h5 class="strat-head"><a href="{{ feature.permalink }}" class="quiet-link">{{feature.strategy}}</a></h5>
     {% endif %}
 
     {% if feature.section %}
