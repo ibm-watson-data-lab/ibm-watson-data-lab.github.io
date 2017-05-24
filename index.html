@@ -16,7 +16,6 @@ id: home
   </div>
 
   {% for feature in site.features %}
-<<<<<<< HEAD
   {% if feature.featured %}
     <div class="col {{ feature.col }} feature featured">
       <h3>
@@ -72,29 +71,4 @@ id: home
   {% endif %}
   {% endfor %}
 
-=======
-  <div class="col {{ feature.col }} feature">
-    {% if feature.strategy %}
-      <h5 class="strat-head"><a href="{{ feature.permalink }}">{{feature.strategy}}</a></h5>
-    {% endif %}
-
-    {% if feature.section %}
-      <h5 class="strat-head">{{feature.section}}</h5>
-    {% endif %}
-
-    {% if feature.headline %}
-      <span class="subhead">
-        {{ feature.headline }}
-      </span>
-    {% endif %}
-
-    {% if feature.story %}
-      <p>{{ feature.story | markdownify }}</p>
-    {% else %}
-      {{ feature }}
-    {% endif %}
-  </div>
-  {% endfor %}
-
->>>>>>> brobes-test-2
 </div>
