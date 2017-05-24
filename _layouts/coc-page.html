@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="{{ page.id }}">
+    {% include header.html %}
+    <main>
+    	<div class="row container">
+  			<div class="col s12">
+      			{{ content }}
+      	</div>
+        <div class="sub-toc col s12 m8 l4">
+          {% include coc-toc.html %}
+        </div>
+    	</div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

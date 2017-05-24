@@ -1,7 +1,7 @@
 ---
 _id: ourwork
 col: s12
-strategy: Our Work
+section: Our Work
 ---
 
 # <span>{{ page.title }}</span> {{ page.headline }}

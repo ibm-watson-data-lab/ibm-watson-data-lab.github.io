@@ -9,6 +9,7 @@ body {
 
 main {
   flex: 1 0 auto;
+  margin-top: 50px;
 }
 
 .brand-logo > span {
@@ -306,11 +307,8 @@ div.simplesearch-reset {
   padding: 0 0 2rem;
 }
 
-.brobes-style {
-  padding: 10px;
-  border-style: solid;
-}
 
+/* brobes */
 .strat-head {
   border-bottom: 2px solid #000;
 }
@@ -322,22 +320,24 @@ div.simplesearch-reset {
 
 .strat-head a:hover {
   color: red;
+}
 
+.sub-toc {
+  margin-top: 3rem;
+  border-top: 2px solid #000;
 }
 
 .story-img-12 {
   float:left;
-  /*border: 1px groove #403f4c;*/
-  margin: 5px 15px 5px 0px;
+  margin: 5px 15px 15px 0px;
   width: 33%;
   height: auto;
 }
 
 .story-img-4 {
   float:left;
-  /*border: 1px groove #403f4c;*/
-  margin: 5px 15px 5px 0px;
-  width: 40%;
+  margin: 5px 15px 15px 0px;
+  width: 33%;
   height: auto;
 }
 
@@ -347,8 +347,45 @@ div.simplesearch-reset {
   margin-left: 5px;
 }
 
-.headline {
-  font-weight: bold;
+.subhead {
+  font-weight: 400; /* 400 is normal */
+  color: darkgray;
+}
+
+.introline {
+  font-weight: 600; /* 700 is bold */
+}
+
+.nav-fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-bottom: 0;
+    z-index: 997;
+  }
+
+  .not-active, .not-active a {
+   cursor: default;
+   color: grey;
+   opacity: 0.7;
+}
+
+/* override some Materialize defualt of not displaying bullets */
+col ul:not(.browser-default), col ul:not(.browser-default) li {
+  list-style-type: initial;
+}
+
+.nobullets, .nobullets li {
+  list-style: none !important;
+  padding-left: 0;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-left: 5px solid #1565C0;
+    background: lightgrey;
 }
 
 
