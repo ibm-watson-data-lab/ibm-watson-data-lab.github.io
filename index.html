@@ -1,33 +1,80 @@
 ---
 layout: default
-title: advo showcase
+title: Home of the Watson Data Lab
+headline: Things we've made with data,<br /> on the IBM Cloud. So you can, too! 
 id: home
 ---
 
 <div class="row container">
   <div class="col s12">
-    <h1>Reaching the most ambitious developers</h1>
+    <h1>
+      {{ page.headline }} 
+    </h1>
+    <p>
+      Who are we? Check out our masthead.
+    </p>
   </div>
 
   {% for feature in site.features %}
+  {% if feature.featured %}
+    <div class="col {{ feature.col }} feature featured">
+      <h3>
+        <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
+      </h3>
+      {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
+      {% for item in array | limit:1 %}
+      <div class="item">
+        <img src="{{ item.img }}" />
+        <p>
+          <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
+        </p>
+        {% if item.tags %}
+        <dl class="tags">
+          <dt>
+            Tags
+          </dt>
+          {% for tag in item.tags %}
+          <dd>
+            {{ tag }}
+          </dd>
+          {% endfor %}
+        </dl>
+        {% endif %}
+
+          <a href="{{ item.link }}" class="nowrap">{{ item.title }} &rarr;</a>
+      </div>
+      {% endfor %}
+    </div>
+  {% else %}
   <div class="col {{ feature.col }} feature">
-    {% if feature.strategy %}
-      <h5 class="strat-head"><a href="{{ feature.strat_url }}" class="quiet-link">{{feature.strategy}}</a></h5>
+
+    {% if feature.title %}
+      <h3 class="">
+        <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
+      </h3>
     {% endif %}
 
-    {% if feature.headline %}
-      <span class="headline">
-        {{ feature.headline }}
-      </span>
-    {% endif %}
+    {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
+    {% for item in array | limit:2 %}
+    <div class="item">
+      <p>
+        <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
+        {% if item.thumb %}
+          <img src="{{ item.thumb }}" />
+        {% endif %}
+        <a href="{{ item.link }}" class="nowrap">{{ item.title }} &rarr;</a>
+      </p>
+    </div>
+    {% endfor %}
 
-    {% if feature.story %}
-      <p>{{ feature.story | markdownify }}</p>
-    {% else %}
-      {{ feature }}
-    {% endif %}
   </div>
+  {% endif %}
   {% endfor %}
+
+
+
+
+
 
   {% for c in site.coc %}
   <div class="col {{ c.col }} feature">

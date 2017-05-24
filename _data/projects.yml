@@ -1,0 +1,76 @@
+# strategies:
+#   - platformFirst
+#   - offlineFirst
+#   - differentiators
+#   - partners
+#   - workingWithWDP
+
+- title:    Persisting Data for a Smarter Chatbot
+  headline: Watson is cool, but Watson with Data is smart.
+  story:    In which we provide a more personal experience to the user, and perform analysis on the conversations users have with the bot.
+  link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
+  img:      https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
+  thumb:    https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
+  strategies: 
+    - differentiators
+  tags: 
+    - Watson Conversation
+    - Slack
+    - Cloudant
+    - Spoonacular
+
+- title:    Persisting Data for a Smarter Chatbot
+  headline: Watson is cool, but Watson with Data is smart.
+  story:    In which we provide a more personal experience to the user, and perform analysis on the conversations users have with the bot.
+  link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
+  img:      https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
+  thumb:    https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
+  strategies: 
+    - differentiators
+  tags: 
+    - Watson Conversation
+    - Slack
+    - Cloudant
+    - Spoonacular
+
+- title:    Offline Camp
+  headline: Building the Offline First! community, one campfire at a time.
+  story:    Authentic, yeah!
+  link:     https://medium.com/offline-camp
+  img:      img/offlinecamp-logo.jpeg
+  strategies: 
+    - offlineFirst
+
+- title:    nosqlimport
+  headline: Moving data doesn’t have to suck.
+  story:    Read data from a text file, transform it, and write JSON to CouchDB, Cloudant, and ElasticSearch. 
+  link:     https://www.npmjs.com/package/nosqlimport
+  strategies: 
+    - workingWithWDP
+  tags: 
+    - Nodejs
+    - npm
+    - CouchDB
+    - Cloudant
+    - ElasticSearch
+
+- title:    PixieDust
+  headline: Working with data is a team sport.
+  story:    PixieDust is a helper library for Python notebooks. It makes working with data simpler.
+  link:     https://medium.com/ibm-watson-data-lab/i-am-not-a-data-scientist-efe7ca6ceba2
+  img:      img/pixiedust-logo.png
+  strategies: 
+    - platformFirst
+  
+- title:    couchbackup
+  headline: Back up your data, without breaking your back.
+  story:    Just dump it to a text file. Do what you like from there. 
+  link:     https://www.npmjs.com/package/couchbackup
+  strategies: 
+    - workingWithWDP
+  tags: 
+    - Nodejs
+    - npm
+    - CouchDB
+    - Cloudant
+

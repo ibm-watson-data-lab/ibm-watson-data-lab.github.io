@@ -15,8 +15,6 @@ collections:
     output: true
   coc:
     output: true
-  strategy:
-    output: true
 
 exclude:
   - Gemfile
