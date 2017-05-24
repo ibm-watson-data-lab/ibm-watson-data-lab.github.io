@@ -367,7 +367,6 @@ div.simplesearch-reset {
   }
 
   .not-active, .not-active a {
-   pointer-events: none;
    cursor: default;
    color: grey;
    opacity: 0.7;

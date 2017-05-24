@@ -5,7 +5,7 @@ layout: coc-page
 col: s12
 strategy: Code of Conduct
 story: >
-  The types of communities we build. <a href="coc"><span class="story-icon"><i class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></i></span></a>
+  The types of communities we build. <a href="community-participation"><span class="story-icon"><i class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></i></span></a>
 ---
 
 ## Community Participation Guidelines
