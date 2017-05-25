@@ -1,5 +1,6 @@
 ---
 permalink: differentiators
+page: differentiators
 connector: differentiators # this is what we pass to the include, and matches the strategy collection
 featured: true
 layout: default2

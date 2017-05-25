@@ -1,5 +1,6 @@
 ---
 permalink: working-with-wdp
+page: working-with-wdp
 connector: workingWithWDP
 layout: default2
 col: m4 s12

@@ -1,5 +1,6 @@
 ---
 permalink: offline-first
+page: offline-first
 connector: offlineFirst # this is what we pass to the include, and matches the strategy collection
 layout: default2
 col: m4 s12

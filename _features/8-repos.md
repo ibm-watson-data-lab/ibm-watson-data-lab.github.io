@@ -1,5 +1,7 @@
 ---
 col: m4 s12
+title: Projects
+page: projects
 ---
 
 # <span>{{ page.title }}</span> {{ page.headline }}
