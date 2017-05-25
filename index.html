@@ -22,7 +22,7 @@ id: home
         <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
       </h3>
       {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
-      {% for item in array | limit:1 %}
+      {% for item in array limit: 1 %}
       <div class="item">
         <img src="{{ item.img }}" />
         <p>
@@ -55,7 +55,7 @@ id: home
     {% endif %}
 
     {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
-    {% for item in array | limit:2 %}
+    {% for item in array limit: 2 %}
     <div class="item">
       <p>
         <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
