@@ -12,7 +12,7 @@ story:
 # <span>{{ page.title }}</span> {{ page.headline }}
 
 It's more than just pretty charts generated automatically from Spark DataFrames.
-[PixieDust]() is an open source Python helper library for Jupyter notebooks. It also
+[PixieDust](https://github.com/ibm-cds-labs/pixiedust) is an open source Python helper library for Jupyter notebooks. It also
 fills a gap for users who have no access to config files when a notebook is hosted
 on the cloud, by providing a package manager, data export features, and a "Scala
 bridge" for calling Scala-only functions from within the context of a Python notebook.

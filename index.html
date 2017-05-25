@@ -29,19 +29,8 @@ id: home
           <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
         </p>
         {% if item.tags %}
-        <dl class="tags">
-          <dt>
-            Tags
-          </dt>
-          {% for tag in item.tags %}
-          <dd>
-            {{ tag }}
-          </dd>
-          {% endfor %}
-          <!--Different, less-semantic option for separating with commas: {{ item.tags | array_to_sentence_string: '' }}-->
-        </dl>
+          {{ item.tags | array_to_sentence_string: 'and' }}
         {% endif %}
-
           <a href="{{ item.link }}" class="nowrap">{{ item.title }} &rarr;</a>
       </div>
       {% endfor %}
@@ -63,9 +52,9 @@ id: home
     <div class="item">
       <p>
         <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
-        {% if item.thumb %}
+        <!--{% if item.thumb %}
           <img src="{{ item.thumb }}" />
-        {% endif %}
+        {% endif %}-->
         <a href="{{ item.link }}" class="nowrap">{{ item.title }} &rarr;</a>
       </p>
     </div>

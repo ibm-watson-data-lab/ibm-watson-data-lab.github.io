@@ -4,27 +4,80 @@
 #   - differentiators
 #   - partners
 #   - workingWithWDP
+#   - misc
 
-- title:    Persisting Data for a Smarter Chatbot
-  headline: Watson is cool, but Watson with Data is smart.
-  story:    In which we provide a more personal experience to the user, and perform analysis on the conversations users have with the bot.
-  link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
-  img:      https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
-  thumb:    https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
+# Old stuff at the top; newer stuff appended to the bottom.
+
+- title:    seven-days
+  headline: A quick tour of (some of) our database services.
+  story:    Companion repository for the "Seven Databases in Seven Days" blog series.
+  link:     https://github.com/ibm-cds-labs/seven-days
   strategies: 
-    - differentiators
+    - workingWithWDP
+    - misc
   tags: 
-    - Watson Conversation
-    - Slack
     - Cloudant
-    - Spoonacular
+    - Compose
+    - Etcd
+    - Tinkerpop
+    - MongoDB
+    - Postgres
+    - Redis
+    - RethinkDB
+
+- title:    openobjectstore
+  headline: Browse your Object Store from the web.
+  story:    A Python Flask web app to serve your files from IBM Object Storage. 
+  link:     https://github.com/ibm-cds-labs/openobjectstore
+  strategies: 
+    - workingWithWDP
+    - misc
+  tags: 
+    - Object Storeage
+    - Python
+
+- title:    guestbook
+  headline: A simple data-driven demo.
+  story:    Guestbook app where unregistered users can leave their name and a comment. Includes webhook functionality.
+  link:     https://github.com/ibm-cds-labs/guestbook 
+  strategies: 
+    - misc
+    - workingWithWDP
+  tags: 
+    - Cloudant
+    - Compose
+    - Nodejs
+    - PHP
+    - RabbitMQ
+
+- title:    couchdbimporter
+  headline: Load those CSVs into CouchDB or Cloudant
+  story:    CouchDB data importer app, example of bundling a web app for native distribution with Electron.
+  link:     https://github.com/ibm-cds-labs/couchdbimporter
+  strategies: 
+    - workingWithWDP
+  tags: 
+    - CouchDB
+    - Electron
+    - Nodejs
+
+- title:    simple-search-service-sync
+  headline: Sync your Simple Search Service instance in a snap.
+  story:    Continuously synchronize the index of a Simple-Search-Service instance with the content of a CouchDB/Cloudant database.
+  link:     https://github.com/ibm-cds-labs/simple-search-service-sync   
+  strategies: 
+    - workingWithWDP
+  tags: 
+    - CouchDB
+    - Cloudant
+    - Nodejs
 
 - title:    Persisting Data for a Smarter Chatbot
   headline: Watson is cool, but Watson with Data is smart.
   story:    In which we provide a more personal experience to the user, and perform analysis on the conversations users have with the bot.
   link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
-  img:      https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
-  thumb:    https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
+  img:      img/smarter-chatbot.jpg
+  thumb:    img/smarter-chatbot-thumb.jpg
   strategies: 
     - differentiators
   tags: 
@@ -59,6 +112,7 @@
   story:    PixieDust is a helper library for Python notebooks. It makes working with data simpler.
   link:     https://medium.com/ibm-watson-data-lab/i-am-not-a-data-scientist-efe7ca6ceba2
   img:      img/pixiedust-logo.png
+  thumb:    img/pixiedust-logo-thumb.png
   strategies: 
     - platformFirst
   
@@ -73,4 +127,3 @@
     - npm
     - CouchDB
     - Cloudant
-
