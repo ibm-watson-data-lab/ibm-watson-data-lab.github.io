@@ -38,6 +38,7 @@ id: home
             {{ tag }}
           </dd>
           {% endfor %}
+          <!--Different, less-semantic option for separating with commas: {{ item.tags | array_to_sentence_string: '' }}-->
         </dl>
         {% endif %}
 
@@ -49,7 +50,7 @@ id: home
   <div class="col {{ feature.col }} feature">
 
     {% if feature.title %}
-      <h3 class="">
+      <h3>
         <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
       </h3>
     {% endif %}
