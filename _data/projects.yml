@@ -7,22 +7,10 @@
 
 - title:    Persisting Data for a Smarter Chatbot
   headline: Watson is cool, but Watson with Data is smart.
-  story:    In which we provide a more personal experience to the user, and perform analysis on the conversations users have with the bot.
+  story:    In which we save money by reducing third-party API calls, provide a more personal chatbot experience, and perform analysis on past chatbot conversations.
   link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
-  img:      https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
-  thumb:    https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
-  strategies: 
-    - differentiators
-  tags: 
-    - Watson Conversation
-    - Slack
-    - Cloudant
-    - Spoonacular
-
-- title:    Persisting Data for a Smarter Chatbot
-  headline: Watson is cool, but Watson with Data is smart.
-  story:    In which we provide a more personal experience to the user, and perform analysis on the conversations users have with the bot.
-  link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
+  github:   http://github.com/ibm-cds-labs/pixiedust
+  blog:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
   img:      https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
   thumb:    https://cdn-images-1.medium.com/max/800/1*vaemAjUGjz87LO0bfUMoCw.jpeg
   strategies: 

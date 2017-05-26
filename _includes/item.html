@@ -3,9 +3,9 @@
 <div class="item">
 
   {% if item.headline %}
-    <h3 class="headline">
+    <h2 class="headline">
       <a href="{{ item.link }}">{{ item.headline }}</a>
-    </h3>
+    </h2>
   {% endif %}
 
   {% if item.img %}
@@ -23,13 +23,11 @@
     {% if item.tags %}
     <dl>
       <dt>
-        Tags
+        Featured:
       </dt>
-      {% for tag in item.tags %}
       <dd>
-        {{ tag }}
+        {{ item.tags | array_to_sentence_string: "and" }}
       </dd>
-      {% endfor %}
     </dl>
     {% endif %}
 
