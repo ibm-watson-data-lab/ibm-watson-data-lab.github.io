@@ -1,23 +1,65 @@
 ---
 layout: default
-title: advo showcase
+title: Home of the Watson Data Lab
+headline: Things we've made with data so you can too 
 id: home
 ---
 
 <div class="row container">
-  {% for feature in site.features %}
-  <div class="col {{ feature.col }} feature">
-    {% if feature.headline %}
-    <h5>
-      <a href="#" class="modal-trigger" data-target="modal-feature-{{ feature.id }}">{{ feature.headline }}</a>
-    </h5>
-    {% endif %}
-    {% if feature.story %}
-    <p>{{ feature.story | markdownify }}</p>
-    {% else %}
-    {{ feature }}
-    {% endif %}
+  <div class="col s12">
+    <h1>
+      Things we made with data,<br />so you can !RTFM, too.
+    </h1>
   </div>
+
+  {% for feature in site.features %}
+  {% if feature.featured %}
+    <div class="col {{ feature.col }} feature featured">
+      <h3>
+        <a href="{{ feature.page }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
+      </h3>
+      {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
+      {% for item in array limit: 1 %}
+      <div class="item">
+      {% if item.img %}
+        <img src="{{ item.img }}" />
+      {% endif %}
+        <p>
+          <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
+        </p>
+        {% if item.tags %}
+        <p class="tags">
+            {{ item.tags | array_to_sentence_string: "and" }}
+        </p>
+        {% endif %}
+        <a href="{{ item.link }}" class="nowrap" title="">{{ item.title }} &rarr;</a>
+      </div>
+      {% endfor %}
+    </div>
+  {% else %}
+  <div class="col {{ feature.col }} feature">
+
+    {% if feature.title and feature.title != "5 Ourwork" %}
+      <h3>
+        <a href="{{ feature.page }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
+      </h3>
+    {% endif %}
+    {% if feature.section %}
+    <h3>{{feature.section}}</h3>
+    {% endif %}
+
+    {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
+    {% for item in array limit: 2 %}
+    <div class="item">
+      <p>
+        <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
+        <a href="{{ item.link }}" class="nowrap">{{ item.title }} &rarr;</a>
+      </p>
+    </div>
+    {% endfor %}
+
+  </div>
+  {% endif %}
   {% endfor %}
+
 </div>
-{% include modal-feature.html %}

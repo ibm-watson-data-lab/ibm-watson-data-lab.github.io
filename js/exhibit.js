@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('.button-collapse').sideNav();
   $('.modal').modal()
 
   // do not include listed projects

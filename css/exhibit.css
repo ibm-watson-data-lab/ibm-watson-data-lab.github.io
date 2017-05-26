@@ -9,6 +9,7 @@ body {
 
 main {
   flex: 1 0 auto;
+  margin-top: 50px;
 }
 
 .brand-logo > span {
@@ -51,7 +52,6 @@ main {
 
 .row .col.feature {
   padding-bottom: 10px;
-  padding-top: 25px;
 }
 
 a.grey-text i {
@@ -306,3 +306,170 @@ div.simplesearch-reset {
   font-weight: 400;
   padding: 0 0 2rem;
 }
+
+
+/* brobes */
+.strat-head {
+  border-bottom: 2px solid #000;
+}
+
+.strat-head a {
+  color: #000;
+  text-decoration: none;
+}
+
+.strat-head a:hover {
+  color: red;
+}
+
+.sub-toc {
+  margin-top: 3rem;
+  border-top: 2px solid #000;
+}
+
+.story-img-12 {
+  float:left;
+  margin: 5px 15px 15px 0px;
+  width: 33%;
+  height: auto;
+}
+
+.story-img-4 {
+  float:left;
+  margin: 5px 15px 15px 0px;
+  width: 33%;
+  height: auto;
+}
+
+.story-icon {
+  border: 1px groove;
+  padding: 0px 5px 0px 5px;
+  margin-left: 5px;
+}
+
+.subhead {
+  font-weight: 400; /* 400 is normal */
+  color: darkgray;
+}
+
+.introline {
+  font-weight: 600; /* 700 is bold */
+}
+
+.nav-fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-bottom: 0;
+    z-index: 997;
+  }
+
+  .not-active, .not-active a {
+   cursor: default;
+   color: grey;
+   opacity: 0.7;
+}
+
+/* override some Materialize defualt of not displaying bullets */
+col ul:not(.browser-default), col ul:not(.browser-default) li {
+  list-style-type: initial;
+}
+
+.nobullets, .nobullets li {
+  list-style: none !important;
+  padding-left: 0;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-left: 5px solid #1565C0;
+    background: lightgrey;
+}
+
+
+
+
+
+
+
+/* Brad's CSS */
+h1 {
+  color: #333;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin: 3rem 0;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h2 a {
+}
+.feature h3, h1 spans {
+  border-bottom: 2px solid lightblue;
+  display: inline;
+  font-size: .85rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  padding: 0;
+  text-transform: uppercase;
+}
+h1 spans {
+  border: 0;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+a.quiet-link {
+  color: #333;
+}
+a.quiet-link:hover {
+  color: blue
+}
+.item {
+  margin-bottom: 5rem;
+}
+.feature .item {
+  border-bottom: 1px solid #eee;
+  margin: 0;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+div.featured .item img {
+  float: left;
+  margin-right: 3rem;
+  width: 40%;
+}
+dl.tags dt, dl.tags dd  {
+  float: left;
+  margin: 0 .5rem 0 0;
+  padding: 0;
+}
+div.featured .item a.nowrap {
+  clear: left;
+  display: block;
+}
+div.featured .item {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .sidebar-fixed {
+    width: 16%;
+    position: fixed;
+  }
+}
+.sidebar-fixed {
+    display: block;
+}
+

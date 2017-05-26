@@ -1,21 +1,23 @@
-<ul id="menu-dropdown" class="dropdown-content">
+<ul class="side-nav" id="menu-dropdown">
   <li class="{% if page.id == 'home' %}active{% endif %}"><a href="{{ site.baseurl }}/">Home</a></li>
   <li class="{% if page.id == 'search' %}active{% endif %}"><a href="{{ site.baseurl }}/search">Search</a></li>
   <li class="{% if page.id == 'projects' %}active{% endif %}"><a href="{{ site.baseurl }}/projects">Projects</a></li>
   <li class="{% if page.id == 'team' %}active{% endif %}"><a href="{{ site.baseurl }}/team">Team</a></li>
+  <li class="{% if page.id == 'community-participation' %}active{% endif %}"><a href="{{ site.baseurl }}/community-participation">Conduct</a></li>
 </ul>
-<div class="navbar-fixed">
-  <nav class="blue darken-3 z-depth-0" role="navigation">
-    <div class="nav-wrapper container">
-      <a href="{{ site.baseurl }}/" class="brand-logo">
-        <img src="img/watson_white.png"/>
-        <span>{{ site.title }}</span>
-      </a>
-      <ul class="right">
-        <li>
-          <a class="dropdown-button" href="#!" data-activates="menu-dropdown"><i class="material-icons">more_vert</i></a>
-        </li>
+
+<nav class="blue darken-3 nav-fixed" role="navigation">
+  <div class="nav-wrapper container">
+    <a href="{{ site.baseurl }}/" class="brand-logo">
+      {{ site.title }}
+    </a>
+    <a href="#" data-activates="menu-dropdown" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li class="{% if page.id == 'home' %}active{% endif %}"><a href="{{ site.baseurl }}/">Home</a></li>
+      <li class="{% if page.id == 'search' %}active{% endif %}"><a href="{{ site.baseurl }}/search">Search</a></li>
+      <li class="{% if page.id == 'projects' %}active{% endif %}"><a href="{{ site.baseurl }}/projects">Projects</a></li>
+      <li class="{% if page.id == 'team' %}active{% endif %}"><a href="{{ site.baseurl }}/team">Team</a></li>
+      <li class="{% if page.id == 'community-participation' %}active{% endif %}"><a href="{{ site.baseurl }}/community-participation">Conduct</a></li>
       </ul>
-    </div>
-  </nav>
-</div>
+  </div>
+</nav>
