@@ -7,7 +7,7 @@ locale                   : "en"
 title                    : "!RTFM" #"IBM Watson Data Lab"
 description              : "The things you can make with data, on the IBM Watson Data Platform"
 url                      : "https://ibm-cds-labs.github.io"
-baseurl                  : "/showcase"
+baseurl                  : ""
 repository               : "ibm-cds-labs/showcase"
 
 collections:
