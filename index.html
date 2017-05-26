@@ -1,18 +1,15 @@
 ---
 layout: default
 title: Home of the Watson Data Lab
-headline: Things we've made with data,<br /> on the IBM Cloud. So you can, too! 
+headline: Things we've made with data so you can too 
 id: home
 ---
 
 <div class="row container">
   <div class="col s12">
     <h1>
-      {{ page.headline }} 
+      Things we made with data,<br />so you can !RTFM, too.
     </h1>
-    <p>
-      Who are we? Check out our masthead.
-    </p>
   </div>
 
   {% for feature in site.features %}
@@ -31,9 +28,11 @@ id: home
           <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
         </p>
         {% if item.tags %}
-          {{ item.tags | array_to_sentence_string: 'and' }}
+        <p class="tags">
+            {{ item.tags | array_to_sentence_string: "and" }}
+        </p>
         {% endif %}
-          <a href="{{ item.link }}" class="nowrap">{{ item.title }} &rarr;</a>
+        <a href="{{ item.link }}" class="nowrap" title="">{{ item.title }} &rarr;</a>
       </div>
       {% endfor %}
     </div>
@@ -54,9 +53,6 @@ id: home
     <div class="item">
       <p>
         <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
-        <!--{% if item.thumb %}
-          <img src="{{ item.thumb }}" />
-        {% endif %}-->
         <a href="{{ item.link }}" class="nowrap">{{ item.title }} &rarr;</a>
       </p>
     </div>

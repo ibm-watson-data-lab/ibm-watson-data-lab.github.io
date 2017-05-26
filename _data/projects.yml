@@ -175,7 +175,7 @@
 
 - title:    Persisting Data for a Smarter Chatbot
   headline: Watson is cool, but Watson with Data is smart.
-  story:    In which we provide a more personal experience to the user, and perform analysis on the conversations users have with the bot.
+  story:    In which we save money by reducing third-party API calls, provide a more personal chatbot experience, and perform analysis on past chatbot conversations.
   link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
   img:      img/smarter-chatbot.jpg
   thumb:    img/smarter-chatbot-thumb.jpg
