@@ -6,7 +6,51 @@
 #   - workingWithWDP
 #   - misc
 
-# Old stuff at the top; newer stuff appended to the bottom.
+# Old stuff at the top; new stuff appended to the bottom.
+
+- title:    rethinkdb-questions
+  headline: How to use RethinkDB's real-time changefeeds
+  story:    Realtime Q&A app using RethinkDB and changefeeds.
+  link:     https://github.com/ibm-cds-labs/rethinkdb-questions
+  strategies: 
+    - workingWithWDP
+    - misc
+  tags: 
+    - Compose
+    - Nodejs
+    - RethinkDB
+    - Vuejs
+
+- title:    nodejs-cloudant
+  headline: Node.js library for Cloudant.
+  story:    Official Cloudant-Node.js client library.
+  link:     https://github.com/cloudant/nodejs-cloudant
+  strategies: 
+    - workingWithWDP
+  tags: 
+    - Cloudant
+    - Nodejs
+
+- title:    couchdb-db-transform
+  headline: Add some T to your ETL for CouchDB.
+  story:    Utility that loads documents from one CouchDB database, transforms them, and inserts them into another database.
+  link:     https://github.com/ibm-cds-labs/couchdb-db-transform
+  strategies: 
+    - workingWithWDP
+  tags: 
+    - Cloudant
+    - CouchDB
+    - Nodejs
+
+- title:    open-data
+  headline: Curated data, open and free for you to use.
+  story:    Open data sets hosted by the WDP dev advocates.
+  link:     https://github.com/ibm-cds-labs/open-data 
+  strategies: 
+    - workingWithWDP
+    - misc
+  tags: 
+    - data set
 
 - title:    seven-days
   headline: A quick tour of (some of) our database services.
@@ -67,24 +111,11 @@
   link:     https://github.com/ibm-cds-labs/simple-search-service-sync   
   strategies: 
     - workingWithWDP
+    - misc
   tags: 
     - CouchDB
     - Cloudant
     - Nodejs
-
-- title:    Persisting Data for a Smarter Chatbot
-  headline: Watson is cool, but Watson with Data is smart.
-  story:    In which we provide a more personal experience to the user, and perform analysis on the conversations users have with the bot.
-  link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
-  img:      img/smarter-chatbot.jpg
-  thumb:    img/smarter-chatbot-thumb.jpg
-  strategies: 
-    - differentiators
-  tags: 
-    - Watson Conversation
-    - Slack
-    - Cloudant
-    - Spoonacular
 
 - title:    Offline Camp
   headline: Building the Offline First! community, one campfire at a time.
@@ -127,3 +158,31 @@
     - npm
     - CouchDB
     - Cloudant
+
+- title:    Have you had “The Talk” with your chatbot about graph data structures?
+  headline: Add a recommendation feature to your app with a graph DB.
+  story:    In which we suggest new recipies to the user, based on similar interaction from others.
+  link:     https://medium.freecodecamp.com/have-you-had-the-talk-with-your-chatbot-about-graph-data-structures-3aaf5c3ae52c
+  img:      img/graph-chatbot.png
+  thumb:    img/graph-chatbot-thumb.png
+  strategies: 
+    - differentiators
+  tags: 
+    - Watson Conversation
+    - Slack
+    - Spoonacular
+    - Tinkerpop
+
+- title:    Persisting Data for a Smarter Chatbot
+  headline: Watson is cool, but Watson with Data is smart.
+  story:    In which we provide a more personal experience to the user, and perform analysis on the conversations users have with the bot.
+  link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
+  img:      img/smarter-chatbot.jpg
+  thumb:    img/smarter-chatbot-thumb.jpg
+  strategies: 
+    - differentiators
+  tags: 
+    - Watson Conversation
+    - Slack
+    - Cloudant
+    - Spoonacular
