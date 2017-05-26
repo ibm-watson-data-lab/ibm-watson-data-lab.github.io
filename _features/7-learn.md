@@ -1,5 +1,7 @@
 ---
 col: m4 s12
+title: Search
+page: search
 ---
 
 # <span>{{ page.title }}</span> {{ page.headline }}

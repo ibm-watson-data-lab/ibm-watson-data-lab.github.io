@@ -31,4 +31,4 @@ The Developer Advocacy team at IBM Watson Data Platform values the safety and se
 
 For an example code of conduct that meets these requirements, we recommend [this template](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy) as a starting point, but we're also open to alternatives.
 
-Do you have a question about IBM Watson Data Platform sponsorship? [Tweet at us!](https://twitter.com/WatsonDataLab)
+Do you have a question about IBM Watson Data Platform sponsorship? [Tweet at us!](https://twitter.com/WatsonDataLab) You can also [tweet to specific members](https://twitter.com/WatsonDataLab/lists/wdp-developer-advocates/members) of our developer advocacy team to talk about how we can support or participate in your event.

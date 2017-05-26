@@ -8,8 +8,8 @@
     </h2>
   {% endif %}
 
-  {% if item.img %}
-    <img src="{{ item.img }}" />
+  {% if item.thumb %}
+    <img src="{{ item.thumb }}" />
   {% endif %}
 
   {% if item.story %}
@@ -38,6 +38,8 @@
       <a href="{{ item.link }}">Learn more</a>
     {% endif %}
     </p>
+
+    <hr />
 
 </div>
 {% endfor %}

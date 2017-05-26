@@ -462,3 +462,14 @@ div.featured .item {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
 }
+
+@media only screen and (min-width: 600px) {
+  .sidebar-fixed {
+    width: 16%;
+    position: fixed;
+  }
+}
+.sidebar-fixed {
+    display: block;
+}
+

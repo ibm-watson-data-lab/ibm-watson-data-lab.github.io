@@ -16,12 +16,14 @@ id: home
   {% if feature.featured %}
     <div class="col {{ feature.col }} feature featured">
       <h3>
-        <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
+        <a href="{{ feature.page }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
       </h3>
       {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
-      {% for item in array | limit:1 %}
+      {% for item in array limit: 1 %}
       <div class="item">
+      {% if item.img %}
         <img src="{{ item.img }}" />
+      {% endif %}
         <p>
           <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
         </p>
@@ -37,21 +39,20 @@ id: home
   {% else %}
   <div class="col {{ feature.col }} feature">
 
-    {% if feature.title %}
-      <h3 class="">
-        <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
+    {% if feature.title and feature.title != "5 Ourwork" %}
+      <h3>
+        <a href="{{ feature.page }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
       </h3>
+    {% endif %}
+    {% if feature.section %}
+    <h3>{{feature.section}}</h3>
     {% endif %}
 
     {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
-    {% for item in array | limit:2 %}
+    {% for item in array limit: 2 %}
     <div class="item">
       <p>
         <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
-        {% if item.thumb %}
-          <img src="{{ item.thumb }}" />
-        {% endif %}
-        
         <a href="{{ item.link }}" class="nowrap">{{ item.title }} &rarr;</a>
       </p>
     </div>

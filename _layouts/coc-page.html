@@ -2,17 +2,24 @@
 <html>
   {% include head.html %}
   <body id="{{ page.id }}">
-    {% include header.html %}
-    <main>
-    	<div class="row container">
-  			<div class="col s12">
-      			{{ content }}
-      	</div>
-        <div class="sub-toc col s12 m8 l4">
+   {% include header.html %}
+   <main>
+    <div class="container">
+      <div class="row">
+
+       <div class="col l9 m9 s12 push-l3 push-m3">
+          {{ content }}
+       </div>
+
+       <div class="col l3 m3 s12 pull-l9 pull-m9 ">
+        <div class="sidebar-fixed sub-toc">
           {% include coc-toc.html %}
         </div>
-    	</div>
-    </main>
-    {% include footer.html %}
+       </div>
+
+      </div>
+    </div>
+   </main>
+   {% include footer.html %}
   </body>
 </html>
