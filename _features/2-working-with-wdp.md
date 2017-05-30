@@ -4,7 +4,7 @@ page: working-with-wdp
 connector: workingWithWDP
 layout: default2
 col: m4 s12
-title: Working with the Platform
+title: Working with Data
 headline: Tools to make our platform more integrated, and easier to use.
 story: 
 ---
