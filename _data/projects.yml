@@ -160,7 +160,7 @@
     - Cloudant
 
 - title:    Have you had “The Talk” with your chatbot about graph data structures?
-  headline: Add a recommendation feature to your app with a graph DB.
+  headline: Add a recommendation feature to your chatbot with a graph DB.
   story:    In which we suggest new recipies to the user, based on similar interaction from others.
   link:     https://medium.freecodecamp.com/have-you-had-the-talk-with-your-chatbot-about-graph-data-structures-3aaf5c3ae52c
   img:      img/graph-chatbot.png
@@ -175,7 +175,7 @@
 
 - title:    Persisting Data for a Smarter Chatbot
   headline: Watson is cool, but Watson with Data is smart.
-  story:    In which we save money by reducing third-party API calls, provide a more personal chatbot experience, and perform analysis on past chatbot conversations.
+  story:    In which we provide a more personal chatbot experience, save money by reducing third-party API calls, and perform analysis on past chatbot conversations.
   link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
   img:      img/smarter-chatbot.jpg
   thumb:    img/smarter-chatbot-thumb.jpg
@@ -184,5 +184,5 @@
   tags: 
     - Watson Conversation
     - Slack
-    - Cloudant
     - Spoonacular
+    - Cloudant
