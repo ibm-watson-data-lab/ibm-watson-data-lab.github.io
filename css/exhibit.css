@@ -388,6 +388,9 @@ blockquote {
     background: lightgrey;
 }
 
+.button-collapse .material-icons {
+  color: black;
+}
 
 
 

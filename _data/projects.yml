@@ -8,8 +8,44 @@
 
 # Old stuff at the top; new stuff appended to the bottom.
 
+- title:    location-tracker-envoy-server
+  headline: Scaling the CouchDB database-per-user architecture? No problem.
+  story:    Node.js backend&mdash;plus Cloudant Envoy&mdash;for location tracker demo app.
+  link:     https://github.com/ibm-cds-labs/location-tracker-envoy-server
+  img:      img/location-tracker-cloudantdash.png
+  thumb:    img/location-tracker-cloudantdash-thumb.png
+  strategies: 
+    - offlineFirst
+  tags: 
+    - Cloudant
+    - Nodejs
+
+- title:    location-tracker-server-nodejs
+  headline: The unsung hero of our location tracker demo&mdash;the back end.
+  story:    Node.js backend for location tracker demo app.
+  link:     https://github.com/ibm-cds-labs/location-tracker-server-nodejs
+  img:      img/location-tracker-node.png
+  thumb:    img/location-tracker-node-thumb.png
+  strategies: 
+    - offlineFirst
+  tags: 
+    - Cloudant
+    - Nodejs
+
+- title:    location-tracker-client-swift
+  headline: Track your location, offline or on.
+  story:    An iOS app developed in Swift. Features Cloudant geospatial querying and data replication &amp; synch abilities.
+  link:     https://github.com/ibm-cds-labs/location-tracker-client-swift
+  img:      img/location-tracker-client.png
+  thumb:    img/location-tracker-client-thumb.png
+  strategies: 
+    - offlineFirst
+  tags: 
+    - Cloudant
+    - iOS Swift
+
 - title:    rethinkdb-questions
-  headline: How to use RethinkDB's real-time changefeeds
+  headline: Get real-time, with changefeeds in RethinkDB.
   story:    Realtime Q&A app using RethinkDB and changefeeds.
   link:     https://github.com/ibm-cds-labs/rethinkdb-questions
   strategies: 
@@ -22,7 +58,7 @@
     - Vuejs
 
 - title:    nodejs-cloudant
-  headline: Node.js library for Cloudant.
+  headline: JavaScript all the way down.
   story:    Official Cloudant-Node.js client library.
   link:     https://github.com/cloudant/nodejs-cloudant
   strategies: 
@@ -71,7 +107,7 @@
 
 - title:    openobjectstore
   headline: Browse your Object Store from the web.
-  story:    A Python Flask web app to serve your files from IBM Object Storage. 
+  story:    A Python Flask web app for serving files from IBM Object Storage. 
   link:     https://github.com/ibm-cds-labs/openobjectstore
   strategies: 
     - workingWithWDP
@@ -81,22 +117,22 @@
     - Python
 
 - title:    guestbook
-  headline: A simple data-driven demo.
-  story:    Guestbook app where unregistered users can leave their name and a comment. Includes webhook functionality.
+  headline: Hook into RabbitMQ.
+  story:    A guestbook app that shows how to use webhooks with RabbitMQ and CouchDB.
   link:     https://github.com/ibm-cds-labs/guestbook 
   strategies: 
     - misc
     - workingWithWDP
   tags: 
-    - Cloudant
+    - CouchDB
     - Compose
     - Nodejs
     - PHP
     - RabbitMQ
 
 - title:    couchdbimporter
-  headline: Load those CSVs into CouchDB or Cloudant
-  story:    CouchDB data importer app, example of bundling a web app for native distribution with Electron.
+  headline: Load those CSVs as JSON documents.
+  story:    A simple CouchDB data importer app that also shows how to bundle a web app for native distribution with Electron.
   link:     https://github.com/ibm-cds-labs/couchdbimporter
   strategies: 
     - workingWithWDP
@@ -106,7 +142,7 @@
     - Nodejs
 
 - title:    simple-search-service-sync
-  headline: Sync your Simple Search Service instance in a snap.
+  headline: Sync your search index in a snap.
   story:    Continuously synchronize the index of a Simple-Search-Service instance with the content of a CouchDB/Cloudant database.
   link:     https://github.com/ibm-cds-labs/simple-search-service-sync   
   strategies: 
@@ -121,7 +157,8 @@
   headline: Building the Offline First! community, one campfire at a time.
   story:    Authentic, yeah!
   link:     https://medium.com/offline-camp
-  img:      img/offlinecamp-logo.jpeg
+  img:      img/offlinecamp-logo.jpg
+  thumb:    img/offlinecamp-logo-thumb.jpg
   strategies: 
     - offlineFirst
 
@@ -159,8 +196,8 @@
     - CouchDB
     - Cloudant
 
-- title:    Have you had “The Talk” with your chatbot about graph data structures?
-  headline: Add a recommendation feature to your chatbot with a graph DB.
+- title:    Adding a recommendation feature to your app using a graph DB
+  headline: Graph user interactions for an even smarter chatbot.
   story:    In which we suggest new recipies to the user, based on similar interaction from others.
   link:     https://medium.freecodecamp.com/have-you-had-the-talk-with-your-chatbot-about-graph-data-structures-3aaf5c3ae52c
   img:      img/graph-chatbot.png
