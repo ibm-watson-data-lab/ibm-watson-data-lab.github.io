@@ -152,5 +152,11 @@ $(document).ready(function() {
       $('.repos-count').html('Showing ' + index + ' of ' + total)
     });
   }
+
+  $(".dropdown-button").dropdown(
+    { hover: true }
+  );
+
+  $(".button-collapse").sideNav(function() {});
 })
           
