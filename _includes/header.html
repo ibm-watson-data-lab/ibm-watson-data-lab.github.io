@@ -32,20 +32,18 @@
     </ul>
 
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!">platformFirst</a></li>
-      <li><a href="#!">offlineFirst</a></li>
-      <li><a href="#!">differentiators</a></li>
-      <li><a href="#!">partners</a></li>
-      <li><a href="#!">workingWithWDP</a></li>
-      <li><a href="#!">misc</a></li>
+      {% for feature in site.features%}
+        {% if feature.title %}
+          <li><a href="#!">{{feature.title}}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
     <ul id="dropdown2" class="dropdown-content">
-      <li><a href="#!">platformFirst</a></li>
-      <li><a href="#!">offlineFirst</a></li>
-      <li><a href="#!">differentiators</a></li>
-      <li><a href="#!">partners</a></li>
-      <li><a href="#!">workingWithWDP</a></li>
-      <li><a href="#!">misc</a></li>
+      {% for feature in site.features%}
+        {% if feature.title %}
+          <li><a href="#!">{{feature.title}}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </div>
 </nav>
