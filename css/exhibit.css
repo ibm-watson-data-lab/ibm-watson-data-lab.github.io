@@ -428,7 +428,7 @@ h3 {
 }
 h2 a {
 }
-.feature h3, h1 spans {
+.feature h3 {
   border-bottom: 2px solid lightblue;
   display: inline;
   font-size: .9rem;
@@ -442,6 +442,7 @@ h1 span {
   display: block;
   font-size: 1.2rem;
   font-weight: normal;
+  line-height: 2;
   margin-bottom: 0;
   text-transform: none;
 }
