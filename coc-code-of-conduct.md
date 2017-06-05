@@ -1,6 +1,6 @@
 ---
 permalink: code-of-conduct
-title: advo code of conduct
+title: Code of Conduct
 layout: coc-page
 ---
 

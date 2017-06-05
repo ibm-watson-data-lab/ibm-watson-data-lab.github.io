@@ -1,6 +1,6 @@
 ---
 permalink: community-participation
-title: advo code of conduct
+title: Code of Conduct
 layout: coc-page
 ---
 
