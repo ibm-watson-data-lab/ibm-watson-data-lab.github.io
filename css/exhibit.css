@@ -103,54 +103,29 @@ div.simplesearch-reset {
 
 /** FACETS **/
 .search-facets {
-  float: left;
   font-family: "Helvetica Neue", monospace, sans-serif;
   font-size: 1.25rem;
   line-height: 1.5rem;
-  padding: 1rem 0;
-  width: 100%;
-}
-.search-facets .simplesearch-facet {
-  float: left;
-  margin-left: 3%;
-  width: 30%;
+  margin: 1.5em 0 0;
 }
 .search-facets h4 {
+  clear: both;
   font-weight: 300;
   font-size: 2rem;
-  margin: 0 0 .5rem 0;
-  padding: 0;
+  margin: 0;
   text-transform: capitalize;
 }
-.search-facets ul {
-  float: left;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.search-facets ul li {
-  color: #ccc;
-  float: left;
-  font-weight: 300;
-  margin: 0 0.5rem 0 0;
-  padding: 0;
+.simplesearch-facet-value-list {
+    margin: 0.5em 0 1.5em;
 }
 .search-facets ul li span.simplesearch-facet-value-name {
-  color: blue;
+  color: #039be5;
   cursor: pointer;
   white-space: nowrap;
   display: inline-block;
-  text-decoration: underline;
 }
 .search-facets ul li span.simplesearch-facet-value-name:hover {
   color: red;
-}
-.search-facets ul li:after {
-  content: " / ";
-}
-.search-facets ul li:last-child:after {
-  content: none;
 }
 .search-facets .simplesearch-facet-value-count {
   display: none;
@@ -170,7 +145,7 @@ div.simplesearch-reset {
 /* RESULTS */
 .search-results {
   float: left;
-  margin: 0;
+  margin: 1.5em 0 0;
   padding: 5rem 0;
   position: relative;
   width: 100%;
@@ -489,6 +464,21 @@ div.featured .item {
   .sidebar-fixed {
     width: 16%;
     position: fixed;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .search-facets ul li {
+    float: left;
+    margin: 0 0.5rem 0 0;
+    padding: 0;
+  }
+  .search-facets ul li:after {
+    color: #ccc;
+    content: " / ";
+  }
+  .search-facets ul li:last-child:after {
+    content: none;
   }
 }
 .sidebar-fixed {
