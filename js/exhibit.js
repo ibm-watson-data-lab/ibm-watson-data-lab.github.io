@@ -157,6 +157,5 @@ $(document).ready(function() {
     { hover: true }
   );
 
-  $(".button-collapse").sideNav(function() {});
+  $(".button-collapse").sideNav();
 })
-          
