@@ -400,15 +400,8 @@ blockquote {
 /* Brad's CSS */
 a.brand-logo {
   color: black;
+  font-style: monospace;
   position: relative;
-}
-.no-rtfm {
-  display: block;
-  left: -10%;
-  position: absolute;
-  top: 45%;
-  width: 120%;
-  border-bottom: 6px solid rgba(255, 0, 0, .50);
 }
 nav.white {
   background: white;
