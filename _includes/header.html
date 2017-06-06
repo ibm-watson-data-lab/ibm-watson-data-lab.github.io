@@ -1,24 +1,33 @@
-<ul class="side-nav" id="menu-dropdown">
-  <li class="{% if page.id == 'home' %}active{% endif %}"><a href="{{ site.baseurl }}/">Home</a></li>
-  <li class="{% if page.id == 'search' %}active{% endif %}"><a href="{{ site.baseurl }}/search">Search</a></li>
-  <li class="{% if page.id == 'projects' %}active{% endif %}"><a href="{{ site.baseurl }}/projects">Projects</a></li>
-  <li class="{% if page.id == 'team' %}active{% endif %}"><a href="{{ site.baseurl }}/team">Team</a></li>
-  <li class="{% if page.id == 'community-participation' %}active{% endif %}"><a href="{{ site.baseurl }}/community-participation">Conduct</a></li>
-</ul>
-
-<nav class="white nav-fixed" role="navigation">
+<div class="navbar-fixed">
+<nav class="white" role="navigation">
   <div class="nav-wrapper container">
     <a href="{{ site.baseurl }}/" class="brand-logo">
       <span class="no-rtfm"></span>
       RTFM
     </a>
-    <a href="#" data-activates="menu-dropdown" class="button-collapse"><i class="material-icons">menu</i></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li class="{% if page.id == 'home' %}active{% endif %}"><a href="{{ site.baseurl }}/">Home</a></li>
-      <li class="{% if page.id == 'search' %}active{% endif %}"><a href="{{ site.baseurl }}/search">Search</a></li>
-      <li class="{% if page.id == 'projects' %}active{% endif %}"><a href="{{ site.baseurl }}/projects">Projects</a></li>
-      <li class="{% if page.id == 'team' %}active{% endif %}"><a href="{{ site.baseurl }}/team.html">Team</a></li>
-      <li class="{% if page.id == 'community-participation' %}active{% endif %}"><a href="{{ site.baseurl }}/community-participation">Conduct</a></li>
-      </ul>
+      {% include nav.html %}
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Strategies<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    <ul id="dropdown1" class="dropdown-content">
+      {% for feature in site.features%}
+        {% if feature.title and feature.title != "Our Work" %}
+          <li><a href="{{ feature.page }}">{{feature.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
   </div>
 </nav>
+</div>
+<ul class="side-nav" id="mobile-demo">
+  {% include nav.html %}
+  <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Strategies<i class="material-icons right">arrow_drop_down</i></a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+  {% for feature in site.features%}
+    {% if feature.title and feature.title != "Our Work" %}
+      <li><a href="{{ feature.page }}">{{feature.title}}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
