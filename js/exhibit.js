@@ -8,7 +8,6 @@ $(document).ready(function() {
 
   var onBefore = function(q, options, paging, searchurl) {
     $('.simplesearch-more').prop('disabled', true)
-    $('.search-facets').slideUp(500)
   }
 
   var onFail = function(error) {
@@ -97,10 +96,6 @@ $(document).ready(function() {
     searchOnSuccess: searchOnSuccess,
     teamOnSuccess: teamOnSuccess
   }
-
-  $('.search-input').bind('click', function() {
-    $('.search-facets').slideDown(750)
-  })
 
   if (typeof repos !== 'undefined' && repos !== null && repos.length > 0) {
     var total = repos.length
