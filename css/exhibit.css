@@ -1,4 +1,3 @@
-
 body {
   display: flex;
   flex-direction: column;
@@ -29,6 +28,11 @@ main {
 
 .footer-copyright .fa:hover {
   color: #000000;
+}
+
+.dropdown-content {
+  min-width: 150px;
+  margin-top: 8px;
 }
 
 .dropdown-content li > a {
@@ -165,7 +169,6 @@ div.simplesearch-reset {
   font-size: 2rem;
   margin: 1rem 0 5rem 0;
 }
-
 
 /* RESULTS */
 .search-results {
@@ -307,7 +310,6 @@ div.simplesearch-reset {
   padding: 0 0 2rem;
 }
 
-
 /* brobes */
 .strat-head {
   border-bottom: 2px solid #000;
@@ -325,6 +327,17 @@ div.simplesearch-reset {
 .sub-toc {
   margin-top: 3rem;
   border-top: 2px solid #000;
+}
+
+@media only screen and (min-width: 600px) {
+  .sidebar-fixed {
+    width: 16%;
+    position: fixed;
+  }
+}
+
+.sidebar-fixed {
+    display: block;
 }
 
 .story-img-12 {
@@ -392,11 +405,6 @@ blockquote {
   color: black;
 }
 
-
-
-
-
-
 /* Brad's CSS */
 a.brand-logo {
   color: black;
@@ -428,8 +436,6 @@ h2 {
 }
 h3 {
   font-size: 1.2rem;
-}
-h2 a {
 }
 .feature h3, h1 spans {
   border-bottom: 2px solid lightblue;
@@ -483,14 +489,4 @@ div.featured .item a.nowrap {
 div.featured .item {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
-}
-
-@media only screen and (min-width: 600px) {
-  .sidebar-fixed {
-    width: 16%;
-    position: fixed;
-  }
-}
-.sidebar-fixed {
-    display: block;
 }
