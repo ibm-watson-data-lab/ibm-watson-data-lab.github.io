@@ -1,7 +1,9 @@
 ---
-_id: ourwork
+id: ourwork
 col: s12
-section: Our Work
+title: Our Work
+permalink: our-work
+page: our-work
 ---
 
 # <span>{{ page.title }}</span> {{ page.headline }}
