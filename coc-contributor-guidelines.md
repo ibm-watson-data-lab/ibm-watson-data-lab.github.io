@@ -1,6 +1,6 @@
 ---
 permalink: contributor-guidelines
-title: advo contributor guidelines
+title: Contributor Guidelines
 layout: coc-page
 ---
 

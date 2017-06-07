@@ -1,4 +1,3 @@
-
 body {
   display: flex;
   flex-direction: column;
@@ -29,6 +28,11 @@ main {
 
 .footer-copyright .fa:hover {
   color: #000000;
+}
+
+.dropdown-content {
+  min-width: 150px;
+  margin-top: 8px;
 }
 
 .dropdown-content li > a {
@@ -103,54 +107,29 @@ div.simplesearch-reset {
 
 /** FACETS **/
 .search-facets {
-  float: left;
   font-family: "Helvetica Neue", monospace, sans-serif;
   font-size: 1.25rem;
   line-height: 1.5rem;
-  padding: 1rem 0;
-  width: 100%;
-}
-.search-facets .simplesearch-facet {
-  float: left;
-  margin-left: 3%;
-  width: 30%;
+  margin: 1.5em 0 0;
 }
 .search-facets h4 {
+  clear: both;
   font-weight: 300;
   font-size: 2rem;
-  margin: 0 0 .5rem 0;
-  padding: 0;
+  margin: 0;
   text-transform: capitalize;
 }
-.search-facets ul {
-  float: left;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.search-facets ul li {
-  color: #ccc;
-  float: left;
-  font-weight: 300;
-  margin: 0 0.5rem 0 0;
-  padding: 0;
+.simplesearch-facet-value-list {
+    margin: 0.5em 0 1.5em;
 }
 .search-facets ul li span.simplesearch-facet-value-name {
-  color: blue;
+  color: #039be5;
   cursor: pointer;
   white-space: nowrap;
   display: inline-block;
-  text-decoration: underline;
 }
 .search-facets ul li span.simplesearch-facet-value-name:hover {
   color: red;
-}
-.search-facets ul li:after {
-  content: " / ";
-}
-.search-facets ul li:last-child:after {
-  content: none;
 }
 .search-facets .simplesearch-facet-value-count {
   display: none;
@@ -166,11 +145,10 @@ div.simplesearch-reset {
   margin: 1rem 0 5rem 0;
 }
 
-
 /* RESULTS */
 .search-results {
   float: left;
-  margin: 0;
+  margin: 1.5em 0 0;
   padding: 5rem 0;
   position: relative;
   width: 100%;
@@ -307,7 +285,6 @@ div.simplesearch-reset {
   padding: 0 0 2rem;
 }
 
-
 /* brobes */
 .strat-head {
   border-bottom: 2px solid #000;
@@ -392,11 +369,6 @@ blockquote {
   color: black;
 }
 
-
-
-
-
-
 /* Brad's CSS */
 a.brand-logo {
   color: black;
@@ -428,8 +400,6 @@ h2 {
 }
 h3 {
   font-size: 1.2rem;
-}
-h2 a {
 }
 .feature h3, h1 spans {
   border-bottom: 2px solid lightblue;
@@ -471,15 +441,18 @@ div.featured .item img {
   margin-right: 3rem;
   width: 40%;
 }
+
 dl.tags dt, dl.tags dd  {
   float: left;
   margin: 0 .5rem 0 0;
   padding: 0;
 }
+
 div.featured .item a.nowrap {
   clear: left;
   display: block;
 }
+
 div.featured .item {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
@@ -491,6 +464,22 @@ div.featured .item {
     position: fixed;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .search-facets ul li {
+    float: left;
+    margin: 0 0.5rem 0 0;
+    padding: 0;
+  }
+  .search-facets ul li:after {
+    color: #ccc;
+    content: " / ";
+  }
+  .search-facets ul li:last-child:after {
+    content: none;
+  }
+}
+
 .sidebar-fixed {
     display: block;
 }
