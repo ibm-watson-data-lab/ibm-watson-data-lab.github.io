@@ -1,10 +1,10 @@
 ---
-permalink: notebooks-for-platform-first
-page: notebooks-for-platform-first
-connector: platformFirst # this is what we pass to the include, and matches the strategy collection
+permalink: notebooks-for-developers
+page: notebooks-for-developers
+connector: notebooksForDevelopers # this is what we pass to the include, and matches the strategy collection
 layout: default2
 col: m4 s12
-title: Notebooks for Platform First
+title: Notebooks for Developers
 headline: Bring the tools of data science to the millions of devs solving data problems.
 story: 
 ---
