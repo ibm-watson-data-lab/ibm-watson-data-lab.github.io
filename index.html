@@ -27,11 +27,11 @@ id: home
         <p>
           <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
         </p>
-        {% if item.tags %}
+        <!--{% if item.tags %}
         <p class="tags">
             {{ item.tags | array_to_sentence_string: "and" }}
         </p>
-        {% endif %}
+        {% endif %}-->
         <a href="{{ item.link }}" class="nowrap" title="">{{ item.title }} &rarr;</a>
       </div>
       {% endfor %}

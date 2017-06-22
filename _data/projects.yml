@@ -8,6 +8,50 @@
 
 # Old stuff at the top; new stuff appended to the bottom.
 
+- title:    reddit-sentiment-analysis
+  headline: Unlock the hidden sentiments of redditors.
+  story:    Perform sentiment analysis on a Reddit Ask Me Anything event and analyze the output.
+  link:     https://github.com/ibm-cds-labs/reddit-sentiment-analysis/
+  img:      img/reddit-ama-arch.png
+  thumb:    img/reddit-ama-arch-thumb.png
+  strategies: 
+    - differentiators
+  tags: 
+    - Cloudant
+    - Nodejs
+    - Spark
+    - Jupyter Notebook
+    - Watson Tone Analyzer
+
+- title:    Predict Flight Delays with Apache Spark
+  headline: Know about delayed flights before they happen.
+  story:    We can't guarantee you'll never miss another flight, but we can guarantee that you'll train your data and visualize predictions all in one notebook.
+  link:     https://medium.com/ibm-watson-data-lab/flightpredict-ii-the-sequel-fb613afd6e91
+  img:      img/flight-predict.png
+  thumb:    img/flight-predict-thumb.png
+  strategies: 
+    - differentiators
+    - platformFirst
+  tags: 
+    - FlightStats
+    - Weather Company
+    - Cloudant
+    - Spark
+    - Jupyter Notebook
+    - PixieDust
+
+- title:    cloudant-food-tracker
+  headline: An iOS tutorial that takes app data from unexceptional to powerful. 
+  story:    Transform Apple’s FoodTracker example into a true offline-first app that stores data locally and synchronizes to the cloud.
+  link:     https://github.com/ibm-cds-labs/cloudant-food-tracker
+  img:      img/cloudant-foodtracker.png
+  thumb:    img/cloudant-foodtracker-thumb.png
+  strategies: 
+    - offlineFirst
+  tags: 
+    - Cloudant
+    - iOS Swift
+
 - title:    location-tracker-envoy-server
   headline: Scaling the CouchDB database-per-user architecture? No problem.
   story:    Node.js backend&mdash;plus Cloudant Envoy&mdash;for location tracker demo app.
@@ -183,6 +227,11 @@
   thumb:    img/pixiedust-logo-thumb.png
   strategies: 
     - platformFirst
+  tags:
+    - Python
+    - Scala
+    - Jupyter Notebook
+    - PixieDust
   
 - title:    couchbackup
   headline: Back up your data, without breaking your back.
@@ -195,6 +244,34 @@
     - npm
     - CouchDB
     - Cloudant
+
+- title:    silverlining
+  headline: The power of Cloudant, without the complexity.
+  story:    A Node.js library that provides a simple query interface for Cloudant and abstracts advanced MapReduce & indexing features.
+  link:     https://www.npmjs.com/package/silverlining
+  strategies: 
+    - workingWithWDP
+  tags: 
+    - Cloudant
+    - npm
+
+- title:    Voice of InterConnect
+  headline: Proof that Progressive Web Apps can do some serious analysis.
+  story:    Record your thoughts locally on your phone, and see aggregated sentiment about this IBM trade show on the web.
+  link:     https://medium.com/ibm-watson-data-lab/voice-of-interconnect-112d5036dabc
+  img:      img/voice-of-interconnect.png
+  thumb:    img/voice-of-interconnect-thumb.png
+  strategies: 
+    - differentiators
+    - offlineFirst
+    - partners
+  tags: 
+    - Cloudant
+    - Hoodie
+    - Nodejs
+    - PouchDB
+    - Watson Speech to Text
+    - Watson Natural Language Understanding
 
 - title:    Adding a recommendation feature to your app using a graph DB
   headline: Graph user interactions for an even smarter chatbot.
@@ -223,3 +300,6 @@
     - Slack
     - Spoonacular
     - Cloudant
+
+
+

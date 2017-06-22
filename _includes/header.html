@@ -2,8 +2,8 @@
 <nav class="white" role="navigation">
   <div class="nav-wrapper container">
     <a href="{{ site.baseurl }}/" class="brand-logo">
-      <span class="no-rtfm"></span>
-      RTFM
+      <img src="img/watson_black.png"/>
+      <span>{{ site.title }}</span>
     </a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
@@ -12,7 +12,7 @@
     </ul>
     <ul id="dropdown1" class="dropdown-content">
       {% for feature in site.features%}
-        {% if feature.title and feature.title != "Our Work" %}
+        {% if feature.title %}
           <li><a href="{{ feature.page }}">{{feature.title}}</a></li>
         {% endif %}
       {% endfor %}

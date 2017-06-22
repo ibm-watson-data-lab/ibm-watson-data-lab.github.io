@@ -4,7 +4,7 @@
 # which you are expected to set up once and rarely need to edit after that.
 
 locale                   : "en"
-title                    : "!RTFM" #"IBM Watson Data Lab"
+title                    : "IBM Watson Data Lab"
 description              : "The things you can make with data, on the IBM Watson Data Platform"
 url                      : "https://ibm-cds-labs.github.io"
 baseurl                  : ""
