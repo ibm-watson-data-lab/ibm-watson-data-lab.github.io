@@ -11,6 +11,6 @@ story:
 
 # <span>{{ page.title }}</span> {{ page.headline }}
 
-No longer a special tool solely for data scientists, interactive notebooks neatly package code, data, and services so work can be shared across wider development teams. Central to this vision of notebooks as a collaboration tool for building data-driven apps, is [PixieDust](https://github.com/ibm-cds-labs/pixiedust), an open source Python helper library for Jupyter notebooks. Easier data visualization (no matplotlib required) is just the start.
+No longer a special tool solely for data scientists, interactive notebooks neatly package code, data, and services so work can be shared across wider development teams. Central to this vision of notebooks as a collaboration tool for building data-driven apps, is [PixieDust](https://github.com/ibm-watson-data-lab/pixiedust), an open source Python helper library for Jupyter notebooks. Easier data visualization (no matplotlib required) is just the start.
 
 {% include item.html %}

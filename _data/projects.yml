@@ -11,7 +11,7 @@
 - title:    location-tracker-envoy-server
   headline: Scaling the CouchDB database-per-user architecture? No problem.
   story:    Node.js backend&mdash;plus Cloudant Envoy&mdash;for location tracker demo app.
-  link:     https://github.com/ibm-cds-labs/location-tracker-envoy-server
+  link:     https://github.com/ibm-watson-data-lab/location-tracker-envoy-server
   img:      img/location-tracker-cloudantdash.png
   thumb:    img/location-tracker-cloudantdash-thumb.png
   strategies: 
@@ -23,7 +23,7 @@
 - title:    location-tracker-server-nodejs
   headline: The unsung hero of our location tracker demo&mdash;the back end.
   story:    Node.js backend for location tracker demo app.
-  link:     https://github.com/ibm-cds-labs/location-tracker-server-nodejs
+  link:     https://github.com/ibm-watson-data-lab/location-tracker-server-nodejs
   img:      img/location-tracker-node.png
   thumb:    img/location-tracker-node-thumb.png
   strategies: 
@@ -35,7 +35,7 @@
 - title:    location-tracker-client-swift
   headline: Track your location, offline or on.
   story:    An iOS app developed in Swift. Features Cloudant geospatial querying and data replication &amp; synch abilities.
-  link:     https://github.com/ibm-cds-labs/location-tracker-client-swift
+  link:     https://github.com/ibm-watson-data-lab/location-tracker-client-swift
   img:      img/location-tracker-client.png
   thumb:    img/location-tracker-client-thumb.png
   strategies: 
@@ -47,7 +47,7 @@
 - title:    rethinkdb-questions
   headline: Get real-time, with changefeeds in RethinkDB.
   story:    Realtime Q&A app using RethinkDB and changefeeds.
-  link:     https://github.com/ibm-cds-labs/rethinkdb-questions
+  link:     https://github.com/ibm-watson-data-lab/rethinkdb-questions
   strategies: 
     - workingWithWDP
     - misc
@@ -70,7 +70,7 @@
 - title:    couchdb-db-transform
   headline: Add some T to your ETL for CouchDB.
   story:    Utility that loads documents from one CouchDB database, transforms them, and inserts them into another database.
-  link:     https://github.com/ibm-cds-labs/couchdb-db-transform
+  link:     https://github.com/ibm-watson-data-lab/couchdb-db-transform
   strategies: 
     - workingWithWDP
   tags: 
@@ -81,7 +81,7 @@
 - title:    open-data
   headline: Curated data, open and free for you to use.
   story:    Open data sets hosted by the WDP dev advocates.
-  link:     https://github.com/ibm-cds-labs/open-data 
+  link:     https://github.com/ibm-watson-data-lab/open-data 
   strategies: 
     - workingWithWDP
     - misc
@@ -91,7 +91,7 @@
 - title:    seven-days
   headline: A quick tour of (some of) our database services.
   story:    Companion repository for the "Seven Databases in Seven Days" blog series.
-  link:     https://github.com/ibm-cds-labs/seven-days
+  link:     https://github.com/ibm-watson-data-lab/seven-days
   strategies: 
     - workingWithWDP
     - misc
@@ -108,7 +108,7 @@
 - title:    openobjectstore
   headline: Browse your Object Store from the web.
   story:    A Python Flask web app for serving files from IBM Object Storage. 
-  link:     https://github.com/ibm-cds-labs/openobjectstore
+  link:     https://github.com/ibm-watson-data-lab/openobjectstore
   strategies: 
     - workingWithWDP
     - misc
@@ -119,7 +119,7 @@
 - title:    guestbook
   headline: Hook into RabbitMQ.
   story:    A guestbook app that shows how to use webhooks with RabbitMQ and CouchDB.
-  link:     https://github.com/ibm-cds-labs/guestbook 
+  link:     https://github.com/ibm-watson-data-lab/guestbook 
   strategies: 
     - misc
     - workingWithWDP
@@ -133,7 +133,7 @@
 - title:    couchdbimporter
   headline: Load those CSVs as JSON documents.
   story:    A simple CouchDB data importer app that also shows how to bundle a web app for native distribution with Electron.
-  link:     https://github.com/ibm-cds-labs/couchdbimporter
+  link:     https://github.com/ibm-watson-data-lab/couchdbimporter
   strategies: 
     - workingWithWDP
   tags: 
@@ -144,7 +144,7 @@
 - title:    simple-search-service-sync
   headline: Sync your search index in a snap.
   story:    Continuously synchronize the index of a Simple-Search-Service instance with the content of a CouchDB/Cloudant database.
-  link:     https://github.com/ibm-cds-labs/simple-search-service-sync   
+  link:     https://github.com/ibm-watson-data-lab/simple-search-service-sync   
   strategies: 
     - workingWithWDP
     - misc
