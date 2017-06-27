@@ -401,6 +401,7 @@ blockquote {
 a.brand-logo {
   color: black;
   font-style: monospace;
+  font-size: inherit;
   position: relative;
 }
 nav.white {
@@ -410,19 +411,12 @@ nav.white {
 nav.white ul li a {
   color: black;
 }
+.sidebar {
+}
+
 h1 {
   color: #333;
-  font-size: 3rem;
-  line-height: 3.5rem;
   margin: 3rem 0;
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.2rem;
-}
-h2 a {
 }
 .feature h3 {
   border-bottom: 2px solid lightblue;
@@ -433,12 +427,12 @@ h2 a {
   padding: 0;
   text-transform: uppercase;
 }
-h1 span {
+span.lead-in {
   border: 0;
   display: block;
-  font-size: 1.2rem;
+  font-size: 45%;
   font-weight: normal;
-  line-height: 2;
+  line-height: 1.5rem;
   margin-bottom: 0;
   text-transform: none;
 }
@@ -449,15 +443,48 @@ a.quiet-link {
 a.quiet-link:hover {
   color: blue
 }
+
 .item {
-  margin-bottom: 5rem;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+.main .item {
+  margin-bottom: 4rem;
+}
+.main .item h3 {
+  margin-top: 0;
+}
+.item:last-child {
+  border-bottom: 0;
+}
+.item.active {
+  background: #eee;
+  display: none;
+}
+.sidebar .item {
+  margin: 2rem 0;
+  padding: 1rem 0;  
 }
 .feature .item {
   border-bottom: 1px solid #eee;
   margin: 0;
 }
-.nowrap {
-  white-space: nowrap;
+div.featured .item {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+.item.featured h2 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.item img {
+  max-height: 200px;
+  width: auto;
+}
+.item ul.links {
+  margin: 1rem 0;
 }
 
 div.featured .item img {
@@ -465,19 +492,32 @@ div.featured .item img {
   margin-right: 3rem;
   width: 40%;
 }
-dl.tags dt, dl.tags dd  {
-  float: left;
-  margin: 0 .5rem 0 0;
-  padding: 0;
-}
 div.featured .item a.nowrap {
   clear: left;
   display: block;
 }
-div.featured .item {
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
+
+span.tags, span.tag {
+  background-color: #e3f2fd;
 }
+a.permalink {
+  display: block;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.nowrap {
+  white-space: nowrap;
+}
+a.nowrap > i.small.material-icons {
+  vertical-align: bottom;
+}
+
+/* projects page */
+.featured-flag {
+  color: red;
+  font-weight: 400;
+}
+
 
 @media only screen and (min-width: 600px) {
   .sidebar-fixed {

@@ -1,11 +1,10 @@
 ---
 layout: default
 title: Home of the Watson Data Lab
-headline: Things we've made with data so you can too 
 id: home
 ---
 
-<div class="row container">
+<div class="row">
   <div class="col s12">
     <h1>
       Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br /> so you can, too.
@@ -16,7 +15,7 @@ id: home
   {% if feature.featured %}
     <div class="col {{ feature.col }} feature featured">
       <h3>
-        <a href="{{ feature.page }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
+        <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
       </h3>
       {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
       {% for item in array limit: 1 %}
@@ -29,7 +28,7 @@ id: home
         </p>
         {% if item.tags %}
         <p class="tags">
-            {{ item.tags | array_to_sentence_string: "and" }}
+            Features {{ item.tags | array_to_sentence_string: "and" }}.
         </p>
         {% endif %}
         <a href="{{ item.link }}" class="nowrap" title="">{{ item.title }} &rarr;</a>
@@ -41,7 +40,7 @@ id: home
 
     {% if feature.title and feature.title != "5 Ourwork" %}
       <h3>
-        <a href="{{ feature.page }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
+        <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
       </h3>
     {% endif %}
     {% if feature.section %}

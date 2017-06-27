@@ -1,40 +1,151 @@
-{% assign array = site.data.projects | where:"strategies",page.connector | reverse %}
-{% for item in array %}
-<div class="item">
+{% assign items = include.items %}
+{% assign context = include.context %}
 
-  {% if item.headline %}
-    <h2 class="headline">
-      <a href="{{ item.link }}">{{ item.headline }}</a>
-    </h2>
-  {% endif %}
+{% if context=="sidebar" %}
+<ul>
+{% for item in items %}
+  <li class="item">
+    <strong>{{ item.headline }}</strong> {{ item.story }}
 
-  {% if item.story %}
-    <p>
-      {{ item.story | markdownify }}
-    </p>
-  {% else %}
-    {{ item }}
-  {% endif %}
-
-  {% if item.img %}
-    <img src="{{ item.img }}" />
-  {% endif %}
-
-  {% if item.tags %}
-  <p class="tags">
-      <strong>Ingredients</strong>: {{ item.tags | array_to_sentence_string: "and" }}
-  </p>
-  {% endif %}
-
-    <p>
-    {% if item.link and item.title %}
-      Continue reading: <a href="{{ item.link }}" class="nowrap">{{ item.title }} &rarr;</a>
-    {% else %}
-      <a href="{{ item.link }}">Continue reading &rarr;</a>
+    {% if item.tags %}
+    <span class="tags">{{ item.tags | array_to_sentence_string: "and" }}</span>.
     {% endif %}
-    </p>
 
-    <hr />
-
-</div>
+    <ul class="links">
+      {% for link in item.links %}
+      <li>
+        <!-- {{ forloop.rindex0 }} -->
+        {% if forloop.index0 == 0 %}
+          Check out <em><a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ item.title }}</a></em> on {{ link[0] }}
+        {% else %}
+          <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }}  &rarr;</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
 {% endfor %}
+</ul>
+
+{% elsif context=="index" %}
+
+<ul>
+  {% for item in items %}
+  <li class="item {% if item.permalink and item.permalink == page.permalink %}active{% endif %}">
+    <div class="row">
+      <div class="col s12 m2">
+        {% if item.featured %}
+          <span class="featured-flag">Featured Collection</span>
+        {% endif %}
+      </div>
+      <div class="col s12 m10">
+        <strong>{{ item.headline }}</strong>
+        <br />
+          {{ item.story | truncatewords:35 }}
+          {% if item.tags %}
+          <span class="tags">{{ item.tags | array_to_sentence_string: "and" }}</span>.
+          {% endif %}
+
+          <div>
+        {% if item.permalink %}
+          <a href="/{{ item.permalink }}" class="nowrap" title="{{ item.title }}"><!--<i class="small material-icons">view_list</i> -->Continue reading: <strong>{{ item.title }}</strong></a>
+        {% else %} 
+          {% for link in item.links %}
+            {% if forloop.index0 == 0 %}   
+              <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link"><strong>{{ item.title }}</strong> on {{ link[0] }}</a> 
+              {% if forloop.last %}
+              {% else %}
+                <br />Also:  
+              {% endif %}
+            {% else %}
+                <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }}  &rarr;</a>
+              {% endif %}
+          {% endfor %}
+        {% endif %}
+          </div>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+{% elsif context=="main" %}
+
+<ul class="main">
+  {% for item in items %}
+  <li class="item {% if item.permalink and item.permalink == page.permalink %}active{% endif %}">
+        <h3>
+          <span class="lead-in">On {{ item.links.first[0] }}</span>
+          <a href="{{ item.links.first[1] }}" title="'{{ item.title }}' on {{ item.links.first[0] }}">{{ item.title }}</a> 
+        </h3>
+
+        {{ item.headline }} {{ item.story | truncatewords:35 }}
+        
+        {% if item.tags %}
+        <span class="tags">{{ item.tags | array_to_sentence_string: "and" }}</span>.
+        {% endif %}
+
+        {% if item.permalink %}
+          <a href="/{{ item.permalink }}" class="nowrap" title="{{ item.title }}"><!--<i class="small material-icons">view_list</i> -->Continue reading: <strong>{{ item.title }}</strong></a>
+        {% else %} 
+
+          {{item.links.length}}
+          {% if item.links.length > 1 %} Also: {% endif %}
+          {% for link in item.links %}
+            {% if forloop.length > 1 %}
+              {% if forloop.first %} Also: {% endif %}
+              {% if forloop.index > 1 %}
+                <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }}  &rarr;</a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+{% else %}
+
+<!-- this is the catch all -->
+<ul>
+{% for item in items %}
+  <li class="item {% if item.permalink == page.permalink %}active{% endif %}">
+    {{ item }}
+  </li>
+{% endfor %}
+</ul>
+{% endif %}
+
+
+<!--
+<ul>
+{% for item in items %}
+  <li class="item">
+    <h3>
+      {{ item.headline }}
+    </h3> 
+    <p>
+      {{ item.story }}
+    </p>
+    {% if item.img %}
+      <img src="{{ item.img }}" width="100%"/>
+    {% endif %}
+
+    {% if item.tags %}
+    <span class="tags">{{ item.tags | array_to_sentence_string: "and" }}</span>.
+    {% endif %}
+
+    <p>
+      Check out <em><a href="{{ item.links.first }}" />{{ item.title }}</a></em>
+    </p>
+          <ul>
+            {% for link in item.links %}
+            <li>
+              <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }}  &rarr;</a>
+            </li>
+            {% endfor %}
+          </ul>
+  </li>
+{% endfor %}
+</ul>
+-->

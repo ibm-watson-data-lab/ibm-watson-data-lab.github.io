@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="{{ page.id }}">
+    {% include header.html %}
+    <main>
+    	<div class="container">
+        {% assign project = site.data.projects | where:"permalink",page.permalink %}
+        <h1>
+          <span class="lead-in"><span class="featured-flag">Featured Collection</span></span>
+{{ page.title }}
+        </h1>
+
+        <div class="row">
+          <div class="col m12 s12 main flow-text">
+
+            <p class="subhead">
+              {{ page.headline }}
+            </p>
+
+            {{ content }}
+
+            <div class="divider"></div>
+            <div class="section">
+              <p class="subhead">
+                {{ project[0].title }} projects and examples
+              </p>
+              {% assign items = site.data.projects | where:"parents",page.permalink | reverse %}
+              {% include item.html items=items context="main" %}          
+            </div>
+          </div>
+        </div><!--row-->
+        <div class="divider"></div>
+        <div class="section">
+          {% for feature in site.features %}
+            {% if project[0].strategies contains feature.permalink %}
+              More like this: <a href="{{ feature.permalink }}">{{ feature.title }}</a>
+            {% endif %}
+          {% endfor %}
+          <p>
+            <a href="/projects">All projects</a>
+          </p>
+        </div><!--row-->
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

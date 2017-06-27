@@ -1,0 +1,15 @@
+{% assign items = include.items %}
+{% assign context = include.context %}
+
+<ul>
+  {% for item in items %}
+  {% assign projects = site.data.projects | where:"parents",item.permalink %}
+  <li>
+    <h3>
+      <a href="{{ item.permalink }}">{{ item.title }}</a>
+      ({{ projects.size }})
+    </h3>
+    {{ item.headline }}
+  </li>
+{% endfor %}
+</ul>

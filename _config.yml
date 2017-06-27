@@ -13,6 +13,10 @@ repository               : "ibm-cds-labs/ibm-cds-labs.github.io"
 collections:
   features:
     output: true
+  projects:
+    output: true
+
+# relative_permalinks: false
 
 exclude:
   - Gemfile

@@ -1,8 +1,18 @@
 ---
 layout: default
-title: advo repos
+title: Projects
 id: projects
 ---
+
+<h1>{{ page.title }}</h1>
+
+Technologies are <span class="tags">highlighted</span>.
+
+{% assign items = site.data.projects | sort:"featured" | reverse %}
+{% include item.html items=items context="index" %}          
+
+
+<!--
 <script>
   var repos = {{ site.github.public_repositories | jsonify }}
 </script>
@@ -23,6 +33,7 @@ id: projects
     </div>
   </section>
 </div>
+-->
 
 <!--
 <div class="row container">
