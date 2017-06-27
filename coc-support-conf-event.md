@@ -1,6 +1,6 @@
 ---
 permalink: support-conf-events
-title: advo support for conferences and events
+title: Support for Conferences and Events
 layout: coc-page
 ---
 

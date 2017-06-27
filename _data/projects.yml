@@ -12,7 +12,7 @@
   headline: Scaling the CouchDB database-per-user architecture? No problem.
   story:    Node.js backend&mdash;plus Cloudant Envoy&mdash;for location tracker demo app.
   links:     
-    Github: https://github.com/ibm-cds-labs/location-tracker-envoy-server
+    Github: https://github.com/ibm-watson-data-lab/location-tracker-envoy-server
   img:      img/location-tracker-cloudantdash.png
   thumb:    img/location-tracker-cloudantdash-thumb.png
   strategies: 
@@ -27,7 +27,7 @@
   headline: The unsung hero of our location tracker demo&mdash;the back end.
   story:    Node.js backend for location tracker demo app.
   links:     
-    Github: https://github.com/ibm-cds-labs/location-tracker-server-nodejs
+    Github: https://github.com/ibm-watson-data-lab/location-tracker-server-nodejs
   img:      img/location-tracker-node.png
   thumb:    img/location-tracker-node-thumb.png
   strategies: 
@@ -42,7 +42,7 @@
   headline: Track your location, offline or on.
   story:    An iOS app developed in Swift. Features Cloudant geospatial querying and data replication &amp; synch abilities.
   links:     
-    Github: https://github.com/ibm-cds-labs/location-tracker-client-swift
+    Github: https://github.com/ibm-watson-data-lab/location-tracker-client-swift
   img:      img/location-tracker-client.png
   thumb:    img/location-tracker-client-thumb.png
   strategies: 
@@ -57,7 +57,7 @@
   headline: Get real-time, with changefeeds in RethinkDB.
   story:    Realtime Q&A app using RethinkDB and changefeeds.
   links:     
-    Github: https://github.com/ibm-cds-labs/rethinkdb-questions
+    Github: https://github.com/ibm-watson-data-lab/rethinkdb-questions
   strategies: 
     - working-with-wdp
     - misc
@@ -82,7 +82,7 @@
   headline: Add some T to your ETL for CouchDB.
   story:    Utility that loads documents from one CouchDB database, transforms them, and inserts them into another database.
   links:     
-    Github: https://github.com/ibm-cds-labs/couchdb-db-transform
+    Github: https://github.com/ibm-watson-data-lab/couchdb-db-transform
   strategies: 
     - working-with-wdp
   parents:
@@ -96,7 +96,7 @@
   headline: Curated data, open and free for you to use.
   story:    Open data sets hosted by the WDP dev advocates.
   links:     
-    Github: https://github.com/ibm-cds-labs/open-data 
+    Github: https://github.com/ibm-watson-data-lab/open-data 
   strategies: 
     - working-with-wdp
     - misc
@@ -107,7 +107,7 @@
   headline: A quick tour of (some of) our database services.
   story:    Companion Github repository for the "Seven Databases in Seven Days" blog series.
   links:     
-    Github: https://github.com/ibm-cds-labs/seven-days
+    Github: https://github.com/ibm-watson-data-lab/seven-days
   strategies: 
     - working-with-wdp
     - misc
@@ -125,7 +125,7 @@
   headline: Browse your Object Store from the web.
   story:    A Python Flask web app for serving files from IBM Object Storage. 
   links:     
-    Github: https://github.com/ibm-cds-labs/openobjectstore
+    Github: https://github.com/ibm-watson-data-lab/openobjectstore
   strategies: 
     - working-with-wdp
     - misc
@@ -137,7 +137,7 @@
   headline: Hook into RabbitMQ.
   story:    A guestbook app that shows how to use webhooks with RabbitMQ and CouchDB.
   links:     
-    Github: https://github.com/ibm-cds-labs/guestbook 
+    Github: https://github.com/ibm-watson-data-lab/guestbook 
   strategies: 
     - misc
     - working-with-wdp
@@ -152,7 +152,7 @@
   headline: Load those CSVs as JSON documents.
   story:    A simple CouchDB data importer app that also shows how to bundle a web app for native distribution with Electron.
   links:     
-    Github: https://github.com/ibm-cds-labs/couchdbimporter
+    Github: https://github.com/ibm-watson-data-lab/couchdbimporter
   strategies: 
     - working-with-wdp
   parents:
@@ -166,7 +166,7 @@
   headline: Sync your search index in a snap.
   story:    Continuously synchronize the index of a Simple-Search-Service instance with the content of a CouchDB/Cloudant database.
   links:     
-    Github: https://github.com/ibm-cds-labs/simple-search-service-sync   
+    Github: https://github.com/ibm-watson-data-lab/simple-search-service-sync   
   strategies: 
     - working-with-wdp
     - misc
@@ -219,7 +219,7 @@
   story:    In which we suggest new recipies to the user, based on similar interaction from others.
   links:     
     Medium: https://medium.freecodecamp.com/have-you-had-the-talk-with-your-chatbot-about-graph-data-structures-3aaf5c3ae52c
-    Github: https://github.com/ibm-cds-labs/watson-recipe-bot-nodejs-graph
+    Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-graph
   img:      img/graph-chatbot.png
   thumb:    img/graph-chatbot-thumb.png
   parents:   
@@ -237,7 +237,7 @@
   story:    In which we use data services to provide a more personal chatbot experience, save money by reducing third-party API calls, and perform analysis on past chatbot conversations.
   links: 
     Medium: https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
-    Github: https://github.com/ibm-cds-labs/watson-recipe-bot-python-cloudant
+    Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant
   img:      img/smarter-chatbot.jpg
   thumb:    img/smarter-chatbot-thumb.jpg
   parents:   
@@ -273,7 +273,7 @@
   story:    In this article, I’ll look at how we analyzed conversations with our bot. I’ll also provide a Jupyter notebook that Raj and I worked on, which hopefully gives you ideas on how to connect application logs to Apache Spark™ for back-end analytics. The notebook takes you through data access, all the way to visualizing results.
   links: 
     Medium: https://medium.com/ibm-watson-data-lab/the-most-popular-search-term-at-sxsw-according-to-our-chatbot-9f4a47a33406
-    Github: https://github.com/ibm-cds-labs/cognitive-event-finder/
+    Github: https://github.com/ibm-watson-data-lab/cognitive-event-finder/
     Notebook: http://ibm.biz/sxswappmetrics
   parents: 
     - pixiedust
