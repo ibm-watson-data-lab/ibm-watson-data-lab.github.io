@@ -3,7 +3,6 @@ title:      IBM + Data
 headline:   Come for the sizzle, stay for the data.
 permalink:  differentiators
 layout:     layout-strategy
-col:        s12
 featured:   true
 ---
 
