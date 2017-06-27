@@ -4,14 +4,32 @@ title: Home of the Watson Data Lab
 id: home
 ---
 
-<div class="row">
-  <div class="col s12">
-    <h1>
-      Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br /> so you can, too.
-    </h1>
-  </div>
+<h1>
+  Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br /> so you can, too.
+</h1>
 
+<div class="row">
   {% for feature in site.features %}
+  <div class="col {% if feature.featured %}m12{% else %}m4{% endif %} s12 feature">
+    <a href="/{{ feature.permalink }}" title="{{ feature.headline }}">{{ feature.title }}</a>
+    <div>
+      {% assign collections = site.projects | where:"strategies",feature.permalink %}
+      {% for collection in collections limit:1 %}
+        <strong><a href="/{{ collection.permalink }}">{{ collection.title }}</a></strong><br />
+        {{ collection.headline }} {{ collection.story }}
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div class="divider"></div>
+<div class="section">
+  <p>
+    <a href="/projects">All projects</a>
+  </p>
+</div>
+
+<!--
   {% if feature.featured %}
     <div class="col {{ feature.col }} feature featured">
       <h3>
@@ -59,6 +77,4 @@ id: home
 
   </div>
   {% endif %}
-  {% endfor %}
-
-</div>
+-->

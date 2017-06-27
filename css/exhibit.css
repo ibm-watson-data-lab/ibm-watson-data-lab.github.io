@@ -411,30 +411,28 @@ nav.white {
 nav.white ul li a {
   color: black;
 }
-.sidebar {
-}
 
 h1 {
   color: #333;
   margin: 3rem 0;
-}
-.feature h3 {
-  border-bottom: 2px solid lightblue;
-  display: inline;
-  font-size: .9rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
-  padding: 0;
-  text-transform: uppercase;
 }
 span.lead-in {
   border: 0;
   display: block;
   font-size: 45%;
   font-weight: normal;
-  line-height: 1.5rem;
+  line-height: 2rem;
   margin-bottom: 0;
   text-transform: none;
+}
+h1 span.lead-in {
+  line-height: 3rem;
+}
+
+/* home page */
+div.feature {
+  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 a.quiet-link {
@@ -444,15 +442,13 @@ a.quiet-link:hover {
   color: blue
 }
 
+/* for projects */
 .item {
-  border-bottom: 1px solid #ccc;
-  padding: 1rem 0;
-  margin: 1rem 0;
+  border-bottom: 1px solid #eee;
+  padding: .5rem 0;
+  margin: .5rem 0;
 }
-.main .item {
-  margin-bottom: 4rem;
-}
-.main .item h3 {
+.item h3 {
   margin-top: 0;
 }
 .item:last-child {
@@ -462,23 +458,6 @@ a.quiet-link:hover {
   background: #eee;
   display: none;
 }
-.sidebar .item {
-  margin: 2rem 0;
-  padding: 1rem 0;  
-}
-.feature .item {
-  border-bottom: 1px solid #eee;
-  margin: 0;
-}
-div.featured .item {
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
-}
-.item.featured h2 {
-  font-size: 2rem;
-  margin: 0;
-  padding: 0;
-}
 .item img {
   max-height: 200px;
   width: auto;
@@ -487,14 +466,10 @@ div.featured .item {
   margin: 1rem 0;
 }
 
-div.featured .item img {
-  float: left;
-  margin-right: 3rem;
-  width: 40%;
-}
-div.featured .item a.nowrap {
-  clear: left;
-  display: block;
+
+ul.see-also li.active a {
+  color: #666;
+  text-decoration: line-through;
 }
 
 span.tags, span.tag {
