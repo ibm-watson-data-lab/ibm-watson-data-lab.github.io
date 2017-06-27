@@ -1,15 +1,34 @@
 {% assign items = include.items %}
 {% assign context = include.context %}
 
+{% if context=="main" %}
+
 <ul>
   {% for item in items %}
   {% assign projects = site.data.projects | where:"parents",item.permalink %}
   <li>
     <h3>
-      <a href="{{ item.permalink }}">{{ item.title }}</a>
+      <span class="lead-in featured-flag">Featured collection</span>
+      <a href="/{{ item.permalink }}">{{ item.title }}</a>
       ({{ projects.size }})
     </h3>
     {{ item.headline }}
   </li>
-{% endfor %}
+  {% endfor %}
 </ul>
+
+{% elsif context=="index" %}
+
+  {% for item in items %}
+  {% assign projects = site.data.projects | where:"parents",item.permalink %}
+  <div>
+    <strong>
+      <a href="/{{ item.permalink }}">{{ item.title }}</a>
+      ({{ projects.size }} projects)
+    </strong><br />
+    {{ item.headline }}
+  </div>
+  {% endfor %}
+
+
+{% endif %}

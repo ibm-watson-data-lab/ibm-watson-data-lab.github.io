@@ -1,75 +1,7 @@
 {% assign items = include.items %}
 {% assign context = include.context %}
 
-{% if context=="sidebar" %}
-<ul>
-{% for item in items %}
-  <li class="item">
-    <strong>{{ item.headline }}</strong> {{ item.story }}
-
-    {% if item.tags %}
-    <span class="tags">{{ item.tags | array_to_sentence_string: "and" }}</span>.
-    {% endif %}
-
-    <ul class="links">
-      {% for link in item.links %}
-      <li>
-        <!-- {{ forloop.rindex0 }} -->
-        {% if forloop.index0 == 0 %}
-          Check out <em><a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ item.title }}</a></em> on {{ link[0] }}
-        {% else %}
-          <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }}  &rarr;</a>
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  </li>
-{% endfor %}
-</ul>
-
-{% elsif context=="index" %}
-
-<ul>
-  {% for item in items %}
-  <li class="item {% if item.permalink and item.permalink == page.permalink %}active{% endif %}">
-    <div class="row">
-      <div class="col s12 m2">
-        {% if item.featured %}
-          <span class="featured-flag">Featured Collection</span>
-        {% endif %}
-      </div>
-      <div class="col s12 m10">
-        <strong>{{ item.headline }}</strong>
-        <br />
-          {{ item.story | truncatewords:35 }}
-          {% if item.tags %}
-          <span class="tags">{{ item.tags | array_to_sentence_string: "and" }}</span>.
-          {% endif %}
-
-          <div>
-        {% if item.permalink %}
-          <a href="/{{ item.permalink }}" class="nowrap" title="{{ item.title }}"><!--<i class="small material-icons">view_list</i> -->Continue reading: <strong>{{ item.title }}</strong></a>
-        {% else %} 
-          {% for link in item.links %}
-            {% if forloop.index0 == 0 %}   
-              <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link"><strong>{{ item.title }}</strong> on {{ link[0] }}</a> 
-              {% if forloop.last %}
-              {% else %}
-                <br />Also:  
-              {% endif %}
-            {% else %}
-                <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }}  &rarr;</a>
-              {% endif %}
-          {% endfor %}
-        {% endif %}
-          </div>
-      </div>
-    </div>
-  </li>
-  {% endfor %}
-</ul>
-
-{% elsif context=="main" %}
+{% if context=="main" %}
 
 <ul class="main">
   {% for item in items %}
@@ -79,27 +11,63 @@
           <a href="{{ item.links.first[1] }}" title="'{{ item.title }}' on {{ item.links.first[0] }}">{{ item.title }}</a> 
         </h3>
 
-        {{ item.headline }} {{ item.story | truncatewords:35 }}
-        
+        <div class="row">
+          <div class="col m8">
+            {{ item.headline }} {{ item.story }}
+            <p>
+              {% if item.tags %}
+              <span class="tags">{{ item.tags | array_to_sentence_string: "and" }}</span>.
+              {% endif %}
+            </p>
+          </div>
+          <div class="col m3 offset-m1">
+            Related
+            <ul>
+              {% for link in item.links %}
+              <li>
+                <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+
+  </li>
+  {% endfor %}
+</ul>
+
+{% elsif context=="index"%}
+
+<ul class="main">
+  {% for item in items %}
+  <li class="item">
+    <div class="row">
+      <div class="col m2">
+        {{ item.links.first[0] }}
+      </div>
+      <div class="col m10">
+        <strong>
+          <a href="{{ item.links.first[1] }}" title="'{{ item.title }}' on {{ item.links.first[0] }}">{{ item.title }}</a> 
+        </strong><br />
+        {{ item.headline }}
+
         {% if item.tags %}
         <span class="tags">{{ item.tags | array_to_sentence_string: "and" }}</span>.
         {% endif %}
 
-        {% if item.permalink %}
-          <a href="/{{ item.permalink }}" class="nowrap" title="{{ item.title }}"><!--<i class="small material-icons">view_list</i> -->Continue reading: <strong>{{ item.title }}</strong></a>
-        {% else %} 
-
-          {{item.links.length}}
-          {% if item.links.length > 1 %} Also: {% endif %}
+        {% if item.links.size > 1 %}
+        <div>
+          Also:
           {% for link in item.links %}
-            {% if forloop.length > 1 %}
-              {% if forloop.first %} Also: {% endif %}
-              {% if forloop.index > 1 %}
-                <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }}  &rarr;</a>
-              {% endif %}
+            {% if link[1] != item.links.first[1]}
+            {% else %}
+              <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }} <i class="material-icons tiny">open_in_new</i></a>&nbsp;
             {% endif %}
           {% endfor %}
+        </div>
         {% endif %}
+      </div>
+    </div><!--row-->
   </li>
   {% endfor %}
 </ul>
