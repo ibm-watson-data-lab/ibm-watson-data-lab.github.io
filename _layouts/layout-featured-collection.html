@@ -23,7 +23,7 @@
             <div class="divider"></div>
             <div class="section">
               <p class="subhead">
-                {{ project[0].title }} projects and examples
+                {{ page.title }} projects and examples
               </p>
               {% assign items = site.data.projects | where:"parents",page.permalink | reverse %}
               {% include item.html items=items context="main" %}          
@@ -33,7 +33,7 @@
         <div class="divider"></div>
         <div class="section">
           {% for feature in site.features %}
-            {% if project[0].strategies contains feature.permalink %}
+            {% if page.strategies contains feature.permalink %}
               More like this: <a href="{{ feature.permalink }}">{{ feature.title }}</a>
             {% endif %}
           {% endfor %}

@@ -23,21 +23,15 @@
             {{ content }}
 
             {% if collections.size > 0 %}
-            <div class="divider"></div>
-            <div class="section">
               <!-- get the featured projects pages relating to this strategy -->
-              <div class="featured-flag">
-                Featured collections
-              </div>
               {% include item-featured.html items=collections context="main" %}
-            </div>
             {% endif %}
 
             {% if projects.size > 0 %}
             <div class="divider"></div>
             <div class="section">
               <div class="subhead">
-                Project work
+                Related projects
               </div>
               {% include item.html items=projects context="main" %}          
             </div>
@@ -47,6 +41,16 @@
         </div><!--row-->
         <div class="divider"></div>
         <div class="section">
+          <h3>
+            See also
+          </h3>
+          <ul class="see-also">
+            {% for topic in site.features %}
+            <li {% if topic.permalink == page.permalink %}class="active"{% endif %}>
+              <a href="{{ topic.permalink }}">{{ topic.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
           <p>
             <a href="/projects">All projects</a>
           </p>
