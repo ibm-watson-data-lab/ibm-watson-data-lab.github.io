@@ -17,6 +17,8 @@
   thumb:    img/location-tracker-cloudantdash-thumb.png
   strategies: 
     - offline-first
+  parents:
+    - location-tracker
   tags: 
     - Cloudant
     - Nodejs
@@ -30,6 +32,8 @@
   thumb:    img/location-tracker-node-thumb.png
   strategies: 
     - offline-first
+  parents:
+    - location-tracker
   tags: 
     - Cloudant
     - Nodejs
@@ -43,6 +47,8 @@
   thumb:    img/location-tracker-client-thumb.png
   strategies: 
     - offline-first
+  parents:
+    - location-tracker
   tags: 
     - Cloudant
     - iOS Swift
@@ -79,6 +85,8 @@
     Github: https://github.com/ibm-cds-labs/couchdb-db-transform
   strategies: 
     - working-with-wdp
+  parents:
+    - loading-data
   tags: 
     - Cloudant
     - CouchDB
@@ -147,6 +155,8 @@
     Github: https://github.com/ibm-cds-labs/couchdbimporter
   strategies: 
     - working-with-wdp
+  parents:
+    - loading-data
   tags: 
     - CouchDB
     - Electron
@@ -160,6 +170,8 @@
   strategies: 
     - working-with-wdp
     - misc
+  parents:
+    - simple-search
   tags: 
     - CouchDB
     - Cloudant
@@ -172,6 +184,8 @@
     npm: https://www.npmjs.com/package/nosqlimport
   strategies: 
     - working-with-wdp
+  parents:
+    - loading-data
   tags: 
     - Nodejs
     - CouchDB
