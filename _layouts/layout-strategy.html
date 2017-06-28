@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="{{ page.id }}">
+    {% include header.html %}
+    <main>
+    	<div class="container">
+        <!-- get the data from the features/strategies pages 
+        {% assign project = site.features | where:"permalink",page.permalink %}
+        -->
+
+        {% assign collections = site.projects | where:"strategies",page.permalink %}
+        {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
+
+        <h1>
+          <span class="lead-in">{{ page.title }}</span>
+          {{ page.headline }}
+        </h1>
+
+        <div class="row">
+          <div class="col m12 s12 flow-text">
+
+            {{ content }}
+
+            {% if collections.size > 0 %}
+              <!-- get the featured projects pages relating to this strategy -->
+              {% include item-featured.html items=collections context="main" %}
+            {% endif %}
+
+            {% if projects.size > 0 %}
+            <div class="divider"></div>
+            <div class="section">
+              <div class="subhead">
+                Related projects
+              </div>
+              {% include item.html items=projects context="main" %}          
+            </div>
+            {% endif %}
+
+          </div>
+        </div><!--row-->
+        <div class="divider"></div>
+        <div class="section">
+          <h3>
+            See also
+          </h3>
+          <ul class="see-also">
+            {% for topic in site.features %}
+            <li {% if topic.permalink == page.permalink %}class="active"{% endif %}>
+              <a href="{{ topic.permalink }}">{{ topic.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          <p>
+            <a href="/projects">All projects</a>
+          </p>
+        </div><!--row-->
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

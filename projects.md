@@ -1,8 +1,37 @@
 ---
 layout: default
-title: Repos
+title: Projects
 id: projects
 ---
+
+<h1>{{ page.title }}</h1>
+
+Technologies are <span class="tags">highlighted</span>.
+
+<div class="row">
+  <div class="col m3">
+    <p class="subhead">
+      Featured collections
+    </p>
+  </div>
+  <div class="col m9">
+    {% assign items = site.projects  %}
+    {% include item-featured.html items=items context="index" %}          
+  </div>
+</div>
+
+
+<div class="divider"></div>
+<div class="section">
+  <p class="subhead">
+    Project work
+  </p>
+
+  {% assign items = site.data.projects | reverse %}
+  {% include item.html items=items context="index" %}          
+</div>
+
+<!--
 <script>
   var repos = {{ site.github.public_repositories | jsonify }}
 </script>
@@ -23,6 +52,7 @@ id: projects
     </div>
   </section>
 </div>
+-->
 
 <!--
 <div class="row container">

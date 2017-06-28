@@ -1,22 +1,39 @@
 ---
 layout: default
 title: Home of the Watson Data Lab
-headline: Things we've made with data so you can too 
 id: home
 ---
 
-<div class="row container">
-  <div class="col s12">
-    <h1>
-      Things we made with data,<br /> so you can, too.
-    </h1>
-  </div>
+<h1>
+  Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br /> so you can, too.
+</h1>
 
+<div class="row">
   {% for feature in site.features %}
+  <div class="col {% if feature.featured %}m12{% else %}m4{% endif %} s12 feature">
+    <a href="/{{ feature.permalink }}" title="{{ feature.headline }}">{{ feature.title }}</a>
+    <div>
+      {% assign collections = site.projects | where:"strategies",feature.permalink %}
+      {% for collection in collections limit:1 %}
+        <strong><a href="/{{ collection.permalink }}">{{ collection.title }}</a></strong><br />
+        {{ collection.headline }} {{ collection.story }}
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div class="divider"></div>
+<div class="section">
+  <p>
+    <a href="/projects">All projects</a>
+  </p>
+</div>
+
+<!--
   {% if feature.featured %}
     <div class="col {{ feature.col }} feature featured">
       <h3>
-        <a href="{{ feature.page }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
+        <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
       </h3>
       {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
       {% for item in array limit: 1 %}
@@ -29,7 +46,7 @@ id: home
         </p>
         {% if item.tags %}
         <p class="tags">
-            {{ item.tags | array_to_sentence_string: "and" }}
+            Features {{ item.tags | array_to_sentence_string: "and" }}.
         </p>
         {% endif %}
         <a href="{{ item.link }}" class="nowrap" title="">{{ item.title }} &rarr;</a>
@@ -41,7 +58,7 @@ id: home
 
     {% if feature.title and feature.title != "Our Work" %}
       <h3>
-        <a href="{{ feature.page }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
+        <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
       </h3>
     {% endif %}
     {% if feature.section %}
@@ -60,6 +77,4 @@ id: home
 
   </div>
   {% endif %}
-  {% endfor %}
-
-</div>
+-->
