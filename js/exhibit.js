@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('.modal').modal()
 
   // do not include listed projects
-  // must be full name (i.e., 'ibm-cds-labs/pipes')
+  // must be full name (i.e., 'ibm-watson-data-lab/pipes')
   var skipRepos = []
 
   var onBefore = function(q, options, paging, searchurl) {

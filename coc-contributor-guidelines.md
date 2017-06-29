@@ -13,7 +13,7 @@ So, you’ve found an interesting project and want to contribute, but you’ve g
 You have the questions, and we have the answers. Let’s dive in and guide you through the process for making a contribution to a project. You’ll be an open source expert in no time.
 
 #### How do I get started?
-Well, you've already started — you’ve explored [Watson Data Lab](https://github.com/ibm-cds-labs) and have found a project that you want to delve into further.
+Well, you've already started — you’ve explored [Watson Data Lab](https://github.com/ibm-watson-data-lab) and have found a project that you want to delve into further.
 
 The first thing you should do is learn how to get started with [GitHub](https://github.com/). Learn how to create a GitHub account if you don’t already have one. Next, you’ll need to set up Git on your machine. Fortunately, GitHub has a really useful "bootcamp" that has a whole section on [setting up Git](https://help.github.com/articles/set-up-git/) for your machine. Once you’ve completed the set-up, you can begin to do more advanced tasks like cloning a project to your local machine so that you can start to dig in to the code, make changes, and contribute to the community.
 
@@ -27,6 +27,6 @@ The answer to that question is "yes … with some prep work." After you’ve spe
 For other projects that don’t require a signed CLA, we ask that you include a line similar to the following as part of your pull request comments: **"DCO 1.1 Signed-off-by: Random J Developer"**. "DCO" stands for "Developer Certificate of Origin," and refers to the [same text used in the Linux Kernel community](http://elinux.org/Developer_Certificate_Of_Origin). By adding this simple comment, you tell the community that you wrote the code you are contributing, or you have the right to pass on the code that you are contributing.
 
 #### Where can I find help if I need it?
-Each project in Watson Data Lab includes a set of helpful links on the project page, including links to deploy the project on Bluemix and a link to the repo on GitHub. You can also find contact info for each of our team members via their individual [GitHub profiles](https://github.com/orgs/ibm-cds-labs/teams/devadvs).
+Each project in Watson Data Lab includes a set of helpful links on the project page, including links to deploy the project on Bluemix and a link to the repo on GitHub. You can also find contact info for each of our team members via their individual [GitHub profiles](https://github.com/orgs/ibm-watson-data-lab/teams/devadvs).
  
 These OS Contributor guidelines were revised from [DeveloperWorks Open Project guide](https://developer.ibm.com/open/contribute/).

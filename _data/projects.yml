@@ -1,9 +1,9 @@
 # strategies:
-#   - platformFirst
-#   - offlineFirst
+#   - notebooks-for-developers
+#   - offline-first
 #   - differentiators
 #   - partners
-#   - workingWithWDP
+#   - working-with-wdp
 #   - misc
 
 # Old stuff at the top; new stuff appended to the bottom.
@@ -55,11 +55,14 @@
 - title:    location-tracker-envoy-server
   headline: Scaling the CouchDB database-per-user architecture? No problem.
   story:    Node.js backend&mdash;plus Cloudant Envoy&mdash;for location tracker demo app.
-  link:     https://github.com/ibm-cds-labs/location-tracker-envoy-server
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/location-tracker-envoy-server
   img:      img/location-tracker-cloudantdash.png
   thumb:    img/location-tracker-cloudantdash-thumb.png
   strategies: 
-    - offlineFirst
+    - offline-first
+  parents:
+    - location-tracker
   tags: 
     - Cloudant
     - Nodejs
@@ -67,11 +70,14 @@
 - title:    location-tracker-server-nodejs
   headline: The unsung hero of our location tracker demo&mdash;the back end.
   story:    Node.js backend for location tracker demo app.
-  link:     https://github.com/ibm-cds-labs/location-tracker-server-nodejs
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/location-tracker-server-nodejs
   img:      img/location-tracker-node.png
   thumb:    img/location-tracker-node-thumb.png
   strategies: 
-    - offlineFirst
+    - offline-first
+  parents:
+    - location-tracker
   tags: 
     - Cloudant
     - Nodejs
@@ -79,11 +85,14 @@
 - title:    location-tracker-client-swift
   headline: Track your location, offline or on.
   story:    An iOS app developed in Swift. Features Cloudant geospatial querying and data replication &amp; synch abilities.
-  link:     https://github.com/ibm-cds-labs/location-tracker-client-swift
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/location-tracker-client-swift
   img:      img/location-tracker-client.png
   thumb:    img/location-tracker-client-thumb.png
   strategies: 
-    - offlineFirst
+    - offline-first
+  parents:
+    - location-tracker
   tags: 
     - Cloudant
     - iOS Swift
@@ -91,9 +100,10 @@
 - title:    rethinkdb-questions
   headline: Get real-time, with changefeeds in RethinkDB.
   story:    Realtime Q&A app using RethinkDB and changefeeds.
-  link:     https://github.com/ibm-cds-labs/rethinkdb-questions
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/rethinkdb-questions
   strategies: 
-    - workingWithWDP
+    - working-with-wdp
     - misc
   tags: 
     - Compose
@@ -104,9 +114,10 @@
 - title:    nodejs-cloudant
   headline: JavaScript all the way down.
   story:    Official Cloudant-Node.js client library.
-  link:     https://github.com/cloudant/nodejs-cloudant
+  links:     
+    Github: https://github.com/cloudant/nodejs-cloudant
   strategies: 
-    - workingWithWDP
+    - working-with-wdp
   tags: 
     - Cloudant
     - Nodejs
@@ -114,9 +125,12 @@
 - title:    couchdb-db-transform
   headline: Add some T to your ETL for CouchDB.
   story:    Utility that loads documents from one CouchDB database, transforms them, and inserts them into another database.
-  link:     https://github.com/ibm-cds-labs/couchdb-db-transform
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/couchdb-db-transform
   strategies: 
-    - workingWithWDP
+    - working-with-wdp
+  parents:
+    - loading-data
   tags: 
     - Cloudant
     - CouchDB
@@ -125,19 +139,21 @@
 - title:    open-data
   headline: Curated data, open and free for you to use.
   story:    Open data sets hosted by the WDP dev advocates.
-  link:     https://github.com/ibm-cds-labs/open-data 
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/open-data 
   strategies: 
-    - workingWithWDP
+    - working-with-wdp
     - misc
   tags: 
     - data set
 
 - title:    seven-days
   headline: A quick tour of (some of) our database services.
-  story:    Companion repository for the "Seven Databases in Seven Days" blog series.
-  link:     https://github.com/ibm-cds-labs/seven-days
+  story:    Companion Github repository for the "Seven Databases in Seven Days" blog series.
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/seven-days
   strategies: 
-    - workingWithWDP
+    - working-with-wdp
     - misc
   tags: 
     - Cloudant
@@ -152,9 +168,10 @@
 - title:    openobjectstore
   headline: Browse your Object Store from the web.
   story:    A Python Flask web app for serving files from IBM Object Storage. 
-  link:     https://github.com/ibm-cds-labs/openobjectstore
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/openobjectstore
   strategies: 
-    - workingWithWDP
+    - working-with-wdp
     - misc
   tags: 
     - Object Storeage
@@ -163,10 +180,11 @@
 - title:    guestbook
   headline: Hook into RabbitMQ.
   story:    A guestbook app that shows how to use webhooks with RabbitMQ and CouchDB.
-  link:     https://github.com/ibm-cds-labs/guestbook 
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/guestbook 
   strategies: 
     - misc
-    - workingWithWDP
+    - working-with-wdp
   tags: 
     - CouchDB
     - Compose
@@ -177,9 +195,12 @@
 - title:    couchdbimporter
   headline: Load those CSVs as JSON documents.
   story:    A simple CouchDB data importer app that also shows how to bundle a web app for native distribution with Electron.
-  link:     https://github.com/ibm-cds-labs/couchdbimporter
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/couchdbimporter
   strategies: 
-    - workingWithWDP
+    - working-with-wdp
+  parents:
+    - loading-data
   tags: 
     - CouchDB
     - Electron
@@ -188,60 +209,44 @@
 - title:    simple-search-service-sync
   headline: Sync your search index in a snap.
   story:    Continuously synchronize the index of a Simple-Search-Service instance with the content of a CouchDB/Cloudant database.
-  link:     https://github.com/ibm-cds-labs/simple-search-service-sync   
+  links:     
+    Github: https://github.com/ibm-watson-data-lab/simple-search-service-sync   
   strategies: 
-    - workingWithWDP
+    - working-with-wdp
     - misc
+  parents:
+    - simple-search
   tags: 
     - CouchDB
     - Cloudant
     - Nodejs
-
-- title:    Offline Camp
-  headline: Building the Offline First! community, one campfire at a time.
-  story:    Authentic, yeah!
-  link:     https://medium.com/offline-camp
-  img:      img/offlinecamp-logo.jpg
-  thumb:    img/offlinecamp-logo-thumb.jpg
-  strategies: 
-    - offlineFirst
 
 - title:    nosqlimport
   headline: Moving data doesn’t have to suck.
   story:    Read data from a text file, transform it, and write JSON to CouchDB, Cloudant, and ElasticSearch. 
-  link:     https://www.npmjs.com/package/nosqlimport
+  links:     
+    npm: https://www.npmjs.com/package/nosqlimport
   strategies: 
-    - workingWithWDP
+    - working-with-wdp
+  parents:
+    - loading-data
   tags: 
     - Nodejs
-    - npm
     - CouchDB
     - Cloudant
     - ElasticSearch
 
-- title:    PixieDust
-  headline: Working with data is a team sport.
-  story:    PixieDust is a helper library for Python notebooks. It makes working with data simpler.
-  link:     https://medium.com/ibm-watson-data-lab/i-am-not-a-data-scientist-efe7ca6ceba2
-  img:      img/pixiedust-logo.png
-  thumb:    img/pixiedust-logo-thumb.png
-  strategies: 
-    - platformFirst
-  tags:
-    - Python
-    - Scala
-    - Jupyter Notebook
-    - PixieDust
-  
 - title:    couchbackup
   headline: Back up your data, without breaking your back.
   story:    Just dump it to a text file. Do what you like from there. 
-  link:     https://www.npmjs.com/package/couchbackup
+  links:     
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/03/22/simple-couchdb-and-cloudant-backup/
+    npm:            https://www.npmjs.com/package/couchbackup
+    Github:         https://github.com/glynnbird/couchbackup
   strategies: 
-    - workingWithWDP
+    - working-with-wdp
   tags: 
     - Nodejs
-    - npm
     - CouchDB
     - Cloudant
 
@@ -273,12 +278,23 @@
     - Watson Speech to Text
     - Watson Natural Language Understanding
 
+# this file holds assets that appear on featured collections
+# featured collections include:
+#   - pixiedust
+#   - watson-and-data
+#   - simple-suite (TBD)
+#   - loading-data (TBD)
+
 - title:    Adding a recommendation feature to your app using a graph DB
   headline: Graph user interactions for an even smarter chatbot.
   story:    In which we suggest new recipies to the user, based on similar interaction from others.
-  link:     https://medium.freecodecamp.com/have-you-had-the-talk-with-your-chatbot-about-graph-data-structures-3aaf5c3ae52c
+  links:     
+    Medium: https://medium.freecodecamp.com/have-you-had-the-talk-with-your-chatbot-about-graph-data-structures-3aaf5c3ae52c
+    Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-graph
   img:      img/graph-chatbot.png
   thumb:    img/graph-chatbot-thumb.png
+  parents:   
+    - watson-and-data
   strategies: 
     - differentiators
   tags: 
@@ -288,11 +304,15 @@
     - Tinkerpop
 
 - title:    Persisting Data for a Smarter Chatbot
-  headline: Watson is cool, but Watson with Data is smart.
-  story:    In which we provide a more personal chatbot experience, save money by reducing third-party API calls, and perform analysis on past chatbot conversations.
-  link:     https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
+  headline: You'll need more than just log data to take your chatbot to the next level.
+  story:    In which we use data services to provide a more personal chatbot experience, save money by reducing third-party API calls, and perform analysis on past chatbot conversations.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
+    Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant
   img:      img/smarter-chatbot.jpg
   thumb:    img/smarter-chatbot-thumb.jpg
+  parents:   
+    - watson-and-data
   strategies: 
     - differentiators
   tags: 
@@ -301,5 +321,39 @@
     - Spoonacular
     - Cloudant
 
+- title:    Mapping for Data Science with PixieDust and Mapbox
+  headline: Add another layer to your Jupyter notebooks with built-in map rendering.
+  story:    Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. 
+  img:      img/watson_black.png
+  links:
+    Medium: https://medium.com/ibm-watson-data-lab/mapping-for-data-science-with-pixiedust-and-mapbox-b5aa1d9532b9
+  parents: 
+    - pixiedust
 
+- title:    I am Not a Data Scientist (But I play one in this blog post, thanks to PixieDust)
+  headline: Notebooks aren't just for Data Scientists.
+  story:    Now, people with varied skills and skill levels — even people like me — can use and share notebooks, and collaborate. 
+  img:      img/pixiedust-logo-thumb.png
+  links:
+    Medium: https://medium.com/ibm-watson-data-lab/i-am-not-a-data-scientist-efe7ca6ceba2
+  parents: 
+    - pixiedust
 
+- title:    The Most Popular Search Term at SXSW, According to Our Chatbot
+  headline: Analyzing conversation data using Spark, Jupyter, and PixieDust.
+  story:    In this article, I’ll look at how we analyzed conversations with our bot. I’ll also provide a Jupyter notebook that Raj and I worked on, which hopefully gives you ideas on how to connect application logs to Apache Spark™ for back-end analytics. The notebook takes you through data access, all the way to visualizing results.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/the-most-popular-search-term-at-sxsw-according-to-our-chatbot-9f4a47a33406
+    Github: https://github.com/ibm-watson-data-lab/cognitive-event-finder/
+    Notebook: http://ibm.biz/sxswappmetrics
+  parents: 
+    - pixiedust
+    
+- title:    Predictable, Progressive, Performant — The New Builders Podcast Episode about Offline First
+  headline: 2nd Encore of our Panel Discussion from SXSW 2017
+  story:    Gathering a group of busy industry leaders for a panel discussion on Offline First is no easy task, but it sure was a lot of fun. We felt bad that so many people who wanted to attend one of our two panel discussions at SXSW weren’t able to make it in to either packed room, so we decided to have the conversation one more time. Just for you! 
+  links: 
+    Medium: https://medium.com/offline-camp/predictable-progressive-performant-the-new-builders-podcast-episode-about-offline-first-260116bfdc9b
+    Podcast: https://developer.ibm.com/tv/sxsw-offline-first/
+  parents: 
+    - offline-camp
