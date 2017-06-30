@@ -15,6 +15,9 @@ tags:
   - Scala
   - Apache Spark
   - Reactive apps
+essentials:
+  PixieDust on Github: https://github.com/ibm-watson-data-lab/pixiedust
+  PixieDust Docs:   https://ibm-watson-data-lab.github.io/pixiedust/
 
 ---
 
@@ -26,8 +29,10 @@ this is the second one this is the second one this is the second onethis is the 
 
 Before you dive into the examples below, check these out first:
 
-1. [https://github.com/ibm-cds-labs/pixiedust](https://github.com/ibm-cds-labs/pixiedust)
-1. Documentation
+{% if page.essentials and page.essentials.size > 0 %}
+{% for link in page.essentials %}
+1. [{{ link[0] }}]({{ link[1] }}){% endfor %}
+{% endif %}
 
 this is the third this is the third this is the third this is the third this is the third this is the third this is the third this is the third this is the third this is the third.
 

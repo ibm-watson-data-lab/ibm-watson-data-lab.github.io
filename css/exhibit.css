@@ -8,7 +8,7 @@ body {
 
 main {
   flex: 1 0 auto;
-  margin-top: 50px;
+  margin-top: 2rem;
 }
 
 .brand-logo > span {
@@ -369,6 +369,11 @@ blockquote {
   color: black;
 }
 
+
+
+
+
+
 /* Brad's CSS */
 a.brand-logo {
   color: black;
@@ -377,7 +382,6 @@ a.brand-logo {
   position: relative;
 }
 nav.white {
-  background: white;
   box-shadow: none;
 }
 nav.white ul li a {
@@ -405,6 +409,21 @@ h1 span.lead-in {
 div.feature {
   margin: 2rem 0;
   padding: 2rem 0;
+}
+div.featured-collection {
+  margin: 1rem 0;
+}
+div.featured-collection.featured {
+}
+div.featured-collection.featured .title {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  margin: 0 0 0 0;
+  padding-bottom: .25rem;
+}
+div.featured-collection.featured .headline {
+  font-size: 2rem;
+  line-height: 1.75rem;
 }
 
 a.quiet-link {
@@ -437,7 +456,6 @@ a.quiet-link:hover {
 .item ul.links {
   margin: 1rem 0;
 }
-
 
 ul.see-also li.active a {
   color: #666;

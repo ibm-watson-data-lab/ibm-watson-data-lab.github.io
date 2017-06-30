@@ -3,7 +3,7 @@ title:      Watson &amp; Data Services
 headline:   Watson is smart, but Watson with data is smarter.
 layout:     layout-featured-collection
 permalink:  watson-and-data
-featured: true
+img:        img/watson_black.png
 strategies: 
   - differentiators
 tags: 
@@ -11,7 +11,6 @@ tags:
   - Slack
   - Cloudant
   - Tinkerpop
-
 ---
 
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.

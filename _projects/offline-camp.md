@@ -8,9 +8,17 @@ img:        img/offlinecamp-logo.jpg
 thumb:      img/offlinecamp-logo-thumb.jpg
 strategies: 
   - offline-first
+essentials:
+  Offline Camp on Medium: https://medium.com/offline-camp
+  Offline Camp Calendar:  http://offlinefirst.org/camp/
 ---
 
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph. this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
+
+{% if page.essentials and page.essentials.size > 0 %}
+{% for link in page.essentials %}
+[{{ link[0] }}]({{ link[1] }}){% endfor %}
+{% endif %}
 
 this is the second one this is the second one this is the second onethis is the second one. this is the second one this is the second one this is the second onethis is the second one. this is the second one this is the second one this is the second onethis is the second one.
 

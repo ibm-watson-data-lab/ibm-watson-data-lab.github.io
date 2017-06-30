@@ -11,25 +11,43 @@
 {{ page.title }}
         </h1>
 
-        <div class="row">
-          <div class="col m12 s12 main flow-text">
+        <div class="flow-text">
 
-            <p class="subhead">
-              {{ page.headline }}
-            </p>
+          <p class="subhead">
+            {{ page.headline }}
+          </p>
 
-            {{ content }}
+          {{ content }}
 
-            <div class="divider"></div>
-            <div class="section">
+        </div>
+
+        <div class="divider"></div>
+        <div class="section">
+          <div class="row">
+            {% if page.essentials and page.essentials.size > 0 %}
+            <div class="col m4">
+              <p class="subhead">
+                {{ page.title }} Essentials
+              </p>
+              <ul>
+            {% for link in page.essentials %}
+                <li>
+                  <a href="{{ link[1] }}" title="{{ link[1] }}">{{ link[0] }} &rarr;</a>
+                </li>
+            {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+            <div class="col {% if page.essentials and page.essentials.size > 0 %}m8{% else %}m12{% endif %}">
               <p class="subhead">
                 {{ page.title }} projects and examples
               </p>
               {% assign items = site.data.projects | where:"parents",page.permalink | reverse %}
-              {% include item.html items=items context="main" %}          
+              {% include item.html items=items context="index" %}          
             </div>
           </div>
-        </div><!--row-->
+        </div>
+
         <div class="divider"></div>
         <div class="section">
           {% for feature in site.features %}
