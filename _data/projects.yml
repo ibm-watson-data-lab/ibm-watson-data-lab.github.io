@@ -4,7 +4,6 @@
 #   - differentiators
 #   - partners
 #   - working-with-wdp
-#   - misc
 
 # Old stuff at the top; new stuff appended to the bottom.
 
@@ -43,11 +42,12 @@
 - title:    cloudant-food-tracker
   headline: An iOS tutorial that takes app data from unexceptional to powerful. 
   story:    Transform Apple’s FoodTracker example into a true offline-first app that stores data locally and synchronizes to the cloud.
-  link:     https://github.com/ibm-cds-labs/cloudant-food-tracker
+  links:
+    Github: https://github.com/ibm-cds-labs/cloudant-food-tracker
   img:      img/cloudant-foodtracker.png
   thumb:    img/cloudant-foodtracker-thumb.png
   strategies: 
-    - offlineFirst
+    - offline-first
   tags: 
     - Cloudant
     - iOS Swift
@@ -104,7 +104,6 @@
     Github: https://github.com/ibm-watson-data-lab/rethinkdb-questions
   strategies: 
     - working-with-wdp
-    - misc
   tags: 
     - Compose
     - Nodejs
@@ -143,7 +142,6 @@
     Github: https://github.com/ibm-watson-data-lab/open-data 
   strategies: 
     - working-with-wdp
-    - misc
   tags: 
     - data set
 
@@ -154,7 +152,6 @@
     Github: https://github.com/ibm-watson-data-lab/seven-days
   strategies: 
     - working-with-wdp
-    - misc
   tags: 
     - Cloudant
     - Compose
@@ -172,7 +169,6 @@
     Github: https://github.com/ibm-watson-data-lab/openobjectstore
   strategies: 
     - working-with-wdp
-    - misc
   tags: 
     - Object Storeage
     - Python
@@ -183,7 +179,6 @@
   links:     
     Github: https://github.com/ibm-watson-data-lab/guestbook 
   strategies: 
-    - misc
     - working-with-wdp
   tags: 
     - CouchDB
@@ -213,7 +208,6 @@
     Github: https://github.com/ibm-watson-data-lab/simple-search-service-sync   
   strategies: 
     - working-with-wdp
-    - misc
   parents:
     - simple-search
   tags: 
@@ -263,9 +257,12 @@
 - title:    Voice of InterConnect
   headline: Proof that Progressive Web Apps can do some serious analysis.
   story:    Record your thoughts locally on your phone, and see aggregated sentiment about this IBM trade show on the web.
-  link:     https://medium.com/ibm-watson-data-lab/voice-of-interconnect-112d5036dabc
+  links:
+    Medium: https://medium.com/ibm-watson-data-lab/voice-of-interconnect-112d5036dabc
+    Github: https://github.com/neighbourhoodie/voice-of-interconnect
   img:      img/voice-of-interconnect.png
   thumb:    img/voice-of-interconnect-thumb.png
+  parents:  offline-first
   strategies: 
     - differentiators
     - offlineFirst

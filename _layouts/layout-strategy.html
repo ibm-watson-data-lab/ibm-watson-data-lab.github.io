@@ -10,7 +10,6 @@
         -->
 
         {% assign collections = site.projects | where:"strategies",page.permalink %}
-        {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
 
         <h1>
           <span class="lead-in">{{ page.title }}</span>
@@ -33,7 +32,8 @@
               <div class="subhead">
                 Related projects
               </div>
-              {% include item.html items=projects context="main" %}          
+              {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
+              {% include item.html items=projects context="main" %}
             </div>
             {% endif %}
 

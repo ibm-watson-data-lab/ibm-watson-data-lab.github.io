@@ -12,7 +12,7 @@
     <ul id="dropdown1" class="dropdown-content">
       {% for feature in site.features%}
         {% if feature.title %}
-          <li><a href="{{ feature.page }}">{{feature.title}}</a></li>
+          <li><a href="{{ feature.permalink }}">{{feature.title}}</a></li>
         {% endif %}
       {% endfor %}
     </ul>
@@ -25,8 +25,6 @@
 </ul>
 <ul id="dropdown2" class="dropdown-content">
   {% for feature in site.features%}
-    {% if feature.title and feature.title != "Our Work" %}
-      <li><a href="{{ feature.page }}">{{feature.title}}</a></li>
-    {% endif %}
+    <li><a href="{{ feature.permalink }}">{{feature.title}}</a></li>
   {% endfor %}
 </ul>
