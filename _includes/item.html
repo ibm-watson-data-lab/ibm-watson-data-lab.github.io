@@ -3,7 +3,7 @@
 
 {% if context=="main" %}
 
-<ul class="main">
+<ul class="{{ context }}">
   {% for item in items %}
   <li class="item {% if item.permalink and item.permalink == page.permalink %}active{% endif %}">
         <h3>
@@ -38,7 +38,7 @@
 
 {% elsif context=="index"%}
 
-<ul class="main">
+<ul class="{{ context }}">
   {% for item in items %}
   <li class="item">
     <div class="row">
@@ -72,6 +72,36 @@
   {% endfor %}
 </ul>
 
+{% elsif context=="sidebar"%}
+
+<ul class="{{ context }}">
+  {% for item in items %}
+  <li class="item">
+    {{ item.links.first[0] }}<br />
+    <strong>
+      <a href="{{ item.links.first[1] }}" title="'{{ item.title }}' on {{ item.links.first[0] }}">{{ item.title }}</a> 
+    </strong><br />
+    {{ item.headline }}
+
+    {% if item.tags %}
+    <span class="tags">{{ item.tags | array_to_sentence_string: "and" }}</span>.
+    {% endif %}
+
+    {% if item.links.size > 1 %}
+    <div>
+      Also:
+      {% for link in item.links %}
+        {% if link[1] != item.links.first[1]}
+        {% else %}
+          <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }} <i class="material-icons tiny">open_in_new</i></a>&nbsp;
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
 {% else %}
 
 <!-- this is the catch all -->
@@ -83,37 +113,3 @@
 {% endfor %}
 </ul>
 {% endif %}
-
-
-<!--
-<ul>
-{% for item in items %}
-  <li class="item">
-    <h3>
-      {{ item.headline }}
-    </h3> 
-    <p>
-      {{ item.story }}
-    </p>
-    {% if item.img %}
-      <img src="{{ item.img }}" width="100%"/>
-    {% endif %}
-
-    {% if item.tags %}
-    <span class="tags">{{ item.tags | array_to_sentence_string: "and" }}</span>.
-    {% endif %}
-
-    <p>
-      Check out <em><a href="{{ item.links.first }}" />{{ item.title }}</a></em>
-    </p>
-          <ul>
-            {% for link in item.links %}
-            <li>
-              <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="link">{{ link[0] }}  &rarr;</a>
-            </li>
-            {% endfor %}
-          </ul>
-  </li>
-{% endfor %}
-</ul>
--->

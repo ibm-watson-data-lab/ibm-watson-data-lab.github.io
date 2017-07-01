@@ -4,21 +4,37 @@ title: Home of the Watson Data Lab
 id: home
 ---
 
+{% assign features = site.features | sort:'featured' | reverse %}
 <h1>
-  Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br /> so you can, too.
+  Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br />so you can, too.
 </h1>
 
 <div class="row">
-  {% for feature in site.features %}
-  <div class="col {% if feature.featured %}m12{% else %}m4{% endif %} s12 feature">
+  {% for feature in features %}
+  <div class="col {% if feature.featured %}m12{% else %}m4{% endif %} feature">
     <a href="/{{ feature.permalink }}" title="{{ feature.headline }}">{{ feature.title }}</a>
-    <div>
-      {% assign collections = site.projects | where:"strategies",feature.permalink %}
-      {% for collection in collections limit:1 %}
-        <strong><a href="/{{ collection.permalink }}">{{ collection.title }}</a></strong><br />
-        {{ collection.headline }} {{ collection.story }}
-      {% endfor %}
+    {% assign collections = site.projects | where:"strategies",feature.permalink %}
+    {% for collection in collections limit:2 %}
+    <div class="featured-collection {% if feature.featured %}featured{% endif %}">
+        <strong class="title"><a href="/{{ collection.permalink }}" title="{{ collection.headline }}">{{ collection.title }}</a></strong><br />
+
+        {% if feature.featured and collection.img %}
+        <div class="row">
+          <div class="col m4">
+            <img src="{{ collection.img }}" />
+          </div>
+          <div class="col m8">
+              <strong class="headline">{{ collection.headline }}</strong>
+              {{ collection.content | truncatewords:20 }}<br />
+              <a href="{{ collection.permalink }}" title="Continue reading {{ collection.title }}">Continue reading</a>
+          </div>
+        </div>
+        {% else %}
+          {{ collection.headline }}
+        {% endif %}
+
     </div>
+    {% endfor %}
   </div>
   {% endfor %}
 </div>

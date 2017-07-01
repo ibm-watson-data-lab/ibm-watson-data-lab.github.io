@@ -11,43 +11,40 @@
 {{ page.title }}
         </h1>
 
-        <div class="flow-text">
+        <div>
 
-          <p class="subhead">
+          <p class="">
             {{ page.headline }}
           </p>
 
-          {{ content }}
-
-        </div>
-
-        <div class="divider"></div>
-        <div class="section">
           <div class="row">
-            {% if page.essentials and page.essentials.size > 0 %}
-            <div class="col m4">
-              <p class="subhead">
-                {{ page.title }} Essentials
-              </p>
-              <ul>
-            {% for link in page.essentials %}
-                <li>
-                  <a href="{{ link[1] }}" title="{{ link[1] }}">{{ link[0] }} &rarr;</a>
-                </li>
-            {% endfor %}
-              </ul>
+            <div class="col m8 flow-text">
+              {{ content }}
             </div>
-            {% endif %}
-            <div class="col {% if page.essentials and page.essentials.size > 0 %}m8{% else %}m12{% endif %}">
-              <p class="subhead">
-                {{ page.title }} projects and examples
-              </p>
-              {% assign items = site.data.projects | where:"parents",page.permalink | reverse %}
-              {% include item.html items=items context="index" %}          
+            <div class="col m4">
+              {% if page.essentials and page.essentials.size > 0 %}
+                <p class="subhead">
+                  {{ page.title }} Essentials
+                </p>
+                <ul>
+              {% for link in page.essentials %}
+                  <li>
+                    <a href="{{ link[1] }}" title="{{ link[1] }}">{{ link[0] }} &rarr;</a>
+                  </li>
+              {% endfor %}
+                </ul>
+              {% endif %}
+              <div class="divider"></div>
+              <div class="section">
+                <p class="subhead">
+                  {{ page.title }} projects and examples
+                </p>
+                {% assign items = site.data.projects | where:"parents",page.permalink | reverse %}
+                {% include item.html items=items context="sidebar" %}                          
+              </div>
             </div>
           </div>
         </div>
-
         <div class="divider"></div>
         <div class="section">
           {% for feature in site.features %}

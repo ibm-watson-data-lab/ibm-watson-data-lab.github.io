@@ -17,7 +17,7 @@ this is the first paragraph this is the first paragraph this is the first paragr
 
 {% if page.essentials and page.essentials.size > 0 %}
 {% for link in page.essentials %}
-[{{ link[0] }}]({{ link[1] }}){% endfor %}
+1. [{{ link[0] }}]({{ link[1] }}){% endfor %}
 {% endif %}
 
 this is the second one this is the second one this is the second onethis is the second one. this is the second one this is the second one this is the second onethis is the second one. this is the second one this is the second one this is the second onethis is the second one.

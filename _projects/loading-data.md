@@ -1,6 +1,6 @@
 ---
 title:      Loading data
-headline:   Moving data into data services should be easy.
+headline:   Moving data into data services should be easy. We can help.
 layout:     layout-featured-collection
 permalink:  loading-data
 strategies: 

@@ -3,19 +3,22 @@
 
 {% if context=="main" %}
 
-<ul>
+<div class="collections {{ context }} row">
   {% for item in items %}
   {% assign projects = site.data.projects | where:"parents",item.permalink %}
-  <li>
+  <div class="col m6">
     <h3>
-      <span class="lead-in featured-flag">Featured collection</span>
+      <span class="lead-in featured-flag">Featured Collection</span>
       <a href="/{{ item.permalink }}">{{ item.title }}</a>
-      ({{ projects.size }})
     </h3>
     {{ item.headline }}
-  </li>
+    {{ item.story }}
+    <p>
+      <a href="/{{ item.permalink }}">Continue reading ({{ projects.size }} projects)</a>
+    </p>
+  </div>
   {% endfor %}
-</ul>
+</div>
 
 {% elsif context=="index" %}
 
