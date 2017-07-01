@@ -8,6 +8,19 @@
 
 # Old stuff at the top; new stuff appended to the bottom.
 
+- title:    cloudant-food-tracker
+  headline: An iOS tutorial that takes app data from unexceptional to powerful. 
+  story:    Transform Apple’s FoodTracker example into a true offline-first app that stores data locally and synchronizes to the cloud.
+  links:
+    Github: https://github.com/ibm-cds-labs/cloudant-food-tracker
+  img:      img/cloudant-foodtracker.png
+  thumb:    img/cloudant-foodtracker-thumb.png
+  strategies: 
+    - offline-first
+  tags: 
+    - Cloudant
+    - iOS Swift
+    
 - title:    location-tracker-envoy-server
   headline: Scaling the CouchDB database-per-user architecture? No problem.
   story:    Node.js backend&mdash;plus Cloudant Envoy&mdash;for location tracker demo app.
@@ -286,3 +299,12 @@
     Podcast: https://developer.ibm.com/tv/sxsw-offline-first/
   parents: 
     - offline-camp
+
+- title:    Offline Camp Berlin is proud to have the support of Google Cloud Platform
+  headline: Their support and their perspective helps us push the movement forward with greater understanding, stability, and focus.
+  story:    As part of their support of Offline Camp, Google Cloud Platform (GCP) attended to explore the places outside of connectivity to the cloud. Myles Borins, who represented the GCP team, came to do early research into the role that they could can play in an offline future. 
+  links: 
+    Medium: https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0
+  parents: 
+    - offline-camp
+
