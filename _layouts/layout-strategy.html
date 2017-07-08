@@ -18,14 +18,17 @@
 
             {{ content }}
 
-            {% assign collections = site.projects | where:"strategies",page.permalink %}
-            {% if collections.size > 0 %}
-              <!-- get the featured projects pages relating to this strategy -->
-              {% include item-featured.html items=collections context="main" %}
-            {% endif %}
-        </div><!--row-->
+        </div><!--flow-->
         {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
         {% if projects.size > 0 %}
+        <div class="section">
+          {% assign collections = site.projects | where:"strategies",page.permalink %}
+          {% if collections.size > 0 %}
+            <!-- get the featured projects pages relating to this strategy -->
+            {% include item-featured.html items=collections context="main" %}
+          {% endif %}
+        </div>
+
         <div class="divider"></div>
         <div class="section">
           <div class="subhead">
