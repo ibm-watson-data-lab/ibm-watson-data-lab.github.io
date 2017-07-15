@@ -10,7 +10,7 @@
       <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Topics<i class="material-icons right">arrow_drop_down</i></a></li>
     </ul>
     <ul id="dropdown1" class="dropdown-content">
-      {% for feature in site.features %}
+      {% for feature in site.strategies %}
         <li><a href="/{{ feature.permalink }}">{{feature.title}}</a></li>
       {% endfor %}
     </ul>
@@ -22,7 +22,7 @@
   <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Strategies<i class="material-icons right">arrow_drop_down</i></a></li>
 </ul>
 <ul id="dropdown2" class="dropdown-content">
-  {% for feature in site.features %}
+  {% for feature in site.strategies %}
     <li><a href="/{{ feature.permalink }}">{{feature.title}}</a></li>
   {% endfor %}
 </ul>

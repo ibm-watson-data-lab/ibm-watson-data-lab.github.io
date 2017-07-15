@@ -3,7 +3,8 @@ title:      Watson &amp; Data Services
 headline:   Watson is smart, but Watson with data is smarter.
 layout:     layout-featured-collection
 permalink:  watson-and-data
-img:        img/watson_black.png
+img:        watson_black.png
+img-thumb:  watson_black.png
 strategies: 
   - differentiators
 tags: 

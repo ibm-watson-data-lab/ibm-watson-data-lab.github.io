@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Home of the Watson Data Lab
-id: home
+title: Home
 ---
 
-{% assign features = site.features | sort:'featured' | reverse %}
+{% assign features = site.strategies | sort:'featured' | reverse %}
 <h1>
   Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br />so you can, too.
 </h1>
@@ -13,7 +12,7 @@ id: home
   {% for feature in features %}
   <div class="col {% if feature.featured %}m12{% else %}m4{% endif %} feature">
     <a href="/{{ feature.permalink }}" title="{{ feature.headline }}">{{ feature.title }}</a>
-    {% assign collections = site.projects | where:"strategies",feature.permalink %}
+    {% assign collections = site.features | where:"strategies",feature.permalink %}
     {% for collection in collections limit:2 %}
     <div class="featured-collection {% if feature.featured %}featured{% endif %}">
         <strong class="title"><a href="/{{ collection.permalink }}" title="{{ collection.headline }}">{{ collection.title }}</a></strong><br />

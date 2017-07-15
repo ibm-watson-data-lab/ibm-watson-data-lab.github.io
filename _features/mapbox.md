@@ -1,17 +1,16 @@
 ---
-title:      Offline Camp
-headline:   Building the Offline First! community, one campfire at a time.
+title:      Mapbox
+headline:   Putting data to work on awesome maps.
 layout:     layout-featured-collection
-permalink:  offline-camp
+permalink:  mapbox
 featured:   true
-img:        img/offlinecamp-logo.jpg
-thumb:      img/offlinecamp-logo-thumb.jpg
+img:        icon.png
+img-thumb:  icon.png
 strategies: 
-  - offline-first
-essentials:
-  Offline Camp on Medium: https://medium.com/offline-camp
-  Offline Camp Calendar:  http://offlinefirst.org/camp/
+  - partners
 ---
+
+![placeholder logo](img/{{ page.img }})
 
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph. this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
 

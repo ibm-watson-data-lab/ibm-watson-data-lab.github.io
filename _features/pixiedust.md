@@ -5,8 +5,8 @@ story:      PixieDust is a helper library for Python notebooks. It makes working
 permalink:  pixiedust
 layout:     layout-featured-collection
 featured:   true
-img:        img/pixiedust-logo.png
-thumb:      img/pixiedust-logo-thumb.png
+img:        pixiedust-logo.png
+img-thumb:  pixiedust-logo-thumb.png
 strategies: 
   - notebooks-for-developers
 tags: 

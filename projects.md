@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Projects
-id: projects
 ---
 
 <h1>{{ page.title }}</h1>
@@ -13,7 +12,7 @@ id: projects
     </div>
   </div>
   <div class="col m9">
-    {% assign items = site.projects  %}
+    {% assign items = site.features  %}
     {% include item-featured.html items=items context="index" %}          
   </div>
 </div>

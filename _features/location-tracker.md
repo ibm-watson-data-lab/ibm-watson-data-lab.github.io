@@ -3,6 +3,8 @@ title:      Location Tracker
 headline:   Every application benefits from location, even offline apps.
 layout:     layout-featured-collection
 permalink:  location-tracker
+img:        location-tracker-client.png
+img-thumb:  location-tracker-client-thumb.png
 strategies: 
   - offline-first
 ---

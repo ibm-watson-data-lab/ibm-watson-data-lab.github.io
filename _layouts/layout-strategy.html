@@ -19,16 +19,17 @@
             {{ content }}
 
         </div><!--flow-->
+
+        <!-- get the featured projects pages relating to this strategy -->
+        {% assign collections = site.features | where:"strategies",page.permalink %}
+        {% if collections.size > 0 %}
+        <div class="section">
+          {% include item-featured.html items=collections context="main" %}
+        </div>
+        {% endif %}
+
         {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
         {% if projects.size > 0 %}
-        <div class="section">
-          {% assign collections = site.projects | where:"strategies",page.permalink %}
-          {% if collections.size > 0 %}
-            <!-- get the featured projects pages relating to this strategy -->
-            {% include item-featured.html items=collections context="main" %}
-          {% endif %}
-        </div>
-
         <div class="divider"></div>
         <div class="section">
           <div class="subhead">
@@ -48,7 +49,7 @@
             </div>
             <div class="col m10">
               <ul class="see-also">
-                {% for topic in site.features %}
+                {% for topic in site.strategies %}
                 <li {% if topic.permalink == page.permalink %}class="active"{% endif %}>
                   <a href="{{ topic.permalink }}">{{ topic.title }}</a>
                 </li>

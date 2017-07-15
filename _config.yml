@@ -11,9 +11,9 @@ baseurl                  : ""
 repository               : "ibm-watson-data-lab/ibm-watson-data-lab.github.io"
 
 collections:
-  features:
+  strategies:
     output: true
-  projects:
+  features:
     output: true
 
 # relative_permalinks: false
