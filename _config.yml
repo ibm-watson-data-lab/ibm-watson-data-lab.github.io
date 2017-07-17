@@ -13,6 +13,10 @@ repository               : "ibm-watson-data-lab/ibm-watson-data-lab.github.io"
 collections:
   features:
     output: true
+  projects:
+    output: true
+
+# relative_permalinks: false
 
 exclude:
   - Gemfile
