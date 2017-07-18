@@ -1,7 +1,7 @@
 ---
 title:      PixieDust
-headline:   Working with data is a team sport.
-story:      PixieDust is a helper library for Python notebooks. It makes working with data simpler.
+headline:   A helper library for Python notebooks. It makes working with data simpler.
+story:      Working with data is a team sport.
 permalink:  pixiedust
 layout:     layout-featured-collection
 featured:   true
