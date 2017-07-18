@@ -1,0 +1,47 @@
+{% assign item = include.item %}
+{% assign tier = include.tier %}
+{% assign limit = include.limit %}
+
+<div class="divider"></div>
+<div class="section">
+  <a href="/{{ item.permalink }}" title="{{ item.headline }}" class="strategy">{{ item.title }}</a>
+  {% assign collections = site.features | where:"strategies",item.permalink %}
+  {% for collection in collections limit:limit %}
+  <div class="item">
+    {% if tier == "1" %}
+    <h5>
+      <a href="/{{ collection.permalink }}" title="{{ collection.title }}">{{ collection.headline }}</a>
+    </h5>
+    {% else %}
+    <strong>
+      <a href="/{{ collection.permalink }}" title="{{ collection.headline }}">{{ collection.title }}</a>
+    </strong>
+    {% endif %}
+
+    {% if tier=="1" %}
+      {{ collection.content | truncatewords:40 }}
+      <p>
+        <a href="/{{ collection.permalink }}" />Continue reading</a>
+      </p>
+    {% else %}
+      {{ collection.headline }}
+    {% endif %}
+
+    {% if tier == "1" and collection.img %}
+    <!--
+    <div>
+      <img src="img/{{ collection.img }}" />
+    </div>
+    -->
+    {% endif %}
+    {% if tier > "1" and collection.img-thumb %}
+    <!--
+    <div>
+      <img src="img/{{ collection.img-thumb }}" />
+    </div>
+    -->
+    {% endif %}
+
+  </div>
+  {% endfor %}
+</div>

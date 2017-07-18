@@ -1,33 +1,66 @@
 ---
 layout: default
-title: Home of the Watson Data Lab
-id: home
+title:  Home
+id:     home
 ---
 
 <h1>
-  Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br /> so you can, too.
+  Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br />so you can, too.
 </h1>
 
+{% assign strategies = site.strategies %}
 <div class="row">
-  {% for feature in site.features %}
-  <div class="col {% if feature.featured %}m12{% else %}m4{% endif %} s12 feature">
-    <a href="/{{ feature.permalink }}" title="{{ feature.headline }}">{{ feature.title }}</a>
-    <div>
-      {% assign collections = site.projects | where:"strategies",feature.permalink %}
-      {% for collection in collections limit:1 %}
-        <strong><a href="/{{ collection.permalink }}">{{ collection.title }}</a></strong><br />
-        {{ collection.headline }} {{ collection.story }}
-      {% endfor %}
-    </div>
+  <div class="col m6">
+    <!-- get the featured strategy(ies) -->
+    {% assign items = strategies | where:"tier","1" %}
+    {% for item in items %}
+      {% include item-home.html item=item tier='1' limit='2' %}                          
+    {% endfor %}
   </div>
-  {% endfor %}
+  <div class="col m4">
+    {% assign items = strategies | where:"tier","2" %}
+    {% for item in items %}
+      {% include item-home.html item=item tier='2' limit='2' %}                          
+    {% endfor %}
+  </div>
+  <div class="col m2">
+    {% assign items = strategies | where:"tier","3" %}
+    {% for item in items %}
+      {% include item-home.html item=item tier='3' limit='10' %}                          
+    {% endfor %}
+  </div>
 </div>
+
 <div class="divider"></div>
 <div class="section">
   <p>
     <a href="/projects">All projects</a>
   </p>
 </div>
+
+
+{% comment %}
+  {% for item in items %}
+    {% capture modulo %}{{ forloop.index0 | modulo:3 }}{% endcapture %}
+    <!-- begin the row -->
+    {% if modulo == '0' or forloop.first %}
+      <div class="row">
+    {% endif %}
+        <div class="col m4 s12">
+          {{ forloop.index0 }} - {{ modulo }}
+        </div>
+    <!-- end the row -->
+    {% if modulo == '2' or forloop.last %}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endcomment %}
+
+
+
+
+
+
 
 <!--
   {% if feature.featured %}

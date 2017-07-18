@@ -1,24 +1,18 @@
 ---
-title:      Offline Camp
-headline:   Building the Offline First! community, one campfire at a time.
+title:      Simple Search
+headline:   Turn a CSV into an API that powers a search engine.
 layout:     layout-featured-collection
-permalink:  offline-camp
-featured:   true
-img:        img/offlinecamp-logo.jpg
-thumb:      img/offlinecamp-logo-thumb.jpg
+permalink:  simple-search
+img:        icon.png
+img-thumb:  icon.png
 strategies: 
-  - offline-first
+  - working-with-wdp
+essentials:
+  Simple Search on Github: https://github.com/ibm-watson-data-lab/simple-search-service
 ---
-
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph. this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
 
 this is the second one this is the second one this is the second onethis is the second one. this is the second one this is the second one this is the second onethis is the second one. this is the second one this is the second one this is the second onethis is the second one.
-
-## This is a subhead
-
-this is the third this is the third this is the third this is the third this is the third this is the third this is the third this is the third this is the third this is the third.
-
-![placeholder image](img/watson_black.png)
 
 Bullets:
 - materialize hides bullet points by default

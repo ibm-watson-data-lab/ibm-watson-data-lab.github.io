@@ -5,9 +5,27 @@
 #   - partners
 #   - working-with-wdp
 #   - misc
+# features:
+#   - pixiedust
+#   - watson-and-data
+#   - simple-suite (TBD)
+#   - loading-data (TBD)
 
 # Old stuff at the top; new stuff appended to the bottom.
 
+- title:    cloudant-food-tracker
+  headline: An iOS tutorial that takes app data from unexceptional to powerful. 
+  story:    Transform Apple’s FoodTracker example into a true offline-first app that stores data locally and synchronizes to the cloud.
+  links:
+    Github: https://github.com/ibm-cds-labs/cloudant-food-tracker
+  img:      img/cloudant-foodtracker.png
+  thumb:    img/cloudant-foodtracker-thumb.png
+  strategies: 
+    - offline-first
+  tags: 
+    - Cloudant
+    - iOS Swift
+    
 - title:    location-tracker-envoy-server
   headline: Scaling the CouchDB database-per-user architecture? No problem.
   story:    Node.js backend&mdash;plus Cloudant Envoy&mdash;for location tracker demo app.
@@ -17,7 +35,7 @@
   thumb:    img/location-tracker-cloudantdash-thumb.png
   strategies: 
     - offline-first
-  parents:
+  features:
     - location-tracker
   tags: 
     - Cloudant
@@ -32,7 +50,7 @@
   thumb:    img/location-tracker-node-thumb.png
   strategies: 
     - offline-first
-  parents:
+  features:
     - location-tracker
   tags: 
     - Cloudant
@@ -47,7 +65,7 @@
   thumb:    img/location-tracker-client-thumb.png
   strategies: 
     - offline-first
-  parents:
+  features:
     - location-tracker
   tags: 
     - Cloudant
@@ -85,7 +103,7 @@
     Github: https://github.com/ibm-watson-data-lab/couchdb-db-transform
   strategies: 
     - working-with-wdp
-  parents:
+  features:
     - loading-data
   tags: 
     - Cloudant
@@ -155,7 +173,7 @@
     Github: https://github.com/ibm-watson-data-lab/couchdbimporter
   strategies: 
     - working-with-wdp
-  parents:
+  features:
     - loading-data
   tags: 
     - CouchDB
@@ -170,7 +188,7 @@
   strategies: 
     - working-with-wdp
     - misc
-  parents:
+  features:
     - simple-search
   tags: 
     - CouchDB
@@ -184,7 +202,7 @@
     npm: https://www.npmjs.com/package/nosqlimport
   strategies: 
     - working-with-wdp
-  parents:
+  features:
     - loading-data
   tags: 
     - Nodejs
@@ -206,14 +224,6 @@
     - CouchDB
     - Cloudant
 
-
-# this file holds assets that appear on featured collections
-# featured collections include:
-#   - pixiedust
-#   - watson-and-data
-#   - simple-suite (TBD)
-#   - loading-data (TBD)
-
 - title:    Adding a recommendation feature to your app using a graph DB
   headline: Graph user interactions for an even smarter chatbot.
   story:    In which we suggest new recipies to the user, based on similar interaction from others.
@@ -222,7 +232,7 @@
     Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-graph
   img:      img/graph-chatbot.png
   thumb:    img/graph-chatbot-thumb.png
-  parents:   
+  features:   
     - watson-and-data
   strategies: 
     - differentiators
@@ -240,7 +250,7 @@
     Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant
   img:      img/smarter-chatbot.jpg
   thumb:    img/smarter-chatbot-thumb.jpg
-  parents:   
+  features:   
     - watson-and-data
   strategies: 
     - differentiators
@@ -256,8 +266,12 @@
   img:      img/watson_black.png
   links:
     Medium: https://medium.com/ibm-watson-data-lab/mapping-for-data-science-with-pixiedust-and-mapbox-b5aa1d9532b9
-  parents: 
+  strategies:
+    - notebooks-for-developers
+    - partners
+  features: 
     - pixiedust
+    - mapbox
 
 - title:    I am Not a Data Scientist (But I play one in this blog post, thanks to PixieDust)
   headline: Notebooks aren't just for Data Scientists.
@@ -265,7 +279,7 @@
   img:      img/pixiedust-logo-thumb.png
   links:
     Medium: https://medium.com/ibm-watson-data-lab/i-am-not-a-data-scientist-efe7ca6ceba2
-  parents: 
+  features: 
     - pixiedust
 
 - title:    The Most Popular Search Term at SXSW, According to Our Chatbot
@@ -275,7 +289,7 @@
     Medium: https://medium.com/ibm-watson-data-lab/the-most-popular-search-term-at-sxsw-according-to-our-chatbot-9f4a47a33406
     Github: https://github.com/ibm-watson-data-lab/cognitive-event-finder/
     Notebook: http://ibm.biz/sxswappmetrics
-  parents: 
+  features: 
     - pixiedust
     
 - title:    Predictable, Progressive, Performant — The New Builders Podcast Episode about Offline First
@@ -284,5 +298,14 @@
   links: 
     Medium: https://medium.com/offline-camp/predictable-progressive-performant-the-new-builders-podcast-episode-about-offline-first-260116bfdc9b
     Podcast: https://developer.ibm.com/tv/sxsw-offline-first/
-  parents: 
+  features: 
     - offline-camp
+
+- title:    Offline Camp Berlin is proud to have the support of Google Cloud Platform
+  headline: Their support and their perspective helps us push the movement forward with greater understanding, stability, and focus.
+  story:    As part of their support of Offline Camp, Google Cloud Platform (GCP) attended to explore the places outside of connectivity to the cloud. Myles Borins, who represented the GCP team, came to do early research into the role that they could can play in an offline future. 
+  links: 
+    Medium: https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0
+  features: 
+    - offline-camp
+

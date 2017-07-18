@@ -6,33 +6,50 @@
     <main>
     	<div class="container">
         {% assign project = site.data.projects | where:"permalink",page.permalink %}
-        <h1>
-          <span class="lead-in"><span class="featured-flag">Featured Collection</span></span>
-{{ page.title }}
-        </h1>
+        <div class="header">
+          <h1>
+            <span class="lead-in">Featured Collection</span>
+  {{ page.title }}
+          </h1>
+          <blockquote>{{ page.headline }}</blockquote>
+        </div>
 
-        <div class="row">
-          <div class="col m12 s12 main flow-text">
+        <div>
+          <div class="row">
 
-            <p class="subhead">
-              {{ page.headline }}
-            </p>
+            <div class="col m8">
+              {{ content }}
+            </div>
 
-            {{ content }}
-
-            <div class="divider"></div>
-            <div class="section">
-              <p class="subhead">
-                {{ page.title }} projects and examples
-              </p>
-              {% assign items = site.data.projects | where:"parents",page.permalink | reverse %}
-              {% include item.html items=items context="main" %}          
+            <div class="col m4 sidebar">
+              {% if page.essentials and page.essentials.size > 0 %}
+                <div class="section">
+                  <p class="subhead">
+                    {{ page.title }} Essentials
+                  </p>
+                  <ul>
+                    {% for link in page.essentials %}
+                    <li>
+                      <a href="{{ link[1] }}" title="{{ link[1] }}">{{ link[0] }} &rarr;</a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <div class="divider"></div>
+              {% endif %}
+              <div class="section">
+                <p class="subhead">
+                  Projects in this collection
+                </p>
+                {% assign items = site.data.projects | where:"features",page.permalink | reverse %}
+                {% include item.html items=items context="sidebar" %}                          
+              </div>
             </div>
           </div>
-        </div><!--row-->
+        </div>
         <div class="divider"></div>
         <div class="section">
-          {% for feature in site.features %}
+          {% for feature in site.strategies %}
             {% if page.strategies contains feature.permalink %}
               More like this: <a href="{{ feature.permalink }}">{{ feature.title }}</a>
             {% endif %}

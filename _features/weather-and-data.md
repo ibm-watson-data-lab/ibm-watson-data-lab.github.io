@@ -1,9 +1,10 @@
 ---
-title:      Watson &amp; Data Services
-headline:   Watson is smart, but Watson with data is smarter.
+title:      Weather + Data Services
+headline:   There's a lot you can learn when you analyze weather data.
 layout:     layout-featured-collection
-permalink:  watson-and-data
-featured: true
+permalink:  weather-and-data
+img:        watson_black.png
+img-thumb:  watson_black.png
 strategies: 
   - differentiators
 tags: 
@@ -11,14 +12,11 @@ tags:
   - Slack
   - Cloudant
   - Tinkerpop
-
 ---
 
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
 
 this is the second one this is the second one this is the second onethis is the second one.
-
-![placeholder image](img/watson_black.png)
 
 ## This is a subhead
 

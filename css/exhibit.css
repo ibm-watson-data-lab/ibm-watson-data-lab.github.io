@@ -8,7 +8,7 @@ body {
 
 main {
   flex: 1 0 auto;
-  margin-top: 50px;
+  margin-top: 2rem;
 }
 
 .brand-logo > span {
@@ -358,16 +358,14 @@ col ul:not(.browser-default), col ul:not(.browser-default) li {
   padding-left: 0;
 }
 
-blockquote {
-    margin: 20px 0;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    border-left: 5px solid #1565C0;
-    background: lightgrey;
-}
-
 .button-collapse .material-icons {
   color: black;
 }
+
+
+
+
+
 
 /* Brad's CSS */
 a.brand-logo {
@@ -377,7 +375,6 @@ a.brand-logo {
   position: relative;
 }
 nav.white {
-  background: white;
   box-shadow: none;
 }
 nav.white ul li a {
@@ -386,7 +383,7 @@ nav.white ul li a {
 
 h1 {
   color: #333;
-  margin: 3rem 0;
+  margin: 0 0 4rem;
 }
 span.lead-in {
   border: 0;
@@ -400,11 +397,39 @@ span.lead-in {
 h1 span.lead-in {
   line-height: 3rem;
 }
-
+img {
+  width: auto;
+  max-width: 100%;
+}
 /* home page */
+#home h1 {
+  font-size: 3rem;
+}
+a.strategy {
+  color: inherit;
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: uppercase
+}
+
 div.feature {
   margin: 2rem 0;
   padding: 2rem 0;
+}
+div.featured-collection {
+  margin: 1rem 0;
+}
+div.featured-collection.featured {
+}
+div.featured-collection.featured .title {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  margin: 0 0 0 0;
+  padding-bottom: .25rem;
+}
+div.featured-collection.featured .headline {
+  font-size: 2rem;
+  line-height: 1.75rem;
 }
 
 a.quiet-link {
@@ -437,7 +462,14 @@ a.quiet-link:hover {
 .item ul.links {
   margin: 1rem 0;
 }
+.sidebar .item {
+  margin: 0 0 2rem 0;
+  padding: 0 0 2rem 0;
+}
 
+.collections {}
+.collections .collection {}
+.collections .collection h3 {}
 
 ul.see-also li.active a {
   color: #666;

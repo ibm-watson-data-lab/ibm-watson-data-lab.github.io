@@ -1,10 +1,12 @@
 ---
-title:      Simple Search
-headline:   Turn a CSV into an API that powers a search engine.
+title:      Location Tracker
+headline:   Every application benefits from location, even offline apps.
 layout:     layout-featured-collection
-permalink:  simple-search
+permalink:  location-tracker
+img:        location-tracker-client.png
+img-thumb:  location-tracker-client-thumb.png
 strategies: 
-  - working-with-wdp
+  - offline-first
 ---
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph. this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
 

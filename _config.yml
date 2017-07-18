@@ -4,16 +4,16 @@
 # which you are expected to set up once and rarely need to edit after that.
 
 locale                   : "en"
-title                    : "!RTFM" #"IBM Watson Data Lab"
-description              : "The things you can make with data, on the IBM Watson Data Platform"
+title                    : "IBM Watson Data Lab"
+description              : "Things you can make with data, on the IBM Watson Data Platform"
 url                      : "https://ibm-watson-data-lab.github.io"
 baseurl                  : ""
 repository               : "ibm-watson-data-lab/ibm-watson-data-lab.github.io"
 
 collections:
-  features:
+  strategies:
     output: true
-  projects:
+  features:
     output: true
 
 # relative_permalinks: false
