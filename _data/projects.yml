@@ -1,17 +1,24 @@
-# strategies:
+# strategies: (for all, see `permalinks` in the frontmatter of files in the _strategies folder or visit , or visit [help](https://ibm-cds-labs.github.io/help))
 #   - notebooks-for-developers
 #   - offline-first
 #   - differentiators
 #   - partners
 #   - working-with-wdp
 #   - misc
-# features:
+# features: (see `permalinks` in the frontmatter of files in the _projects folder, or visit [help](https://ibm-cds-labs.github.io/help))
 #   - pixiedust
 #   - watson-and-data
-#   - simple-suite (TBD)
-#   - loading-data (TBD)
+#   - simple-search
+#   - loading-data 
 
 # Old stuff at the top; new stuff appended to the bottom.
+
+- title:    Simple Search Service
+  headline: An IBM Bluemix app that creates a faceted search engine from a CSV, exposing an API you can use to bring search into your own apps.
+  links: 
+    Github: https://github.com/ibm-watson-data-lab/simple-search-service
+  features: 
+    - simple-search
 
 - title:    cloudant-food-tracker
   headline: An iOS tutorial that takes app data from unexceptional to powerful. 
@@ -307,5 +314,4 @@
   links: 
     Medium: https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0
   features: 
-    - offline-camp
-
+    - offline-camp    
