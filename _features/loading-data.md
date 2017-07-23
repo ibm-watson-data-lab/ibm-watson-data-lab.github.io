@@ -3,8 +3,6 @@ title:      Loading data
 headline:   Moving data into data services should be easy. We can help.
 layout:     layout-featured-collection
 permalink:  loading-data
-img:        icon.png
-img-thumb:  icon.png
 strategies: 
   - working-with-wdp
 ---

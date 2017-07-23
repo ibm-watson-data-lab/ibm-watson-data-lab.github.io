@@ -3,8 +3,6 @@ title:      Simple Search
 headline:   Turn a CSV into an API that powers a search engine.
 layout:     layout-featured-collection
 permalink:  simple-search
-img:        icon.png
-img-thumb:  icon.png
 strategies: 
   - working-with-wdp
 essentials:
