@@ -401,21 +401,50 @@ img {
   width: auto;
   max-width: 100%;
 }
+
+
 /* home page */
 #home h1 {
   font-size: 3rem;
 }
+.latest {
+  background: #ffff8d;
+  padding: .5rem 1rem;
+  margin: 0 0 3rem 0;
+}
 a.strategy {
-  color: inherit;
   font-size: .9rem;
   font-weight: 500;
   text-transform: uppercase
 }
-
-div.feature {
-  margin: 2rem 0;
-  padding: 2rem 0;
+#home .item {
+  border: 0;
+  margin-bottom: 1.5rem;
 }
+#home .tier-1 .item {
+  sborder-bottom: 1px solid #ccc;
+}
+#home .tier-2 .item p, #home .tier-3 .item p {
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+.item .projects {
+  font-size: .95rem;
+  margin: .5rem 0 0 0;
+  padding: 0 0 0 1rem;
+}
+.item .projects li {
+  line-height: 1.2rem;
+  padding: 0 0 .3rem 0;
+}
+.item .projects .source {
+  color: #666;
+  font-size: .8rem;
+  font-weight: 400;
+  text-transform: uppercase  
+}
+
+
 div.featured-collection {
   margin: 1rem 0;
 }
@@ -433,7 +462,7 @@ div.featured-collection.featured .headline {
 }
 
 a.quiet-link {
-  color: #333;
+  color: inherit;
 }
 a.quiet-link:hover {
   color: blue
