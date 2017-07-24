@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Projects
+title:  Projects
+id:     projects
 ---
 
 <h1>{{ page.title }}</h1>
 
+{% comment %}
 <div class="row">
   <div class="col m3">
     <div class="subhead">
@@ -16,14 +18,13 @@ title: Projects
     {% include item-featured.html items=items context="index" %}          
   </div>
 </div>
-
-
 <div class="divider"></div>
-<div class="section">
   <p class="subhead">
     Project work
   </p>
+{% endcomment %}
 
+<div class="section">
   {% assign items = site.data.projects | reverse %}
   {% include item.html items=items context="index" %}          
 </div>

@@ -5,16 +5,10 @@ story:      Working with data is a team sport.
 permalink:  pixiedust
 layout:     layout-featured-collection
 featured:   true
-img:        pixiedust-logo.png
-img-thumb:  pixiedust-logo-thumb.png
+# img:        pixiedust-logo.png
+# img-thumb:  pixiedust-logo-thumb.png
 strategies: 
   - notebooks-for-developers
-tags: 
-  - Jupyter Notebooks
-  - Python
-  - Scala
-  - Apache Spark
-  - Reactive apps
 essentials:
   PixieDust on Github: https://github.com/ibm-watson-data-lab/pixiedust
   PixieDust Docs:   https://ibm-watson-data-lab.github.io/pixiedust/

@@ -4,8 +4,6 @@ headline:   Putting data to work on awesome maps.
 layout:     layout-featured-collection
 permalink:  mapbox
 featured:   true
-img:        icon.png
-img-thumb:  icon.png
 strategies: 
   - partners
 ---

@@ -1,10 +1,8 @@
 ---
-title:      Weather + Data
-headline:   There's a lot you can learn when you analyze weather data.
+title:      OpenWhisk + Data
+headline:   Serverless doesn't mean data-less.
 layout:     layout-featured-collection
-permalink:  weather-and-data
-img:        watson_black.png
-img-thumb:  watson_black.png
+permalink:  openwhisk-and-data
 strategies: 
   - differentiators
 ---
