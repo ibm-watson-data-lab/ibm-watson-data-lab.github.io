@@ -9,12 +9,6 @@ featured:   true
 # img-thumb:  pixiedust-logo-thumb.png
 strategies: 
   - notebooks-for-developers
-tags: 
-  - Jupyter Notebooks
-  - Python
-  - Scala
-  - Apache Spark
-  - Reactive apps
 essentials:
   PixieDust on Github: https://github.com/ibm-watson-data-lab/pixiedust
   PixieDust Docs:   https://ibm-watson-data-lab.github.io/pixiedust/

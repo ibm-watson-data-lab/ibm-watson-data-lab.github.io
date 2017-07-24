@@ -1,5 +1,5 @@
 ---
-title:      Weather + Data Services
+title:      Weather + Data
 headline:   There's a lot you can learn when you analyze weather data.
 layout:     layout-featured-collection
 permalink:  weather-and-data
@@ -7,11 +7,6 @@ img:        watson_black.png
 img-thumb:  watson_black.png
 strategies: 
   - differentiators
-tags: 
-  - Watson Conversation
-  - Slack
-  - Cloudant
-  - Tinkerpop
 ---
 
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
