@@ -29,7 +29,7 @@
     {% if projects.size > 0 %}
       {% if tier == "1" %}
       <p>
-        Projects that include <em>{{ collection.tags | array_to_sentence_string }}</em>:
+        Projects that include <a href="/{{ collection.permalink }}">{{ collection.title }}</a>:
       </p>
       {% endif %}
       <ul class="browser-default projects">

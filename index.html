@@ -10,9 +10,9 @@ id:     home
 
 {% assign projects = site.data.projects %}
 {% assign latest = projects.last %}
-<div class="latest">
-  Recently, on {{ latest.links.first[0] }}: <a href="{{ latest.links.first[1] }}" title="Find it on {{ latest.links.first[0] }}"><strong>{{ latest.title }}</strong></a>
-</div>
+<blockquote>  
+  Recently, on {{ latest.links.first[0] }}: <a href="{{ latest.links.first[1] }}" title="Find it on {{ latest.links.first[0] }}"><strong>{{ latest.title }}</strong> &rarr;</a>
+</blockquote>
 
 {% assign strategies = site.strategies %}
 <div class="row">
