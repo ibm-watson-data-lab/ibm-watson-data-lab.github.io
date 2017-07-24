@@ -437,13 +437,12 @@ a.strategy {
   line-height: 1.2rem;
   padding: 0 0 .3rem 0;
 }
-.item .projects .source {
+.item .source {
   color: #666;
   font-size: .8rem;
   font-weight: 400;
   text-transform: uppercase  
 }
-
 
 div.featured-collection {
   margin: 1rem 0;
