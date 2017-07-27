@@ -1,5 +1,5 @@
 ---
-title:      Offline First!
+title:      Offline First
 headline:   Offline shouldn't be an error condition.
 permalink:  offline-first
 layout:     layout-strategy
