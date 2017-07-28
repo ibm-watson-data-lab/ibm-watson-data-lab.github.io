@@ -30,9 +30,4 @@ Mikeal’s focus on the follow-up work from camp highlights one of the most impo
 TODO: INSERT GREGOR TWEET HERE if desired (found at https://twitter.com/gr2m/status/748631860796874752?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fmedium.com%2Fmedia%2F5077bed747cac8449696d385f6fc59b3%3FpostId%3D8349ccd3c4ab)
 
 
-{% if page.essentials and page.essentials.size > 0 %}
-{% for link in page.essentials %}
-1. [{{ link[0] }}]({{ link[1] }}){% endfor %}
-{% endif %}
-
 
