@@ -321,8 +321,8 @@
   links: 
     Medium: https://medium.com/offline-camp/predictable-progressive-performant-the-new-builders-podcast-episode-about-offline-first-260116bfdc9b
     Podcast: https://developer.ibm.com/tv/sxsw-offline-first/
-  features: 
-    - offline-camp
+  strategies:
+    - offline-first
 
 - title:    Offline Camp Berlin is proud to have the support of Google Cloud Platform
   headline: Their support and their perspective helps us push the movement forward with greater understanding, stability, and focus.
