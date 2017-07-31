@@ -1,6 +1,6 @@
 ---
 title:      Offline Camp
-headline:   Building the Offline First! community, one campfire at a time.
+headline:   Building the Offline First community, one campfire at a time.
 layout:     layout-featured-collection
 permalink:  offline-camp
 featured:   true
@@ -11,7 +11,7 @@ strategies:
 essentials:
   Offline Camp on Medium: https://medium.com/offline-camp
   Offline Camp Calendar:  http://offlinefirst.org/camp/
-  Offline First!: http://offlinefirst.org/camp/
+  Offline First: http://offlinefirst.org/camp/
 ---
 
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph. this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
