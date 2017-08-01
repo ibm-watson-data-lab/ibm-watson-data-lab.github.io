@@ -83,6 +83,21 @@
     - Cloudant
     - iOS Swift
 
+- title:    cloudant-food-tracker
+  headline: Build an Offline First iOS app with Swift and Cloudant Sync.
+  story:    Cloudant Food Tracker is an Offline First extension of Apple's FoodTracker app that uses Cloudant Sync.
+  links:
+    Github: https://github.com/ibm-watson-data-lab/cloudant-food-tracker
+  img:      img/food-tracker.png
+  thumb:    img/food-tracker-thumb.png
+  strategies:
+    - offline-first
+  features:
+    - food-tracker
+  tags:
+    - Cloudant
+    - iOS Swift
+
 - title:    rethinkdb-questions
   headline: Get real-time, with changefeeds in RethinkDB.
   story:    Realtime Q&A app using RethinkDB and changefeeds.
