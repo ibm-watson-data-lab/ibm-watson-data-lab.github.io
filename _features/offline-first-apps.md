@@ -3,6 +3,7 @@ title:      Offline First App Development
 headline:   Build data-driven Offline First Progressive Web Apps, hybrid mobile apps, native mobile apps, desktop apps, or Internet of Things (IoT) apps with IBM Cloudant and related technologies.
 layout:     layout-featured-collection
 permalink:  offline-first-apps
+featured:   true
 img:        offline-first-apps.png
 img-thumb:  offline-first-apps-thumb.png
 strategies:
