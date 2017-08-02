@@ -3,24 +3,44 @@
 
 {% if context=="main" %}
 
-<ul>
   {% for item in items %}
-  {% assign projects = site.data.projects | where:"parents",item.permalink %}
-  <li>
-    <h3>
-      <span class="lead-in featured-flag">Featured collection</span>
-      <a href="/{{ item.permalink }}">{{ item.title }}</a>
-      ({{ projects.size }})
-    </h3>
-    {{ item.headline }}
-  </li>
+    {% capture modulo %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
+    <!-- begin the row -->
+    {% if modulo == '0' or forloop.first %}
+      <div class="collections {{ context }} row">
+    {% endif %}
+    {% assign projects = site.data.projects | where:"features",item.permalink %}
+    <div class="col m6">
+      <h3>
+        <span class="lead-in">Featured Collection</span>
+        <a href="/{{ item.permalink }}">{{ item.title }}</a>
+      </h3>
+      <div class="row">
+        <div class="col m3">
+          <img src="img/{{ item.img-thumb }}" />
+        </div>
+        <div class="col m9">
+          {{ item.headline }}
+          {{ item.story }}
+          {% if projects.size > 1 %}
+          Includes {{ projects.size }} projects.
+          {% endif %}
+          <p>
+            <a href="/{{ item.permalink }}">Continue reading</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end the row -->
+    {% if modulo == '1' or forloop.last %}
+      </div>
+    {% endif %}
   {% endfor %}
-</ul>
 
 {% elsif context=="index" %}
 
   {% for item in items %}
-  {% assign projects = site.data.projects | where:"parents",item.permalink %}
+  {% assign projects = site.data.projects | where:"features",item.permalink %}
   <div>
     <strong>
       <a href="/{{ item.permalink }}">{{ item.title }}</a>

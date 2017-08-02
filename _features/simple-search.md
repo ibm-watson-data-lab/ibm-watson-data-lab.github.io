@@ -1,10 +1,12 @@
 ---
-title:      Location Tracker
-headline:   Every application benefits from location, even offline apps.
+title:      Simple Search
+headline:   Turn a CSV into an API that powers a search engine.
 layout:     layout-featured-collection
-permalink:  location-tracker
+permalink:  simple-search
 strategies: 
-  - offline-first
+  - working-with-wdp
+essentials:
+  Simple Search on Github: https://github.com/ibm-watson-data-lab/simple-search-service
 ---
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph. this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
 

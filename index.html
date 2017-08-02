@@ -1,80 +1,45 @@
 ---
 layout: default
-title: Home of the Watson Data Lab
-id: home
+title:  Home
+id:     home
 ---
 
 <h1>
-  Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br /> so you can, too.
+  Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br />so you can, too.
 </h1>
 
+{% assign projects = site.data.projects %}
+{% assign latest = projects.last %}
+<blockquote>  
+  Recently, on {{ latest.links.first[0] }}: <a href="{{ latest.links.first[1] }}" title="Find it on {{ latest.links.first[0] }}"><strong>{{ latest.title }}</strong> &rarr;</a>
+</blockquote>
+
+{% assign strategies = site.strategies %}
 <div class="row">
-  {% for feature in site.features %}
-  <div class="col {% if feature.featured %}m12{% else %}m4{% endif %} s12 feature">
-    <a href="/{{ feature.permalink }}" title="{{ feature.headline }}">{{ feature.title }}</a>
-    <div>
-      {% assign collections = site.projects | where:"strategies",feature.permalink %}
-      {% for collection in collections limit:1 %}
-        <strong><a href="/{{ collection.permalink }}">{{ collection.title }}</a></strong><br />
-        {{ collection.headline }} {{ collection.story }}
-      {% endfor %}
-    </div>
+  <div class="col m6 tier-1">
+    <!-- get the featured strategy(ies) -->
+    {% assign items = strategies | where:"tier","1" %}
+    {% for item in items %}
+      {% include item-home.html item=item tier='1' limit='3' %}                          
+    {% endfor %}
   </div>
-  {% endfor %}
+  <div class="col m3 tier-2">
+    {% assign items = strategies | where:"tier","2" %}
+    {% for item in items %}
+      {% include item-home.html item=item tier='2' limit='2' %}                          
+    {% endfor %}
+  </div>
+  <div class="col m3 tier-3">
+    {% assign items = strategies | where:"tier","3" %}
+    {% for item in items %}
+      {% include item-home.html item=item tier='3' limit='10' %}                          
+    {% endfor %}
+  </div>
 </div>
+
 <div class="divider"></div>
 <div class="section">
   <p>
     <a href="/projects">All projects</a>
   </p>
 </div>
-
-<!--
-  {% if feature.featured %}
-    <div class="col {{ feature.col }} feature featured">
-      <h3>
-        <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
-      </h3>
-      {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
-      {% for item in array limit: 1 %}
-      <div class="item">
-      {% if item.img %}
-        <img src="{{ item.img }}" />
-      {% endif %}
-        <p>
-          <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
-        </p>
-        {% if item.tags %}
-        <p class="tags">
-            Features {{ item.tags | array_to_sentence_string: "and" }}.
-        </p>
-        {% endif %}
-        <a href="{{ item.link }}" class="nowrap" title="">{{ item.title }} &rarr;</a>
-      </div>
-      {% endfor %}
-    </div>
-  {% else %}
-  <div class="col {{ feature.col }} feature">
-
-    {% if feature.title and feature.title != "Our Work" %}
-      <h3>
-        <a href="{{ feature.permalink }}" class="quiet-link" title="{{ feature.headline }}">{{ feature.title }}</a>
-      </h3>
-    {% endif %}
-    {% if feature.section %}
-    <h3>{{feature.section}}</h3>
-    {% endif %}
-
-    {% assign array = site.data.projects | where:"strategies",feature.connector | reverse %}
-    {% for item in array limit: 2 %}
-    <div class="item">
-      <p>
-        <a href="{{ item.link }}" class="quiet-link"><strong>{{ item.headline }}</strong></a> {{ item.story }} 
-        <a href="{{ item.link }}" class="nowrap">{{ item.title }} &rarr;</a>
-      </p>
-    </div>
-    {% endfor %}
-
-  </div>
-  {% endif %}
--->

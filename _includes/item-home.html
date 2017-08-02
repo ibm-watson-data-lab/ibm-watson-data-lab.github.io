@@ -1,0 +1,76 @@
+{% assign item = include.item %}
+{% assign tier = include.tier %}
+{% assign limit = include.limit %}
+
+<div class="divider"></div>
+<div class="section">
+  <a href="/{{ item.permalink }}" title="{{ item.headline }}" class="strategy quiet-link">{{ item.title }}</a>
+  {% assign collections = site.features | where:"strategies",item.permalink %}
+  {% for collection in collections limit:limit %}
+  <div class="item">
+    {% if tier == "1" %}
+      <h5>
+        <a href="/{{ collection.permalink }}" title="{{ collection.title }}">{{ collection.headline }}</a>
+      </h5>
+      {{ collection.content | truncatewords:40 }}
+    {% else %}
+      <p>
+        <strong>
+          <a href="/{{ collection.permalink }}" title="{{ collection.headline }}">{{ collection.title }}</a>
+        </strong>
+        {{ collection.headline }}
+      </p>
+      {% if tier > "1" and collection.img-thumb %}
+        <img src="img/{{ collection.img-thumb }}" />
+      {% endif %}
+    {% endif %}
+
+    {% assign projects = site.data.projects | where:"features",collection.permalink | reverse %}
+    {% if projects.size > 0 %}
+      {% if tier == "1" %}
+      <p>
+        Projects that include <a href="/{{ collection.permalink }}">{{ collection.title }}</a>:
+      </p>
+      {% endif %}
+      <ul class="browser-default projects">
+      {% for item in projects %}
+        <li class="browser-default">
+          <span class="source">{{ item.links.first[0] }}</span>
+          <strong>
+            <a href="{{ item.links.first[1] }}" title="'{{ item.title }}' on {{ item.links.first[0] }}" class="quiet-link">{{ item.title }}</a> 
+          </strong>
+          {% if item.links.size > 1 %}
+            Also: 
+            {% for link in item.links %}
+              {% if forloop.first == false %}
+                <a href="{{ link[1] }}" title="'{{ item.title }}' on {{ link[0] }}" class="quiet-link">{{ link[0] }}</a>{% if forloop.last %}{% else %},{% endif %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if tier=="1" %}
+      <p>
+        <a href="/{{ collection.permalink }}" />Continue reading</a>
+      </p>
+    {% endif %}
+
+    {% comment %}
+      {% if tier == "1" and collection.img %}      
+        <div>
+          <img src="img/{{ collection.img }}" />
+        </div>      
+      {% endif %}
+      {% if tier > "1" and collection.img-thumb %}
+        <div>
+          <img src="img/{{ collection.img-thumb }}" />
+        </div>      
+      {% endif %}
+    {% endcomment %}
+
+  </div>
+  {% endfor %}
+</div>

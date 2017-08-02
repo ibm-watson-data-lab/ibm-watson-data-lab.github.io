@@ -1,16 +1,25 @@
 ---
 title:      Offline Camp
-headline:   Building the Offline First! community, one campfire at a time.
+headline:   Building the Offline First community, one campfire at a time.
 layout:     layout-featured-collection
 permalink:  offline-camp
 featured:   true
-img:        img/offlinecamp-logo.jpg
-thumb:      img/offlinecamp-logo-thumb.jpg
+img:        offline-camp-campfire.jpeg #offlinecamp-logo.jpg
+img-thumb:  offline-camp-campfire.jpeg #offlinecamp-logo-thumb.jpg
 strategies: 
   - offline-first
+essentials:
+  Offline Camp on Medium: https://medium.com/offline-camp
+  Offline Camp Calendar:  http://offlinefirst.org/camp/
+  Offline First: http://offlinefirst.org/camp/
 ---
 
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph. this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
+
+{% if page.essentials and page.essentials.size > 0 %}
+{% for link in page.essentials %}
+1. [{{ link[0] }}]({{ link[1] }}){% endfor %}
+{% endif %}
 
 this is the second one this is the second one this is the second onethis is the second one. this is the second one this is the second one this is the second onethis is the second one. this is the second one this is the second one this is the second onethis is the second one.
 

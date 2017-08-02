@@ -1,24 +1,15 @@
 ---
-title:      Watson &amp; Data Services
-headline:   Watson is smart, but Watson with data is smarter.
+title:      OpenWhisk + Data
+headline:   Serverless doesn't mean data-less.
 layout:     layout-featured-collection
-permalink:  watson-and-data
-featured: true
+permalink:  openwhisk-and-data
 strategies: 
   - differentiators
-tags: 
-  - Watson Conversation
-  - Slack
-  - Cloudant
-  - Tinkerpop
-
 ---
 
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
 
 this is the second one this is the second one this is the second onethis is the second one.
-
-![placeholder image](img/watson_black.png)
 
 ## This is a subhead
 

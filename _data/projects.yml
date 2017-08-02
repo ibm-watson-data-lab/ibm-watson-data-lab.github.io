@@ -1,13 +1,43 @@
-# strategies:
+# strategies: (for all, see `permalinks` in the frontmatter of files in the _strategies folder or visit , or visit [help](https://ibm-cds-labs.github.io/help))
 #   - notebooks-for-developers
 #   - offline-first
 #   - differentiators
-#   - partners
-#   - working-with-wdp
-#   - misc
+#   - etc
+# features: (see `permalinks` in the frontmatter of files in the _projects folder, or visit [help](https://ibm-cds-labs.github.io/help))
+#   - pixiedust
+#   - watson-and-data
+#   - simple-search
+#   - etc
+# tags: 
+#   - Cloudant
+#   - iOS Swift
+#   - etc
+
 
 # Old stuff at the top; new stuff appended to the bottom.
 
+- title:    Simple Search Service
+  headline: An IBM Bluemix app that creates a faceted search engine from a CSV, exposing an API you can use to bring search into your own apps.
+  links: 
+    Github: https://github.com/ibm-watson-data-lab/simple-search-service
+  strategies: 
+    - working-with-data
+  features: 
+    - simple-search
+
+- title:    cloudant-food-tracker
+  headline: An iOS tutorial that takes app data from unexceptional to powerful. 
+  story:    Transform Apple’s FoodTracker example into a true offline-first app that stores data locally and synchronizes to the cloud.
+  links:
+    Github: https://github.com/ibm-cds-labs/cloudant-food-tracker
+  img:      img/cloudant-foodtracker.png
+  thumb:    img/cloudant-foodtracker-thumb.png
+  strategies: 
+    - offline-first
+  tags: 
+    - Cloudant
+    - iOS Swift
+    
 - title:    location-tracker-envoy-server
   headline: Scaling the CouchDB database-per-user architecture? No problem.
   story:    Node.js backend&mdash;plus Cloudant Envoy&mdash;for location tracker demo app.
@@ -17,7 +47,7 @@
   thumb:    img/location-tracker-cloudantdash-thumb.png
   strategies: 
     - offline-first
-  parents:
+  features:
     - location-tracker
   tags: 
     - Cloudant
@@ -32,7 +62,7 @@
   thumb:    img/location-tracker-node-thumb.png
   strategies: 
     - offline-first
-  parents:
+  features:
     - location-tracker
   tags: 
     - Cloudant
@@ -47,7 +77,7 @@
   thumb:    img/location-tracker-client-thumb.png
   strategies: 
     - offline-first
-  parents:
+  features:
     - location-tracker
   tags: 
     - Cloudant
@@ -60,7 +90,6 @@
     Github: https://github.com/ibm-watson-data-lab/rethinkdb-questions
   strategies: 
     - working-with-wdp
-    - misc
   tags: 
     - Compose
     - Nodejs
@@ -85,7 +114,7 @@
     Github: https://github.com/ibm-watson-data-lab/couchdb-db-transform
   strategies: 
     - working-with-wdp
-  parents:
+  features:
     - loading-data
   tags: 
     - Cloudant
@@ -99,9 +128,6 @@
     Github: https://github.com/ibm-watson-data-lab/open-data 
   strategies: 
     - working-with-wdp
-    - misc
-  tags: 
-    - data set
 
 - title:    seven-days
   headline: A quick tour of (some of) our database services.
@@ -110,7 +136,6 @@
     Github: https://github.com/ibm-watson-data-lab/seven-days
   strategies: 
     - working-with-wdp
-    - misc
   tags: 
     - Cloudant
     - Compose
@@ -128,9 +153,8 @@
     Github: https://github.com/ibm-watson-data-lab/openobjectstore
   strategies: 
     - working-with-wdp
-    - misc
   tags: 
-    - Object Storeage
+    - Object Storage
     - Python
 
 - title:    guestbook
@@ -139,7 +163,6 @@
   links:     
     Github: https://github.com/ibm-watson-data-lab/guestbook 
   strategies: 
-    - misc
     - working-with-wdp
   tags: 
     - CouchDB
@@ -155,7 +178,7 @@
     Github: https://github.com/ibm-watson-data-lab/couchdbimporter
   strategies: 
     - working-with-wdp
-  parents:
+  features:
     - loading-data
   tags: 
     - CouchDB
@@ -169,8 +192,7 @@
     Github: https://github.com/ibm-watson-data-lab/simple-search-service-sync   
   strategies: 
     - working-with-wdp
-    - misc
-  parents:
+  features:
     - simple-search
   tags: 
     - CouchDB
@@ -184,7 +206,7 @@
     npm: https://www.npmjs.com/package/nosqlimport
   strategies: 
     - working-with-wdp
-  parents:
+  features:
     - loading-data
   tags: 
     - Nodejs
@@ -196,23 +218,15 @@
   headline: Back up your data, without breaking your back.
   story:    Just dump it to a text file. Do what you like from there. 
   links:     
-    developerWorks: https://developer.ibm.com/clouddataservices/2016/03/22/simple-couchdb-and-cloudant-backup/
     npm:            https://www.npmjs.com/package/couchbackup
     Github:         https://github.com/glynnbird/couchbackup
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/03/22/simple-couchdb-and-cloudant-backup/
   strategies: 
     - working-with-wdp
   tags: 
     - Nodejs
     - CouchDB
     - Cloudant
-
-
-# this file holds assets that appear on featured collections
-# featured collections include:
-#   - pixiedust
-#   - watson-and-data
-#   - simple-suite (TBD)
-#   - loading-data (TBD)
 
 - title:    Adding a recommendation feature to your app using a graph DB
   headline: Graph user interactions for an even smarter chatbot.
@@ -222,7 +236,7 @@
     Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-graph
   img:      img/graph-chatbot.png
   thumb:    img/graph-chatbot-thumb.png
-  parents:   
+  features:   
     - watson-and-data
   strategies: 
     - differentiators
@@ -240,7 +254,7 @@
     Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant
   img:      img/smarter-chatbot.jpg
   thumb:    img/smarter-chatbot-thumb.jpg
-  parents:   
+  features:   
     - watson-and-data
   strategies: 
     - differentiators
@@ -256,8 +270,17 @@
   img:      img/watson_black.png
   links:
     Medium: https://medium.com/ibm-watson-data-lab/mapping-for-data-science-with-pixiedust-and-mapbox-b5aa1d9532b9
-  parents: 
+  strategies:
+    - notebooks-for-developers
+    - partners
+  features: 
     - pixiedust
+    - mapbox
+  tags:
+    - Jupyter Notebooks
+    - Apache Spark
+    - Mapbox
+    - PixieDust
 
 - title:    I am Not a Data Scientist (But I play one in this blog post, thanks to PixieDust)
   headline: Notebooks aren't just for Data Scientists.
@@ -265,8 +288,14 @@
   img:      img/pixiedust-logo-thumb.png
   links:
     Medium: https://medium.com/ibm-watson-data-lab/i-am-not-a-data-scientist-efe7ca6ceba2
-  parents: 
+  strategies:
+    - notebooks-for-developers  
+  features: 
     - pixiedust
+  tags:
+    - Jupyter Notebooks
+    - Apache Spark
+    - PixieDust
 
 - title:    The Most Popular Search Term at SXSW, According to Our Chatbot
   headline: Analyzing conversation data using Spark, Jupyter, and PixieDust.
@@ -275,8 +304,16 @@
     Medium: https://medium.com/ibm-watson-data-lab/the-most-popular-search-term-at-sxsw-according-to-our-chatbot-9f4a47a33406
     Github: https://github.com/ibm-watson-data-lab/cognitive-event-finder/
     Notebook: http://ibm.biz/sxswappmetrics
-  parents: 
+  strategies:
+    - notebooks-for-developers  
+  features: 
     - pixiedust
+  tags:
+    - Jupyter Notebooks
+    - Apache Spark
+    - PixieDust
+    - Watson Conversation
+    - Cloudant
     
 - title:    Predictable, Progressive, Performant — The New Builders Podcast Episode about Offline First
   headline: 2nd Encore of our Panel Discussion from SXSW 2017
@@ -284,5 +321,44 @@
   links: 
     Medium: https://medium.com/offline-camp/predictable-progressive-performant-the-new-builders-podcast-episode-about-offline-first-260116bfdc9b
     Podcast: https://developer.ibm.com/tv/sxsw-offline-first/
-  parents: 
+  features: 
     - offline-camp
+
+- title:    Offline Camp Berlin is proud to have the support of Google Cloud Platform
+  headline: Their support and their perspective helps us push the movement forward with greater understanding, stability, and focus.
+  story:    As part of their support of Offline Camp, Google Cloud Platform (GCP) attended to explore the places outside of connectivity to the cloud. Myles Borins, who represented the GCP team, came to do early research into the role that they could can play in an offline future. 
+  links: 
+    Medium: https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0
+  features: 
+    - offline-camp    
+  strategies:
+    - offline-first
+
+- title:    How I used serverless infrastructure to build a large-scale petition system
+  headline: An example web app using OpenWhisk and Cloudant.
+  story:    “Serverless” means that instead of having fixed numbers of dedicated machines sitting in data centres waiting for traffic to come in, we can supply the code that handles a single piece of work (e.g. the submission of a web form) to an application framework like IBM OpenWhisk and let it scale out the computing power required. If no traffic arrives, you don’t pay anything — no fixed costs!
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/how-i-used-serverless-infrastructure-to-build-a-large-scale-petition-system-2779161c4c68
+    Github: https://github.com/ibm-watson-data-lab/online-petition
+  features: 
+    - openwhisk-and-data
+  strategies: 
+    - ibm-and-data
+  tags: 
+    - OpenWhisk
+    - Cloudant
+    - SendGrid
+
+- title:    Adding custom Alexa skills with OpenWhisk and Cloudant
+  headline: Set up your Alexa skill to cost you less and scale well.
+  story:    Alexa, the humanoid persona of the Amazon Echo and Echo Dot conversation appliances, can be programmatically extended by adding new skills to your device. There is an app store for such skills, but even if you want to add functionality to your own Dot, then you can use the same APIs without publishing your code to the app store.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/add-custom-alexa-skills-with-openwhisk-and-cloudant-4e8aa0c3e525
+  features: 
+    - openwhisk-and-data
+  strategies: 
+    - ibm-and-data
+  tags: 
+    - OpenWhisk
+    - Alexa
+    - Cloudant

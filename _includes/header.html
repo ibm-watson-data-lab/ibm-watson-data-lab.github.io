@@ -2,18 +2,16 @@
 <nav class="white" role="navigation">
   <div class="nav-wrapper container">
     <a href="{{ site.baseurl }}/" class="brand-logo">
-      ibm-watson-data-lab
+      IBM Watson Data Lab
     </a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       {% include nav.html %}
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Strategies<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Topics<i class="material-icons right">arrow_drop_down</i></a></li>
     </ul>
     <ul id="dropdown1" class="dropdown-content">
-      {% for feature in site.features%}
-        {% if feature.title and feature.title != "Our Work" %}
-          <li><a href="{{ feature.page }}">{{feature.title}}</a></li>
-        {% endif %}
+      {% for feature in site.strategies %}
+        <li><a href="/{{ feature.permalink }}">{{feature.title}}</a></li>
       {% endfor %}
     </ul>
   </div>
@@ -24,9 +22,7 @@
   <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Strategies<i class="material-icons right">arrow_drop_down</i></a></li>
 </ul>
 <ul id="dropdown2" class="dropdown-content">
-  {% for feature in site.features%}
-    {% if feature.title and feature.title != "Our Work" %}
-      <li><a href="{{ feature.page }}">{{feature.title}}</a></li>
-    {% endif %}
+  {% for feature in site.strategies %}
+    <li><a href="/{{ feature.permalink }}">{{feature.title}}</a></li>
   {% endfor %}
 </ul>
