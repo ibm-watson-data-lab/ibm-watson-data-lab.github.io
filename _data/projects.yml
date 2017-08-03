@@ -157,15 +157,16 @@
     - Object Storage
     - Python
 
-- title:    guestbook
-  headline: Hook into RabbitMQ.
-  story:    A guestbook app that shows how to use webhooks with RabbitMQ and CouchDB.
+- title:    Retro Guestbook
+  headline: Add RabbitMQ to your existing app to send notifications.
+  story:    A simple PHP/CouchDB guestbook app that uses RabbitMQ to add asynchronous webhook notifications of new entries.
   links:     
     Github: https://github.com/ibm-watson-data-lab/guestbook 
   strategies: 
     - working-with-wdp
   tags: 
     - CouchDB
+    - Cloudant
     - Compose
     - Nodejs
     - PHP
