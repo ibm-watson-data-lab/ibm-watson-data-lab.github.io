@@ -1,6 +1,6 @@
 # IBM Watson Data Lab 
 
-A Github pages site that showcases our projects, our team, and our code of conduct.
+A GitHub pages site that showcases our projects, our team, and our code of conduct.
 
 ## Local Install 
 
@@ -39,7 +39,7 @@ Add projects at the bottom of the projects.yml file in the _data folder. Each pr
   story:    In which we use data services to provide a more personal chatbot experience, save money by reducing third-party API calls, and perform analysis on past chatbot conversations.
   links: 
     Medium: https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
-    Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant
+    GitHub: https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant
   img:      img/smarter-chatbot.jpg
   thumb:    img/smarter-chatbot-thumb.jpg
   features:   
