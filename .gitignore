@@ -7,3 +7,7 @@ Gemfile.lock
 _features/5-ourwork.md
 
 _features/4-notebooks-for-platform-first.md
+
+.vscode
+node_modules
+*.zip
