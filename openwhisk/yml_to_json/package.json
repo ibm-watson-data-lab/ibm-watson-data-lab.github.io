@@ -1,0 +1,14 @@
+{
+  "name": "yml_to_json",
+  "version": "0.1.0",
+  "description": "",
+  "main": "yml_to_json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "va@us.ibm.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "js-yaml": "3.9.1"
+  }
+}
