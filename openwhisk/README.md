@@ -6,14 +6,14 @@ The Github pages site for [IBM Watson Data Lab](https://ibm-watson-data-lab.gith
 
 #### Apache OpenWhisk
 
-Specific `yml` files from the [GitHub repo](https://github.com/ibm-watson-data-lab/ibm-watson-data-lab.github.io) are converted to JSON and saved into an instance Cloudant NoSQL database via OpenWhisk actions.
+Specific `yml` files from the [GitHub repo](https://github.com/ibm-watson-data-lab/ibm-watson-data-lab.github.io) are converted to JSON and saved into an instance Cloudant NoSQL database via OpenWhisk actions. To configure the actions:
 
 1. Confirm [OpenWhisk](https://console.ng.bluemix.net/openwhisk/getting-started) CLI is installed and available
 2. Set environment variables
 
   * `COUCH_URL` - the fully qualified URL to the  Cloudant/CouchDB instance
   * `COUCH_DBNAME` - the name of the database (in the Cloudant/CouchDB instance) used by the Simple Search Service
-  * `YML_FILES` - comma-separated lists of relative paths to `yml` files (e.g., `_data/projects.yml,_config.yml`) to be checked and converted to JSON
+  * `YML_FILES` - comma-separated lists of relative paths to `yml` files (e.g., `_data/projects.yml,_config.yml`) to be converted to JSON
 
 3. Run `./deploy.sh` to create the OpenWhisk actions
 
@@ -22,7 +22,7 @@ Specific `yml` files from the [GitHub repo](https://github.com/ibm-watson-data-l
 
 #### GitHub Webhook
 
-The OpenWhisk actions are triggered by `push` events from [GitHub Webhook](https://developer.github.com/webhooks/).
+The OpenWhisk actions are triggered by `push` events from [GitHub Webhook](https://developer.github.com/webhooks/). To add a webhook:
 
 1. Go to the **Settings > Webhooks** page of your repository
 2. Click on **Add webhook**
