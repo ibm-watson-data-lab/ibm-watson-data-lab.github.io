@@ -12,7 +12,7 @@ Specific `yml` files from the [GitHub repo](https://github.com/ibm-watson-data-l
 2. Set environment variables
 
   * `COUCH_URL` - the fully qualified URL to the  Cloudant/CouchDB instance
-  * `COUCH_DBNAME` - the name of the database (in the Cloudant/CouchDB instance) used by the Simple Search Service
+  * `COUCH_DBNAME` - the name of the database to use in the Cloudant/CouchDB instance
   * `YML_FILES` - comma-separated lists of relative paths to `yml` files (e.g., `_data/projects.yml,_config.yml`) to be converted to JSON
 
 3. Run `./deploy.sh` to create the OpenWhisk actions
