@@ -96,6 +96,34 @@ $(document).ready(function () {
     return fields
   }
 
+  var teamHashChanged = function () {
+    if (location.hash && location.pathname.startsWith('/team')) {
+      var hash = location.hash.charAt(1) === '/' ? location.hash.substring(2) : location.hash.substring(1)
+      $('#team_search').hide()
+      $('#team_profile').html('loading...').show()
+      var url = 'https://wdp-advo-team.mybluemix.net/search?q=%22github%20username%22:' + hash + '&limit=1'
+      $.getJSON(url).then(function (data) {
+        var advocate = data && data.rows.length ? data.rows[0] : null
+        if (advocate) {
+          var userdata = prepUserData(advocate)
+
+          var tmpl = $('#team_member_profile')
+            .html()
+            .replace(/\{\{(.+?)\}\}/g, function ($0, $1) {
+              return userdata.hasOwnProperty($1) ? userdata[$1] : '' // $0
+            })
+
+          $('#team_profile').html(tmpl).show()
+        } else {
+          $('#team_profile').html('<p>nothing to see here</p>').show()
+        }
+      })
+    } else {
+      $('#team_profile').hide()
+      $('#team_search').show()
+    }
+  }
+
   window.devadvo = {
     onBefore: onBefore,
     onFail: onFail,
@@ -104,89 +132,15 @@ $(document).ready(function () {
     teamOnSuccess: teamOnSuccess
   }
 
-  var paths = location.pathname.split('/team/')
-  if (paths.length > 1 && paths[1]) {
-    $('#team_search').hide()
-    $('#team_profile').html('loading...').show()
-    var url = 'https://wdp-advo-team.mybluemix.net/search?q=%22github%20username%22:' + paths[1] + '&limit=1'
-    $.getJSON(url).then(function (data) {
-      var advocate = data && data.rows.length ? data.rows[0] : null
-      if (advocate) {
-        var userdata = prepUserData(advocate)
-
-        var tmpl = $('#team_member_profile')
-          .html()
-          .replace(/\{\{(.+?)\}\}/g, function ($0, $1) {
-            return userdata.hasOwnProperty($1) ? userdata[$1] : '' // $0
-          })
-
-        $('#team_profile').html(tmpl).show()
-      } else {
-        $('#team_profile').html('<p>nothing to see here</p>').show()
-      }
-    })
-  } else {
-    $('#team_profile').hide()
-    $('#team_search').show()
+  if ('onhashchange' in window) {
+    window.onhashchange = teamHashChanged
   }
 
-  // do not include listed projects
-  // must be full name (i.e., 'ibm-watson-data-lab/pipes')
-  // var skipRepos = []
-  // if (typeof repos !== 'undefined' && repos !== null && repos.length > 0) {
-  //   var total = repos.length
-
-  //   // sort by stars
-  //   repos.sort(function(a, b) {
-  //     if (a.stargazers_count < b.stargazers_count) return 1;
-  //     else if (b.stargazers_count < a.stargazers_count) return -1;
-  //     else return 0
-  //   })
-
-  //   for (var i in repos) {
-  //     if (skipRepos.indexOf(repos[i].full_name) === -1) {
-  //       html = '<div class="repo">'
-  //       html += '<h3>' + repos[i].name + '</h3>'
-  //       html += '<a href="' + repos[i].html_url + '" target="_blank">' + repos[i].html_url + '</a>'
-  //       html += '<div><p>' + repos[i].description + '</p></div>'
-  //       html += '<div class="repo-meta">'
-  //       html += '<i class="fa fa-code-fork" aria-hidden="true"></i>' + repos[i].forks_count
-  //       html += '<i class="fa fa-star" aria-hidden="true"></i>' + repos[i].stargazers_count
-  //       html += '<i class="fa fa-eye" aria-hidden="true"></i>' + repos[i].watchers_count
-  //       html += '</div>'
-  //       // html += '<div>' + new Date(repos[i].updated_at) + '</div>'
-  //       html += '<p class="separator">&hellip;</p>'
-  //       html += '</div>'
-
-  //       $('.repos-list').append(html)
-  //     }
-  //   }
-
-  //   $('.repos-count').html('Showing ' + total + ' of ' + total)
-  //   var rows = $('.repo')
-
-  //   $('#repos-search').keyup(function() {
-  //     var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$';
-  //     var reg = RegExp(val, 'i')
-  //     var index = 0;
-
-  //     rows.each(function(i, e) {
-  //       if (!reg.test($(this).text().replace(/\s+/g, ' '))) {
-  //         $(this).addClass('hidden')
-  //       }
-  //       else {
-  //         $(this).removeClass('hidden')
-  //         ++index
-  //       }
-  //     });
-
-  //     $('.repos-count').html('Showing ' + index + ' of ' + total)
-  //   });
-  // }
-
-  $(".dropdown-button").dropdown(
+  $('.dropdown-button').dropdown(
     { hover: true }
-  );
+  )
 
-  $(".button-collapse").sideNav();
+  $('.button-collapse').sideNav()
+
+  teamHashChanged()
 })
