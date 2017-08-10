@@ -5,22 +5,80 @@ id: team
 ---
 
 <div>
-  <section>
-    <form class="search-wrapper">
-      <label for="team-search" class="search-label">Find advocates who know about &#8628;</label>
-      <input id="team-search" class="search-input" type="text" value="*:*"
-        data-simple-search="https://wdp-advo-team.mybluemix.net/"
-        data-search-list=".search-results" 
-        data-search-facets=".search-facets"
-        data-search-onbefore="devadvo.onBefore"
-        data-search-onsuccess="devadvo.teamOnSuccess"
-        data-search-onfail="devadvo.onFail">
-    </form>
-  </section>
-  <section>
-    <div class="row">
-      <div class="col s12 m3 search-facets"></div>
-      <div class="col s12 m9 search-results"></div>
-    </div>
-  </section>
+  <div id="team_search">
+    <section>
+      <form class="search-wrapper">
+        <label for="team-search" class="search-label">Find advocates who know about &#8628;</label>
+        <input id="team-search" class="search-input" type="text" value="*:*"
+          data-simple-search="https://wdp-advo-team.mybluemix.net/"
+          data-search-list=".search-results" 
+          data-search-facets=".search-facets"
+          data-search-onbefore="devadvo.onBefore"
+          data-search-onsuccess="devadvo.teamOnSuccess"
+          data-search-onfail="devadvo.onFail">
+      </form>
+    </section>
+    <section>
+      <div class="row">
+        <div class="col s12 m3 search-facets"></div>
+        <div class="col s12 m9 search-results"></div>
+      </div>
+    </section>
+  </div>
+  <div id="team_profile">
+  </div>
 </div>
+
+<!-- template for results in team search (not using liquid templating engine) -->
+{% raw %}
+<script id="team_search_result" type="text/template">
+  {{profile icon}}
+  <h3><a href="/team/{{github username}}">{{name}}</a></h3>
+  <p class="specialties">
+    {{specialties}}, {{languages}}, {{connect}}
+  </p>
+  <div>
+    <p class="bio">{{bio}}</p>
+  </div>
+  <p class="separator">…</p>
+</script>
+{% endraw %}
+
+<!-- template for individual team members profile page (not using liquid templating engine) -->
+{% raw %}
+<script id="team_member_profile" type="text/template">
+  <div class="row">
+    <div class="col s12 m8 offset-m2">
+      <div class="row team-profile-top">
+        {{profile icon}}
+        <div>
+          <h3>{{name}}</h3>
+          <p class="subhead">{{location}}</p>
+          <p class="connecticons">{{connecticons}}</p>
+        </div>
+      </div>
+      <div class="row team-profile-bottom">
+        <p class="bio">
+          {{bio}}
+        </p>
+        <p>
+          <span class="title">specialties</span>
+          {{specialties}}
+        </p>
+        <p>
+          <span class="title">languages</span>
+          {{languages}}
+        </p>
+        <p>
+          <span class="title">showcases</span>
+          {{showcases}}
+        </p>
+        <p>
+          <span class="title">trends</span>
+          {{trends}}
+        </p>
+      </div>
+    </div>
+  </div>
+</script>
+{% endraw %}
