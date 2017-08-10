@@ -2,6 +2,7 @@
 layout: default
 title: Team
 id: team
+permalink: team/
 ---
 
 <div>
@@ -33,7 +34,7 @@ id: team
 {% raw %}
 <script id="team_search_result" type="text/template">
   {{profile icon}}
-  <h3><a href="/team/{{github username}}">{{name}}</a></h3>
+  <h3><a href="/team/#/{{github username}}">{{name}}</a></h3>
   <p class="specialties">
     {{specialties}}, {{languages}}, {{connect}}
   </p>
