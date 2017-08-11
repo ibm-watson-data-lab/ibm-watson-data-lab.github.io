@@ -6,7 +6,7 @@ permalink:  simple-search
 strategies: 
   - working-with-wdp
 essentials:
-  Simple Search on Github: https://github.com/ibm-watson-data-lab/simple-search-service
+  Simple Search on GitHub: https://github.com/ibm-watson-data-lab/simple-search-service
 ---
 this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph. this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
 
