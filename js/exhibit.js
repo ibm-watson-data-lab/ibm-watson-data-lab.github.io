@@ -72,9 +72,9 @@ $(document).ready(function () {
       connect.push(' <a href="http://www.twitter.com/' + fields['twitter username'] + '" target="_blank">' + (fields['twitter username'].indexOf('@') === -1 ? ('@' + fields['twitter username']) : fields['twitter username']) + '</a>')
       connecticons.push('<a href="https://twitter.com/' + fields['twitter username'] + '" title="Twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>')
     }
-    if (fields['medium url']) {
-      connect.push(' <a href="' + fields['medium url'] + '" target="_blank">Medium</a>')
-      connecticons.push('<a href="' + fields['medium url'] + '" title="Medium" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>')
+    if (fields['medium username']) {
+      connect.push(' <a href="https://medium.com/' + (fields['medium username'].indexOf('@') === -1 ? ('@' + fields['medium username']) : fields['medium username']) + '" target="_blank">Medium</a>')
+      connecticons.push('<a href="https://medium.com/' + (fields['medium username'].indexOf('@') === -1 ? ('@' + fields['medium username']) : fields['medium username']) + '" title="Medium" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>')
     }
     if (fields['linkedin url']) {
       connect.push(' <a href="' + fields['linkedin url'] + '" target="_blank">LinkedIn</a>')
