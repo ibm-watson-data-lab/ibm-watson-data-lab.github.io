@@ -525,6 +525,7 @@ a.nowrap > i.small.material-icons {
 }
 
 .team-profile-top {
+  min-height: 200px;
   position: relative;
   text-align: right;
 }
@@ -573,6 +574,7 @@ a.nowrap > i.small.material-icons {
 
 .connecticons a {
   color: rgba(3, 155, 229, 0.8);
+  margin-left: 10px;
 }
 
 @media only screen and (min-width: 600px) {
