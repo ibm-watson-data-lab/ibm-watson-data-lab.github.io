@@ -1,3 +1,8 @@
+html,
+body {
+  font-family: "ibm-plex-sans", "Helvetica Neue", monospace, sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -107,7 +112,6 @@ div.simplesearch-reset {
 
 /** FACETS **/
 .search-facets {
-  font-family: "Helvetica Neue", monospace, sans-serif;
   font-size: 1.25rem;
   line-height: 1.5rem;
   margin: 1.5em 0 0;
@@ -142,7 +146,7 @@ div.simplesearch-reset {
   clear: both;
   color: #ccc;
   font-size: 2rem;
-  margin: 1rem 0 5rem 0;
+  margin: 1rem 0 3rem 0;
 }
 
 /* RESULTS */
@@ -184,7 +188,6 @@ div.simplesearch-reset {
   margin: 0 0 .2rem 0;
 }
 .simplesearch-result p.specialties {
-  font-family: "Helvetica Neue", monospace, sans-serif;
   font-size: 1.25rem;
 }
 .search-results ul.simplesearch-list li ul.social {
@@ -196,7 +199,6 @@ div.simplesearch-reset {
 }
 .search-results ul.simplesearch-list li ul.social li.site {
   float: left;
-  font-family: "Helvetica Neue", monospace, sans-serif;
   font-size: 1rem;
   line-height: 1.3rem;
   list-style: none;
@@ -248,7 +250,7 @@ div.simplesearch-reset {
   clear: both;
   color: #ccc;
   font-size: 2rem;
-  margin: 1rem 0 5rem;
+  margin: 1rem 0 3rem;
 }
 .devcenter-result dt {
   display: none;
