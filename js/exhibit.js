@@ -58,12 +58,29 @@ $(document).ready(function () {
     })
   }
 
+  // https://stackoverflow.com/a/10772475
+  var sanitizeHTML = function (htmlStr) {
+    var whitelist = 'b|i|em|strong|a|p|strike|code' // allowed tags
+    var blacklist = 'script|object|embed' // completely remove tags
+    // /(<(script|object|embed)[^>]*>.*<\/\2>|(?!<[/]?(b|i|em|strong|a|p|strike|code)(\s[^<]*>|[/]>|>))<[^<>]*>|(?!<[^<>\s]+)\\s[^</>]+(?=[/>]))/gi
+    var re = new RegExp('(<(' + blacklist + ')[^>]*>.*</\\2>|(?!<[/]?(' + whitelist + ')(\\s[^<]*>|[/]>|>))<[^<>]*>|(?!<[^<>\\s]+)\\\\s[^</>]+(?=[/>]))', 'gi')
+    return htmlStr.replace(re, '')
+  }
+
   var prepUserData = function (data) {
     var fields = data
 
     fields.specialties = data.specialties.join(', ')
     fields.languages = data.languages.join(', ')
     fields.showcases = data.showcases.join(', ')
+
+    for (var f in fields) {
+      if (f === 'bio') {
+        fields[f] = sanitizeHTML(fields[f])
+      } else if (typeof fields[f] === 'string') {
+        fields[f] = fields[f].replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      }
+    }
 
     var connect = []
     var connecticons = []
