@@ -331,8 +331,6 @@
     Medium: https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0
   features: 
     - offline-camp    
-  strategies:
-    - offline-first
 
 - title:    How I used serverless infrastructure to build a large-scale petition system
   headline: An example web app using OpenWhisk and Cloudant.
