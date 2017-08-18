@@ -362,24 +362,18 @@
   strategies:
     - offline-first
 
-- title:   "Recap: Offline Camp Catskills"
+- title:   Offline Camp Catskills 2016
   headline: A look at the topics discussed at the inaugural Offline Camp
   links: 
     Medium:  https://medium.com/offline-camp/from-the-catskills-to-california-the-growing-offline-first-community-8a7456e83794
   features: 
-    - offline-camp  
+    - offline-camp   
 
 - title:   Offline Camp California 2016
-  headline: Offline Camp takes to the ranch
-  links: 
-    YouTube:  https://www.youtube.com/watch?v=2vCmlxtMvwE&t=26s
-  features: 
-    - offline-camp  
-
-- title:   "Recap: Offline Camp California"
   headline: A wrap-up of our first West Coast event
   links: 
     Medium:  https://medium.com/offline-camp/iterating-on-offline-camp-af9b288cf5aa
+    YouTube:  https://www.youtube.com/watch?v=2vCmlxtMvwE&t=26s
   features: 
     - offline-camp  
 
@@ -394,16 +388,10 @@
 - title:   Offline Camp Berlin 2017
   headline: Offline Camp makes its first visit to Europe
   links: 
+    Medium:  https://medium.com/offline-camp/offline-camp-berlin-36a491e4e4e2
     YouTube:  https://www.youtube.com/watch?v=bsQapDA--Sw
   features: 
     - offline-camp 
-
-- title:   "Recap: Offline Camp Berlin"
-  headline: Reflections on our first European event
-  links: 
-    Medium:  https://medium.com/offline-camp/offline-camp-berlin-36a491e4e4e2
-  features: 
-    - offline-camp     
 
 - title:    The Offline Camp Experience 
   headline: Our campers reveal the secret sauce that makes Offline Camp so special
