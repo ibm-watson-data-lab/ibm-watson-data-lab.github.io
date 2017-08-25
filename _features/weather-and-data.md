@@ -9,45 +9,31 @@ strategies:
   - differentiators
 ---
 
-Besides being one of the most talked about subjects worldwide, weather drives a lot of our decisions and influences **lots of stuff**. Imagine having weather data easily available to find out if your data is driven by the weather or use it to do predictions for tomorrow and even next week. Some examples are 
+Besides being one of the most talked about subjects worldwide, weather influences our environment and drives a lot of our decisions. For instance the food production is largely depending on the weather, as well as the amount of solar and wind energy that can be produced. And on a more personal level the weather forecast influences our decisions to bring an umbrella, go by bike, bus or car and how busy traffic will be.   
 
-Here you can find examples of how we are exploring what you can do with weather data. 
+Imagine having weather data easily available to find out if your data is driven by the weather and then use it to do predictions for tomorrow and even next week.  
 
-## Weather Data
+Here you can find examples of how we are exploring what you can do with weather data. In general this consists of three broad steps:
+1. Combine your own data with historical weather data based on location and date
+1. Analyse this combined data to build predictive models
+1. Use weather forecast data to make predictions to be used in your applications
 
-The first step is getting access to the data. There is a lot of it, so first you have to decide what you need. The options broadly are:
-- historic weather
-- current weather
-- future weather  
-All of these include variables such as temperature, humidity, rainfall, windspeed and many more.
+## Combine - Analyse - Build - Predict
 
-There is quite some weather out there for free, but if you want a consistent dataset check out the IBM The Weather Company APIs on [Bluemix](https://console.ng.bluemix.net/) or through their own [data portal](). The APIs work as simple as doing a GET request with the location (latitude, longitude) you are interested in. This will return a json file with weather data for the period you specified. 
+The first step is getting access to the data. There is a lot of it, so first you have to decide what you need. The options are broadly historic, current and future weather. All of these include variables such as temperature, humidity, rainfall, windspeed and many more.
 
-For some more background check out [this video](https://www.youtube.com/watch?v=U_Aq2cPxwss&list=PLGVZCDnMOq0oieXy92cJBwSirA3G2MCU1&index=6) where [Margriet](https://twitter.com/MargrietGr) explains a little more about weather and climate data and how to work with it. 
+There is quite some weather out there for free, but if you want a consistent dataset check out the IBM The Weather Company APIs on [Bluemix](https://console.ng.bluemix.net/) or through their own data portal. The APIs work as simple as doing a GET request with the location (latitude, longitude) and time period you are interested in. This will return a json file with weather data for the period you specified. 
+
+To explore the data a great tool is Jupyter Python notebooks that you can run locally or in the [Cloud](https://datascience.ibm.com/). Check out this [notebook](https://github.com/ibm-watson-data-lab/python-notebooks/blob/master/Weather%20forecast.ipynb) to see a basic example of the API, how to convert the json data and create charts and maps with PixieDust. 
+
+When you have decided that there is a clear influence of weather on your data, you can start building a (machine learning) model and do predictions using weather forecast data. These predictions can then be used in other applications as for example a warning system for events likely to happen due to changes in the weather over the coming week. 
 
 ## Weather + Your Data
 
 As we are constantly developing new ideas into data science projects and applications here are some of the ideas we are playing with at the moment and that might inspire you to explore if weather is something to add to your projects.
 
-### Ongoing
-- Collisions and Weather - analysis of traffic collisions in New York
-- Global temperature and CO$_2$ concentration - time series analysis
+- A [weather forecast PixieApp](https://medium.com/ibm-watson-data-lab/visualizing-weather-data-as-a-pixieapp-c4424aae084d) to explore how the APIs can be used
+- [Collisions and Weather](https://medium.com/ibm-watson-data-lab/move-over-matplotlib-2780cd1f56bf) - analysis of the influence of weather on traffic collisions in New York
+- And many more to come, watch this space!
 
-### Ideas
-- Location and Weather - add weather forecast to the Location Tracker
-- Maps and Weather - build a notebook explaining how to work with weather gridded maps - add this functionality to PixieDust
-- Geo and Weather - use weather data for geospatial statistics
-- Health and Weather - 1. Hay fever and Weather - 2. Explore the influence of weather on the spread of diseases like malaria and dengue - 3. Damp houses are a problem in the UK - 4. air pollution/smog
-- Food and Weather - 1. build a simple crop production model (with degree day API) in a notebook and test with observations. 2. Can we feed the world, impact of climate change?
-- Floods and Weather - build a flood warning API
-- Hurricanes and Weather - build a hurricane warning API
-- Holidays and Weather - 1. build a snow depth/wave height/sun hours/... model - 2. find my perfect location as specified by user and display pretty maps
-- Refugees/war and Weather - too political? War zones are the areas with not enough food and water due to their climate, made worse by bans on import etc
-- Water and Weather - predict drinking water availability
-- Energy and Weather - best locations for solar and wind energy? US map...
-- Spring and Weather - why is spring starting earlier? pretty visualisations as gif over time
-- Satellite Data
-
-### Add to Project links 
-- [Weather Forecast with PixieDust](https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/) + notebook on [GitHub](https://github.com/ibm-watson-data-lab/python-notebooks/blob/master/Weather%20forecast.ipynb)
-- [PixieApp Weather Dashboard](https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/) + notebook on [GitHub]()
+For some more background on weather watch [this video](https://www.youtube.com/watch?v=U_Aq2cPxwss&list=PLGVZCDnMOq0oieXy92cJBwSirA3G2MCU1&index=6) where [Margriet](https://twitter.com/MargrietGr) explains a little more about weather and climate data and how to work with it. 
