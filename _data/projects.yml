@@ -16,6 +16,20 @@
 
 # Old stuff at the top; new stuff appended to the bottom.
 
+- title:    Weather Forecast with PixieDust
+  headline: A Python notebook that show you how to make your own weather forecast graphs and maps.
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/simple-search-service
+    Blog:  https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/
+  strategies: 
+    - differentiators
+  features: 
+    - weather-and-data
+  tags:
+    - Weather
+    - Python
+    - PixieDust    
+    
 - title:    Simple Search Service
   headline: An IBM Bluemix app that creates a faceted search engine from a CSV, exposing an API you can use to bring search into your own apps.
   links: 
@@ -363,3 +377,17 @@
     - OpenWhisk
     - Alexa
     - Cloudant
+
+- title:    PixieApp Weather Dashboard
+  headline: Build a weather forecast dashboard in a Python notebook.
+  links: 
+    GitHub: 
+    Blog: https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/
+  strategies: 
+    - differentiators
+  features: 
+    - weather-and-data
+  tags:
+    - Weather
+    - Python
+    - PixieDust    
