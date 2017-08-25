@@ -363,3 +363,19 @@
     - OpenWhisk
     - Alexa
     - Cloudant
+
+- title:    Add Redis To Your Serverless Application
+  headline: Use in-memory datastore for a little light data persistence
+  story:    Voice assistants are fun but they can seem rather idiotic when they can't remember what they just said.  See asynchronous JavaScript used to connect to Redis from an IBM Cloud Function action and give Amazon's Alexa a "brain".
+  links:
+    Medium: https://medium.com/ibm-watson-data-lab/add-redis-to-your-serverless-application-e22381123d9
+  features:
+    - openwhisk-and-data
+  strategies:
+    - ibm-and-data
+  tags:
+    - OpenWhisk
+    - Alexa
+    - Redis
+    - Compose
+    - IBM Cloud Functions
