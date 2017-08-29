@@ -187,8 +187,12 @@ div.simplesearch-reset {
   line-height: 2rem;
   margin: 0 0 .2rem 0;
 }
-.simplesearch-result p.specialties {
+.simplesearch-result {
   font-size: 1.25rem;
+}
+p.specialties {
+  font-family: ibm-plex-mono, monospace, sans-serif;
+  font-size: 1.0rem;
 }
 .search-results ul.simplesearch-list li ul.social {
   float: left;
