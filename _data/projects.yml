@@ -266,7 +266,6 @@
 
 - title:    Mapping for Data Science with PixieDust and Mapbox
   headline: Add another layer to your Jupyter notebooks with built-in map rendering.
-  story:    Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. 
   img:      img/watson_black.png
   links:
     Medium: https://medium.com/ibm-watson-data-lab/mapping-for-data-science-with-pixiedust-and-mapbox-b5aa1d9532b9
@@ -362,3 +361,56 @@
     - OpenWhisk
     - Alexa
     - Cloudant
+
+- title:    Navigating SXSW via cognitive chatbot
+  headline: A smarter conference event recommendation system using Watson services and Mapbox
+  img:      https://cdn-images-1.medium.com/max/1600/1*AMK5DT-y93B3IwCNpSGFZQ.gif
+  links:
+    Medium: https://medium.com/ibm-watson-data-lab/navigating-sxsw-via-cognitive-chatbot-28a2e1f7a456
+    GitHub: https://github.com/ibm-watson-data-lab/cognitive-event-finder
+  strategies:
+    - partners
+    - ibm-and-data
+  features: 
+    - mapbox
+  tags:
+    - Cloudant
+    - Chatbots
+    - Mapbox
+    - Mobile
+    - Slack 
+    - Vue.js
+    - Watson Conversation
+
+- title:    How to Build a Chatbot with PubNub & IBM Watson’s Alchemy Language API on Bluemix
+  headline: Learn how to use PubNub BLOCKS, connect to IBM Watson cognitive services for natural language processing and translation, and create a Java Servlet knowledge base running on IBM Bluemix
+  story: Josh shows you MR ROCKBOT, a chatbot that understands multiple languages and responds to geology related questions and jokes. You will learn how to use PubNub BLOCKS, connect to IBM Watson cognitive services for natural language processing and translation, and create a Java Servlet knowledge base running on IBM Bluemix.
+  img:      https://cdn-images-1.medium.com/max/1600/1*AMK5DT-y93B3IwCNpSGFZQ.gif
+  links:
+    External: https://www.pubnub.com/training/how-to-build-a-chatbot-with-pubnub-ibm-watsons-alchemy-language-api-on-bluemix/
+  strategies:
+    - partners
+  features: 
+    - pubnub
+  tags:
+    - Chatbots
+    - Cognitive
+    - PubNub
+    - Mobile
+    - Javascript
+    - Watson Conversation
+
+- title:    Analyze User Sentiment and Emotion in Realtime with IBM Watson
+  headline: Use the PubNub BLOCK for Watson Sentiment and Context Analysis to build an application that analyzes text inputs and rates the user sentiment on a scale of 1-100
+  img:      https://www.pubnub.com/wp-content/uploads/2016/11/pubnub_watson_sentiment.gif
+  links:
+    External: https://www.pubnub.com/tutorials/javascript/ibm-watson-user-sentiment/
+  strategies:
+    - partners
+  features: 
+    - pubnub
+  tags:
+    - Cognitive
+    - PubNub
+    - Javascript
+    - Watson Sentiment
