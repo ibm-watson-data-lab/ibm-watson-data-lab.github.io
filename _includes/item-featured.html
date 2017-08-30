@@ -16,10 +16,14 @@
         <a href="/{{ item.permalink }}">{{ item.title }}</a>
       </h3>
       <div class="row">
+      {% if item.img-thumb %}
         <div class="col m3">
           <img src="img/{{ item.img-thumb }}" />
         </div>
         <div class="col m9">
+      {% else %}
+        <div class="col m10">
+      {% endif %}
           {{ item.headline }}
           {{ item.story }}
           {% if projects.size > 1 %}

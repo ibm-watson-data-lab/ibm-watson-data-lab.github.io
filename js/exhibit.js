@@ -1,21 +1,22 @@
-$(document).ready(function() {
-  $('.button-collapse').sideNav();
+/* global $, location */
+$(document).ready(function () {
+  var searchuserGithub = 'https://wdp-advo-team.mybluemix.net/search?q=%22github%20username%22:{username}&limit=1'
+  var searchuserTwitter = 'https://wdp-advo-team.mybluemix.net/search?q=%22twitter%20username%22:{username}&limit=1'
+  var searchuserMedium = 'https://wdp-advo-team.mybluemix.net/search?q=%22medium%20username%22:{username}&limit=1'
+
+  $('.button-collapse').sideNav()
   $('.modal').modal()
 
-  // do not include listed projects
-  // must be full name (i.e., 'ibm-watson-data-lab/pipes')
-  var skipRepos = []
-
-  var onBefore = function(q, options, paging, searchurl) {
+  var onBefore = function (q, options, paging, searchurl) {
     $('.simplesearch-more').prop('disabled', true)
   }
 
-  var onFail = function(error) {
+  var onFail = function (error) {
     console.error('failed:', error)
     $('.simplesearch-more').prop('disabled', false)
   }
 
-  var searchOnData = function(results) {
+  var searchOnData = function (results) {
     // limit the fields to display
     if (results.data.rows) {
       results.fields = [
@@ -27,10 +28,10 @@ $(document).ready(function() {
     return results
   }
 
-  var searchOnSuccess = function(results) {
+  var searchOnSuccess = function (results) {
     // turn urls into links
     var dl = $('.simplesearch-result dl:not(.devcenter-result)')
-    $.each(dl, function(index, value) {
+    $.each(dl, function (index, value) {
       var link = $(this).find('.simplesearch-value-url')
       var html = '<a href="' + link.text() + '" target="_blank">' + link.text() + '</a>'
       link.html(html)
@@ -39,54 +40,130 @@ $(document).ready(function() {
     $('.simplesearch-more').prop('disabled', false)
   }
 
-  var teamOnSuccess = function(results) {
-    var li = $('.simplesearch-result:not(.team-result)'),
-    data = results.data
+  var teamOnSuccess = function (results) {
+    var li = $('.simplesearch-result:not(.team-result)')
+    var data = results.data
 
-    $.each(li, function(index, value) {
-      var name = data.rows[index].name
-      var bio = data.rows[index].bio || ''
-      var git = data.rows[index]['github username'] || ''
-      var twit = data.rows[index]['twitter username'] || ''
-      var linked = data.rows[index]['linkedin url'] || ''
-      var blog = data.rows[index]['personal blog url'] || ''
-      var so = data.rows[index]['stack overflow user id'] || ''
+    $.each(li, function (index, value) {
+      var userdata = prepUserData(data.rows[index])
 
-      var specialties = data.rows[index].specialties.join(', ')
-      var languages = data.rows[index].languages.join(', ')
-      var connect = []
+      var tmpl = $('#team_search_result')
+        .html()
+        .replace(/\{\{(.+?)\}\}/g, function ($0, $1) {
+          return userdata.hasOwnProperty($1) ? userdata[$1] : '' // $0
+        })
 
-      var html = ''
-      
-      if (git) {
-        html += '<img src="http://github.com/' + git + '.png?size=150" />'
-        connect.push(' <a href="http://www.github.com/' + git + '" target="_blank">Github</a>')
-      }
-      if (twit) {
-        connect.push(' <a href="http://www.twitter.com/' + twit + '" target="_blank">' + (twit.indexOf('@') === -1 ? ('@' + twit) : twit) + '</a>')
-      }
-      if (linked) {
-        connect.push(' <a href="' + linked + '" target="_blank">LinkedIn</a>')
-      }
-      if (blog) {
-        connect.push(' <a href="' + blog + '" target="_blank">Blog</a>')
-      }
-      if (so) {
-        connect.push(' <a href="http://www.stackoverflow.com/users/' + so + '" target="_blank">Stack Overflow</a>')
-      }
-
-      var tldr = [specialties, languages, connect].join(', ')
-
-      html += '<h3>' + name + '</h3>'
-      html += '<p class="specialties">' + tldr + '</p>'
-      html += "<div>"
-      html += '<p class="bio">' + bio + '</p>'
-      html += "</div>"
-      html += '<p class="separator">&hellip;</p>'
-
-      $(this).html(html)
+      $(this).html(tmpl)
       $(this).addClass('team-result')
     })
+  }
+
+  // https://stackoverflow.com/a/10772475
+  var sanitizeHTML = function (htmlStr) {
+    var whitelist = 'b|i|em|strong|a|p|strike|code' // allowed tags
+    var blacklist = 'script|object|embed' // completely remove tags
+    // /(<(script|object|embed)[^>]*>.*<\/\2>|(?!<[/]?(b|i|em|strong|a|p|strike|code)(\s[^<]*>|[/]>|>))<[^<>]*>|(?!<[^<>\s]+)\\s[^</>]+(?=[/>]))/gi
+    var re = new RegExp('(<(' + blacklist + ')[^>]*>.*</\\2>|(?!<[/]?(' + whitelist + ')(\\s[^<]*>|[/]>|>))<[^<>]*>|(?!<[^<>\\s]+)\\\\s[^</>]+(?=[/>]))', 'gi')
+    return htmlStr.replace(re, '')
+  }
+
+  var prepUserData = function (data) {
+    var fields = data
+
+    fields.specialties = data.specialties.join(', ')
+    fields.languages = data.languages.join(', ')
+    fields.showcases = data.showcases.join(', ')
+
+    for (var f in fields) {
+      if (f === 'bio') {
+        fields[f] = sanitizeHTML(fields[f])
+      } else if (typeof fields[f] === 'string') {
+        fields[f] = fields[f].replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      }
+    }
+
+    var connect = []
+    var connecticons = []
+    if (fields['github username']) {
+      fields['profile icon'] = '<img src="http://github.com/' + fields['github username'] + '.png?size=200" />'
+      fields.linkhash = 'g/' + fields['github username']
+      connect.push(' <a href="http://www.github.com/' + fields['github username'] + '" target="_blank">Github</a>')
+      connecticons.push('<a href="http://www.github.com/' + fields['github username'] + '" title="GitHub" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>')
+    }
+    if (fields['medium username']) {
+      fields.linkhash = fields.linkhash || ('m/' + fields['medium username'])
+      connect.push(' <a href="https://medium.com/' + (fields['medium username'].indexOf('@') === -1 ? ('@' + fields['medium username']) : fields['medium username']) + '" target="_blank">Medium</a>')
+      connecticons.push('<a href="https://medium.com/' + (fields['medium username'].indexOf('@') === -1 ? ('@' + fields['medium username']) : fields['medium username']) + '" title="Medium" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>')
+    }
+    if (fields['twitter username']) {
+      fields.linkhash = fields.linkhash || ('t/' + fields['twitter username'])
+      connect.push(' <a href="http://www.twitter.com/' + fields['twitter username'] + '" target="_blank">' + (fields['twitter username'].indexOf('@') === -1 ? ('@' + fields['twitter username']) : fields['twitter username']) + '</a>')
+      connecticons.push('<a href="https://twitter.com/' + fields['twitter username'] + '" title="Twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>')
+    }
+    if (fields['linkedin url']) {
+      connect.push(' <a href="' + fields['linkedin url'] + '" target="_blank">LinkedIn</a>')
+      connecticons.push('<a href="' + fields['linkedin url'] + '" title="LinkedIn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>')
+    }
+    if (fields['personal blog url']) {
+      connect.push(' <a href="' + fields['personal blog url'] + '" target="_blank">Blog</a>')
+      connecticons.push('<a href="' + fields['personal blog url'] + '" title="Blog" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>')
+    }
+    if (fields['stack overflow user id']) {
+      connect.push(' <a href="http://www.stackoverflow.com/users/' + fields['stack overflow user id'] + '" target="_blank">Stack Overflow</a>')
+      connecticons.push('<a href="http://www.stackoverflow.com/users/' + fields['stack overflow user id'] + '" title="Stack Overflow" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>')
+    }
+
+    fields.connect = connect
+    fields.connecticons = connecticons.join(' ')
+    // fields.tldr = [fields.specialties, fields.languages, fields.connect].join(', ')
+
+    return fields
+  }
+
+  var teamHashChanged = function () {
+    var hash = null
+    if (location.hash && location.pathname.indexOf('/team') === 0) {
+      hash = location.hash.charAt(1) === '/' ? location.hash.substring(2) : location.hash.substring(1)
+      if (hash) {
+        $('#team_search').hide()
+        $('#team_profile').html('loading...').show()
+
+        var url = null
+        if (hash.indexOf('g/') === 0) {
+          url = searchuserGithub.replace('{username}', hash.substring(2))
+        } else if (hash.indexOf('m/') === 0) {
+          url = searchuserMedium.replace('{username}', hash.substring(2))
+        } else if (hash.indexOf('t/') === 0) {
+          url = searchuserTwitter.replace('{username}', hash.substring(2))
+        } else {
+          hash = null
+        }
+
+        if (url) {
+          $.getJSON(url).then(function (data) {
+            var advocate = data && data.rows.length ? data.rows[0] : null
+            if (advocate) {
+              var userdata = prepUserData(advocate)
+
+              var tmpl = $('#team_member_profile')
+                .html()
+                .replace(/\{\{(.+?)\}\}/g, function ($0, $1) {
+                  return userdata.hasOwnProperty($1) ? userdata[$1] : '' // $0
+                })
+
+              $('#team_profile').html(tmpl).show()
+            } else {
+              $('#team_profile').html('<p>nothing to see here</p>').show()
+            }
+          })
+        }
+      }
+    }
+
+    if (!hash) {
+      $('#team_profile').hide()
+      $('#team_search').show()
+    }
   }
 
   window.devadvo = {
@@ -97,60 +174,15 @@ $(document).ready(function() {
     teamOnSuccess: teamOnSuccess
   }
 
-  if (typeof repos !== 'undefined' && repos !== null && repos.length > 0) {
-    var total = repos.length
-
-    // sort by stars
-    repos.sort(function(a, b) {
-      if (a.stargazers_count < b.stargazers_count) return 1;
-      else if (b.stargazers_count < a.stargazers_count) return -1;
-      else return 0
-    })
-
-    for (var i in repos) {
-      if (skipRepos.indexOf(repos[i].full_name) === -1) {
-        html = '<div class="repo">'
-        html += '<h3>' + repos[i].name + '</h3>'
-        html += '<a href="' + repos[i].html_url + '" target="_blank">' + repos[i].html_url + '</a>'
-        html += '<div><p>' + repos[i].description + '</p></div>'
-        html += '<div class="repo-meta">'
-        html += '<i class="fa fa-code-fork" aria-hidden="true"></i>' + repos[i].forks_count
-        html += '<i class="fa fa-star" aria-hidden="true"></i>' + repos[i].stargazers_count
-        html += '<i class="fa fa-eye" aria-hidden="true"></i>' + repos[i].watchers_count
-        html += '</div>'
-        // html += '<div>' + new Date(repos[i].updated_at) + '</div>'
-        html += '<p class="separator">&hellip;</p>'
-        html += '</div>'
-
-        $('.repos-list').append(html)
-      }
-    }
-
-    $('.repos-count').html('Showing ' + total + ' of ' + total)
-    var rows = $('.repo')
-
-    $('#repos-search').keyup(function() {
-      var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$';
-      var reg = RegExp(val, 'i')
-      var index = 0;
-      
-      rows.each(function(i, e) {
-        if (!reg.test($(this).text().replace(/\s+/g, ' '))) {
-          $(this).addClass('hidden')
-        }
-        else {
-          $(this).removeClass('hidden')
-          ++index
-        }
-      });
-
-      $('.repos-count').html('Showing ' + index + ' of ' + total)
-    });
+  if ('onhashchange' in window) {
+    window.onhashchange = teamHashChanged
   }
 
-  $(".dropdown-button").dropdown(
+  $('.dropdown-button').dropdown(
     { hover: true }
-  );
+  )
 
-  $(".button-collapse").sideNav();
+  $('.button-collapse').sideNav()
+
+  teamHashChanged()
 })

@@ -1,3 +1,8 @@
+html,
+body {
+  font-family: "ibm-plex-sans", "Helvetica Neue", monospace, sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -107,7 +112,6 @@ div.simplesearch-reset {
 
 /** FACETS **/
 .search-facets {
-  font-family: "Helvetica Neue", monospace, sans-serif;
   font-size: 1.25rem;
   line-height: 1.5rem;
   margin: 1.5em 0 0;
@@ -142,7 +146,7 @@ div.simplesearch-reset {
   clear: both;
   color: #ccc;
   font-size: 2rem;
-  margin: 1rem 0 5rem 0;
+  margin: 1rem 0 3rem 0;
 }
 
 /* RESULTS */
@@ -176,15 +180,19 @@ div.simplesearch-reset {
 .simplesearch-result img {
   float: left;
   margin: 0 2rem 1rem 0;
+  width: 150px;
 }
 .simplesearch-result h3 {
   font-size: 2rem;
   line-height: 2rem;
   margin: 0 0 .2rem 0;
 }
-.simplesearch-result p.specialties {
-  font-family: "Helvetica Neue", monospace, sans-serif;
+.simplesearch-result {
   font-size: 1.25rem;
+}
+p.specialties {
+  font-family: ibm-plex-mono, monospace, sans-serif;
+  font-size: 1.0rem;
 }
 .search-results ul.simplesearch-list li ul.social {
   float: left;
@@ -195,7 +203,6 @@ div.simplesearch-reset {
 }
 .search-results ul.simplesearch-list li ul.social li.site {
   float: left;
-  font-family: "Helvetica Neue", monospace, sans-serif;
   font-size: 1rem;
   line-height: 1.3rem;
   list-style: none;
@@ -215,10 +222,8 @@ div.simplesearch-reset {
   color: red;
 }
 .simplesearch-more {
-  background-color: #1565C0;
+  background-color: #039be5;
   border: medium none;
-  border-radius: 2px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   color: #fff;
   cursor: pointer;
   height: 54px;
@@ -233,7 +238,7 @@ div.simplesearch-reset {
   vertical-align: middle;
 }
 .simplesearch-more:hover {
-  background-color: #2196f3;
+  background-color: #1565C0;
 }
 .simplesearch-more:disabled {
   background-color: #dfdfdf !important;
@@ -249,7 +254,7 @@ div.simplesearch-reset {
   clear: both;
   color: #ccc;
   font-size: 2rem;
-  margin: 1rem 0 5rem;
+  margin: 1rem 0 3rem;
 }
 .devcenter-result dt {
   display: none;
@@ -334,18 +339,18 @@ div.simplesearch-reset {
 }
 
 .nav-fixed {
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    margin-bottom: 0;
-    z-index: 997;
-  }
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-bottom: 0;
+  z-index: 997;
+}
 
-  .not-active, .not-active a {
-   cursor: default;
-   color: grey;
-   opacity: 0.7;
+.not-active, .not-active a {
+  cursor: default;
+  color: grey;
+  opacity: 0.7;
 }
 
 /* override some Materialize defualt of not displaying bullets */
@@ -447,8 +452,6 @@ a.strategy {
 div.featured-collection {
   margin: 1rem 0;
 }
-div.featured-collection.featured {
-}
 div.featured-collection.featured .title {
   border-bottom: 1px solid #ccc;
   display: block;
@@ -495,10 +498,6 @@ a.quiet-link:hover {
   padding: 0 0 2rem 0;
 }
 
-.collections {}
-.collections .collection {}
-.collections .collection h3 {}
-
 ul.see-also li.active a {
   color: #666;
   text-decoration: line-through;
@@ -525,6 +524,62 @@ a.nowrap > i.small.material-icons {
   font-weight: 400;
 }
 
+.sidebar-fixed {
+  display: block;
+}
+
+.team-profile-top {
+  min-height: 200px;
+  position: relative;
+  text-align: right;
+}
+
+.team-profile-top > img {
+  border-radius: 100px;
+  float: left;
+}
+
+.team-profile-top > div {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  width: calc(100% - 250px);
+}
+
+.team-profile-top h3,
+.team-profile-top p {
+  margin: 0;
+}
+
+.team-profile-bottom {
+  clear: left;
+  margin: 50px 0 0 0;
+}
+
+.team-profile-bottom > p {
+  margin-bottom: 40px;
+}
+
+.team-profile-bottom .title {
+  color: #666;
+  display: block;
+  font-size: .8rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.connecticons {
+  border-top: 1px solid #ccc;
+  font-size: 1.5em;
+  margin-top: 10px !important;
+  padding-top: 5px;
+}
+
+.connecticons a {
+  color: rgba(3, 155, 229, 0.8);
+  margin-left: 10px;
+}
 
 @media only screen and (min-width: 600px) {
   .sidebar-fixed {
@@ -546,8 +601,15 @@ a.nowrap > i.small.material-icons {
   .search-facets ul li:last-child:after {
     content: none;
   }
-}
-
-.sidebar-fixed {
-    display: block;
+  .team-profile-top {
+    text-align: center;
+  }
+  .team-profile-top > img {
+    float: initial;
+  }
+  .team-profile-top > div {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+  }
 }
