@@ -1,0 +1,35 @@
+---
+layout: default
+title: Sign In
+id: signin
+permalink: signin
+---
+
+<div id="sign-in" class="row valign-wrapper">
+  <div class="col s8 offset-s2">
+    {% if site.owpackageurl %}
+    <h3 class="grey-text text-darken-3 sign-in-title"></h3>
+    <div class="row flow-text sign-in-form">
+      <div class="spinner">&profline;</div>
+      <form class="col s12" method="post" enctype="application/x-www-form-urlencoded" action="{{ site.owpackageurl }}/login.http">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" name="email" class="validate" required>
+            <label for="email">Email</label>
+            <div class="right-align">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row sign-out" style="margin-top:50px">
+      <div class="col s12 right-align">
+        <button id="btn-signout" type="button" class="waves-effect waves-light btn-flat z-depth-0">Sign Out</button>
+        <a id="btn-editprofile" href="/profile" class="btn-flat">Edit Profile</a>
+      </div>
+    </div>
+    {% else %}
+    <p>things that make you go hmmmm</p>
+    {% endif %}
+  </div>
+</div>

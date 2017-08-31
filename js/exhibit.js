@@ -1,8 +1,8 @@
 /* global $, location */
 $(document).ready(function () {
-  var searchuserGithub = 'https://wdp-advo-team.mybluemix.net/search?q=%22github%20username%22:{username}&limit=1'
-  var searchuserTwitter = 'https://wdp-advo-team.mybluemix.net/search?q=%22twitter%20username%22:{username}&limit=1'
-  var searchuserMedium = 'https://wdp-advo-team.mybluemix.net/search?q=%22medium%20username%22:{username}&limit=1'
+  var searchuserGithub = 'https://wdp-advo-team.mybluemix.net/search?q=%22github%20username%22:%22{username}%22&limit=1'
+  var searchuserTwitter = 'https://wdp-advo-team.mybluemix.net/search?q=%22twitter%20username%22:%22{username}%22&limit=1'
+  var searchuserMedium = 'https://wdp-advo-team.mybluemix.net/search?q=%22medium%20username%22:%22{username}%22&limit=1'
 
   $('.button-collapse').sideNav()
   $('.modal').modal()
@@ -152,6 +152,8 @@ $(document).ready(function () {
                 })
 
               $('#team_profile').html(tmpl).show()
+
+              $.pub('/member', advocate)
             } else {
               $('#team_profile').html('<p>nothing to see here</p>').show()
             }
