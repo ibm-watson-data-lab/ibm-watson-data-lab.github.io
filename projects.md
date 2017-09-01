@@ -1,32 +1,30 @@
 ---
 layout: default
-title: Projects
-id: projects
+title:  Projects
+id:     projects
 ---
 
 <h1>{{ page.title }}</h1>
 
-Technologies are <span class="tags">highlighted</span>.
-
+{% comment %}
 <div class="row">
   <div class="col m3">
-    <p class="subhead">
+    <div class="subhead">
       Featured collections
-    </p>
+    </div>
   </div>
   <div class="col m9">
-    {% assign items = site.projects  %}
+    {% assign items = site.features  %}
     {% include item-featured.html items=items context="index" %}          
   </div>
 </div>
-
-
 <div class="divider"></div>
-<div class="section">
   <p class="subhead">
     Project work
   </p>
+{% endcomment %}
 
+<div class="section">
   {% assign items = site.data.projects | reverse %}
   {% include item.html items=items context="index" %}          
 </div>

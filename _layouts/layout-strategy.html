@@ -9,48 +9,55 @@
         {% assign project = site.features | where:"permalink",page.permalink %}
         -->
 
-        {% assign collections = site.projects | where:"strategies",page.permalink %}
-
         <h1>
           <span class="lead-in">{{ page.title }}</span>
           {{ page.headline }}
         </h1>
 
-        <div class="row">
-          <div class="col m12 s12 flow-text">
+        <div class="flow-text">
 
             {{ content }}
 
-            {% if collections.size > 0 %}
-              <!-- get the featured projects pages relating to this strategy -->
-              {% include item-featured.html items=collections context="main" %}
-            {% endif %}
+        </div><!--flow-->
 
-            {% if projects.size > 0 %}
-            <div class="divider"></div>
-            <div class="section">
-              <div class="subhead">
-                Related projects
-              </div>
-              {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
-              {% include item.html items=projects context="main" %}
-            </div>
-            {% endif %}
+        <!-- get the featured projects pages relating to this strategy -->
+        {% assign collections = site.features | where:"strategies",page.permalink %}
+        {% if collections.size > 0 %}
+        <div class="section">
+          {% include item-featured.html items=collections context="main" %}
+        </div>
+        {% endif %}
 
-          </div>
-        </div><!--row-->
+        {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
+        {% if projects.size > 0 %}
         <div class="divider"></div>
         <div class="section">
-          <h3>
-            See also
-          </h3>
-          <ul class="see-also">
-            {% for topic in site.features %}
-            <li {% if topic.permalink == page.permalink %}class="active"{% endif %}>
-              <a href="{{ topic.permalink }}">{{ topic.title }}</a>
-            </li>
-            {% endfor %}
-          </ul>
+          <div class="subhead">
+            {{ page.title }} projects
+          </div>
+          {% include item.html items=projects context="index" %}          
+        </div>
+        {% endif %}
+
+        <div class="divider"></div>
+        <div class="section">
+          <div class="row">
+            <div class="col m2">
+              <p class="subhead">
+                See also
+              </p>
+            </div>
+            <div class="col m10">
+              <ul class="see-also">
+                {% for topic in site.strategies %}
+                <li {% if topic.permalink == page.permalink %}class="active"{% endif %}>
+                  <a href="{{ topic.permalink }}">{{ topic.title }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+
           <p>
             <a href="/projects">All projects</a>
           </p>

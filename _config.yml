@@ -5,16 +5,23 @@
 
 locale                   : "en"
 title                    : "IBM Watson Data Lab"
-description              : "The things you can make with data, on the IBM Watson Data Platform"
+description              : "Things you can make with data, on the IBM Watson Data Platform"
 url                      : "https://ibm-watson-data-lab.github.io"
 baseurl                  : ""
 repository               : "ibm-watson-data-lab/ibm-watson-data-lab.github.io"
 
+# Set to the URL of your OpenWhisk package: https://{APIHOST}/api/v1/web/{NAMESPACE}/{PACKAGE}
+owpackageurl      : "https://openwhisk.ng.bluemix.net/api/v1/web/Dev-Advocates_wdp-infrastructure/sentry"
+
 collections:
+  strategies:
+    output: true
   features:
     output: true
   projects:
     output: true
+
+# relative_permalinks: false
 
 # relative_permalinks: false
 
@@ -23,3 +30,4 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - openwhisk

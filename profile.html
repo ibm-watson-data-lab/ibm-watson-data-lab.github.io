@@ -1,0 +1,124 @@
+---
+layout: default
+title: Edit Profile
+id: profile
+permalink: profile
+---
+
+<div class="row">
+  {% if site.owpackageurl %}
+  <div class="col s8 offset-s2">
+    <h3 class="grey-text text-darken-3">Edit Profile</h3>
+    <div class="spinner">&profline;</div>
+  </div>
+  <form id="profile-edit-form" class="col s8 offset-s2" method="post"
+    action="{{ site.owpackageurl }}/save_profile.http">
+  </form>
+  {% else %}
+  <div class="col s8 offset-s2">
+    <p>nothing to see here... yet</p>
+  </div>
+  {% endif %}
+</div>
+
+<!-- template for edit profile form (not using liquid templating engine) -->
+{% raw %}
+<script id="team_profile_edit" type="text/template">
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="name" name="name" type="text" class="validate" value="{{name}}" required>
+      <label for="name">Name</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="primaryrole" name="primary role" type="text" value="{{primary role}}">
+      <label for="primaryrole">Primary Role</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="email" name="email" type="email" class="validate" value="{{email}}" required>
+      <label for="email">Email</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <textarea id="bio" name="bio" class="materialize-textarea validate" required></textarea>
+      <label for="bio">Bio</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="location" name="location" type="text" value="{{location}}">
+      <label for="location">Location</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="stackoverflow" name="stack overflow user id" type="text" value="{{stack overflow user id}}">
+      <label for="stackoverflow">StackOverflow User ID</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="twitter" name="twitter username" type="text" value="{{twitter username}}">
+      <label for="twitter">Twitter Username</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="github" name="github username" type="text" value="{{github username}}">
+      <label for="github">Github Username</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="medium" name="medium username" type="text" value="{{medium username}}">
+      <label for="medium">Medium Username</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="linkedin" name="linkedin url" type="text" value="{{linkedin url}}">
+      <label for="linkedin">Linkedin URL</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="blog" name="personal blog url" type="text" value="{{personal blog url}}">
+      <label for="blog">Personal Blog URL</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="specialties" name="specialties" type="text" value="{{specialties}}" required>
+      <label for="specialties">Specialties &amp; Technologies</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="languages" name="languages" type="text" value="{{languages}}" required>
+      <label for="languages">Languages &amp; Frameworks</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="showcases" name="showcases" type="text" value="{{showcases}}">
+      <label for="showcases">Showcases</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="trends" name="trends" type="text" value="{{trends}}">
+      <label for="trends">Anything Else?</label>
+    </div>
+  </div>
+  <div>
+    <button id="btn-profile-edit" type="submit" class="waves-effect waves-light btn-large blue accent-4">Submit</button>
+  </div>
+  <div class="edit-msg red-text"></div>
+  <input id="docid" name="id" type="hidden" value="{{_id}}">
+  <!-- <input id="docrev" name="_rev" type="hidden" value="{{_rev}}"> -->
+</script>
+{% endraw %}

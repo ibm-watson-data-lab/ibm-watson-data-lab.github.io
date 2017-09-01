@@ -23,3 +23,19 @@
 <script type="text/javascript" src="{{ site.baseurl }}/js/materialize.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/exhibit.js" ></script>
 <script type="text/javascript" src="https://ibm-watson-data-lab.github.io/simple-search-js/simplesearch.js" ></script>
+
+<script>
+  var o = $({})
+  $.each({on: 'sub', off: 'unsub', trigger: 'pub'}, function (k, v) { $[v] = function () { o[k].apply(o, arguments) } })
+</script>
+
+{% if site.owpackageurl %}
+<script>
+  var owpackageurl = '{{ site.owpackageurl }}'
+  $(document).ready(function () {
+    $('.footer-copyright a:first')
+      .before('<a href="{{ site.baseurl }}/signin" title="Sign In" class="grey-text"><i class="fa fa-sign-in" aria-hidden="true"></i></a>')
+  })
+</script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/auth.js" ></script>
+{% endif %}
