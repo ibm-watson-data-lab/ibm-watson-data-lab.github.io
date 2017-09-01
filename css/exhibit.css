@@ -462,15 +462,6 @@ div.featured-collection.featured .headline {
   font-size: 2rem;
   line-height: 1.75rem;
 }
-h1 span.lead-in {
-  line-height: 3rem;
-}
-
-/* home page */
-div.feature {
-  margin: 2rem 0;
-  padding: 2rem 0;
-}
 
 a.quiet-link {
   color: inherit;
@@ -520,8 +511,8 @@ a.permalink {
   font-weight: 500;
   text-decoration: underline;
 }
-.item h3 {
-  margin-top: 0;
+.nowrap {
+  white-space: nowrap;
 }
 a.nowrap > i.small.material-icons {
   vertical-align: bottom;
@@ -628,6 +619,7 @@ img ~ .connecticons {
   from { transform: rotate(0deg) }
   to { transform: rotate(360deg) }
 }
+
 
 @media only screen and (min-width: 600px) {
   .sidebar-fixed {
