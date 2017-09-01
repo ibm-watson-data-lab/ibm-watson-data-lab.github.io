@@ -18,10 +18,6 @@ collections:
     output: true
   features:
     output: true
-  projects:
-    output: true
-
-# relative_permalinks: false
 
 # relative_permalinks: false
 
