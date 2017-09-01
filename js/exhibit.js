@@ -47,7 +47,7 @@ $(document).ready(function () {
     $.each(li, function (index, value) {
       var userdata = prepUserData(data.rows[index])
 
-      var tmpl = $('#team_search_result'
+      var tmpl = $('#team_search_result')
         .html()
         .replace(/\{\{(.+?)\}\}/g, function ($0, $1) {
           return userdata.hasOwnProperty($1) ? userdata[$1] : '' // $0
