@@ -1,8 +1,8 @@
 {
-  "name": "yml_to_json",
+  "name": "to_json",
   "version": "0.1.0",
   "description": "",
-  "main": "yml_to_json.js",
+  "main": "to_json.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
