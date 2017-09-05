@@ -2,38 +2,31 @@
 
 $(document).ready(function () {
   var searchuserEmail = 'https://wdp-advo-team.mybluemix.net/search?q=email:%22{username}%22&limit=1'
+  var loginAction = owpackageurl + '/login'
+  var saveAction = owpackageurl + '/save_profile'
 
   $('.sign-in-form').hide()
   $('.sign-out').hide()
   $('.spinner').show()
 
-  $('#btn-signout').click(function (e) {
-    var url = owpackageurl + '/verify'
-    $.ajax({
-      url: url,
-      type: 'POST',
-      data: { logout: true },
-      headers: {
-        'Authorization': 'Bearer ' + window.localStorage.authToken
-      }
-    })
-    .always(function (dataORxhr, textStatus, xhrORerror) {
-      if (window.localStorage) {
-        clearAuth()
-      }
-      location.reload()
-    })
+  $('#profile-form').on('submit', function (e) {
+    e.preventDefault()
+    var form = $(this)
+
+    if ($('#sign-in')[0]) {
+      handleSignIn(form)
+    } else {
+      handleProfileEdit(form)
+    }
+
+    return false
   })
 
-  $('#profile-edit-form').on('submit', function (e) {
-    e.preventDefault()
-
-    var form = $(this)
+  var handleProfileEdit = function (form) {
     $('#btn-profile-edit').prop('disabled', true)
     $('input, textarea', form).prop('disabled', true)
     $('.edit-msg').empty()
 
-    var action = form.attr('action')
     var type = form.attr('method')
     var data = {}
 
@@ -44,9 +37,9 @@ $(document).ready(function () {
       data[name] = value
     })
 
-    console.log('edit', action, type, data)
+    console.log('edit', saveAction, type, data)
     $.ajax({
-      url: action,
+      url: saveAction,
       type: type,
       data: data,
       headers: {
@@ -65,20 +58,14 @@ $(document).ready(function () {
       $('#btn-profile-edit').prop('disabled', false)
       $('input, textarea', form).prop('disabled', false)
     })
+  }
 
-    return false
-  })
-
-  $('.sign-in-form form').on('submit', function (e) {
-    e.preventDefault()
-
-    var form = $(this)
+  var handleSignIn = function (form) {
     $('#btn-signin').prop('disabled', true)
     $('input', form).prop('disabled', true)
     $('.sign-in-title').text('')
     $('.spinner').show()
 
-    var action = form.attr('action')
     var type = form.attr('method')
     var data = {}
 
@@ -90,7 +77,7 @@ $(document).ready(function () {
     })
 
     $.ajax({
-      url: action,
+      url: loginAction,
       type: type,
       data: data
     })
@@ -103,6 +90,7 @@ $(document).ready(function () {
       } else {
         $('.sign-in-form').hide()
         $('.sign-in-title').text(result.message || result)
+        profileValidate(true)
       }
     })
     .fail(function (xhr, status, err) {
@@ -117,7 +105,7 @@ $(document).ready(function () {
     })
 
     return false
-  })
+  }
 
   var isLoggedIn = function (done) {
     if (window.localStorage && window.localStorage.authToken) {
@@ -152,6 +140,26 @@ $(document).ready(function () {
     delete window.localStorage.authUser
   }
 
+  var signoutInit = function () {
+    $('#btn-signout').click(function (e) {
+      var url = owpackageurl + '/verify'
+      $.ajax({
+        url: url,
+        type: 'POST',
+        data: { logout: true },
+        headers: {
+          'Authorization': 'Bearer ' + window.localStorage.authToken
+        }
+      })
+      .always(function (dataORxhr, textStatus, xhrORerror) {
+        if (window.localStorage) {
+          clearAuth()
+        }
+        location.reload()
+      })
+    })
+  }
+
   var signinValidate = function (loggedIn) {
     var qs = {}
 
@@ -182,7 +190,7 @@ $(document).ready(function () {
         } else {
           window.localStorage.authToken = token
           window.localStorage.authUser = xhr.getResponseHeader('X-Auth-User')
-          window.location = '/signin'
+          window.location = '/profile'
         }
       })
       .fail(function (xhr, status, err) {
@@ -196,13 +204,8 @@ $(document).ready(function () {
 
   var profileValidate = function (loggedIn) {
     if (!loggedIn) {
-      $('#profile-edit-form').html(
-        '<div class="row">' +
-          '<div class="col s12 valign-wrapper" style="height: 50vh;">' +
-            '<a href="/signin" class="btn-flat">Sign In</a>' +
-          '</div>' +
-        '</div>'
-      )
+      $('#profile-form').html($('#team_profile_signin').html())
+      signinValidate()
     } else {
       var user = window.localStorage.authUser
       var url = searchuserEmail.replace('{username}', user)
@@ -218,9 +221,10 @@ $(document).ready(function () {
               return userdata.hasOwnProperty($1) ? userdata[$1] : '' // $0
             })
 
-          $('#profile-edit-form').html(tmpl)
+          $('#profile-form').html(tmpl)
           $('#bio').val(userdata.bio)
           Materialize.updateTextFields()
+          signoutInit()
         }
       })
     }
