@@ -11,7 +11,7 @@ Specific files from the repo are converted to JSON and saved into an instance of
 1. Confirm the [IBM Cloud Functions](https://console.ng.bluemix.net/openwhisk/getting-started) CLI is installed and available
 2. Update the `config.json` file accordingly, where:
 
-  * `cloudant.url` - the fully qualified URL to the  Cloudant/CouchDB instance
+  * `cloudant.url` - the fully qualified URL to the Cloudant/CouchDB instance
   * `cloudant.dbname` - the name of the database to use. it must already exist in Cloudant/CouchDB instance
   * `watch.yml` - array of relative paths to `yml` files (e.g., `[ "_data/projects.yml", "_config.yml" ]`) to be converted to JSON
 
@@ -22,7 +22,7 @@ Specific files from the repo are converted to JSON and saved into an instance of
   ```
 
   * `[packagename]` - is the desired name of the package to store the actions under
-  * `[configfile]` - is the path to the config file to use  
+  * `[configfile]` - is the path to the config file edited above  
 
 
 > Make a note of the **PACKAGE URL** and **WEB ACTION URL** for the newly created package and actions. For example:
@@ -42,6 +42,6 @@ The IBM Cloud Functions actions are triggered by `push` events from [GitHub Webh
 
 ## Resources
 
-* [Cloudant NoSQL databse](https://cloudant.com)
-* [GitHub Webhook](https://developer.github.com/webhooks/)
+* [Cloudant NoSQL database](https://cloudant.com)
 * [Getting started with IBM Cloud Functions](https://console.ng.bluemix.net/openwhisk/getting-started)
+* [GitHub Webhook](https://developer.github.com/webhooks/)

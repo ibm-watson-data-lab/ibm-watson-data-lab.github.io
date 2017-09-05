@@ -32,10 +32,6 @@
 {% if site.owpackageurl %}
 <script>
   var owpackageurl = '{{ site.owpackageurl }}'
-  $(document).ready(function () {
-    $('.footer-copyright a:first')
-      .before('<a href="{{ site.baseurl }}/signin" title="Sign In" class="grey-text"><i class="fa fa-sign-in" aria-hidden="true"></i></a>')
-  })
 </script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/auth.js" ></script>
 {% endif %}
