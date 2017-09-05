@@ -1,24 +1,28 @@
 #!/bin/bash
 
-####################################################################
-##  if experiencing 'permission denied' errors when attempting    ##
-##  to run this script, try changing the file permissions:        ##
-##                                                                ##
-##     chmod 755 deploy.sh                                        ##
-##                                                                ##
-####################################################################
+#####################################################################
+##  if experiencing 'permission denied' errors when attempting     ##
+##  to run this script, try changing the file permissions:         ##
+##                                                                 ##
+##     chmod 755 deploy.sh                                         ##
+##                                                                 ##
+#####################################################################
 
-####################################################################
-##                                                                ##
-##  Usage:                                                        ##
-##                                                                ##
-##     ./deploy.sh [-p packagename] [-c configfile]               ##
-##                                                                ##
-##  Example:                                                      ##
-##                                                                ##
-##     ./deploy.sh -p mypackage -c /Users/myname/config.json      ##
-##                                                                ##
-####################################################################
+#####################################################################
+##                                                                 ##
+##  Usage:                                                         ##
+##                                                                 ##
+##     ./deploy.sh [-p packagename] [-c configfile]                ##
+##                                                                 ##
+##  Options:                                                       ##
+##     -p PACKAGENAME     name to use for the package              ##
+##     -c CONFIGFILE      path and name to config file to use      ##
+##                                                                 ##
+##  Example:                                                       ##
+##                                                                 ##
+##     ./deploy.sh -p mypackage -c /Users/myname/config.json       ##
+##                                                                 ##
+#####################################################################
 
 
 # default package name
@@ -30,7 +34,7 @@ OWCONFIG=config.json
 
 # function to zip actions
 function zipaction {
-  echo && echo 'Zipping: ' $1
+  echo && echo 'Packaging: ' $1
   cd $1/
   rm $1.zip
   npm install
@@ -47,6 +51,7 @@ while getopts p:c: opts; do
    esac
 done
 
+
 # get openwhisk 'apihost' property
 property=(`wsk property get --apihost | tr -s '[:blank:]'`)
 OWAPIHOST=${property[$(expr ${#property[*]} - 1)]}
@@ -55,10 +60,8 @@ OWAPIHOST=${property[$(expr ${#property[*]} - 1)]}
 property=(`wsk property get --namespace | tr -s '[:blank:]'`)
 OWNAMESPACE=${property[$(expr ${#property[*]} - 1)]}
 
-
 # set package url: https://{APIHOST}/api/v1/web/{NAMESPACE}/{PACKAGE}
 OWURL=https://$OWAPIHOST/api/v1/web/$OWNAMESPACE/$OWPACKAGE
-
 
 # create package with the config parameters
 echo && echo 'Executing: ' wsk package update $OWPACKAGE --param-file $OWCONFIG
