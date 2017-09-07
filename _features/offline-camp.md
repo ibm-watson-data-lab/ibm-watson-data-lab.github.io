@@ -32,7 +32,7 @@ The response to Offline Camp, and to the subsequent community contributions from
 
 Organizer burnout is a big issue in the developer community. Many events and groups are managed by generous volunteers who give up their nights and weekends to keep things afloat. Because we’ve prioritized community building as a key element of our developer advocacy efforts, we’ve been able to dedicate time during the workday to relieving some of the stress that our fellow community organizers would otherwise face. Whether by organizing events, editing Medium publications, authoring magazine articles, or building technical tutorials, our team is happy to be able to do the work we love in a way that helps this amazing community.
 
-The feedback from campers says it all:
+It means a lot to the community:
 
 <a class="twitter-moment" href="https://twitter.com/i/moments/806985049518182400">💕 OfflineCamp 💗</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
