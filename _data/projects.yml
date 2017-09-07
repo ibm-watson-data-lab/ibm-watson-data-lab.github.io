@@ -393,18 +393,8 @@
   links: 
     Medium: https://medium.com/offline-camp/predictable-progressive-performant-the-new-builders-podcast-episode-about-offline-first-260116bfdc9b
     Podcast: https://developer.ibm.com/tv/sxsw-offline-first/
-  features: 
-    - offline-camp
-
-- title:    Offline Camp Berlin is proud to have the support of Google Cloud Platform
-  headline: Their support and their perspective helps us push the movement forward with greater understanding, stability, and focus.
-  story:    As part of their support of Offline Camp, Google Cloud Platform (GCP) attended to explore the places outside of connectivity to the cloud. Myles Borins, who represented the GCP team, came to do early research into the role that they could can play in an offline future. 
-  links: 
-    Medium: https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0
-  features: 
-    - offline-camp    
   strategies:
-    - offline-first
+    - offline-first 
 
 - title:    How I used serverless infrastructure to build a large-scale petition system
   headline: An example web app using OpenWhisk and Cloudant.
@@ -434,6 +424,54 @@
     - OpenWhisk
     - Alexa
     - Cloudant
+
+- title:   Offline First Podcasts
+  headline: A curated collection of interviews on all things Offline First, from Offline Camp and beyond
+  links: 
+    Medium:  https://medium.com/offline-camp/offline-first-podcasts-d0be01721ee6#.fuckks21c
+  features: 
+    - offline-camp 
+  strategies:
+    - offline-first
+
+- title:   Offline Camp Catskills 2016
+  headline: A look at the topics discussed at the inaugural Offline Camp
+  links: 
+    Medium:  https://medium.com/offline-camp/from-the-catskills-to-california-the-growing-offline-first-community-8a7456e83794
+  features: 
+    - offline-camp   
+
+- title:   Offline Camp California 2016
+  headline: A wrap-up of our first West Coast event
+  links: 
+    Medium:  https://medium.com/offline-camp/iterating-on-offline-camp-af9b288cf5aa
+    YouTube:  https://www.youtube.com/watch?v=2vCmlxtMvwE&t=26s
+  features: 
+    - offline-camp  
+
+- title:    Offline Camp Berlin is proud to have the support of Google Cloud Platform
+  headline: Their support and their perspective helps us push the movement forward with greater understanding, stability, and focus.
+  story:    As part of their support of Offline Camp, Google Cloud Platform (GCP) attended to explore the places outside of connectivity to the cloud. Myles Borins, who represented the GCP team, came to do early research into the role that they could can play in an offline future. 
+  links: 
+    Medium: https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0
+  features: 
+    - offline-camp   
+
+- title:   Offline Camp Berlin 2017
+  headline: Offline Camp makes its first visit to Europe
+  links: 
+    Medium:  https://medium.com/offline-camp/offline-camp-berlin-36a491e4e4e2
+    YouTube:  https://www.youtube.com/watch?v=bsQapDA--Sw
+  features: 
+    - offline-camp   
+    
+- title:    Crafting Community Events that Leave them Wanting S'more
+  headline: Revealing the secret sauce that makes Offline Camp so special
+  links: 
+    Medium: https://medium.com/offline-camp/crafting-community-events-that-leave-them-wanting-smore-902974cff4d4
+    YouTube: https://www.youtube.com/watch?v=FNtpPW_7H1k
+  features: 
+    - offline-camp    
 
 - title:    Navigating SXSW via cognitive chatbot
   headline: A smarter conference event recommendation system using Watson services and Mapbox
