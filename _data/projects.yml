@@ -16,10 +16,44 @@
 
 # Old stuff at the top; new stuff appended to the bottom.
 
+- title:    reddit-sentiment-analysis
+  headline: Unlock the hidden sentiments of redditors.
+  story:    Perform sentiment analysis on a Reddit Ask Me Anything event and analyze the output.
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/reddit-sentiment-analysis
+  img:      img/reddit-ama-arch.png
+  thumb:    img/reddit-ama-arch-thumb.png
+  strategies: 
+    - differentiators
+  tags: 
+    - Cloudant
+    - Nodejs
+    - Spark
+    - Jupyter Notebook
+    - Watson Tone Analyzer
+
+- title:    Predict Flight Delays with Apache Spark
+  headline: Know about delayed flights before they happen.
+  story:    We can't guarantee you'll never miss another flight, but we can guarantee that you'll train your data and visualize predictions all in one notebook.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/flightpredict-ii-the-sequel-fb613afd6e91
+  img:      img/flight-predict.png
+  thumb:    img/flight-predict-thumb.png
+  strategies: 
+    - differentiators
+    - notebooks-for-developers
+  tags: 
+    - FlightStats
+    - Weather Company
+    - Cloudant
+    - Spark
+    - Jupyter Notebook
+    - PixieDust
+
 - title:    Simple Search Service
   headline: An IBM Bluemix app that creates a faceted search engine from a CSV, exposing an API you can use to bring search into your own apps.
   links: 
-    Github: https://github.com/ibm-watson-data-lab/simple-search-service
+    GitHub: https://github.com/ibm-watson-data-lab/simple-search-service
   strategies: 
     - working-with-data
   features: 
@@ -28,8 +62,8 @@
 - title:    cloudant-food-tracker
   headline: An iOS tutorial that takes app data from unexceptional to powerful. 
   story:    Transform Apple’s FoodTracker example into a true offline-first app that stores data locally and synchronizes to the cloud.
-  links:
-    Github: https://github.com/ibm-cds-labs/cloudant-food-tracker
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/cloudant-food-tracker
   img:      img/cloudant-foodtracker.png
   thumb:    img/cloudant-foodtracker-thumb.png
   strategies: 
@@ -37,12 +71,12 @@
   tags: 
     - Cloudant
     - iOS Swift
-    
+
 - title:    location-tracker-envoy-server
   headline: Scaling the CouchDB database-per-user architecture? No problem.
   story:    Node.js backend&mdash;plus Cloudant Envoy&mdash;for location tracker demo app.
-  links:     
-    Github: https://github.com/ibm-watson-data-lab/location-tracker-envoy-server
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/location-tracker-envoy-server
   img:      img/location-tracker-cloudantdash.png
   thumb:    img/location-tracker-cloudantdash-thumb.png
   strategies: 
@@ -56,8 +90,8 @@
 - title:    location-tracker-server-nodejs
   headline: The unsung hero of our location tracker demo&mdash;the back end.
   story:    Node.js backend for location tracker demo app.
-  links:     
-    Github: https://github.com/ibm-watson-data-lab/location-tracker-server-nodejs
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/location-tracker-server-nodejs
   img:      img/location-tracker-node.png
   thumb:    img/location-tracker-node-thumb.png
   strategies: 
@@ -71,8 +105,8 @@
 - title:    location-tracker-client-swift
   headline: Track your location, offline or on.
   story:    An iOS app developed in Swift. Features Cloudant geospatial querying and data replication &amp; synch abilities.
-  links:     
-    Github: https://github.com/ibm-watson-data-lab/location-tracker-client-swift
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/location-tracker-client-swift
   img:      img/location-tracker-client.png
   thumb:    img/location-tracker-client-thumb.png
   strategies: 
@@ -86,8 +120,8 @@
 - title:    rethinkdb-questions
   headline: Get real-time, with changefeeds in RethinkDB.
   story:    Realtime Q&A app using RethinkDB and changefeeds.
-  links:     
-    Github: https://github.com/ibm-watson-data-lab/rethinkdb-questions
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/rethinkdb-questions
   strategies: 
     - working-with-wdp
   tags: 
@@ -99,8 +133,8 @@
 - title:    nodejs-cloudant
   headline: JavaScript all the way down.
   story:    Official Cloudant-Node.js client library.
-  links:     
-    Github: https://github.com/cloudant/nodejs-cloudant
+  links: 
+    GitHub: https://github.com/cloudant/nodejs-cloudant
   strategies: 
     - working-with-wdp
   tags: 
@@ -110,8 +144,8 @@
 - title:    couchdb-db-transform
   headline: Add some T to your ETL for CouchDB.
   story:    Utility that loads documents from one CouchDB database, transforms them, and inserts them into another database.
-  links:     
-    Github: https://github.com/ibm-watson-data-lab/couchdb-db-transform
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/couchdb-db-transform
   strategies: 
     - working-with-wdp
   features:
@@ -124,16 +158,16 @@
 - title:    open-data
   headline: Curated data, open and free for you to use.
   story:    Open data sets hosted by the WDP dev advocates.
-  links:     
-    Github: https://github.com/ibm-watson-data-lab/open-data 
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/open-data
   strategies: 
     - working-with-wdp
 
 - title:    seven-days
   headline: A quick tour of (some of) our database services.
-  story:    Companion Github repository for the "Seven Databases in Seven Days" blog series.
+  story:    Companion GitHub repository for the "Seven Databases in Seven Days" blog series.
   links:     
-    Github: https://github.com/ibm-watson-data-lab/seven-days
+    GitHub: https://github.com/ibm-watson-data-lab/seven-days
   strategies: 
     - working-with-wdp
   tags: 
@@ -150,22 +184,23 @@
   headline: Browse your Object Store from the web.
   story:    A Python Flask web app for serving files from IBM Object Storage. 
   links:     
-    Github: https://github.com/ibm-watson-data-lab/openobjectstore
+    GitHub: https://github.com/ibm-watson-data-lab/openobjectstore
   strategies: 
     - working-with-wdp
   tags: 
     - Object Storage
     - Python
 
-- title:    guestbook
-  headline: Hook into RabbitMQ.
-  story:    A guestbook app that shows how to use webhooks with RabbitMQ and CouchDB.
+- title:    Retro Guestbook
+  headline: Add RabbitMQ to your existing app to send notifications.
+  story:    A simple PHP/CouchDB guestbook app that uses RabbitMQ to add asynchronous webhook notifications of new entries.
   links:     
-    Github: https://github.com/ibm-watson-data-lab/guestbook 
+    GitHub: https://github.com/ibm-watson-data-lab/guestbook
   strategies: 
     - working-with-wdp
   tags: 
     - CouchDB
+    - Cloudant
     - Compose
     - Nodejs
     - PHP
@@ -175,7 +210,7 @@
   headline: Load those CSVs as JSON documents.
   story:    A simple CouchDB data importer app that also shows how to bundle a web app for native distribution with Electron.
   links:     
-    Github: https://github.com/ibm-watson-data-lab/couchdbimporter
+    GitHub: https://github.com/ibm-watson-data-lab/couchdbimporter
   strategies: 
     - working-with-wdp
   features:
@@ -188,8 +223,8 @@
 - title:    simple-search-service-sync
   headline: Sync your search index in a snap.
   story:    Continuously synchronize the index of a Simple-Search-Service instance with the content of a CouchDB/Cloudant database.
-  links:     
-    Github: https://github.com/ibm-watson-data-lab/simple-search-service-sync   
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/simple-search-service-sync
   strategies: 
     - working-with-wdp
   features:
@@ -202,7 +237,7 @@
 - title:    nosqlimport
   headline: Moving data doesn’t have to suck.
   story:    Read data from a text file, transform it, and write JSON to CouchDB, Cloudant, and ElasticSearch. 
-  links:     
+  links: 
     npm: https://www.npmjs.com/package/nosqlimport
   strategies: 
     - working-with-wdp
@@ -217,9 +252,9 @@
 - title:    couchbackup
   headline: Back up your data, without breaking your back.
   story:    Just dump it to a text file. Do what you like from there. 
-  links:     
+  links: 
     npm:            https://www.npmjs.com/package/couchbackup
-    Github:         https://github.com/glynnbird/couchbackup
+    GitHub:         https://github.com/glynnbird/couchbackup
     developerWorks: https://developer.ibm.com/clouddataservices/2016/03/22/simple-couchdb-and-cloudant-backup/
   strategies: 
     - working-with-wdp
@@ -228,12 +263,50 @@
     - CouchDB
     - Cloudant
 
+- title:    silverlining
+  headline: The power of Cloudant, without the complexity.
+  story:    A Node.js library that provides a simple query interface for Cloudant and abstracts advanced MapReduce & indexing features.
+  link:     https://www.npmjs.com/package/silverlining
+  strategies: 
+    - workingWithWDP
+  tags: 
+    - Cloudant
+    - npm
+
+- title:    Voice of InterConnect
+  headline: Proof that Progressive Web Apps can do some serious analysis.
+  story:    Record your thoughts locally on your phone, and see aggregated sentiment about this IBM trade show on the web.
+  links:
+    Medium: https://medium.com/ibm-watson-data-lab/voice-of-interconnect-112d5036dabc
+    GitHub: https://github.com/neighbourhoodie/voice-of-interconnect
+  img:      img/voice-of-interconnect.png
+  thumb:    img/voice-of-interconnect-thumb.png
+  parents:  offline-first
+  strategies: 
+    - differentiators
+    - offlineFirst
+    - partners
+  tags: 
+    - Cloudant
+    - Hoodie
+    - Nodejs
+    - PouchDB
+    - Watson Speech to Text
+    - Watson Natural Language Understanding
+
+# this file holds assets that appear on featured collections
+# featured collections include:
+#   - pixiedust
+#   - watson-and-data
+#   - simple-suite (TBD)
+#   - loading-data (TBD)
+
 - title:    Adding a recommendation feature to your app using a graph DB
   headline: Graph user interactions for an even smarter chatbot.
   story:    In which we suggest new recipies to the user, based on similar interaction from others.
   links:     
     Medium: https://medium.freecodecamp.com/have-you-had-the-talk-with-your-chatbot-about-graph-data-structures-3aaf5c3ae52c
-    Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-graph
+    GitHub: https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-graph
   img:      img/graph-chatbot.png
   thumb:    img/graph-chatbot-thumb.png
   features:   
@@ -251,7 +324,7 @@
   story:    In which we use data services to provide a more personal chatbot experience, save money by reducing third-party API calls, and perform analysis on past chatbot conversations.
   links: 
     Medium: https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
-    Github: https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant
+    GitHub: https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant
   img:      img/smarter-chatbot.jpg
   thumb:    img/smarter-chatbot-thumb.jpg
   features:   
@@ -266,7 +339,6 @@
 
 - title:    Mapping for Data Science with PixieDust and Mapbox
   headline: Add another layer to your Jupyter notebooks with built-in map rendering.
-  story:    Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. Lorem ipsum dolor sit amet vec sectetur. 
   img:      img/watson_black.png
   links:
     Medium: https://medium.com/ibm-watson-data-lab/mapping-for-data-science-with-pixiedust-and-mapbox-b5aa1d9532b9
@@ -302,7 +374,7 @@
   story:    In this article, I’ll look at how we analyzed conversations with our bot. I’ll also provide a Jupyter notebook that Raj and I worked on, which hopefully gives you ideas on how to connect application logs to Apache Spark™ for back-end analytics. The notebook takes you through data access, all the way to visualizing results.
   links: 
     Medium: https://medium.com/ibm-watson-data-lab/the-most-popular-search-term-at-sxsw-according-to-our-chatbot-9f4a47a33406
-    Github: https://github.com/ibm-watson-data-lab/cognitive-event-finder/
+    GitHub: https://github.com/ibm-watson-data-lab/cognitive-event-finder/
     Notebook: http://ibm.biz/sxswappmetrics
   strategies:
     - notebooks-for-developers  
@@ -329,7 +401,7 @@
   story:    “Serverless” means that instead of having fixed numbers of dedicated machines sitting in data centres waiting for traffic to come in, we can supply the code that handles a single piece of work (e.g. the submission of a web form) to an application framework like IBM OpenWhisk and let it scale out the computing power required. If no traffic arrives, you don’t pay anything — no fixed costs!
   links: 
     Medium: https://medium.com/ibm-watson-data-lab/how-i-used-serverless-infrastructure-to-build-a-large-scale-petition-system-2779161c4c68
-    Github: https://github.com/ibm-watson-data-lab/online-petition
+    GitHub: https://github.com/ibm-watson-data-lab/online-petition
   features: 
     - openwhisk-and-data
   strategies: 
@@ -400,3 +472,72 @@
     YouTube: https://www.youtube.com/watch?v=FNtpPW_7H1k
   features: 
     - offline-camp    
+
+- title:    Navigating SXSW via cognitive chatbot
+  headline: A smarter conference event recommendation system using Watson services and Mapbox
+  img:      https://cdn-images-1.medium.com/max/1600/1*AMK5DT-y93B3IwCNpSGFZQ.gif
+  links:
+    Medium: https://medium.com/ibm-watson-data-lab/navigating-sxsw-via-cognitive-chatbot-28a2e1f7a456
+    GitHub: https://github.com/ibm-watson-data-lab/cognitive-event-finder
+  strategies:
+    - partners
+    - ibm-and-data
+  features: 
+    - mapbox
+  tags:
+    - Cloudant
+    - Chatbots
+    - Mapbox
+    - Mobile
+    - Slack 
+    - Vue.js
+    - Watson Conversation
+
+- title:    How to Build a Chatbot with PubNub & IBM Watson’s Alchemy Language API on Bluemix
+  headline: Learn how to use PubNub BLOCKS, connect to IBM Watson cognitive services for natural language processing and translation, and create a Java Servlet knowledge base running on IBM Bluemix
+  story: Josh shows you MR ROCKBOT, a chatbot that understands multiple languages and responds to geology related questions and jokes. You will learn how to use PubNub BLOCKS, connect to IBM Watson cognitive services for natural language processing and translation, and create a Java Servlet knowledge base running on IBM Bluemix.
+  img:      https://cdn-images-1.medium.com/max/1600/1*AMK5DT-y93B3IwCNpSGFZQ.gif
+  links:
+    External: https://www.pubnub.com/training/how-to-build-a-chatbot-with-pubnub-ibm-watsons-alchemy-language-api-on-bluemix/
+  strategies:
+    - partners
+  features: 
+    - pubnub
+  tags:
+    - Chatbots
+    - Cognitive
+    - PubNub
+    - Mobile
+    - Javascript
+    - Watson Conversation
+
+- title:    Analyze User Sentiment and Emotion in Realtime with IBM Watson
+  headline: Use the PubNub BLOCK for Watson Sentiment and Context Analysis to build an application that analyzes text inputs and rates the user sentiment on a scale of 1-100
+  img:      https://www.pubnub.com/wp-content/uploads/2016/11/pubnub_watson_sentiment.gif
+  links:
+    External: https://www.pubnub.com/tutorials/javascript/ibm-watson-user-sentiment/
+  strategies:
+    - partners
+  features: 
+    - pubnub
+  tags:
+    - Cognitive
+    - PubNub
+    - Javascript
+    - Watson Sentiment
+
+- title:    Add Redis To Your Serverless Application
+  headline: Use in-memory datastore for a little light data persistence
+  story:    Voice assistants are fun but they can seem rather idiotic when they can't remember what they just said.  See asynchronous JavaScript used to connect to Redis from an IBM Cloud Function action and give Amazon's Alexa a "brain".
+  links:
+    Medium: https://medium.com/ibm-watson-data-lab/add-redis-to-your-serverless-application-e22381123d9
+  features:
+    - openwhisk-and-data
+  strategies:
+    - ibm-and-data
+  tags:
+    - OpenWhisk
+    - Alexa
+    - Redis
+    - Compose
+    - IBM Cloud Functions

@@ -10,7 +10,7 @@ featured:   true
 strategies: 
   - notebooks-for-developers
 essentials:
-  PixieDust on Github: https://github.com/ibm-watson-data-lab/pixiedust
+  PixieDust on GitHub: https://github.com/ibm-watson-data-lab/pixiedust
   PixieDust Docs:   https://ibm-watson-data-lab.github.io/pixiedust/
 
 ---
