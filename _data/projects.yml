@@ -117,6 +117,21 @@
     - Cloudant
     - iOS Swift
 
+- title:    cloudant-food-tracker
+  headline: Build an Offline First iOS app with Swift and Cloudant Sync.
+  story:    Cloudant Food Tracker is an Offline First extension of Apple's FoodTracker app that uses Cloudant Sync.
+  links:
+    Github: https://github.com/ibm-watson-data-lab/cloudant-food-tracker
+  img:      img/food-tracker.png
+  thumb:    img/food-tracker-thumb.png
+  strategies:
+    - offline-first
+  features:
+    - food-tracker
+  tags:
+    - Cloudant
+    - iOS Swift
+
 - title:    rethinkdb-questions
   headline: Get real-time, with changefeeds in RethinkDB.
   story:    Realtime Q&A app using RethinkDB and changefeeds.
@@ -424,6 +439,35 @@
     - OpenWhisk
     - Alexa
     - Cloudant
+
+- title:    Offline Sync for Progressive Web Apps
+  headline: Building Offline First Progressive Web Apps with Apache CouchDB, Hoodie, and PouchDB.
+  story:    A Progressive Web App is a mobile app built on the web platform that lives at a URL, can be indexed by search engines, and can be linked to from anywhere else on the web. Learn how you can add offline sync to Progressive Web Apps using Apache CouchDB, Hoodie, and PouchDB.
+  links:
+    Medium: https://medium.com/ibm-watson-data-lab/offline-sync-for-progressive-web-apps-ccab6bf6db17
+  features:
+    - offline-first-apps
+  strategies:
+    - offline-first
+  tags:
+    - Cloudant
+    - CouchDB
+    - Hoodie
+    - PouchDB
+
+- title:    Voice of InterConnect
+  headline: An Offline First mobile web app featuring Hoodie, IBM Cloudant, and IBM Watson Services.
+  story:    Voice of InterConnect is an Offline First Progressive Web App that features Hoodie, IBM Cloudant, and IBM Watson Services. The user of the mobile web app records short voice responses to a series of questions prompted by the app. Voice responses are stored locally within a PouchDB database on the device, and sync'd to the cloud for transcription and sentiment analysis when an internet connection is available.
+  links:
+    Medium: https://medium.com/ibm-watson-data-lab/voice-of-interconnect-112d5036dabc
+  features:
+    - offline-first-apps
+  strategies:
+    - offline-first
+  tags:
+    - Cloudant
+    - Watson Services
+    - Hoodie
 
 - title:   Offline First Podcasts
   headline: A curated collection of interviews on all things Offline First, from Offline Camp and beyond

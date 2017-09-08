@@ -1,8 +1,15 @@
 ---
 title:      Offline First
-headline:   Offline shouldn't be an error condition.
+headline:   Apps designed to work, despite flaky networks.
 permalink:  offline-first
 layout:     layout-strategy
 tier:       2
 ---
-Offline First is about handling unreliable networks with grace. A natural extension of Responsive web design and Mobile First thinking &mdash; which treat screen size as a design constraint &mdash; Offline First is an approach to building apps that accounts for data access in the absence of network connectivity. As a design concept, it's also a welcoming community where all contributors, vendors and partners are welcome.
+
+![Three different signal bars respectively indicating full bars, one bar, and no signal.](/img/signal-bars.png "Offline, Online, and Everything in Between")
+
+Offline First is an approach to app development in which apps are designed for the most resource-constrained environments *first*. An [Offline First app](/offline-first-apps) will not only work offline, but will also work better over an unreliable network connection, and even better over a solid one.
+
+An Offline First app stores its content and data directly on the local device for fast retrieval. Users can modify data while offline, and the app will synchronize changes to cloud copies when able.
+
+The Offline First movement is bigger than IBM. It's a community of independent developers, UX professionals, makers &amp; builders, and companies like Google and IBM on a number of innovations, such as reproducible data science and analytics at the edge. Join us.
