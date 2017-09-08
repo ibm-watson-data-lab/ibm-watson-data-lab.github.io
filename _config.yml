@@ -10,6 +10,9 @@ url                      : "https://ibm-watson-data-lab.github.io"
 baseurl                  : ""
 repository               : "ibm-watson-data-lab/ibm-watson-data-lab.github.io"
 
+# Set to the URL of your OpenWhisk package: https://{APIHOST}/api/v1/web/{NAMESPACE}/{PACKAGE}
+owpackageurl      : "https://openwhisk.ng.bluemix.net/api/v1/web/Dev-Advocates_wdp-infrastructure/sentry"
+
 collections:
   strategies:
     output: true
@@ -23,3 +26,4 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - openwhisk
