@@ -1,6 +1,6 @@
 ---
 title:      Offline First
-headline:   App designed to work, despite flaky networks.
+headline:   Apps designed to work, despite flaky networks.
 permalink:  offline-first
 layout:     layout-strategy
 tier:       2
