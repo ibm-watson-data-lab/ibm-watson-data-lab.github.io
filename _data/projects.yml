@@ -16,6 +16,20 @@
 
 # Old stuff at the top; new stuff appended to the bottom.
 
+- title:    Weather Forecast with PixieDust
+  headline: Make your own forecast in a Python notebook.
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/python-notebooks
+    developerWorks:  https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/
+  strategies: 
+    - differentiators
+  features: 
+    - weather-and-data
+  tags:
+    - Weather
+    - Python
+    - PixieDust    
+    
 - title:    reddit-sentiment-analysis
   headline: Unlock the hidden sentiments of redditors.
   story:    Perform sentiment analysis on a Reddit Ask Me Anything event and analyze the output.
