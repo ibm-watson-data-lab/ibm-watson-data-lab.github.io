@@ -17,10 +17,10 @@
 # Old stuff at the top; new stuff appended to the bottom.
 
 - title:    Weather Forecast with PixieDust
-  headline: A Python notebook that show you how to make your own weather forecast graphs and maps.
+  headline: Make your own forecast in a Python notebook.
   links: 
-    GitHub: https://github.com/ibm-watson-data-lab/simple-search-service
-    Blog:  https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/
+    GitHub: https://github.com/ibm-watson-data-lab/python-notebooks
+    developerWorks:  https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/
   strategies: 
     - differentiators
   features: 
@@ -377,17 +377,4 @@
     - OpenWhisk
     - Alexa
     - Cloudant
-
-- title:    PixieApp Weather Dashboard
-  headline: Build a weather forecast dashboard in a Python notebook.
-  links: 
-    GitHub: 
-    Blog: https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/
-  strategies: 
-    - differentiators
-  features: 
-    - weather-and-data
-  tags:
-    - Weather
-    - Python
-    - PixieDust    
+  
