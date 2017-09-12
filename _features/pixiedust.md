@@ -2,7 +2,7 @@
 title:      PixieDust
 headline:   An open source helper library for Python notebooks. It makes working with data simpler.
 story:      Working with data is a team sport.
-permalink:  pixiedust
+permalink:  pixiedust-for-jupyter
 layout:     layout-featured-collection
 featured:   true
 # img:        pixiedust-logo.png
