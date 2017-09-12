@@ -11,6 +11,10 @@ body {
   min-height: 100vh;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 main {
   flex: 1 0 auto;
   margin-top: 2rem;
@@ -52,7 +56,7 @@ main {
   color: #000 !important;
 }
 
-.modal {
+.full-screen {
   height: 100vh !important;
   max-height: 100vh;
   top: 0 !important;
@@ -187,8 +191,12 @@ div.simplesearch-reset {
   line-height: 2rem;
   margin: 0 0 .2rem 0;
 }
-.simplesearch-result p.specialties {
+.simplesearch-result {
   font-size: 1.25rem;
+}
+p.specialties {
+  font-family: ibm-plex-mono, monospace, sans-serif;
+  font-size: 1.0rem;
 }
 .search-results ul.simplesearch-list li ul.social {
   float: left;
@@ -574,8 +582,48 @@ a.nowrap > i.small.material-icons {
 
 .connecticons a {
   color: rgba(3, 155, 229, 0.8);
-  margin-left: 10px;
+  margin: 0 5px;
 }
+
+img ~ .connecticons {
+  font-size: 1.2em;
+  margin-left: 180px;
+}
+
+#sign-in {
+  min-height: 50vh;
+}
+
+.sign-in-form input {
+  font-size: 20px;
+}
+
+.spinner {
+  display: inline-block;
+  margin: 5px;
+  animation-name: spinneranimation;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes spinneranimation {
+  from { -webkit-transform: rotate(0deg) }
+  to { -webkit-transform: rotate(360deg) }
+}
+@-moz-keyframes spinneranimation {
+  from { -moz-transform: rotate(0deg) }
+  to { -moz-transform: rotate(360deg) }
+}
+@-ms-keyframes spinneranimation {
+  from { -ms-transform: rotate(0deg) }
+  to { -ms-transform:rotate(360deg) }
+}
+@keyframes spinneranimation {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
+
 
 @media only screen and (min-width: 600px) {
   .sidebar-fixed {

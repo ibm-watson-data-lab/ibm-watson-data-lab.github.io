@@ -1,28 +1,21 @@
 ---
 title:      Mapbox
-headline:   Putting data to work on awesome maps.
+headline:   Putting maps to work, on your data.
 layout:     layout-featured-collection
 permalink:  mapbox
+img:        mapbox-vector.png
+img-thumb:  mapbox-vector-thumb.png
 featured:   true
 strategies: 
   - partners
 ---
 
-this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph. this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
+Location is built into the fabric of our daily experiences. Whether you’re exploring a city with Lonely Planet, checking the forecast on Weather.com, tracking breaking news on Bloomberg, or checking your ETA in Lyft — location is essential to every one of these applications, and they’re powered by Mapbox.
 
-this is the second one this is the second one this is the second onethis is the second one. this is the second one this is the second one this is the second onethis is the second one. this is the second one this is the second one this is the second onethis is the second one.
+Mapbox offers fanatastic solutions for web mapping and spatial data visualization. We've partnered with them to create a host of demos that demonstrate **two powerful solution spaces**:
+1. Scalable web mapping with [GeoJSON](http://geojson.org/) data in [Cloudant](https://www.ibm.com/analytics/us/en/technology/cloud-data-services/cloudant/)
+1. Map-based spatial data visualization with Python, [Spark](https://spark.apache.org/), [Jupyter](http://jupyter.org/) and [IBM Data Science Experience](https://datascience.ibm.com)
 
-## This is a subhead
+![placeholder image](img/southwest-zips-legend.png)
 
-this is the third this is the third this is the third this is the third this is the third this is the third this is the third this is the third this is the third this is the third.
-
-![placeholder image](img/watson_black.png)
-
-Bullets:
-- materialize hides bullet points by default
-- and because this is just markdown, the bullets are hidden
-
-And here's why
-
-1. the first thing
-2. and now with the second
+Mapbox crafts beautiful maps and developer-friendly location data, APIs, and SDKs so that you’re free to focus on designing, building, and developing your application. Their open-source tools make it easy to analyze big geo data with IBM's analytics tools.
