@@ -7,4 +7,8 @@ strategies:
   - differentiators
 ---
 
-Integrate data services to cache 3rd party API calls, provide a more personal experience to the user, and perform analysis on the conversations users have with the bot.
+Watson services are smart, but you need to be smart about the data you feed it and the information you track. There are a host data sets you can grab on IBM Bluemix and external data APIs. Use them to train conversation flows for chatbots, or add metadata on user sentiment.
+
+Once users are interacting with app, persisting those interactions becomes a valuable data source in itself. The key is picking the right database models and processing workflows for turning this feedback cycle into app enhancements and new features.
+
+Here, we share our work with Watson APIs to make it happen.
