@@ -77,15 +77,50 @@
   features: 
     - simple-search
 
-- title:    cloudant-food-tracker
-  headline: An iOS tutorial that takes app data from unexceptional to powerful. 
+- title:    cloudant-food-tracker [1]
+  headline: Build an Offline First iOS app with Swift and Cloudant Sync, in three parts.
   story:    Transform Apple’s FoodTracker example into a true offline-first app that stores data locally and synchronizes to the cloud.
   links: 
-    GitHub: https://github.com/ibm-watson-data-lab/cloudant-food-tracker
+    GitHub: https://github.com/ibm-watson-data-lab/cloudant-food-tracker/tree/master/part-1
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/01/25/start-developing-ios-apps-swift-with-cloud-sync-part-1-the-datastore/
   img:      img/cloudant-foodtracker.png
   thumb:    img/cloudant-foodtracker-thumb.png
   strategies: 
     - offline-first
+  features:
+    - food-tracker
+  tags: 
+    - Cloudant
+    - iOS Swift
+
+- title:    cloudant-food-tracker [2]
+  headline: Build an Offline First iOS app with Swift and Cloudant Sync, in three parts.
+  story:    Part 2 focuses on remote sync.
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/cloudant-food-tracker/tree/master/part-2
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/06/08/offline-first-ios-apps-part-2-cloud-sync/
+  img:      img/cloudant-foodtracker.png
+  thumb:    img/cloudant-foodtracker-thumb.png
+  strategies: 
+    - offline-first
+  features:
+    - food-tracker
+  tags: 
+    - Cloudant
+    - iOS Swift
+
+- title:    cloudant-food-tracker [3]
+  headline: Build an Offline First iOS app with Swift and Cloudant Sync, in three parts.
+  story:    Part 3 focuses on UI features that reflect data sync.
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/cloudant-food-tracker/tree/master/part-3
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/06/30/offline-first-ios-apps-with-swift-part-3-user-interface/
+  img:      img/cloudant-foodtracker.png
+  thumb:    img/cloudant-foodtracker-thumb.png
+  strategies: 
+    - offline-first
+  features:
+    - food-tracker
   tags: 
     - Cloudant
     - iOS Swift
@@ -132,21 +167,6 @@
   features:
     - location-tracker
   tags: 
-    - Cloudant
-    - iOS Swift
-
-- title:    cloudant-food-tracker
-  headline: Build an Offline First iOS app with Swift and Cloudant Sync.
-  story:    Cloudant Food Tracker is an Offline First extension of Apple's FoodTracker app that uses Cloudant Sync.
-  links:
-    Github: https://github.com/ibm-watson-data-lab/cloudant-food-tracker
-  img:      img/food-tracker.png
-  thumb:    img/food-tracker-thumb.png
-  strategies:
-    - offline-first
-  features:
-    - food-tracker
-  tags:
     - Cloudant
     - iOS Swift
 
