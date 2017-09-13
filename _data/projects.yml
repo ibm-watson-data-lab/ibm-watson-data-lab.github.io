@@ -299,7 +299,8 @@
 - title:    silverlining
   headline: The power of Cloudant, without the complexity.
   story:    A Node.js library that provides a simple query interface for Cloudant and abstracts advanced MapReduce & indexing features.
-  link:     https://www.npmjs.com/package/silverlining
+  links:
+    npm: https://www.npmjs.com/package/silverlining
   strategies: 
     - workingWithWDP
   tags: 
