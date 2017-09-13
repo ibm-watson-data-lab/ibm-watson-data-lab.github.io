@@ -3,8 +3,6 @@ title:      Weather + Data
 headline:   Easily grab weather data, and apply it to your own data problems.
 layout:     layout-featured-collection
 permalink:  weather-and-data
-img:        data-cloud.png
-img-thumb:  data-cloud.png
 strategies: 
   - differentiators
 ---

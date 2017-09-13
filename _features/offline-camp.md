@@ -34,6 +34,7 @@ Organizer burnout is a big issue in the developer community. Many events and gro
 
 It means a lot to the community:
 
-<a class="twitter-moment" href="https://twitter.com/i/moments/806985049518182400">💕 OfflineCamp 💗</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Building a new community is hard. It takes a lot of &quot;no code&quot; work.<br><br>I&#39;ve never seen a community do it better than OfflineFirst 1️⃣️</p>&mdash; Mikeal Rogers (@mikeal) <a href="https://twitter.com/mikeal/status/806960191275008000">December 8, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
