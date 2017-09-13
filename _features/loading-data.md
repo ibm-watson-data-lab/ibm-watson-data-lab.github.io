@@ -7,13 +7,4 @@ strategies:
   - working-with-wdp
 ---
 
-this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph. this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph this is the first paragraph.
-
-Bullets:
-- materialize hides bullet points by default
-- and because this is just markdown, the bullets are hidden
-
-And here's why
-
-1. the first thing
-2. and now with the second
+On the IBM cloud, it should be easy to move data in, share it between services, and get data out. These projects represent our ongoing work to make data import and export easier for real users of IBM Bluemix.
