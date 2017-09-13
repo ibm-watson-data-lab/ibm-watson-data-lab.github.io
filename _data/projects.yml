@@ -23,8 +23,10 @@
     developerWorks:  https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/
   strategies: 
     - differentiators
+    - notebooks-for-developers
   features: 
     - weather-and-data
+    - pixiedust-for-jupyter
   tags:
     - Weather
     - Python
@@ -56,6 +58,8 @@
   strategies: 
     - differentiators
     - notebooks-for-developers
+  features:
+    - pixiedust-for-jupyter
   tags: 
     - FlightStats
     - Weather Company
@@ -65,7 +69,7 @@
     - PixieDust
 
 - title:    Simple Search Service
-  headline: An IBM Bluemix app that creates a faceted search engine from a CSV, exposing an API you can use to bring search into your own apps.
+  headline: Create a faceted search engine from a CSV, exposing an API you can use to bring search into your own apps.
   links: 
     GitHub: https://github.com/ibm-watson-data-lab/simple-search-service
   strategies: 
@@ -325,7 +329,7 @@
 
 # this file holds assets that appear on featured collections
 # featured collections include:
-#   - pixiedust
+#   - pixiedust-for-jupyter
 #   - watson-and-data
 #   - simple-suite (TBD)
 #   - loading-data (TBD)
@@ -375,7 +379,7 @@
     - notebooks-for-developers
     - partners
   features: 
-    - pixiedust
+    - pixiedust-for-jupyter
     - mapbox
   tags:
     - Jupyter Notebooks
@@ -392,7 +396,7 @@
   strategies:
     - notebooks-for-developers  
   features: 
-    - pixiedust
+    - pixiedust-for-jupyter
   tags:
     - Jupyter Notebooks
     - Apache Spark
@@ -408,7 +412,7 @@
   strategies:
     - notebooks-for-developers  
   features: 
-    - pixiedust
+    - pixiedust-for-jupyter
   tags:
     - Jupyter Notebooks
     - Apache Spark
@@ -552,7 +556,7 @@
     - Watson Conversation
 
 - title:    How to Build a Chatbot with PubNub & IBM Watson’s Alchemy Language API on Bluemix
-  headline: Learn how to use PubNub BLOCKS, connect to IBM Watson cognitive services for natural language processing and translation, and create a Java Servlet knowledge base running on IBM Bluemix
+  headline: Use PubNub BLOCKS, connect to IBM Watson cognitive services, and create a Java Servlet knowledge base running on IBM Bluemix
   story: Josh shows you MR ROCKBOT, a chatbot that understands multiple languages and responds to geology related questions and jokes. You will learn how to use PubNub BLOCKS, connect to IBM Watson cognitive services for natural language processing and translation, and create a Java Servlet knowledge base running on IBM Bluemix.
   img:      https://cdn-images-1.medium.com/max/1600/1*AMK5DT-y93B3IwCNpSGFZQ.gif
   links:
@@ -568,21 +572,6 @@
     - Mobile
     - Javascript
     - Watson Conversation
-
-- title:    Analyze User Sentiment and Emotion in Realtime with IBM Watson
-  headline: Use the PubNub BLOCK for Watson Sentiment and Context Analysis to build an application that analyzes text inputs and rates the user sentiment on a scale of 1-100
-  img:      https://www.pubnub.com/wp-content/uploads/2016/11/pubnub_watson_sentiment.gif
-  links:
-    External: https://www.pubnub.com/tutorials/javascript/ibm-watson-user-sentiment/
-  strategies:
-    - partners
-  features: 
-    - pubnub
-  tags:
-    - Cognitive
-    - PubNub
-    - Javascript
-    - Watson Sentiment
 
 - title:    Add Redis To Your Serverless Application
   headline: Use in-memory datastore for a little light data persistence
