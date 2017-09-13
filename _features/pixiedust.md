@@ -5,8 +5,8 @@ story:      Working with data is a team sport.
 permalink:  pixiedust-for-jupyter
 layout:     layout-featured-collection
 featured:   true
-# img:        pixiedust-logo.png
-# img-thumb:  pixiedust-logo-thumb.png
+img:        pixiedust-logo.png
+img-thumb:  pixiedust-logo-thumb.png
 strategies: 
   - notebooks-for-developers
 essentials:

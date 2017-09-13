@@ -1,6 +1,6 @@
 ---
 title:      PubNub
-headline:   Global messaging infrastructure with realtime APIs
+headline:   Global messaging infrastructure with realtime APIs.
 layout:     layout-featured-collection
 permalink:  pubnub
 img:        pubnub.png
@@ -15,8 +15,6 @@ strategies:
 #### Data Stream Network
 
 The secret sauce that makes it all work. A global network infrastructure powering APIs for low-latency realtime messaging to anywhere on Earth.
-
--
 
 #### Products
 
