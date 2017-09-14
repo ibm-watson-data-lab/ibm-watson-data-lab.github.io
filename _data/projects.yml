@@ -2,9 +2,10 @@
 #   - notebooks-for-developers
 #   - offline-first
 #   - differentiators
-#   - etc
+#   - partners
+#   - working-with-wdp
 # features: (see `permalinks` in the frontmatter of files in the _projects folder, or visit [help](https://ibm-cds-labs.github.io/help))
-#   - pixiedust
+#   - pixiedust-for-jupyter
 #   - watson-and-data
 #   - simple-search
 #   - etc
@@ -556,7 +557,7 @@
   features: 
     - offline-camp    
 
-- title:    Navigating SXSW via cognitive chatbot
+- title:    Navigating SXSW via Cognitive Chatbot
   headline: A smarter conference event recommendation system using Watson services and Mapbox
   img:      https://cdn-images-1.medium.com/max/1600/1*AMK5DT-y93B3IwCNpSGFZQ.gif
   links:
@@ -576,9 +577,9 @@
     - Vue.js
     - Watson Conversation
 
-- title:    How to Build a Chatbot with PubNub & IBM Watson’s Alchemy Language API on Bluemix
-  headline: Use PubNub BLOCKS, connect to IBM Watson cognitive services, and create a Java Servlet knowledge base running on IBM Bluemix
-  story: Josh shows you MR ROCKBOT, a chatbot that understands multiple languages and responds to geology related questions and jokes. You will learn how to use PubNub BLOCKS, connect to IBM Watson cognitive services for natural language processing and translation, and create a Java Servlet knowledge base running on IBM Bluemix.
+- title:    Chatbots with PubNub &amp; Watson’s Alchemy Language API
+  headline: Use PubNub BLOCKS, connect to IBM Watson cognitive services, and create a knowledge base on Bluemix.
+  story: Josh shows you MR ROCKBOT, a chatbot that understands multiple languages and responds to geology-related questions and jokes.
   img:      https://cdn-images-1.medium.com/max/1600/1*AMK5DT-y93B3IwCNpSGFZQ.gif
   links:
     External: https://www.pubnub.com/training/how-to-build-a-chatbot-with-pubnub-ibm-watsons-alchemy-language-api-on-bluemix/
@@ -590,12 +591,11 @@
     - Chatbots
     - Cognitive
     - PubNub
-    - Mobile
     - Javascript
     - Watson Conversation
 
 - title:    Add Redis To Your Serverless Application
-  headline: Use in-memory datastore for a little light data persistence
+  headline: Use an in-memory datastore for a little light persistence
   story:    Voice assistants are fun but they can seem rather idiotic when they can't remember what they just said.  See asynchronous JavaScript used to connect to Redis from an IBM Cloud Function action and give Amazon's Alexa a "brain".
   links:
     Medium: https://medium.com/ibm-watson-data-lab/add-redis-to-your-serverless-application-e22381123d9
