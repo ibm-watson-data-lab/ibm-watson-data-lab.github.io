@@ -25,4 +25,4 @@ Cloudant is an operational database, safely storing vital data for our customers
 
 ## Transporter
 
-The nice folks at [Compose](https://compose.com] have written the [Transporter](https://github.com/compose/transporter) utility that makes data movement between files and their MongoDB, ElasticSearch, RethinkDB, PostgreSQL and RabbitMQ products.  
+The nice folks at [Compose](https://compose.com) have written the [Transporter](https://github.com/compose/transporter) utility that makes data movement between files and their MongoDB, ElasticSearch, RethinkDB, PostgreSQL and RabbitMQ products.  
