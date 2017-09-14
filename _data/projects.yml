@@ -370,7 +370,7 @@
     Demo:   https://voiceofinterconnect.com/
   img:      img/voice-of-interconnect.png
   thumb:    img/voice-of-interconnect-thumb.png
-  parents:  offline-first
+  features: offline-first-apps
   strategies: 
     - differentiators
     - offlineFirst
@@ -523,20 +523,6 @@
     - CouchDB
     - Hoodie
     - PouchDB
-
-- title:    Voice of InterConnect
-  headline: An Offline First mobile web app featuring Hoodie, IBM Cloudant, and IBM Watson Services.
-  story:    Voice of InterConnect is an Offline First Progressive Web App that features Hoodie, IBM Cloudant, and IBM Watson Services. The user of the mobile web app records short voice responses to a series of questions prompted by the app. Voice responses are stored locally within a PouchDB database on the device, and sync'd to the cloud for transcription and sentiment analysis when an internet connection is available.
-  links:
-    Medium: https://medium.com/ibm-watson-data-lab/voice-of-interconnect-112d5036dabc
-  features:
-    - offline-first-apps
-  strategies:
-    - offline-first
-  tags:
-    - Cloudant
-    - Watson Services
-    - Hoodie
 
 - title:   Offline First Podcasts
   headline: A curated collection of interviews on all things Offline First, from Offline Camp and beyond.
