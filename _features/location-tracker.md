@@ -15,10 +15,7 @@ The Location Tracker demo app uses geolocation to track and map user movements. 
 
 ## Mobile app
 
-The Location Tracker native mobile app demonstrates to Swift developers how easy it is to integrate IBM Cloudant into an iOS app in order to track, store, and query locations. Since the app uses an Offline First approach, its core capabilities continue to work regardless of the app's network connectivity status. The Location tracker demo app provides architectural guidance on scaling your app to support millions of users.
-
-- [Location Tracker Native App Tutorial Part 1](https://developer.ibm.com/clouddataservices/2016/06/14/location-tracker-part-1-offline-first/): Swift, Gelocation & Cloudant Sync
-- [Location Tracker Native App Tutorial Part 2](https://developer.ibm.com/clouddataservices/2016/08/11/location-tracker-part-2-database-per-user): User Management & Scaling Up
+The Location Tracker native mobile app demonstrates to Swift developers how easy it is to integrate IBM Cloudant into an iOS app in order to track, store, and query locations. Since the app uses an Offline First approach, its core capabilities continue to work regardless of the app's network connectivity status. The Location tracker demo app provides architectural guidance on scaling your app to support millions of users. See the projects featured here for the code.
 
 ## Web app
 
