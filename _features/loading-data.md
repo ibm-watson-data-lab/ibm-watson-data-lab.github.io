@@ -11,9 +11,9 @@ On the IBM cloud, it should be easy to move data in, share it between services, 
 
 ## Importing structured data into document data stores
 
-Structured data living in spreadsheets, relational databases or as flat CSV/TSV files can be easily imported into IBM Cloudant, MongoDB or ElasticSearch using our [nosqlimport](https://www.npmjs.com/package/nosqlimport) tool. 
+Structured data living in spreadsheets, relational databases, or as flat CSV/TSV files can be easily imported into IBM Cloudant, MongoDB or ElasticSearch using our [nosqlimport](https://www.npmjs.com/package/nosqlimport) tool. 
 
-Cloudant and CouchDB have their own tool, the popular [couchimport](https://www.npmjs.com/package/couchimport) utility which allows structured data to be bulk imported into the JSON document stores, with an optional transformation along the way. The *couchimport* utility is also packaged as an [installable Electron](https://github.com/ibm-watson-data-lab/couchdbimporter) app to make data transfer as simple as a "drag and drop".
+Cloudant and CouchDB have their own tool, the popular [couchimport](https://www.npmjs.com/package/couchimport) utility which allows structured data to be bulk imported into the JSON document stores, with an optional transformation along the way. The *couchimport* utility is also packaged as an [installable Electron](https://github.com/ibm-watson-data-lab/couchdbimporter) app to make data transfer as simple as a "drag and drop."
 
 ## Moving data from other clouds
 
@@ -25,4 +25,4 @@ Cloudant is an operational database, safely storing vital data for our customers
 
 ## Transporter
 
-The nice folks at [Compose](https://compose.com) have written the [Transporter](https://github.com/compose/transporter) utility that makes data movement between files and their MongoDB, ElasticSearch, RethinkDB, PostgreSQL and RabbitMQ products.  
+The nice folks at [Compose](https://compose.com) have written the [Transporter](https://github.com/compose/transporter) utility that makes data movement between files and their MongoDB, ElasticSearch, RethinkDB, PostgreSQL, and RabbitMQ products.  

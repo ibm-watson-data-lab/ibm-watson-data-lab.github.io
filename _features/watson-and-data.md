@@ -12,7 +12,7 @@ Watson services are smart, but you can make them even smarter with data. You can
 Here are some of the ways Watson and data can be BFFs: 
 
 1. Persist chatbot interactions from [Watson Conversation](https://www.ibm.com/watson/services/conversation/) to drive more personal experiences for your users.
-2. Analyze chatbot interactions using Apache Spark and Jupyter notebooks to gain insights into your users.
+2. Analyze chatbot interactions using Apache Spark&trade; and Jupyter notebooks to gain insights into your users.
 3. Enhance your data sets and machine learning models with sentiment and emotion from [Watson Natural Language Understanding](https://www.ibm.com/watson/services/natural-language-understanding/).
 4. Extract entities, categories, and keywords from your data sets using [Watson Natural Language Understanding](https://www.ibm.com/watson/services/natural-language-understanding/).
 5. Use your data sets to build and train [Watson Retrieve and Rank](https://www.ibm.com/watson/services/retrieve-and-rank/) for enhanced information retrieval.
