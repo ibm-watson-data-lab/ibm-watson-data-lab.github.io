@@ -23,6 +23,18 @@ This is where PixieDust comes in. It's an open source helper library that's desi
 - [Data visualisation](https://ibm-watson-data-lab.github.io/pixiedust/displayapi.html) with a simple `display()` API
 - [Dashboard creation](https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html) with minimal coding using PixieApps
 
+#### With PixieDust
+
+<script src="https://gist.github.com/mikebroberg/681d5108d81711553bc22545da741d23.js"></script>
+
+#### Without PixieDust
+
+<script src="https://gist.github.com/mikebroberg/1184290fac0701cdfaa7799344a05c99.js"></script>
+
+#### Both produce a chart, like this one:
+
+![Screenshot of PixieDust-generated scatterplot visualization in a Jupyter Notebook.](https://cdn-images-1.medium.com/max/800/0*SBXdARGdvsqHvhEe.)
+
 ## PixieDust &amp; Spark
 
 If you're processing data at scale, PixieDust also works with Apache Spark&trade; data structures like PySpark DataFrames, DataSets, and GraphFrames. When detecting that Spark is available, PixieDust enables these extra capabilities:

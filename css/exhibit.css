@@ -295,6 +295,10 @@ p.specialties {
 }
 
 /* brobes */
+h4 {
+  margin-top: 40px;
+}
+
 .strat-head {
   border-bottom: 2px solid #000;
 }
