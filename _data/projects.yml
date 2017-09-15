@@ -383,7 +383,7 @@
     - Watson Speech to Text
     - Watson Natural Language Understanding
 
-- title:    Adding a recommendation feature to your app using a graph DB
+- title:    Adding a Recommendation Feature to Your App Using a Graph Database
   headline: Graph user interactions for an even smarter chatbot.
   story:    In which we suggest new recipies to the user, based on similar interaction from others.
   links:     
@@ -400,6 +400,7 @@
     - Slack
     - Spoonacular
     - Tinkerpop
+    - Nodejs
 
 - title:    Persisting Data for a Smarter Chatbot
   headline: You'll need more than just log data to take your chatbot to the next level.
@@ -625,3 +626,20 @@
     - Redis
     - Compose
     - IBM Cloud Functions
+
+- title:    A Fancier Graph for an Already-Smarter Chatbot
+  headline: Updating the recipe chatbot demo to use JanusGraph, the latest in graph databases.
+  links: 
+    GitHub:         https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-janusgraph
+    Medium:         https://medium.com/ibm-watson-data-lab/a-depth-first-look-at-watson-conversation-gremlin-janusgraph-42be16335eef
+  strategies: 
+    - differentiators
+  features:
+    - watson-and-data
+  tags: 
+    - Watson Conversation
+    - Slack
+    - Spoonacular
+    - Compose
+    - JanusGraph
+    - Nodejs

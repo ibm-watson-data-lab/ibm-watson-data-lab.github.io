@@ -19,14 +19,28 @@ Jupyter Notebooks are powerful interactive tools for fast and flexible data expe
 
 This is where PixieDust comes in. It's an open source helper library that's designed to lower the barrier to entry for scientists and developers working in Jupyter Notebooks. PixieDust speeds the main steps of data science:
 
+{:.browser-default}
 - [Data loading from remote files](https://ibm-watson-data-lab.github.io/pixiedust/loaddata.html)
 - [Data visualisation](https://ibm-watson-data-lab.github.io/pixiedust/displayapi.html) with a simple `display()` API
 - [Dashboard creation](https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html) with minimal coding using PixieApps
+
+<h5>With PixieDust</h5>
+
+<script src="https://gist.github.com/mikebroberg/681d5108d81711553bc22545da741d23.js"></script>
+
+<h5>Without PixieDust</h5>
+
+<script src="https://gist.github.com/mikebroberg/1184290fac0701cdfaa7799344a05c99.js"></script>
+
+<h5>Both produce a chart, like so</h5>
+
+![Screenshot of PixieDust-generated scatterplot visualization in a Jupyter Notebook.](https://cdn-images-1.medium.com/max/800/0*SBXdARGdvsqHvhEe.)
 
 ## PixieDust &amp; Spark
 
 If you're processing data at scale, PixieDust also works with Apache Spark&trade; data structures like PySpark DataFrames, DataSets, and GraphFrames. When detecting that Spark is available, PixieDust enables these extra capabilities:
 
+{:.browser-default}
 - [PackageManager](https://ibm-watson-data-lab.github.io/pixiedust/packagemanager.html) to install third-party Spark packages
 - [Spark Progress Monitoring](https://ibm-watson-data-lab.github.io/pixiedust/sparkmonitor.html) to see how Spark Jobs are progressing
 - [Scala bridge](https://ibm-watson-data-lab.github.io/pixiedust/scalabridge.html) to write Scala/Java code in the same Python Notebook
@@ -35,6 +49,7 @@ If you're processing data at scale, PixieDust also works with Apache Spark&trade
 
 Sample notebooks are available on [IBM's Data Science Experience](https://datascience.ibm.com/):
 
+{:.browser-default}
 - [Welcome to PixieDust](https://apsportal.ibm.com/exchange/public/entry/view/5b000ed5abda694232eb5be84c3dd7c1)
 - [Analyze traffic data using PixieDust & Spark](https://apsportal.ibm.com/exchange/public/entry/view/79a80738cf6815e6807dba5c2c614a04)
 - [Analyze open data sets with Spark & PixieDust](https://apsportal.ibm.com/exchange/public/entry/view/d32974a6cab2d0b11cd660233868fc33)
