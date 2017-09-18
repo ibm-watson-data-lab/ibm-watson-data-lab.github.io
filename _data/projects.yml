@@ -664,7 +664,7 @@
     - PixieDust
     - Watson Conversation
     - Cloudant
-    
+
 - title:    Predictable, Progressive, Performant &ndash; The New Builders Podcast Episode about Offline First
   headline: 2nd Encore of our Panel Discussion from SXSW 2017.
   story:    Gathering a group of busy industry leaders for a panel discussion on Offline First is no easy task, but it sure was a lot of fun. We felt bad that so many people who wanted to attend one of our two panel discussions at SXSW weren’t able to make it in to either packed room, so we decided to have the conversation one more time. Just for you! 
@@ -672,11 +672,11 @@
     Medium: https://medium.com/offline-camp/predictable-progressive-performant-the-new-builders-podcast-episode-about-offline-first-260116bfdc9b
     Podcast: https://developer.ibm.com/tv/sxsw-offline-first/
   strategies:
-    - offline-first 
+    - offline-first
 
 - title:    Using Serverless Infrastructure to Build a Large-Scale Petition System
   headline: An example web app using OpenWhisk and Cloudant.
-  story:    \"Serverless\" means that instead of having fixed numbers of dedicated machines sitting in data centres waiting for traffic to come in, we can supply the code that handles a single piece of work (e.g. the submission of a web form) to an application framework like IBM OpenWhisk and let it scale out the computing power required. If no traffic arrives, you don’t pay anything — no fixed costs!
+  story:    Serverless means that instead of having fixed numbers of dedicated machines sitting in data centres waiting for traffic to come in, we can supply the code that handles a single piece of work (e.g. the submission of a web form) to an application framework like IBM OpenWhisk and let it scale out the computing power required. If no traffic arrives, you don’t pay anything — no fixed costs!
   links: 
     GitHub: https://github.com/ibm-watson-data-lab/online-petition
     Medium: https://medium.com/ibm-watson-data-lab/how-i-used-serverless-infrastructure-to-build-a-large-scale-petition-system-2779161c4c68
