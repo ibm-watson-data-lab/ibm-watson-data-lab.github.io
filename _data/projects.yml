@@ -17,6 +17,55 @@
 
 # Old stuff at the top; new stuff appended to the bottom.
 
+- title:    Field Work&#58; Offline Editing and Mapping of Geospatial Data
+  headline: A demo app designed for utilities repair personnel who need to capture events in work orders.
+  links: 
+    GitHub:         https://github.com/ibm-watson-data-lab/fieldwork  
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/03/07/better-infrastructure-maintenance-with-offline-mobile-maps/
+    demo: http://fieldwork.mybluemix.net/         
+  strategies: 
+    - offline-first
+  tags: 
+    - Cloudant
+    - PouchDB
+    - Nodejs
+
+- title:    Data-Driven Shopper Insights
+  headline: Crunch open demographics data, combined with your own sales data.
+  links: 
+    Notebook:       https://github.com/ibm-watson-data-lab/open-data/blob/master/samples/shopper-insights.ipynb
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/05/27/data-driven-shopper-insights/
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - Jupyter
+    - Python
+    - dataset
+
+- title:    Offline-First QR Code Badge Scanner
+  headline: Build a data collection app that captures and stores QR Code data, even when your network is unavailable.
+  links: 
+    GitHub:         https://github.com/ibm-cds-labs/badgescanner
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/05/05/offline-first-qr-code-badge-scanner/
+  strategies: 
+    - offline-first
+  tags: 
+    - Nodejs
+    - PouchDB
+
+- title:    Logshare&#58; Stream Your Log Data With Colleagues
+  headline: A Node.js app for sharing logs in a terminal window or on a webpage.
+  links: 
+    GitHub:         https://github.com/ibm-watson-data-lab/logshare-client
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/03/14/logshare/
+    Compose.com:    https://www.compose.com/articles/deploying-logshare-with-compose-and-bluemix/      
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Nodejs
+    - Compose
+    - Redis
+
 - title:    Weather Forecast with PixieDust
   headline: Make your own forecast in a Python notebook.
   links: 
@@ -81,7 +130,8 @@
 - title:    Simple Search Service
   headline: Create a faceted search engine from a CSV, exposing an API you can use to bring search into your own apps.
   links: 
-    GitHub: https://github.com/ibm-watson-data-lab/simple-search-service
+    GitHub:         https://github.com/ibm-watson-data-lab/simple-search-service
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/07/11/reintroducing-the-simple-search-service/
   img: https://camo.githubusercontent.com/4de163a76abc4ef0fbd69e94d2cbfe1d7dadb416/68747470733a2f2f646576656c6f7065722e69626d2e636f6d2f636c6f75646461746173657276696365732f77702d636f6e74656e742f75706c6f6164732f73697465732f34372f323031362f30312f746d705f73696d706c655f7365617263685f736b657463682e6a7067
   strategies: 
     - working-with-data
@@ -92,6 +142,18 @@
     - Nodejs
     - Compose
     - Redis
+
+- title:    Easy Frontends for Simple Search API 
+  headline: Spin up your own custom UI for our facted search service.
+  links: 
+    GitHub:         https://github.com/ibm-watson-data-lab/simple-search-js
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/05/12/easy-frontends-for-simple-search-api-got-data/
+  strategies: 
+    - working-with-data
+  features:
+    - simple-search
+  tags: 
+    - JavaScript
 
 - title:    Cloudant FoodTracker Part 1&#58; The Datastore
   headline: Replace Apple's local file storage with Cloudant's iOS library.
@@ -237,6 +299,8 @@
     GitHub: https://github.com/ibm-watson-data-lab/open-data
   strategies: 
     - working-with-wdp
+  tags:
+    - dataset
 
 - title:    Seven Databases in Seven Days
   headline: A quick tour of (some of) our database services.
@@ -306,6 +370,7 @@
   story:    Continuously synchronize the index of a Simple-Search-Service instance with the content of a CouchDB/Cloudant database.
   links: 
     GitHub: https://github.com/ibm-watson-data-lab/simple-search-service-sync
+    Medium: https://medium.com/ibm-watson-data-lab/database-changes-and-search-indexes-that-go-together-like-wine-cheese-dd67f08067fe
   strategies: 
     - working-with-wdp
   features:
@@ -360,6 +425,39 @@
   tags: 
     - Cloudant
     - Nodejs
+
+- title:    Sentiment Analysis of Twitter Hashtags With Spark
+  headline: Build a real-time dashboard with PixieDust &amp; Jupyter Notebooks.
+  links: 
+    Notebook:       https://raw.githubusercontent.com/ibm-cds-labs/pixiedust_incubator/master/twitterdemo/notebook/Twitter%20Sentiment%20with%20Watson%20and%20PixieDust.ipynb
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/01/15/real-time-sentiment-analysis-of-twitter-hashtags-with-spark/
+    Medium:         https://medium.com/ibm-watson-data-lab/real-time-sentiment-analysis-of-twitter-hashtags-with-spark-7ee6ca5c1585
+  strategies: 
+    - notebooks-for-developers
+  features:
+    - pixiedust-for-jupyter
+  tags: 
+    - Spark
+    - Watson Tone Analyzer
+    - PixieDust
+    - Python
+    - Scala
+
+- title:    SETI@IBMCloud&#58; SETI data, publicly available, from IBM
+  headline: Raw data from the SETI Institute for you to crunch in the search for extraterrestrial life.
+  links: 
+    GitHub:         https://github.com/ibm-watson-data-lab/seti_at_ibm
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/09/29/seti-data-on-ibm-cloud/
+    Medium:         https://medium.com/ibm-watson-data-lab/simulating-e-t-e34f4fa7a4f0
+  strategies: 
+    - working-with-wdp
+    - notebooks-for-developers
+  tags: 
+    - Spark
+    - Object Storage
+    - Jupyter
+    - Python
+    - dataset
 
 - title:    Voice of InterConnect
   headline: Proof that Progressive Web Apps can do some serious analysis.
@@ -444,6 +542,7 @@
   img:      img/pixiedust-logo-thumb.png
   links:
     Medium: https://medium.com/ibm-watson-data-lab/i-am-not-a-data-scientist-efe7ca6ceba2
+    developerWorks: https://developer.ibm.com/clouddataservices/2016/10/11/pixiedust-magic-for-python-notebook/
   strategies:
     - notebooks-for-developers  
   features: 
@@ -608,7 +707,7 @@
     - Chatbots
     - Cognitive
     - PubNub
-    - Javascript
+    - JavaScript
     - Watson Conversation
 
 - title:    Add Redis To Your Serverless Application

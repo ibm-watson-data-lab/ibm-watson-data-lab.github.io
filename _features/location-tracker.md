@@ -21,6 +21,7 @@ The Location Tracker native mobile app demonstrates to Swift developers how easy
 
 The first iteration of the Location Tracker web app demonstrates building the app as a CouchApp, which can be served directly from IBM Cloudant or Apache CouchDB, and leverages PouchDB and the HTML5 Geolocation API on the client side. The CouchApp is then refactored into a single-page application (SPA) which is deployable to IBM Bluemix. From there, a Node.js middle tier is added which provides user management functionality.
 
+{:.browser-default}
 - [Location Tracker Web App Tutorial Part 1](https://github.com/cloudant-labs/location-tracker-couchapp/blob/master/tutorial/tutorial.adoc): Implementing as a CouchApp
 - [Location Tracker Web App Tutorial Part 2](https://github.com/cloudant-labs/location-tracker-angular/blob/master/tutorial/tutorial.adoc): Implementing in AngularJS
 - [Location Tracker Web App Tutorial Part 3](https://github.com/cloudant-labs/location-tracker-nodejs/blob/master/tutorial/tutorial.md): Adding a Middle Tier to Manage Users

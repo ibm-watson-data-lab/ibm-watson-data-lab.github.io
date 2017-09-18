@@ -30,6 +30,7 @@ Learn how to use IBM Cloudant and Cloudant Sync to build an Offline First native
 
 Learn how to use PouchDB with hybrid mobile apps, desktop apps, or Internet of Things (IoT) apps:
 
+{:.browser-default}
 - [PouchDB for PhoneGap/Cordova](https://github.com/nolanlawson/pouchdb-phonegap-cordova)
 - [PouchDB for Ionic Framework](https://github.com/nolanlawson/pouchdb-ionic)
 - [PouchDB for Electron](https://github.com/nolanlawson/pouchdb-electron)
