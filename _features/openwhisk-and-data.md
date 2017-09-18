@@ -15,9 +15,10 @@ When dealing with data, we're often looking to process a potentially large datas
 
 Rather than responding to a user requesting a page (although it can do that too), serverless "actions" usually run in response to an event. This might be:
 
-* a database change
-* a webhook (e.g. from Slack or GitHub)
-* a user submitting a form
-* a message on a queue
+{:.browser-default}
+- a database change
+- a webhook (e.g. from Slack or GitHub)
+- a user submitting a form
+- a message on a queue
 
 With support for various programming languages built in, and the ability to package any other executables with Docker, this platform is for developers of all technology stacks. And the good news is that all the services and datastores that you use on Bluemix?  They're available on IBM Cloud Functions too!  In this section you can find the resources you need to work effectively with the technologies you already know, on a platform that grows as you do.

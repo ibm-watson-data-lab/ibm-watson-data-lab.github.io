@@ -18,6 +18,7 @@ The secret sauce that makes it all work. A global network infrastructure powerin
 
 #### Products
 
+{:.browser-default}
 - **Realtime Messaging:** Send and receive messages cross-platform and cross-device with robust yet simple APIs for global publish/subscribe messaging.
 - **Presence:** Automatic realtime detection of device and user state to identify who and what is connected.
 - **Functions:** A serverless environment to execute functions on the edge, transforming, enriching, and filtering messages as they route through the PubNub DSN.
