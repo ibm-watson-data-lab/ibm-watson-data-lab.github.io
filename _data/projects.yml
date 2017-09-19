@@ -174,7 +174,7 @@
     developerWorks: https://developer.ibm.com/clouddataservices/2016/07/11/reintroducing-the-simple-search-service/
   img: https://camo.githubusercontent.com/4de163a76abc4ef0fbd69e94d2cbfe1d7dadb416/68747470733a2f2f646576656c6f7065722e69626d2e636f6d2f636c6f75646461746173657276696365732f77702d636f6e74656e742f75706c6f6164732f73697465732f34372f323031362f30312f746d705f73696d706c655f7365617263685f736b657463682e6a7067
   strategies: 
-    - working-with-data
+    - working-with-wdp
   features: 
     - simple-search
   tags:
@@ -189,7 +189,7 @@
     GitHub:         https://github.com/ibm-watson-data-lab/simple-search-js
     developerWorks: https://developer.ibm.com/clouddataservices/2016/05/12/easy-frontends-for-simple-search-api-got-data/
   strategies: 
-    - working-with-data
+    - working-with-wdp
   features:
     - simple-search
   tags: 
@@ -764,7 +764,131 @@
     Medium: https://medium.com/offline-camp/crafting-community-events-that-leave-them-wanting-smore-902974cff4d4
     YouTube: https://www.youtube.com/watch?v=FNtpPW_7H1k
   features: 
-    - offline-camp    
+    - offline-camp   
+
+- title:    Analysing Cloudant JSON in RunKit JavaScript Notebooks
+  headline: Using the simplified silverlining npm module.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/analysing-cloudant-json-in-runkit-javascript-notebooks-387be1f5500b
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Cloudant
+    - Nodejs
+    - RunKit
+
+- title:    Moving data from DynamoDB to Cloudant or CouchDB
+  headline: Introducing the dynamodbexport npm module.
+  links: 
+    npm:    https://www.npmjs.com/package/dynamodbexport
+    GitHub: https://github.com/glynnbird/dynamodbexport
+    Medium: https://medium.com/ibm-watson-data-lab/moving-data-from-dynamodb-to-cloudant-or-couchdb-4a4110a4e2d9
+  strategies: 
+    - working-with-wdp
+  features:
+    - loading-data
+  tags: 
+    - Cloudant
+    - CouchDB
+    - Nodejs
+    - DynamoDB
+
+- title:    Data Visualization Right in the Cloudant Dashboard
+  headline: User script for quickly vizualizing aggregated results.
+  links: 
+    npm:    https://www.npmjs.com/package/simple-data-vis
+    GitHub: https://github.com/ibm-watson-data-lab/simple-data-vis
+    Medium: https://medium.com/ibm-watson-data-lab/eye-candy-for-cloudant-201a195ed6c
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Cloudant
+    - Nodejs
+
+- title:    Create a Serverless, Watson-Powered Chatbot for Your Business
+  headline: Add a conversation widget to your web page that handles questions for you.
+  links: 
+    nmp:    https://www.npmjs.com/package/concierge-chatbot
+    GitHub: https://github.com/ibm-watson-data-lab/concierge
+    demo:   https://glynnbird.github.io/pretendhotel/
+    Medium: https://medium.com/ibm-watson-data-lab/create-a-serverless-watson-powered-chatbot-for-your-business-4e5c1637ec54
+  strategies: 
+    - differentiators
+  features:
+    - openwhisk-and-data
+  tags: 
+    - OpenWhisk
+    - Watson Conversation
+
+- title:    Zero to Kubernetes on the IBM Bluemix Container Service
+  headline: Just deployment basics. Nothing fancy.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/zero-to-kubernetes-on-the-ibm-bluemix-container-service-fd104fd193c1
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Kubernetes
+
+- title:    You Too Can Make Magic (in Jupyter Notebooks with PixieDust)
+  headline: Getting started with custom visualizations, simple tables & word clouds.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/you-too-can-make-magic-in-jupyter-notebooks-with-pixiedust-505d20f4fd13
+  strategies: 
+    - notebooks-for-developers
+  features:
+    - pixiedust-for-jupyter
+  tags: 
+    - Jupyter
+    - Python
+    - PixieDust
+
+- title:    Share the (PixieDust) Magic on PyPI
+  headline: Packaging and distributing your PixieDust plugin as a Python module.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/share-the-pixiedust-magic-4684d9a96b89
+  strategies: 
+    - notebooks-for-developers
+  features:
+    - pixiedust-for-jupyter
+  tags: 
+    - PixieDust
+    - Python
+
+- title:    PouchDB&#58; The Swiss Army Knife of Databases
+  headline: Use PouchDB in the browser, as a client for a remote database, or on the server side.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/pouchdb-the-swiss-army-knife-of-databases-c5429f3db21f
+  strategies: 
+    - working-with-wdp
+    - offline-first
+  tags: 
+    - JavaScript
+    - PouchDB
+
+- title:    Simple Data Visualization in Apache CouchDB&trade;
+  headline: D3, right in the Fauxton dashboard, via userscript.
+  links: 
+    GitHub: https://gist.github.com/vabarbosa/bff35152c3888f4e2c0ad92e2511dc2b#file-chango-user-js
+    Medium: https://medium.com/ibm-watson-data-lab/simple-data-visualization-in-apache-couchdb-dd1e44dc05d4
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - CouchDB
+    - JavaScript
+
+- title:    Diff Your Couch-Style Databases with couchdiff
+  headline: Command-Line tool for comparing two Apache CouchDB&trade; or Cloudant databases.
+  links: 
+    npm:    https://www.npmjs.com/package/couchdiff
+    GitHub: https://github.com/glynnbird/couchdiff
+    Medium: https://medium.com/ibm-watson-data-lab/diff-your-databases-with-couchdiff-f69943f9dc97
+  strategies: 
+    - working-with-wdp
+  features:
+    - loading-data
+  tags: 
+    - CouchDB
+    - Cloudant
 
 - title:    Navigating SXSW via Cognitive Chatbot
   headline: A smarter conference event recommendation system using Watson services and Mapbox.
@@ -804,6 +928,91 @@
     - JavaScript
     - Watson Conversation
 
+- title:    Choosing a Cloudant Library
+  headline: Which level of abstraction is “just right” for you?
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/choosing-a-cloudant-library-d14c06f3d714
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Cloudant
+    - Nodejs
+    - PouchDB
+
+- title:    Queueing API requests to use Cloudant more efficiently
+  headline: Who limits the rate-limiter?
+  links: 
+    npm:    https://www.npmjs.com/package/qrate
+    GitHub: https://github.com/glynnbird/qrate
+    Medium: https://medium.com/ibm-watson-data-lab/who-limits-the-rate-limiter-68013263f9d2
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Cloudant
+    - Nodejs
+
+- title:    Scraping OpenStreetMap and Exploring POI Data in Cloudant and Jupyter Notebooks
+  headline: Easy access to all points of interest data.
+  links: 
+    demo:   http://opendata.mybluemix.net/
+    Medium: https://medium.com/ibm-watson-data-lab/easy-access-to-all-points-of-interest-data-acc6569e45b2
+  strategies: 
+    - working-with-wdp
+    - notebooks-for-developers
+  tags: 
+    - dataset
+    - Python
+    - Cloudant
+    - Jupyter
+    - PixieDust
+
+- title:    Querying your Cloudant database with SQL
+  headline: Updating the silverlining Node.js library to support the basics of SQL.
+  links: 
+    npm:    https://www.npmjs.com/package/silverlining
+    GitHub: https://github.com/ibm-watson-data-lab/silverlining
+    Medium: https://medium.com/ibm-watson-data-lab/querying-your-cloudant-database-with-sql-bd670ee86291
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Cloudant
+    - Nodejs
+
+- title:    Defensive IBM Object Storage Containers
+  headline: How to prevent accidental writes when collaborating on data analysis.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/defensive-ibm-object-storage-containers-6fb100fcb4a8
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Object Storage
+
+- title:    CouchDB Writes&#58; Piecemeal, Bulk, or Batch?
+  headline: Which write API endpoint is the right write call for you?
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/couchdb-writes-piecemeal-bulk-or-batch-8bf8ef9314e0
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Cloudant
+    - CouchDB
+
+- title:    Building a Poem Generator App Using Watson APIs
+  headline: A way with words and code.
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/PoemGenerator
+    demo:   http://poem-generator.mybluemix.net/
+    Medium: https://medium.com/ibm-watson-data-lab/generating-poems-a-way-with-words-and-code-885e85afac4b
+  strategies: 
+    - differentiators
+  features:
+    - watson-and-data
+  tags: 
+    - Postgres
+    - Compose
+    - Watson Tone Analyzer
+    - Watson Natural Language Understanding
+
 - title:    Add Redis To Your Serverless Application
   headline: Use an in-memory datastore for a little light persistence.
   story:    Voice assistants are fun but they can seem rather idiotic when they can't remember what they just said. See asynchronous JavaScript used to connect to Redis from an IBM Cloud Function action and give Amazon's Alexa a "brain."
@@ -819,6 +1028,18 @@
     - Redis
     - Compose
     - IBM Cloud Functions
+
+- title:    Querying Your PouchDB Database With SQL
+  headline: Adapting the silverlining npm module to work with in-browser database PouchDB.
+  links: 
+    npm:    https://www.npmjs.com/package/pouchdb-silverlining
+    GitHub: https://github.com/ibm-watson-data-lab/pouchdb-silverlining
+    Medium: https://medium.com/ibm-watson-data-lab/querying-your-pouchdb-database-with-sql-c2e43c21b7ce
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Nodejs
+    - PouchDB
 
 - title:    A Fancier Graph for an Already-Smarter Chatbot
   headline: Updating the recipe chatbot demo to use JanusGraph, the latest in graph databases.
@@ -836,3 +1057,119 @@
     - Compose
     - JanusGraph
     - Nodejs
+
+- title:    Trigger Periodic OpenWhisk Actions
+  headline: Distributed "\cron jobs"\ using the Alarm package.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/trigger-periodic-openwhisk-actions-b6b54127d5e2
+  strategies: 
+    - differentiators
+  features:
+    - openwhisk-and-data
+  tags: 
+    - OpenWhisk
+
+- title:    Got Zip Code Data? Prep It for Analytics.
+  headline: Using fine-grained U.S. Census data and Jupyter Notebooks to better understand your customers.
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/open-data/tree/master/urbanity
+    Medium: https://medium.com/ibm-watson-data-lab/got-zip-code-data-prep-it-for-analytics-7022b47652d9
+  strategies: 
+    - notebooks-for-developers
+    - partners
+  tags: 
+    - Jupyter
+    - Python
+    - Mapbox
+    - dataset
+
+- title:    Serverless Autocomplete
+  headline: Which way of deploying an autocomplete service is right for you?
+  links: 
+    npm:    https://www.npmjs.com/package/serverless-autocomplete
+    GitHub: https://github.com/ibm-watson-data-lab/serverless-autocomplete
+    Medium: https://medium.com/ibm-watson-data-lab/serverless-autocomplete-f7d64d89a230
+  strategies: 
+    - differentiators
+    - working-with-wdp
+  features:
+    - openwhisk-and-data
+  tags: 
+    - OpenWhisk
+    - Nodejs
+
+- title:    Custom Cloudant Replication
+  headline: Emulating filtered replication using the changes feed and OpenWhisk functions.
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/custom-replication
+    Medium: https://medium.com/ibm-watson-data-lab/custom-cloudant-replication-d0753284d834
+  strategies: 
+    - differentiators
+    - working-with-wdp
+  features:
+    - openwhisk-and-data
+  tags: 
+    - Cloudant
+    - JavaScript
+    - OpenWhisk
+
+- title:    Using Watson Machine Learning to Predict a Post’s Potential
+  headline: Gaze into the Reddit crystal ball.
+  links: 
+    Notebook: https://github.com/ibm-watson-data-lab/reddit-crystal-ball-notebook/blob/master/Reddit%20Crystal%20Ball.ipynb
+    Medium: https://medium.com/ibm-watson-data-lab/gaze-into-my-reddit-crystal-ball-19813a21e5b6
+  strategies: 
+    - differentiators
+    - notebooks-for-developers
+  features:
+    - watson-and-data
+    - pixiedust-for-jupyter
+  tags: 
+    - PixieDust
+    - Watson Machine Learning
+    - Jupyter
+
+- title:    Analyzing Podcast Metadata Using Jupyter Notebooks
+  headline: Building podcast playlists based on your current mood.
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/enriching-web-syndication-feeds
+    Medium: https://medium.com/ibm-watson-data-lab/tell-me-something-i-dont-know-e27a2608050
+  strategies: 
+    - notebooks-for-developers
+    - differentiators
+  features:
+    - pixiedust-for-jupyter
+    - watson-and-data
+  tags: 
+    - PixieDust
+    - Watson Natural Language Understanding
+    - Jupyter
+
+- title:    Nodebooks&#58; Node.js Data Science Notebooks
+  headline: Python and Node.js in the same Jupyter notebook.
+  links: 
+    GitHub: https://github.com/ibm-watson-data-lab/pixiedust_node
+    Medium: https://medium.com/ibm-watson-data-lab/nodebooks-node-js-data-science-notebooks-aa140bea21ba
+  strategies: 
+    - notebooks-for-developers
+  features:
+    - pixiedust-for-jupyter
+  tags: 
+    - PixieDust
+    - Nodejs
+    - Python
+
+- title:    Nodebooks&#58; Sharing Data Between Node.js & Python
+  headline: Connecting to a Cloudant database for analysis.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/nodebooks-sharing-data-between-node-js-python-3a4acae27a02
+    GitHub: https://github.com/ibm-watson-data-lab/pixiedust_node
+  strategies: 
+    - notebooks-for-developers
+  features:
+    - pixiedust-for-jupyter
+  tags: 
+    - PixieDust
+    - Cloudant
+    - Nodejs
+    - Python
