@@ -130,7 +130,6 @@
   links: 
     GitHub:         https://github.com/ibm-watson-data-lab/reddit-sentiment-analysis
     developerWorks: https://developer.ibm.com/clouddataservices/2016/06/23/sentiment-analysis-of-reddit-amas-using-dashdb-and-r/
-    developerWorks: https://developer.ibm.com/clouddataservices/2016/03/10/sentiment-analysis-of-reddit-amas/
   img:      img/reddit-ama-arch.png
   thumb:    img/reddit-ama-arch-thumb.png
   strategies: 
