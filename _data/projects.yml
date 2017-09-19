@@ -1041,6 +1041,17 @@
     - Nodejs
     - PouchDB
 
+- title:    Trigger Periodic OpenWhisk Actions
+  headline: Distributed “cron jobs“ using the Alarm package.
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/trigger-periodic-openwhisk-actions-b6b54127d5e2
+  strategies: 
+    - differentiators
+  features:
+    - openwhisk-and-data
+  tags: 
+    - OpenWhisk
+
 - title:    A Fancier Graph for an Already-Smarter Chatbot
   headline: Updating the recipe chatbot demo to use JanusGraph, the latest in graph databases.
   links: 
@@ -1057,17 +1068,6 @@
     - Compose
     - JanusGraph
     - Nodejs
-
-- title:    Trigger Periodic OpenWhisk Actions
-  headline: Distributed “cron jobs“ using the Alarm package.
-  links: 
-    Medium: https://medium.com/ibm-watson-data-lab/trigger-periodic-openwhisk-actions-b6b54127d5e2
-  strategies: 
-    - differentiators
-  features:
-    - openwhisk-and-data
-  tags: 
-    - OpenWhisk
 
 - title:    Got Zip Code Data? Prep It for Analytics.
   headline: Using fine-grained U.S. Census data and Jupyter Notebooks to better understand your customers.
