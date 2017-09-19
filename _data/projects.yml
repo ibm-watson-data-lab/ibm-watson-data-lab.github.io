@@ -939,7 +939,7 @@
     - Nodejs
     - PouchDB
 
-- title:    Queueing API requests to use Cloudant more efficiently
+- title:    Queueing API Requests to Use Cloudant More Efficiently
   headline: Who limits the rate-limiter?
   links: 
     npm:    https://www.npmjs.com/package/qrate
@@ -1059,7 +1059,7 @@
     - Nodejs
 
 - title:    Trigger Periodic OpenWhisk Actions
-  headline: Distributed "\cron jobs"\ using the Alarm package.
+  headline: Distributed “cron jobs“ using the Alarm package.
   links: 
     Medium: https://medium.com/ibm-watson-data-lab/trigger-periodic-openwhisk-actions-b6b54127d5e2
   strategies: 
