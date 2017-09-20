@@ -16,8 +16,8 @@
 
 
 # Old stuff at the top; new stuff appended to the bottom.
---- 
-- 
+
+- title: "Metrics Collector: Analyze Web Metrics, Even With AJAX."
   headline: "Lightweight tracking to record user actions on a single-page webapp."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/metrics-collector"
@@ -29,8 +29,8 @@
     - Nodejs
     - Piwik
     - Angular
-  title: "Metrics Collector: Analyze Web Metrics, Even With AJAX."
-- 
+
+- title: "Field Work: Offline Editing and Mapping of Geospatial Data"
   headline: "A demo app designed for utilities repair personnel who need to capture events in work orders."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/fieldwork"
@@ -42,8 +42,8 @@
     - Cloudant
     - PouchDB
     - Nodejs
-  title: "Field Work: Offline Editing and Mapping of Geospatial Data"
-- 
+
+- title: "Data-Driven Shopper Insights"
   headline: "Crunch open demographics data, combined with your own sales data."
   links: 
     Notebook: "https://github.com/ibm-watson-data-lab/open-data/blob/master/samples/shopper-insights.ipynb"
@@ -54,8 +54,8 @@
     - Jupyter
     - Python
     - dataset
-  title: "Data-Driven Shopper Insights"
-- 
+
+- title: "Simple Logging Service: Our Metrics Collector App Rebuilt on a Microservices Stack"
   headline: "Instead of writing data to Cloudant, this project adds data to a variety of outputs depending on the runtime environment."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/simple-logging-service"
@@ -68,8 +68,8 @@
     - RabbitMQ
     - Kafka
     - Compose
-  title: "Simple Logging Service: Our Metrics Collector App Rebuilt on a Microservices Stack"
-- 
+
+- title: "Offline-First QR Code Badge Scanner"
   headline: "Build a data collection app that captures and stores QR Code data, even when your network is unavailable."
   links: 
     GitHub: "https://github.com/ibm-cds-labs/badgescanner"
@@ -79,8 +79,8 @@
   tags: 
     - Nodejs
     - PouchDB
-  title: "Offline-First QR Code Badge Scanner"
-- 
+
+- title: "Caching Cloudant Requests With cachemachine"
   headline: "Increase app response time and spare your data service. Use cachemachine and Cloudant's Node.js library to cache any HTTP service with Redis as the cache store."
   links: 
     GitHub: "https://github.com/glynnbird/cachemachine"
@@ -93,8 +93,8 @@
     - Cloudant
     - Redis
     - Compose
-  title: "Caching Cloudant Requests With cachemachine"
-- 
+
+- title: "Logshare: Stream Your Log Data With Colleagues"
   headline: "A Node.js app for sharing logs in a terminal window or on a webpage."
   links: 
     Compose.com: "https://www.compose.com/articles/deploying-logshare-with-compose-and-bluemix/"
@@ -106,8 +106,8 @@
     - Nodejs
     - Compose
     - Redis
-  title: "Logshare: Stream Your Log Data With Colleagues"
-- 
+
+- title: "Weather Forecast with PixieDust"
   features: 
     - weather-and-data
     - pixiedust-for-jupyter
@@ -123,8 +123,8 @@
     - Weather
     - Python
     - PixieDust
-  title: "Weather Forecast with PixieDust"
-- 
+
+- title: "Sentiment Analysis of Reddit AMAs"
   features: 
     - watson-and-data
   headline: "Unlock the hidden sentiments of redditors."
@@ -145,8 +145,8 @@
     - R
     - "Watson Tone Analyzer"
   thumb: img/reddit-ama-arch-thumb.png
-  title: "Sentiment Analysis of Reddit AMAs"
-- 
+
+- title: "Predict Flight Delays with Apache Spark"
   features: 
     - pixiedust-for-jupyter
   headline: "Know about delayed flights before they happen."
@@ -166,8 +166,8 @@
     - "Jupyter Notebook"
     - PixieDust
   thumb: img/flight-predict-thumb.png
-  title: "Predict Flight Delays with Apache Spark"
-- 
+
+- title: "Simple Search Service"
   features: 
     - simple-search
   headline: "Create a faceted search engine from a CSV, exposing an API you can use to bring search into your own apps."
@@ -182,8 +182,8 @@
     - Nodejs
     - Compose
     - Redis
-  title: "Simple Search Service"
-- 
+
+- title: "Easy Frontends for Simple Search API"
   features: 
     - simple-search
   headline: "Spin up your own custom UI for our facted search service."
@@ -194,8 +194,8 @@
     - working-with-wdp
   tags: 
     - JavaScript
-  title: "Easy Frontends for Simple Search API"
-- 
+
+- title: "Cloudant FoodTracker Part 1: The Datastore"
   features: 
     - food-tracker
   headline: "Replace Apple's local file storage with Cloudant's iOS library."
@@ -203,15 +203,15 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/cloudant-food-tracker/tree/master/part-1"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/01/25/start-developing-ios-apps-swift-with-cloud-sync-part-1-the-datastore/"
-  story: "Transform Apple’s FoodTracker example into a true offline-first app that stores data locally and synchronizes to the cloud."
+  story: "Transform Apple's FoodTracker example into a true offline-first app that stores data locally and synchronizes to the cloud."
   strategies: 
     - offline-first
   tags: 
     - Cloudant
     - "iOS Swift"
   thumb: img/cloudant-foodtracker-thumb.png
-  title: "Cloudant FoodTracker Part 1: The Datastore"
-- 
+
+- title: "Cloudant FoodTracker Part 2: Sync to the Cloud"
   features: 
     - food-tracker
   headline: "Enable sync for local data on an iOS device to cloud copies."
@@ -226,8 +226,8 @@
     - Cloudant
     - "iOS Swift"
   thumb: img/cloudant-foodtracker-thumb.png
-  title: "Cloudant FoodTracker Part 2: Sync to the Cloud"
-- 
+
+- title: "Cloudant FoodTracker Part 3: User Interface"
   features: 
     - food-tracker
   headline: "Improve UI elements to reflect the data sync process."
@@ -242,8 +242,8 @@
     - Cloudant
     - "iOS Swift"
   thumb: img/cloudant-foodtracker-thumb.png
-  title: "Cloudant FoodTracker Part 3: User Interface"
-- 
+
+- title: "Location Tracker Envoy Server [2]"
   features: 
     - location-tracker
   headline: "Scaling the CouchDB database-per-user architecture? No problem."
@@ -258,8 +258,8 @@
     - Cloudant
     - Nodejs
   thumb: img/location-tracker-cloudantdash-thumb.png
-  title: "Location Tracker Envoy Server [2]"
-- 
+
+- title: "Location Tracker Node.js Server [1.5]"
   features: 
     - location-tracker
   headline: "The unsung hero of our location tracker demo—the back end."
@@ -274,8 +274,8 @@
     - Cloudant
     - Nodejs
   thumb: img/location-tracker-node-thumb.png
-  title: "Location Tracker Node.js Server [1.5]"
-- 
+
+- title: "Location Tracker Swift Client [1]"
   features: 
     - location-tracker
   headline: "Track your location, offline or on."
@@ -290,8 +290,8 @@
     - Cloudant
     - "iOS Swift"
   thumb: img/location-tracker-client-thumb.png
-  title: "Location Tracker Swift Client [1]"
-- 
+
+- title: "Real-Time Q&A App With RethinkDB"
   headline: "Get real-time, with changefeeds in RethinkDB."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/rethinkdb-questions"
@@ -304,8 +304,8 @@
     - Nodejs
     - RethinkDB
     - Vuejs
-  title: "Real-Time Q&A App With RethinkDB"
-- 
+
+- title: "Plug into the Cloudant Node.js Library"
   headline: "JavaScript all the way down."
   links: 
     GitHub: "https://github.com/cloudant/nodejs-cloudant"
@@ -316,8 +316,8 @@
   tags: 
     - Cloudant
     - Nodejs
-  title: "Plug into the Cloudant Node.js Library"
-- 
+
+- title: "CouchDB Document Copy and Transform Service"
   features: 
     - loading-data
   headline: "Add some T to your ETL for CouchDB."
@@ -331,8 +331,8 @@
     - Cloudant
     - CouchDB
     - Nodejs
-  title: "CouchDB Document Copy and Transform Service"
-- 
+
+- title: "Open Data Sets"
   headline: "Curated data, open and free for you to use."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/open-data"
@@ -341,8 +341,8 @@
     - working-with-wdp
   tags: 
     - dataset
-  title: "Open Data Sets"
-- 
+
+- title: "Seven Databases in Seven Days"
   features: 
     - loading-data
   headline: "A quick tour of (some of) our database services."
@@ -361,8 +361,8 @@
     - Postgres
     - Redis
     - RethinkDB
-  title: "Seven Databases in Seven Days"
-- 
+
+- title: "Introducing the Simple Autocomplete Service"
   headline: "Easily add autocomplete to your web form fields. Simply upload your data set to create a fast and efficient autocomplete API."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/simple-autocomplete-service/"
@@ -373,8 +373,8 @@
     - Nodejs
     - Redis
     - Compose
-  title: "Introducing the Simple Autocomplete Service"
-- 
+
+- title: "Browse Your Object Store From the Web"
   headline: "Simple data portal with Python and IBM Object Storage."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/openobjectstore"
@@ -385,8 +385,8 @@
   tags: 
     - "Object Storage"
     - Python
-  title: "Browse Your Object Store From the Web"
-- 
+
+- title: "Deploy Your PHP Application to Bluemix"
   headline: "Add RabbitMQ to your existing app to send notifications."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/guestbook"
@@ -401,8 +401,8 @@
     - Nodejs
     - PHP
     - RabbitMQ
-  title: "Deploy Your PHP Application to Bluemix"
-- 
+
+- title: "Installing Web Apps with Electron"
   features: 
     - loading-data
   headline: "A simple CouchDB data importer app that also shows how to bundle a web app for native distribution with Electron."
@@ -416,8 +416,8 @@
     - CouchDB
     - Electron
     - Nodejs
-  title: "Installing Web Apps with Electron"
-- 
+
+- title: "Sync Your Search Index in a Snap"
   features: 
     - simple-search
   headline: "Synchronize Simple Search Service with the contents of a CouchDB-style database."
@@ -431,11 +431,11 @@
     - CouchDB
     - Cloudant
     - Nodejs
-  title: "Sync Your Search Index in a Snap"
-- 
+
+- title: "Importing JSON Documents with nosqlimport"
   features: 
     - loading-data
-  headline: "Moving data doesn’t have to stink."
+  headline: "Moving data doesn't have to stink."
   links: 
     GitHub: "https://github.com/glynnbird/nosqlimport"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/19/import-json-nosqlimport/"
@@ -448,8 +448,8 @@
     - CouchDB
     - Cloudant
     - ElasticSearch
-  title: "Importing JSON Documents with nosqlimport"
-- 
+
+- title: "Simple CouchDB and Cloudant Backup"
   features: 
     - loading-data
   headline: "Back up your data, without breaking your back."
@@ -464,8 +464,8 @@
     - Nodejs
     - CouchDB
     - Cloudant
-  title: "Simple CouchDB and Cloudant Backup"
-- 
+
+- title: "Simple Service Registry: Distributed Config Management for Microservices"
   headline: "Microservices are great, but how do we wire them all together at scale and without downtime?"
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/simple-service-registry"
@@ -476,8 +476,8 @@
     - Nodejs
     - Etcd
     - Compose
-  title: "Simple Service Registry: Distributed Config Management for Microservices"
-- 
+
+- title: "Cloudant and Node.js Made Simple with the silverlining Library"
   headline: "A library for new users."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/silverlining"
@@ -489,8 +489,8 @@
   tags: 
     - Cloudant
     - Nodejs
-  title: "Cloudant and Node.js Made Simple with the silverlining Library"
-- 
+
+- title: "Sentiment Analysis of Twitter Hashtags With Spark"
   features: 
     - pixiedust-for-jupyter
   headline: "Build a real-time dashboard with PixieDust & Jupyter Notebooks."
@@ -506,8 +506,8 @@
     - PixieDust
     - Python
     - Scala
-  title: "Sentiment Analysis of Twitter Hashtags With Spark"
-- 
+
+- title: "SETI@IBMCloud: SETI data, publicly available, from IBM"
   headline: "Raw data from the SETI Institute for you to crunch in the search for extraterrestrial life."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/seti_at_ibm"
@@ -522,8 +522,8 @@
     - Jupyter
     - Python
     - dataset
-  title: "SETI@IBMCloud: SETI data, publicly available, from IBM"
-- 
+
+- title: "Voice of InterConnect"
   features: offline-first-apps
   headline: "Proof that Progressive Web Apps can do some serious analysis."
   img: img/voice-of-interconnect.png
@@ -544,8 +544,8 @@
     - "Watson Speech to Text"
     - "Watson Natural Language Understanding"
   thumb: img/voice-of-interconnect-thumb.png
-  title: "Voice of InterConnect"
-- 
+
+- title: "Adding a Recommendation Feature to Your App Using a Graph Database"
   features: 
     - watson-and-data
   headline: "Graph user interactions for an even smarter chatbot."
@@ -563,8 +563,8 @@
     - Tinkerpop
     - Nodejs
   thumb: img/graph-chatbot-thumb.png
-  title: "Adding a Recommendation Feature to Your App Using a Graph Database"
-- 
+
+- title: "Persisting Data for a Smarter Chatbot"
   features: 
     - watson-and-data
   headline: "You'll need more than just log data to take your chatbot to the next level."
@@ -581,8 +581,8 @@
     - Spoonacular
     - Cloudant
   thumb: img/smarter-chatbot-thumb.jpg
-  title: "Persisting Data for a Smarter Chatbot"
-- 
+
+- title: "Realtime Infrastructure Made Simple"
   headline: "Live event updates for your web app with our Simple Notification Service."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/simple-notification-service"
@@ -598,8 +598,8 @@
     - Vuejs
     - RethinkDB
     - Compose
-  title: "Realtime Infrastructure Made Simple"
-- 
+  
+- title: "Web application state, à la Dogfight (1983)"
   headline: "Adding real-time notifications to your Node.js app"
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/dogfight"
@@ -611,8 +611,8 @@
     - RethinkDB
     - Compose
     - Nodejs
-  title: "Web application state, à la Dogfight (1983)"
-- 
+
+- title: "Mapping for Data Science with PixieDust and Mapbox"
   features: 
     - pixiedust-for-jupyter
     - mapbox
@@ -620,7 +620,7 @@
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/mapping-for-data-science-with-pixiedust-and-mapbox-b5aa1d9532b9"
     Notebook: "https://apsportal.ibm.com/analytics/notebooks/4fda5830-7a16-4334-aaa6-dd37933d8712/view?access_token=97ae72837375b91ff2460a18179a0678d872ad0da8ae1f5fa2c3fcfc1f3a342a"
-  story: "Nearly all data has a spatial component, and if you’re not familiar with some basic mapping tools, you’re not doing good data science."
+  story: "Nearly all data has a spatial component, and if you're not familiar with some basic mapping tools, you're not doing good data science."
   strategies: 
     - notebooks-for-developers
     - partners
@@ -629,8 +629,8 @@
     - "Apache Spark"
     - Mapbox
     - PixieDust
-  title: "Mapping for Data Science with PixieDust and Mapbox"
-- 
+
+- title: "I am Not a Data Scientist (But I play one in this blog post, thanks to PixieDust)"
   features: 
     - pixiedust-for-jupyter
   headline: "Notebooks aren't just for Data Scientists."
@@ -645,8 +645,8 @@
     - "Jupyter Notebooks"
     - "Apache Spark"
     - PixieDust
-  title: "I am Not a Data Scientist (But I play one in this blog post, thanks to PixieDust)"
-- 
+
+- title: "The Most Popular Search Term at SXSW, According to Our Chatbot"
   features: 
     - pixiedust-for-jupyter
   headline: "Analyzing conversation data using Spark, Jupyter, and PixieDust."
@@ -654,7 +654,7 @@
     GitHub: "https://github.com/ibm-watson-data-lab/cognitive-event-finder/"
     Medium: "https://medium.com/ibm-watson-data-lab/the-most-popular-search-term-at-sxsw-according-to-our-chatbot-9f4a47a33406"
     Notebook: "http://ibm.biz/sxswappmetrics"
-  story: "In this article, I’ll look at how we analyzed conversations with our bot. I’ll also provide a Jupyter notebook that Raj and I worked on, which hopefully gives you ideas on how to connect application logs to Apache Spark™ for back-end analytics. The notebook takes you through data access, all the way to visualizing results."
+  story: "In this article, I'll look at how we analyzed conversations with our bot. I'll also provide a Jupyter notebook that Raj and I worked on, which hopefully gives you ideas on how to connect application logs to Apache Spark™ for back-end analytics. The notebook takes you through data access, all the way to visualizing results."
   strategies: 
     - notebooks-for-developers
   tags: 
@@ -663,32 +663,32 @@
     - PixieDust
     - "Watson Conversation"
     - Cloudant
-  title: "The Most Popular Search Term at SXSW, According to Our Chatbot"
-- 
+
+- title: "Predictable, Progressive, Performant – The New Builders Podcast Episode about Offline First"
   headline: "2nd Encore of our Panel Discussion from SXSW 2017."
   links: 
     Medium: "https://medium.com/offline-camp/predictable-progressive-performant-the-new-builders-podcast-episode-about-offline-first-260116bfdc9b"
     Podcast: "https://developer.ibm.com/tv/sxsw-offline-first/"
-  story: "Gathering a group of busy industry leaders for a panel discussion on Offline First is no easy task, but it sure was a lot of fun. We felt bad that so many people who wanted to attend one of our two panel discussions at SXSW weren’t able to make it in to either packed room, so we decided to have the conversation one more time. Just for you!"
+  story: "Gathering a group of busy industry leaders for a panel discussion on Offline First is no easy task, but it sure was a lot of fun. We felt bad that so many people who wanted to attend one of our two panel discussions at SXSW weren't able to make it in to either packed room, so we decided to have the conversation one more time. Just for you!"
   strategies: 
     - offline-first
-  title: "Predictable, Progressive, Performant – The New Builders Podcast Episode about Offline First"
-- 
+
+- title: "Using Serverless Infrastructure to Build a Large-Scale Petition System"
   features: 
     - openwhisk-and-data
   headline: "An example web app using OpenWhisk and Cloudant."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/online-petition"
     Medium: "https://medium.com/ibm-watson-data-lab/how-i-used-serverless-infrastructure-to-build-a-large-scale-petition-system-2779161c4c68"
-  story: "Serverless means that instead of having fixed numbers of dedicated machines sitting in data centres waiting for traffic to come in, we can supply the code that handles a single piece of work (e.g. the submission of a web form) to an application framework like IBM OpenWhisk and let it scale out the computing power required. If no traffic arrives, you don’t pay anything — no fixed costs!"
+  story: "Serverless means that instead of having fixed numbers of dedicated machines sitting in data centres waiting for traffic to come in, we can supply the code that handles a single piece of work (e.g. the submission of a web form) to an application framework like IBM OpenWhisk and let it scale out the computing power required. If no traffic arrives, you don't pay anything — no fixed costs!"
   strategies: 
     - ibm-and-data
   tags: 
     - OpenWhisk
     - Cloudant
     - SendGrid
-  title: "Using Serverless Infrastructure to Build a Large-Scale Petition System"
-- 
+
+- title: "Adding custom Alexa skills with OpenWhisk and Cloudant"
   features: 
     - openwhisk-and-data
   headline: "Set up your Alexa skill to cost you less and scale well."
@@ -701,8 +701,8 @@
     - OpenWhisk
     - Alexa
     - Cloudant
-  title: "Adding custom Alexa skills with OpenWhisk and Cloudant"
-- 
+
+- title: "Offline Sync for Progressive Web Apps"
   features: 
     - offline-first-apps
   headline: "Building Offline First Progressive Web Apps with Apache CouchDB, Hoodie, and PouchDB."
@@ -717,8 +717,8 @@
     - CouchDB
     - Hoodie
     - PouchDB
-  title: "Offline Sync for Progressive Web Apps"
-- 
+
+- title: "Offline First Podcasts"
   features: 
     - offline-camp
   headline: "A curated collection of interviews on all things Offline First, from Offline Camp and beyond."
@@ -726,47 +726,47 @@
     Medium: "https://medium.com/offline-camp/offline-first-podcasts-d0be01721ee6#.fuckks21c"
   strategies: 
     - offline-first
-  title: "Offline First Podcasts"
-- 
+
+- title: "Offline Camp Catskills 2016"
   features: 
     - offline-camp
   headline: "A look at the topics discussed at the inaugural Offline Camp."
   links: 
     Medium: "https://medium.com/offline-camp/from-the-catskills-to-california-the-growing-offline-first-community-8a7456e83794"
-  title: "Offline Camp Catskills 2016"
-- 
+
+- title: "Offline Camp California 2016"
   features: 
     - offline-camp
   headline: "A wrap-up of our first West Coast event."
   links: 
     Medium: "https://medium.com/offline-camp/iterating-on-offline-camp-af9b288cf5aa"
     YouTube: "https://www.youtube.com/watch?v=2vCmlxtMvwE&t=26s"
-  title: "Offline Camp California 2016"
-- 
+
+- title: "Offline Camp Berlin Is Proud to Have the Support of Google Cloud Platform"
   features: 
     - offline-camp
   headline: "Their support and their perspective helps us push the movement forward with greater understanding, stability, and focus."
   links: 
     Medium: "https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0"
   story: "As part of their support of Offline Camp, Google Cloud Platform (GCP) attended to explore the places outside of connectivity to the cloud. Myles Borins, who represented the GCP team, came to do early research into the role that they could can play in an offline future."
-  title: "Offline Camp Berlin Is Proud to Have the Support of Google Cloud Platform"
-- 
+
+- title: "Offline Camp Berlin 2017"
   features: 
     - offline-camp
   headline: "Offline Camp makes its first visit to Europe."
   links: 
     Medium: "https://medium.com/offline-camp/offline-camp-berlin-36a491e4e4e2"
     YouTube: "https://www.youtube.com/watch?v=bsQapDA--Sw"
-  title: "Offline Camp Berlin 2017"
-- 
+
+- title: "Crafting Community Events that Leave them Wanting S'more"
   features: 
     - offline-camp
   headline: "Revealing the secret sauce that makes Offline Camp so special."
   links: 
     Medium: "https://medium.com/offline-camp/crafting-community-events-that-leave-them-wanting-smore-902974cff4d4"
     YouTube: "https://www.youtube.com/watch?v=FNtpPW_7H1k"
-  title: "Crafting Community Events that Leave them Wanting S'more"
-- 
+
+- title: "Analysing Cloudant JSON in RunKit JavaScript Notebooks"
   headline: "Using the simplified silverlining npm module."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/analysing-cloudant-json-in-runkit-javascript-notebooks-387be1f5500b"
@@ -776,8 +776,8 @@
     - Cloudant
     - Nodejs
     - RunKit
-  title: "Analysing Cloudant JSON in RunKit JavaScript Notebooks"
-- 
+
+- title: "Moving data from DynamoDB to Cloudant or CouchDB"
   features: 
     - loading-data
   headline: "Introducing the dynamodbexport npm module."
@@ -792,8 +792,8 @@
     - CouchDB
     - Nodejs
     - DynamoDB
-  title: "Moving data from DynamoDB to Cloudant or CouchDB"
-- 
+
+- title: "Data Visualization Right in the Cloudant Dashboard"
   headline: "User script for quickly vizualizing aggregated results."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/simple-data-vis"
@@ -804,8 +804,8 @@
   tags: 
     - Cloudant
     - Nodejs
-  title: "Data Visualization Right in the Cloudant Dashboard"
-- 
+
+- title: "Create a Serverless, Watson-Powered Chatbot for Your Business"
   features: 
     - openwhisk-and-data
   headline: "Add a conversation widget to your web page that handles questions for you."
@@ -819,8 +819,8 @@
   tags: 
     - OpenWhisk
     - "Watson Conversation"
-  title: "Create a Serverless, Watson-Powered Chatbot for Your Business"
-- 
+
+- title: "Zero to Kubernetes on the IBM Bluemix Container Service"
   headline: "Just deployment basics. Nothing fancy."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/zero-to-kubernetes-on-the-ibm-bluemix-container-service-fd104fd193c1"
@@ -828,8 +828,8 @@
     - working-with-wdp
   tags: 
     - Kubernetes
-  title: "Zero to Kubernetes on the IBM Bluemix Container Service"
-- 
+
+- title: "You Too Can Make Magic (in Jupyter Notebooks with PixieDust)"
   features: 
     - pixiedust-for-jupyter
   headline: "Getting started with custom visualizations, simple tables & word clouds."
@@ -841,8 +841,8 @@
     - Jupyter
     - Python
     - PixieDust
-  title: "You Too Can Make Magic (in Jupyter Notebooks with PixieDust)"
-- 
+
+- title: "Share the (PixieDust) Magic on PyPI"
   features: 
     - pixiedust-for-jupyter
   headline: "Packaging and distributing your PixieDust plugin as a Python module."
@@ -853,8 +853,8 @@
   tags: 
     - PixieDust
     - Python
-  title: "Share the (PixieDust) Magic on PyPI"
-- 
+
+- title: "PouchDB: The Swiss Army Knife of Databases"
   headline: "Use PouchDB in the browser, as a client for a remote database, or on the server side."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/pouchdb-the-swiss-army-knife-of-databases-c5429f3db21f"
@@ -864,8 +864,8 @@
   tags: 
     - JavaScript
     - PouchDB
-  title: "PouchDB: The Swiss Army Knife of Databases"
-- 
+
+- title: "Simple Data Visualization in Apache CouchDB™"
   headline: "D3, right in the Fauxton dashboard, via userscript."
   links: 
     GitHub: "https://gist.github.com/vabarbosa/bff35152c3888f4e2c0ad92e2511dc2b#file-chango-user-js"
@@ -875,8 +875,8 @@
   tags: 
     - CouchDB
     - JavaScript
-  title: "Simple Data Visualization in Apache CouchDB™"
-- 
+
+- title: "Diff Your Couch-Style Databases with couchdiff"
   features: 
     - loading-data
   headline: "Command-Line tool for comparing two Apache CouchDB™ or Cloudant databases."
@@ -889,8 +889,8 @@
   tags: 
     - CouchDB
     - Cloudant
-  title: "Diff Your Couch-Style Databases with couchdiff"
-- 
+
+- title: "Navigating SXSW via Cognitive Chatbot"
   features: 
     - mapbox
   headline: "A smarter conference event recommendation system using Watson services and Mapbox."
@@ -910,8 +910,8 @@
     - Slack
     - Vue.js
     - "Watson Conversation"
-  title: "Navigating SXSW via Cognitive Chatbot"
-- 
+
+- title: "Chatbots with PubNub & Watson's Alchemy Language API"
   features: 
     - pubnub
   headline: "Use PubNub BLOCKS, connect to IBM Watson cognitive services, and create a knowledge base on Bluemix."
@@ -927,8 +927,8 @@
     - PubNub
     - JavaScript
     - "Watson Conversation"
-  title: "Chatbots with PubNub & Watson’s Alchemy Language API"
-- 
+
+- title: "Choosing a Cloudant Library"
   headline: "Which level of abstraction is just right for you?"
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/choosing-a-cloudant-library-d14c06f3d714"
@@ -938,8 +938,8 @@
     - Cloudant
     - Nodejs
     - PouchDB
-  title: "Choosing a Cloudant Library"
-- 
+
+- title: "Queueing API Requests to Use Cloudant More Efficiently"
   headline: "Who limits the rate-limiter?"
   links: 
     GitHub: "https://github.com/glynnbird/qrate"
@@ -950,8 +950,8 @@
   tags: 
     - Cloudant
     - Nodejs
-  title: "Queueing API Requests to Use Cloudant More Efficiently"
-- 
+
+- title: "Scraping OpenStreetMap and Exploring POI Data in Cloudant and Jupyter Notebooks"
   headline: "Easy access to all points of interest data."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/easy-access-to-all-points-of-interest-data-acc6569e45b2"
@@ -965,8 +965,8 @@
     - Cloudant
     - Jupyter
     - PixieDust
-  title: "Scraping OpenStreetMap and Exploring POI Data in Cloudant and Jupyter Notebooks"
-- 
+
+- title: "Querying your Cloudant database with SQL"
   headline: "Updating the silverlining Node.js library to support the basics of SQL."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/silverlining"
@@ -977,8 +977,8 @@
   tags: 
     - Cloudant
     - Nodejs
-  title: "Querying your Cloudant database with SQL"
-- 
+
+- title: "Defensive IBM Object Storage Containers"
   headline: "How to prevent accidental writes when collaborating on data analysis."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/defensive-ibm-object-storage-containers-6fb100fcb4a8"
@@ -986,8 +986,8 @@
     - working-with-wdp
   tags: 
     - "Object Storage"
-  title: "Defensive IBM Object Storage Containers"
-- 
+
+- title: "CouchDB Writes: Piecemeal, Bulk, or Batch?"
   headline: "Which write API endpoint is the right write call for you?"
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/couchdb-writes-piecemeal-bulk-or-batch-8bf8ef9314e0"
@@ -996,8 +996,8 @@
   tags: 
     - Cloudant
     - CouchDB
-  title: "CouchDB Writes: Piecemeal, Bulk, or Batch?"
-- 
+
+- title: "Building a Poem Generator App Using Watson APIs"
   features: 
     - watson-and-data
   headline: "A way with words and code."
@@ -1012,8 +1012,8 @@
     - Compose
     - "Watson Tone Analyzer"
     - "Watson Natural Language Understanding"
-  title: "Building a Poem Generator App Using Watson APIs"
-- 
+
+- title: "Add Redis To Your Serverless Application"
   features: 
     - openwhisk-and-data
   headline: "Use an in-memory datastore for a little light persistence."
@@ -1028,8 +1028,8 @@
     - Redis
     - Compose
     - "IBM Cloud Functions"
-  title: "Add Redis To Your Serverless Application"
-- 
+
+- title: "Querying Your PouchDB Database With SQL"
   headline: "Adapting the silverlining npm module to work with in-browser database PouchDB."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/pouchdb-silverlining"
@@ -1040,8 +1040,8 @@
   tags: 
     - Nodejs
     - PouchDB
-  title: "Querying Your PouchDB Database With SQL"
-- 
+
+- title: "Trigger Periodic OpenWhisk Actions"
   features: 
     - openwhisk-and-data
   headline: "Distributed cron jobs using the Alarm package."
@@ -1051,8 +1051,8 @@
     - differentiators
   tags: 
     - OpenWhisk
-  title: "Trigger Periodic OpenWhisk Actions"
-- 
+
+- title: "A Fancier Graph for an Already-Smarter Chatbot"
   features: 
     - watson-and-data
   headline: "Updating the recipe chatbot demo to use JanusGraph, the latest in graph databases."
@@ -1068,8 +1068,8 @@
     - Compose
     - JanusGraph
     - Nodejs
-  title: "A Fancier Graph for an Already-Smarter Chatbot"
-- 
+
+- title: "Got Zip Code Data? Prep It for Analytics."
   headline: "Using fine-grained U.S. Census data and Jupyter Notebooks to better understand your customers."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/open-data/tree/master/urbanity"
@@ -1082,8 +1082,8 @@
     - Python
     - Mapbox
     - dataset
-  title: "Got Zip Code Data? Prep It for Analytics."
-- 
+
+- title: "Serverless Autocomplete"
   features: 
     - openwhisk-and-data
   headline: "Which way of deploying an autocomplete service is right for you?"
@@ -1097,8 +1097,8 @@
   tags: 
     - OpenWhisk
     - Nodejs
-  title: "Serverless Autocomplete"
-- 
+
+- title: "Custom Cloudant Replication"
   features: 
     - openwhisk-and-data
   headline: "Emulating filtered replication using the changes feed and OpenWhisk functions."
@@ -1112,8 +1112,8 @@
     - Cloudant
     - JavaScript
     - OpenWhisk
-  title: "Custom Cloudant Replication"
-- 
+
+- title: "Using Watson Machine Learning to Predict a Post's Potential"
   features: 
     - watson-and-data
     - pixiedust-for-jupyter
@@ -1128,8 +1128,8 @@
     - PixieDust
     - "Watson Machine Learning"
     - Jupyter
-  title: "Using Watson Machine Learning to Predict a Post’s Potential"
-- 
+
+- title: "Analyzing Podcast Metadata Using Jupyter Notebooks"
   features: 
     - pixiedust-for-jupyter
     - watson-and-data
@@ -1144,8 +1144,8 @@
     - PixieDust
     - "Watson Natural Language Understanding"
     - Jupyter
-  title: "Analyzing Podcast Metadata Using Jupyter Notebooks"
-- 
+
+- title: "Nodebooks: Node.js Data Science Notebooks"
   features: 
     - pixiedust-for-jupyter
   headline: "Python and Node.js in the same Jupyter notebook."
@@ -1158,8 +1158,8 @@
     - PixieDust
     - Nodejs
     - Python
-  title: "Nodebooks: Node.js Data Science Notebooks"
-- 
+
+- title: "Nodebooks: Sharing Data Between Node.js & Python"
   features: 
     - pixiedust-for-jupyter
   headline: "Connecting to a Cloudant database for analysis."
@@ -1173,4 +1173,3 @@
     - Cloudant
     - Nodejs
     - Python
-  title: "Nodebooks: Sharing Data Between Node.js & Python"
