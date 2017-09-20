@@ -97,8 +97,8 @@
 - title: "Logshare: Stream Your Log Data With Colleagues"
   headline: "A Node.js app for sharing logs in a terminal window or on a webpage."
   links: 
-    Compose.com: "https://www.compose.com/articles/deploying-logshare-with-compose-and-bluemix/"
     GitHub: "https://github.com/ibm-watson-data-lab/logshare-client"
+    Compose.com: "https://www.compose.com/articles/deploying-logshare-with-compose-and-bluemix/"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/03/14/logshare/"
   strategies: 
     - working-with-wdp
@@ -528,9 +528,9 @@
   headline: "Proof that Progressive Web Apps can do some serious analysis."
   img: img/voice-of-interconnect.png
   links: 
-    Demo: "https://voiceofinterconnect.com/"
     GitHub: "https://github.com/neighbourhoodie/voice-of-interconnect"
     Medium: "https://medium.com/ibm-watson-data-lab/voice-of-interconnect-112d5036dabc"
+    demo: "https://voiceofinterconnect.com/"
   story: "Record your thoughts locally on your phone, and see aggregated sentiment about this IBM trade show on the web."
   strategies: 
     - differentiators
