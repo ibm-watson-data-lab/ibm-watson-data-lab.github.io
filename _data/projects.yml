@@ -53,7 +53,6 @@
   tags: 
     - Jupyter
     - Python
-    - dataset
 
 - title: "Simple Logging Service: Our Metrics Collector App Rebuilt on a Microservices Stack"
   headline: "Instead of writing data to Cloudant, this project adds data to a variety of outputs depending on the runtime environment."
@@ -152,8 +151,8 @@
   headline: "Know about delayed flights before they happen."
   img: img/flight-predict.png
   links: 
-    Medium: "https://medium.com/ibm-watson-data-lab/flightpredict-ii-the-sequel-fb613afd6e91"
     Notebook: "https://github.com/ibm-watson-data-lab/--deprecated--simple-data-pipe-connector-flightstats/blob/master/notebook/Flight%20Predict%20with%20Pixiedust.ipynb"
+    Medium: "https://medium.com/ibm-watson-data-lab/flightpredict-ii-the-sequel-fb613afd6e91"
   story: "We can't guarantee you'll never miss another flight, but we can guarantee that you'll train your data and visualize predictions all in one notebook."
   strategies: 
     - differentiators
@@ -291,6 +290,20 @@
     - "iOS Swift"
   thumb: img/location-tracker-client-thumb.png
 
+- title: "Scaling Offline First With Cloudant Envoy"
+  features: 
+    - offline-camp
+  headline: "Addressing limitations of the CouchDB one-database-per-user design pattern."
+  links: 
+    GitHub: "https://github.com/cloudant-labs/envoy"
+    Medium: "https://medium.com/offline-camp/scaling-offline-first-with-envoy-ada42d130cfc"
+    npm:    "https://www.npmjs.com/package/cloudant-envoy"
+  strategies: 
+    - offline-first
+  tags: 
+    - Cloudant
+    - Nodejs
+
 - title: "Real-Time Q&A App With RethinkDB"
   headline: "Get real-time, with changefeeds in RethinkDB."
   links: 
@@ -335,12 +348,13 @@
 - title: "Open Data Sets"
   headline: "Curated data, open and free for you to use."
   links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/open-data"
+    dataset: "https://github.com/ibm-watson-data-lab/open-data"
   story: "Open data sets hosted by the WDP dev advocates."
   strategies: 
     - working-with-wdp
   tags: 
-    - dataset
+    - Cloudant
+    - Jupyter
 
 - title: "Seven Databases in Seven Days"
   features: 
@@ -495,8 +509,8 @@
     - pixiedust-for-jupyter
   headline: "Build a real-time dashboard with PixieDust & Jupyter Notebooks."
   links: 
-    Medium: "https://medium.com/ibm-watson-data-lab/real-time-sentiment-analysis-of-twitter-hashtags-with-spark-7ee6ca5c1585"
     Notebook: "https://raw.githubusercontent.com/ibm-cds-labs/pixiedust_incubator/master/twitterdemo/notebook/Twitter%20Sentiment%20with%20Watson%20and%20PixieDust.ipynb"
+    Medium: "https://medium.com/ibm-watson-data-lab/real-time-sentiment-analysis-of-twitter-hashtags-with-spark-7ee6ca5c1585"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/01/15/real-time-sentiment-analysis-of-twitter-hashtags-with-spark/"
   strategies: 
     - notebooks-for-developers
@@ -512,6 +526,7 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/seti_at_ibm"
     Medium: "https://medium.com/ibm-watson-data-lab/simulating-e-t-e34f4fa7a4f0"
+    dataset: "https://github.com/ibm-watson-data-lab/seti_at_ibm/blob/master/notebooks/all_signaldb.ipynb"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/29/seti-data-on-ibm-cloud/"
   strategies: 
     - working-with-wdp
@@ -521,7 +536,6 @@
     - "Object Storage"
     - Jupyter
     - Python
-    - dataset
 
 - title: "Voice of InterConnect"
   features: offline-first-apps
@@ -618,8 +632,8 @@
     - mapbox
   headline: "Add another layer to your Jupyter notebooks with built-in map rendering."
   links: 
-    Medium: "https://medium.com/ibm-watson-data-lab/mapping-for-data-science-with-pixiedust-and-mapbox-b5aa1d9532b9"
     Notebook: "https://apsportal.ibm.com/analytics/notebooks/4fda5830-7a16-4334-aaa6-dd37933d8712/view?access_token=97ae72837375b91ff2460a18179a0678d872ad0da8ae1f5fa2c3fcfc1f3a342a"
+    Medium: "https://medium.com/ibm-watson-data-lab/mapping-for-data-science-with-pixiedust-and-mapbox-b5aa1d9532b9"
   story: "Nearly all data has a spatial component, and if you're not familiar with some basic mapping tools, you're not doing good data science."
   strategies: 
     - notebooks-for-developers
@@ -663,15 +677,6 @@
     - PixieDust
     - "Watson Conversation"
     - Cloudant
-
-- title: "Predictable, Progressive, Performant – The New Builders Podcast Episode about Offline First"
-  headline: "2nd Encore of our Panel Discussion from SXSW 2017."
-  links: 
-    Medium: "https://medium.com/offline-camp/predictable-progressive-performant-the-new-builders-podcast-episode-about-offline-first-260116bfdc9b"
-    Podcast: "https://developer.ibm.com/tv/sxsw-offline-first/"
-  story: "Gathering a group of busy industry leaders for a panel discussion on Offline First is no easy task, but it sure was a lot of fun. We felt bad that so many people who wanted to attend one of our two panel discussions at SXSW weren't able to make it in to either packed room, so we decided to have the conversation one more time. Just for you!"
-  strategies: 
-    - offline-first
 
 - title: "Using Serverless Infrastructure to Build a Large-Scale Petition System"
   features: 
@@ -717,54 +722,6 @@
     - CouchDB
     - Hoodie
     - PouchDB
-
-- title: "Offline First Podcasts"
-  features: 
-    - offline-camp
-  headline: "A curated collection of interviews on all things Offline First, from Offline Camp and beyond."
-  links: 
-    Medium: "https://medium.com/offline-camp/offline-first-podcasts-d0be01721ee6#.fuckks21c"
-  strategies: 
-    - offline-first
-
-- title: "Offline Camp Catskills 2016"
-  features: 
-    - offline-camp
-  headline: "A look at the topics discussed at the inaugural Offline Camp."
-  links: 
-    Medium: "https://medium.com/offline-camp/from-the-catskills-to-california-the-growing-offline-first-community-8a7456e83794"
-
-- title: "Offline Camp California 2016"
-  features: 
-    - offline-camp
-  headline: "A wrap-up of our first West Coast event."
-  links: 
-    Medium: "https://medium.com/offline-camp/iterating-on-offline-camp-af9b288cf5aa"
-    YouTube: "https://www.youtube.com/watch?v=2vCmlxtMvwE&t=26s"
-
-- title: "Offline Camp Berlin Is Proud to Have the Support of Google Cloud Platform"
-  features: 
-    - offline-camp
-  headline: "Their support and their perspective helps us push the movement forward with greater understanding, stability, and focus."
-  links: 
-    Medium: "https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0"
-  story: "As part of their support of Offline Camp, Google Cloud Platform (GCP) attended to explore the places outside of connectivity to the cloud. Myles Borins, who represented the GCP team, came to do early research into the role that they could can play in an offline future."
-
-- title: "Offline Camp Berlin 2017"
-  features: 
-    - offline-camp
-  headline: "Offline Camp makes its first visit to Europe."
-  links: 
-    Medium: "https://medium.com/offline-camp/offline-camp-berlin-36a491e4e4e2"
-    YouTube: "https://www.youtube.com/watch?v=bsQapDA--Sw"
-
-- title: "Crafting Community Events that Leave them Wanting S'more"
-  features: 
-    - offline-camp
-  headline: "Revealing the secret sauce that makes Offline Camp so special."
-  links: 
-    Medium: "https://medium.com/offline-camp/crafting-community-events-that-leave-them-wanting-smore-902974cff4d4"
-    YouTube: "https://www.youtube.com/watch?v=FNtpPW_7H1k"
 
 - title: "Analysing Cloudant JSON in RunKit JavaScript Notebooks"
   headline: "Using the simplified silverlining npm module."
@@ -955,12 +912,11 @@
   headline: "Easy access to all points of interest data."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/easy-access-to-all-points-of-interest-data-acc6569e45b2"
-    demo: "http://opendata.mybluemix.net/"
+    dataset: "http://opendata.mybluemix.net/"
   strategies: 
     - working-with-wdp
     - notebooks-for-developers
   tags: 
-    - dataset
     - Python
     - Cloudant
     - Jupyter
@@ -1072,8 +1028,8 @@
 - title: "Got Zip Code Data? Prep It for Analytics."
   headline: "Using fine-grained U.S. Census data and Jupyter Notebooks to better understand your customers."
   links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/open-data/tree/master/urbanity"
     Medium: "https://medium.com/ibm-watson-data-lab/got-zip-code-data-prep-it-for-analytics-7022b47652d9"
+    dataset: "https://github.com/ibm-watson-data-lab/open-data/tree/master/urbanity"
   strategies: 
     - notebooks-for-developers
     - partners
@@ -1081,7 +1037,6 @@
     - Jupyter
     - Python
     - Mapbox
-    - dataset
 
 - title: "Serverless Autocomplete"
   features: 
@@ -1119,8 +1074,8 @@
     - pixiedust-for-jupyter
   headline: "Gaze into the Reddit crystal ball."
   links: 
-    Medium: "https://medium.com/ibm-watson-data-lab/gaze-into-my-reddit-crystal-ball-19813a21e5b6"
     Notebook: "https://github.com/ibm-watson-data-lab/reddit-crystal-ball-notebook/blob/master/Reddit%20Crystal%20Ball.ipynb"
+    Medium: "https://medium.com/ibm-watson-data-lab/gaze-into-my-reddit-crystal-ball-19813a21e5b6"
   strategies: 
     - differentiators
     - notebooks-for-developers
@@ -1147,11 +1102,11 @@
 
 - title: "Nodebooks: Introducing Node.js Data Science Notebooks"
   features: 
-    - pixiedust-for-jupyter
+    - nodebooks
   headline: "Python and Node.js in the same Jupyter notebook (part 1)."
   links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/pixiedust_node"
     Medium: "https://medium.com/ibm-watson-data-lab/nodebooks-node-js-data-science-notebooks-aa140bea21ba"
+    GitHub: "https://github.com/ibm-watson-data-lab/pixiedust_node"
   strategies: 
     - notebooks-for-developers
   tags: 
@@ -1161,11 +1116,26 @@
 
 - title: "Nodebooks: Sharing Data Between Node.js & Python"
   features: 
-    - pixiedust-for-jupyter
+    - nodebooks
   headline: "Connecting to a Cloudant database for analysis (part 2)."
   links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/pixiedust_node"
     Medium: "https://medium.com/ibm-watson-data-lab/nodebooks-sharing-data-between-node-js-python-3a4acae27a02"
+    GitHub: "https://github.com/ibm-watson-data-lab/pixiedust_node"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - PixieDust
+    - Cloudant
+    - Nodejs
+    - Python
+
+- title: "Nodebooks: Visualising Data the Node.js Way"
+  features: 
+    - nodebooks
+  headline: "Generating charts in Python notebooks using only Node.js code (part 3)."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/nodebooks-sharing-data-between-node-js-python-3a4acae27a02"
+    GitHub: "https://github.com/ibm-watson-data-lab/pixiedust_node"
   strategies: 
     - notebooks-for-developers
   tags: 
