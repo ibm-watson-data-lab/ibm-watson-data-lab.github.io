@@ -33,4 +33,19 @@ The response to Offline Camp, and to the subsequent community contributions from
 Organizer burnout is a big issue in the developer community. Many events and groups are managed by generous volunteers who give up their nights and weekends to keep things afloat. Because we’ve prioritized community building as a key element of our developer advocacy efforts, we’ve been able to dedicate time during the workday to relieving some of the stress that our fellow community organizers would otherwise face. Whether by organizing events, editing Medium publications, authoring magazine articles, or building technical tutorials, our team is happy to be able to do the work we love in a way that helps this amazing community.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Take notice big corporations around the world, _this_ is how you engage with the community in a meaningful way &lt;3 <a href="https://t.co/JP0QSgRrhY">https://t.co/JP0QSgRrhY</a></p>&mdash; Gregor (@gr2m) <a href="https://twitter.com/gr2m/status/748631860796874752">June 30, 2016</a></blockquote>
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Learn more about previous Offline Camps:
+
+{:.browser-default}
+- [Offline Camp Berlin 2017](https://medium.com/offline-camp/offline-camp-berlin-36a491e4e4e2)
+- [Offline Camp California 2016](https://medium.com/offline-camp/iterating-on-offline-camp-af9b288cf5aa)
+- [Offline Camp Catskills 2016](https://medium.com/offline-camp/from-the-catskills-to-california-the-growing-offline-first-community-8a7456e83794)
+
+And more content around the camps:
+
+{:.browser-default}
+- [Offline Camp Berlin Is Proud to Have the Support of Google Cloud Platform](https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0)
+- [Crafting Community Events that Leave them Wanting S'more](https://medium.com/offline-camp/crafting-community-events-that-leave-them-wanting-smore-902974cff4d4)
+- [Offline First Podcasts](https://medium.com/offline-camp/offline-first-podcasts-d0be01721ee6)
