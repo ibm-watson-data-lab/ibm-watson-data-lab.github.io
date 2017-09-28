@@ -48,6 +48,13 @@
             {% endfor %}
           {% endif %}
         </li>
+        
+        {% if forloop.index > 2 %}
+          {% break %}
+        {% endif %}
+
+        {% comment %} The for-loop above limits the number of projects shown on the home page. {% endcomment %}
+
       {% endfor %}
       </ul>
     {% endif %}

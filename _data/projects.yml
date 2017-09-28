@@ -1143,3 +1143,33 @@
     - Cloudant
     - Nodejs
     - Python
+
+- title: "Custom Indexers for Cloudant"
+  features: 
+    - openwhisk-and-data
+  headline: "Using JavaScript and Redis for problems that don’t fit Cloudant’s indexing engines."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/custom-indexes"
+    Medium: "https://medium.com/ibm-watson-data-lab/custom-indexers-for-cloudant-6b7e65186db1"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Cloudant
+    - Compose
+    - Redis
+    - Nodejs
+    - OpenWhisk
+
+- title: "Medium.com, More Stats Please"
+  features: 
+    - pixiedust-for-jupyter
+  headline: "Analyzing Medium publication stats in a Python notebook."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/medium-publication-stats"
+    Medium: "https://medium.com/ibm-watson-data-lab/medium-com-more-stats-please-d8b80c9fc16c"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - Jupyter
+    - Python
+    - PixieDust
