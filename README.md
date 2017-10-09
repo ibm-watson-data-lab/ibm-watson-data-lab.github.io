@@ -11,6 +11,8 @@ To preview the site and test changes locally Jekyll will need to be set up.
 The following requirements should be in place before trying to launch the site locally.
 
 * Ruby 2.1.0 or higher installed: `ruby --version`
+* [Mac OSX] Install latest version of XCode
+    * Ensure CLI tools are installed: run `xcode-select --install`
 * Bundler installed: `gem install bundler`
 * Clone the GitHub repo
 
