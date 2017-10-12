@@ -5,6 +5,7 @@ layout:     layout-featured-collection
 permalink:  watson-and-data
 strategies: 
   - differentiators
+lead:       mark-watson
 ---
 
 Watson services are smart, but you can make them even smarter with data. You can use data to drive your Watson services, or use output from Watson services to enhance your data, drive better user experiences, or gain insights into your business.

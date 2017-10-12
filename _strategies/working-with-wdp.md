@@ -4,6 +4,7 @@ headline:   Tools to make data easier.
 permalink:  working-with-wdp
 layout:     layout-strategy
 tier:       3
+lead:       glynn-bird
 ---
 
 Watson Data Platform services need to work together well, but they're not going to work together well for everyone.

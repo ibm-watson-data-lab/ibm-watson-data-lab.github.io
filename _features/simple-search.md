@@ -7,6 +7,7 @@ strategies:
   - working-with-wdp
 essentials:
   Simple Search on GitHub: https://github.com/ibm-watson-data-lab/simple-search-service
+lead: glynn-bird
 ---
 
 
