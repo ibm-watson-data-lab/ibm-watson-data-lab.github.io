@@ -45,7 +45,13 @@ id:     strategies
   </div>
 </div>
 
-
 {% endfor %}
 
+#### Community Guidelines | [Maureen McElaney](/maureen-mcelaney)
+
+<hr />
+
+There are also strategies that are just getting started:
+
+#### Machine Learning for Developers | [Mark Watson](/mark-watson)
 
