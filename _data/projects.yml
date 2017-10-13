@@ -1226,20 +1226,52 @@
     - JavaScript
     - OpenWhisk
 
-
-
-
-
-
-
-
-
-
-
-- title: ""
+- title: "Building an Ordering Application with Watson AI and PostgreSQL: Part I"
   features: 
     - watson-and-data
-  headline: "."
+  headline: "An IBM Bluemix application that lets Watson interact with users via Twilio's SMS service, then sends their data over to Compose PostgreSQL."
+  links: 
+    Compose Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql/"
+  strategies: 
+    - differentiators
+  tags: 
+    - Compose
+    - PostgreSQL
+    - Watson Conversation
+    - Nodejs
+    - Twilio
+
+- title: "Building an Ordering Application with Watson AI and PostgreSQL: Part II"
+  features: 
+    - watson-and-data
+  headline: "In part II, you'll tie together your services with Node.js and deploy to Bluemix."
+  links: 
+    Compose Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql-part-ii/"
+  strategies: 
+    - differentiators
+  tags: 
+    - Compose
+    - PostgreSQL
+    - Watson Conversation
+    - Nodejs
+    - Twilio
+
+- title: "Making of a Smart Business Chatbot: Part 1"
+  features: 
+    - watson-and-data
+  headline: "Use Bluemix + Compose to build a chatbot that can reliably converse with users while collecting data and gaining insights on their personality and mood."
+  links: 
+    Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot/"
+  strategies: 
+    - differentiators
+  tags: 
+    - Nodejs
+    - Slack
+
+- title: "Making of a Smart Business Chatbot: Part 2"
+  features: 
+    - watson-and-data
+  headline: "Learn how to give your Slackbot some intelligence by connecting it to a Watson Conversation dialog."
   links: 
     Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot-part-2/"
   strategies: 
@@ -1247,6 +1279,7 @@
   tags: 
     - Nodejs
     - Watson Conversation
+    - Slack
 
 - title: "Connecting PHP to Compose for MySQL on Bluemix"
   headline: "It's simple to to connect Compose for MySQL on Bluemix with PHP."
@@ -1275,7 +1308,7 @@
 - title: "Making of a Smart Business Chatbot: Part 3"
   features: 
     - watson-and-data
-  headline: "Use a JanusGraph-backed knowledge base to give our chatbot some utility. Build a recommendation engine for technical blog articles."
+  headline: "Use a JanusGraph-backed knowledge base to give our chatbot some utility, and build a recommendation engine for technical blog articles."
   links: 
     Compose Articles: "https://compose.com/articles/building-a-smart-business-chatbot-part-3/"
   strategies: 
