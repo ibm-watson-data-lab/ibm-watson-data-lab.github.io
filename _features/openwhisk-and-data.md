@@ -5,6 +5,7 @@ layout:     layout-featured-collection
 permalink:  openwhisk-and-data
 strategies: 
   - differentiators
+lead:       lorna-mitchell
 ---
 
 Serverless computing puts as much computing power as is needed at any given moment, straight into the hands of the developers that need it.  By handling the provisioning and deployment as part of the platform, [IBM Cloud Functions](https://console.bluemix.net/openwhisk/) allows developers to focus only on the code that should be run in response to a given event, and deploy just that function.  Built on the open source [Apache OpenWhisk&trade;](https://openwhisk.incubator.apache.org/) project, IBM Cloud Functions is helping developers to ship faster and simpler.

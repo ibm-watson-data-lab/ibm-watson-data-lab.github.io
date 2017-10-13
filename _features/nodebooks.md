@@ -11,7 +11,7 @@ strategies:
   - notebooks-for-developers
 essentials:
   pixiedust_node on GitHub: https://github.com/ibm-watson-data-lab/pixiedust_node
-
+lead:       glynn-bird
 ---
 
 Notebooks are where data scientists process, analyze, and visualize data in an iterative, collaborative environment. Having a scratchpad where you can write some code, iteratively work on some algorithms, and visualize the results quickly can speed the collaborative process.

@@ -4,6 +4,7 @@ headline:   Apps designed to work, despite flaky networks.
 permalink:  offline-first
 layout:     layout-strategy
 tier:       2
+lead:       bradley-holt
 ---
 
 ![Three different signal bars respectively indicating full bars, one bar, and no signal.](/img/signal-bars.png "Offline, Online, and Everything in Between")

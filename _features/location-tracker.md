@@ -7,6 +7,7 @@ img:        location-tracker-client.png
 img-thumb:  location-tracker-client-thumb.png
 strategies: 
   - offline-first
+lead: mark-watson
 ---
 
 ![Screen shot of the Location Tracker demo app.](/img/location-tracker-client.png "The Location Tracker demo app"){: .story-img-4}

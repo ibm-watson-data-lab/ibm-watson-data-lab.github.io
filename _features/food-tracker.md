@@ -7,6 +7,7 @@ img:        food-tracker.png
 img-thumb:  food-tracker-thumb.png
 strategies: 
   - offline-first
+lead: bradley-holt
 ---
 
 ![Screen shot of the Cloudant FoodTrackerdemo app.](/img/food-tracker.png "The Cloudant FoodTracker demo app"){: .story-img-12}
