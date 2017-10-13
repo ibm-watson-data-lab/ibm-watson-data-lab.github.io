@@ -1575,13 +1575,10 @@
   strategies: 
     - partners
     - notebooks-for-developers
-    - working-with-wdp
   tags: 
     - Spark
-    - ObjectStorage
-    - DB2
+    - "Object Storage"
+    - Db2
     - SETI
-    - DataScience
-    - CitizenScience
-    - DeepLearning
-    - MachineLearning
+    - "Deep Learning"
+    - "Machine Learning"
