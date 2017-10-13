@@ -18,6 +18,8 @@ collections:
     output: true
   features:
     output: true
+  authors:
+    output: true
 
 # relative_permalinks: false
 

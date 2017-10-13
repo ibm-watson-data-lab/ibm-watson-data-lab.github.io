@@ -16,6 +16,7 @@ essentials:
   Cloudant Sync for iOS: https://github.com/cloudant/CDTDatastore
   Cloudant Sync for Android: https://github.com/cloudant/sync-android
   Cordova Plugin for Cloudant Sync: https://github.com/cloudant/sync-cordova-plugin
+lead: bradley-holt
 ---
 
 ![Illustration of a mobile app running on a mobile phone.](/img/offline-first-apps.png "Offline First Apps"){: .story-img-4}

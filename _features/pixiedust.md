@@ -12,6 +12,7 @@ strategies:
 essentials:
   PixieDust on GitHub: https://github.com/ibm-watson-data-lab/pixiedust
   PixieDust Docs:   https://ibm-watson-data-lab.github.io/pixiedust/
+lead: david-taieb
 
 ---
 
