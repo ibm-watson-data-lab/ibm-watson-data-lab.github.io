@@ -710,7 +710,6 @@
 - title: "Offline Sync for Progressive Web Apps"
   features: 
     - offline-first-apps
-    - shopping-list
   headline: "Building Offline First Progressive Web Apps with Apache CouchDB, Hoodie, and PouchDB."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/offline-sync-for-progressive-web-apps-ccab6bf6db17"
@@ -1370,7 +1369,7 @@
 
 - title: "Shopping list demo using vanilla JavaScript and PouchDB [Progressive Web App]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-vanillajs-pouchdb"
@@ -1382,7 +1381,7 @@
 
 - title: "Shopping list demo using Polymer and PouchDB [Progressive Web App]"
   features: 
-    - shopping-list
+    - shopping-list-demo
     - offline-first-apps
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
@@ -1395,7 +1394,7 @@
 
 - title: "Shopping list demo using React and PouchDB [Progressive Web App]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-pouchdb"
@@ -1407,7 +1406,7 @@
 
 - title: "Shopping list demo using Preact and PouchDB [Progressive Web App]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-preact-pouchdb"
@@ -1419,7 +1418,7 @@
 
 - title: "Shopping list demo using Vue.js and PouchDB [Progressive Web App]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "Vue.js and PouchDB"
@@ -1431,7 +1430,7 @@
 
 - title: "Shopping list demo using Ember.js and PouchDB [Progressive Web App]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-emberjs-pouchdb"
@@ -1443,7 +1442,7 @@
 
 - title: "Shopping list demo using React Native and PouchDB [hybrid mobile app]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-native-pouchdb"
@@ -1455,7 +1454,7 @@
 
 - title: "Shopping list demo using React Native and Cloudant Sync [hybrid mobile app]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-native-cloudant-sync"
@@ -1467,7 +1466,7 @@
 
 - title: "Shopping list demo using Ionic and PouchDB [hybrid mobile app]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-ionic-pouchdb"
@@ -1479,7 +1478,7 @@
 
 - title: "Shopping list demo using Ionic and Cloudant Sync [hybrid mobile app]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-ionic-cloudant-sync"
@@ -1491,7 +1490,7 @@
 
 - title: "Shopping list demo using Cordova and PouchDB [hybrid mobile app]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-cordova-pouchdb"
@@ -1503,7 +1502,7 @@
 
 - title: "Shopping list demo using Cordova and Cloudant Sync [hybrid mobile app]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-cordova-cloudant-sync"
@@ -1515,7 +1514,7 @@
 
 - title: "Shopping list demo using Swift and Cloudant Sync [native mobile app]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-swift-cloudant-sync"
@@ -1527,7 +1526,7 @@
 
 - title: "Shopping list demo using Kotlin and Cloudant Sync [native mobile app]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-kotlin-cloudant-sync"
@@ -1539,7 +1538,7 @@
 
 - title: "Shopping list demo using Electron and PouchDB [desktop app]"
   features: 
-    - shopping-list
+    - shopping-list-demo
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-electron-pouchdb"
