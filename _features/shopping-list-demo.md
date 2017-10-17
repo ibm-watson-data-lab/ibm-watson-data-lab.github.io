@@ -7,6 +7,7 @@ img:        shopping-list.png
 img-thumb:  shopping-list-thumb.png
 strategies:
   - offline-first
+lead: bradley-holt
 essentials:
   Shopping List on GitHub: https://github.com/ibm-watson-data-lab/shopping-list
   IBM Cloudant: https://www.ibm.com/analytics/us/en/technology/cloud-data-services/cloudant/
