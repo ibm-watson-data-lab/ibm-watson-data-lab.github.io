@@ -34,5 +34,5 @@ ibmos2spark comes pre-installed on the IBM Data Science Experience, with a UI fe
 {:.browser-default}
 - Python
 - Scala
-- R, sparklyR (support for IBM Cloud Object Storage coming soon)
-- R, sparkR (support for IBM Cloud Object Storage coming soon)
+- R, sparklyR
+- R, sparkR
