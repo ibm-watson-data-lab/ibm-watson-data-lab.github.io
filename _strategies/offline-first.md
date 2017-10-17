@@ -7,7 +7,7 @@ tier:       2
 lead:       bradley-holt
 ---
 
-<iframe width="560" height="315" src="https://youtu.be/bWXAZboHZN8?rel=0" frameborder="0" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bWXAZboHZN8" frameborder="0" allowfullscreen></iframe>
 
 Offline First is an approach to app development in which apps are designed for the most resource-constrained environments *first*. An [Offline First app](/offline-first-apps) will not only work offline, but will also work better over an unreliable network connection, and even better over a solid one.
 
