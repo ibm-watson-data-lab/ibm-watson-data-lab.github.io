@@ -375,7 +375,10 @@ col ul:not(.browser-default), col ul:not(.browser-default) li {
   color: black;
 }
 
-
+figcaption {
+  font-size: 0.9rem;
+  color: light-grey;
+}
 
 
 
