@@ -1581,3 +1581,18 @@
     - SETI
     - "Deep Learning"
     - "Machine Learning"
+
+- title: "Couchimport: Import flat data into CouchDB efficiently."
+  features: 
+    - loading-data
+  headline: "Latest update adds one-to-many transformations."
+  links: 
+    npm:    "https://www.npmjs.com/package/couchimport"
+    GitHub: "https://github.com/glynnbird/couchimport"
+    Medium: "https://medium.com/ibm-watson-data-lab/couchimport-revisited-5921481f4c4e"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - CouchDB
+    - Cloudant
+
