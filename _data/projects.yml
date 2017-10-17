@@ -522,6 +522,8 @@
     - Scala
 
 - title: "SETI@IBMCloud: SETI data, publicly available, from IBM"
+  features:
+    - seti
   headline: "Raw data from the SETI Institute for you to crunch in the search for extraterrestrial life."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/seti_at_ibm"
@@ -529,7 +531,7 @@
     dataset: "https://github.com/ibm-watson-data-lab/seti_at_ibm/blob/master/notebooks/all_signaldb.ipynb"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/29/seti-data-on-ibm-cloud/"
   strategies: 
-    - working-with-wdp
+    - partners
     - notebooks-for-developers
   tags: 
     - Spark
@@ -935,10 +937,13 @@
     - Nodejs
 
 - title: "Defensive IBM Object Storage Containers"
+  features:
+    - seti
   headline: "How to prevent accidental writes when collaborating on data analysis."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/defensive-ibm-object-storage-containers-6fb100fcb4a8"
   strategies: 
+    - partners
     - working-with-wdp
   tags: 
     - "Object Storage"
@@ -1565,6 +1570,8 @@
     - Python
 
 - title:    "A.I for E.T."
+  features:
+    - seti
   headline: "Using Watson Data Platform, we've built a citizen scientist project to apply deep learning to improve the state of the art in the search for extraterrestrial intelligence (SETI) research." 
   links: 
     Medium: https://medium.com/ibm-watson-data-lab/using-artificial-intelligence-to-search-for-extraterrestrial-intelligence-ec19169e01af
