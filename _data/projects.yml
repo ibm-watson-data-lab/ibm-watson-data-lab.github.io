@@ -522,17 +522,13 @@
     - Scala
 
 - title: "SETI@IBMCloud: SETI data, publicly available, from IBM"
-  features:
-    - seti
   headline: "Raw data from the SETI Institute for you to crunch in the search for extraterrestrial life."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/seti_at_ibm"
-    Medium: "https://medium.com/ibm-watson-data-lab/simulating-e-t-e34f4fa7a4f0"
     dataset: "https://github.com/ibm-watson-data-lab/seti_at_ibm/blob/master/notebooks/all_signaldb.ipynb"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/29/seti-data-on-ibm-cloud/"
   strategies: 
     - partners
-    - notebooks-for-developers
   tags: 
     - Spark
     - "Object Storage"
@@ -886,6 +882,19 @@
     - PubNub
     - JavaScript
     - "Watson Conversation"
+
+- title: "Simulating E.T. Radio Signals"
+  features: 
+    - seti
+  headline: "How to insert individual files into object storage from within a map function in Apache Spark."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/simulating-e-t-e34f4fa7a4f0"
+  strategies: 
+    - partners
+    - working-with-wdp
+  tags: 
+    - "Object Storage"
+    - Spark
 
 - title: "Choosing a Cloudant Library"
   headline: "Which level of abstraction is just right for you?"
@@ -1580,12 +1589,10 @@
   thumb:    img/ml4seti_slack_logo.png
   strategies: 
     - partners
-    - notebooks-for-developers
   tags: 
     - Spark
     - "Object Storage"
     - Db2
-    - SETI
     - "Deep Learning"
     - "Machine Learning"
 
@@ -1603,3 +1610,15 @@
     - CouchDB
     - Cloudant
 
+- title: "ibmos2spark: Less Cutty-Pastey for Your Object Storage Credentials"
+  features: 
+    - seti
+  headline: "The library helps you to read and write data between Spark and IBM’s Object Storage services."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/ibmos2spark"
+  strategies: 
+    - partners
+    - working-with-wdp
+  tags: 
+    - "Object Storage"
+    - Spark
