@@ -8,6 +8,7 @@ img-thumb:  mapbox-vector-thumb.png
 featured:   true
 strategies: 
   - partners
+lead: raj-singh
 ---
 
 Location is built into the fabric of our daily experiences. Whether you’re exploring a city with Lonely Planet, checking the forecast on Weather.com, tracking breaking news on Bloomberg, or checking your ETA in Lyft — location is essential to every one of these applications, and they’re powered by Mapbox.

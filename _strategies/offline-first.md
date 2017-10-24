@@ -4,9 +4,10 @@ headline:   Apps designed to work, despite flaky networks.
 permalink:  offline-first
 layout:     layout-strategy
 tier:       2
+lead:       bradley-holt
 ---
 
-![Three different signal bars respectively indicating full bars, one bar, and no signal.](/img/signal-bars.png "Offline, Online, and Everything in Between")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bWXAZboHZN8" frameborder="0" allowfullscreen></iframe>
 
 Offline First is an approach to app development in which apps are designed for the most resource-constrained environments *first*. An [Offline First app](/offline-first-apps) will not only work offline, but will also work better over an unreliable network connection, and even better over a solid one.
 

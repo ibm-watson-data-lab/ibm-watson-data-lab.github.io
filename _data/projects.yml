@@ -525,12 +525,10 @@
   headline: "Raw data from the SETI Institute for you to crunch in the search for extraterrestrial life."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/seti_at_ibm"
-    Medium: "https://medium.com/ibm-watson-data-lab/simulating-e-t-e34f4fa7a4f0"
     dataset: "https://github.com/ibm-watson-data-lab/seti_at_ibm/blob/master/notebooks/all_signaldb.ipynb"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/29/seti-data-on-ibm-cloud/"
   strategies: 
-    - working-with-wdp
-    - notebooks-for-developers
+    - partners
   tags: 
     - Spark
     - "Object Storage"
@@ -885,6 +883,19 @@
     - JavaScript
     - "Watson Conversation"
 
+- title: "Simulating E.T. Radio Signals"
+  features: 
+    - seti
+  headline: "How to insert individual files into object storage from within a map function in Apache Spark."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/simulating-e-t-e34f4fa7a4f0"
+  strategies: 
+    - partners
+    - working-with-wdp
+  tags: 
+    - "Object Storage"
+    - Spark
+
 - title: "Choosing a Cloudant Library"
   headline: "Which level of abstraction is just right for you?"
   links: 
@@ -935,10 +946,13 @@
     - Nodejs
 
 - title: "Defensive IBM Object Storage Containers"
+  features:
+    - seti
   headline: "How to prevent accidental writes when collaborating on data analysis."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/defensive-ibm-object-storage-containers-6fb100fcb4a8"
   strategies: 
+    - partners
     - working-with-wdp
   tags: 
     - "Object Storage"
@@ -1144,6 +1158,19 @@
     - Nodejs
     - Python
 
+- title: "Offline First Drum Machine"
+  features: 
+    - offline-camp
+  headline: "A browser-based drum machine that goes offline without dropping a beat."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/drummer"
+    Medium: "https://medium.com/offline-camp/offline-first-drum-machine-596bc1b0642b"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - JavaScript
+
 - title: "Custom Indexers for Cloudant"
   features: 
     - openwhisk-and-data
@@ -1173,3 +1200,425 @@
     - Jupyter
     - Python
     - PixieDust
+
+- title: "How to Build the Fastest Website in the World"
+  headline: "From the Amp project and Google’s Lighthouse, to Offline First and service workers."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/how-to-build-the-fastest-website-in-the-world-86f42c3e9817"
+  strategies: 
+    - offline-first
+  tags: 
+    - JavaScript
+    - HTML
+
+- title: "Deploy Your Cloud Functions with Bluemix DevOps"
+  features: 
+    - openwhisk-and-data
+  headline: "Collaborate on GitHub, and automatically deploy when code hits master."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/deployable-cloud-function"
+    Medium: "https://medium.com/ibm-watson-data-lab/deploy-your-cloud-functions-with-bluemix-devops-ef8dfdb1a603"
+  strategies: 
+    - differentiators
+  tags: 
+    - OpenWhisk
+    - JavaScript
+
+- title: "Cloudant Envoy: Serverless Edition"
+  features: 
+    - offline-first
+    - openwhisk-and-data
+  headline: "The CouchDB one-database-per-user pattern, now with less infrastructure."
+  links: 
+    GitHub: "https://github.com/glynnbird/envoy-serverless"
+    Medium: "https://medium.com/ibm-watson-data-lab/cloudant-envoy-serverless-edition-d68b08d536d7"
+  strategies: 
+    - offline-first
+    - differentiators
+  tags: 
+    - Cloudant
+    - JavaScript
+    - OpenWhisk
+
+- title: "Building an Ordering Application with Watson AI and PostgreSQL: Part I"
+  features: 
+    - watson-and-data
+  headline: "An IBM Bluemix application that lets Watson interact with users via Twilio's SMS service, then sends their data over to Compose PostgreSQL."
+  links: 
+    Compose Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql/"
+  strategies: 
+    - differentiators
+  tags: 
+    - Compose
+    - PostgreSQL
+    - Watson Conversation
+    - Nodejs
+    - Twilio
+
+- title: "Building an Ordering Application with Watson AI and PostgreSQL: Part II"
+  features: 
+    - watson-and-data
+  headline: "In part II, you'll tie together your services with Node.js and deploy to Bluemix."
+  links: 
+    Compose Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql-part-ii/"
+  strategies: 
+    - differentiators
+  tags: 
+    - Compose
+    - PostgreSQL
+    - Watson Conversation
+    - Nodejs
+    - Twilio
+
+- title: "Making of a Smart Business Chatbot: Part 1"
+  features: 
+    - watson-and-data
+  headline: "Use Bluemix + Compose to build a chatbot that can reliably converse with users while collecting data and gaining insights on their personality and mood."
+  links: 
+    Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot/"
+  strategies: 
+    - differentiators
+  tags: 
+    - Nodejs
+    - Slack
+
+- title: "Making of a Smart Business Chatbot: Part 2"
+  features: 
+    - watson-and-data
+  headline: "Learn how to give your Slackbot some intelligence by connecting it to a Watson Conversation dialog."
+  links: 
+    Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot-part-2/"
+  strategies: 
+    - differentiators
+  tags: 
+    - Nodejs
+    - Watson Conversation
+    - Slack
+
+- title: "Connecting PHP to Compose for MySQL on Bluemix"
+  headline: "It's simple to to connect Compose for MySQL on Bluemix with PHP."
+  links: 
+    Compose Articles: "https://compose.com/articles/connecting-php-to-compose-for-mysql-on-bluemix/"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Compose
+    - MySQL
+    - PHP
+
+- title: "The Transporter 0.4 series has begun"
+  features: 
+    - loading-data
+  headline: "Compose's Transporter is a powerful way of transporting data between different databases. With each iteration, we look to improve it."
+  links: 
+    GitHub: "https://github.com/compose/transporter"
+    Compose Articles: "https://compose.com/articles/the-transporter-0-4-series-has-begun/"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Transporter
+    - JavaScript
+
+- title: "Making of a Smart Business Chatbot: Part 3"
+  features: 
+    - watson-and-data
+  headline: "Use a JanusGraph-backed knowledge base to give our chatbot some utility, and build a recommendation engine for technical blog articles."
+  links: 
+    Compose Articles: "https://compose.com/articles/building-a-smart-business-chatbot-part-3/"
+  strategies: 
+    - differentiators
+  tags: 
+    - Compose
+    - JanusGraph
+    - Watson Conversation
+    - Nodejs
+
+- title: "Getting Started with Compose PostgreSQL and Jupyter Notebooks"
+  features: 
+    - loading-data
+  headline: "Connect to Compose PostgreSQL and run a Jupyter Notebook environment within Docker to analyze a Titantic data set."
+  links: 
+    Compose Articles: "https://compose.com/articles/getting-started-with-compose-postgresql-and-jupyter-notebooks/"
+  strategies: 
+    - notebooks-for-developers
+    - working-with-wdp
+  tags: 
+    - Compose
+    - PostgreSQL
+    - Jupyter
+    - Docker
+
+- title: "Visualizing Data with Jupyter Notebooks, PixieDust, and Compose MongoDB"
+  features: 
+    - pixiedust-for-jupyter
+    - nodebooks
+    - loading-data
+  headline: "Connecting to Compose MongoDB and creating rich presentations for your data inside a Jupyter notebook is made easier with PixieDust."
+  links: 
+    Compose Articles: "https://compose.com/articles/visualizing-data-with-jupyter-notebooks-pixiedust-and-compose-mongodb/"
+  strategies: 
+    - notebooks-for-developers
+    - working-with-wdp
+  tags: 
+    - Jupyter
+    - Compose
+    - MongoDB
+    - PixieDust
+    - Python
+    - Nodejs
+
+- title: "Deploy Your Analytics as Web Apps Using PixieDust’s 1.1 Release"
+  features: 
+    - pixiedust-for-jupyter
+  headline: "From data science, directly to the web."
+  links: 
+    Notebook: "https://github.com/ibm-watson-data-lab/pixiedust/blob/master/notebook/pixieapp/StockViewer.ipynb"
+    Medium: "https://medium.com/ibm-watson-data-lab/deploy-your-analytics-as-web-apps-using-pixiedusts-1-1-release-d08067584a14"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - Jupyter
+    - Python
+    - PixieDust
+
+- title: "Shopping list demo using vanilla JavaScript and PouchDB [Progressive Web App]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-vanillajs-pouchdb"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - JavaScript
+
+- title: "Shopping list demo using Polymer and PouchDB [Progressive Web App]"
+  features: 
+    - shopping-list-demo
+    - offline-first-apps
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Polymer
+
+- title: "Shopping list demo using React and PouchDB [Progressive Web App]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-pouchdb"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Reactjs
+
+- title: "Shopping list demo using Preact and PouchDB [Progressive Web App]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-preact-pouchdb"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Preactjs
+
+- title: "Shopping list demo using Vue.js and PouchDB [Progressive Web App]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "Vue.js and PouchDB"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Vuejs
+
+- title: "Shopping list demo using Ember.js and PouchDB [Progressive Web App]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-emberjs-pouchdb"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Emberjs
+
+- title: "Shopping list demo using React Native and PouchDB [hybrid mobile app]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-native-pouchdb"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Reactjs
+
+- title: "Shopping list demo using React Native and Cloudant Sync [hybrid mobile app]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-native-cloudant-sync"
+  strategies: 
+    - offline-first
+  tags: 
+    - Cloudant
+    - Reactjs
+
+- title: "Shopping list demo using Ionic and PouchDB [hybrid mobile app]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-ionic-pouchdb"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Ionic
+
+- title: "Shopping list demo using Ionic and Cloudant Sync [hybrid mobile app]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-ionic-cloudant-sync"
+  strategies: 
+    - offline-first
+  tags: 
+    - Cloudant
+    - Ionic
+
+- title: "Shopping list demo using Cordova and PouchDB [hybrid mobile app]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-cordova-pouchdb"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Cordova
+
+- title: "Shopping list demo using Cordova and Cloudant Sync [hybrid mobile app]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-cordova-cloudant-sync"
+  strategies: 
+    - offline-first
+  tags: 
+    - Cloudant
+    - Cordova
+
+- title: "Shopping list demo using Swift and Cloudant Sync [native mobile app]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-swift-cloudant-sync"
+  strategies: 
+    - offline-first
+  tags: 
+    - Swift
+    - Cloudant
+
+- title: "Shopping list demo using Kotlin and Cloudant Sync [native mobile app]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-kotlin-cloudant-sync"
+  strategies: 
+    - offline-first
+  tags: 
+    - Kotlin
+    - Cloudant
+
+- title: "Shopping list demo using Electron and PouchDB [desktop app]"
+  features: 
+    - shopping-list-demo
+  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-electron-pouchdb"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Electron
+
+- title: "Better Decision Making with Watson Machine Learning and Compose"
+  features: 
+    - watson-and-data
+  headline: "You no longer need to be a stellar data scientist or machine learning guru, Watson Machine Learning and Compose have you covered."
+  links: 
+    Compose Articles: "https://compose.com/articles/better-decision-making-with-watson-machine-learning-and-compose/"
+  strategies: 
+    - notebooks-for-developers
+    - differentiators
+  tags: 
+    - Compose
+    - PostgreSQL
+    - Watson Machine Learning
+    - Jupyter
+    - Python
+
+- title:    "A.I for E.T."
+  features:
+    - seti
+  headline: "Using Watson Data Platform, we've built a citizen scientist project to apply deep learning to improve the state of the art in the search for extraterrestrial intelligence (SETI) research." 
+  links: 
+    Medium: https://medium.com/ibm-watson-data-lab/using-artificial-intelligence-to-search-for-extraterrestrial-intelligence-ec19169e01af
+    GitHub: https://github.com/setiquest/ml4seti
+  img:      img/ml4seti_slack_logo.png
+  thumb:    img/ml4seti_slack_logo.png
+  strategies: 
+    - partners
+  tags: 
+    - Spark
+    - "Object Storage"
+    - Db2
+    - "Deep Learning"
+    - "Machine Learning"
+
+- title: "Couchimport: Import flat data into CouchDB efficiently."
+  features: 
+    - loading-data
+  headline: "Latest update adds one-to-many transformations."
+  links: 
+    npm:    "https://www.npmjs.com/package/couchimport"
+    GitHub: "https://github.com/glynnbird/couchimport"
+    Medium: "https://medium.com/ibm-watson-data-lab/couchimport-revisited-5921481f4c4e"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - CouchDB
+    - Cloudant
+
+- title: "ibmos2spark: Less Cutty-Pastey for Your Object Storage Credentials"
+  features: 
+    - seti
+  headline: "The library helps you to read and write data between Spark and IBM’s Object Storage services."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/ibmos2spark"
+  strategies: 
+    - partners
+    - working-with-wdp
+  tags: 
+    - "Object Storage"
+    - Spark

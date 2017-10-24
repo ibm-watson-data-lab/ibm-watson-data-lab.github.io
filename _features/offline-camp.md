@@ -15,6 +15,7 @@ essentials:
   Offline First: http://offlinefirst.org/
   Offline First Resources: https://medium.com/offline-camp/offline-first-resources-2acc5836e9d4
   Offline First Slack Team: http://offlinefirst.org/chat/
+lead:       teri-chadbourne
 ---
 
 Offline First is about more than just technology; it’s about community. That’s why we’re so happy to be foundational sponsors of the community-driven unconference known as [Offline Camp](http://offlinefirst.org/camp).

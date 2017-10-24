@@ -8,6 +8,7 @@ img-thumb:  pubnub_sm.png
 featured:   true
 strategies: 
   - partners
+lead: raj-singh
 ---
 
 <img src="https://www.pubnub.com/wp-content/uploads/2017/08/dns-architecture.png" height="280" style="float:right"/>

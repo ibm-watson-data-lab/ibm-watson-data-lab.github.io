@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="{{ page.id }}">
+    {% include header.html %}
+    <main>
+    	<div class="container">
+        <!-- get the data from the features/strategies pages 
+        {% assign project = site.features | where:"permalink",page.permalink %}
+        -->
+
+        <h1>
+          <span class="lead-in">{{ page.title }}</span>
+          {{ page.headline }}
+        </h1>
+        <div class="flow-text">
+          {{ content }}
+        </div><!--flow-->
+
+        <div class="section">
+          <h5>Related work</h5>
+          <div class="row">
+            <div class="col m6 s12">
+              <h6>Topics</h6>
+              {% assign strategies = site.strategies | where:"lead",page.permalink %}
+              {% for strategy in strategies %}
+                <a href="/{{ strategy.permalink }}">{{ strategy.title }}</a>
+              {% endfor %}    
+            </div>
+            <div class="col m6 s12">
+                <h6>Featured collections</h6>
+                {% assign collections = site.features | where:"lead",page.permalink %}
+                {% for collection in collections %}
+                  <a href="/{{ collection.permalink }}">{{ collection.title }}</a>
+                {% endfor %}                    
+            </div>
+          </div>
+        </div>
+
+        <!-- get the featured projects pages relating to this strategy -->
+        {% assign collections = site.features | where:"strategies",page.permalink %}
+        {% if collections.size > 0 %}
+        <div class="section">
+          {% include item-featured.html items=collections context="main" %}
+        </div>
+        {% endif %}
+
+        <div class="divider"></div>
+        <div class="section">
+          <h5>Authors</h5>
+          {% assign authors = site.authors %}
+          <ul class="see-also">
+            {% for author in authors %}
+            <li {% if author.permalink == page.permalink %}class="active"{% endif %}>
+              <a href="{{ author.permalink }}">{{ author.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          <p>
+            <a href="/team">Team</a>
+          </p>
+        </div><!--section-->
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

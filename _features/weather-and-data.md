@@ -5,6 +5,7 @@ layout:     layout-featured-collection
 permalink:  weather-and-data
 strategies: 
   - differentiators
+lead:       margriet-groenendijk
 ---
 
 Weather influences our environment and our decisions. Better predicting these decisions gives us an edge in everything from food production, to renewable energy, to simply deciding if you'll need an umbrella for the day.
