@@ -5,6 +5,7 @@ id: help
 ---
 
 ### Add projects to featured collections
+{% include internal.html %}
 To add a project to a featured collection, include one or more of these permalinks to the features array of your project in the _data/project.yml file. (The featured collection files are in the _features directory.)
 {% assign items = site.features %}
 | Page title | Filename | Permalink |
