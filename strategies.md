@@ -6,7 +6,7 @@ id:     strategies
 
 # Strategies and their owners
 
-> This page is for internal use only and is not linked to from any other site pages. The strategies and collections here are the same as those live on the site today, which means this is not a complete list of the work we're doing.
+> <span class="warning">This page is for <strong>internal use only</strong> and is not linked to from any other site pages. The strategies and collections here are the same as those live on the site today, which means this is not a complete list of the work we're doing.</span>
 
 {% assign items = site.strategies %}
 {% assign authors = site.authors %}
