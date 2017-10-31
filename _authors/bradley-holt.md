@@ -8,4 +8,4 @@ links:
   Stack Overflow: https://stackoverflow.com/users/4847080/bradley-holt
 ---
 
-This is the stuff about Bradley.
+Bradley Holt is a Developer Advocate with IBM Watson Data Platform. He is the author of several publications including Scaling CouchDB and Writing and Querying MapReduce Views in CouchDB (both published by O'Reilly Media). Bradley writes and speaks about topics such as CouchDB, PouchDB, Offline First, Node.js, and Domain-Driven Design.
