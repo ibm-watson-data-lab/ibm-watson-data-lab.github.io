@@ -93,7 +93,7 @@ $(document).ready(function () {
     initTelescopicText(telescopicIntro, '#telescopicText')
   }
 
-  if (authorLinks) {
+  if (typeof authorLinks !== 'undefined') {
     var links = authorLinks
     if (typeof authorLinks === 'object' && !authorLinks.length) {
       links = []
