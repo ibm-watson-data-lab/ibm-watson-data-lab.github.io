@@ -13,6 +13,17 @@
           <span class="lead-in">{{ page.title }}</span>
           {{ page.headline }}
         </h1>
+        <div class="section social">
+          {% assign links = page.links %}
+          <ul>
+            {% for link in links %}
+            <li>
+                {{ link }}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
         <div class="flow-text">
           {{ content }}
         </div><!--flow-->
