@@ -1,35 +1,35 @@
-html,
+/* html,
 body {
   font-family: "ibm-plex-sans", "Helvetica Neue", monospace, sans-serif;
-}
+} */
 
-body {
+/* body {
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
   font-weight: 300;
   min-height: 100vh;
-}
+} */
 
-iframe {
+/* iframe {
   max-width: 100%;
-}
+} */
 
-main {
+/* main {
   flex: 1 0 auto;
   margin-top: 2rem;
-}
+} */
 
-.brand-logo > span {
+/* .brand-logo > span {
   font-weight: 300;
 }
 
 .brand-logo img {
   height: 40px;
   vertical-align: sub;
-}
+} */
 
-.footer-copyright .fa {
+/* .footer-copyright .fa {
   float: right;
   font-size: 23px;
   margin-left: 18px;
@@ -37,9 +37,9 @@ main {
 
 .footer-copyright .fa:hover {
   color: #000000;
-}
+} */
 
-.dropdown-content {
+/* .dropdown-content {
   min-width: 150px;
   margin-top: 8px;
 }
@@ -54,26 +54,26 @@ main {
 
 .dropdown-content li.active > a {
   color: #000 !important;
-}
+} */
 
-.full-screen {
+/* .full-screen {
   height: 100vh !important;
   max-height: 100vh;
   top: 0 !important;
   width: 100%;
-}
+} */
 
-.row .col.feature {
+/* .row .col.feature {
   padding-bottom: 10px;
-}
+} */
 
-a.grey-text i {
+/* a.grey-text i {
   line-height: 50px;
-}
+} */
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 
 /** SEARCH FORM **/
@@ -299,7 +299,7 @@ h5 {
   margin-top: 35px;
 }
 
-.strat-head {
+/* .strat-head {
   border-bottom: 2px solid #000;
 }
 
@@ -310,12 +310,12 @@ h5 {
 
 .strat-head a:hover {
   color: red;
-}
+} */
 
-.sub-toc {
+/* .sub-toc {
   margin-top: 3rem;
   border-top: 2px solid #000;
-}
+} */
 
 .story-img-12 {
   float:left;
@@ -331,11 +331,11 @@ h5 {
   height: auto;
 }
 
-.story-icon {
+/* .story-icon {
   border: 1px groove;
   padding: 0px 5px 0px 5px;
   margin-left: 5px;
-}
+} */
 
 .subhead {
   font-weight: 400; /* 400 is normal */
@@ -388,24 +388,24 @@ figcaption {
 
 
 /* Brad's CSS */
-a.brand-logo {
+/* a.brand-logo {
   color: black;
   font-style: monospace;
   font-size: inherit;
   position: relative;
-}
-nav.white {
+} */
+/* nav.white {
   box-shadow: none;
 }
 nav.white ul li a {
   color: black;
-}
+} */
 
 h1 {
   color: #333;
   margin: 0 0 4rem;
 }
-span.lead-in {
+/* span.lead-in {
   border: 0;
   display: block;
   font-size: 45%;
@@ -416,7 +416,7 @@ span.lead-in {
 }
 h1 span.lead-in {
   line-height: 3rem;
-}
+} */
 img {
   width: auto;
   max-width: 100%;
@@ -424,25 +424,25 @@ img {
 
 
 /* home page */
-#home h1 {
+/* #home h1 {
   font-size: 3rem;
-}
-.latest {
+} */
+/* .latest {
   background: #ffff8d;
   padding: .5rem 1rem;
   margin: 0 0 3rem 0;
-}
-a.strategy {
+} */
+/* a.strategy {
   font-size: .9rem;
   font-weight: 500;
   text-transform: uppercase
-}
+} */
 #home .item {
   border: 0;
   margin-bottom: 1.5rem;
 }
 #home .tier-1 .item {
-  sborder-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 #home .tier-2 .item p, #home .tier-3 .item p {
   line-height: 1.5rem;
@@ -464,7 +464,7 @@ a.strategy {
   text-transform: uppercase  
 }
 
-div.featured-collection {
+/* div.featured-collection {
   margin: 1rem 0;
 }
 div.featured-collection.featured .title {
@@ -476,14 +476,14 @@ div.featured-collection.featured .title {
 div.featured-collection.featured .headline {
   font-size: 2rem;
   line-height: 1.75rem;
-}
+} */
 
-a.quiet-link {
+/* a.quiet-link {
   color: inherit;
 }
 a.quiet-link:hover {
   color: blue
-}
+} */
 
 /* for projects */
 .item {
@@ -508,10 +508,10 @@ a.quiet-link:hover {
 .item ul.links {
   margin: 1rem 0;
 }
-.sidebar .item {
+/* .sidebar .item {
   margin: 0 0 2rem 0;
   padding: 0 0 2rem 0;
-}
+} */
 
 ul.see-also li.active a {
   color: #666;
@@ -521,17 +521,17 @@ ul.see-also li.active a {
 span.tags, span.tag {
   background-color: #e3f2fd;
 }
-a.permalink {
+/* a.permalink {
   display: block;
   font-weight: 500;
   text-decoration: underline;
-}
+} */
 .nowrap {
   white-space: nowrap;
 }
-a.nowrap > i.small.material-icons {
+/* a.nowrap > i.small.material-icons {
   vertical-align: bottom;
-}
+} */
 
 /* projects page */
 .featured-flag {
@@ -584,7 +584,7 @@ a.nowrap > i.small.material-icons {
   text-transform: uppercase;
 }
 
-.connecticons {
+/* .connecticons {
   border-top: 1px solid #ccc;
   font-size: 1.5em;
   margin-top: 10px !important;
@@ -599,7 +599,7 @@ a.nowrap > i.small.material-icons {
 img ~ .connecticons {
   font-size: 1.2em;
   margin-left: 180px;
-}
+} */
 
 #sign-in {
   min-height: 50vh;

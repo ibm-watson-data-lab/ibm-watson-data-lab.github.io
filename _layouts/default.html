@@ -4,9 +4,7 @@
   <body id="{{ page.id }}">
     {% include header.html %}
     <main>
-      <div class="container">
-        {{ content }}
-      </div>
+      {{ content }}
     </main>
     {% include footer.html %}
     {% if site.GH_ENV == 'gh_pages' %}
