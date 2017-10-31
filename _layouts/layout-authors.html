@@ -29,7 +29,7 @@
             {% if strategies.size > 0 or collections.size > 0 %}
             <a href="#author-projects" class="jump-link">&darr; View related projects</a>
             {% endif %}
-
+<!--
             {% if strategies.size > 0 %}
             <div class="more-topics">
               <span>Topics</span>
@@ -55,7 +55,7 @@
               </ul>
             </div>
             {% endif %}
-
+-->
             {% assign authors = site.authors %}
             {% if authors.size > 0 %}
             <div class="more-topics">
@@ -71,6 +71,36 @@
             {% endif %}
           </div>
         </section>
+        
+        {% if strategies.size > 0 or collections.size > 0 %}
+        <section id="author-topics" class="row">
+          <div class="col m12">
+            <h3>Topics</h3>
+            <ul>
+              {% for strategy in strategies %}
+              <li class="m12 author-strategy-info">
+                <h4><a href="/{{ strategy.permalink }}" title="{{ strategy.headline }}">{{ strategy.title }}</a></h4>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+        {% endif %}
+
+        {% if collections.size > 0 %}
+        <section id="author-collections" class="row">
+          <div class="col m12">
+            <h3>Collections</h3>
+            <ul>
+              {% for collection in collections %}
+              <li class="m12 author-collection-info">
+                <h4><a href="/{{ collection.permalink }}" title="{{ collection.headline }}">{{ collection.title }}</a></h4>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+        {% endif %}
         
         <section id="author-projects" class="row">
           <div class="col m12">
