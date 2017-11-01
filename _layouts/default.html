@@ -2,6 +2,9 @@
 <html>
   {% include head.html %}
   <body id="{{ page.id }}">
+    {% if site.GH_ENV == 'gh_pages' %}
+      {% include google-tag-manager-body.html %}
+    {% endif %}
     {% include header.html %}
     <main>
       <div class="container">
@@ -9,8 +12,5 @@
       </div>
     </main>
     {% include footer.html %}
-    {% if site.GH_ENV == 'gh_pages' %}
-      {% include analytics.html %}
-    {% endif %}
   </body>
 </html>
