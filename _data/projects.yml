@@ -509,7 +509,7 @@
     - pixiedust-for-jupyter
   headline: "Build a real-time dashboard with PixieDust & Jupyter Notebooks."
   links: 
-    Notebook: "https://raw.githubusercontent.com/ibm-cds-labs/pixiedust_incubator/master/twitterdemo/notebook/Twitter%20Sentiment%20with%20Watson%20and%20PixieDust.ipynb"
+    Notebook: "https://github.com/ibm-watson-data-lab/pixiedust_incubator/blob/master/twitterdemo/notebook/Twitter%20Sentiment%20with%20Watson%20and%20PixieDust.ipynb"
     Medium: "https://medium.com/ibm-watson-data-lab/real-time-sentiment-analysis-of-twitter-hashtags-with-spark-7ee6ca5c1585"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/01/15/real-time-sentiment-analysis-of-twitter-hashtags-with-spark/"
   strategies: 
