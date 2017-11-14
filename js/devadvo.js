@@ -75,20 +75,31 @@ var getIconClass = function (service) {
 var initAuthorLinks = function (authorLinks, authorLinksContainer) {
   var links = []
   var icon = null
+  var mail = false
   var authorlinks = typeof authorLinks === 'string' ? JSON.parse(authorLinks) : authorLinks
   if (!authorlinks.length) {
     var keys = Object.keys(authorLinks)
     for (var i = 0; i < keys.length; i++) {
       icon = getIconClass(keys[i])
+      mail = keys[i] && keys[i].indexOf('http') === -1 && keys[i].indexOf('@') > -1
       if (icon) {
-        links.push('<a href="' + authorLinks[keys[i]] + '" target="_blank"><i class="' + icon + '" aria-hidden="true"></i></a>')
+        if (mail) {
+          links.push('<a href="mailto:' + authorLinks[keys[i]] + '"><i class="' + icon + '" aria-hidden="true"></i></a>')
+        } else {
+          links.push('<a href="' + authorLinks[keys[i]] + '" target="_blank"><i class="' + icon + '" aria-hidden="true"></i></a>')
+        }
       }
     }
   } else {
     for (var j = 0; j < authorLinks.length; j++) {
       icon = getIconClass(authorLinks[j])
+      mail = authorLinks[j] && authorLinks[j].indexOf('http') === -1 && authorLinks[j].indexOf('@') > -1
       if (icon) {
-        links.push('<a href="' + authorLinks[j] + '" target="_blank"><i class="' + icon + '" aria-hidden="true"></i></a>')
+        if (mail) {
+          links.push('<a href="mailto:' + authorLinks[j] + '"><i class="' + icon + '" aria-hidden="true"></i></a>')
+        } else {
+          links.push('<a href="' + authorLinks[j] + '" target="_blank"><i class="' + icon + '" aria-hidden="true"></i></a>')
+        }
       }
     }
   }

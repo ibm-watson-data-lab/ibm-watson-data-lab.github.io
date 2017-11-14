@@ -27,6 +27,18 @@
             <div>
               {{ content }}
             </div>
+            <div>
+              <h4>Specialties</h4>
+              <p>
+                {{ page.specialties | join:', ' }}
+              </p>
+            </div>
+            <div>
+              <h4>Languages</h4>
+              <p>
+                {{ page.languages | join:', '}}
+              </p>
+            </div>
           </div>
           <div class="col m1"> </div>
           <div class="col m3 sidebar">
@@ -83,7 +95,7 @@
                   <div class="col m5 strategy-collection-image">
                   </div>
                   <div class="col m7 strategy-collection-info">
-                    <h4>{{ collection.title }}</h4>
+                    <h4><a href="/{{ collection.permalink }}">{{ collection.title }}</a></h4>
                     <p>{{ collection.headline }}</p>
                     {% if projs.size > 2 %}
                     <span>{{ projs.size }} projects</span> | 
