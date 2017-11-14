@@ -2,6 +2,9 @@
 <html>
   {% include head.html %}
   <body id="{{ page.permalink }}">
+    {% if site.GH_ENV == 'gh_pages' %}
+      {% include google-tag-manager-body.html %}
+    {% endif %}
     {% include header.html %}
     <div class="intro">
 

@@ -1727,7 +1727,7 @@
     - Jupyter
     - PixieDust
 
-- title: "Go and Compose - MongoDB, Elasticsearch and PostgreSQL"
+- title: "Go and Compose – MongoDB, Elasticsearch and PostgreSQL"
   headline: "How to connect to every Compose database using Go: The first stop on the Compose Grand Tour."
   links: 
     Compose Articles: "https://compose.com/articles/go-and-compose-mongodb-elasticsearch-and-postgresql/"
