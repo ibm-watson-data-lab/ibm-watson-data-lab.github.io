@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: internal
 title:  Strategies
 id:     strategies
 ---
 
 # Strategies and their owners
-
-{% include internal.html %}
 
 {% assign items = site.strategies %}
 {% assign authors = site.authors %}
