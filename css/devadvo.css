@@ -563,6 +563,13 @@ section.row > .col {
   padding: 10px 0 10px 10px
 }
 
+#get-involved h4,
+.coc-page h4,
+.featured-collection h4,
+.author-page h4 {
+  margin-top: 48px;
+}
+
 .strategy-collection-image.col {
   background-color: #F3F3F3;
   margin: 0;
@@ -701,13 +708,6 @@ section.row > .col {
   line-height: 18px;
   margin: 0;
   padding-top: 5px;
-}
-
-#get-involved h4,
-.coc-page h4,
-.featured-collection h4,
-.author-page h4 {
-  margin-top: 48px;
 }
 
 .breadcrumb {
