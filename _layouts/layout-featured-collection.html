@@ -6,62 +6,65 @@
       {% include google-tag-manager-body.html %}
     {% endif %}
     {% include header.html %}
-    <main>
-    	<div class="container">
-        {% assign project = site.data.projects | where:"permalink",page.permalink %}
-        <div class="header">
-          <h1>
-            <span class="lead-in">Featured Collection</span>
-  {{ page.title }}
-          </h1>
-          <blockquote>{{ page.headline }}</blockquote>
-        </div>
+    <main class="featured-collection">
+      {% assign strategies = site.strategies %}
+      {% assign thisstrategies = page.strategies %}
 
-        <div>
-          <div class="row">
+      <div class="container">
+        <section class="row">
+          <div class="col m8">
+            <div>
+              <div class="breadcrumb">
+              {% for strategy in strategies %}
+                {% for thisstrategy in thisstrategies %}
+                  {% if strategy.permalink == thisstrategy %}
+                    {{ strategy.title }} / Collection
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+              </div>
+              <h1>{{ page.title }}</h1>
+              <p class="headline">{{ page.headline }}</p>
+              {% include strategy-lead.html lead=page.lead %}
+            </div>
 
-            <div class="col m8">
+            <div>
               {{ content }}
             </div>
-
-            <div class="col m4 sidebar">
+          </div>
+          <div class="col m1"> </div>
+          <div class="col m3 sidebar">
+            <a href="#collection-projects" class="jump-link">&darr; View projects in this collection</a>
+            <div class="more-topics">
               {% if page.essentials and page.essentials.size > 0 %}
-                <div class="section">
-                  <p class="subhead">
-                    {{ page.title }} Essentials
-                  </p>
-                  <ul>
-                    {% for link in page.essentials %}
-                    <li>
-                      <a href="{{ link[1] }}" title="{{ link[1] }}">{{ link[0] }} &rarr;</a>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </div>
-                <div class="divider"></div>
+              <span>Essentials</span>
+              <ul>
+                {% for link in page.essentials %}
+                <li>
+                  <a href="{{ link[1] }}" title="{{ link[1] }}">{{ link[0] }} &rarr;</a>
+                </li>
+                {% endfor %}
+              </ul>
               {% endif %}
-              <div class="section">
-                <p class="subhead">
-                  Projects in this collection
-                </p>
-                {% assign items = site.data.projects | where:"features",page.permalink | reverse %}
-                {% include item.html items=items context="sidebar" %}                          
-              </div>
             </div>
           </div>
-        </div>
-        <div class="divider"></div>
-        <div class="section">
-          {% for feature in site.strategies %}
-            {% if page.strategies contains feature.permalink %}
-              More like this: <a href="{{ feature.permalink }}">{{ feature.title }}</a>
+        </section>
+
+        <section id="collection-projects" class="row">
+          <div class="col m12">
+            {% assign projects = site.data.projects | where:"features",page.permalink | reverse %}
+            {% if projects.size > 0 %}
+            <h3>Projects</h3>
+            <ul>
+              {% for proj in projects %}
+              <li class="m12 strategy-project-info">
+                {% include single-project.html project=proj %}
+              </li>
+              {% endfor %}
+            </ul>
             {% endif %}
-          {% endfor %}
-          <p>
-            <a href="/projects">All projects</a>
-          </p>
-        </div><!--row-->
-      </div>
+          </div>
+        </section>
     </main>
     {% include footer.html %} 
   </body>  

@@ -2,27 +2,31 @@
 <html>
   {% include head.html %}
   <body id="{{ page.id }}">
-   {% if site.GH_ENV == 'gh_pages' %}
-     {% include google-tag-manager-body.html %}
-   {% endif %}
-   {% include header.html %}
-   <main>
-    <div class="container">
-      <div class="row">
-
-       <div class="col l9 m9 s12 push-l3 push-m3">
-          {{ content }}
-       </div>
-
-       <div class="col l3 m3 s12 pull-l9 pull-m9 ">
-        <div class="sidebar-fixed sub-toc">
-          {% include coc-toc.html %}
-        </div>
-       </div>
-
-      </div>
-    </div>
-   </main>
-   {% include footer.html %}
-  </body>
+    {% if site.GH_ENV == 'gh_pages' %}
+      {% include google-tag-manager-body.html %}
+    {% endif %}
+    {% include header.html %}
+    <main class="coc-page">
+      <div class="container">
+        <section class="row">
+          <div class="col m8">
+            <div class="breadcrumb">
+              About /
+            </div>
+            <h1>{{ page.title }}</h1>
+            <div>
+              {{ content }}
+            </div>
+          </div>
+          <div class="col m1"> </div>
+          <div class="col m3 sidebar">
+            <div class="more-topics">
+              <span></span>
+              {% include coc-toc.html %}
+            </div>
+          </div>
+        </section>
+    </main>
+    {% include footer.html %} 
+  </body>  
 </html>
