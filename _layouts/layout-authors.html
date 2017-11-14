@@ -14,7 +14,7 @@
               <h1>{{ page.title }}</h1>
 
               <div class="author-info">
-                <img src="{{ page.links.first[1] }}.png?size=200">
+                <img data-author-img="{{ page.links | join:'!$!' }}">
                 <p class="headline">{{ page.headline }}</p>
                 <p id="authorLinks" class="connecticons"></p>
               </div>
@@ -72,14 +72,20 @@
           </div>
         </section>
         
-        {% if strategies.size > 0 or collections.size > 0 %}
+        {% if strategies.size > 0 %}
         <section id="author-topics" class="row">
           <div class="col m12">
             <h3>Topics</h3>
             <ul>
               {% for strategy in strategies %}
+              {% assign collects = site.features | where:"strategies",strategy.permalink %}
+              {% assign projs = site.data.projects | where:"strategies",strategy.permalink %}
               <li class="m12 author-strategy-info">
-                <h4><a href="/{{ strategy.permalink }}" title="{{ strategy.headline }}">{{ strategy.title }}</a></h4>
+                <h4>
+                  <a href="/{{ strategy.permalink }}" title="{{ strategy.headline }}">{{ strategy.title }}</a>
+                </h4>
+                <p>{{ strategy.headline }}</p>
+                <div class="strategy-info">{{ collects.size }} collections | {{ projs.size }} projects</div>
               </li>
               {% endfor %}
             </ul>
@@ -88,13 +94,25 @@
         {% endif %}
 
         {% if collections.size > 0 %}
-        <section id="author-collections" class="row">
+        <section id="strategy-collections" class="row">
           <div class="col m12">
             <h3>Collections</h3>
             <ul>
               {% for collection in collections %}
-              <li class="m12 author-collection-info">
-                <h4><a href="/{{ collection.permalink }}" title="{{ collection.headline }}">{{ collection.title }}</a></h4>
+              <li>
+                <div class="row">
+                  {% assign projs = site.data.projects | where:"features",collection.permalink %}
+                  <div class="col m5 strategy-collection-image">
+                  </div>
+                  <div class="col m7 strategy-collection-info">
+                    <h4>{{ collection.title }}</h4>
+                    <p>{{ collection.headline }}</p>
+                    {% if projs.size > 2 %}
+                    <span>{{ projs.size }} projects</span> | 
+                    {% endif %}
+                    <a href="/{{ collection.permalink }}">View Collection</a>
+                  </div>
+                </div>
               </li>
               {% endfor %}
             </ul>

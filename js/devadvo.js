@@ -63,23 +63,33 @@ var getIconClass = function (service) {
     } else if (s.indexOf('medium') > -1) {
       return 'fa fa-medium'
     } else if (s.indexOf('linkedin') > -1) {
-      return 'fa fa-linked'
+      return 'fa fa-linkedin'
+    } else if (s.indexOf('http') === -1 && s.indexOf('@') > -1) {
+      return 'fa fa-envelope'
+    } else if (s.indexOf('http') > -1) {
+      return 'fa fa-laptop'
     }
   }
-  return ''
 }
 
 var initAuthorLinks = function (authorLinks, authorLinksContainer) {
   var links = []
+  var icon = null
   var authorlinks = typeof authorLinks === 'string' ? JSON.parse(authorLinks) : authorLinks
   if (!authorlinks.length) {
     var keys = Object.keys(authorLinks)
     for (var i = 0; i < keys.length; i++) {
-      links.push('<a href="' + authorLinks[keys[i]] + '" target="_blank"><i class="' + getIconClass(keys[i]) + '" aria-hidden="true"></i></a>')
+      icon = getIconClass(keys[i])
+      if (icon) {
+        links.push('<a href="' + authorLinks[keys[i]] + '" target="_blank"><i class="' + icon + '" aria-hidden="true"></i></a>')
+      }
     }
   } else {
     for (var j = 0; j < authorLinks.length; j++) {
-      links.push('<a href="' + authorLinks[j] + '" target="_blank"><i class="' + getIconClass(authorLinks[j]) + '" aria-hidden="true"></i></a>')
+      icon = getIconClass(authorLinks[j])
+      if (icon) {
+        links.push('<a href="' + authorLinks[j] + '" target="_blank"><i class="' + icon + '" aria-hidden="true"></i></a>')
+      }
     }
   }
 
@@ -104,4 +114,14 @@ $(document).ready(function () {
     }
     initAuthorLinks(links, '#authorLinks')
   }
+
+  $('[data-author-img]').each(function (index, author) {
+    var links = $(author).data('author-img').split('!$!')
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].indexOf('github.com') !== -1) {
+        $(author).attr('src', links[i] + '.png?size=200')
+        break
+      }
+    }
+  })
 })

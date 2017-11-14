@@ -4,7 +4,7 @@
   {% assign authors = site.authors %}
   {% for author in authors %}
   {% if author.permalink == lead %}
-  <img src="{{ author.links.first[1] }}.png?size=200">
+  <img data-author-img="{{ author.links | join:'!$!' }}">
   <a href="{{ author.permalink }}">{{ author.title }}</a>
   <div class="strategy-lead-headline">{{ author.headline }}</div>
   <div class="strategy-lead-links">
