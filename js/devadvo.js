@@ -97,6 +97,8 @@ var initAuthorLinks = function (authorLinks, authorLinksContainer) {
 }
 
 $(document).ready(function () {
+  $('.button-collapse').sideNav()
+
   shuffleStrategies()
 
   if (typeof telescopicIntro === 'object') {
