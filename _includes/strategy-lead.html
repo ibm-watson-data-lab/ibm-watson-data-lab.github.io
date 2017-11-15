@@ -1,0 +1,15 @@
+{% assign lead = include.lead %}
+
+<div class="strategy-lead">
+  {% assign authors = site.authors %}
+  {% for author in authors %}
+  {% if author.permalink == lead %}
+  <img data-author-img="{{ author.links | join:'!$!' }}">
+  <a href="{{ author.permalink }}">{{ author.title }}</a>
+  <div class="strategy-lead-headline">{{ author.headline }}</div>
+  <div class="strategy-lead-links">
+    <a href="{{ author.permalink }}">More by {{ author.title }}</a>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>

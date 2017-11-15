@@ -1,0 +1,13 @@
+<ul class="team-list">
+  {% for author in site.authors %}
+  <li class="team-member">
+    <img data-author-img="{{ author.links | join:'!$!' }}">
+    <div>
+      <div>
+        <h4><a href="{{ site. baseurl }}/{{ author.permalink }}">{{ author.title }}</a></h4>
+        <p class="team-member-headline">{{ author.headline }}</p>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

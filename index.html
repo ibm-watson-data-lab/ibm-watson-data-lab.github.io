@@ -4,43 +4,84 @@ title:  Home
 id:     home
 ---
 
-<h1>
-  Things <a href="{{ site.baseurl }}/team">we</a> made with data,<br />so you can, too.
-</h1>
-
-{% assign projects = site.data.projects %}
-{% assign latest = projects.last %}
-<blockquote>  
-  Recently, on {{ latest.links.first[0] }}: <a href="{{ latest.links.first[1] }}" title="Find it on {{ latest.links.first[0] }}"><strong>{{ latest.title }}</strong> &rarr;</a>
-</blockquote>
-
-{% assign strategies = site.strategies %}
-<div class="row">
-  <div class="col m6 tier-1">
-    <!-- get the featured strategy(ies) -->
-    {% assign items = strategies | where:"tier","1" %}
-    {% for item in items %}
-      {% include item-home.html item=item tier='1' limit='3' %}                          
-    {% endfor %}
+<section class="intro">
+  <div class="container">
+    <h1 id="telescopicText"></h1>
   </div>
-  <div class="col m3 tier-2">
-    {% assign items = strategies | where:"tier","2" %}
-    {% for item in items %}
-      {% include item-home.html item=item tier='2' limit='2' %}                          
-    {% endfor %}
-  </div>
-  <div class="col m3 tier-3">
-    {% assign items = strategies | where:"tier","3" %}
-    {% for item in items %}
-      {% include item-home.html item=item tier='3' limit='10' %}                          
-    {% endfor %}
-  </div>
-</div>
+</section>
 
-<div class="divider"></div>
-<div class="section">
-  <p>
-    <a href="/projects">All projects</a>
-  </p>
-</div>    
- 
+<section class="container">
+  {% assign projects = site.data.projects %}
+  {% assign latest = projects.last %}
+  <div class="latest-project row">
+    <div class="rail-heading col m1">_Recent</div>
+    <div class="col m11">
+      <a href="{{ latest.links.first[1] }}" title="Find it on {{ latest.links.first[0] }}" class="latest-title">{{ latest.title }}</a><br/>
+      <div class="latest-headline">{{ latest.headline }}</div>
+      {% if latest.links.first[0] == "GitHub" %}
+      <a href="latest.links.first[1]" class="latest-link"><i class="fa fa-github" aria-hidden="true"></i> GitHub.com</a>
+      {% endif %}
+    </div>
+  </div>
+
+  {% assign strategies = site.strategies %}
+  <div class="strategies-list row">
+    <div class="rail-heading col m1">_Topics</div>
+    <ul class="col m11">
+      {% for strategy in strategies %}
+      {% assign collections = site.features | where:"strategies",strategy.permalink %}
+      {% assign projects = site.data.projects | where:"strategies",strategy.permalink %}
+      {% assign limit = strategy.limit %}
+      <li class="strategy row">
+        <div class="col m4">
+          <h1 class="strategy-title">
+            <a href="/{{ strategy.permalink }}" title="{{ strategy.headline }}">{{ strategy.title }}</a>
+          </h1>
+          <div class="strategy-headline">{{ strategy.headline }}</div>
+          <div class="strategy-info">{{ collections.size }} collections | {{ projects.size }} projects</div>
+        </div>
+        <div class="col m1"> </div>
+        <ul class="col m7">
+          {% for collection in collections limit:limit %}
+          <li>
+            <h3 class="collection-title">
+                <a href="/{{ collection.permalink }}" title="{{ collection.headline }}">{{ collection.title }}</a>
+            </h3>
+            <div class="collection-headline">{{ collection.headline }}</div>
+            <div class="collection-items">
+              {% assign items = site.data.projects | where:"features",collection.permalink | reverse %}
+              {% for item in items limit:2 %}
+              <h4 class="collection-item">
+                <i class="fa fa-{{ item.links.first[0] | downcase }}" aria-hidden="true"></i>
+                <a href="{{ item.links.first[1] }}" class="collection-item-link" title="'{{ item.title }}' on {{ item.links.first[0] }}">
+                  {{ item.title }}
+                  &rarr;
+                </a>
+              </h4>
+              {% endfor %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="outro">
+  <div class="container">
+    <div class="outro-message">
+      <h1>
+        <a href="{{ site.baseurl }}/about#get-involved">Get Involved</a>
+      </h1>
+      <p>
+        See how you can contribute and be part of the Watson Data Lab community
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  var telescopicIntro = JSON.parse('{{ site.data.telescopic.intro | jsonify }}')
+</script>

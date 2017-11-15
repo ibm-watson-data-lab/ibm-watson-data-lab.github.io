@@ -1,0 +1,43 @@
+{
+    "intro": {
+        "Things": {
+            "Web,": "/simple-search",
+            "mobile,": "/offline-first-apps",
+            "and": null,
+            "IoT": "/openwhisk-and-data",
+            "apps": null
+        },
+        "we": {
+            "Adam,": "/adam-cox",
+            "Brad,": "/brad-noble",
+            "Bradley,": "/bradley-holt",
+            "David,": "/david-taieb",
+            "Glynn,": "/glynn-bird",
+            "Lorna,": "/lorna-mitchell",
+            "Margriet,": "/margriet-groenendijk",
+            "Mark,": "/mark-watson",
+            "Maureen,": "/maureen-mcelaney",
+            "Mike,": "/mike-broberg",
+            "Patrick,": "/patrick-titzler",
+            "Raj,": "/raj-singh",
+            "Teri,": "/teri-chadbourne",
+            "and": null,
+            "va": "/va-barbosa"
+        },
+        "made with": null,
+        "data,": {
+            "Watson,": "/watson-and-data",
+            "Notebooks,": "/notebooks-for-developers",
+            "Cloud Functions,": "/openwhisk-and-data",
+            "Weather": "/weather-and-data",
+            "and": null,
+            "our partners,": {
+                "MapBox,": "/mapbox",
+                "SETI,": "/seti",
+                "and": null,
+                "PubNub,": "/pubnub"
+            }
+        },
+        "so you can too": null
+    }
+}

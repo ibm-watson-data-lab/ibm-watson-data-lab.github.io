@@ -4,30 +4,52 @@ title:  Projects
 id:     projects
 ---
 
-<h1>{{ page.title }}</h1>
+<div class="container">
+  <section class="row projects-search section-block">
+    <div class="col m7">
+      <h3>Projects</h3>
+    </div>
+    <div class="col m5" style="visibility:hidden">
+      <input id="projects-search-input" class="search-input" type="text" placeholder="Search Projects">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+  </section>
 
-{% comment %}
-<div class="row">
-  <div class="col m3">
-    <div class="subhead">
-      Featured collections
+  <section class="row">
+    <div class="col m8">
+      <div class="projects-search-results">
+        {% assign projects = site.data.projects | reverse %}
+        <ul>
+          {% for proj in projects %}
+          <li class="m12 strategy-project-info">
+            {% include single-project.html project=proj %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col m4 projects-search-facets">
+    </div>
+  </section>
+</div>
+
+<!-- <section class="container">
+  <div class="row">
+    <div class="col m8">
+      {% assign projects = site.data.projects | reverse %}
+      <h3>Projects</h3>
+      <ul class="row">
+        {% for proj in projects %}
+        <li class="col m12 strategy-project-info">
+          {% include single-project.html project=proj %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col m4">
     </div>
   </div>
-  <div class="col m9">
-    {% assign items = site.features  %}
-    {% include item-featured.html items=items context="index" %}          
-  </div>
-</div>
-<div class="divider"></div>
-  <p class="subhead">
-    Project work
-  </p>
-{% endcomment %}
-
-<div class="section">
-  {% assign items = site.data.projects | reverse %}
-  {% include item.html items=items context="index" %}          
-</div>
+</section> -->
 
 <!--
 <script>
