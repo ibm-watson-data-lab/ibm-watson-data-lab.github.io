@@ -1,7 +1,11 @@
 {% assign project = include.project %}
 
 <h4>
-  <a href="{{ project.links.first[1] }}">{{ project.title }}</a>
+  <div class="strategy-project-links">
+    <i class="fa fa-{{ project.links.first[0] | downcase }}" aria-hidden="true"></i>
+    <a href="{{ project.links.first[1] }}" class="strategy-project-link" title="'{{ project.title }}' on {{ project.links.first[0] }}">{{ project.links.first[0] }}</a>
+  </div>
+    <a href="{{ project.links.first[1] }}">{{ project.title }}</a>
 </h4>
 <p>
   {{ project.headline }}
@@ -17,10 +21,6 @@
   </span>
   {% endif %}
 </p>
-<div class="strategy-project-links">
-  <i class="fa fa-{{ project.links.first[0] | downcase }}" aria-hidden="true"></i>
-  <a href="{{ project.links.first[1] }}" class="strategy-project-link" title="'{{ project.title }}' on {{ project.links.first[0] }}">{{ project.links.first[0] }}</a>
-</div>
 <div class="strategy-project-tags">
   {% if project.tags %}
   <ul>
