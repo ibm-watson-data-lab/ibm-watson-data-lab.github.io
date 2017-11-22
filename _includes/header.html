@@ -1,13 +1,13 @@
 <div class="navbar-fixed">
-<nav class="white" role="navigation">
+<nav role="navigation">
   <div class="nav-wrapper container">
     <a href="{{ site.baseurl }}/" class="brand-logo">
       IBM Watson Data Lab
     </a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      {% include nav.html %}
       <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Topics<i class="material-icons right">arrow_drop_down</i></a></li>
+      {% include nav.html %}
     </ul>
     <ul id="dropdown1" class="dropdown-content">
       {% for feature in site.strategies %}

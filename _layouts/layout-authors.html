@@ -6,65 +6,129 @@
       {% include google-tag-manager-body.html %}
     {% endif %}
     {% include header.html %}
-    <main>
-    	<div class="container">
-        <!-- get the data from the features/strategies pages 
-        {% assign project = site.features | where:"permalink",page.permalink %}
-        -->
+    <main class="author-page">
+      <div class="container">
+        {% assign strategies = site.strategies | where:"lead",page.permalink %}
+        {% assign collections = site.features | where:"lead",page.permalink %}
+        {% assign projects = site.data.projects | where:"lead",page.permalink %}
+        <section class="row">
+          <div class="col m8">
+            <div>
+              <div class="breadcrumb">About / </div>
+              <h1>{{ page.title }}</h1>
 
-        <h1>
-          <span class="lead-in">{{ page.title }}</span>
-          {{ page.headline }}
-        </h1>
-        <div class="flow-text">
-          {{ content }}
-        </div><!--flow-->
-
-        <div class="section">
-          <h5>Related work</h5>
-          <div class="row">
-            <div class="col m6 s12">
-              <h6>Topics</h6>
-              {% assign strategies = site.strategies | where:"lead",page.permalink %}
-              {% for strategy in strategies %}
-                <a href="/{{ strategy.permalink }}">{{ strategy.title }}</a>
-              {% endfor %}    
+              <div class="author-info">
+                <img data-author-img="{{ page.links | join:'!$!' }}">
+                <p class="headline">{{ page.headline }}</p>
+                <p id="authorLinks" class="connecticons"></p>
+              </div>
             </div>
-            <div class="col m6 s12">
-                <h6>Featured collections</h6>
-                {% assign collections = site.features | where:"lead",page.permalink %}
-                {% for collection in collections %}
-                  <a href="/{{ collection.permalink }}">{{ collection.title }}</a>
-                {% endfor %}                    
+
+            <div>
+              {{ content }}
+            </div>
+            <div>
+              <h4>Specialties</h4>
+              <p>
+                {{ page.specialties | join:', ' }}
+              </p>
+            </div>
+            <div>
+              <h4>Languages</h4>
+              <p>
+                {{ page.languages | join:', '}}
+              </p>
             </div>
           </div>
-        </div>
+          <div class="col m1"> </div>
+          <div class="col m3 sidebar">
+            {% if strategies.size > 0 or collections.size > 0 %}
+            <a href="#author-projects" class="jump-link">&darr; View related projects</a>
+            {% endif %}
 
-        <!-- get the featured projects pages relating to this strategy -->
-        {% assign collections = site.features | where:"strategies",page.permalink %}
-        {% if collections.size > 0 %}
-        <div class="section">
-          {% include item-featured.html items=collections context="main" %}
-        </div>
+            {% assign authors = site.authors %}
+            {% if authors.size > 0 %}
+            <div class="more-topics">
+              <span>Authors</span>
+              <ul>
+                {% for author in authors %}
+                <li class="m12 author-author-info {% if author.permalink == page.permalink %}not-active{% endif %}">
+                  <a href="/{{ author.permalink }}" title="{{ author.headline }}">{{ author.title }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+          </div>
+        </section>
+        
+        {% if strategies.size > 0 %}
+        <section id="author-topics" class="row">
+          <div class="col m12">
+            <h3>Topics</h3>
+            <ul>
+              {% for strategy in strategies %}
+              {% assign collects = site.features | where:"strategies",strategy.permalink %}
+              {% assign projs = site.data.projects | where:"strategies",strategy.permalink %}
+              <li class="m12 author-strategy-info">
+                <h4>
+                  <a href="/{{ strategy.permalink }}" title="{{ strategy.headline }}">{{ strategy.title }}</a>
+                </h4>
+                <p>{{ strategy.headline }}</p>
+                <div class="strategy-info">{{ collects.size }} collections | {{ projs.size }} projects</div>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
         {% endif %}
 
-        <div class="divider"></div>
-        <div class="section">
-          <h5>Authors</h5>
-          {% assign authors = site.authors %}
-          <ul class="see-also">
-            {% for author in authors %}
-            <li {% if author.permalink == page.permalink %}class="active"{% endif %}>
-              <a href="{{ author.permalink }}">{{ author.title }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-          <p>
-            <a href="/team">Team</a>
-          </p>
-        </div><!--section-->
-      </div>
+        {% if collections.size > 0 %}
+        <section id="strategy-collections" class="row">
+          <div class="col m12">
+            <h3>Collections</h3>
+            <ul>
+              {% for collection in collections %}
+              <li>
+                <div class="row">
+                  {% assign projs = site.data.projects | where:"features",collection.permalink %}
+                  <div class="col m5 strategy-collection-image">
+                  </div>
+                  <div class="col m7 strategy-collection-info">
+                    <h4><a href="/{{ collection.permalink }}">{{ collection.title }}</a></h4>
+                    <p>{{ collection.headline }}</p>
+                    {% if projs.size > 2 %}
+                    <span>{{ projs.size }} projects</span> | 
+                    {% endif %}
+                    <a href="/{{ collection.permalink }}">View Collection</a>
+                  </div>
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+        {% endif %}
+        
+        {% if projects.size > 0 %}
+        <section id="author-projects" class="row">
+          <div class="col m12">
+            <h3>Projects</h3>
+            <ul>
+              {% for project in projects %}
+              <li class="m12 strategy-project-info">
+                {% include single-project.html project=proj %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+        {% endif %}
+
+        <script>
+          var authorLinks = JSON.parse('{{ page.links | jsonify }}')
+        </script>
     </main>
-    {% include footer.html %}
-  </body>
+    {% include footer.html %} 
+  </body>  
 </html>
