@@ -1245,7 +1245,7 @@
     - watson-and-data
   headline: "An IBM Bluemix application that lets Watson interact with users via Twilio's SMS service, then sends their data over to Compose PostgreSQL."
   links: 
-    Compose Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql/"
+    Compose-Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql/"
   strategies: 
     - differentiators
   tags: 
@@ -1260,7 +1260,7 @@
     - watson-and-data
   headline: "In part II, you'll tie together your services with Node.js and deploy to Bluemix."
   links: 
-    Compose Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql-part-ii/"
+    Compose-Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql-part-ii/"
   strategies: 
     - differentiators
   tags: 
@@ -1275,7 +1275,7 @@
     - watson-and-data
   headline: "Use Bluemix + Compose to build a chatbot that can reliably converse with users while collecting data and gaining insights on their personality and mood."
   links: 
-    Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot/"
+    Compose-Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot/"
   strategies: 
     - differentiators
   tags: 
@@ -1287,7 +1287,7 @@
     - watson-and-data
   headline: "Learn how to give your Slackbot some intelligence by connecting it to a Watson Conversation dialog."
   links: 
-    Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot-part-2/"
+    Compose-Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot-part-2/"
   strategies: 
     - differentiators
   tags: 
@@ -1298,7 +1298,7 @@
 - title: "Connecting PHP to Compose for MySQL on Bluemix"
   headline: "It's simple to to connect Compose for MySQL on Bluemix with PHP."
   links: 
-    Compose Articles: "https://compose.com/articles/connecting-php-to-compose-for-mysql-on-bluemix/"
+    Compose-Articles: "https://compose.com/articles/connecting-php-to-compose-for-mysql-on-bluemix/"
   strategies: 
     - working-with-wdp
   tags: 
@@ -1312,7 +1312,7 @@
   headline: "Compose's Transporter is a powerful way of transporting data between different databases. With each iteration, we look to improve it."
   links: 
     GitHub: "https://github.com/compose/transporter"
-    Compose Articles: "https://compose.com/articles/the-transporter-0-4-series-has-begun/"
+    Compose-Articles: "https://compose.com/articles/the-transporter-0-4-series-has-begun/"
   strategies: 
     - working-with-wdp
   tags: 
@@ -1324,7 +1324,7 @@
     - watson-and-data
   headline: "Use a JanusGraph-backed knowledge base to give our chatbot some utility, and build a recommendation engine for technical blog articles."
   links: 
-    Compose Articles: "https://compose.com/articles/building-a-smart-business-chatbot-part-3/"
+    Compose-Articles: "https://compose.com/articles/building-a-smart-business-chatbot-part-3/"
   strategies: 
     - differentiators
   tags: 
@@ -1338,7 +1338,7 @@
     - loading-data
   headline: "Connect to Compose PostgreSQL and run a Jupyter Notebook environment within Docker to analyze a Titantic data set."
   links: 
-    Compose Articles: "https://compose.com/articles/getting-started-with-compose-postgresql-and-jupyter-notebooks/"
+    Compose-Articles: "https://compose.com/articles/getting-started-with-compose-postgresql-and-jupyter-notebooks/"
   strategies: 
     - notebooks-for-developers
     - working-with-wdp
@@ -1355,7 +1355,7 @@
     - loading-data
   headline: "Connecting to Compose MongoDB and creating rich presentations for your data inside a Jupyter notebook is made easier with PixieDust."
   links: 
-    Compose Articles: "https://compose.com/articles/visualizing-data-with-jupyter-notebooks-pixiedust-and-compose-mongodb/"
+    Compose-Articles: "https://compose.com/articles/visualizing-data-with-jupyter-notebooks-pixiedust-and-compose-mongodb/"
   strategies: 
     - notebooks-for-developers
     - working-with-wdp
@@ -1565,9 +1565,9 @@
 - title: "Better Decision Making with Watson Machine Learning and Compose"
   features: 
     - watson-and-data
-  headline: "You no longer need to be a stellar data scientist or machine learning guru, Watson Machine Learning and Compose have you covered."
+  headline: "You no longer need to be a stellar data scientist or machine learning guru."
   links: 
-    Compose Articles: "https://compose.com/articles/better-decision-making-with-watson-machine-learning-and-compose/"
+    Compose-Articles: "https://compose.com/articles/better-decision-making-with-watson-machine-learning-and-compose/"
   strategies: 
     - notebooks-for-developers
     - differentiators
@@ -1578,7 +1578,10 @@
     - Jupyter
     - Python
 
+# Lead fields (authorship) start here & below. Compose still needs authors though. Look for "lead: __"
+
 - title:    "A.I for E.T."
+  lead: adam-cox
   features:
     - seti
   headline: "Using Watson Data Platform, we've built a citizen scientist project to apply deep learning to improve the state of the art in the search for extraterrestrial intelligence (SETI) research." 
@@ -1597,6 +1600,7 @@
     - "Machine Learning"
 
 - title: "Couchimport: Import flat data into CouchDB efficiently."
+  lead: glynn-bird
   features: 
     - loading-data
   headline: "Latest update adds one-to-many transformations."
@@ -1611,6 +1615,7 @@
     - Cloudant
 
 - title: "ibmos2spark: Less Cutty-Pastey for Your Object Storage Credentials"
+  lead: adam-cox
   features: 
     - seti
   headline: "The library helps you to read and write data between Spark and IBM’s Object Storage services."
@@ -1624,44 +1629,14 @@
     - Spark
 
 - title: "ToolUp: PostgreSQL Studio 2.0"
+  lead: __
   headline: "Using PostgreSQL Studio to administer Compose for PostgreSQL in the cloud."
   links: 
-    Compose Articles: "https://compose.com/articles/toolup-postgresql-studio-2-0/"
+    Compose-Articles: "https://compose.com/articles/toolup-postgresql-studio-2-0/"
   strategies: 
     - working-with-wdp
   tags: 
     - Compose
-    - PostgreSQL
-
-- title: "Securing Notebooks on IBM's Data Science Experience"
-  headline: "Exposing sensitive information in Jupyter notebooks is a serious concern if you intend to share them.."
-  links: 
-    Compose Articles: "https://compose.com/articles/securing-notebooks-on-ibms-data-science-experience/"
-  strategies: 
-    - notebooks-for-developers
-  tags: 
-    - Jupyter
-    - Python
-
-- title: "Go and Simplifying Scylla with Gocqlx"
-  headline: "Gocqlx sets out to do for CQL what the sqlx package does for SQL in Go; make it a lot more manageable."
-  links: 
-    Compose Articles: "https://compose.com/articles/go-and-simplify-scylla-with-gocqlx/"
-  strategies: 
-    - working-with-wdp
-  tags: 
-    - Compose
-    - ScyllaDB
-
-- title: "Compose Compare: MongoDB vs. PostgreSQL"
-  headline: "We'll look at two of our most popular offerings and help you decide which one would be a good fit for your project."
-  links: 
-    Compose Articles: "https://compose.com/articles/compose-compare-mongodb-vs-postgresql/"
-  strategies: 
-    - working-with-wdp
-  tags: 
-    - Compose
-    - MongoDB
     - PostgreSQL
 
 - title: "Watson Machine Learning for Developers"
@@ -1674,12 +1649,13 @@
     - Watson Machine Learning
 
 - title: "Building Your First Machine Learning System"
+  lead: mark-watson
   features: 
     - pixiedust-for-jupyter
   headline: "Train your model and deploy it, Watson ML for developers (part 2)."
   links: 
-    Notebook: "https://apsportal.ibm.com/analytics/notebooks/3e83ffa1-f52a-4b76-bbb5-498b6b7f9505/view?access_token=a7dfdd01dbc24c53a5ac9688fbdd32da1b59156117d721fe10d12660f18dd591"
     Medium: "https://medium.com/ibm-watson-data-lab/building-your-first-machine-learning-system-b3d9401927b7"
+    Notebook: "https://apsportal.ibm.com/analytics/notebooks/3e83ffa1-f52a-4b76-bbb5-498b6b7f9505/view?access_token=a7dfdd01dbc24c53a5ac9688fbdd32da1b59156117d721fe10d12660f18dd591"
   strategies: 
     - machine-learning-for-developers
     - notebooks-for-developers
@@ -1690,6 +1666,7 @@
     - PixieDust
 
 - title: "Doing Moar Together"
+  lead: maureen-mcelaney
   features: 
     - shopping-list-demo
   headline: "Using Agile Methodologies to produce reference implementations for Progressive Web Apps."
@@ -1700,20 +1677,8 @@
   tags: 
     - Agile
 
-- title: "Share Your Jupyter Notebook Charts on the Web"
-  features: 
-    - pixiedust-for-jupyter
-  headline: "PixieDust now lets you turn charts into standalone web pages."
-  links: 
-    Medium: "https://medium.com/ibm-watson-data-lab/share-your-jupyter-notebook-charts-on-the-web-43e190df4adb"
-  strategies: 
-    - notebooks-for-developers
-  tags: 
-    - Python
-    - Jupyter
-    - PixieDust
-
 - title: "Notebooks for Spreadsheet Users"
+  lead: glynn-bird
   features: 
     - pixiedust-for-jupyter
     - loading-data
@@ -1728,9 +1693,10 @@
     - PixieDust
 
 - title: "Go and Compose – MongoDB, Elasticsearch and PostgreSQL"
+  lead: __
   headline: "How to connect to every Compose database using Go: The first stop on the Compose Grand Tour."
   links: 
-    Compose Articles: "https://compose.com/articles/go-and-compose-mongodb-elasticsearch-and-postgresql/"
+    Compose-Articles: "https://compose.com/articles/go-and-compose-mongodb-elasticsearch-and-postgresql/"
   strategies: 
     - compose-grand-tour
   tags: 
@@ -1740,11 +1706,12 @@
     - PostgreSQL
 
 - title: "Search in Reverse: Real-Time Updates for Data as It Enters Your System"
+  lead: __
   features: 
     - loading-data
   headline: "Discover space on twitter using Elasticsearch's percolate query."
   links: 
-    Compose Articles: "https://compose.com/articles/discover-space-on-twitter-using-elasticsearchs-percolate-query/"
+    Compose-Articles: "https://compose.com/articles/discover-space-on-twitter-using-elasticsearchs-percolate-query/"
   strategies: 
     - working-with-wdp
   tags: 
@@ -1753,3 +1720,72 @@
     - MongoDB
     - Nodejs
 
+- title: "Compose Compare: MongoDB vs. PostgreSQL"
+  lead: __
+  features: 
+    - 
+  headline: "Which database is the best fit for your project?"
+  links: 
+    Compose-Articles: "https://compose.com/articles/compose-compare-mongodb-vs-postgresql/"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Compose
+    - MongoDB
+    - PostgreSQL
+
+- title: "Notebooks for Spreadsheet Users"
+  lead: glynn-bird
+  features: 
+    - loading-data
+  headline: "Dreading pivot tables? Reach for a Python Notebook + PixieDust instead."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/notebooks-for-spreadsheet-users-6481c79ad980"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Python
+    - PixieDust
+    - Jupyter
+
+- title: "Go and Simplifying Scylla with Gocqlx"
+  lead: __ 
+  features: 
+    - compose-grand-tour
+  headline: "Gocqlx does for CQL what the sqlx package does for SQL in Go: make it more manageable. Here's a simple comparison."
+  links: 
+    Compose-Articles: "https://compose.com/articles/go-and-simplify-scylla-with-gocqlx/"
+    GitHub: "https://github.com/compose-grandtour/golang/tree/master/example-scylla"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Compose
+    - ScyllaDB
+    - Go
+
+- title: "Share Your Jupyter Notebook Charts on the Web"
+  lead: david-taieb
+  features: 
+    - pixiedust-for-jupyter
+  headline: "Quickly turn charts into standalone web pages."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/share-your-jupyter-notebook-charts-on-the-web-43e190df4adb"
+    GitHub: "https://github.com/ibm-watson-data-lab/pixiedust"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - PixieDust
+
+- title: "Securing Notebooks on IBM's Data Science Experience"
+  lead: __
+  features: 
+    - 
+  headline: "Be secure in sharing less in your Jupyter Notebooks."
+  links: 
+    Compose-Articles: "https://compose.com/articles/securing-notebooks-on-ibms-data-science-experience/"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - Compose
+    - PostgreSQL
+    - Jupyter
