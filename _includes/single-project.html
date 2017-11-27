@@ -10,13 +10,12 @@
 <p>
   {{ project.headline }}
   {% if project.links.size > 1 %}
-  <span>
-    See also:
+  <span>See also: 
     {% for link in project.links %}
-      {% if link[1] != project.links.first[1] %}
-      {% else %}
-        <a href="{{ link[1] }}" title="'{{ project.title }}' on {{ link[0] }}" class="link">{{ link[0] }} &rarr;</a>&nbsp;
+      {% if link[1] == project.links.first[1] %}
+        {% continue %}
       {% endif %}
+      <a href="{{ link[1] }}" title="'{{ project.title }}' on {{ link[0] }}" class="link">{{ link[0] }} &rarr;</a>&nbsp;
     {% endfor %}
   </span>
   {% endif %}
