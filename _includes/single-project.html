@@ -10,15 +10,33 @@
 <p>
   {{ project.headline }}
   {% if project.links.size > 1 %}
-  <span>
-    See also:
-    {% for link in project.links %}
-      {% if link[1] != project.links.first[1] %}
-      {% else %}
-        <a href="{{ link[1] }}" title="'{{ project.title }}' on {{ link[0] }}" class="link">{{ link[0] }} &rarr;</a>&nbsp;
-      {% endif %}
-    {% endfor %}
-  </span>
+    <span>
+      See also:
+        {% if project.links.Medium and project.links.Medium != project.links.first[1] %}
+          <a href="{{ project.links.Medium }}" title="'{{ project.title }}' on Medium" class="link">Medium &rarr;</a>&nbsp;
+        {% endif %}
+        {% if project.links.GitHub and project.links.GitHub != project.links.first[1] %}
+          <a href="{{ project.links.GitHub }}" title="'{{ project.title }}' on GitHub" class="link">GitHub &rarr;</a>&nbsp;
+        {% endif %}
+        {% if project.links.Compose-Articles and project.links.Compose-Articles != project.links.first[1] %}
+          <a href="{{ project.links.Compose-Articles }}" title="'{{ project.title }}' on the Compose blog" class="link">Compose &rarr;</a>&nbsp;
+        {% endif %}
+        {% if project.links.Notebook and project.links.Notebook != project.links.first[1] %}
+          <a href="{{ project.links.Notebook }}" title="'{{ project.title }}' on Notebook" class="link">Notebook &rarr;</a>&nbsp;
+        {% endif %}
+        {% if project.links.npm and project.links.npm != project.links.first[1] %}
+          <a href="{{ project.links.npm }}" title="'{{ project.title }}' on npm" class="link">npm &rarr;</a>&nbsp;
+        {% endif %}
+        {% if project.links.developerWorks and project.links.developerWorks != project.links.first[1] %}
+          <a href="{{ project.links.developerWorks }}" title="'{{ project.title }}' on IBM developerWorks" class="link">developerWorks &rarr;</a>&nbsp;
+        {% endif %}
+        {% if project.links.demo and project.links.demo != project.links.first[1] %}
+          <a href="{{ project.links.demo }}" title="live demo for '{{ project.title }}'" class="link">demo &rarr;</a>&nbsp;
+        {% endif %}
+        {% if project.links.dataset and project.links.dataset != project.links.first[1] %}
+          <a href="{{ project.links.dataset }}" title="dataset for '{{ project.title }}'" class="link">dataset &rarr;</a>&nbsp;
+        {% endif %}
+    </span>
   {% endif %}
 </p>
 <div class="strategy-project-tags">
