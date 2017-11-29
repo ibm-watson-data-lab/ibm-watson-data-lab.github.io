@@ -1752,7 +1752,7 @@
   lead: __ 
   features: 
     - compose-grand-tour
-  headline: "Gocqlx does for CQL what the sqlx package does for SQL in Go: make it more manageable. Here's a simple comparison."
+  headline: "Gocqlx does for CQL what the sqlx package does for SQL in Go: make it more manageable. A pit stop on the Compose Grand Tour for Go."
   links: 
     Compose-Articles: "https://compose.com/articles/go-and-simplify-scylla-with-gocqlx/"
     GitHub: "https://github.com/compose-grandtour/golang/tree/master/example-scylla"
@@ -1778,8 +1778,6 @@
 
 - title: "Securing Notebooks on IBM's Data Science Experience"
   lead: __
-  features: 
-    - 
   headline: "Be secure in sharing less in your Jupyter Notebooks."
   links: 
     Compose-Articles: "https://compose.com/articles/securing-notebooks-on-ibms-data-science-experience/"
@@ -1789,3 +1787,89 @@
     - Compose
     - PostgreSQL
     - Jupyter
+
+- title: "Go and Compose – Redis, RethinkDB, and RabbitMQ"
+  lead: __
+  headline: "The second stop on the Compose Grand Tour for the Go language."
+  links:
+    Compose-Articles: https://compose.com/articles/go-and-compose-redis-rethinkdb-and-rabbitmq/
+  strategies: 
+    - compose-grand-tour
+  tags: 
+    - Compose
+    - Go
+    - Redis
+    - RethinkDB
+    - RabbitMQ
+
+- title: "IBM Object Storage 2 Spark Library"
+  lead: adam-cox
+  features: 
+    - working-with-wdp
+  headline: "Read and write data between Spark and IBM’s Object Storage services."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/ibmos2spark/"
+    Medium: "https://medium.com/ibm-watson-data-lab/ibm-object-storage-2-spark-library-f52cddf4c4f0"
+  strategies: 
+    - loading-data
+  tags: 
+    - "Object Storage"
+    - Python
+    - R
+
+- title: "Tracking Your Cryptocurrency Portfolio With Serverless Functions"
+  lead: glynn-bird
+  features: 
+    - openwhisk-and-data
+  headline: "Monitor your Bitcoin hoard with IBM Cloud Functions writing data to Cloudant."
+  links: 
+    GitHub: "https://github.com/glynnbird/markettrader"
+    Medium: "https://medium.com/ibm-watson-data-lab/tracking-your-cryptocurrency-portfolio-with-serverless-functions-a4e7264a6161"
+    demo: "https://glynnbird.github.io/markettrader/public/index.html"
+  strategies: 
+    - differentiators
+  tags: 
+    - Cloudant
+    - OpenWhisk
+    - Nodejs
+
+- title: "Discover Space on Twitter with Elasticsearch and Redis"
+  lead: __
+  headline: "Count Elasticsearch percolated queries using a sorted set. Use Redis to count the number of uniques using HyperLogLog."
+  links: 
+    Compose Articles: "https://compose.com/articles/discover-space-on-twitter-with-elasticsearch-and-redis/"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Compose
+    - Elasticsearch
+    - Redis
+    - Nodejs
+
+- title: "Graph 101: Getting Started with Graphs"
+  lead: __
+  features: 
+    - graph-101
+  headline: "Evaluate if a graph database will work for you, and learn how to import data."
+  links: 
+    Compose Articles: "https://compose.com/articles/graph-101-getting-started-with-graphs/"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Compose
+    - JanusGraph
+    - Groovy
+
+- title: "Go and Compose – etcd v3, Scylla, and MySQL"
+  lead: __
+  headline: "The third and final stop on the Compose Grand Tour for the Go language."
+  links: 
+    Compose Articles: "https://compose.com/articles/go-and-compose-etcd-v3-scylla-and-mysql/"
+  strategies: 
+    - compose-grand-tour
+  tags: 
+    - Compose
+    - Etcd
+    - ScyllaDB
+    - MySQL
+
