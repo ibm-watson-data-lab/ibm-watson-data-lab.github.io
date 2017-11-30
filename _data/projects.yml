@@ -1935,7 +1935,7 @@
     - Nodejs
 
 - title: "Building a Serverless Data Pipeline"
-  lead: __
+  lead: lorna-mitchell
   features:
     - openwhisk-and-data
   headline: "Data transformation is a great use case for serverless technology."
