@@ -1917,21 +1917,6 @@
     - Compose
     - JanusGraph
 
-- title: "Building a Serverless Data Pipeline"
-  lead: lorna-mitchell
-  features: 
-    - openwhisk-and-data
-  headline: "How I designed my OpenWhisk-based app to work with data efficiently and cost-effectively."
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/soingest"
-    Medium: "https://medium.com/ibm-watson-data-lab/building-a-serverless-data-pipeline-8be2325f0d9a"
-  strategies: 
-    - differentiators
-  tags: 
-    - OpenWhisk
-    - Nodejs
-    - Cloudant
-
 - title: "Making a Cloudant/Elasticsearch hybrid"
   lead: glynn-bird
   features: 
@@ -1949,4 +1934,19 @@
     - Elasticsearch
     - Nodejs
 
-
+- title: "Building a Serverless Data Pipeline"
+  lead: lorna-mitchell
+  features:
+    - openwhisk-and-data
+  headline: "Data transformation is a great use case for serverless technology."
+  links:
+    GitHub: "https://github.com/ibm-watson-data-lab/soingest"
+    Medium: "https://medium.com/ibm-watson-data-lab/building-a-serverless-data-pipeline-8be2325f0d9a"
+    YouTube: "https://www.youtube.com/watch?v=VyZaWN9iyks"
+  strategies:
+    - working-with-wdp
+    - differentiators
+  tags:
+    - OpenWhisk
+    - Nodejs
+    - Cloudant
