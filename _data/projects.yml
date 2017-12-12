@@ -1950,3 +1950,53 @@
     - OpenWhisk
     - Nodejs
     - Cloudant
+
+- title: "Making a Cloudant/Elasticsearch hybrid"
+  lead: glynn-bird
+  features: 
+    - openwhisk-and-data
+  headline: "Using serverless functions to move Cloudant data as it changes."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/cloudant-es-bridge"
+    Medium: "https://medium.com/ibm-watson-data-lab/making-a-cloudant-elasticsearch-hybrid-6bf9610f4456"
+  strategies: 
+    - differentiators
+  tags: 
+    - OpenWhisk
+    - Cloudant
+
+- title: "Deploy to IBM Cloud With TravisCI"
+  lead: lorna-mitchell
+  headline: "Getting started with automated deployment in a few simple steps."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/deploy-to-ibm-cloud-with-travisci-e69ae2cbf647"
+    GitHub: "https://github.com/lornajane/christmas-countdown"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - PHP
+
+- title: "Using Your Own Domain Name With Cloudant"
+  lead: glynn-bird
+  headline: "Secure your custom domain using serverless functions on the IBM Cloud."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/serverless-proxy"
+    Medium: "https://medium.com/ibm-watson-data-lab/using-your-own-domain-name-with-cloudant-b63699db96bd"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Cloudant
+    - OpenWhisk
+
+- title: "Sliding Through a Notebook"
+  lead: margriet-groenendijk
+  headline: "Write slides where you code."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/sliding-through-a-notebook-3da3710afe4f"
+    Notebook: "https://github.com/MargrietGroenendijk/pixiedust-demo/blob/master/slides-in-a-notebook.ipynb"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - Jupyter
+    - Python
+
