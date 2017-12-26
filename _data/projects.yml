@@ -1245,7 +1245,7 @@
     - watson-and-data
   headline: "An IBM Bluemix application that lets Watson interact with users via Twilio's SMS service, then sends their data over to Compose PostgreSQL."
   links: 
-    Compose-Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql/"
+    Compose Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql/"
   strategies: 
     - differentiators
   tags: 
@@ -1260,7 +1260,7 @@
     - watson-and-data
   headline: "In part II, you'll tie together your services with Node.js and deploy to Bluemix."
   links: 
-    Compose-Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql-part-ii/"
+    Compose Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql-part-ii/"
   strategies: 
     - differentiators
   tags: 
@@ -1275,7 +1275,7 @@
     - watson-and-data
   headline: "Use Bluemix + Compose to build a chatbot that can reliably converse with users while collecting data and gaining insights on their personality and mood."
   links: 
-    Compose-Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot/"
+    Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot/"
   strategies: 
     - differentiators
   tags: 
@@ -1287,7 +1287,7 @@
     - watson-and-data
   headline: "Learn how to give your Slackbot some intelligence by connecting it to a Watson Conversation dialog."
   links: 
-    Compose-Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot-part-2/"
+    Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot-part-2/"
   strategies: 
     - differentiators
   tags: 
@@ -1298,7 +1298,7 @@
 - title: "Connecting PHP to Compose for MySQL on Bluemix"
   headline: "It's simple to to connect Compose for MySQL on Bluemix with PHP."
   links: 
-    Compose-Articles: "https://compose.com/articles/connecting-php-to-compose-for-mysql-on-bluemix/"
+    Compose Articles: "https://compose.com/articles/connecting-php-to-compose-for-mysql-on-bluemix/"
   strategies: 
     - working-with-wdp
   tags: 
@@ -1312,7 +1312,7 @@
   headline: "Compose's Transporter is a powerful way of transporting data between different databases. With each iteration, we look to improve it."
   links: 
     GitHub: "https://github.com/compose/transporter"
-    Compose-Articles: "https://compose.com/articles/the-transporter-0-4-series-has-begun/"
+    Compose Articles: "https://compose.com/articles/the-transporter-0-4-series-has-begun/"
   strategies: 
     - working-with-wdp
   tags: 
@@ -1324,7 +1324,7 @@
     - watson-and-data
   headline: "Use a JanusGraph-backed knowledge base to give our chatbot some utility, and build a recommendation engine for technical blog articles."
   links: 
-    Compose-Articles: "https://compose.com/articles/building-a-smart-business-chatbot-part-3/"
+    Compose Articles: "https://compose.com/articles/building-a-smart-business-chatbot-part-3/"
   strategies: 
     - differentiators
   tags: 
@@ -1338,7 +1338,7 @@
     - loading-data
   headline: "Connect to Compose PostgreSQL and run a Jupyter Notebook environment within Docker to analyze a Titantic data set."
   links: 
-    Compose-Articles: "https://compose.com/articles/getting-started-with-compose-postgresql-and-jupyter-notebooks/"
+    Compose Articles: "https://compose.com/articles/getting-started-with-compose-postgresql-and-jupyter-notebooks/"
   strategies: 
     - notebooks-for-developers
     - working-with-wdp
@@ -1355,7 +1355,7 @@
     - loading-data
   headline: "Connecting to Compose MongoDB and creating rich presentations for your data inside a Jupyter notebook is made easier with PixieDust."
   links: 
-    Compose-Articles: "https://compose.com/articles/visualizing-data-with-jupyter-notebooks-pixiedust-and-compose-mongodb/"
+    Compose Articles: "https://compose.com/articles/visualizing-data-with-jupyter-notebooks-pixiedust-and-compose-mongodb/"
   strategies: 
     - notebooks-for-developers
     - working-with-wdp
@@ -1567,7 +1567,7 @@
     - watson-and-data
   headline: "You no longer need to be a stellar data scientist or machine learning guru."
   links: 
-    Compose-Articles: "https://compose.com/articles/better-decision-making-with-watson-machine-learning-and-compose/"
+    Compose Articles: "https://compose.com/articles/better-decision-making-with-watson-machine-learning-and-compose/"
   strategies: 
     - notebooks-for-developers
     - differentiators
@@ -1632,7 +1632,7 @@
   lead: __
   headline: "Using PostgreSQL Studio to administer Compose for PostgreSQL in the cloud."
   links: 
-    Compose-Articles: "https://compose.com/articles/toolup-postgresql-studio-2-0/"
+    Compose Articles: "https://compose.com/articles/toolup-postgresql-studio-2-0/"
   strategies: 
     - working-with-wdp
   tags: 
@@ -1696,7 +1696,7 @@
   lead: __
   headline: "How to connect to every Compose database using Go: The first stop on the Compose Grand Tour."
   links: 
-    Compose-Articles: "https://compose.com/articles/go-and-compose-mongodb-elasticsearch-and-postgresql/"
+    Compose Articles: "https://compose.com/articles/go-and-compose-mongodb-elasticsearch-and-postgresql/"
   strategies: 
     - compose-grand-tour
   tags: 
@@ -1711,7 +1711,7 @@
     - loading-data
   headline: "Discover space on twitter using Elasticsearch's percolate query."
   links: 
-    Compose-Articles: "https://compose.com/articles/discover-space-on-twitter-using-elasticsearchs-percolate-query/"
+    Compose Articles: "https://compose.com/articles/discover-space-on-twitter-using-elasticsearchs-percolate-query/"
   strategies: 
     - working-with-wdp
   tags: 
@@ -1726,7 +1726,7 @@
     - 
   headline: "Which database is the best fit for your project?"
   links: 
-    Compose-Articles: "https://compose.com/articles/compose-compare-mongodb-vs-postgresql/"
+    Compose Articles: "https://compose.com/articles/compose-compare-mongodb-vs-postgresql/"
   strategies: 
     - working-with-wdp
   tags: 
@@ -1754,7 +1754,7 @@
     - compose-grand-tour
   headline: "Gocqlx does for CQL what the sqlx package does for SQL in Go: make it more manageable. A pit stop on the Compose Grand Tour for Go."
   links: 
-    Compose-Articles: "https://compose.com/articles/go-and-simplify-scylla-with-gocqlx/"
+    Compose Articles: "https://compose.com/articles/go-and-simplify-scylla-with-gocqlx/"
     GitHub: "https://github.com/compose-grandtour/golang/tree/master/example-scylla"
   strategies: 
     - working-with-wdp
@@ -1780,7 +1780,7 @@
   lead: __
   headline: "Be secure in sharing less in your Jupyter Notebooks."
   links: 
-    Compose-Articles: "https://compose.com/articles/securing-notebooks-on-ibms-data-science-experience/"
+    Compose Articles: "https://compose.com/articles/securing-notebooks-on-ibms-data-science-experience/"
   strategies: 
     - notebooks-for-developers
   tags: 
@@ -1792,7 +1792,7 @@
   lead: __
   headline: "The second stop on the Compose Grand Tour for the Go language."
   links:
-    Compose-Articles: https://compose.com/articles/go-and-compose-redis-rethinkdb-and-rabbitmq/
+    Compose Articles: https://compose.com/articles/go-and-compose-redis-rethinkdb-and-rabbitmq/
   strategies: 
     - compose-grand-tour
   tags: 
@@ -2000,3 +2000,57 @@
     - Jupyter
     - Python
 
+- title: "How to Handle Tagged Data with Redis Sets"
+  lead: lorna-mitchell
+  headline: "Sets are a powerful data structure in Redis. Learn how to use them to your advantage."
+  links: 
+    Compose Articles: "https://compose.com/articles/how-to-handle-tagged-data-with-redis-sets/"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Compose
+    - Redis
+
+- title: "Looking inside Books with PostgreSQL's hstore"
+  lead: __
+  headline: "PostgreSQL is versatile. Let's explore hstore, a key-value model that is less-used but conveniently flexible."
+  links: 
+    Compose Articles: "https://compose.com/articles/looking-inside-books-with-postgresqls-hstore/"
+  strategies: 
+    - working-with-wdp
+  tags: 
+    - Compose
+    - PostgreSQL
+
+- title: "Detaching Cloudant Attachments to Object Storage with Serverless Functions"
+  lead: glynn-bird
+  features: 
+    - openwhisk-and-data
+  headline: "Build a pipeline to move Cloudant attachments to object storage using IBM Cloud Functions."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/detacher"
+    Medium: "https://medium.com/ibm-watson-data-lab/detaching-cloudant-attachments-to-object-storage-with-serverless-functions-99b8c3c77925"
+  strategies: 
+    - differentiators
+  tags: 
+    - OpenWhisk
+    - JavaScript
+    - Cloudant
+    - "Object Storage"
+
+- title: "Going Serverless with IBM Cloud Functions and Compose Redis"
+  lead: lorna-mitchell
+  features: 
+    - openwhisk-and-data
+  headline: "With serverless platforms like OpenWhisk, database connections are simply packages of your favorite language-API combo."
+  links: 
+    Compose Articles: "https://compose.com/articles/going-serverless-with-compose-redis/"
+    GitHub: "https://github.com/lornajane/alexa-airport-codes"
+    YouTube: "https://www.youtube.com/watch?v=MtLfaVCupfE&t=27s"
+  strategies: 
+    - differentiators
+  tags: 
+    - Compose
+    - Redis
+    - OpenWhisk
+    - Python
