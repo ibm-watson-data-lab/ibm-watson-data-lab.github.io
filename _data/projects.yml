@@ -1483,7 +1483,6 @@
   lead: bradley-holt
   features: 
     - shopping-list-demo
-    - offline-first-apps
   headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb"
