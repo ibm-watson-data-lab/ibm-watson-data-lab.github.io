@@ -566,7 +566,6 @@
 
 - title: "Voice of InterConnect"
   lead: bradley-holt
-  features: offline-first-apps
   headline: "Proof that Progressive Web Apps can do some serious analysis."
   img: img/voice-of-interconnect.png
   links: 
@@ -744,9 +743,7 @@
     - Cloudant
 
 - title: "Offline Sync for Progressive Web Apps"
-  lead: glynn-bird
-  features: 
-    - offline-first-apps
+  lead: bradley-holt
   headline: "Building Offline First Progressive Web Apps with Apache CouchDB, Hoodie, and PouchDB."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/offline-sync-for-progressive-web-apps-ccab6bf6db17"
@@ -914,23 +911,6 @@
     - Mobile
     - Slack
     - Vue.js
-    - "Watson Conversation"
-
-- title: "Chatbots with PubNub & Watson's Alchemy Language API"
-  features: 
-    - pubnub
-  headline: "Use PubNub BLOCKS, connect to IBM Watson cognitive services, and create a knowledge base on Bluemix."
-  img: "https://cdn-images-1.medium.com/max/1600/1*AMK5DT-y93B3IwCNpSGFZQ.gif"
-  links: 
-    External: "https://www.pubnub.com/training/how-to-build-a-chatbot-with-pubnub-ibm-watsons-alchemy-language-api-on-bluemix/"
-  story: "Josh shows you MR ROCKBOT, a chatbot that understands multiple languages and responds to geology-related questions and jokes."
-  strategies: 
-    - partners
-  tags: 
-    - Chatbots
-    - Cognitive
-    - PubNub
-    - JavaScript
     - "Watson Conversation"
 
 - title: "Simulating E.T. Radio Signals"
@@ -1316,7 +1296,7 @@
     - OpenWhisk
 
 - title: "Building an Ordering Application with Watson AI and PostgreSQL: Part I"
-  lead: __
+  lead: abdullah-alger
   features: 
     - watson-and-data
   headline: "An IBM Bluemix application that lets Watson interact with users via Twilio's SMS service, then sends their data over to Compose PostgreSQL."
@@ -1332,7 +1312,7 @@
     - Twilio
 
 - title: "Building an Ordering Application with Watson AI and PostgreSQL: Part II"
-  lead: __
+  lead: abdullah-alger
   features: 
     - watson-and-data
   headline: "In part II, you'll tie together your services with Node.js and deploy to Bluemix."
@@ -1348,7 +1328,7 @@
     - Twilio
 
 - title: "Making of a Smart Business Chatbot: Part 1"
-  lead: __
+  lead: john-oconnor
   features: 
     - watson-and-data
   headline: "Use Bluemix + Compose to build a chatbot that can reliably converse with users while collecting data and gaining insights on their personality and mood."
@@ -1361,7 +1341,7 @@
     - Slack
 
 - title: "Making of a Smart Business Chatbot: Part 2"
-  lead: __
+  lead: john-oconnor
   features: 
     - watson-and-data
   headline: "Learn how to give your Slackbot some intelligence by connecting it to a Watson Conversation dialog."
@@ -1387,7 +1367,7 @@
     - PHP
 
 - title: "The Transporter 0.4 series has begun"
-  lead: __
+  lead: dj-walker-morgan
   features: 
     - loading-data
   headline: "Compose's Transporter is a powerful way of transporting data between different databases. With each iteration, we look to improve it."
@@ -1401,7 +1381,7 @@
     - JavaScript
 
 - title: "Making of a Smart Business Chatbot: Part 3"
-  lead: __
+  lead: john-oconnor
   features: 
     - watson-and-data
   headline: "Use a JanusGraph-backed knowledge base to give our chatbot some utility, and build a recommendation engine for technical blog articles."
@@ -1416,7 +1396,7 @@
     - Nodejs
 
 - title: "Getting Started with Compose PostgreSQL and Jupyter Notebooks"
-  lead: __
+  lead: abdullah-alger
   features: 
     - loading-data
   headline: "Connect to Compose PostgreSQL and run a Jupyter Notebook environment within Docker to analyze a Titantic data set."
@@ -1432,7 +1412,7 @@
     - Docker
 
 - title: "Visualizing Data with Jupyter Notebooks, PixieDust, and Compose MongoDB"
-  lead: __
+  lead: abdullah-alger
   features: 
     - pixiedust-for-jupyter
     - nodebooks
@@ -1665,7 +1645,7 @@
     - Electron
 
 - title: "Better Decision Making with Watson Machine Learning and Compose"
-  lead: __
+  lead: abdullah-alger
   features: 
     - watson-and-data
   headline: "You no longer need to be a stellar data scientist or machine learning guru."
@@ -1730,7 +1710,7 @@
     - Spark
 
 - title: "ToolUp: PostgreSQL Studio 2.0"
-  lead: __
+  lead: john-oconnor
   headline: "Using PostgreSQL Studio to administer Compose for PostgreSQL in the cloud."
   links: 
     Compose Articles: "https://compose.com/articles/toolup-postgresql-studio-2-0/"
@@ -1795,7 +1775,7 @@
     - PixieDust
 
 - title: "Go and Compose – MongoDB, Elasticsearch and PostgreSQL"
-  lead: __
+  lead: dj-walker-morgan
   headline: "How to connect to every Compose database using Go: The first stop on the Compose Grand Tour."
   links: 
     Compose Articles: "https://compose.com/articles/go-and-compose-mongodb-elasticsearch-and-postgresql/"
@@ -1808,7 +1788,7 @@
     - PostgreSQL
 
 - title: "Search in Reverse: Real-Time Updates for Data as It Enters Your System"
-  lead: __
+  lead: abdullah-alger
   features: 
     - loading-data
   headline: "Discover space on twitter using Elasticsearch's percolate query."
@@ -1823,7 +1803,7 @@
     - Nodejs
 
 - title: "Compose Compare: MongoDB vs. PostgreSQL"
-  lead: __
+  lead: john-oconnor
   features: 
     - 
   headline: "Which database is the best fit for your project?"
@@ -1851,7 +1831,7 @@
     - Jupyter
 
 - title: "Go and Simplifying Scylla with Gocqlx"
-  lead: __ 
+  lead: dj-walker-morgan
   features: 
     - compose-grand-tour
   headline: "Gocqlx does for CQL what the sqlx package does for SQL in Go: make it more manageable. A pit stop on the Compose Grand Tour for Go."
@@ -1879,7 +1859,7 @@
     - PixieDust
 
 - title: "Securing Notebooks on IBM's Data Science Experience"
-  lead: __
+  lead: abdullah-alger
   headline: "Be secure in sharing less in your Jupyter Notebooks."
   links: 
     Compose Articles: "https://compose.com/articles/securing-notebooks-on-ibms-data-science-experience/"
@@ -1891,7 +1871,7 @@
     - Jupyter
 
 - title: "Go and Compose – Redis, RethinkDB, and RabbitMQ"
-  lead: __
+  lead: abdullah-alger
   headline: "The second stop on the Compose Grand Tour for the Go language."
   links:
     Compose Articles: https://compose.com/articles/go-and-compose-redis-rethinkdb-and-rabbitmq/
@@ -1936,7 +1916,7 @@
     - Nodejs
 
 - title: "Discover Space on Twitter with Elasticsearch and Redis"
-  lead: __
+  lead: abdullah-alger
   headline: "Count Elasticsearch percolated queries using a sorted set. Use Redis to count the number of uniques using HyperLogLog."
   links: 
     Compose Articles: "https://compose.com/articles/discover-space-on-twitter-with-elasticsearch-and-redis/"
@@ -1949,7 +1929,7 @@
     - Nodejs
 
 - title: "Graph 101: Getting Started with Graphs"
-  lead: __
+  lead: john-oconnor
   features: 
     - graph-101
   headline: "Evaluate if a graph database will work for you, and learn how to import data."
@@ -1963,7 +1943,7 @@
     - Groovy
 
 - title: "Go and Compose – etcd v3, Scylla, and MySQL"
-  lead: __
+  lead: dj-walker-morgan
   headline: "The third and final stop on the Compose Grand Tour for the Go language."
   links: 
     Compose Articles: "https://compose.com/articles/go-and-compose-etcd-v3-scylla-and-mysql/"
@@ -1994,7 +1974,7 @@
     - Cloudant
 
 - title: "Graph 101: Traversing and Querying JanusGraph using Gremlin"
-  lead: __
+  lead: john-oconnor
   features: 
     - graph-101
   headline: "Vertices and edges, oh my! Let's cover some basic graph DB queries."
@@ -2007,7 +1987,7 @@
     - JanusGraph
 
 - title: "Importing Graphs into JanusGraph"
-  lead: __
+  lead: dj-walker-morgan
   features: 
     - graph-101
   headline: "Using Gremlin I/O to load existing graph structures into a remote database."
@@ -2114,7 +2094,7 @@
     - Redis
 
 - title: "Looking inside Books with PostgreSQL's hstore"
-  lead: __
+  lead: abdullah-alger
   headline: "PostgreSQL is versatile. Let's explore hstore, a key-value model that is less-used but conveniently flexible."
   links: 
     Compose Articles: "https://compose.com/articles/looking-inside-books-with-postgresqls-hstore/"
