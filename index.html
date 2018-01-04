@@ -18,9 +18,28 @@ id:     home
     <div class="col m11">
       <a href="{{ latest.links.first[1] }}" title="Find it on {{ latest.links.first[0] }}" class="latest-title">{{ latest.title }}</a><br/>
       <div class="latest-headline">{{ latest.headline }}</div>
-      {% if latest.links.first[0] == "GitHub" %}
-      <a href="latest.links.first[1]" class="latest-link"><i class="fa fa-github" aria-hidden="true"></i> GitHub.com</a>
-      {% endif %}
+    {% if latest.links.first[0] == 'GitHub' %}
+      {% assign icon = 'github' %}
+      {% assign site_name = 'GitHub.com' %}
+    {% elsif latest.links.first[0] == 'Medium' %}
+      {% assign icon = 'medium' %}
+      {% assign site_name = 'Medium.com' %}
+    {% elsif latest.links.first[0] == 'Compose Articles' %}
+      {% assign icon = 'cubes' %}
+      {% assign site_name = 'Compose.com/articles' %}
+    {% elsif latest.links.first[0] == 'Notebook' %}
+      {% assign icon = 'book' %}
+      {% assign site_name = 'Data Science Notebook' %}
+    {% elsif latest.links.first[0] == 'npm' %}
+      {% assign icon = 'code' %}
+      {% assign site_name = 'npmjs.com' %}
+    {% elsif latest.links.first[0] == 'dataset' %}
+      {% assign icon = 'database' %}
+      {% assign site_name = 'Dataset' %}
+    {% else %}
+      {% assign icon = 'External Site' %}
+    {% endif %}
+      <a href="{{ latest.links.first[1] }}" class="latest-link"><i class="fa fa-{{ icon }}" aria-hidden="true"></i> {{ site_name }}</a>
     </div>
   </div>
 
@@ -52,7 +71,22 @@ id:     home
               {% assign items = site.data.projects | where:"features",collection.permalink | reverse %}
               {% for item in items limit:2 %}
               <h4 class="collection-item">
-                <i class="fa fa-{{ item.links.first[0] | downcase }}" aria-hidden="true"></i>
+                {% if item.links.first[0] == 'GitHub' %}
+                  {% assign icon = 'github' %}
+                {% elsif item.links.first[0] == 'Medium' %}
+                  {% assign icon = 'medium' %}
+                {% elsif item.links.first[0] == 'Compose Articles' %}
+                  {% assign icon = 'cubes' %}
+                {% elsif item.links.first[0] == 'Notebook' %}
+                  {% assign icon = 'book' %}
+                {% elsif item.links.first[0] == 'npm' %}
+                  {% assign icon = 'code' %}
+                {% elsif item.links.first[0] == 'dataset' %}
+                  {% assign icon = 'database' %}
+                {% else %}
+                  {% assign icon = 'newspaper-o' %}
+                {% endif %}
+                <i class="fa fa-{{ icon }}" aria-hidden="true"></i>
                 <a href="{{ item.links.first[1] }}" class="collection-item-link" title="'{{ item.title }}' on {{ item.links.first[0] }}">
                   {{ item.title }}
                   &rarr;
