@@ -2153,3 +2153,15 @@
     - Redis
     - OpenWhisk
     - Python
+
+- title: "Three Great Serverless Use Cases"
+  lead: lorna-mitchell
+  features: 
+    - openwhisk-and-data
+  headline: "The design patterns for serverless functions that are here to stay."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/three-great-serverless-use-cases-cd22d44aeb29"
+  strategies: 
+    - differentiators
+  tags: 
+    - OpenWhisk
