@@ -119,3 +119,12 @@ id:     home
 <script>
   var telescopicIntro = JSON.parse('{{ site.data.telescopic.intro | jsonify }}')
 </script>
+
+
+<script>
+  {% assign tmp = site.data.projects | reverse | slice: 0, 4 | replace: '=>', ':' %}
+  var newest4 = {{ tmp | json }}
+  var randomNumberBetween0and3 = Math.floor(Math.random() * 4);
+  console.log(randomNumberBetween0and3)
+  console.log(newest4[randomNumberBetween0and3])
+</script>
