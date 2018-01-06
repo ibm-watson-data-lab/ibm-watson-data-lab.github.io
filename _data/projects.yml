@@ -641,7 +641,7 @@
     - Vuejs
     - RethinkDB
     - Compose
-  
+
 - title: "Web application state, à la Dogfight (1983)"
   lead: glynn-bird
   headline: "Adding real-time notifications to your Node.js app"
