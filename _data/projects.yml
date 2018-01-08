@@ -1130,7 +1130,7 @@
 - title: "Using Watson Machine Learning to Predict a Post's Potential"
   lead: __
   features: 
-    - watson-and-data
+    - machine-learning-for-developers
     - pixiedust-for-jupyter
   headline: "Gaze into the Reddit crystal ball."
   links: 
@@ -1646,7 +1646,7 @@
 - title: "Better Decision Making with Watson Machine Learning and Compose"
   lead: abdullah-alger
   features: 
-    - watson-and-data
+    - machine-learning-for-developers
   headline: "You no longer need to be a stellar data scientist or machine learning guru."
   links: 
     Compose Articles: "https://compose.com/articles/better-decision-making-with-watson-machine-learning-and-compose/"
@@ -1721,11 +1721,13 @@
 
 - title: "Watson Machine Learning for Developers"
   lead: mark-watson
+  features: 
+    - machine-learning-for-developers
   headline: "Understanding the basic problems and workflow (part 1)."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/watson-machine-learning-for-developers-b98cefb3f890"
   strategies: 
-    - machine-learning-for-developers
+    - differentiators
   tags: 
     - Watson Machine Learning
 
@@ -1733,12 +1735,13 @@
   lead: mark-watson
   features: 
     - pixiedust-for-jupyter
+    - machine-learning-for-developers
   headline: "Train your model and deploy it, Watson ML for developers (part 2)."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/building-your-first-machine-learning-system-b3d9401927b7"
     Notebook: "https://apsportal.ibm.com/analytics/notebooks/3e83ffa1-f52a-4b76-bbb5-498b6b7f9505/view?access_token=a7dfdd01dbc24c53a5ac9688fbdd32da1b59156117d721fe10d12660f18dd591"
   strategies: 
-    - machine-learning-for-developers
+    - differentiators
     - notebooks-for-developers
   tags: 
     - Watson Machine Learning
