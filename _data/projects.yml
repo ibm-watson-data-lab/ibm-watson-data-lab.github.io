@@ -3,7 +3,7 @@
 #   - offline-first
 #   - differentiators
 #   - partners
-#   - working-with-wdp
+#   - working-with-json
 # features: (see `permalinks` in the frontmatter of files in the _projects folder, or visit [help](https://ibm-cds-labs.github.io/help))
 #   - pixiedust-for-jupyter
 #   - watson-and-data
@@ -24,7 +24,7 @@
     GitHub: "https://github.com/ibm-watson-data-lab/metrics-collector"
     developerWorks: "https://developer.ibm.com/clouddataservices/2015/08/25/in-page-user-behavior-tracking-made-simple/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Nodejs
@@ -64,7 +64,7 @@
     GitHub: "https://github.com/ibm-watson-data-lab/simple-logging-service"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/03/03/simple-metrics-collector-microservices-edition/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Nodejs
     - Redis
@@ -92,7 +92,7 @@
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/11/22/10602/"
     npm: "https://www.npmjs.com/package/cachemachine?cm_mc_uid=11650242990614891583122&cm_mc_sid_50200000=1490801514"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Nodejs
     - Cloudant
@@ -107,7 +107,7 @@
     Compose.com: "https://www.compose.com/articles/deploying-logshare-with-compose-and-bluemix/"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/03/14/logshare/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Nodejs
     - Compose
@@ -185,7 +185,7 @@
     GitHub: "https://github.com/ibm-watson-data-lab/simple-search-service"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/07/11/reintroducing-the-simple-search-service/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Nodejs
@@ -201,7 +201,7 @@
     GitHub: "https://github.com/ibm-watson-data-lab/simple-search-js"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/05/12/easy-frontends-for-simple-search-api-got-data/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - JavaScript
 
@@ -326,7 +326,7 @@
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/13/real-time-qa-app-with-rethinkdb/"
   story: "Realtime Q&A app using RethinkDB and changefeeds."
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Compose
     - Nodejs
@@ -341,7 +341,7 @@
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/23/cloudant-nodejs-library-v1dot5/"
   story: "Official Cloudant-Node.js client library."
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Nodejs
@@ -349,14 +349,14 @@
 - title: "CouchDB Document Copy and Transform Service"
   lead: patrick-titzler
   features: 
-    - loading-data
+    - loading-json
   headline: "Add some T to your ETL for CouchDB."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/couchdb-db-transform"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/28/couchdb-transform-service/"
   story: "Utility that loads documents from one CouchDB database, transforms them, and inserts them into another database."
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - CouchDB
@@ -369,7 +369,7 @@
     dataset: "https://github.com/ibm-watson-data-lab/open-data"
   story: "Open data sets hosted by the WDP dev advocates."
   strategies: 
-    - working-with-wdp
+    - partners
   tags: 
     - Cloudant
     - Jupyter
@@ -377,14 +377,14 @@
 - title: "Seven Databases in Seven Days"
   lead: lorna-mitchell
   features: 
-    - loading-data
+    - loading-json
   headline: "A quick tour of (some of) our database services."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/seven-days"
     developerWorks: "https://developer.ibm.com/clouddataservices/seven-databases-in-seven-days/"
   story: "Companion GitHub repository for the \"Seven Databases in Seven Days\" blog series."
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Compose
@@ -402,7 +402,7 @@
     GitHub: "https://github.com/ibm-watson-data-lab/simple-autocomplete-service/"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/05/31/introducing-the-simple-autocomplete-service/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Nodejs
     - Redis
@@ -416,7 +416,7 @@
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/12/07/build-a-simple-data-portal-with-python-and-ibm-object-storage/"
   story: "A Python Flask web app for serving files from IBM Object Storage."
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - "Object Storage"
     - Python
@@ -429,7 +429,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/deploy-your-php-application-to-bluemix-a7553fddf412"
   story: "A simple PHP/CouchDB guestbook app that uses RabbitMQ to add asynchronous webhook notifications of new entries."
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - CouchDB
     - Cloudant
@@ -441,14 +441,14 @@
 - title: "Installing Web Apps with Electron"
   lead: glynn-bird
   features: 
-    - loading-data
+    - loading-json
   headline: "A simple CouchDB data importer app that also shows how to bundle a web app for native distribution with Electron."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/couchdbimporter"
     Medium: "https://medium.com/ibm-watson-data-lab/installing-web-apps-with-electron-7a8fa1b12744"
   story: "Unlike the raw couchimport library, this app also infers data types from a preview of the file, turning booleans and numbers into their native JavaScript data types on import."
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - CouchDB
     - Electron
@@ -464,7 +464,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/database-changes-and-search-indexes-that-go-together-like-wine-cheese-dd67f08067fe"
   story: "Continuously synchronize the index of a Simple-Search-Service instance with the content of a CouchDB/Cloudant database."
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - CouchDB
     - Cloudant
@@ -473,7 +473,7 @@
 - title: "Importing JSON Documents with nosqlimport"
   lead: glynn-bird
   features: 
-    - loading-data
+    - loading-json
   headline: "Moving data doesn't have to stink."
   links: 
     GitHub: "https://github.com/glynnbird/nosqlimport"
@@ -481,7 +481,7 @@
     npm: "https://www.npmjs.com/package/nosqlimport"
   story: "Read data from a text file, transform it, and write JSON to CouchDB, Cloudant, and ElasticSearch."
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Nodejs
     - CouchDB
@@ -491,7 +491,7 @@
 - title: "Simple CouchDB and Cloudant Backup"
   lead: glynn-bird
   features: 
-    - loading-data
+    - loading-json
   headline: "Back up your data, without breaking your back."
   links: 
     GitHub: "https://github.com/glynnbird/couchbackup"
@@ -499,7 +499,7 @@
     npm: "https://www.npmjs.com/package/couchbackup"
   story: "Just dump it to a text file. Do what you like from there."
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Nodejs
     - CouchDB
@@ -511,7 +511,7 @@
     GitHub: "https://github.com/ibm-watson-data-lab/simple-service-registry"
     Medium: "https://medium.com/ibm-watson-data-lab/simple-service-registry-4550aee5a869"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Nodejs
     - Etcd
@@ -526,7 +526,7 @@
     npm: "https://www.npmjs.com/package/silverlining"
   story: "A Node.js library that provides a simple query interface for Cloudant and abstracts advanced MapReduce & indexing features."
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Nodejs
@@ -633,7 +633,7 @@
     demo: "http://ox.mybluemix.net/"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/11/30/introducing-the-simple-notification-service/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Nodejs
     - Express
@@ -650,7 +650,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/web-application-state-%C3%A0-la-dogfight-1983-641653c5cb3d"
     demo: "https://dogfight.mybluemix.net/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - RethinkDB
     - Compose
@@ -763,7 +763,7 @@
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/analysing-cloudant-json-in-runkit-javascript-notebooks-387be1f5500b"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Nodejs
@@ -772,14 +772,14 @@
 - title: "Moving data from DynamoDB to Cloudant or CouchDB"
   lead: glynn-bird
   features: 
-    - loading-data
+    - loading-json
   headline: "Introducing the dynamodbexport npm module."
   links: 
     GitHub: "https://github.com/glynnbird/dynamodbexport"
     Medium: "https://medium.com/ibm-watson-data-lab/moving-data-from-dynamodb-to-cloudant-or-couchdb-4a4110a4e2d9"
     npm: "https://www.npmjs.com/package/dynamodbexport"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - CouchDB
@@ -794,7 +794,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/eye-candy-for-cloudant-201a195ed6c"
     npm: "https://www.npmjs.com/package/simple-data-vis"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Nodejs
@@ -821,7 +821,7 @@
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/zero-to-kubernetes-on-the-ibm-bluemix-container-service-fd104fd193c1"
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - Kubernetes
 
@@ -858,7 +858,7 @@
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/pouchdb-the-swiss-army-knife-of-databases-c5429f3db21f"
   strategies: 
-    - working-with-wdp
+    - working-with-json
     - offline-first
   tags: 
     - JavaScript
@@ -871,7 +871,7 @@
     GitHub: "https://gist.github.com/vabarbosa/bff35152c3888f4e2c0ad92e2511dc2b#file-chango-user-js"
     Medium: "https://medium.com/ibm-watson-data-lab/simple-data-visualization-in-apache-couchdb-dd1e44dc05d4"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - CouchDB
     - JavaScript
@@ -879,14 +879,14 @@
 - title: "Diff Your Couch-Style Databases with couchdiff"
   lead: glynn-bird
   features: 
-    - loading-data
+    - loading-json
   headline: "Command-Line tool for comparing two Apache CouchDB™ or Cloudant databases."
   links: 
     GitHub: "https://github.com/glynnbird/couchdiff"
     Medium: "https://medium.com/ibm-watson-data-lab/diff-your-databases-with-couchdiff-f69943f9dc97"
     npm: "https://www.npmjs.com/package/couchdiff"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - CouchDB
     - Cloudant
@@ -922,7 +922,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/simulating-e-t-e34f4fa7a4f0"
   strategies: 
     - partners
-    - working-with-wdp
+    - __
   tags: 
     - "Object Storage"
     - Spark
@@ -933,7 +933,7 @@
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/choosing-a-cloudant-library-d14c06f3d714"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Nodejs
@@ -947,7 +947,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/who-limits-the-rate-limiter-68013263f9d2"
     npm: "https://www.npmjs.com/package/qrate"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Nodejs
@@ -959,7 +959,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/easy-access-to-all-points-of-interest-data-acc6569e45b2"
     dataset: "http://opendata.mybluemix.net/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
     - notebooks-for-developers
   tags: 
     - Python
@@ -975,7 +975,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/querying-your-cloudant-database-with-sql-bd670ee86291"
     npm: "https://www.npmjs.com/package/silverlining"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Nodejs
@@ -989,7 +989,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/defensive-ibm-object-storage-containers-6fb100fcb4a8"
   strategies: 
     - partners
-    - working-with-wdp
+    - __
   tags: 
     - "Object Storage"
 
@@ -999,7 +999,7 @@
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/couchdb-writes-piecemeal-bulk-or-batch-8bf8ef9314e0"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - CouchDB
@@ -1045,7 +1045,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/querying-your-pouchdb-database-with-sql-c2e43c21b7ce"
     npm: "https://www.npmjs.com/package/pouchdb-silverlining"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Nodejs
     - PouchDB
@@ -1105,7 +1105,7 @@
     npm: "https://www.npmjs.com/package/serverless-autocomplete"
   strategies: 
     - differentiators
-    - working-with-wdp
+    - working-with-json
   tags: 
     - OpenWhisk
     - Nodejs
@@ -1114,13 +1114,14 @@
   lead: glynn-bird
   features: 
     - openwhisk-and-data
+    - loading-json
   headline: "Emulating filtered replication using the changes feed and OpenWhisk functions."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/custom-replication"
     Medium: "https://medium.com/ibm-watson-data-lab/custom-cloudant-replication-d0753284d834"
   strategies: 
     - differentiators
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - JavaScript
@@ -1230,7 +1231,7 @@
     GitHub: "https://github.com/ibm-watson-data-lab/custom-indexes"
     Medium: "https://medium.com/ibm-watson-data-lab/custom-indexers-for-cloudant-6b7e65186db1"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - Compose
@@ -1360,7 +1361,7 @@
   links: 
     Compose Articles: "https://compose.com/articles/connecting-php-to-compose-for-mysql-on-bluemix/"
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - Compose
     - MySQL
@@ -1369,13 +1370,13 @@
 - title: "The Transporter 0.4 series has begun"
   lead: dj-walker-morgan
   features: 
-    - loading-data
+    - loading-json
   headline: "Compose's Transporter is a powerful way of transporting data between different databases. With each iteration, we look to improve it."
   links: 
     GitHub: "https://github.com/compose/transporter"
     Compose Articles: "https://compose.com/articles/the-transporter-0-4-series-has-begun/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Transporter
     - JavaScript
@@ -1397,14 +1398,12 @@
 
 - title: "Getting Started with Compose PostgreSQL and Jupyter Notebooks"
   lead: abdullah-alger
-  features: 
-    - loading-data
   headline: "Connect to Compose PostgreSQL and run a Jupyter Notebook environment within Docker to analyze a Titantic data set."
   links: 
     Compose Articles: "https://compose.com/articles/getting-started-with-compose-postgresql-and-jupyter-notebooks/"
   strategies: 
     - notebooks-for-developers
-    - working-with-wdp
+    - __
   tags: 
     - Compose
     - PostgreSQL
@@ -1416,13 +1415,13 @@
   features: 
     - pixiedust-for-jupyter
     - nodebooks
-    - loading-data
+    - loading-json
   headline: "Connecting to Compose MongoDB and creating rich presentations for your data inside a Jupyter notebook is made easier with PixieDust."
   links: 
     Compose Articles: "https://compose.com/articles/visualizing-data-with-jupyter-notebooks-pixiedust-and-compose-mongodb/"
   strategies: 
     - notebooks-for-developers
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Jupyter
     - Compose
@@ -1661,7 +1660,7 @@
     - Jupyter
     - Python
 
-- title: "A.I for E.T."
+- title: "A.I. for E.T."
   lead: adam-cox
   features:
     - seti
@@ -1683,14 +1682,14 @@
 - title: "Couchimport: Import flat data into CouchDB efficiently."
   lead: glynn-bird
   features: 
-    - loading-data
+    - loading-json
   headline: "Latest update adds one-to-many transformations."
   links: 
     npm:    "https://www.npmjs.com/package/couchimport"
     GitHub: "https://github.com/glynnbird/couchimport"
     Medium: "https://medium.com/ibm-watson-data-lab/couchimport-revisited-5921481f4c4e"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - CouchDB
     - Cloudant
@@ -1704,7 +1703,7 @@
     GitHub: "https://github.com/ibm-watson-data-lab/ibmos2spark"
   strategies: 
     - partners
-    - working-with-wdp
+    - __
   tags: 
     - "Object Storage"
     - Spark
@@ -1715,7 +1714,7 @@
   links: 
     Compose Articles: "https://compose.com/articles/toolup-postgresql-studio-2-0/"
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - Compose
     - PostgreSQL
@@ -1763,7 +1762,6 @@
   lead: glynn-bird
   features: 
     - pixiedust-for-jupyter
-    - loading-data
   headline: "Dreading pivot tables? Reach for a Python Notebook + PixieDust instead."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/notebooks-for-spreadsheet-users-6481c79ad980"
@@ -1790,12 +1788,12 @@
 - title: "Search in Reverse: Real-Time Updates for Data as It Enters Your System"
   lead: abdullah-alger
   features: 
-    - loading-data
+    - loading-json
   headline: "Discover space on twitter using Elasticsearch's percolate query."
   links: 
     Compose Articles: "https://compose.com/articles/discover-space-on-twitter-using-elasticsearchs-percolate-query/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Compose
     - Elasticsearch
@@ -1804,31 +1802,15 @@
 
 - title: "Compose Compare: MongoDB vs. PostgreSQL"
   lead: john-oconnor
-  features: 
-    - 
   headline: "Which database is the best fit for your project?"
   links: 
     Compose Articles: "https://compose.com/articles/compose-compare-mongodb-vs-postgresql/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Compose
     - MongoDB
     - PostgreSQL
-
-- title: "Notebooks for Spreadsheet Users"
-  lead: glynn-bird
-  features: 
-    - loading-data
-  headline: "Dreading pivot tables? Reach for a Python Notebook + PixieDust instead."
-  links: 
-    Medium: "https://medium.com/ibm-watson-data-lab/notebooks-for-spreadsheet-users-6481c79ad980"
-  strategies: 
-    - working-with-wdp
-  tags: 
-    - Python
-    - PixieDust
-    - Jupyter
 
 - title: "Go and Simplifying Scylla with Gocqlx"
   lead: dj-walker-morgan
@@ -1839,7 +1821,7 @@
     Compose Articles: "https://compose.com/articles/go-and-simplify-scylla-with-gocqlx/"
     GitHub: "https://github.com/compose-grandtour/golang/tree/master/example-scylla"
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - Compose
     - ScyllaDB
@@ -1886,14 +1868,12 @@
 
 - title: "IBM Object Storage 2 Spark Library"
   lead: adam-cox
-  features: 
-    - working-with-wdp
   headline: "Read and write data between Spark and IBM’s Object Storage services."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/ibmos2spark/"
     Medium: "https://medium.com/ibm-watson-data-lab/ibm-object-storage-2-spark-library-f52cddf4c4f0"
   strategies: 
-    - loading-data
+    - __
   tags: 
     - "Object Storage"
     - Python
@@ -1921,7 +1901,7 @@
   links: 
     Compose Articles: "https://compose.com/articles/discover-space-on-twitter-with-elasticsearch-and-redis/"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Compose
     - Elasticsearch
@@ -1936,7 +1916,7 @@
   links: 
     Compose Articles: "https://compose.com/articles/graph-101-getting-started-with-graphs/"
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - Compose
     - JanusGraph
@@ -1981,7 +1961,7 @@
   links: 
     Compose Articles: "https://compose.com/articles/graph-101-traversing-and-querying-janusgraph-using-gremlin/"
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - Compose
     - JanusGraph
@@ -1994,7 +1974,7 @@
   links: 
     Compose Articles: "https://compose.com/articles/importing-graphs-into-janusgraph/"
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - Compose
     - JanusGraph
@@ -2020,13 +2000,14 @@
   lead: lorna-mitchell
   features:
     - openwhisk-and-data
+    - loading-json
   headline: "Data transformation is a great use case for serverless technology."
   links:
     GitHub: "https://github.com/ibm-watson-data-lab/soingest"
     Medium: "https://medium.com/ibm-watson-data-lab/building-a-serverless-data-pipeline-8be2325f0d9a"
     YouTube: "https://www.youtube.com/watch?v=VyZaWN9iyks"
   strategies:
-    - working-with-wdp
+    - working-with-json
     - differentiators
   tags:
     - OpenWhisk
@@ -2054,18 +2035,20 @@
     Medium: "https://medium.com/ibm-watson-data-lab/deploy-to-ibm-cloud-with-travisci-e69ae2cbf647"
     GitHub: "https://github.com/lornajane/christmas-countdown"
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - PHP
 
 - title: "Using Your Own Domain Name With Cloudant"
   lead: glynn-bird
+  features: 
+    - loading-json
   headline: "Secure your custom domain using serverless functions on the IBM Cloud."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/serverless-proxy"
     Medium: "https://medium.com/ibm-watson-data-lab/using-your-own-domain-name-with-cloudant-b63699db96bd"
   strategies: 
-    - working-with-wdp
+    - working-with-json
   tags: 
     - Cloudant
     - OpenWhisk
@@ -2088,7 +2071,7 @@
   links: 
     Compose Articles: "https://compose.com/articles/how-to-handle-tagged-data-with-redis-sets/"
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - Compose
     - Redis
@@ -2099,7 +2082,7 @@
   links: 
     Compose Articles: "https://compose.com/articles/looking-inside-books-with-postgresqls-hstore/"
   strategies: 
-    - working-with-wdp
+    - __
   tags: 
     - Compose
     - PostgreSQL
