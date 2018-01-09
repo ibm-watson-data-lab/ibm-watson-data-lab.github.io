@@ -1328,6 +1328,22 @@
     - Nodejs
     - Twilio
 
+- title: "pixiedust_peacetech"
+  lead: david-taieb
+  features: 
+    - peacetech
+    - pixiedust-for-jupyter
+  headline: "Local visibility to mitigate business disruption in emerging economies."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/pixiedust_peacetech"
+  strategies: 
+    - partners
+    - notebooks-for-developers
+  tags: 
+    - PixieDust
+    - Jupyter
+    - Python
+
 - title: "Making of a Smart Business Chatbot: Part 1"
   lead: john-oconnor
   features: 
