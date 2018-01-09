@@ -12,7 +12,7 @@ Making predictions sounds like a cool and useful feature for your app, but machi
 
 ## The tools
 
-If you can load up a Jupyter Notebook with [PixieDust](/pixiedust-for-jupyter), you're aleady halfway there. Quickly load and display data, like the following in a Python Jupyter Notebook cell:
+If you can load up a Jupyter Notebook with [PixieDust](/pixiedust-for-jupyter), you're already halfway there. Quickly load and display data, like the following in a Python Jupyter Notebook cell:
 
 <script src="https://gist.github.com/mikebroberg/a8771513efceda07f0b7cb8a5c39f5fe.js"></script>
 
