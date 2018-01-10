@@ -5,6 +5,7 @@ layout:     layout-featured-collection
 permalink:  machine-learning-for-developers
 strategies: 
   - differentiators
+position:	2
 lead:       mark-watson
 ---
 

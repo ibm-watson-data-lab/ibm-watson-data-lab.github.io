@@ -6,6 +6,7 @@ permalink:  peacetech
 featured:   true
 strategies: 
   - partners
+position:	2
 lead: david-taieb
 ---
 

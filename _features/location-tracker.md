@@ -7,6 +7,7 @@ img:        location-tracker-client.png
 img-thumb:  location-tracker-client-thumb.png
 strategies: 
   - offline-first
+position:	2
 lead: mark-watson
 ---
 

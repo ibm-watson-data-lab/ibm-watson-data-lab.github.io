@@ -8,6 +8,7 @@ img-thumb:  mapbox-vector-thumb.png
 featured:   true
 strategies: 
   - partners
+position:	0
 lead: raj-singh
 ---
 

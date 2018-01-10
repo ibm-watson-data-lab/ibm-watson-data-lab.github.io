@@ -7,6 +7,7 @@ img:        food-tracker.png
 img-thumb:  food-tracker-thumb.png
 strategies: 
   - offline-first
+position:	3
 lead: bradley-holt
 ---
 

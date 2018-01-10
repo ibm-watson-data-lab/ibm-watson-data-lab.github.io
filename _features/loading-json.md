@@ -5,6 +5,7 @@ layout:     layout-featured-collection
 permalink:  loading-json
 strategies: 
   - working-with-json
+position:	0
 lead: glynn-bird
 ---
 

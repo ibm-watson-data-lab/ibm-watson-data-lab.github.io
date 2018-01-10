@@ -9,6 +9,7 @@ img:        pixiedust-logo.png
 img-thumb:  pixiedust-logo-thumb.png
 strategies: 
   - notebooks-for-developers
+position:	0
 essentials:
   PixieDust on GitHub: https://github.com/ibm-watson-data-lab/pixiedust
   PixieDust Docs:   https://ibm-watson-data-lab.github.io/pixiedust/

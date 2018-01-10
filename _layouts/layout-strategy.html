@@ -44,7 +44,7 @@
 
         <section id="strategy-collections" class="row">
           <div class="col m12">
-          {% assign collections = site.features | where:"strategies",page.permalink %}
+          {% assign collections = site.features | where:"strategies",page.permalink | sort:"position" %}
           {% if collections.size > 0 %}
           <h3>Collections</h3>
           <ul>

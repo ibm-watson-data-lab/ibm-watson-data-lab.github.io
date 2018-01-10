@@ -8,6 +8,7 @@ img:        offline-camp-campfire.jpeg #offlinecamp-logo.jpg
 img-thumb:  offline-camp-campfire.jpeg #offlinecamp-logo-thumb.jpg
 strategies: 
   - offline-first
+position:	0
 essentials:
   Offline Camp:  http://offlinefirst.org/camp/  
   Offline Camp on Medium: https://medium.com/offline-camp

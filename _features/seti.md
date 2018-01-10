@@ -8,6 +8,7 @@ img-thumb:  seti_sm.png
 featured:   true
 strategies: 
   - partners
+position:	1
 lead: adam-cox
 ---
 
