@@ -571,7 +571,7 @@ section.row > .col {
 }
 
 .strategy-collection-image.col {
-  background-color: #F3F3F3;
+  /*background-color: #F3F3F3;*/
   margin: 0;
   height: 100%;
   padding: 0;

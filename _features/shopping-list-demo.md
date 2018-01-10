@@ -7,7 +7,7 @@ img:        shopping-list.png
 img-thumb:  shopping-list-thumb.png
 strategies:
   - offline-first
-position:	1
+position:	2
 lead: bradley-holt
 essentials:
   Shopping List on GitHub: https://github.com/ibm-watson-data-lab/shopping-list

@@ -52,9 +52,11 @@
             <li>
               <div class="row">
                 {% assign projects = site.data.projects | where:"features",item.permalink %}
+                {% if item.img-thumb %}
                 <div class="col m5 strategy-collection-image">
-                  <!-- <img src="img/{{ item.img-thumb }}" /> -->
+                  <img src="img/{{ item.img-thumb }}" />
                 </div>
+                {% endif %}
                 <div class="col m7 strategy-collection-info">
                   <h4>{{ item.title }}</h4>
                   <p>{{ item.headline }}</p>
