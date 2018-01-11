@@ -1,19 +1,4 @@
-# strategies: (for all, see `permalinks` in the frontmatter of files in the _strategies folder or visit , or visit [help](https://ibm-cds-labs.github.io/help))
-#   - notebooks-for-developers
-#   - offline-first
-#   - differentiators
-#   - partners
-#   - working-with-json
-# features: (see `permalinks` in the frontmatter of files in the _projects folder, or visit [help](https://ibm-cds-labs.github.io/help))
-#   - pixiedust-for-jupyter
-#   - watson-and-data
-#   - simple-search
-#   - etc
-# tags: 
-#   - Cloudant
-#   - iOS Swift
-#   - etc
-
+# Context at /strategies and /help.
 
 # Old stuff at the top; new stuff appended to the bottom.
 
@@ -2150,3 +2135,13 @@
     - differentiators
   tags: 
     - OpenWhisk
+
+- title: "Creating Partial Cloudant Indexes"
+  lead: glynn-bird
+  headline: "Filter data before it’s indexed to get the most out of your storage."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/creating-partial-cloudant-indexes-1ebf169c8e15"
+  strategies: 
+    - working-with-json
+  tags: 
+    - Cloudant

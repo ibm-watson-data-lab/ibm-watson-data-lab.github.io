@@ -3,11 +3,11 @@ title:      Shopping List
 headline:   Shopping List is a series of Offline First demo apps, each built using a different stack.
 layout:     layout-featured-collection
 permalink:  shopping-list-demo
-img:        shopping-list.png
-img-thumb:  shopping-list-thumb.png
+#img:        shopping-list.png
+#img-thumb:  shopping-list-thumb.png
 strategies:
   - offline-first
-position:	2
+position:	1
 lead: bradley-holt
 essentials:
   Shopping List on GitHub: https://github.com/ibm-watson-data-lab/shopping-list

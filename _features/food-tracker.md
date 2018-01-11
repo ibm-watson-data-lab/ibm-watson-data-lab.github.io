@@ -3,8 +3,8 @@ title:      Cloudant FoodTracker
 headline:   Learn how to build Offline First iOS apps with Swift and Cloudant Sync.
 layout:     layout-featured-collection
 permalink:  food-tracker
-img:        food-tracker.png
-img-thumb:  food-tracker-thumb.png
+#img:        food-tracker.png
+#img-thumb:  food-tracker-thumb.png
 strategies: 
   - offline-first
 position:	3

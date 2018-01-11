@@ -4,8 +4,8 @@ headline:   Building the Offline First community, one campfire at a time.
 layout:     layout-featured-collection
 permalink:  offline-camp
 featured:   true
-img:        offline-camp-campfire.jpeg #offlinecamp-logo.jpg
-img-thumb:  offline-camp-campfire.jpeg #offlinecamp-logo-thumb.jpg
+#img:        offline-camp-campfire.jpeg #offlinecamp-logo.jpg
+#img-thumb:  offline-camp-campfire.jpeg #offlinecamp-logo-thumb.jpg
 strategies: 
   - offline-first
 position:	0

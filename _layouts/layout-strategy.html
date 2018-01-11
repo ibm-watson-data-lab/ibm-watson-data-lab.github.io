@@ -58,7 +58,7 @@
                 </div>
                 {% endif %}
                 <div class="col m7 strategy-collection-info">
-                  <h4>{{ item.title }}</h4>
+                  <h4><a href="/{{ item.permalink }}">{{ item.title }}</a></h4>
                   <p>{{ item.headline }}</p>
                   {% if projects.size > 2 %}
                   <span>{{ projects.size }} projects</span> | 
