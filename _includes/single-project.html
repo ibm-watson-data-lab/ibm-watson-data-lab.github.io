@@ -22,6 +22,7 @@
   </div>
     <a href="{{ project.links.first[1] }}">{{ project.title }}</a>
 </h4>
+
 <p>
   {{ project.headline }}
   {% if project.links.size > 1 %}
@@ -35,6 +36,7 @@
   </span>
   {% endif %}
 </p>
+
 <div class="strategy-project-tags">
   {% if project.tags %}
   <ul>
