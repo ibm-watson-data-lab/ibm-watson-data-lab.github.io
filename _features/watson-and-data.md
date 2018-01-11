@@ -5,6 +5,7 @@ layout:     layout-featured-collection
 permalink:  watson-and-data
 strategies: 
   - differentiators
+position:	0
 lead:       mark-watson
 ---
 

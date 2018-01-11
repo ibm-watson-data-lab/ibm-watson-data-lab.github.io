@@ -25,7 +25,7 @@
           </div>
           <div class="col m1"></div>
           <div class="col m3 sidebar">
-            <a href="#strategy-projects" class="jump-link">&darr; View projects in this topic</a>
+            <a href="#strategy-collections" class="jump-link">&darr; View work</a>
             <div class="more-topics">
               <span>More Topics</span>
               <ul>
@@ -44,7 +44,7 @@
 
         <section id="strategy-collections" class="row">
           <div class="col m12">
-          {% assign collections = site.features | where:"strategies",page.permalink %}
+          {% assign collections = site.features | where:"strategies",page.permalink | sort:"position" %}
           {% if collections.size > 0 %}
           <h3>Collections</h3>
           <ul>
@@ -52,11 +52,13 @@
             <li>
               <div class="row">
                 {% assign projects = site.data.projects | where:"features",item.permalink %}
+                {% if item.img-thumb %}
                 <div class="col m5 strategy-collection-image">
-                  <!-- <img src="img/{{ item.img-thumb }}" /> -->
+                  <img src="img/{{ item.img-thumb }}" />
                 </div>
+                {% endif %}
                 <div class="col m7 strategy-collection-info">
-                  <h4>{{ item.title }}</h4>
+                  <h4><a href="/{{ item.permalink }}">{{ item.title }}</a></h4>
                   <p>{{ item.headline }}</p>
                   {% if projects.size > 2 %}
                   <span>{{ projects.size }} projects</span> | 

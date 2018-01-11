@@ -3,11 +3,12 @@ title:      Mapbox
 headline:   Putting maps to work, on your data.
 layout:     layout-featured-collection
 permalink:  mapbox
-img:        mapbox-vector.png
-img-thumb:  mapbox-vector-thumb.png
+#img:        mapbox-vector.png
+#img-thumb:  mapbox-vector-thumb.png
 featured:   true
 strategies: 
   - partners
+position:	0
 lead: raj-singh
 ---
 

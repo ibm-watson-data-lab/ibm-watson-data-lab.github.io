@@ -10,37 +10,12 @@ id:     home
   </div>
 </section>
 
+<script src="js/jquery-3.2.1.min.js"></script>
+
 <section class="container">
-  {% assign projects = site.data.projects %}
-  {% assign latest = projects.last %}
   <div class="latest-project row">
     <div class="rail-heading col m1">_Recent</div>
-    <div class="col m11">
-      <a href="{{ latest.links.first[1] }}" title="Find it on {{ latest.links.first[0] }}" class="latest-title">{{ latest.title }}</a><br/>
-      <div class="latest-headline">{{ latest.headline }}</div>
-    {% if latest.links.first[0] == 'GitHub' %}
-      {% assign icon = 'github' %}
-      {% assign site_name = 'GitHub.com' %}
-    {% elsif latest.links.first[0] == 'Medium' %}
-      {% assign icon = 'medium' %}
-      {% assign site_name = 'Medium.com' %}
-    {% elsif latest.links.first[0] == 'Compose Articles' %}
-      {% assign icon = 'cubes' %}
-      {% assign site_name = 'Compose.com/articles' %}
-    {% elsif latest.links.first[0] == 'Notebook' %}
-      {% assign icon = 'book' %}
-      {% assign site_name = 'Data Science Notebook' %}
-    {% elsif latest.links.first[0] == 'npm' %}
-      {% assign icon = 'code' %}
-      {% assign site_name = 'npmjs.com' %}
-    {% elsif latest.links.first[0] == 'dataset' %}
-      {% assign icon = 'database' %}
-      {% assign site_name = 'Dataset' %}
-    {% else %}
-      {% assign icon = 'External Site' %}
-    {% endif %}
-      <a href="{{ latest.links.first[1] }}" class="latest-link"><i class="fa fa-{{ icon }}" aria-hidden="true"></i> {{ site_name }}</a>
-    </div>
+    <div class="col m11" id="hero"></div>
   </div>
 
   {% assign strategies = site.strategies %}
@@ -118,4 +93,53 @@ id:     home
 
 <script>
   var telescopicIntro = JSON.parse('{{ site.data.telescopic.intro | jsonify }}')
+</script>
+
+
+<script type="text/javascript">
+  {% assign tmp = site.data.projects | reverse | slice: 0, 5 | replace: '=>', ':' %}
+  var new_articles = {{ tmp | json }};
+  var rando = Math.floor(Math.random() * 5);
+  var hero = new_articles[rando];
+
+  var main_link;
+  var pub_name;
+  var icon;
+  if (hero.links['Compose Articles']) {
+    main_link = hero.links['Compose Articles'];
+    pub_name = "Compose.com/articles";
+    icon = "cubes";
+  } else if (hero.links['Medium']) {
+    main_link = hero.links['Medium'];
+    pub_name = "Medium.com";
+    icon = "medium";
+  } else if (hero.links['GitHub']) {
+    main_link = hero.links['GitHub'];
+    pub_name = "GitHub";
+    icon = "github";
+  } else if (hero.links['Notebook']) {
+    main_link = hero.links['Notebook'];
+    pub_name = "Data Science Notebook";
+    icon = "book";
+  } else if (hero.links['npm']) {
+    main_link = hero.links['npm'];
+    pub_name = "npmjs.com";
+    icon = "code";
+  } else if (hero.links['dataset']) {
+    main_link = hero.links['dataset'];
+    pub_name = "Dataset";
+    icon = "database";
+  } else {
+    main_link = hero.links[ Object.keys(hero.links)[0] ];
+    pub_name = "External Site";
+    icon = "newspaper-o";
+  }
+
+  var html = [
+    '<a href="' + main_link + '" title="Find it on ' + pub_name + '" class="latest-title">' + hero.title + '</a>',
+    '<br/>',
+    '<div class="latest-headline">' + hero.headline + '</div>',
+    '<a href="'+ main_link + '" class="latest-link"><i class="fa fa-' + icon +'" aria-hidden="true"></i>' + pub_name + '</a>'
+    ].join("\n");
+  $('#hero').append(html);
 </script>

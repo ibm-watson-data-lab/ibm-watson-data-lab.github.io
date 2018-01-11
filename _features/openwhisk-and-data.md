@@ -5,6 +5,7 @@ layout:     layout-featured-collection
 permalink:  openwhisk-and-data
 strategies: 
   - differentiators
+position:	1
 lead:       lorna-mitchell
 ---
 

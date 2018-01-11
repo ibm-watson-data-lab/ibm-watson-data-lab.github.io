@@ -5,6 +5,7 @@ layout:     layout-featured-collection
 permalink:  weather-and-data
 strategies: 
   - differentiators
+position:	3
 lead:       margriet-groenendijk
 ---
 

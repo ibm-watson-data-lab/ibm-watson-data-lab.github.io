@@ -4,7 +4,8 @@ headline:   Turn a CSV into an API that powers a search engine.
 layout:     layout-featured-collection
 permalink:  simple-search
 strategies: 
-  - working-with-wdp
+  - working-with-json
+position:	1
 essentials:
   Simple Search on GitHub: https://github.com/ibm-watson-data-lab/simple-search-service
 lead: glynn-bird
