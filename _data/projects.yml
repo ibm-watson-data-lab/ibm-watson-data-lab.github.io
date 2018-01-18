@@ -1818,14 +1818,12 @@
 
 - title: "Go and Simplifying Scylla with Gocqlx"
   lead: dj-walker-morgan
-  features: 
-    - compose-grand-tour
   headline: "Gocqlx does for CQL what the sqlx package does for SQL in Go: make it more manageable. A pit stop on the Compose Grand Tour for Go."
   links: 
     Compose Articles: "https://compose.com/articles/go-and-simplify-scylla-with-gocqlx/"
     GitHub: "https://github.com/compose-grandtour/golang/tree/master/example-scylla"
   strategies: 
-    - __
+    - compose-grand-tour
   tags: 
     - Compose
     - ScyllaDB
@@ -1983,7 +1981,7 @@
     - Compose
     - JanusGraph
 
-- title: "Making a Cloudant/Elasticsearch hybrid"
+- title: "Making a Cloudant/Elasticsearch Hybrid"
   lead: glynn-bird
   features: 
     - openwhisk-and-data
@@ -2101,6 +2099,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/detaching-cloudant-attachments-to-object-storage-with-serverless-functions-99b8c3c77925"
   strategies: 
     - differentiators
+    - working-with-json
   tags: 
     - OpenWhisk
     - JavaScript
@@ -2111,7 +2110,7 @@
   lead: lorna-mitchell
   features: 
     - openwhisk-and-data
-  headline: "With serverless platforms like OpenWhisk, database connections are simply packages of your favorite language-API combo."
+  headline: "With OpenWhisk, database connections are simply packages of your favorite language-API combo."
   links: 
     Compose Articles: "https://compose.com/articles/going-serverless-with-compose-redis/"
     GitHub: "https://github.com/lornajane/alexa-airport-codes"
@@ -2145,3 +2144,27 @@
     - working-with-json
   tags: 
     - Cloudant
+
+- title: "How to Get Logs with Node.js and the Compose API"
+  lead: dj-walker-morgan
+  headline: "Meet the logfile API. Locate deployments, find log files, and download them from Node.js."
+  links: 
+    Compose Articles: "https://www.compose.com/articles/how-to-get-logs-with-node-js-and-the-compose-api/"
+  strategies: 
+    - working-with-json
+  tags: 
+    - Nodejs
+
+- title: "Python and Compose - MongoDB, Elasticsearch and PostgreSQL"
+  lead: __
+  headline: "Kicking off the Pythonic leg of the Compose Grand Tour."
+  links: 
+    Compose Articles: "https://www.compose.com/articles/python-and-compose-mongodb-elasticsearch-and-postgresql/"
+  strategies: 
+    - compose-grand-tour
+  tags: 
+    - Python
+    - Compose
+    - MongoDB
+    - Elasticsearch
+    - PostgreSQL
