@@ -3,11 +3,11 @@ title:      Location Tracker
 headline:   Build Offline First apps that leverage the geospatial capabilities of IBM Cloudant.
 layout:     layout-featured-collection
 permalink:  location-tracker
-img:        location-tracker-client.png
-img-thumb:  location-tracker-client-thumb.png
+#img:        location-tracker-client.png
+#img-thumb:  location-tracker-client-thumb.png
 strategies: 
   - offline-first
-position:	1
+position:	2
 lead: mark-watson
 ---
 

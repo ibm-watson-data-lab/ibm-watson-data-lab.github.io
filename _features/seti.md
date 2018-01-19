@@ -3,8 +3,8 @@ title:      SETI
 headline:   The search for intelligent life, crunching data courtesy of the IBM Cloud.
 layout:     layout-featured-collection
 permalink:  seti
-img:        seti.png
-img-thumb:  seti_sm.png
+#img:        seti.png
+#img-thumb:  seti_sm.png
 featured:   true
 strategies: 
   - partners

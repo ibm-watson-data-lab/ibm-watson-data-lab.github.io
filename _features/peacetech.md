@@ -1,12 +1,16 @@
 ---
 title:      PeaceTech Lab
-headline:   
+headline:   Data science for local visibility into emerging economies.
 layout:     layout-featured-collection
 permalink:  peacetech
 featured:   true
 strategies: 
   - partners
 position:	2
+essentials:
+  GitHub:  		https://github.com/ibm-watson-data-lab/pixiedust_peacetech
+  PixieDust:	/pixiedust-for-jupyter
+  PixieApps:	https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html
 lead: david-taieb
 ---
 

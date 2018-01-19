@@ -63,7 +63,7 @@ Projects also appear on the home page, the "featured collections" pages that gro
 
 Using the example above, adding `watson-and-data` to the `features` array of this project automatically associates it to the watson-and-data featured collection on the site. (Note: not every project needs to be associated to a featured collection, just those that are naturally associated to each other.)
 
-To see all the featured collections, check out the _features folder, or visit [help](https://ibm-cds-labs.github.io/help).
+To see all the featured collections, check out the _features folder, or visit [help](https://ibm-watson-data-lab.github.io/help).
 
 ### Adding projects to strategies
 
@@ -71,7 +71,7 @@ The project in the example above is associated to the `differentiators` strategy
 
 In almost all cases, a project should be associated to a strategy. 
 
-To see all the strategies, check out the _strategies folder, or visit [help](https://ibm-cds-labs.github.io/help).
+To see all the strategies, check out the _strategies folder, or visit [help](https://ibm-watson-data-lab.github.io/help).
 
 
 ## More Info
