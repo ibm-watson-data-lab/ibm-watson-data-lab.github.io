@@ -2168,3 +2168,19 @@
     - MongoDB
     - Elasticsearch
     - PostgreSQL
+
+- title: "Sharing Variables Between Python & Node.js in Jupyter Notebooks"
+  lead: glynn-bird
+  features: 
+    - nodebooks
+  headline: "They live apart and speak different languages, but these variables hold common values."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/sharing-variables-between-python-node-js-in-jupyter-notebooks-682a79d4bdd9"
+    GitHub: "https://github.com/ibm-watson-data-lab/pixiedust_node"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - PixieDust
+    - Jupyter
+    - Nodejs
+    - Python
