@@ -1538,18 +1538,18 @@
     - Reactjs
 
 # This repo has not been created:
-- title: "Shopping list demo using React Native and Cloudant Sync [hybrid mobile app]"
-  lead: __
-  features: 
-    - shopping-list-demo
-  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-native-cloudant-sync"
-  strategies: 
-    - offline-first
-  tags: 
-    - Cloudant
-    - Reactjs
+#- title: "Shopping list demo using React Native and Cloudant Sync [hybrid mobile app]"
+#  lead: __
+#  features: 
+#    - shopping-list-demo
+#  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+#  links: 
+#    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-native-cloudant-sync"
+#  strategies: 
+#    - offline-first
+#  tags: 
+#    - Cloudant
+#    - Reactjs
 
 - title: "Shopping list demo using Ionic and PouchDB [hybrid mobile app]"
   lead: mark-watson
@@ -1565,18 +1565,18 @@
     - Ionic
 
 # This repo has not been created:
-- title: "Shopping list demo using Ionic and Cloudant Sync [hybrid mobile app]"
-  lead: __
-  features: 
-    - shopping-list-demo
-  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-ionic-cloudant-sync"
-  strategies: 
-    - offline-first
-  tags: 
-    - Cloudant
-    - Ionic
+#- title: "Shopping list demo using Ionic and Cloudant Sync [hybrid mobile app]"
+#  lead: __
+#  features: 
+#    - shopping-list-demo
+#  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+#  links: 
+#    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-ionic-cloudant-sync"
+#  strategies: 
+#    - offline-first
+#  tags: 
+#    - Cloudant
+#    - Ionic
 
 - title: "Shopping list demo using Cordova and PouchDB [hybrid mobile app]"
   lead: glynn-bird
@@ -1592,18 +1592,18 @@
     - Cordova
 
 # This repo has not been created:
-- title: "Shopping list demo using Cordova and Cloudant Sync [hybrid mobile app]"
-  lead: __
-  features: 
-    - shopping-list-demo
-  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-cordova-cloudant-sync"
-  strategies: 
-    - offline-first
-  tags: 
-    - Cloudant
-    - Cordova
+#- title: "Shopping list demo using Cordova and Cloudant Sync [hybrid mobile app]"
+#  lead: __
+#  features: 
+#    - shopping-list-demo
+#  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
+#  links: 
+#    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-cordova-cloudant-sync"
+#  strategies: 
+#    - offline-first
+#  tags: 
+#    - Cloudant
+#    - Cordova
 
 - title: "Shopping list demo using Swift and Cloudant Sync [native mobile app]"
   lead: mark-watson
