@@ -2184,3 +2184,35 @@
     - Jupyter
     - Nodejs
     - Python
+
+- title: "API Caching with Redis and Node.js"
+  lead: dj-walker-morgan
+  features: 
+    - __
+  headline: "Make your applications run quickly and predictably."
+  links: 
+    Compose Articles: "https://www.compose.com/articles/api-caching-with-redis-and-nodejs/"
+    GitHub: "https://github.com/compose-ex/redisapicache"
+  strategies: 
+    - working-with-json
+  tags: 
+    - Nodejs
+    - Compose
+    - Redis
+
+- title: "Python and Compose - Redis, RethinkDB, and RabbitMQ"
+  lead: __
+  features: 
+    - __
+  headline: "The second stop of the Compose Grand Tour in Python."
+  links: 
+    Compose Articles: "https://www.compose.com/articles/python-and-compose-redis-rethinkdb-and-rabbitmq/"
+    GitHub: "https://github.com/compose-grandtour/python/tree/master/example"
+  strategies: 
+    - compose-grand-tour
+  tags: 
+    - Python
+    - Compose
+    - Redis
+    - RethinkDB
+    - RabbitMQ

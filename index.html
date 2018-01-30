@@ -23,7 +23,7 @@ id:     home
     <div class="rail-heading col m1">_Topics</div>
     <ul class="col m11">
       {% for strategy in strategies %}
-      {% assign collections = site.features | where:"strategies",strategy.permalink %}
+      {% assign collections = site.features | where:"strategies",strategy.permalink | sort:"position" %}
       {% assign projects = site.data.projects | where:"strategies",strategy.permalink %}
       {% assign limit = strategy.limit %}
       <li class="strategy row">
