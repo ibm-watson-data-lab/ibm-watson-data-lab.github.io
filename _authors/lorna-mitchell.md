@@ -2,29 +2,30 @@
 title:      Lorna Mitchell
 permalink:  lorna-mitchell
 layout:     layout-authors
-headline:   FaaS is a blast.
+headline:   Incurable open source fanatic
 location:		UK
 specialties:
- - Microservices
- - SQL
- - Open Data
  - Databases
  - Open Source
  - Cloud Functions
- - CouchDB
+ - Microservices
+ - SQL
  - NoSQL
+ - CouchDB
+ - PostgreSQL
+ - RabbitMQ
 languages:
+ - PHP
  - NodeJS
  - Go
- - PHP
- - JavaScript
+ - Python
 links:
  - https://github.com/lornajane
- - https://www.linkedin.com/in/lornajane
  - https://medium.com/@lornajane
  - http://www.lornajane.net
  - https://stackoverflow.com/users/491024
  - https://twitter.com/lornajane
+ - https://www.linkedin.com/in/lornajane
  - lorna.mitchell@uk.ibm.com
 ---
 

@@ -1446,45 +1446,6 @@
     - Python
     - PixieDust
 
-- title: "Shopping list demo using vanilla JavaScript and PouchDB [Progressive Web App]"
-  lead: va-barbosa
-  features: 
-    - shopping-list-demo
-  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-vanillajs-pouchdb"
-  strategies: 
-    - offline-first
-  tags: 
-    - PouchDB
-    - JavaScript
-
-- title: "Shopping list demo using Polymer and PouchDB [Progressive Web App]"
-  lead: bradley-holt
-  features: 
-    - shopping-list-demo
-  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb"
-  strategies: 
-    - offline-first
-  tags: 
-    - PouchDB
-    - Polymer
-
-- title: "Shopping list demo using React and PouchDB [Progressive Web App]"
-  lead: raj-singh
-  features: 
-    - shopping-list-demo
-  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-pouchdb"
-  strategies: 
-    - offline-first
-  tags: 
-    - PouchDB
-    - Reactjs
-
 - title: "Shopping list demo using Preact and PouchDB [Progressive Web App]"
   lead: raj-singh
   features: 
@@ -1497,19 +1458,6 @@
   tags: 
     - PouchDB
     - Preactjs
-
-- title: "Shopping list demo using Vue.js and PouchDB [Progressive Web App]"
-  lead: glynn-bird
-  features: 
-    - shopping-list-demo
-  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-vuejs-pouchdb"
-  strategies: 
-    - offline-first
-  tags: 
-    - PouchDB
-    - Vuejs
 
 - title: "Shopping list demo using Ember.js and PouchDB [Progressive Web App]"
   lead: va-barbosa
@@ -1537,20 +1485,6 @@
     - PouchDB
     - Reactjs
 
-# This repo has not been created:
-#- title: "Shopping list demo using React Native and Cloudant Sync [hybrid mobile app]"
-#  lead: __
-#  features: 
-#    - shopping-list-demo
-#  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
-#  links: 
-#    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-native-cloudant-sync"
-#  strategies: 
-#    - offline-first
-#  tags: 
-#    - Cloudant
-#    - Reactjs
-
 - title: "Shopping list demo using Ionic and PouchDB [hybrid mobile app]"
   lead: mark-watson
   features: 
@@ -1564,20 +1498,6 @@
     - PouchDB
     - Ionic
 
-# This repo has not been created:
-#- title: "Shopping list demo using Ionic and Cloudant Sync [hybrid mobile app]"
-#  lead: __
-#  features: 
-#    - shopping-list-demo
-#  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
-#  links: 
-#    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-ionic-cloudant-sync"
-#  strategies: 
-#    - offline-first
-#  tags: 
-#    - Cloudant
-#    - Ionic
-
 - title: "Shopping list demo using Cordova and PouchDB [hybrid mobile app]"
   lead: glynn-bird
   features: 
@@ -1590,20 +1510,6 @@
   tags: 
     - PouchDB
     - Cordova
-
-# This repo has not been created:
-#- title: "Shopping list demo using Cordova and Cloudant Sync [hybrid mobile app]"
-#  lead: __
-#  features: 
-#    - shopping-list-demo
-#  headline: "A demo series featuring reference implementations using different stacks, but always featuring offline-first design."
-#  links: 
-#    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-cordova-cloudant-sync"
-#  strategies: 
-#    - offline-first
-#  tags: 
-#    - Cloudant
-#    - Cordova
 
 - title: "Shopping list demo using Swift and Cloudant Sync [native mobile app]"
   lead: mark-watson
@@ -2216,3 +2122,65 @@
     - Redis
     - RethinkDB
     - RabbitMQ
+
+- title: "Shopping list demo using Vue.js and PouchDB [Progressive Web App]"
+  lead: glynn-bird
+  features: 
+    - shopping-list-demo
+  headline: "Simple Offline First demo app, showing a shopping list built with Vue.js."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-vuejs-pouchdb"
+    Tutorial: "https://github.com/ibm-watson-data-lab/shopping-list-vuejs-pouchdb/blob/master/tutorial.md"
+    Live Demo: "https://ibm-watson-data-lab.github.io/shopping-list-vuejs-pouchdb/"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Vuejs
+
+- title: "Shopping list demo using React and PouchDB [Progressive Web App]"
+  lead: raj-singh
+  features: 
+    - shopping-list-demo
+  headline: "Offline first shopping list demo app using React."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-react-pouchdb"
+    Live Demo: "https://ibm-watson-data-lab.github.io/shopping-list-react-pouchdb/"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Reactjs
+
+- title: "Shopping list demo using Polymer and PouchDB [Progressive Web App]"
+  lead: bradley-holt
+  features: 
+    - shopping-list-demo
+  headline: "Offline First shopping list example app, built with Polymer."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb"
+    Youtube: "https://youtu.be/hsq0sUAM-1I"
+    Tutorial: "https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb/tree/master/tutorial"
+    Live Demo: "https://ibm-watson-data-lab.github.io/shopping-list-polymer-pouchdb/"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - Polymer
+
+- title: "Shopping list demo using vanilla JavaScript and PouchDB [Progressive Web App]"
+  lead: va-barbosa
+  features: 
+    - shopping-list-demo
+  headline: "Simple Offline First shopping list app, built with plain JavaScript."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/shopping-list-vanillajs-pouchdb"
+    Tutorial: "https://github.com/ibm-watson-data-lab/shopping-list-vanillajs-pouchdb/tree/master/tutorial"
+    Live Demo: "https://ibm-watson-data-lab.github.io/shopping-list-vanillajs-pouchdb/"
+  strategies: 
+    - offline-first
+  tags: 
+    - PouchDB
+    - JavaScript
+
+
