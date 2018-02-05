@@ -794,3 +794,7 @@ figcaption {
   font-weight: 100;
   color: #777677;
 }
+
+#pintar {
+  max-width: 250px;
+}
