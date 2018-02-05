@@ -1,5 +1,5 @@
 ---
-title:      IBM Cloud Functions + Data
+title:      Serverless + Data
 headline:   Powerful, distributed computing without worrying about servers or capacity planning.
 layout:     layout-featured-collection
 permalink:  openwhisk-and-data

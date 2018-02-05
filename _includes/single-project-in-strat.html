@@ -1,13 +1,6 @@
 {% assign project = include.project %}
 
 <h4>
-  <div class="strategy-project-links">
-    {% for strat in site.strategies %}
-      {% if project.strategies.first == strat.permalink %}
-        <span class="unheader">&#95;{{ strat.title }}</span>
-      {% endif %}
-    {% endfor %}
-  </div>
     <a href="{{ project.links.first[1] }}">{{ project.title }}</a>
     <br>
 
