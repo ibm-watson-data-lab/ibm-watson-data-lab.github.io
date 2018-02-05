@@ -787,9 +787,10 @@ figcaption {
 
 .unheader {
   font-weight: lighter;
+  color: #777677;
 }
 
 .unheader-link {
   font-weight: 100;
-  color: #D8D8D8;
+  color: #777677;
 }
