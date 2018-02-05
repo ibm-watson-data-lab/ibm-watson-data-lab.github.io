@@ -20,7 +20,7 @@
           </div>
           <div class="col m1"> </div>
           <div class="col m3 sidebar">
-            <div class="more-topics">
+            <div class="more-topics hide-on-small-only" id="pintar">
               <span></span>
               {% include coc-toc.html %}
             </div>
@@ -28,5 +28,13 @@
         </section>
     </main>
     {% include footer.html %} 
+    <script>
+      $(document).ready(function(){
+        $('#pintar').pushpin({
+          top: 180,
+          offset: 20
+        });
+      });
+    </script>
   </body>  
 </html>
