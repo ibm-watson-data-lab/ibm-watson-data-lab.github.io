@@ -4,13 +4,15 @@
   <div class="strategy-project-links">
     {% for strat in site.strategies %}
       {% if project.strategies.first == strat.permalink %}
-        <span class="unheader">&#95;{{ strat.title }}</span>
+        <a href="{{ strat.permalink }}" class="unheader" title="More on our '{{ strat.title }}' strategy">{{ strat.title }}</a>
+        {% break %}
       {% endif %}
     {% endfor %}
   </div>
     <a href="{{ project.links.first[1] }}">{{ project.title }}</a>
     <br>
 
+    {% comment %}
     {% if project.links.first[0] == 'GitHub' %}
       {% assign icon = 'github' %}
     {% elsif project.links.first[0] == 'Medium' %}
@@ -28,6 +30,8 @@
     {% endif %}
 
     <i class="fa fa-{{ icon }}" aria-hidden="true"></i>
+    {% endcomment %}
+
     <a href="{{ project.links.first[1] }}" class="strategy-project-link" title="'{{ project.title }}' on {{ project.links.first[0] }}">{{ project.links.first[0] }}</a>
     {% if project.links.size > 1 %}
       {% for lnk in project.links offset:1 %}
