@@ -465,6 +465,11 @@ section.row > .col {
   line-height: 24px;
 }
 
+.more-topics-coc {
+  margin-top: 42px;
+  padding-top: 42px;
+}
+
 .coc-page {
   border: none !important;
 }
@@ -793,4 +798,8 @@ figcaption {
 .unheader-link {
   font-weight: 100;
   color: #777677;
+}
+
+#pintar {
+  max-width: 250px;
 }

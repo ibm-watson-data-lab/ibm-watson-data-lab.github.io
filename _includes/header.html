@@ -8,11 +8,18 @@
     <ul class="right hide-on-med-and-down">
       <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Topics<i class="material-icons right">arrow_drop_down</i></a></li>
       {% include nav.html %}
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown3">About<i class="material-icons right">arrow_drop_down</i></a></li>
     </ul>
     <ul id="dropdown1" class="dropdown-content">
       {% for feature in site.strategies %}
         <li><a href="/{{ feature.permalink }}">{{feature.title}}</a></li>
       {% endfor %}
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+      <li><a href="{{ site.baseurl }}/about">Team</a></li>
+      <li><a href="{{ site.baseurl }}/about/#get-involved">Get Involved</a></li>
+      <li><a href="{{ site.baseurl }}/code-of-conduct">Code of Conduct</a></li>
+      <li><a href="{{ site.baseurl }}/support-conf-events">Event Support</a></li>
     </ul>
   </div>
 </nav>
@@ -20,9 +27,16 @@
 <ul class="side-nav" id="mobile-demo">
   {% include nav.html %}
   <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Topics<i class="material-icons right">arrow_drop_down</i></a></li>
+  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">About<i class="material-icons right">arrow_drop_down</i></a></li>
 </ul>
 <ul id="dropdown2" class="dropdown-content">
   {% for feature in site.strategies %}
     <li><a href="/{{ feature.permalink }}">{{feature.title}}</a></li>
   {% endfor %}
+</ul>
+<ul id="dropdown4" class="dropdown-content">
+      <li><a href="{{ site.baseurl }}/about">Team</a></li>
+      <li><a href="{{ site.baseurl }}/about/#get-involved">Get Involved</a></li>
+      <li><a href="{{ site.baseurl }}/code-of-conduct">Code of Conduct</a></li>
+      <li><a href="{{ site.baseurl }}/support-conf-events">Event Support</a></li>
 </ul>
