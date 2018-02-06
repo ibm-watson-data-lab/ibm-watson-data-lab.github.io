@@ -10,9 +10,6 @@
       <div class="container">
         <section class="row">
           <div class="col m8">
-            <div class="breadcrumb">
-              About /
-            </div>
             <h1>{{ page.title }}</h1>
             <div>
               {{ content }}
@@ -20,13 +17,22 @@
           </div>
           <div class="col m1"> </div>
           <div class="col m3 sidebar">
-            <div class="more-topics">
+            <div class="more-topics hide-on-small-only" id="pintar">
               <span></span>
               {% include coc-toc.html %}
             </div>
           </div>
         </section>
+      </div>
     </main>
-    {% include footer.html %} 
+    {% include footer.html %}
+    <script>
+      $(document).ready(function(){
+        $('#pintar').pushpin({
+          top: 160,
+          offset: 15
+        });
+      });
+    </script>
   </body>  
 </html>
