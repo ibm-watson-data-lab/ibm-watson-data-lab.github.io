@@ -5,27 +5,19 @@ layout:     layout-authors
 headline:   I build community.
 location:		Boston, MA
 specialties:
- - Offline
- - Search
- - SQL
- - NoSQL
- - ETL
- - UI
- - Mobile Web
+ - Events
+ - Community Building
+ - Offline First
+ - Front-End Web Development
+ - Editorial
 languages:
  - JavaScript
- - NodeJS
- - AngularJS
- - Java
- - Python
  - HTML
  - CSS
- - D3
 links:
  - https://github.com/terichadbourne
  - https://www.linkedin.com/in/terichadbourne
  - https://medium.com/@EventTeri
- - https://medium.com/@eventteri
  - https://stackoverflow.com/users/6562466
  - https://twitter.com/eventteri
  - tchadbou@us.ibm.com

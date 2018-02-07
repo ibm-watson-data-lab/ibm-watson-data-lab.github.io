@@ -291,7 +291,7 @@ a.latest-link:hover {
 
 .strategies-list .rail-heading,
 .strategy.row {
-  border-top: 1px solid #D8D8D8;
+  border-top: 2px solid #6d6d6d;
   margin-bottom: 0;
   padding: 80px 0;
 }
@@ -465,6 +465,11 @@ section.row > .col {
   line-height: 24px;
 }
 
+.more-topics-coc {
+  margin-top: 42px;
+  padding-top: 42px;
+}
+
 .coc-page {
   border: none !important;
 }
@@ -571,7 +576,7 @@ section.row > .col {
 }
 
 .strategy-collection-image.col {
-  background-color: #F3F3F3;
+  /*background-color: #F3F3F3;*/
   margin: 0;
   height: 100%;
   padding: 0;
@@ -783,4 +788,18 @@ figcaption {
 
 .warning {
   color: red;
+}
+
+.unheader {
+  font-weight: lighter;
+  color: #777677;
+}
+
+.unheader-link {
+  font-weight: 100;
+  color: #777677;
+}
+
+#pintar {
+  max-width: 250px;
 }

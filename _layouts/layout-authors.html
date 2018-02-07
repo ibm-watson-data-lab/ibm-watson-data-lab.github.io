@@ -49,7 +49,7 @@
             {% assign authors = site.authors %}
             {% if authors.size > 0 %}
             <div class="more-topics">
-              <span>Authors</span>
+              <span>Team</span>
               <ul>
                 {% for author in authors %}
                 <li class="m12 author-author-info {% if author.permalink == page.permalink %}not-active{% endif %}">
@@ -92,8 +92,6 @@
               <li>
                 <div class="row">
                   {% assign projs = site.data.projects | where:"features",collection.permalink %}
-                  <div class="col m5 strategy-collection-image">
-                  </div>
                   <div class="col m7 strategy-collection-info">
                     <h4><a href="/{{ collection.permalink }}">{{ collection.title }}</a></h4>
                     <p>{{ collection.headline }}</p>

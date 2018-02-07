@@ -1,18 +1,21 @@
 {
     "intro": {
         "Things": {
-            "Web,": "/simple-search",
-            "mobile,": "/offline-first-apps",
+            "Web,": "/watson-and-data",
+            "mobile,": "/shopping-list-demo",
             "and": null,
             "IoT": "/openwhisk-and-data",
             "apps": null
         },
         "we": {
+            "Abdullah,": "/abdullah-alger",
             "Adam,": "/adam-cox",
             "Brad,": "/brad-noble",
             "Bradley,": "/bradley-holt",
             "David,": "/david-taieb",
+            "Dj,": "/dj-walker-morgan",
             "Glynn,": "/glynn-bird",
+            "John,": "/john-oconnor",
             "Lorna,": "/lorna-mitchell",
             "Margriet,": "/margriet-groenendijk",
             "Mark,": "/mark-watson",
@@ -26,16 +29,18 @@
         },
         "made with": null,
         "data,": {
-            "Watson,": "/watson-and-data",
+            "Watson,": "/differentiators",
             "Notebooks,": "/notebooks-for-developers",
             "Cloud Functions,": "/openwhisk-and-data",
-            "Weather": "/weather-and-data",
-            "and": null,
+            "Machine Learning,": "/machine-learning-for-developers",
+            "Weather,": "/weather-and-data",
+            "JSON,": "/working-with-json",
+            "and with": null,
             "our partners,": {
                 "MapBox,": "/mapbox",
                 "SETI,": "/seti",
                 "and": null,
-                "PubNub,": "/pubnub"
+                "PeaceTech": "/peacetech"
             }
         },
         "so you can too": null

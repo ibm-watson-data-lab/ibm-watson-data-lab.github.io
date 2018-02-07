@@ -3,7 +3,7 @@ title:      Mike Broberg
 permalink:  mike-broberg
 layout:     layout-authors
 headline:   I edit everything.
-location:		United States - East
+location:		Boston, MA
 specialties:
  - Editorial
 languages:

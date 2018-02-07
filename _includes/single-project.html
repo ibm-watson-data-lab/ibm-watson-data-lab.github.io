@@ -1,26 +1,49 @@
 {% assign project = include.project %}
 
 <h4>
-  <a href="{{ project.links.first[1] }}">{{ project.title }}</a>
-</h4>
-<p>
-  {{ project.headline }}
-  {% if project.links.size > 1 %}
-  <span>
-    See also:
-    {% for link in project.links %}
-      {% if link[1] != project.links.first[1] %}
-      {% else %}
-        <a href="{{ link[1] }}" title="'{{ project.title }}' on {{ link[0] }}" class="link">{{ link[0] }} &rarr;</a>&nbsp;
+  <div class="strategy-project-links">
+    {% for strat in site.strategies %}
+      {% if project.strategies.first == strat.permalink %}
+        <a href="{{ strat.permalink }}" class="unheader" title="More on our '{{ strat.title }}' strategy">{{ strat.title }}</a>
+        {% break %}
       {% endif %}
     {% endfor %}
-  </span>
-  {% endif %}
+  </div>
+    <a href="{{ project.links.first[1] }}">{{ project.title }}</a>
+    <br>
+
+    {% comment %}
+    {% if project.links.first[0] == 'GitHub' %}
+      {% assign icon = 'github' %}
+    {% elsif project.links.first[0] == 'Medium' %}
+      {% assign icon = 'medium' %}
+    {% elsif project.links.first[0] == 'Compose Articles' %}
+      {% assign icon = 'cubes' %}
+    {% elsif project.links.first[0] == 'Notebook' %}
+      {% assign icon = 'book' %}
+    {% elsif project.links.first[0] == 'npm' %}
+      {% assign icon = 'code' %}
+    {% elsif project.links.first[0] == 'dataset' %}
+      {% assign icon = 'database' %}
+    {% else %}
+      {% assign icon = 'newspaper-o' %}
+    {% endif %}
+
+    <i class="fa fa-{{ icon }}" aria-hidden="true"></i>
+    {% endcomment %}
+
+    <a href="{{ project.links.first[1] }}" class="strategy-project-link" title="'{{ project.title }}' on {{ project.links.first[0] }}">{{ project.links.first[0] }}</a>
+    {% if project.links.size > 1 %}
+      {% for lnk in project.links offset:1 %}
+        <span class="unheader-link">&#124; <a href="{{ lnk[1] }}" class="strategy-project-link" title="'{{ project.title }}' on {{ lnk[0] }}">{{ lnk[0] }}</a> </span>
+      {% endfor %}
+    {% endif %}
+</h4>
+
+<p>
+  {{ project.headline }}
 </p>
-<div class="strategy-project-links">
-  <i class="fa fa-{{ project.links.first[0] | downcase }}" aria-hidden="true"></i>
-  <a href="{{ project.links.first[1] }}" class="strategy-project-link" title="'{{ project.title }}' on {{ project.links.first[0] }}">{{ project.links.first[0] }}</a>
-</div>
+
 <div class="strategy-project-tags">
   {% if project.tags %}
   <ul>
