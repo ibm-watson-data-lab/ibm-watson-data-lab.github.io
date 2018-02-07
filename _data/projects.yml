@@ -556,6 +556,7 @@
   links: 
     GitHub: "https://github.com/neighbourhoodie/voice-of-interconnect"
     Medium: "https://medium.com/ibm-watson-data-lab/voice-of-interconnect-112d5036dabc"
+    Medium: "https://medium.com/offline-camp/voice-of-interconnect-an-offline-first-mobile-web-app-efc0a4b6af21"
     demo: "https://voiceofinterconnect.com/"
   story: "Record your thoughts locally on your phone, and see aggregated sentiment about this IBM trade show on the web."
   strategies: 
