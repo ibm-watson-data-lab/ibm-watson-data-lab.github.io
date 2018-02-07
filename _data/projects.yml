@@ -559,8 +559,8 @@
     demo: "https://voiceofinterconnect.com/"
   story: "Record your thoughts locally on your phone, and see aggregated sentiment about this IBM trade show on the web."
   strategies: 
+    - offline-first
     - differentiators
-    - offlineFirst
     - partners
   tags: 
     - Cloudant

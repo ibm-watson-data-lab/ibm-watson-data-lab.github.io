@@ -30,6 +30,15 @@
   $.each({on: 'sub', off: 'unsub', trigger: 'pub'}, function (k, v) { $[v] = function () { o[k].apply(o, arguments) } })
 </script>
 
+<script>
+      $(document).ready(function(){
+        $('#pintar').pushpin({
+          top: 0,
+          offset: 100
+        });
+      });
+</script>
+
 {% if site.owpackageurl %}
 <script>
   var owpackageurl = '{{ site.owpackageurl }}'

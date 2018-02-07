@@ -6,22 +6,22 @@
       {% include google-tag-manager-body.html %}
     {% endif %}
     {% include header.html %}
-    <main class="coc-page">
-      <div class="container">
-        <section class="row">
-          <div class="col m8">
-            <h3>{{ page.title }}</h3>
+    <div class="container">
+      <section class="row">
+          <main class="coc-page">
+            <div class="col m8">
             {{ content }}
-          </div>
+            </div>
+          </main>
           <div class="col m1"> </div>
           <div class="col m3 sidebar">
             <span></span>
             {% include coc-toc.html %}
             {% comment %} See script in footer.html: uses Materialize's pushpin helper function. {% endcomment %}
           </div>
-        </section>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
     {% include footer.html %}
-  </body>  
+  </body>
 </html>
