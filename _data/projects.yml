@@ -1676,8 +1676,6 @@
 
 - title: "Doing Moar Together"
   lead: maureen-mcelaney
-  features: 
-    - shopping-list-demo
   headline: "Using Agile Methodologies to produce reference implementations for Progressive Web Apps."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/doing-moar-together-184678b9f864"
@@ -2080,6 +2078,7 @@
     - Nodejs
 
 - title: "Python and Compose - MongoDB, Elasticsearch and PostgreSQL"
+  date: 2018-01-17
   lead: __
   headline: "Kicking off the Pythonic leg of the Compose Grand Tour."
   links: 
@@ -2187,6 +2186,7 @@
     - Polymer
 
 - title: "Shopping list demo using vanilla JavaScript and PouchDB [Progressive Web App]"
+  date: 2018-01-23
   lead: va-barbosa
   features: 
     - shopping-list-demo
