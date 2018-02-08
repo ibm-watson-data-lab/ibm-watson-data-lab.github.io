@@ -563,6 +563,7 @@
     - offline-first
     - differentiators
     - partners
+  pin-strat: offline-first
   tags: 
     - Cloudant
     - Hoodie
@@ -737,6 +738,7 @@
   story: "A Progressive Web App is a mobile app built on the web platform that lives at a URL, can be indexed by search engines, and can be linked to from anywhere else on the web. Learn how you can add offline sync to Progressive Web Apps using Apache CouchDB, Hoodie, and PouchDB."
   strategies: 
     - offline-first
+  pin-strat: offline-first
   tags: 
     - Cloudant
     - CouchDB
@@ -1446,6 +1448,21 @@
     - Jupyter
     - Python
     - PixieDust
+
+- title: "Offline First Sample Implementations"
+  lead: bradley-holt
+  features: 
+    - shopping-list-demo
+  headline: "The main page for all 12 versions of our shopping list app, each in a different stack."
+  links: 
+    GitHub: "https://ibm-watson-data-lab.github.io/shopping-list/"
+  strategies: 
+    - offline-first
+  pin-strat: offline-first
+  pin-collect: shopping-list-demo
+  tags: 
+    - JavaScript
+    - "Progressive Web App"
 
 - title: "Shopping list demo using Preact and PouchDB [Progressive Web App]"
   lead: raj-singh
@@ -2183,5 +2200,4 @@
   tags: 
     - PouchDB
     - JavaScript
-
 

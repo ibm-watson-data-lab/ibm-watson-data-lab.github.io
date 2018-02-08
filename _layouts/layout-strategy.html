@@ -75,16 +75,29 @@
 
         <section id="strategy-projects" class="row">
           <div class="col m12">
-            {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
+            {% assign projects = site.data.projects | where:"strategies",page.permalink %}
             {% if projects.size > 0 %}
-            <h3>Projects</h3>
-            <ul>
+
               {% for proj in projects %}
-              <li class="m12 strategy-project-info">
-                {% include single-project-in-strat.html project=proj %}
-              </li>
+                {% if proj.pin-strat == page.permalink %}
+                  {% assign projects-sorted = projects | sort:"pin-strat","last" %}
+                  {% break %}
+                  {% comment %}
+                    Here, we can "showcase" individual projects on a strategy page by promoting them to the top of the list. "last" is a special sort parameter that tells it how to sort nil values; see https://www.siteleaf.com/blog/advanced-liquid-sort/ . Pinning something has the unfortunate side effect of losing the natural ordering of the projects.
+                  {% endcomment %}
+                {% else %}
+                  {% assign projects-sorted = projects | reverse %}
+                {% endif %}
               {% endfor %}
-            </ul>
+              <h3>Projects</h3>
+              <ul>
+                {% for proj in projects-sorted %}
+                <li class="m12 strategy-project-info">
+                  {% include single-project-in-strat.html project=proj %}
+                </li>
+                {% endfor %}
+              </ul>
+
             {% endif %}
           </div>
         </section>
