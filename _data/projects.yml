@@ -556,6 +556,7 @@
   links: 
     GitHub: "https://github.com/neighbourhoodie/voice-of-interconnect"
     Medium: "https://medium.com/ibm-watson-data-lab/voice-of-interconnect-112d5036dabc"
+    Medium: "https://medium.com/offline-camp/voice-of-interconnect-an-offline-first-mobile-web-app-efc0a4b6af21"
     demo: "https://voiceofinterconnect.com/"
   story: "Record your thoughts locally on your phone, and see aggregated sentiment about this IBM trade show on the web."
   strategies: 
@@ -699,7 +700,7 @@
 - title: "Using Serverless Infrastructure to Build a Large-Scale Petition System"
   lead: glynn-bird
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "An example web app using OpenWhisk and Cloudant."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/online-petition"
@@ -715,7 +716,7 @@
 - title: "Adding custom Alexa skills with OpenWhisk and Cloudant"
   lead: glynn-bird
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Set up your Alexa skill to cost you less and scale well."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/add-custom-alexa-skills-with-openwhisk-and-cloudant-4e8aa0c3e525"
@@ -787,7 +788,7 @@
 - title: "Create a Serverless, Watson-Powered Chatbot for Your Business"
   lead: glynn-bird
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Add a conversation widget to your web page that handles questions for you."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/concierge"
@@ -1008,7 +1009,7 @@
 - title: "Add Redis To Your Serverless Application"
   lead: lorna-mitchell
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Use an in-memory datastore for a little light persistence."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/add-redis-to-your-serverless-application-e22381123d9"
@@ -1038,7 +1039,7 @@
 - title: "Trigger Periodic OpenWhisk Actions"
   lead: lorna-mitchell
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Distributed cron jobs using the Alarm package."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/trigger-periodic-openwhisk-actions-b6b54127d5e2"
@@ -1082,7 +1083,7 @@
 - title: "Serverless Autocomplete"
   lead: glynn-bird
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Which way of deploying an autocomplete service is right for you?"
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/serverless-autocomplete"
@@ -1098,7 +1099,7 @@
 - title: "Custom Cloudant Replication"
   lead: glynn-bird
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
     - loading-json
   headline: "Emulating filtered replication using the changes feed and OpenWhisk functions."
   links: 
@@ -1210,7 +1211,7 @@
 - title: "Custom Indexers for Cloudant"
   lead: glynn-bird
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Using JavaScript and Redis for problems that don’t fit Cloudant’s indexing engines."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/custom-indexes"
@@ -1253,7 +1254,7 @@
 - title: "Deploy Your Cloud Functions with Bluemix DevOps"
   lead: lorna-mitchell
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Collaborate on GitHub, and automatically deploy when code hits master."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/deployable-cloud-function"
@@ -1268,7 +1269,7 @@
   lead: glynn-bird
   features: 
     - offline-first
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "The CouchDB one-database-per-user pattern, now with less infrastructure."
   links: 
     GitHub: "https://github.com/glynnbird/envoy-serverless"
@@ -1790,7 +1791,7 @@
 - title: "Tracking Your Cryptocurrency Portfolio With Serverless Functions"
   lead: glynn-bird
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Monitor your Bitcoin hoard with IBM Cloud Functions writing data to Cloudant."
   links: 
     GitHub: "https://github.com/glynnbird/markettrader"
@@ -1890,7 +1891,7 @@
 - title: "Making a Cloudant/Elasticsearch Hybrid"
   lead: glynn-bird
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Using serverless functions to move Cloudant data as it changes."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/cloudant-es-bridge"
@@ -1907,7 +1908,7 @@
 - title: "Building a Serverless Data Pipeline"
   lead: lorna-mitchell
   features:
-    - openwhisk-and-data
+    - serverless-and-data
     - loading-json
   headline: "Data transformation is a great use case for serverless technology."
   links:
@@ -1925,7 +1926,7 @@
 - title: "Making a Cloudant/Elasticsearch hybrid"
   lead: glynn-bird
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Using serverless functions to move Cloudant data as it changes."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/cloudant-es-bridge"
@@ -1998,7 +1999,7 @@
 - title: "Detaching Cloudant Attachments to Object Storage with Serverless Functions"
   lead: glynn-bird
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "Build a pipeline to move Cloudant attachments to object storage using IBM Cloud Functions."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/detacher"
@@ -2015,7 +2016,7 @@
 - title: "Going Serverless with IBM Cloud Functions and Compose Redis"
   lead: lorna-mitchell
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "With OpenWhisk, database connections are simply packages of your favorite language-API combo."
   links: 
     Compose Articles: "https://compose.com/articles/going-serverless-with-compose-redis/"
@@ -2032,7 +2033,7 @@
 - title: "Three Great Serverless Use Cases"
   lead: lorna-mitchell
   features: 
-    - openwhisk-and-data
+    - serverless-and-data
   headline: "The design patterns for serverless functions that are here to stay."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/three-great-serverless-use-cases-cd22d44aeb29"
