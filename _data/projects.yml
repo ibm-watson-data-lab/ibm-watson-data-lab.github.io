@@ -502,7 +502,7 @@
     - Etcd
     - Compose
 
-- title: "Cloudant and Node.js Made Simple with the silverlining Library"
+- title: "Cloudant and Node.js Made Simple with the cloudant-quickstart (formerly silverlining) Library"
   lead: glynn-bird
   headline: "A library for new users."
   links: 
@@ -745,7 +745,7 @@
 
 - title: "Analysing Cloudant JSON in RunKit JavaScript Notebooks"
   lead: glynn-bird
-  headline: "Using the simplified silverlining npm module."
+  headline: "Using the simplified cloudant-quickstart (formerly silverlining) npm module."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/analysing-cloudant-json-in-runkit-javascript-notebooks-387be1f5500b"
   strategies: 
