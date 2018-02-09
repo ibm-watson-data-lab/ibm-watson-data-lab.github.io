@@ -104,7 +104,6 @@
     - weather-and-data
     - pixiedust-for-jupyter
   headline: "Make your own forecast in a Python notebook."
-  img: "https://developer.ibm.com/wp-content/uploads/sites/85/2016/10/output_10_0.png"
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/python-notebooks"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/"
@@ -120,11 +119,9 @@
   features: 
     - watson-and-data
   headline: "Unlock the hidden sentiments of redditors."
-  img: img/reddit-ama-arch.png
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/reddit-sentiment-analysis"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/06/23/sentiment-analysis-of-reddit-amas-using-dashdb-and-r/"
-  story: "Perform sentiment analysis on a Reddit Ask Me Anything event and analyze the output."
   strategies: 
     - differentiators
     - notebooks-for-developers
@@ -136,18 +133,15 @@
     - Python
     - R
     - "Watson Tone Analyzer"
-  thumb: img/reddit-ama-arch-thumb.png
 
 - title: "Predict Flight Delays with Apache Spark"
   lead: va-barbosa
   features: 
     - pixiedust-for-jupyter
   headline: "Know about delayed flights before they happen."
-  img: img/flight-predict.png
   links: 
     Notebook: "https://github.com/ibm-watson-data-lab/--deprecated--simple-data-pipe-connector-flightstats/blob/master/notebook/Flight%20Predict%20with%20Pixiedust.ipynb"
     Medium: "https://medium.com/ibm-watson-data-lab/flightpredict-ii-the-sequel-fb613afd6e91"
-  story: "We can't guarantee you'll never miss another flight, but we can guarantee that you'll train your data and visualize predictions all in one notebook."
   strategies: 
     - differentiators
     - notebooks-for-developers
@@ -158,14 +152,12 @@
     - Spark
     - "Jupyter Notebook"
     - PixieDust
-  thumb: img/flight-predict-thumb.png
 
 - title: "Simple Search Service"
   lead: glynn-bird
   features: 
     - simple-search
   headline: "Create a faceted search engine from a CSV, exposing an API you can use to bring search into your own apps."
-  img: "https://camo.githubusercontent.com/4de163a76abc4ef0fbd69e94d2cbfe1d7dadb416/68747470733a2f2f646576656c6f7065722e69626d2e636f6d2f636c6f75646461746173657276696365732f77702d636f6e74656e742f75706c6f6164732f73697465732f34372f323031362f30312f746d705f73696d706c655f7365617263685f736b657463682e6a7067"
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/simple-search-service"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/07/11/reintroducing-the-simple-search-service/"
@@ -194,49 +186,40 @@
   features: 
     - food-tracker
   headline: "Replace Apple's local file storage with Cloudant's iOS library."
-  img: img/cloudant-foodtracker.png
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/cloudant-food-tracker/tree/master/part-1"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/01/25/start-developing-ios-apps-swift-with-cloud-sync-part-1-the-datastore/"
-  story: "Transform Apple's FoodTracker example into a true offline-first app that stores data locally and synchronizes to the cloud."
   strategies: 
     - offline-first
   tags: 
     - Cloudant
     - "iOS Swift"
-  thumb: img/cloudant-foodtracker-thumb.png
 
 - title: "Cloudant FoodTracker Part 2: Sync to the Cloud"
   features: 
     - food-tracker
   headline: "Enable sync for local data on an iOS device to cloud copies."
-  img: img/cloudant-foodtracker.png
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/cloudant-food-tracker/tree/master/part-2"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/06/08/offline-first-ios-apps-part-2-cloud-sync/"
-  story: "Part 2 focuses on remote sync."
   strategies: 
     - offline-first
   tags: 
     - Cloudant
     - "iOS Swift"
-  thumb: img/cloudant-foodtracker-thumb.png
 
 - title: "Cloudant FoodTracker Part 3: User Interface"
   features: 
     - food-tracker
   headline: "Improve UI elements to reflect the data sync process."
-  img: img/cloudant-foodtracker.png
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/cloudant-food-tracker/tree/master/part-3"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/06/30/offline-first-ios-apps-with-swift-part-3-user-interface/"
-  story: "Part 3 focuses on UI features that reflect data sync."
   strategies: 
     - offline-first
   tags: 
     - Cloudant
     - "iOS Swift"
-  thumb: img/cloudant-foodtracker-thumb.png
 
 - title: "Location Tracker Swift Client [1]"
   lead: mark-watson
@@ -300,7 +283,6 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/rethinkdb-questions"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/13/real-time-qa-app-with-rethinkdb/"
-  story: "Realtime Q&A app using RethinkDB and changefeeds."
   strategies: 
     - working-with-json
   tags: 
@@ -315,7 +297,6 @@
   links: 
     GitHub: "https://github.com/cloudant/nodejs-cloudant"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/23/cloudant-nodejs-library-v1dot5/"
-  story: "Official Cloudant-Node.js client library."
   strategies: 
     - working-with-json
   tags: 
@@ -330,7 +311,6 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/couchdb-db-transform"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/28/couchdb-transform-service/"
-  story: "Utility that loads documents from one CouchDB database, transforms them, and inserts them into another database."
   strategies: 
     - working-with-json
   tags: 
@@ -343,7 +323,6 @@
   headline: "Curated data, open and free for you to use."
   links: 
     dataset: "https://github.com/ibm-watson-data-lab/open-data"
-  story: "Open data sets hosted by the WDP dev advocates."
   strategies: 
     - partners
   tags: 
@@ -358,7 +337,6 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/seven-days"
     developerWorks: "https://developer.ibm.com/clouddataservices/seven-databases-in-seven-days/"
-  story: "Companion GitHub repository for the \"Seven Databases in Seven Days\" blog series."
   strategies: 
     - working-with-json
   tags: 
@@ -390,7 +368,6 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/openobjectstore"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/12/07/build-a-simple-data-portal-with-python-and-ibm-object-storage/"
-  story: "A Python Flask web app for serving files from IBM Object Storage."
   strategies: 
     - __
   tags: 
@@ -403,7 +380,6 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/guestbook"
     Medium: "https://medium.com/ibm-watson-data-lab/deploy-your-php-application-to-bluemix-a7553fddf412"
-  story: "A simple PHP/CouchDB guestbook app that uses RabbitMQ to add asynchronous webhook notifications of new entries."
   strategies: 
     - working-with-json
   tags: 
@@ -422,7 +398,6 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/couchdbimporter"
     Medium: "https://medium.com/ibm-watson-data-lab/installing-web-apps-with-electron-7a8fa1b12744"
-  story: "Unlike the raw couchimport library, this app also infers data types from a preview of the file, turning booleans and numbers into their native JavaScript data types on import."
   strategies: 
     - working-with-json
   tags: 
@@ -438,7 +413,6 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/simple-search-service-sync"
     Medium: "https://medium.com/ibm-watson-data-lab/database-changes-and-search-indexes-that-go-together-like-wine-cheese-dd67f08067fe"
-  story: "Continuously synchronize the index of a Simple-Search-Service instance with the content of a CouchDB/Cloudant database."
   strategies: 
     - working-with-json
   tags: 
@@ -455,7 +429,6 @@
     GitHub: "https://github.com/glynnbird/nosqlimport"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/19/import-json-nosqlimport/"
     npm: "https://www.npmjs.com/package/nosqlimport"
-  story: "Read data from a text file, transform it, and write JSON to CouchDB, Cloudant, and ElasticSearch."
   strategies: 
     - working-with-json
   tags: 
@@ -473,7 +446,6 @@
     GitHub: "https://github.com/glynnbird/couchbackup"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/03/22/simple-couchdb-and-cloudant-backup/"
     npm: "https://www.npmjs.com/package/couchbackup"
-  story: "Just dump it to a text file. Do what you like from there."
   strategies: 
     - working-with-json
   tags: 
@@ -500,7 +472,6 @@
     GitHub: "https://github.com/ibm-watson-data-lab/silverlining"
     Medium: "https://medium.com/ibm-watson-data-lab/cloudant-and-node-js-made-simple-with-the-silverlining-library-7deb7601448c"
     npm: "https://www.npmjs.com/package/silverlining"
-  story: "A Node.js library that provides a simple query interface for Cloudant and abstracts advanced MapReduce & indexing features."
   strategies: 
     - working-with-json
   tags: 
@@ -543,18 +514,15 @@
 - title: "Voice of InterConnect"
   lead: bradley-holt
   headline: "Proof that Progressive Web Apps can do some serious analysis."
-  img: img/voice-of-interconnect.png
   links: 
     GitHub: "https://github.com/neighbourhoodie/voice-of-interconnect"
     Medium: "https://medium.com/ibm-watson-data-lab/voice-of-interconnect-112d5036dabc"
     Medium: "https://medium.com/offline-camp/voice-of-interconnect-an-offline-first-mobile-web-app-efc0a4b6af21"
     demo: "https://voiceofinterconnect.com/"
-  story: "Record your thoughts locally on your phone, and see aggregated sentiment about this IBM trade show on the web."
   strategies: 
     - offline-first
     - differentiators
     - partners
-  pin-strat: offline-first
   tags: 
     - Cloudant
     - Hoodie
@@ -562,18 +530,15 @@
     - PouchDB
     - "Watson Speech to Text"
     - "Watson Natural Language Understanding"
-  thumb: img/voice-of-interconnect-thumb.png
 
 - title: "Adding a Recommendation Feature to Your App Using a Graph Database"
   lead: mark-watson
   features: 
     - watson-and-data
   headline: "Graph user interactions for an even smarter chatbot."
-  img: img/graph-chatbot.png
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-graph"
     Medium: "https://medium.freecodecamp.com/have-you-had-the-talk-with-your-chatbot-about-graph-data-structures-3aaf5c3ae52c"
-  story: "In which we suggest new recipies to the user, based on similar interaction from others."
   strategies: 
     - differentiators
   tags: 
@@ -582,18 +547,15 @@
     - Spoonacular
     - Tinkerpop
     - Nodejs
-  thumb: img/graph-chatbot-thumb.png
 
 - title: "Persisting Data for a Smarter Chatbot"
   lead: mark-watson
   features: 
     - watson-and-data
   headline: "You'll need more than just log data to take your chatbot to the next level."
-  img: img/smarter-chatbot.jpg
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant"
     Medium: "https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2"
-  story: "In which we use data services to provide a more personal chatbot experience, save money by reducing third-party API calls, and perform analysis on past chatbot conversations."
   strategies: 
     - differentiators
   tags: 
@@ -601,7 +563,6 @@
     - Slack
     - Spoonacular
     - Cloudant
-  thumb: img/smarter-chatbot-thumb.jpg
 
 - title: "Realtime Infrastructure Made Simple"
   headline: "Live event updates for your web app with our Simple Notification Service."
@@ -643,7 +604,6 @@
   links: 
     Notebook: "https://apsportal.ibm.com/analytics/notebooks/4fda5830-7a16-4334-aaa6-dd37933d8712/view?access_token=97ae72837375b91ff2460a18179a0678d872ad0da8ae1f5fa2c3fcfc1f3a342a"
     Medium: "https://medium.com/ibm-watson-data-lab/mapping-for-data-science-with-pixiedust-and-mapbox-b5aa1d9532b9"
-  story: "Nearly all data has a spatial component, and if you're not familiar with some basic mapping tools, you're not doing good data science."
   strategies: 
     - notebooks-for-developers
     - partners
@@ -658,11 +618,9 @@
   features: 
     - pixiedust-for-jupyter
   headline: "Notebooks aren't just for Data Scientists."
-  img: img/pixiedust-logo-thumb.png
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/i-am-not-a-data-scientist-efe7ca6ceba2"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/10/11/pixiedust-magic-for-python-notebook/"
-  story: "Now, people with varied skills and skill levels—even people like me—can use and share notebooks, and collaborate."
   strategies: 
     - notebooks-for-developers
   tags: 
@@ -679,7 +637,6 @@
     GitHub: "https://github.com/ibm-watson-data-lab/cognitive-event-finder/"
     Medium: "https://medium.com/ibm-watson-data-lab/the-most-popular-search-term-at-sxsw-according-to-our-chatbot-9f4a47a33406"
     Notebook: "http://ibm.biz/sxswappmetrics"
-  story: "In this article, I'll look at how we analyzed conversations with our bot. I'll also provide a Jupyter notebook that Raj and I worked on, which hopefully gives you ideas on how to connect application logs to Apache Spark™ for back-end analytics. The notebook takes you through data access, all the way to visualizing results."
   strategies: 
     - notebooks-for-developers
   tags: 
@@ -691,15 +648,12 @@
 
 - title: "Using Serverless Infrastructure to Build a Large-Scale Petition System"
   lead: glynn-bird
-  features: 
-    - serverless-and-data
   headline: "An example web app using OpenWhisk and Cloudant."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/online-petition"
     Medium: "https://medium.com/ibm-watson-data-lab/how-i-used-serverless-infrastructure-to-build-a-large-scale-petition-system-2779161c4c68"
-  story: "Serverless means that instead of having fixed numbers of dedicated machines sitting in data centres waiting for traffic to come in, we can supply the code that handles a single piece of work (e.g. the submission of a web form) to an application framework like IBM OpenWhisk and let it scale out the computing power required. If no traffic arrives, you don't pay anything — no fixed costs!"
   strategies: 
-    - ibm-and-data
+    - serverless-and-data
   tags: 
     - OpenWhisk
     - Cloudant
@@ -707,14 +661,11 @@
 
 - title: "Adding custom Alexa skills with OpenWhisk and Cloudant"
   lead: glynn-bird
-  features: 
-    - serverless-and-data
   headline: "Set up your Alexa skill to cost you less and scale well."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/add-custom-alexa-skills-with-openwhisk-and-cloudant-4e8aa0c3e525"
-  story: "Alexa, the humanoid persona of the Amazon Echo and Echo Dot conversation appliances, can be programmatically extended by adding new skills to your device. There is an app store for such skills, but even if you want to add functionality to your own Dot, then you can use the same APIs without publishing your code to the app store."
   strategies: 
-    - ibm-and-data
+    - serverless-and-data
   tags: 
     - OpenWhisk
     - Alexa
@@ -726,10 +677,8 @@
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/offline-sync-for-progressive-web-apps-ccab6bf6db17"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/11/08/building-offline-first-progressive-web-apps/"
-  story: "A Progressive Web App is a mobile app built on the web platform that lives at a URL, can be indexed by search engines, and can be linked to from anywhere else on the web. Learn how you can add offline sync to Progressive Web Apps using Apache CouchDB, Hoodie, and PouchDB."
   strategies: 
     - offline-first
-  pin-strat: offline-first
   tags: 
     - Cloudant
     - CouchDB
@@ -780,8 +729,6 @@
 
 - title: "Create a Serverless, Watson-Powered Chatbot for Your Business"
   lead: glynn-bird
-  features: 
-    - serverless-and-data
   headline: "Add a conversation widget to your web page that handles questions for you."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/concierge"
@@ -789,7 +736,7 @@
     demo: "https://glynnbird.github.io/pretendhotel/"
     nmp: "https://www.npmjs.com/package/concierge-chatbot"
   strategies: 
-    - differentiators
+    - serverless-and-data
   tags: 
     - OpenWhisk
     - "Watson Conversation"
@@ -875,14 +822,12 @@
   features: 
     - mapbox
   headline: "A smarter conference event recommendation system using Watson services and Mapbox."
-  img: "https://cdn-images-1.medium.com/max/1600/1*AMK5DT-y93B3IwCNpSGFZQ.gif"
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/cognitive-event-finder"
     Medium: "https://medium.com/ibm-watson-data-lab/navigating-sxsw-via-cognitive-chatbot-28a2e1f7a456"
-  story: "We demonstrated a chat-driven app to help event attendees find interesting events at SXSW. We call it Cognitive Event Finder."
   strategies: 
     - partners
-    - ibm-and-data
+    - differentiators
   tags: 
     - Cloudant
     - Chatbots
@@ -1001,14 +946,13 @@
 
 - title: "Add Redis To Your Serverless Application"
   lead: lorna-mitchell
-  features: 
-    - serverless-and-data
+  features:
+    - serverless-and-redis
   headline: "Use an in-memory datastore for a little light persistence."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/add-redis-to-your-serverless-application-e22381123d9"
-  story: "Voice assistants are fun but they can seem rather idiotic when they can't remember what they just said. See asynchronous JavaScript used to connect to Redis from an IBM Cloud Function action and give Amazon's Alexa a \"brain.\""
   strategies: 
-    - ibm-and-data
+    - serverless-and-data
   tags: 
     - OpenWhisk
     - Alexa
@@ -1031,13 +975,11 @@
 
 - title: "Trigger Periodic OpenWhisk Actions"
   lead: lorna-mitchell
-  features: 
-    - serverless-and-data
   headline: "Distributed cron jobs using the Alarm package."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/trigger-periodic-openwhisk-actions-b6b54127d5e2"
   strategies: 
-    - differentiators
+    - serverless-and-data
   tags: 
     - OpenWhisk
 
@@ -1075,15 +1017,13 @@
 
 - title: "Serverless Autocomplete"
   lead: glynn-bird
-  features: 
-    - serverless-and-data
   headline: "Which way of deploying an autocomplete service is right for you?"
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/serverless-autocomplete"
     Medium: "https://medium.com/ibm-watson-data-lab/serverless-autocomplete-f7d64d89a230"
     npm: "https://www.npmjs.com/package/serverless-autocomplete"
   strategies: 
-    - differentiators
+    - serverless-and-data
     - working-with-json
   tags: 
     - OpenWhisk
@@ -1092,14 +1032,13 @@
 - title: "Custom Cloudant Replication"
   lead: glynn-bird
   features: 
-    - serverless-and-data
     - loading-json
   headline: "Emulating filtered replication using the changes feed and OpenWhisk functions."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/custom-replication"
     Medium: "https://medium.com/ibm-watson-data-lab/custom-cloudant-replication-d0753284d834"
   strategies: 
-    - differentiators
+    - serverless-and-data
     - working-with-json
   tags: 
     - Cloudant
@@ -1109,14 +1048,13 @@
 - title: "Using Watson Machine Learning to Predict a Post's Potential"
   lead: __
   features: 
-    - machine-learning-for-developers
     - pixiedust-for-jupyter
   headline: "Gaze into the Reddit crystal ball."
   links: 
     Notebook: "https://github.com/ibm-watson-data-lab/reddit-crystal-ball-notebook/blob/master/Reddit%20Crystal%20Ball.ipynb"
     Medium: "https://medium.com/ibm-watson-data-lab/gaze-into-my-reddit-crystal-ball-19813a21e5b6"
   strategies: 
-    - differentiators
+    - machine-learning-for-developers
     - notebooks-for-developers
   tags: 
     - PixieDust
@@ -1204,12 +1142,13 @@
 - title: "Custom Indexers for Cloudant"
   lead: glynn-bird
   features: 
-    - serverless-and-data
+    - serverless-and-redis
   headline: "Using JavaScript and Redis for problems that don’t fit Cloudant’s indexing engines."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/custom-indexes"
     Medium: "https://medium.com/ibm-watson-data-lab/custom-indexers-for-cloudant-6b7e65186db1"
   strategies: 
+    - serverless-and-data
     - working-with-json
   tags: 
     - Cloudant
@@ -1246,14 +1185,12 @@
 
 - title: "Deploy Your Cloud Functions with Bluemix DevOps"
   lead: lorna-mitchell
-  features: 
-    - serverless-and-data
   headline: "Collaborate on GitHub, and automatically deploy when code hits master."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/deployable-cloud-function"
     Medium: "https://medium.com/ibm-watson-data-lab/deploy-your-cloud-functions-with-bluemix-devops-ef8dfdb1a603"
   strategies: 
-    - differentiators
+    - serverless-and-data
   tags: 
     - OpenWhisk
     - JavaScript
@@ -1262,14 +1199,13 @@
   lead: glynn-bird
   features: 
     - offline-first
-    - serverless-and-data
   headline: "The CouchDB one-database-per-user pattern, now with less infrastructure."
   links: 
     GitHub: "https://github.com/glynnbird/envoy-serverless"
     Medium: "https://medium.com/ibm-watson-data-lab/cloudant-envoy-serverless-edition-d68b08d536d7"
   strategies: 
     - offline-first
-    - differentiators
+    - serverless-and-data
   tags: 
     - Cloudant
     - JavaScript
@@ -1449,8 +1385,6 @@
     GitHub: "https://ibm-watson-data-lab.github.io/shopping-list/"
   strategies: 
     - offline-first
-  pin-strat: offline-first
-  pin-collect: shopping-list-demo
   tags: 
     - JavaScript
     - "Progressive Web App"
@@ -1562,13 +1496,12 @@
 - title: "Better Decision Making with Watson Machine Learning and Compose"
   lead: abdullah-alger
   features: 
-    - machine-learning-for-developers
   headline: "You no longer need to be a stellar data scientist or machine learning guru."
   links: 
     Compose Articles: "https://compose.com/articles/better-decision-making-with-watson-machine-learning-and-compose/"
   strategies: 
+    - machine-learning-for-developers
     - notebooks-for-developers
-    - differentiators
   tags: 
     - Compose
     - PostgreSQL
@@ -1584,8 +1517,6 @@
   links: 
     Medium: https://medium.com/ibm-watson-data-lab/using-artificial-intelligence-to-search-for-extraterrestrial-intelligence-ec19169e01af
     GitHub: https://github.com/setiquest/ml4seti
-  img:      img/ml4seti_slack_logo.png
-  thumb:    img/ml4seti_slack_logo.png
   strategies: 
     - partners
   tags: 
@@ -1638,26 +1569,26 @@
 - title: "Watson Machine Learning for Developers"
   lead: mark-watson
   features: 
-    - machine-learning-for-developers
+    - your-first-machine-learning-system
   headline: "Understanding the basic problems and workflow (part 1)."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/watson-machine-learning-for-developers-b98cefb3f890"
   strategies: 
-    - differentiators
+    - machine-learning-for-developers
   tags: 
     - Watson Machine Learning
 
 - title: "Building Your First Machine Learning System"
   lead: mark-watson
   features: 
+    - your-first-machine-learning-system
     - pixiedust-for-jupyter
-    - machine-learning-for-developers
   headline: "Train your model and deploy it, Watson ML for developers (part 2)."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/building-your-first-machine-learning-system-b3d9401927b7"
     Notebook: "https://apsportal.ibm.com/analytics/notebooks/3e83ffa1-f52a-4b76-bbb5-498b6b7f9505/view?access_token=a7dfdd01dbc24c53a5ac9688fbdd32da1b59156117d721fe10d12660f18dd591"
   strategies: 
-    - differentiators
+    - machine-learning-for-developers
     - notebooks-for-developers
   tags: 
     - Watson Machine Learning
@@ -1796,15 +1727,13 @@
 
 - title: "Tracking Your Cryptocurrency Portfolio With Serverless Functions"
   lead: glynn-bird
-  features: 
-    - serverless-and-data
   headline: "Monitor your Bitcoin hoard with IBM Cloud Functions writing data to Cloudant."
   links: 
     GitHub: "https://github.com/glynnbird/markettrader"
     Medium: "https://medium.com/ibm-watson-data-lab/tracking-your-cryptocurrency-portfolio-with-serverless-functions-a4e7264a6161"
     demo: "https://glynnbird.github.io/markettrader/public/index.html"
   strategies: 
-    - differentiators
+    - serverless-and-data
   tags: 
     - Cloudant
     - OpenWhisk
@@ -1896,14 +1825,12 @@
 
 - title: "Making a Cloudant/Elasticsearch Hybrid"
   lead: glynn-bird
-  features: 
-    - serverless-and-data
   headline: "Using serverless functions to move Cloudant data as it changes."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/cloudant-es-bridge"
     Medium: "https://medium.com/ibm-watson-data-lab/making-a-cloudant-elasticsearch-hybrid-6bf9610f4456"
   strategies: 
-    - differentiators
+    - serverless-and-data
   tags: 
     - OpenWhisk
     - Cloudant
@@ -1914,7 +1841,6 @@
 - title: "Building a Serverless Data Pipeline"
   lead: lorna-mitchell
   features:
-    - serverless-and-data
     - loading-json
   headline: "Data transformation is a great use case for serverless technology."
   links:
@@ -1923,24 +1849,10 @@
     YouTube: "https://www.youtube.com/watch?v=VyZaWN9iyks"
   strategies:
     - working-with-json
-    - differentiators
+    - serverless-and-data
   tags:
     - OpenWhisk
     - Nodejs
-    - Cloudant
-
-- title: "Making a Cloudant/Elasticsearch hybrid"
-  lead: glynn-bird
-  features: 
-    - serverless-and-data
-  headline: "Using serverless functions to move Cloudant data as it changes."
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/cloudant-es-bridge"
-    Medium: "https://medium.com/ibm-watson-data-lab/making-a-cloudant-elasticsearch-hybrid-6bf9610f4456"
-  strategies: 
-    - differentiators
-  tags: 
-    - OpenWhisk
     - Cloudant
 
 - title: "Deploy to IBM Cloud With TravisCI"
@@ -2004,15 +1916,13 @@
 
 - title: "Detaching Cloudant Attachments to Object Storage with Serverless Functions"
   lead: glynn-bird
-  features: 
-    - serverless-and-data
   headline: "Build a pipeline to move Cloudant attachments to object storage using IBM Cloud Functions."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/detacher"
     Medium: "https://medium.com/ibm-watson-data-lab/detaching-cloudant-attachments-to-object-storage-with-serverless-functions-99b8c3c77925"
   strategies: 
-    - differentiators
     - working-with-json
+    - serverless-and-data
   tags: 
     - OpenWhisk
     - JavaScript
@@ -2022,14 +1932,14 @@
 - title: "Going Serverless with IBM Cloud Functions and Compose Redis"
   lead: lorna-mitchell
   features: 
-    - serverless-and-data
+    - serverless-and-redis
   headline: "With OpenWhisk, database connections are simply packages of your favorite language-API combo."
   links: 
     Compose Articles: "https://compose.com/articles/going-serverless-with-compose-redis/"
     GitHub: "https://github.com/lornajane/alexa-airport-codes"
     YouTube: "https://www.youtube.com/watch?v=MtLfaVCupfE&t=27s"
   strategies: 
-    - differentiators
+    - serverless-and-data
   tags: 
     - Compose
     - Redis
@@ -2038,13 +1948,11 @@
 
 - title: "Three Great Serverless Use Cases"
   lead: lorna-mitchell
-  features: 
-    - serverless-and-data
   headline: "The design patterns for serverless functions that are here to stay."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/three-great-serverless-use-cases-cd22d44aeb29"
   strategies: 
-    - differentiators
+    - serverless-and-data
   tags: 
     - OpenWhisk
 
@@ -2192,3 +2100,18 @@
     - PouchDB
     - JavaScript
 
+- title: "Deploying a Simple Machine Learning App with Node.js and Watson ML"
+  date: "2018-02-08"
+  lead: mark-watson
+  features: 
+    - your-first-machine-learning-system
+  headline: "Give users real-time predictions; Watson ML for developers (part 3)."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/deploying-a-simple-machine-learning-app-with-node-js-and-watson-ml-96afdb6f7819"
+    GitHub: "https://github.com/ibm-watson-data-lab/watson-ml-scoring-demo"
+    demo: "https://watson-ml-scoring-demo.mybluemix.net/"
+  strategies: 
+    - machine-learning-for-developers
+  tags: 
+    - "Watson Machine Learning"
+    - Nodejs

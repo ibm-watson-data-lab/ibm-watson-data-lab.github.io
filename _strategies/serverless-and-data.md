@@ -3,7 +3,6 @@ title:      Serverless + Data
 headline:   Powerful, distributed computing without the worry.
 layout:     layout-strategy
 permalink:  serverless-and-data
-position:	1
 lead:       lorna-mitchell
 ---
 

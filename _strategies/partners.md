@@ -3,7 +3,6 @@ title:      Partners + Data
 headline:   Respect the ecosystem
 permalink:  partners
 layout:     layout-strategy
-tier:       3
 lead:       raj-singh
 ---
 
