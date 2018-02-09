@@ -9,6 +9,7 @@
     <main class="featured-collection">
       {% assign strategies = site.strategies %}
       {% assign thisstrategies = page.strategies %}
+      {% assign projects = site.data.projects | where:"features",page.permalink | reverse %}
 
       <div class="container">
         <section class="row">
@@ -33,6 +34,7 @@
             </div>
           </div>
           <div class="col m1"> </div>
+          {% if projects.size > 0 %}
           <div class="col m3 sidebar">
             <a href="#collection-projects" class="jump-link">&darr; View projects in this collection</a>
             <div class="more-topics">
@@ -48,24 +50,46 @@
               {% endif %}
             </div>
           </div>
+          {% endif %}
         </section>
 
         <section id="collection-projects" class="row">
           <div class="col m12">
-            {% assign projects = site.data.projects | where:"features",page.permalink | reverse %}
+            
             {% if projects.size > 0 %}
-            <h3>Projects</h3>
-            <ul>
+              <h3>Projects</h3>
+              <ul>
+            {% comment %} Write in projects from the strategy page's pinned array {% endcomment %}         
               {% for proj in projects %}
-              <li class="m12 strategy-project-info">
-                {% include single-project-in-strat.html project=proj %}
-              </li>
+                {% for pin in page.pinned %}
+                  {% if pin == proj.title %}
+                     <li class="m12 strategy-project-info">
+                      {% include single-project-in-strat.html project=proj %}
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            {% comment %} Write in all other projects that are NOT in the strategy page's pinned array {% endcomment %}   
+              {% for proj in projects %}
+                {% assign notpinned = true %}
+                {% for pin in page.pinned %}
+                  {% if proj.title == pin %}
+                     {% assign notpinned = false %}
+                  {% endif %}
+                {% endfor %}
+                {% if notpinned == true %}
+                  <li class="m12 strategy-project-info">
+                      {% include single-project-in-strat.html project=proj %}
+                  </li>
+                {% endif %}
               {% endfor %}
             </ul>
             {% endif %}
+
           </div>
         </section>
-    </main>
+      </div>
     {% include footer.html %} 
+    </main>
   </body>  
 </html>    

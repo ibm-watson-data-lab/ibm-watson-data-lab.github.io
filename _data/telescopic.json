@@ -3,8 +3,9 @@
         "Things": {
             "Web,": "/watson-and-data",
             "mobile,": "/shopping-list-demo",
+            "IoT,": "/serverless-and-data",
             "and": null,
-            "IoT": "/openwhisk-and-data",
+            "data science": "/notebooks-for-developers",
             "apps": null
         },
         "we": {
@@ -31,9 +32,9 @@
         "data,": {
             "Watson,": "/differentiators",
             "Notebooks,": "/notebooks-for-developers",
-            "Cloud Functions,": "/openwhisk-and-data",
+            "Serverless,": "/serverless-and-data",
             "Machine Learning,": "/machine-learning-for-developers",
-            "Weather,": "/weather-and-data",
+            "and": null,
             "JSON,": "/working-with-json",
             "and with": null,
             "our partners,": {
