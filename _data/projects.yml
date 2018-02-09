@@ -238,56 +238,47 @@
     - "iOS Swift"
   thumb: img/cloudant-foodtracker-thumb.png
 
-- title: "Location Tracker Envoy Server [2]"
-  lead: glynn-bird
-  features: 
-    - location-tracker
-  headline: "Scaling the CouchDB database-per-user architecture? No problem."
-  img: img/location-tracker-cloudantdash.png
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/location-tracker-envoy-server"
-    developerWorks: "https://developer.ibm.com/clouddataservices/2016/08/11/location-tracker-part-2-database-per-user/"
-  story: "Node.js backend—plus Cloudant Envoy—for location tracker demo app."
-  strategies: 
-    - offline-first
-  tags: 
-    - Cloudant
-    - Nodejs
-  thumb: img/location-tracker-cloudantdash-thumb.png
-
-- title: "Location Tracker Node.js Server [1.5]"
-  lead: glynn-bird
-  features: 
-    - location-tracker
-  headline: "The unsung hero of our location tracker demo—the back end."
-  img: img/location-tracker-node.png
-  links: 
-    GitHub: "https://github.com/ibm-watson-data-lab/location-tracker-server-nodejs"
-    developerWorks: "https://developer.ibm.com/clouddataservices/2016/06/14/location-tracker-part-1-offline-first/"
-  story: "Node.js backend for location tracker demo app."
-  strategies: 
-    - offline-first
-  tags: 
-    - Cloudant
-    - Nodejs
-  thumb: img/location-tracker-node-thumb.png
-
 - title: "Location Tracker Swift Client [1]"
-  lead: glynn-bird
+  lead: mark-watson
   features: 
     - location-tracker
   headline: "Track your location, offline or on."
-  img: img/location-tracker-client.png
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/location-tracker-client-swift"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/06/14/location-tracker-part-1-offline-first/"
-  story: "An iOS app developed in Swift. Features Cloudant geospatial querying and data replication & synch abilities."
   strategies: 
     - offline-first
   tags: 
     - Cloudant
     - "iOS Swift"
-  thumb: img/location-tracker-client-thumb.png
+
+- title: "Location Tracker Node.js Server [1.5]"
+  lead: mark-watson
+  features: 
+    - location-tracker
+  headline: "The unsung hero of our location tracker demo—the back end."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/location-tracker-server-nodejs"
+    developerWorks: "https://developer.ibm.com/clouddataservices/2016/06/14/location-tracker-part-1-offline-first/"
+  strategies: 
+    - offline-first
+  tags: 
+    - Cloudant
+    - Nodejs
+
+- title: "Location Tracker Envoy Server [2]"
+  lead: mark-watson
+  features: 
+    - location-tracker
+  headline: "Scaling the CouchDB database-per-user architecture? No problem."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/location-tracker-envoy-server"
+    developerWorks: "https://developer.ibm.com/clouddataservices/2016/08/11/location-tracker-part-2-database-per-user/"
+  strategies: 
+    - offline-first
+  tags: 
+    - Cloudant
+    - Nodejs
 
 - title: "Scaling Offline First With Cloudant Envoy"
   lead: glynn-bird
