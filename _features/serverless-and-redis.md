@@ -15,4 +15,6 @@ When you have a serverless function, but need to stash the results somehwere for
 
 Redis offers flexible levels of persistence and speedy performance. Serverless functions offer scalability without the infrastructure overhead. Together, they complement each other nicely.
 
+## Getting started
+
 ...
