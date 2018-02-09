@@ -5,10 +5,9 @@ layout:     layout-featured-collection
 permalink:  seti
 #img:        seti.png
 #img-thumb:  seti_sm.png
-featured:   true
+position:   1
 strategies: 
   - partners
-position:	1
 lead: adam-cox
 ---
 
