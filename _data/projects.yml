@@ -101,14 +101,12 @@
 - title: "Weather Forecast with PixieDust"
   lead: margriet-groenendijk
   features: 
-    - weather-and-data
     - pixiedust-for-jupyter
   headline: "Make your own forecast in a Python notebook."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/python-notebooks"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/10/06/your-own-weather-forecast-in-a-python-notebook/"
   strategies: 
-    - differentiators
     - notebooks-for-developers
   tags: 
     - Weather
@@ -123,7 +121,6 @@
     GitHub: "https://github.com/ibm-watson-data-lab/reddit-sentiment-analysis"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/06/23/sentiment-analysis-of-reddit-amas-using-dashdb-and-r/"
   strategies: 
-    - differentiators
     - notebooks-for-developers
   tags: 
     - Cloudant
@@ -143,7 +140,6 @@
     Notebook: "https://github.com/ibm-watson-data-lab/--deprecated--simple-data-pipe-connector-flightstats/blob/master/notebook/Flight%20Predict%20with%20Pixiedust.ipynb"
     Medium: "https://medium.com/ibm-watson-data-lab/flightpredict-ii-the-sequel-fb613afd6e91"
   strategies: 
-    - differentiators
     - notebooks-for-developers
   tags: 
     - FlightStats
@@ -521,7 +517,6 @@
     demo: "https://voiceofinterconnect.com/"
   strategies: 
     - offline-first
-    - differentiators
     - partners
   tags: 
     - Cloudant
@@ -1072,7 +1067,6 @@
     Medium: "https://medium.com/ibm-watson-data-lab/tell-me-something-i-dont-know-e27a2608050"
   strategies: 
     - notebooks-for-developers
-    - differentiators
   tags: 
     - PixieDust
     - "Watson Natural Language Understanding"
