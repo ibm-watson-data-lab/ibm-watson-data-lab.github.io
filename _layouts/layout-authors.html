@@ -42,8 +42,8 @@
           </div>
           <div class="col m1"> </div>
           <div class="col m3 sidebar">
-            {% if strategies.size > 0 or collections.size > 0 %}
-            <a href="#author-projects" class="jump-link">&darr; View related projects</a>
+            {% if strategies.size > 0 or collections.size > 0 or projects.size > 0 %}
+            <a href="#author-projects" class="jump-link">&darr; View related work</a>
             {% endif %}
 
             {% assign authors = site.authors %}

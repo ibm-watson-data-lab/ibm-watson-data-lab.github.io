@@ -9,6 +9,8 @@ strategies:
   - offline-first
 position:	1
 lead: bradley-holt
+pinned: 
+  - "Offline First Sample Implementations"
 essentials:
   Shopping Lists on GitHub: https://github.com/ibm-watson-data-lab/shopping-list
   Offline First: http://offlinefirst.org/
