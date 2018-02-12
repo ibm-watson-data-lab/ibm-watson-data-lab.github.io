@@ -6,9 +6,9 @@ permalink:  mapbox
 #img:        mapbox-vector.png
 #img-thumb:  mapbox-vector-thumb.png
 featured:   true
+position:   0
 strategies: 
   - partners
-position:	0
 lead: raj-singh
 ---
 

@@ -1,17 +1,14 @@
 ---
-title:      Machine Learning for Developers
-headline:   ML for the rest of us.
+title:      Your First Machine Learning System
+headline:   A little ML goes a long way.
 layout:     layout-featured-collection
-permalink:  machine-learning-for-developers
+permalink:  your-first-machine-learning-system
 strategies: 
-  - differentiators
-position:	2
+  - machine-learning-for-developers
 lead:       mark-watson
 ---
 
-You don't need to be a Ph.D. data scientist to get more from your data on the IBM Cloud. Frameworks now exist for building predictive models, and as a web developer, you can build with frameworks.
-
-Making predictions sounds like a cool and useful feature for your app, but the mechanics of machine learning seem hard and abstract. They don't have to be. Some basic concepts will take you a long way. We'll show you how to get your own ML system up and running.
+We'll show you how to get your first ML system up and running.
 
 ## The tools
 
@@ -39,4 +36,4 @@ Now run your model against a data set:
 
 We unpack the code line-by-line in [Building Your First Machine Learning System](https://medium.com/ibm-watson-data-lab/building-your-first-machine-learning-system-b3d9401927b7), but thankfully it's not a lot to grok. The article has more on deploying the model to the cloud to enable REST API access, opening up your predictions to users of your apps.
 
-See? The basics _can_ take you pretty far. Check out the projects here for more ML basics, and beyond.
+See? The basics can take you pretty far. Check out the projects here for more ML basics, and beyond.
