@@ -291,7 +291,7 @@ a.latest-link:hover {
 
 .strategies-list .rail-heading,
 .strategy.row {
-  border-top: 2px solid #6d6d6d;
+  border-top: 1px solid #D8D8D8;
   margin-bottom: 0;
   padding: 80px 0;
 }
