@@ -1,9 +1,0 @@
-{
-  "cloudant": {
-    "url": "https://username:password@username.cloudant.com",
-    "dbname": "projects"
-  },
-  "watch": {
-    "yml": [ "_data/projects.yml" ]
-  }
-}
