@@ -137,4 +137,9 @@ $(document).ready(function () {
       }
     }
   })
+
+  $('#pintar').pushpin({
+    top: 0,
+    offset: 100
+  })
 })
