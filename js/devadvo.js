@@ -29,7 +29,7 @@ var initTelescopicText = function (telescopicTextJSON, telescopicTextContainer) 
       } else if (typeof val === 'object') {
         var chapter = compose(val)
         var id = i + '-' + keys[i].toLowerCase().replace(/([^A-Z0-9])+/ig, '')
-        story.push('<span><span id="telescopic-link-' + id + '" data-controls="telescopic-text-' + id + '" class="telescopic-link">' + key1 + '</span>' + key2 + '</span>')
+        story.push('<span class="telescopic-root"><span id="telescopic-link-' + id + '" data-controls="telescopic-text-' + id + '" class="telescopic-link">' + key1 + '</span>' + key2 + '</span>')
         story.push('<span id="telescopic-text-' + id + '" data-controlledby="telescopic-link-' + id + '" class="telescopic-content hidden">' + chapter + '</span>')
       }
     }
@@ -41,6 +41,12 @@ var initTelescopicText = function (telescopicTextJSON, telescopicTextContainer) 
   var telescopicTextContent = compose(textobj)
 
   $(telescopicTextContainer).html(telescopicTextContent)
+  var reset = $('<i class="fa fa-reply telescopic-reset" tabindex"0"></i>')
+  reset.on('click', function () {
+    $('.telescopic-content:not(.hidden').addClass('hidden')
+    $('.telescopic-root.hidden').removeClass('hidden')
+  })
+  $(telescopicTextContainer).append(reset)
 
   $('span[data-controls].telescopic-link')
     .each(function () {
