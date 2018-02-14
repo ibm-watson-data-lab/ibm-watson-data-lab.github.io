@@ -1,6 +1,6 @@
 ---
 title:      Partners + Data
-headline:   Respect the ecosystem
+headline:   Respect the ecosystem.
 permalink:  partners
 layout:     layout-strategy
 lead:       raj-singh
