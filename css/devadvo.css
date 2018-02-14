@@ -241,6 +241,22 @@ span.telescopic-link:hover {
   border-bottom-color: #008872;
 }
 
+.telescopic-reset {
+  color: #008872;
+  cursor: pointer;
+  display: none;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.telescopic-reset:hover {
+  border-bottom: 2px solid #008872;
+}
+
+.telescopic-root.hidden ~ .telescopic-reset {
+  display: inline-block;
+}
+
 .rail-heading {
   color: #777677;
   font-family: "ibm-plex-mono";
