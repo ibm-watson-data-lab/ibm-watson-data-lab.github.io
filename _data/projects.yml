@@ -529,7 +529,7 @@
 - title: "Adding a Recommendation Feature to Your App Using a Graph Database"
   lead: mark-watson
   features: 
-    - smarter-chatbots
+    - smart-chatbots
   headline: "Graph user interactions for an even smarter chatbot."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-graph"
@@ -547,7 +547,7 @@
 - title: "Persisting Data for a Smarter Chatbot"
   lead: mark-watson
   features: 
-    - smarter-chatbots
+    - smart-chatbots
   headline: "You'll need more than just log data to take your chatbot to the next level."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant"
@@ -817,7 +817,7 @@
 - title: "Navigating SXSW via Cognitive Chatbot"
   lead: raj-singh
   features: 
-    - smarter-chatbots
+    - smart-chatbots
     - mapbox
   headline: "A smarter conference event recommendation system using Watson services and Mapbox."
   links: 
@@ -982,7 +982,7 @@
 - title: "A Fancier Graph for an Already-Smarter Chatbot"
   lead: mark-watson
   features: 
-    - smarter-chatbots
+    - smart-chatbots
   headline: "Updating the recipe chatbot demo to use JanusGraph, the latest in graph databases."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-janusgraph"
@@ -1254,7 +1254,7 @@
 - title: "Making of a Smart Business Chatbot: Part 1"
   lead: john-oconnor
   features: 
-    - smarter-chatbots
+    - smart-chatbots
   headline: "Use Bluemix + Compose to build a chatbot that can reliably converse with users while collecting data and gaining insights on their personality and mood."
   links: 
     Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot/"
@@ -1267,7 +1267,7 @@
 - title: "Making of a Smart Business Chatbot: Part 2"
   lead: john-oconnor
   features: 
-    - smarter-chatbots
+    - smart-chatbots
   headline: "Learn how to give your Slackbot some intelligence by connecting it to a Watson Conversation dialog."
   links: 
     Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot-part-2/"
@@ -1307,7 +1307,7 @@
 - title: "Making of a Smart Business Chatbot: Part 3"
   lead: john-oconnor
   features: 
-    - smarter-chatbots
+    - smart-chatbots
   headline: "Use a JanusGraph-backed knowledge base to give our chatbot some utility, and build a recommendation engine for technical blog articles."
   links: 
     Compose Articles: "https://compose.com/articles/building-a-smart-business-chatbot-part-3/"
