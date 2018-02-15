@@ -16,7 +16,7 @@ img {
 }
 
 main {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 150px);
 }
 
 .container .row {
@@ -514,6 +514,10 @@ section.row > .col {
 .more-topics-coc {
   margin-top: 42px;
   padding-top: 42px;
+}
+
+.more-topics-coc li {
+  margin-bottom: 10px;
 }
 
 .coc-page {
