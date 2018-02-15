@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
   <body id="{{ page.id }}">
-    {% if site.GH_ENV == 'gh_pages' %}
+    {% if site.GH_ENV == 'gh_pages' and page.layout != 'internal' %}
       {% include google-tag-manager-body.html %}
     {% endif %}
     {% include header.html %}
