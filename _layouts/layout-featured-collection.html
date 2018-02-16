@@ -7,43 +7,6 @@ layout: default
   {% assign thisstrategies = page.strategies %}
   {% assign projects = site.data.projects | where:"features",page.permalink | reverse %}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <section id="collection-projects" class="row">
-          <div class="col m12">
-            
-            {% if projects.size > 0 %}
-              <h3>Projects</h3>
-              <ul>
-            {% comment %} Write in projects from the strategy page's pinned array {% endcomment %}         
-              {% for proj in projects %}
-                {% for pin in page.pinned %}
-                  {% if pin == proj.title %}
-                     <li class="m12 strategy-project-info">
-                      {% include single-project-in-strat.html project=proj %}
-                    </li>
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-              {% endfor %}
-            {% comment %} Write in all other projects that are NOT in the strategy page's pinned array {% endcomment %}   
-              {% for proj in projects %}
-                {% assign notpinned = true %}
-                {% for pin in page.pinned %}
-                  {% if proj.title == pin %}
-                     {% assign notpinned = false %}
-                  {% endif %}
-                {% endfor %}
-                {% if notpinned == true %}
-                  <li class="m12 strategy-project-info">
-                      {% include single-project-in-strat.html project=proj %}
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-=======
-=======
->>>>>>> master
   <section class="row">
     <div class="col m8">
       <div>
@@ -52,10 +15,6 @@ layout: default
           {% for thisstrategy in thisstrategies %}
             {% if strategy.permalink == thisstrategy %}
               {{ strategy.title }} / Collection
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
             {% endif %}
           {% endfor %}
         {% endfor %}
@@ -100,6 +59,7 @@ layout: default
             {% if pin == proj.title %}
               <li class="m12 strategy-project-info">
                 {% include single-project-in-strat.html project=proj %}
+                {% break %}
               </li>
             {% endif %}
           {% endfor %}
