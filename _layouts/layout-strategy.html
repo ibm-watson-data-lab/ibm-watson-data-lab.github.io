@@ -68,6 +68,7 @@ layout: default
     </section>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <section id="strategy-projects" class="row">
           <div class="col m12">
             {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
@@ -96,6 +97,8 @@ layout: default
                 {% endfor %}
                 {% if notpinned == true %}
 =======
+=======
+>>>>>>> master
     <section id="strategy-projects" class="row">
       <div class="col m12">
         {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
@@ -107,6 +110,9 @@ layout: default
           {% for proj in projects %}
             {% for pin in page.pinned %}
               {% if pin == proj.title %}
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
                   <li class="m12 strategy-project-info">
                   {% include single-project-in-strat.html project=proj %}
