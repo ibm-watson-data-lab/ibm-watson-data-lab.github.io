@@ -1,58 +1,13 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body id="{{ page.id }}">
-    {% if site.GH_ENV == 'gh_pages' %}
-      {% include google-tag-manager-body.html %}
-    {% endif %}
-    {% include header.html %}
-    <main class="featured-collection">
-      {% assign strategies = site.strategies %}
-      {% assign thisstrategies = page.strategies %}
-      {% assign projects = site.data.projects | where:"features",page.permalink | reverse %}
+---
+layout: default
+---
 
-      <div class="container">
-        <section class="row">
-          <div class="col m8">
-            <div>
-              <div class="breadcrumb">
-              {% for strategy in strategies %}
-                {% for thisstrategy in thisstrategies %}
-                  {% if strategy.permalink == thisstrategy %}
-                    {{ strategy.title }} / Collection
-                  {% endif %}
-                {% endfor %}
-              {% endfor %}
-              </div>
-              <h1>{{ page.title }}</h1>
-              <p class="headline">{{ page.headline }}</p>
-              {% include strategy-lead.html lead=page.lead %}
-            </div>
+<div class="container featured-collection">
+  {% assign strategies = site.strategies %}
+  {% assign thisstrategies = page.strategies %}
+  {% assign projects = site.data.projects | where:"features",page.permalink | reverse %}
 
-            <div>
-              {{ content }}
-            </div>
-          </div>
-          <div class="col m1"> </div>
-          {% if projects.size > 0 %}
-          <div class="col m3 sidebar">
-            <a href="#collection-projects" class="jump-link">&darr; View projects in this collection</a>
-            <div class="more-topics">
-              {% if page.essentials and page.essentials.size > 0 %}
-              <span>Essentials</span>
-              <ul>
-                {% for link in page.essentials %}
-                <li>
-                  <a href="{{ link[1] }}" title="{{ link[1] }}">{{ link[0] }} &rarr;</a>
-                </li>
-                {% endfor %}
-              </ul>
-              {% endif %}
-            </div>
-          </div>
-          {% endif %}
-        </section>
-
+<<<<<<< HEAD
         <section id="collection-projects" class="row">
           <div class="col m12">
             
@@ -85,12 +40,81 @@
                 {% endif %}
               {% endfor %}
             </ul>
+=======
+  <section class="row">
+    <div class="col m8">
+      <div>
+        <div class="breadcrumb">
+        {% for strategy in strategies %}
+          {% for thisstrategy in thisstrategies %}
+            {% if strategy.permalink == thisstrategy %}
+              {{ strategy.title }} / Collection
+>>>>>>> master
             {% endif %}
-
-          </div>
-        </section>
+          {% endfor %}
+        {% endfor %}
+        </div>
+        <h1>{{ page.title }}</h1>
+        <p class="headline">{{ page.headline }}</p>
+        {% include strategy-lead.html lead=page.lead %}
       </div>
-    {% include footer.html %} 
-    </main>
-  </body>  
-</html>    
+
+      <div>
+        {{ content }}
+      </div>
+    </div>
+    <div class="col m1"> </div>
+    {% if projects.size > 0 %}
+    <div class="col m3 sidebar">
+      <a href="#collection-projects" class="jump-link">&darr; View projects in this collection</a>
+      <div class="more-topics">
+        {% if page.essentials and page.essentials.size > 0 %}
+        <span>Essentials</span>
+        <ul>
+          {% for link in page.essentials %}
+          <li>
+            <a href="{{ link[1] }}" title="{{ link[1] }}">{{ link[0] }} &rarr;</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+  </section>
+
+  <section id="collection-projects" class="row">
+    <div class="col m12">
+      {% if projects.size > 0 %}
+        <h3>Projects</h3>
+        <ul>
+      {% comment %} Write in projects from the strategy page's pinned array {% endcomment %}         
+        {% for proj in projects %}
+          {% for pin in page.pinned %}
+            {% if pin == proj.title %}
+              <li class="m12 strategy-project-info">
+                {% include single-project-in-strat.html project=proj %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% comment %} Write in all other projects that are NOT in the strategy page's pinned array {% endcomment %}   
+        {% for proj in projects %}
+          {% assign notpinned = true %}
+          {% for pin in page.pinned %}
+            {% if proj.title == pin %}
+              {% assign notpinned = false %}
+            {% endif %}
+          {% endfor %}
+          {% if notpinned == true %}
+            <li class="m12 strategy-project-info">
+              {% include single-project-in-strat.html project=proj %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </section>
+</div>
+  

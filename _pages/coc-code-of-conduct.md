@@ -1,8 +1,10 @@
 ---
 permalink: code-of-conduct
 title: Code of Conduct
-layout: coc-page
+layout: layout-about
 ---
+
+### Code of Conduct
 
 #### Our Pledge
 

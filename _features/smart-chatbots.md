@@ -5,6 +5,7 @@ layout:     layout-featured-collection
 permalink:  smart-chatbots
 strategies: 
   - machine-learning-for-developers
+position:	1
 lead:       mark-watson
 ---
 

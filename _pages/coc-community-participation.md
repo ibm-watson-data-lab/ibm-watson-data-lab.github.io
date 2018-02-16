@@ -1,10 +1,12 @@
 ---
 permalink: community-participation
 title: Code of Conduct
-layout: coc-page
+layout: layout-about
 ---
 
-## Community Participation Guidelines
+### Code of Conduct
+
+#### Community Participation Guidelines
 
 We are a team of developer advocates who work to make data simple and accessible on the IBM Watson Data Platform. These participation guidelines describe the type of communities the Developer Advocates on the IBM Watson Data Platform are building. 
  

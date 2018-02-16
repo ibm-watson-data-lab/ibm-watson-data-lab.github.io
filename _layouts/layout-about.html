@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body id="{{ page.id }}">
-    {% if site.GH_ENV == 'gh_pages' %}
-      {% include google-tag-manager-body.html %}
-    {% endif %}
-    {% include header.html %}
-    <div class="container">
-      <section class="row">
-          <main class="coc-page">
-            <div class="col m8">
-            {{ content }}
-            </div>
-          </main>
-          <div class="col m1"> </div>
-          <div class="col m3 sidebar">
-            <span></span>
-            {% include coc-toc.html %}
-            {% comment %} See devadvo.js: uses Materialize's pushpin helper function. {% endcomment %}
-          </div>
-        </div>
-      </section>
+---
+layout: default
+---
+
+<div class="container coc-page">
+  <section class="row">
+    <div class="col m8">
+      {{ content }}
     </div>
-    {% include footer.html %}
-  </body>
-</html>
+    <div class="col m1"> </div>
+    <div class="col m3 sidebar">
+      <span></span>
+      {% include coc-toc.html %}
+      {% comment %} See devadvo.js: uses Materialize's pushpin helper function. {% endcomment %}
+    </div>
+  </section>
+</div>
