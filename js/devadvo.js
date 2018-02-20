@@ -1,4 +1,4 @@
-/* global $, telescopicIntro, authorLinks */
+/* global $, telescopicIntro, recentArticles, authorLinks */
 
 var shuffleStrategies = function () {
   var li = $('.strategies-list > ul > li')
@@ -29,7 +29,7 @@ var initTelescopicText = function (telescopicTextJSON, telescopicTextContainer) 
       } else if (typeof val === 'object') {
         var chapter = compose(val)
         var id = i + '-' + keys[i].toLowerCase().replace(/([^A-Z0-9])+/ig, '')
-        story.push('<span><span id="telescopic-link-' + id + '" data-controls="telescopic-text-' + id + '" class="telescopic-link">' + key1 + '</span>' + key2 + '</span>')
+        story.push('<span class="telescopic-root"><span id="telescopic-link-' + id + '" data-controls="telescopic-text-' + id + '" class="telescopic-link">' + key1 + '</span>' + key2 + '</span>')
         story.push('<span id="telescopic-text-' + id + '" data-controlledby="telescopic-link-' + id + '" class="telescopic-content hidden">' + chapter + '</span>')
       }
     }
@@ -41,6 +41,12 @@ var initTelescopicText = function (telescopicTextJSON, telescopicTextContainer) 
   var telescopicTextContent = compose(textobj)
 
   $(telescopicTextContainer).html(telescopicTextContent)
+  var reset = $('<i class="fa fa-reply telescopic-reset" tabindex"0"></i>')
+  reset.on('click', function () {
+    $('.telescopic-content:not(.hidden').addClass('hidden')
+    $('.telescopic-root.hidden').removeClass('hidden')
+  })
+  $(telescopicTextContainer).append(reset)
 
   $('span[data-controls].telescopic-link')
     .each(function () {
@@ -107,6 +113,49 @@ var initAuthorLinks = function (authorLinks, authorLinksContainer) {
   $(authorLinksContainer).html(links)
 }
 
+var randomizeRecent = function (newArticles, recentContainer) {
+  var hero = newArticles[Math.floor(Math.random() * 5)]
+  var mainLink
+  var pubName
+  var icon
+
+  if (hero.links['Compose Articles']) {
+    mainLink = hero.links['Compose Articles']
+    pubName = 'Compose.com/articles'
+    icon = 'cubes'
+  } else if (hero.links['Medium']) {
+    mainLink = hero.links['Medium']
+    pubName = 'Medium.com'
+    icon = 'medium'
+  } else if (hero.links['GitHub']) {
+    mainLink = hero.links['GitHub']
+    pubName = 'GitHub'
+    icon = 'github'
+  } else if (hero.links['Notebook']) {
+    mainLink = hero.links['Notebook']
+    pubName = 'Data Science Notebook'
+    icon = 'book'
+  } else if (hero.links['npm']) {
+    mainLink = hero.links['npm']
+    pubName = 'npmjs.com'
+    icon = 'code'
+  } else if (hero.links['dataset']) {
+    mainLink = hero.links['dataset']
+    pubName = 'Dataset'
+    icon = 'database'
+  } else {
+    mainLink = hero.links[ Object.keys(hero.links)[0] ]
+    pubName = 'External Site'
+    icon = 'newspaper-o'
+  }
+
+  var html = `<a href="${mainLink}" title="Find it on ${pubName}" class="latest-title">${hero.title}</a>
+    <br/><div class="latest-headline">${hero.headline}</div>
+    <a href="${mainLink}" class="latest-link"><i class="fa fa-${icon}" aria-hidden="true"></i>${pubName}</a>`
+
+  $(recentContainer).append(html)
+}
+
 $(document).ready(function () {
   $('.button-collapse').sideNav()
 
@@ -114,6 +163,10 @@ $(document).ready(function () {
 
   if (typeof telescopicIntro === 'object') {
     initTelescopicText(telescopicIntro, '#telescopicText')
+  }
+
+  if (typeof recentArticles === 'object') {
+    randomizeRecent(recentArticles, '#hero')
   }
 
   if (typeof authorLinks !== 'undefined') {
@@ -136,5 +189,10 @@ $(document).ready(function () {
         break
       }
     }
+  })
+
+  $('#pintar').pushpin({
+    top: 0,
+    offset: 100
   })
 })

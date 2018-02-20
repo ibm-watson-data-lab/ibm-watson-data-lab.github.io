@@ -21,27 +21,4 @@
 <!-- scripts -->
 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/materialize.min.js"></script>
-<!-- <script type="text/javascript" src="{{ site.baseurl }}/js/exhibit.js" ></script> -->
 <script type="text/javascript" src="{{ site.baseurl }}/js/devadvo.js" ></script>
-<!-- <script type="text/javascript" src="https://ibm-watson-data-lab.github.io/simple-search-js/simplesearch.js" ></script> -->
-
-<script>
-  var o = $({})
-  $.each({on: 'sub', off: 'unsub', trigger: 'pub'}, function (k, v) { $[v] = function () { o[k].apply(o, arguments) } })
-</script>
-
-<script>
-      $(document).ready(function(){
-        $('#pintar').pushpin({
-          top: 0,
-          offset: 100
-        });
-      });
-</script>
-
-{% if site.owpackageurl %}
-<script>
-  var owpackageurl = '{{ site.owpackageurl }}'
-</script>
-<script type="text/javascript" src="{{ site.baseurl }}/js/auth.js" ></script>
-{% endif %}
