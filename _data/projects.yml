@@ -529,13 +529,14 @@
 - title: "Adding a Recommendation Feature to Your App Using a Graph Database"
   lead: mark-watson
   features: 
-    - watson-and-data
+    - smart-chatbots
   headline: "Graph user interactions for an even smarter chatbot."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-graph"
     Medium: "https://medium.freecodecamp.com/have-you-had-the-talk-with-your-chatbot-about-graph-data-structures-3aaf5c3ae52c"
   strategies: 
-    - differentiators
+    - machine-learning-for-developers
+    - get-connected-databases
   tags: 
     - "Watson Conversation"
     - Slack
@@ -546,13 +547,14 @@
 - title: "Persisting Data for a Smarter Chatbot"
   lead: mark-watson
   features: 
-    - watson-and-data
+    - smart-chatbots
   headline: "You'll need more than just log data to take your chatbot to the next level."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant"
     Medium: "https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2"
   strategies: 
-    - differentiators
+    - machine-learning-for-developers
+    - get-connected-databases
   tags: 
     - "Watson Conversation"
     - Slack
@@ -815,14 +817,15 @@
 - title: "Navigating SXSW via Cognitive Chatbot"
   lead: raj-singh
   features: 
+    - smart-chatbots
     - mapbox
   headline: "A smarter conference event recommendation system using Watson services and Mapbox."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/cognitive-event-finder"
     Medium: "https://medium.com/ibm-watson-data-lab/navigating-sxsw-via-cognitive-chatbot-28a2e1f7a456"
   strategies: 
+    - machine-learning-for-developers
     - partners
-    - differentiators
   tags: 
     - Cloudant
     - Chatbots
@@ -924,15 +927,13 @@
     - CouchDB
 
 - title: "Building a Poem Generator App Using Watson APIs"
-  features: 
-    - watson-and-data
   headline: "A way with words and code."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/PoemGenerator"
     Medium: "https://medium.com/ibm-watson-data-lab/generating-poems-a-way-with-words-and-code-885e85afac4b"
     demo: "http://poem-generator.mybluemix.net/"
   strategies: 
-    - differentiators
+    - get-connected-databases
   tags: 
     - Postgres
     - Compose
@@ -981,13 +982,14 @@
 - title: "A Fancier Graph for an Already-Smarter Chatbot"
   lead: mark-watson
   features: 
-    - watson-and-data
+    - smart-chatbots
   headline: "Updating the recipe chatbot demo to use JanusGraph, the latest in graph databases."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/watson-recipe-bot-nodejs-janusgraph"
     Medium: "https://medium.com/ibm-watson-data-lab/a-depth-first-look-at-watson-conversation-gremlin-janusgraph-42be16335eef"
   strategies: 
-    - differentiators
+    - machine-learning-for-developers
+    - get-connected-databases
   tags: 
     - "Watson Conversation"
     - Slack
@@ -1207,13 +1209,11 @@
 
 - title: "Building an Ordering Application with Watson AI and PostgreSQL: Part I"
   lead: abdullah-alger
-  features: 
-    - watson-and-data
   headline: "An IBM Bluemix application that lets Watson interact with users via Twilio's SMS service, then sends their data over to Compose PostgreSQL."
   links: 
     Compose Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql/"
   strategies: 
-    - differentiators
+    - get-connected-databases
   tags: 
     - Compose
     - PostgreSQL
@@ -1223,13 +1223,11 @@
 
 - title: "Building an Ordering Application with Watson AI and PostgreSQL: Part II"
   lead: abdullah-alger
-  features: 
-    - watson-and-data
   headline: "In part II, you'll tie together your services with Node.js and deploy to Bluemix."
   links: 
     Compose Articles: "https://compose.com/articles/building-an-ordering-application-with-watson-ai-and-compose-postgresql-part-ii/"
   strategies: 
-    - differentiators
+    - get-connected-databases
   tags: 
     - Compose
     - PostgreSQL
@@ -1256,12 +1254,12 @@
 - title: "Making of a Smart Business Chatbot: Part 1"
   lead: john-oconnor
   features: 
-    - watson-and-data
+    - smart-chatbots
   headline: "Use Bluemix + Compose to build a chatbot that can reliably converse with users while collecting data and gaining insights on their personality and mood."
   links: 
     Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot/"
   strategies: 
-    - differentiators
+    - machine-learning-for-developers
   tags: 
     - Nodejs
     - Slack
@@ -1269,12 +1267,12 @@
 - title: "Making of a Smart Business Chatbot: Part 2"
   lead: john-oconnor
   features: 
-    - watson-and-data
+    - smart-chatbots
   headline: "Learn how to give your Slackbot some intelligence by connecting it to a Watson Conversation dialog."
   links: 
     Compose Articles: "https://compose.com/articles/making-of-a-smart-business-chatbot-part-2/"
   strategies: 
-    - differentiators
+    - machine-learning-for-developers
   tags: 
     - Nodejs
     - Watson Conversation
@@ -1309,12 +1307,12 @@
 - title: "Making of a Smart Business Chatbot: Part 3"
   lead: john-oconnor
   features: 
-    - watson-and-data
+    - smart-chatbots
   headline: "Use a JanusGraph-backed knowledge base to give our chatbot some utility, and build a recommendation engine for technical blog articles."
   links: 
     Compose Articles: "https://compose.com/articles/building-a-smart-business-chatbot-part-3/"
   strategies: 
-    - differentiators
+    - machine-learning-for-developers
   tags: 
     - Compose
     - JanusGraph
@@ -1698,12 +1696,12 @@
     - Jupyter
 
 - title: "Go and Compose – Redis, RethinkDB, and RabbitMQ"
-  lead: abdullah-alger
+  lead: dj-walker-morgan
   features:
     - compose-grand-tour
   headline: "The second stop on the Compose Grand Tour for the Go language."
   links:
-    Compose Articles: https://compose.com/articles/go-and-compose-redis-rethinkdb-and-rabbitmq/
+    Compose Articles: "https://compose.com/articles/go-and-compose-redis-rethinkdb-and-rabbitmq/"
     GitHub: "https://github.com/compose-grandtour/golang"
   strategies:
     - get-connected-databases
@@ -2016,14 +2014,12 @@
 
 - title: "API Caching with Redis and Node.js"
   lead: dj-walker-morgan
-  features: 
-    - __
   headline: "Make your applications run quickly and predictably."
   links: 
     Compose Articles: "https://www.compose.com/articles/api-caching-with-redis-and-nodejs/"
     GitHub: "https://github.com/compose-ex/redisapicache"
   strategies: 
-    - working-with-json
+    - get-connected-databases
   tags: 
     - Nodejs
     - Compose

@@ -5,6 +5,7 @@ layout:     layout-featured-collection
 permalink:  your-first-machine-learning-system
 strategies: 
   - machine-learning-for-developers
+position:	0
 lead:       mark-watson
 ---
 
