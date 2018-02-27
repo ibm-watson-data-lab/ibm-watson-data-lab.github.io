@@ -1616,11 +1616,14 @@
 
 - title: "Go and Compose – MongoDB, Elasticsearch and PostgreSQL"
   lead: dj-walker-morgan
+  features:
+    - compose-grand-tour
   headline: "How to connect to every Compose database using Go: The first stop on the Compose Grand Tour."
   links: 
     Compose Articles: "https://compose.com/articles/go-and-compose-mongodb-elasticsearch-and-postgresql/"
-  strategies: 
-    - compose-grand-tour
+    GitHub: "https://github.com/compose-grandtour/golang"
+  strategies:
+    - get-connected-databases
   tags: 
     - Compose
     - MongoDB
@@ -1656,12 +1659,14 @@
 
 - title: "Go and Simplifying Scylla with Gocqlx"
   lead: dj-walker-morgan
+  features:
+    - compose-grand-tour
   headline: "Gocqlx does for CQL what the sqlx package does for SQL in Go: make it more manageable. A pit stop on the Compose Grand Tour for Go."
   links: 
     Compose Articles: "https://compose.com/articles/go-and-simplify-scylla-with-gocqlx/"
     GitHub: "https://github.com/compose-grandtour/golang/tree/master/example-scylla"
   strategies: 
-    - compose-grand-tour
+    - get-connected-databases
   tags: 
     - Compose
     - ScyllaDB
@@ -1694,11 +1699,14 @@
 
 - title: "Go and Compose – Redis, RethinkDB, and RabbitMQ"
   lead: abdullah-alger
+  features:
+    - compose-grand-tour
   headline: "The second stop on the Compose Grand Tour for the Go language."
   links:
     Compose Articles: https://compose.com/articles/go-and-compose-redis-rethinkdb-and-rabbitmq/
-  strategies: 
-    - compose-grand-tour
+    GitHub: "https://github.com/compose-grandtour/golang"
+  strategies:
+    - get-connected-databases
   tags: 
     - Compose
     - Go
@@ -1762,11 +1770,14 @@
 
 - title: "Go and Compose – etcd v3, Scylla, and MySQL"
   lead: dj-walker-morgan
+  features:
+    - compose-grand-tour
   headline: "The third and final stop on the Compose Grand Tour for the Go language."
   links: 
     Compose Articles: "https://compose.com/articles/go-and-compose-etcd-v3-scylla-and-mysql/"
+    GitHub: "https://github.com/compose-grandtour/golang"
   strategies: 
-    - compose-grand-tour
+    - get-connected-databases
   tags: 
     - Compose
     - Etcd
@@ -1972,12 +1983,14 @@
 
 - title: "Python and Compose - MongoDB, Elasticsearch and PostgreSQL"
   date: "2018-01-17"
-  lead: __
+  features:
+    - compose-grand-tour
   headline: "Kicking off the Pythonic leg of the Compose Grand Tour."
   links: 
     Compose Articles: "https://www.compose.com/articles/python-and-compose-mongodb-elasticsearch-and-postgresql/"
+    GitHub: "https://github.com/compose-grandtour/python"
   strategies: 
-    - compose-grand-tour
+    - get-connected-databases
   tags: 
     - Python
     - Compose
@@ -2017,15 +2030,14 @@
     - Redis
 
 - title: "Python and Compose - Redis, RethinkDB, and RabbitMQ"
-  lead: __
   features: 
-    - __
+    - compose-grand-tour
   headline: "The second stop of the Compose Grand Tour in Python."
   links: 
     Compose Articles: "https://www.compose.com/articles/python-and-compose-redis-rethinkdb-and-rabbitmq/"
-    GitHub: "https://github.com/compose-grandtour/python/tree/master/example"
+    GitHub: "https://github.com/compose-grandtour/python"
   strategies: 
-    - compose-grand-tour
+    - get-connected-databases
   tags: 
     - Python
     - Compose
@@ -2109,3 +2121,259 @@
   tags: 
     - "Watson Machine Learning"
     - Nodejs
+
+- title: "Rethinking Offline First sync for Service Workers"
+  date: "2017-03-16"
+  features: 
+    - offline-camp
+  headline: "Adapting PouchDB replication to a new and unfamiliar context."
+  links: 
+    Medium: "https://medium.com/offline-camp/rethinking-offline-first-sync-for-service-workers-da4727b6dee"
+  strategies: 
+    - offline-first
+  tags: 
+    - "Progressivew Web App"
+    - JavaScript
+    - PouchDB
+
+- title: "CouchDB, PouchDB and Hoodie as a Stack for Progressive Web Apps"
+  date: "2017-11-30"
+  features: 
+    - offline-camp
+  headline: "On promoting the stack for offline-first apps."
+  links: 
+    Medium: "https://medium.com/offline-camp/couchdb-pouchdb-and-hoodie-as-a-stack-for-progressive-web-apps-a6078a985f18"
+  strategies: 
+    - offline-first
+  tags: 
+    - "Progressive Web App"
+    - CouchDB
+    - PouchDB
+    - Hoodie
+
+- title: "Using React and Preact to Build My First Offline First Apps"
+  date: "2017-09-05"
+  features: 
+    - offline-camp
+  headline: "Creating Progressive Web Apps with PouchDB and Apache CouchDB."
+  links: 
+    Medium: "https://medium.com/offline-camp/using-react-and-preact-to-build-my-first-offline-first-apps-8df4a1e5471b"
+  strategies: 
+    - offline-first
+  tags: 
+    - "Progressive Web App"
+    - JavaScript
+
+- title: "Mastering PostgreSQL Tools: Filters and Foreign Data Wrappers"
+  date: "2017-06-07"
+  headline: "How to streamline database imports."
+  links: 
+    Compose Articles: "https://compose.com/articles/mastering-postgresql-tools-filters-and-foreign-data-wrappers/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - PostgreSQL
+
+- title: "Integration Testing Against Real Databases"
+  date: "2017-07-12"
+  headline: "The most fragile part of automated testing is the connection to external systems."
+  links: 
+    Compose Articles: "https://compose.com/articles/integration-testing-against-real-databases/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - Java
+    - PostgreSQL
+    - MongoDB
+    - Elasticsearch
+    - Docker
+
+- title: "Push Notifications with MongoDB"
+  date: "2017-07-18"
+  headline: "How to leverage Compose MongoDB to send more effective push notifications."
+  links: 
+    Compose Articles: "https://compose.com/articles/push-notifications-with-mongodb/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - MongoDB
+    - JavaScript
+
+- title: "How to Enable a Redis Cache for PostgreSQL with Entity Framework 6"
+  date: "2017-07-17"
+  headline: "Can we cache cheaply and transparently to the application?"
+  links: 
+    Compose Articles: "https://compose.com/articles/how-to-enable-a-redis-cache-for-postgresql-with-entity-framework-6/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - PostgreSQL
+    - Redis
+    - "C#"
+
+- title: "Mastering PostgreSQL Tools: Full-Text Search and Phrase Search"
+  date: "2017-07-25"
+  headline: "Getting the most out of full-text and phrase search in PostgreSQL 9.6."
+  links: 
+    Compose Articles: "https://compose.com/articles/mastering-postgresql-tools-full-text-search-and-phrase-search/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - PostgreSQL
+
+- title: "From SQL to Scylla - User and Session Management"
+  date: "2017-07-31"
+  headline: "How SQL database techniques can translate over to NoSQL databases like Scylla."
+  links: 
+    Compose Articles: "https://compose.com/articles/from-sql-to-scylla-user-and-session-management/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - ScyllaDB
+
+- title: "Utilizing Etcd3 with Go"
+  date: "2017-08-08"
+  headline: "With etcd3 powering many cloud applications, it's time to learn how you can use it."
+  links: 
+    Compose Articles: "https://compose.com/articles/utilizing-etcd3-with-go/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - etcd
+
+- title: "Code-First Database Design with Entity Framework and PostgreSQL"
+  date: "2018-01-11"
+  headline: "How to use the Entity Framework in C# to create a table in a Compose PostgreSQL database."
+  links: 
+    Compose Articles: "https://compose.com/articles/code-first-database-design-with-entity-framework-and-postgresql/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - PostgreSQL
+    - "C#"
+
+- title: "Building Your Own Data Transport with Compose Transporter"
+  date: "2018-01-31"
+  features:
+    - loading-json
+  headline: "A stodge-free open source ETL tool you can extend in Go. Here's how."
+  links: 
+    Compose Articles: "https://compose.com/articles/building-your-own-data-transport-with-compose-transporter/"
+  strategies: 
+    - get-connected-databases
+    - working-with-json
+  tags: 
+    - Compose
+    - Go
+
+- title: "Powering PHP With JanusGraph"
+  date: "2018-02-06"
+  headline: "Introducing the Gremlin-OGM PHP library."
+  links: 
+    Compose Articles: "https://compose.com/articles/powering-php-with-janusgraph/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - JanusGraph
+    - PHP
+
+- title: "My First Pull Request for the Open Source PixieDust Project"
+  date: "2018-01-31"
+  lead: margriet-groenendijk
+  features: 
+    - pixiedust-for-jupyter
+  headline: "Setting up Python test environments, collaborating on GitHub, and sharing my changes with the world."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/my-first-pull-request-for-the-open-source-pixiedust-project-b175b0c6fdc5"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - PixieDust
+    - Python
+
+- title: "Easy PostgreSQL Performance Stats with pgHero and Docker"
+  date: "2018-02-08"
+  lead: dj-walker-morgan
+  headline: "PostgreSQL is packed full of stats, but they are not always easy to interpret."
+  links: 
+    Compose Articles: "https://www.compose.com/articles/easy-postgresql-performance-stats-with-pghero-and-docker/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - PostgreSQL
+    - Docker
+
+- title: "Painless Container Management with Rancher 2.0, Kubernetes, and IBM Cloud"
+  date: "2018-02-06"
+  lead: john-oconnor
+  headline: "Part one of becoming a Jolly Rancher®."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/painless-container-management-with-rancher-2-0-kubernetes-and-ibm-cloud-5a14ac2d4ccc"
+  tags: 
+    - Kubernetes
+    - Docker
+
+- title: "Building the Soul of a New Transporter Adaptor"
+  date: "2018-02-13"
+  features: 
+    - loading-json
+  headline: "Taking the first steps to creating our own Transporter adapter for Cloudant."
+  links: 
+    Compose Articles: "https://www.compose.com/articles/building-the-soul-of-a-new-transporter-adaptor/"
+  strategies: 
+    - get-connected-databases
+    - working-with-json
+  tags: 
+    - Compose
+    - Go
+
+- title: "Reflections on Global Diversity CFP Day"
+  date: "2018-02-12"
+  lead: teri-chadbourne
+  headline: "Preparing for new talk proposals with fresh perspectives."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/reflections-on-global-diversity-cfp-day-d26355c971"
+
+- title: "Python and Compose - Scylla and Compose for MySQL"
+  date: "2018-02-15"
+  features: 
+    - compose-grand-tour
+  headline: "The final Python leg of the Compose Grand Tour."
+  links: 
+    Compose Articles: "https://www.compose.com/articles/python-and-compose-scylla-and-compose-for-mysql/"
+    GitHub: "https://github.com/compose-grandtour/python"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - Python
+    - ScyllaDB
+    - MySQL
+
+- title: "Building an API Cache with Redis and Node"
+  date: "2018-02-13"
+  features:
+    - mapbox
+  lead: abdullah-alger
+  headline: "How to optimize API usage in a college search example application."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/redis-api-cache"
+    Medium: "https://medium.com/ibm-watson-data-lab/building-an-api-cache-with-redis-and-node-3fbad5675d5d"
+  strategies: 
+    - get-connected-databases
+    - partners
+  tags: 
+    - Compose
+    - Redis
+    - Nodejs
+    - Mapbox

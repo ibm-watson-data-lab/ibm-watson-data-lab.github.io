@@ -2,6 +2,7 @@
 layout: internal
 title: Help
 id: help
+permalink: help
 ---
 
 ### Add projects to featured collections

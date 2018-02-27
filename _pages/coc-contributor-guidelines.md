@@ -1,8 +1,10 @@
 ---
 permalink: contributor-guidelines
 title: Contributor Guidelines
-layout: coc-page
+layout: layout-about
 ---
+
+### Contributor Guidelines
 
 #### How do I contribute?
 

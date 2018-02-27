@@ -2,6 +2,7 @@
 layout: internal
 title:  Strategies
 id:     strategies
+permalink: strategies
 ---
 
 # Strategies and their owners
