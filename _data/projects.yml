@@ -101,6 +101,7 @@
 - title: "Weather Forecast with PixieDust"
   lead: margriet-groenendijk
   features: 
+    - weather-and-data
     - pixiedust-for-jupyter
   headline: "Make your own forecast in a Python notebook."
   links: 
@@ -134,6 +135,7 @@
 - title: "Predict Flight Delays with Apache Spark"
   lead: va-barbosa
   features: 
+    - weather-and-data
     - pixiedust-for-jupyter
   headline: "Know about delayed flights before they happen."
   links: 
@@ -2268,6 +2270,7 @@
     - working-with-json
   tags: 
     - Compose
+    - Transporter
     - Go
 
 - title: "Powering PHP With JanusGraph"
@@ -2331,6 +2334,7 @@
     - working-with-json
   tags: 
     - Compose
+    - Transporter
     - Go
 
 - title: "Reflections on Global Diversity CFP Day"
@@ -2373,3 +2377,63 @@
     - Redis
     - Nodejs
     - Mapbox
+
+- title: "Keeping Local Documents Local in a CouchDB-Style Replication Job"
+  date: "2018-02-20"
+  lead: glynn-bird
+  features: 
+    - loading-json
+  headline: "For when you replicate data, but need to leave a bit of config behind."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/cloudant-couchdb-pouchdb-local-documents-b8cef869f9bd"
+  strategies: 
+    - working-with-json
+  tags: 
+    - Cloudant
+    - CouchDB
+    - PouchDB
+
+- title: "Tuning it up to 11 - Transporter and the Cloudant Adaptor"
+  date: "2018-02-20"
+  features: 
+    - loading-json
+  headline: "Revisiting the simple Cloudant adaptor to make it a bit smarter."
+  links: 
+    GitHub: "https://github.com/xpqz/transporter/tree/v0.1-cloudant-advanced/adaptor/cloudant"
+    Compose Articles: "https://www.compose.com/articles/tuning-it-up-to-11-transporter-and-the-cloudant-adaptor/"
+  strategies: 
+    - get-connected-databases
+    - working-with-json
+  tags: 
+    - Compose
+    - Transporter
+    - Cloudant
+    - Go
+
+- title: "Cloudant and CouchDB Replication with couchreplicate"
+  date: "2018-02-22"
+  lead: glynn-bird
+  features: 
+    - loading-json
+  headline: "A new command-line tool for managing and monitoring multiple replication jobs."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/couchreplicate"
+    Medium: "https://medium.com/ibm-watson-data-lab/cloudant-and-couchdb-replication-with-couchreplicate-79ea6e898e6e"
+  strategies: 
+    - working-with-json
+  tags: 
+    - Cloudant
+    - CouchDB
+    - JavaScript
+
+- title: "'Service Workers & their role in PWAs' — Ipsha Bhidonia"
+  date: "2018-02-26"
+  lead: lorna-mitchell
+  headline: "Recapping an excellent PHP UK Conference talk on the inner workings of Progressive Web Apps."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/service-workers-their-role-in-pwas-ipsha-bhidonia-f0129d0d8819"
+  strategies: 
+    - offline-first
+  tags: 
+    - "Progressive Web App"
+    - PHP
