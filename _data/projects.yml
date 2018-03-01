@@ -1499,7 +1499,7 @@
   tags: 
     - Compose
     - PostgreSQL
-    - Watson Machine Learning
+    - "Watson Machine Learning"
     - Jupyter
     - Python
 
@@ -1570,7 +1570,7 @@
   strategies: 
     - machine-learning-for-developers
   tags: 
-    - Watson Machine Learning
+    - "Watson Machine Learning"
 
 - title: "Building Your First Machine Learning System"
   lead: mark-watson
@@ -1585,7 +1585,7 @@
     - machine-learning-for-developers
     - notebooks-for-developers
   tags: 
-    - Watson Machine Learning
+    - "Watson Machine Learning"
     - Python
     - Jupyter
     - PixieDust
@@ -2437,3 +2437,17 @@
   tags: 
     - "Progressive Web App"
     - PHP
+
+- title: "Keeping Your Machine Learning Models Up-To-Date"
+  date: "2018-03-01"
+  lead: mark-watson
+  features: 
+    - your-first-machine-learning-system
+  headline: "Continuous learning with IBM Watson Machine Learning (part 1)."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/keeping-your-machine-learning-models-up-to-date-f1ead546591b"
+  strategies: 
+    - machine-learning-for-developers
+  tags: 
+    - "Watson Machine Learning"
+    - "continuous learning"
