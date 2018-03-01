@@ -17,7 +17,8 @@ permalink: projects
   </section>
 
   <section class="row">
-    <div class="col m8">
+    <div class="col m8" style="position:relative">
+      <div class="projects-pagecount" style="top: -36px;">Page <span class="projects-current">0</span> of <span class="projects-last">0</span></div>
       <div class="projects-search-results">
         <ul>
           <!-- search results go here -->
@@ -29,7 +30,9 @@ permalink: projects
       </div>
     </div>
     <div class="col m1"> </div>
-    <div class="col m3 projects-search-facets">
+    <div class="col m3" style="position:relative">
+      <div class="projects-search-refine">Refine</div>
+      <div class="projects-search-facets"></div>
     </div>
   </section>
 </div>

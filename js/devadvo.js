@@ -275,12 +275,18 @@ var initSearch = function () {
   })
 
   $('.projects-prev').on('click', function () {
+    $('html, body').animate({ scrollTop: 0 })
+    $('.projects-search-results ul')
+      .empty()
+      .html('<div class="simplesearch-spinner">&profline;</div>')
     window.simplesearchUtil.prev()
-    // $('html, body').animate({ scrollTop: 0 })
   })
   $('.projects-next').on('click', function () {
+    $('html, body').animate({ scrollTop: 0 })
+    $('.projects-search-results ul')
+      .empty()
+      .html('<div class="simplesearch-spinner">&profline;</div>')
     window.simplesearchUtil.next()
-    // $('html, body').animate({ scrollTop: 0 })
   })
 }
 
