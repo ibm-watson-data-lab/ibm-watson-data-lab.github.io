@@ -237,12 +237,15 @@ window.devadvo = {
     }
 
     if (results.facets) {
-      $('.simplesearch-facet-key').click(function () {
-        $(this)
-          .toggleClass('expanded')
-          .next('.simplesearch-facet-value-list')
-          .slideToggle('slow')
-      })
+      $('.simplesearch-facet-key:not(.bound)')
+        .addClass('bound')
+        .on('click', function () {
+          $(this)
+            
+            .toggleClass('expanded')
+            .next('.simplesearch-facet-value-list')
+            .slideToggle('slow')
+        })
 
       if (results.paging && results.paging.query && results.paging.query !== '*:*') {
         var query = results.paging.query.split(' AND ')
@@ -253,7 +256,7 @@ window.devadvo = {
               .addClass('filtered')
               .closest('.simplesearch-facet-value-list')
               .css('display', 'block')
-              .prev('simplesearch-facet-key')
+              .prev('.simplesearch-facet-key')
               .addClass('expanded')
           }
         })
