@@ -11,6 +11,8 @@
 
   <title>{{ page.title }} &ndash; {{ site.title }}</title>
 
+  <script>var pageId = '{{page.id}}'</script>
+
   {% if site.GH_ENV == 'gh_pages' %}
     {% include google-tag-manager.html %}
   {% endif %}
