@@ -1028,6 +1028,132 @@
     - OpenWhisk
     - Nodejs
 
+- title: "Rethinking Offline First sync for Service Workers"
+  date: "2017-03-16"
+  features: 
+    - offline-camp
+  headline: "Adapting PouchDB replication to a new and unfamiliar context."
+  links: 
+    Medium: "https://medium.com/offline-camp/rethinking-offline-first-sync-for-service-workers-da4727b6dee"
+  strategies: 
+    - offline-first
+  tags: 
+    - "Progressivew Web App"
+    - JavaScript
+    - PouchDB
+
+- title: "CouchDB, PouchDB and Hoodie as a Stack for Progressive Web Apps"
+  date: "2017-11-30"
+  features: 
+    - offline-camp
+  headline: "On promoting the stack for offline-first apps."
+  links: 
+    Medium: "https://medium.com/offline-camp/couchdb-pouchdb-and-hoodie-as-a-stack-for-progressive-web-apps-a6078a985f18"
+  strategies: 
+    - offline-first
+  tags: 
+    - "Progressive Web App"
+    - CouchDB
+    - PouchDB
+    - Hoodie
+
+- title: "Using React and Preact to Build My First Offline First Apps"
+  date: "2017-09-05"
+  features: 
+    - offline-camp
+  headline: "Creating Progressive Web Apps with PouchDB and Apache CouchDB."
+  links: 
+    Medium: "https://medium.com/offline-camp/using-react-and-preact-to-build-my-first-offline-first-apps-8df4a1e5471b"
+  strategies: 
+    - offline-first
+  tags: 
+    - "Progressive Web App"
+    - JavaScript
+
+- title: "Mastering PostgreSQL Tools: Filters and Foreign Data Wrappers"
+  date: "2017-06-07"
+  headline: "How to streamline database imports."
+  links: 
+    Compose Articles: "https://compose.com/articles/mastering-postgresql-tools-filters-and-foreign-data-wrappers/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - PostgreSQL
+
+- title: "Integration Testing Against Real Databases"
+  date: "2017-07-12"
+  headline: "The most fragile part of automated testing is the connection to external systems."
+  links: 
+    Compose Articles: "https://compose.com/articles/integration-testing-against-real-databases/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - Java
+    - PostgreSQL
+    - MongoDB
+    - Elasticsearch
+    - Docker
+
+- title: "Push Notifications with MongoDB"
+  date: "2017-07-18"
+  headline: "How to leverage Compose MongoDB to send more effective push notifications."
+  links: 
+    Compose Articles: "https://compose.com/articles/push-notifications-with-mongodb/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - MongoDB
+    - JavaScript
+
+- title: "How to Enable a Redis Cache for PostgreSQL with Entity Framework 6"
+  date: "2017-07-17"
+  headline: "Can we cache cheaply and transparently to the application?"
+  links: 
+    Compose Articles: "https://compose.com/articles/how-to-enable-a-redis-cache-for-postgresql-with-entity-framework-6/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - PostgreSQL
+    - Redis
+    - "C#"
+
+- title: "Mastering PostgreSQL Tools: Full-Text Search and Phrase Search"
+  date: "2017-07-25"
+  headline: "Getting the most out of full-text and phrase search in PostgreSQL 9.6."
+  links: 
+    Compose Articles: "https://compose.com/articles/mastering-postgresql-tools-full-text-search-and-phrase-search/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - PostgreSQL
+
+- title: "From SQL to Scylla - User and Session Management"
+  date: "2017-07-31"
+  headline: "How SQL database techniques can translate over to NoSQL databases like Scylla."
+  links: 
+    Compose Articles: "https://compose.com/articles/from-sql-to-scylla-user-and-session-management/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - ScyllaDB
+
+- title: "Utilizing Etcd3 with Go"
+  date: "2017-08-08"
+  headline: "With etcd3 powering many cloud applications, it's time to learn how you can use it."
+  links: 
+    Compose Articles: "https://compose.com/articles/utilizing-etcd3-with-go/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - etcd
+
 - title: "Custom Cloudant Replication"
   lead: glynn-bird
   features: 
@@ -2119,132 +2245,6 @@
   tags: 
     - "Watson Machine Learning"
     - Nodejs
-
-- title: "Rethinking Offline First sync for Service Workers"
-  date: "2017-03-16"
-  features: 
-    - offline-camp
-  headline: "Adapting PouchDB replication to a new and unfamiliar context."
-  links: 
-    Medium: "https://medium.com/offline-camp/rethinking-offline-first-sync-for-service-workers-da4727b6dee"
-  strategies: 
-    - offline-first
-  tags: 
-    - "Progressivew Web App"
-    - JavaScript
-    - PouchDB
-
-- title: "CouchDB, PouchDB and Hoodie as a Stack for Progressive Web Apps"
-  date: "2017-11-30"
-  features: 
-    - offline-camp
-  headline: "On promoting the stack for offline-first apps."
-  links: 
-    Medium: "https://medium.com/offline-camp/couchdb-pouchdb-and-hoodie-as-a-stack-for-progressive-web-apps-a6078a985f18"
-  strategies: 
-    - offline-first
-  tags: 
-    - "Progressive Web App"
-    - CouchDB
-    - PouchDB
-    - Hoodie
-
-- title: "Using React and Preact to Build My First Offline First Apps"
-  date: "2017-09-05"
-  features: 
-    - offline-camp
-  headline: "Creating Progressive Web Apps with PouchDB and Apache CouchDB."
-  links: 
-    Medium: "https://medium.com/offline-camp/using-react-and-preact-to-build-my-first-offline-first-apps-8df4a1e5471b"
-  strategies: 
-    - offline-first
-  tags: 
-    - "Progressive Web App"
-    - JavaScript
-
-- title: "Mastering PostgreSQL Tools: Filters and Foreign Data Wrappers"
-  date: "2017-06-07"
-  headline: "How to streamline database imports."
-  links: 
-    Compose Articles: "https://compose.com/articles/mastering-postgresql-tools-filters-and-foreign-data-wrappers/"
-  strategies: 
-    - get-connected-databases
-  tags: 
-    - Compose
-    - PostgreSQL
-
-- title: "Integration Testing Against Real Databases"
-  date: "2017-07-12"
-  headline: "The most fragile part of automated testing is the connection to external systems."
-  links: 
-    Compose Articles: "https://compose.com/articles/integration-testing-against-real-databases/"
-  strategies: 
-    - get-connected-databases
-  tags: 
-    - Compose
-    - Java
-    - PostgreSQL
-    - MongoDB
-    - Elasticsearch
-    - Docker
-
-- title: "Push Notifications with MongoDB"
-  date: "2017-07-18"
-  headline: "How to leverage Compose MongoDB to send more effective push notifications."
-  links: 
-    Compose Articles: "https://compose.com/articles/push-notifications-with-mongodb/"
-  strategies: 
-    - get-connected-databases
-  tags: 
-    - Compose
-    - MongoDB
-    - JavaScript
-
-- title: "How to Enable a Redis Cache for PostgreSQL with Entity Framework 6"
-  date: "2017-07-17"
-  headline: "Can we cache cheaply and transparently to the application?"
-  links: 
-    Compose Articles: "https://compose.com/articles/how-to-enable-a-redis-cache-for-postgresql-with-entity-framework-6/"
-  strategies: 
-    - get-connected-databases
-  tags: 
-    - Compose
-    - PostgreSQL
-    - Redis
-    - "C#"
-
-- title: "Mastering PostgreSQL Tools: Full-Text Search and Phrase Search"
-  date: "2017-07-25"
-  headline: "Getting the most out of full-text and phrase search in PostgreSQL 9.6."
-  links: 
-    Compose Articles: "https://compose.com/articles/mastering-postgresql-tools-full-text-search-and-phrase-search/"
-  strategies: 
-    - get-connected-databases
-  tags: 
-    - Compose
-    - PostgreSQL
-
-- title: "From SQL to Scylla - User and Session Management"
-  date: "2017-07-31"
-  headline: "How SQL database techniques can translate over to NoSQL databases like Scylla."
-  links: 
-    Compose Articles: "https://compose.com/articles/from-sql-to-scylla-user-and-session-management/"
-  strategies: 
-    - get-connected-databases
-  tags: 
-    - Compose
-    - ScyllaDB
-
-- title: "Utilizing Etcd3 with Go"
-  date: "2017-08-08"
-  headline: "With etcd3 powering many cloud applications, it's time to learn how you can use it."
-  links: 
-    Compose Articles: "https://compose.com/articles/utilizing-etcd3-with-go/"
-  strategies: 
-    - get-connected-databases
-  tags: 
-    - Compose
-    - etcd
 
 - title: "Code-First Database Design with Entity Framework and PostgreSQL"
   date: "2018-01-11"
