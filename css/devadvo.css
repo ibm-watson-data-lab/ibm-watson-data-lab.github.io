@@ -911,6 +911,7 @@ ul.simplesearch-facet-value-list {
   border-bottom: 1px solid #ddd;
   border-color: transparent;
   box-sizing: border-box;
+  display: none;
   padding: 0 1em 2rem 2em;
 }
 

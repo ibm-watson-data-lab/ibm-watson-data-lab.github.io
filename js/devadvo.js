@@ -245,11 +245,12 @@ window.devadvo = {
       })
 
       if (results.paging && results.paging.query && results.paging.query !== '*:*') {
+        var query = results.paging.query.split(' AND ')
         $('.simplesearch-facet-value-name').each(function () {
           var q = $(this).attr('data-search-query')
-          if (results.paging.query.split(' ').indexOf(q) >= 0) {
-            $(this).addClass('filtered')
+          if (query.indexOf(q) >= 0) {
             $(this)
+              .addClass('filtered')
               .closest('.simplesearch-facet-value-list')
               .css('display', 'block')
               .prev('simplesearch-facet-key')
