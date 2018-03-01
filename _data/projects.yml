@@ -301,7 +301,10 @@
     - Cloudant
     - Nodejs
 
+# Brobes left off here
+
 - title: "CouchDB Document Copy and Transform Service"
+  date: "2016-09-28"
   lead: patrick-titzler
   features: 
     - loading-json
@@ -315,19 +318,6 @@
     - Cloudant
     - CouchDB
     - Nodejs
-
-- title: "Open Data Sets"
-  lead: raj-singh
-  headline: "Curated data, open and free for you to use."
-  links: 
-    dataset: "https://github.com/ibm-watson-data-lab/open-data"
-  strategies: 
-    - partners
-  tags: 
-    - Cloudant
-    - Jupyter
-
-# Brobes left off here
 
 - title: "Seven Databases in Seven Days"
   date: "2016-11-28"
@@ -2224,6 +2214,18 @@
     - serverless-and-data
   tags: 
     - OpenWhisk
+
+- title: "Open Data Sets"
+  date: "2018-01-30"
+  lead: raj-singh
+  headline: "Curated data, open and free for you to use."
+  links: 
+    dataset: "https://github.com/ibm-watson-data-lab/open-data"
+  strategies: 
+    - __
+  tags: 
+    - Cloudant
+    - Jupyter
 
 - title: "Creating Partial Cloudant Indexes"
   date: "2018-01-10"
