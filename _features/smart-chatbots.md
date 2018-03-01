@@ -1,6 +1,6 @@
 ---
 title:      Smart Chatbots
-headline:   Say what?
+headline:   Watson Conversation is smart. Watson Conversation with data is smarter.
 layout:     layout-featured-collection
 permalink:  smart-chatbots
 strategies: 
