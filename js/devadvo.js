@@ -249,6 +249,7 @@ window.devadvo = {
     }
 
     if (results.facets) {
+      $('[data-search-facetkey="tags"]').parent().prependTo('.simplesearch-facets-list')
       $('.simplesearch-facet-key:not(.bound)')
         .addClass('bound')
         .on('click', function () {
@@ -293,7 +294,7 @@ window.devadvo = {
 }
 
 var initSearch = function () {
-  window.devadvo.expandedfacets = []
+  window.devadvo.expandedfacets = ['tags']
   window.simplesearchUtil = new SimpleSearch('https://advo-projects.mybluemix.net', {
     onSuccess: window.devadvo.searchOnSuccess,
     onData: window.devadvo.searchOnData,

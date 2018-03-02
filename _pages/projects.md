@@ -25,8 +25,9 @@ permalink: projects
         </ul>
       </div>
       <div class="projects-paging">
-        <button class="projects-prev" disabled>Prev</button> <button class="projects-next" disabled>Next</button>
+        <button class="projects-prev" disabled><i class="small material-icons">chevron_left</i></button>
         <div class="projects-pagecount">Page <span class="projects-current">0</span> of <span class="projects-last">0</span></div>
+        <button class="projects-next" disabled><i class="small material-icons">chevron_right</i></button>
       </div>
     </div>
     <div class="col m1"> </div>
