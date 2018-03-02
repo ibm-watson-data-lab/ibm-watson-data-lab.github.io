@@ -1,7 +1,7 @@
 {
     "intro": {
         "Things": {
-            "Web,": "/watson-and-data",
+            "Web,": "/offline-first",
             "mobile,": "/shopping-list-demo",
             "IoT,": "/serverless-and-data",
             "and": null,
@@ -30,18 +30,19 @@
         },
         "made with": null,
         "data,": {
-            "Watson,": "/differentiators",
             "Notebooks,": "/notebooks-for-developers",
             "Serverless,": "/serverless-and-data",
             "Machine Learning,": "/machine-learning-for-developers",
+            "Databases,": "/get-connected-databases",
             "and": null,
             "JSON,": "/working-with-json",
             "and with": null,
             "our partners,": {
                 "MapBox,": "/mapbox",
                 "SETI,": "/seti",
+                "PeaceTech": "/peacetech",
                 "and": null,
-                "PeaceTech": "/peacetech"
+                "Olli": "/olli"
             }
         },
         "so you can too": null

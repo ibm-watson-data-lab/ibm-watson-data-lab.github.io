@@ -6,7 +6,7 @@ permalink:  peacetech
 featured:   true
 strategies: 
   - partners
-position:	2
+position:   2
 essentials:
   GitHub:  		https://github.com/ibm-watson-data-lab/pixiedust_peacetech
   PixieDust:	/pixiedust-for-jupyter

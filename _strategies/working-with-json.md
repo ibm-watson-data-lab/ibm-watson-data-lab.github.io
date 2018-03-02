@@ -3,7 +3,6 @@ title:      Working with JSON
 headline:   Tools to make data easier.
 permalink:  working-with-json
 layout:     layout-strategy
-tier:       3
 lead:       glynn-bird
 ---
 

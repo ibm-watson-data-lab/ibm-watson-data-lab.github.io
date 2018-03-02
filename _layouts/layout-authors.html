@@ -5,7 +5,7 @@ layout: default
 <div class="container author-page">
   {% assign strategies = site.strategies | where:"lead",page.permalink %}
   {% assign collections = site.features | where:"lead",page.permalink %}
-  {% assign projects = site.data.projects | where:"lead",page.permalink %}
+  {% assign projects = site.data.projects | where:"lead",page.permalink | sort:"date" | reverse %}
   <section class="row">
     <div class="col m8">
       <div>

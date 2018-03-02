@@ -5,10 +5,9 @@ layout:     layout-featured-collection
 permalink:  olli
 #img:        mapbox-vector.png
 #img-thumb:  mapbox-vector-thumb.png
-featured:   true
+position:   3
 strategies: 
   - partners
-position:	0
 lead: raj-singh
 ---
 
