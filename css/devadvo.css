@@ -694,6 +694,7 @@ section.row > .col {
   display: inline-block;
   font-size: 14px;
   letter-spacing: 0.01px;
+  margin-bottom: 6px;
   margin-right: 6px;
   padding: 0 14px;
 }

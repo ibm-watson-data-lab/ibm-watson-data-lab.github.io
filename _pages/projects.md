@@ -20,7 +20,6 @@ permalink: projects
     <div class="col m8" style="position:relative">
       <div class="projects-pagecount" style="top: -36px;">Page <span class="projects-current">0</span> of <span class="projects-last">0</span></div>
       <div class="projects-search-results">
-        {% assign projects = site.data.projects | sort:"date" | reverse %}
         <ul>
           <!-- search results go here -->
         </ul>
