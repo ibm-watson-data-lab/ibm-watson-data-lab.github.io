@@ -181,7 +181,7 @@ window.devadvo = {
     if (results.data && results.data.rows && results.data.rows.length > 0) {
       var resultslist = $('.projects-search-results ul').empty()
       results.data.rows.forEach(function (project) {
-        var tags = project.tags && project.tags.length ? ('<li role="button">' + project.tags.join('</li><li role="button">') + '</li>') : ''
+        var tags = project.tags && project.tags.length ? ('<li>' + project.tags.join('</li><li>') + '</li>') : ''
         var linkkeys = Object.keys(project.links)
         var links = ''
         for (var i = 0; i < linkkeys.length; i++) {
@@ -200,9 +200,9 @@ window.devadvo = {
         }
 
         var projdate = ''
-        if (project.date) {
-          projdate = strategy ? (' &ndash; ' + project.date) : project.date
-        }
+        // if (project.date) {
+        //   projdate = strategy ? (' &ndash; ' + project.date) : project.date
+        // }
 
         var temp = `<li class="m12 strategy-project-info">
             <h4>
@@ -221,10 +221,9 @@ window.devadvo = {
 
         $('.strategy-project-tags li:not(.bound)')
           .addClass('bound')
+          .attr('role', 'button')
           .on('click', function () {
-            var tag = $(this).text()
-            window.simplesearchUtil.search('tags:' + tag)
-            // window.location = '/projects?q=tags:' + tag
+            window.simplesearchUtil.search('tags:' + $(this).text())
           })
       })
 
@@ -328,10 +327,6 @@ $(document).ready(function () {
 
   shuffleStrategies()
 
-  if (pageId === 'projects') {
-    initSearch()
-  }
-
   if (typeof telescopicIntro === 'object') {
     initTelescopicText(telescopicIntro, '#telescopicText')
   }
@@ -350,6 +345,17 @@ $(document).ready(function () {
       }
     }
     initAuthorLinks(links, '#authorLinks')
+  }
+
+  if (pageId === 'projects') {
+    initSearch()
+  } else {
+    $('.strategy-project-tags li:not(.bound)')
+    .addClass('bound')
+    .attr('role', 'button')
+    .on('click', function () {
+      window.location = '/projects?q=tags:' + $(this).text()
+    })
   }
 
   $('[data-author-img]').each(function (index, author) {
