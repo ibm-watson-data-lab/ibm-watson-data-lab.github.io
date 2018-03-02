@@ -108,7 +108,6 @@
   date: "2016-10-06"
   lead: margriet-groenendijk
   features: 
-    - weather-and-data
     - pixiedust-for-jupyter
   headline: "Make your own forecast in a Python notebook."
   links: 
@@ -1264,7 +1263,6 @@
   lead: patrick-titzler
   features: 
     - pixiedust-for-jupyter
-    - watson-and-data
   headline: "Building podcast playlists based on your current mood."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/enriching-web-syndication-feeds"
