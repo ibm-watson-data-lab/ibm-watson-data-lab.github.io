@@ -223,7 +223,10 @@ window.devadvo = {
           .addClass('bound')
           .attr('role', 'button')
           .on('click', function () {
-            window.simplesearchUtil.search('tags:' + $(this).text())
+            var t = $(this).text()
+            t = t.indexOf(' ') === -1 ? t : ('"' + t + '"')
+            window.simplesearchUtil.search('tags:' + t + '')
+            //window.simplesearchUtil.search('tags:' + '"' + $(this).text() + '"')
           })
       })
 
@@ -355,7 +358,9 @@ $(document).ready(function () {
     .addClass('bound')
     .attr('role', 'button')
     .on('click', function () {
-      window.location = '/projects?q=tags:' + $(this).text()
+      var t = $(this).text()
+      t = t.indexOf(' ') === -1 ? t : ('"' + t + '"')
+      window.location = '/projects?q=tags:' + t
     })
   }
 
