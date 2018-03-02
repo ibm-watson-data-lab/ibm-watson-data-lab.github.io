@@ -2,7 +2,7 @@
 title:      Mark Watson
 permalink:  mark-watson
 layout:     layout-authors
-headline:   Watson and data, baby!
+headline:   Welcome to my data lab.
 location:		United States - West
 specialties:
  - Mobile
