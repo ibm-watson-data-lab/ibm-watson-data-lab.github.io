@@ -32,7 +32,9 @@ permalink: projects
     <div class="col m1"> </div>
     <div class="col m3" style="position:relative">
       <div class="projects-search-refine">Refine</div>
-      <div class="projects-search-facets"></div>
+      <div class="projects-search-facets">
+        <!-- search facets go here -->
+      </div>
     </div>
   </section>
 </div>

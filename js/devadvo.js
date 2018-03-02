@@ -199,10 +199,15 @@ window.devadvo = {
           strategy = `<a href="${project.firstStrategy.link}" class="unheader" title="More on our '${project.firstStrategy.name}' strategy">${project.firstStrategy.name}</a>`
         }
 
+        var projdate = ''
+        if (project.date) {
+          projdate = strategy ? (' &ndash; ' + project.date) : project.date
+        }
+
         var temp = `<li class="m12 strategy-project-info">
             <h4>
               <div class="strategy-project-links">  
-              ${strategy}
+              ${strategy}${projdate}
               </div>
               <a href="${project.links[linkkeys[0]]}">${project.title}</a>
               <br>
@@ -241,10 +246,16 @@ window.devadvo = {
         .addClass('bound')
         .on('click', function () {
           $(this)
-            
             .toggleClass('expanded')
             .next('.simplesearch-facet-value-list')
             .slideToggle('slow')
+          
+          var facet = $(this).attr('data-search-facetkey')
+          if ($(this).hasClass('expanded') && window.devadvo.expandedfacets.indexOf(facet) === -1) {
+            window.devadvo.expandedfacets.push(facet)
+          } else if (window.devadvo.expandedfacets.indexOf(facet) > -1) {
+            window.devadvo.expandedfacets.splice(window.devadvo.expandedfacets.indexOf(facet), 1)
+          }
         })
 
       if (results.paging && results.paging.query && results.paging.query !== '*:*') {
@@ -261,11 +272,21 @@ window.devadvo = {
           }
         })
       }
+
+      if (window.devadvo.expandedfacets.length) {
+        window.devadvo.expandedfacets.forEach(function (facet) {
+          $(`[data-search-facetkey="${facet}"]:not(.expanded)`)
+            .toggleClass('expanded')
+            .next('.simplesearch-facet-value-list')
+            .css('display', 'block')
+        })
+      }
     }
   }
 }
 
 var initSearch = function () {
+  window.devadvo.expandedfacets = []
   window.simplesearchUtil = new SimpleSearch('https://advo-projects.mybluemix.net', {
     onSuccess: window.devadvo.searchOnSuccess,
     onData: window.devadvo.searchOnData,

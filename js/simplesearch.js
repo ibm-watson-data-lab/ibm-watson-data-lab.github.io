@@ -719,7 +719,7 @@ var SimpleSearch = function (serviceUrl, callbacks, containers, configuration) {
     for (var countkey in counts) {
       var countvalue = counts[countkey]
 
-      facets += '<div class="simplesearch-facet"><h4 class="simplesearch-facet-key">' + countkey + '</h4>'
+      facets += '<div class="simplesearch-facet"><h4 class="simplesearch-facet-key" data-search-facetkey="' + countkey + '">' + countkey + '</h4>'
       facets += '<ul class="simplesearch-facet-value-list">'
 
       for (var facetkey in countvalue) {
