@@ -1,4 +1,4 @@
-/* global $, telescopicIntro, recentArticles, authorLinks */
+/* global $, telescopicIntro, recentArticles, authorLinks, siteStrategies, SimpleSearch, pageId */
 
 var shuffleStrategies = function () {
   var li = $('.strategies-list > ul > li')
@@ -156,6 +156,172 @@ var randomizeRecent = function (newArticles, recentContainer) {
   $(recentContainer).append(html)
 }
 
+window.devadvo = {
+  onBefore: function (q, options, paging, searchurl) {
+    $('.projects-next, .projects-prev').prop('disabled', true)
+  },
+
+  searchOnData: function (results) {
+    if (results.data.rows) {
+      // grab first strategy reference
+      results.data.rows = results.data.rows.map(function (row) {
+        if (row.strategies && row.strategies.length && row.strategies[0] !== '__') {
+          row.firstStrategy = {
+            'name': siteStrategies[row.strategies[0]] || row.strategies[0],
+            'link': row.strategies[0]
+          }
+        }
+        return row
+      })
+    }
+    return results
+  },
+
+  searchOnSuccess: function (results) {
+    if (results.data && results.data.rows && results.data.rows.length > 0) {
+      var resultslist = $('.projects-search-results ul').empty()
+      results.data.rows.forEach(function (project) {
+        var tags = project.tags && project.tags.length ? ('<li>' + project.tags.join('</li><li>') + '</li>') : ''
+        var linkkeys = Object.keys(project.links)
+        var links = ''
+        for (var i = 0; i < linkkeys.length; i++) {
+          if (i > 0) {
+            links += ' <span class="unheader-link">&#124; '
+          }
+          links += `<a href="${project.links[linkkeys[i]]}" class="strategy-project-link" title="'${project.title} on ${linkkeys[i]}' ">${linkkeys[i]}</a>`
+          if (i > 0) {
+            links += '</span>'
+          }
+        }
+
+        var strategy = ''
+        if (project.firstStrategy) {
+          strategy = `<a href="${project.firstStrategy.link}" class="unheader" title="More on our '${project.firstStrategy.name}' strategy">${project.firstStrategy.name}</a>`
+        }
+
+        var projdate = ''
+        // if (project.date) {
+        //   projdate = strategy ? (' &ndash; ' + project.date) : project.date
+        // }
+
+        var temp = `<li class="m12 strategy-project-info">
+            <h4>
+              <div class="strategy-project-links">  
+              ${strategy}${projdate}
+              </div>
+              <a href="${project.links[linkkeys[0]]}">${project.title}</a>
+              <br>
+              ${links}
+            </h4>
+            <p> ${project.headline} </p>
+            <div class="strategy-project-tags"><ul>${tags}</ul></div>
+          </li>`
+
+        resultslist.append(temp)
+
+        $('.strategy-project-tags li:not(.bound)')
+          .addClass('bound')
+          .attr('role', 'button')
+          .on('click', function () {
+            window.simplesearchUtil.search('tags:' + $(this).text())
+          })
+      })
+
+      if (results.paging) {
+        $('.projects-prev').attr('disabled', !results.paging.bookmarks || results.paging.bookmarks.length <= 1)
+        $('.projects-next').attr('disabled', results.paging.hasMore !== true)
+
+        var total = results.data.total_rows
+        var page = results.paging.bookmarks.length - 1
+        var limit = results.paging.limit
+        var start = (page * limit) + 1
+        var end = start + limit - 1
+        if (start < 1) { start = 1 }
+        if (total < 1) { start = 0 }
+        if (end > total) { end = total }
+        if (start > end) { end = start }
+        var currentpage = page + 1
+        var lastpage = Math.floor(total / limit) + (total % limit > 0 ? 1 : 0)
+        console.log(start, end, total, currentpage, lastpage)
+        $('.projects-current').text(currentpage)
+        $('.projects-last').text(lastpage)
+      }
+    }
+
+    if (results.facets) {
+      $('.simplesearch-facet-key:not(.bound)')
+        .addClass('bound')
+        .on('click', function () {
+          $(this)
+            .toggleClass('expanded')
+            .next('.simplesearch-facet-value-list')
+            .slideToggle('slow')
+          
+          var facet = $(this).attr('data-search-facetkey')
+          if ($(this).hasClass('expanded') && window.devadvo.expandedfacets.indexOf(facet) === -1) {
+            window.devadvo.expandedfacets.push(facet)
+          } else if (window.devadvo.expandedfacets.indexOf(facet) > -1) {
+            window.devadvo.expandedfacets.splice(window.devadvo.expandedfacets.indexOf(facet), 1)
+          }
+        })
+
+      if (results.paging && results.paging.query && results.paging.query !== '*:*') {
+        var query = results.paging.query.split(' AND ')
+        $('.simplesearch-facet-value-name').each(function () {
+          var q = $(this).attr('data-search-query')
+          if (query.indexOf(q) >= 0) {
+            $(this)
+              .addClass('filtered')
+              .closest('.simplesearch-facet-value-list')
+              .css('display', 'block')
+              .prev('.simplesearch-facet-key')
+              .addClass('expanded')
+          }
+        })
+      }
+
+      if (window.devadvo.expandedfacets.length) {
+        window.devadvo.expandedfacets.forEach(function (facet) {
+          $(`[data-search-facetkey="${facet}"]:not(.expanded)`)
+            .toggleClass('expanded')
+            .next('.simplesearch-facet-value-list')
+            .css('display', 'block')
+        })
+      }
+    }
+  }
+}
+
+var initSearch = function () {
+  window.devadvo.expandedfacets = []
+  window.simplesearchUtil = new SimpleSearch('https://advo-projects.mybluemix.net', {
+    onSuccess: window.devadvo.searchOnSuccess,
+    onData: window.devadvo.searchOnData,
+    onBefore: window.devadvo.onBefore
+  }, {
+    inputField: '#projects-search-input',
+    searchButton: false,
+    facetsList: '.projects-search-facets'
+  }, {
+    deepLinking: true
+  })
+
+  $('.projects-prev').on('click', function () {
+    $('html, body').animate({ scrollTop: 0 })
+    $('.projects-search-results ul')
+      .empty()
+      .html('<div class="simplesearch-spinner">&profline;</div>')
+    window.simplesearchUtil.prev()
+  })
+  $('.projects-next').on('click', function () {
+    $('html, body').animate({ scrollTop: 0 })
+    $('.projects-search-results ul')
+      .empty()
+      .html('<div class="simplesearch-spinner">&profline;</div>')
+    window.simplesearchUtil.next()
+  })
+}
+
 $(document).ready(function () {
   $('.button-collapse').sideNav()
 
@@ -179,6 +345,17 @@ $(document).ready(function () {
       }
     }
     initAuthorLinks(links, '#authorLinks')
+  }
+
+  if (pageId === 'projects') {
+    initSearch()
+  } else {
+    $('.strategy-project-tags li:not(.bound)')
+    .addClass('bound')
+    .attr('role', 'button')
+    .on('click', function () {
+      window.location = '/projects?q=tags:' + $(this).text()
+    })
   }
 
   $('[data-author-img]').each(function (index, author) {
