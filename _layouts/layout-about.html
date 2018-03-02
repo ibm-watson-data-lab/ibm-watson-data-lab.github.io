@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="container coc-page">
+  <section class="row">
+    <div class="col m8">
+      {{ content }}
+    </div>
+    <div class="col m1"> </div>
+    <div class="col m3 sidebar">
+      <span></span>
+      {% include coc-toc.html %}
+      {% comment %} See devadvo.js: uses Materialize's pushpin helper function. {% endcomment %}
+    </div>
+  </section>
+</div>

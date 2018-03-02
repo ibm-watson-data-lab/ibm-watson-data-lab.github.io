@@ -3,8 +3,11 @@ title:      Offline First
 headline:   Apps designed to work, despite flaky networks.
 permalink:  offline-first
 layout:     layout-strategy
-tier:       2
 lead:       bradley-holt
+pinned:
+  - "Voice of InterConnect"
+  - "Offline Sync for Progressive Web Apps"
+  - "Offline First Sample Implementations"
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bWXAZboHZN8" frameborder="0" allowfullscreen></iframe>

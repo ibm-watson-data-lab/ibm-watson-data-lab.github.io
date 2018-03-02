@@ -1,0 +1,50 @@
+{
+    "intro": {
+        "Things": {
+            "Web,": "/offline-first",
+            "mobile,": "/shopping-list-demo",
+            "IoT,": "/serverless-and-data",
+            "and": null,
+            "data science": "/notebooks-for-developers",
+            "apps": null
+        },
+        "we": {
+            "Abdullah,": "/abdullah-alger",
+            "Adam,": "/adam-cox",
+            "Brad,": "/brad-noble",
+            "Bradley,": "/bradley-holt",
+            "David,": "/david-taieb",
+            "Dj,": "/dj-walker-morgan",
+            "Glynn,": "/glynn-bird",
+            "John,": "/john-oconnor",
+            "Lorna,": "/lorna-mitchell",
+            "Margriet,": "/margriet-groenendijk",
+            "Mark,": "/mark-watson",
+            "Maureen,": "/maureen-mcelaney",
+            "Mike,": "/mike-broberg",
+            "Patrick,": "/patrick-titzler",
+            "Raj,": "/raj-singh",
+            "Teri,": "/teri-chadbourne",
+            "and": null,
+            "va": "/va-barbosa"
+        },
+        "made with": null,
+        "data,": {
+            "Notebooks,": "/notebooks-for-developers",
+            "Serverless,": "/serverless-and-data",
+            "Machine Learning,": "/machine-learning-for-developers",
+            "Databases,": "/get-connected-databases",
+            "and": null,
+            "JSON,": "/working-with-json",
+            "and with": null,
+            "our partners,": {
+                "MapBox,": "/mapbox",
+                "SETI,": "/seti",
+                "PeaceTech": "/peacetech",
+                "and": null,
+                "Olli": "/olli"
+            }
+        },
+        "so you can too": null
+    }
+}

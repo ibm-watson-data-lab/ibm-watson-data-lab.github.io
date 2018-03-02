@@ -5,10 +5,11 @@ story:      An add-on for Jupyter that lets Node run inside Python notebook cell
 permalink:  nodebooks
 layout:     layout-featured-collection
 featured:   true
-img:        nodebooks.png
-img-thumb:  nodebooks-thumb.png
+#img:        nodebooks.png
+#img-thumb:  nodebooks-thumb.png
 strategies: 
   - notebooks-for-developers
+position:	1
 essentials:
   pixiedust_node on GitHub: https://github.com/ibm-watson-data-lab/pixiedust_node
 lead:       glynn-bird

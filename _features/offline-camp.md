@@ -4,10 +4,11 @@ headline:   Building the Offline First community, one campfire at a time.
 layout:     layout-featured-collection
 permalink:  offline-camp
 featured:   true
-img:        offline-camp-campfire.jpeg #offlinecamp-logo.jpg
-img-thumb:  offline-camp-campfire.jpeg #offlinecamp-logo-thumb.jpg
+#img:        offline-camp-campfire.jpeg #offlinecamp-logo.jpg
+#img-thumb:  offline-camp-campfire.jpeg #offlinecamp-logo-thumb.jpg
 strategies: 
   - offline-first
+position:	0
 essentials:
   Offline Camp:  http://offlinefirst.org/camp/  
   Offline Camp on Medium: https://medium.com/offline-camp
@@ -20,11 +21,11 @@ lead:       teri-chadbourne
 
 Offline First is about more than just technology; it’s about community. That’s why we’re so happy to be foundational sponsors of the community-driven unconference known as [Offline Camp](http://offlinefirst.org/camp).
 
-Each retreat takes place over the course of a long weekend in a remote location, gathering developers, UX professionals, and business leaders to discuss the opportunities and challenges around [Offline First](http://offlinefirst.org). The unconference format allows us to tailor discussions to the interests of the 20 to 30 campers who attend each camp, and the idyllic settings and communal living encourage a genuine sense of [community built around a campfire](https://medium.com/offline-camp/crafting-community-events-that-leave-them-wanting-smore-902974cff4d4). Our team has sponsored and co-organized each of the first three camps, from the Catskills to California to Berlin, and we’re thrilled to be in the company of other stand-out sponsors such as Google Cloud Platform, Make&Model Inc, Neighbourhoodie, simplabs, and YLD.
+Each retreat takes place over the course of a long weekend in a remote location, gathering developers, UX professionals, and business leaders to discuss the opportunities and challenges around [Offline First](http://offlinefirst.org). The unconference format allows us to tailor discussions to the interests of the 20 to 30 campers who attend each camp, and the idyllic settings and communal living encourage a genuine sense of [community built around a campfire](https://medium.com/offline-camp/crafting-community-events-that-leave-them-wanting-smore-902974cff4d4). Our team has sponsored and co-organized each of the first four camps, from the Catskills to California to Berlin to Oregon, and we’re thrilled to be in the company of other stand-out sponsors such as Google Cloud Platform, Microsoft, Make&Model Inc, Neighbourhoodie, simplabs, and YLD.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FNtpPW_7H1k?rel=0" frameborder="0" allowfullscreen></iframe>
 
-Although campers have formed phenomenal relationships at these retreats, we’ve been even more excited to see how they’re influencing the broader Offline First community. Campers have authored more than 70 posts on the [Offline Camp Medium publication](https://medium.com/offline-camp), from recaps of unconference sessions to background articles accompanying videos of their "[passion talks](https://www.youtube.com/playlist?list=PL3-Vs4cmp6yRzfKJWKdQuUa_dBpuGGKZA)." Offline Camp alumni have published articles in magazines, been interviewed for podcasts, gathered case studies for the Offline First website, and supported each other’s work through discussion in the [Offline First Slack team](http://offlinefirst.org/chat/).
+Although campers have formed phenomenal relationships at these retreats, we’ve been even more excited to see how they’re influencing the broader Offline First community. Campers have authored more than 95 posts on the [Offline Camp Medium publication](https://medium.com/offline-camp), from recaps of unconference sessions to background articles accompanying videos of their "[passion talks](https://www.youtube.com/playlist?list=PL3-Vs4cmp6yRzfKJWKdQuUa_dBpuGGKZA)." Offline Camp alumni have published articles in magazines, been interviewed for podcasts, gathered case studies for the Offline First website, and supported each other’s work through discussion in the [Offline First Slack team](http://offlinefirst.org/chat/).
 
 The response to Offline Camp, and to the subsequent community contributions from campers, has been humbling. Mikeal Rogers, former Community Organizer at the Node.js Foundation, recently praised the camp organizers’ community-building work, calling out our dedication to continuing the conversation beyond the event. His focus on the follow-up work from camp highlights one of the most important lessons we’ve learned in our interaction with the Offline First community: that time is as important as money when it comes to lending support.
 
@@ -40,6 +41,7 @@ Organizer burnout is a big issue in the developer community. Many events and gro
 Learn more about previous Offline Camps:
 
 {:.browser-default}
+- [Offline Camp Oregon 2017](https://medium.com/offline-camp/conquering-the-oregon-trail-118958520c67)
 - [Offline Camp Berlin 2017](https://medium.com/offline-camp/offline-camp-berlin-36a491e4e4e2)
 - [Offline Camp California 2016](https://medium.com/offline-camp/iterating-on-offline-camp-af9b288cf5aa)
 - [Offline Camp Catskills 2016](https://medium.com/offline-camp/from-the-catskills-to-california-the-growing-offline-first-community-8a7456e83794)
@@ -47,6 +49,6 @@ Learn more about previous Offline Camps:
 And more content around the camps:
 
 {:.browser-default}
-- [Offline Camp Berlin Is Proud to Have the Support of Google Cloud Platform](https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0)
 - [Crafting Community Events that Leave them Wanting S'more](https://medium.com/offline-camp/crafting-community-events-that-leave-them-wanting-smore-902974cff4d4)
+- [Offline Camp Berlin Is Proud to Have the Support of Google Cloud Platform](https://medium.com/offline-camp/offline-camp-berlin-is-proud-to-have-the-support-of-google-cloud-platform-5b29eeeafaf0)
 - [Offline First Podcasts](https://medium.com/offline-camp/offline-first-podcasts-d0be01721ee6)

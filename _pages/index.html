@@ -1,0 +1,96 @@
+---
+layout: default
+title:  Home
+id:     home
+permalink: index.html
+---
+
+<section class="intro">
+  <div class="container">
+    <h1 id="telescopicText"></h1>
+  </div>
+</section>
+
+<section class="container">
+  <div class="latest-project row">
+    <div class="rail-heading col m1">_Recent</div>
+    <div class="col m11" id="hero"></div>
+  </div>
+
+  {% assign strategies = site.strategies %}
+  <div class="strategies-list row">
+    <div class="rail-heading col m1">_Topics</div>
+    <ul class="col m11">
+      {% for strategy in strategies %}
+      {% assign collections = site.features | where:"strategies",strategy.permalink | sort:"position" %}
+      {% assign projects = site.data.projects | where:"strategies",strategy.permalink %}
+      {% assign limit = strategy.limit %}
+      <li class="strategy row">
+        <div class="col m4">
+          <h1 class="strategy-title">
+            <a href="/{{ strategy.permalink }}" title="{{ strategy.headline }}">{{ strategy.title }}</a>
+          </h1>
+          <div class="strategy-headline">{{ strategy.headline }}</div>
+          <div class="strategy-info">{{ collections.size }} collections | {{ projects.size }} projects</div>
+        </div>
+        <div class="col m1"> </div>
+        <ul class="col m7">
+          {% for collection in collections limit:limit %}
+          <li>
+            <h3 class="collection-title">
+                <a href="/{{ collection.permalink }}" title="{{ collection.headline }}">{{ collection.title }}</a>
+            </h3>
+            <div class="collection-headline">{{ collection.headline }}</div>
+            <div class="collection-items">
+              {% assign items = site.data.projects | where:"features",collection.permalink | reverse %}
+              {% for item in items limit:2 %}
+              <h4 class="collection-item">
+                {% if item.links.first[0] == 'GitHub' %}
+                  {% assign icon = 'github' %}
+                {% elsif item.links.first[0] == 'Medium' %}
+                  {% assign icon = 'medium' %}
+                {% elsif item.links.first[0] == 'Compose Articles' %}
+                  {% assign icon = 'cubes' %}
+                {% elsif item.links.first[0] == 'Notebook' %}
+                  {% assign icon = 'book' %}
+                {% elsif item.links.first[0] == 'npm' %}
+                  {% assign icon = 'code' %}
+                {% elsif item.links.first[0] == 'dataset' %}
+                  {% assign icon = 'database' %}
+                {% else %}
+                  {% assign icon = 'newspaper-o' %}
+                {% endif %}
+                <i class="fa fa-{{ icon }}" aria-hidden="true"></i>
+                <a href="{{ item.links.first[1] }}" class="collection-item-link" title="'{{ item.title }}' on {{ item.links.first[0] }}">
+                  {{ item.title }}
+                  &rarr;
+                </a>
+              </h4>
+              {% endfor %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="outro">
+  <div class="container">
+    <div class="outro-message">
+      <h1>
+        <a href="{{ site.baseurl }}/about#get-involved">Get Involved</a>
+      </h1>
+      <p>
+        See how you can contribute and be part of the Watson Data Lab community
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  var telescopicIntro = JSON.parse('{{ site.data.telescopic.intro | jsonify }}');
+  var recentArticles = {{ site.data.projects | sort:"date" | reverse | slice: 0, 5 | replace: '=>', ':' | json }};
+</script>

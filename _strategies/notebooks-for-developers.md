@@ -3,7 +3,6 @@ title:      Notebooks for Developers
 headline:   The tools of data science aren't just for data scientists.
 permalink:  notebooks-for-developers
 layout:     layout-strategy
-tier:       2
 lead:       david-taieb
 ---
 
