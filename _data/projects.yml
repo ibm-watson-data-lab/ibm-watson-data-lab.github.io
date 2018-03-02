@@ -501,7 +501,6 @@
   tags: 
     - "Watson Conversation"
     - Slack
-    - Spoonacular
     - Cloudant
 
 # Start 2017 below
@@ -588,7 +587,6 @@
   tags: 
     - "Watson Conversation"
     - Slack
-    - Spoonacular
     - Tinkerpop
     - Nodejs
 
