@@ -181,7 +181,7 @@ window.devadvo = {
     if (results.data && results.data.rows && results.data.rows.length > 0) {
       var resultslist = $('.projects-search-results ul').empty()
       results.data.rows.forEach(function (project) {
-        var tags = project.tags && project.tags.length ? ('<li>' + project.tags.join('</li><li>') + '</li>') : ''
+        var tags = project.tags && project.tags.length ? ('<li role="button">' + project.tags.join('</li><li role="button">') + '</li>') : ''
         var linkkeys = Object.keys(project.links)
         var links = ''
         for (var i = 0; i < linkkeys.length; i++) {
@@ -218,6 +218,14 @@ window.devadvo = {
           </li>`
 
         resultslist.append(temp)
+
+        $('.strategy-project-tags li:not(.bound)')
+          .addClass('bound')
+          .on('click', function () {
+            var tag = $(this).text()
+            window.simplesearchUtil.search('tags:' + tag)
+            // window.location = '/projects?q=tags:' + tag
+          })
       })
 
       if (results.paging) {

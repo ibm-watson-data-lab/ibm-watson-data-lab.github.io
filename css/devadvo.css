@@ -698,6 +698,11 @@ section.row > .col {
   padding: 0 14px;
 }
 
+.strategy-project-tags li.bound:hover {
+  background-color: #D8D8D8;
+  cursor: pointer;
+}
+
 .team-list {
   display: -webkit-flex;
   display: flex;
