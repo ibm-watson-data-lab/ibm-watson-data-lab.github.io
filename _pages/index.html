@@ -92,5 +92,5 @@ permalink: index.html
 
 <script>
   var telescopicIntro = JSON.parse('{{ site.data.telescopic.intro | jsonify }}');
-  var recentArticles = {{ site.data.projects | reverse | slice: 0, 5 | replace: '=>', ':' | json }};
+  var recentArticles = {{ site.data.projects | sort:"date" | reverse | slice: 0, 5 | replace: '=>', ':' | json }};
 </script>

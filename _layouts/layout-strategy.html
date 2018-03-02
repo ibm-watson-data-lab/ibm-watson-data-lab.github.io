@@ -69,7 +69,7 @@ layout: default
 
     <section id="strategy-projects" class="row">
       <div class="col m12">
-        {% assign projects = site.data.projects | where:"strategies",page.permalink | reverse %}
+        {% assign projects = site.data.projects | where:"strategies",page.permalink | sort:"date" | reverse %}
         
         {% if projects.size > 0 %}
           <h3>Projects</h3>

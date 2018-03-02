@@ -12,7 +12,6 @@
   tags: 
     - Cloudant
     - Nodejs
-    - Piwik
     - Angular
 
 # Start 2016 below
@@ -42,7 +41,7 @@
   strategies: 
     - notebooks-for-developers
   tags: 
-    - Jupyter
+    - "Jupyter Notebook"
     - Python
 
 - title: "Simple Logging Service: Our Metrics Collector App Rebuilt on a Microservices Stack"
@@ -124,8 +123,6 @@
 
 - title: "Sentiment Analysis of Reddit AMAs"
   date: "2016-06-23"
-  features: 
-    - watson-and-data
   headline: "Unlock the hidden sentiments of redditors."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/reddit-sentiment-analysis"
@@ -154,8 +151,7 @@
   strategies: 
     - notebooks-for-developers
   tags: 
-    - FlightStats
-    - "Weather Company"
+    - Weather
     - Cloudant
     - Spark
     - "Jupyter Notebook"
@@ -204,7 +200,7 @@
     - offline-first
   tags: 
     - Cloudant
-    - "iOS Swift"
+    - "Swift (iOS)"
 
 - title: "Cloudant FoodTracker Part 2: Sync to the Cloud"
   date: "2016-06-08"
@@ -218,7 +214,7 @@
     - offline-first
   tags: 
     - Cloudant
-    - "iOS Swift"
+    - "Swift (iOS)"
 
 - title: "Cloudant FoodTracker Part 3: User Interface"
   date: "2016-06-30"
@@ -232,7 +228,7 @@
     - offline-first
   tags: 
     - Cloudant
-    - "iOS Swift"
+    - "Swift (iOS)"
 
 - title: "Location Tracker Swift Client [1]"
   date: "2016-06-14"
@@ -247,7 +243,7 @@
     - offline-first
   tags: 
     - Cloudant
-    - "iOS Swift"
+    - "Swift (iOS)"
 
 - title: "Location Tracker Node.js Server [1.5]"
   date: "2016-06-14"
@@ -358,7 +354,7 @@
     - Etcd
     - Tinkerpop
     - MongoDB
-    - Postgres
+    - PostgreSQL
     - Redis
     - RethinkDB
 
@@ -490,7 +486,7 @@
   tags: 
     - Spark
     - "Object Storage"
-    - Jupyter
+    - "Jupyter Notebook"
     - Python
 
 - title: "Persisting Data for a Smarter Chatbot"
@@ -613,7 +609,6 @@
   tags: 
     - Nodejs
     - Express
-    - Bootstrap
     - Vuejs
     - RethinkDB
     - Compose
@@ -647,7 +642,7 @@
     - notebooks-for-developers
     - partners
   tags: 
-    - "Jupyter Notebooks"
+    - "Jupyter Notebook"
     - "Apache Spark"
     - Mapbox
     - PixieDust
@@ -664,7 +659,7 @@
   strategies: 
     - notebooks-for-developers
   tags: 
-    - "Jupyter Notebooks"
+    - "Jupyter Notebook"
     - "Apache Spark"
     - PixieDust
 
@@ -682,7 +677,7 @@
   strategies: 
     - notebooks-for-developers
   tags: 
-    - "Jupyter Notebooks"
+    - "Jupyter Notebook"
     - "Apache Spark"
     - PixieDust
     - "Watson Conversation"
@@ -746,7 +741,6 @@
   tags: 
     - Cloudant
     - Nodejs
-    - RunKit
 
 - title: "Moving data from DynamoDB to Cloudant or CouchDB"
   date: "2017-03-24"
@@ -764,7 +758,6 @@
     - Cloudant
     - CouchDB
     - Nodejs
-    - DynamoDB
 
 - title: "Data Visualization Right in the Cloudant Dashboard"
   date: "2017-04-07"
@@ -795,6 +788,7 @@
     - serverless-and-data
   tags: 
     - OpenWhisk
+    - "IBM Cloud Functions"
     - "Watson Conversation"
 
 - title: "Zero to Kubernetes on the IBM Bluemix Container Service"
@@ -820,7 +814,7 @@
   strategies: 
     - notebooks-for-developers
   tags: 
-    - Jupyter
+    - "Jupyter Notebook"
     - Python
     - PixieDust
 
@@ -897,9 +891,8 @@
     - Cloudant
     - Chatbots
     - Mapbox
-    - Mobile
     - Slack
-    - Vue.js
+    - Vuejs
     - "Watson Conversation"
 
 - title: "Simulating E.T. Radio Signals"
@@ -957,7 +950,7 @@
   tags: 
     - Python
     - Cloudant
-    - Jupyter
+    - "Jupyter Notebook"
     - PixieDust
 
 - title: "Querying your Cloudant database with SQL"
@@ -1010,7 +1003,7 @@
   strategies: 
     - get-connected-databases
   tags: 
-    - Postgres
+    - PostgreSQL
     - Compose
     - "Watson Tone Analyzer"
     - "Watson Natural Language Understanding"
@@ -1057,6 +1050,7 @@
     - serverless-and-data
   tags: 
     - OpenWhisk
+    - "IBM Cloud Functions"
 
 - title: "A Fancier Graph for an Already-Smarter Chatbot"
   date: "2017-07-27"
@@ -1073,7 +1067,6 @@
   tags: 
     - "Watson Conversation"
     - Slack
-    - Spoonacular
     - Compose
     - JanusGraph
     - Nodejs
@@ -1089,7 +1082,7 @@
     - notebooks-for-developers
     - partners
   tags: 
-    - Jupyter
+    - "Jupyter Notebook"
     - Python
     - Mapbox
 
@@ -1106,6 +1099,7 @@
     - working-with-json
   tags: 
     - OpenWhisk
+    - "IBM Cloud Functions"
     - Nodejs
 
 - title: "Rethinking Offline First sync for Service Workers"
@@ -1250,6 +1244,7 @@
     - Cloudant
     - JavaScript
     - OpenWhisk
+    - "IBM Cloud Functions"
 
 - title: "Using Watson Machine Learning to Predict a Post's Potential"
   date: "2017-08-30"
@@ -1266,7 +1261,7 @@
   tags: 
     - PixieDust
     - "Watson Machine Learning"
-    - Jupyter
+    - "Jupyter Notebook"
 
 - title: "Analyzing Podcast Metadata Using Jupyter Notebooks"
   date: "2017-09-05"
@@ -1283,7 +1278,7 @@
   tags: 
     - PixieDust
     - "Watson Natural Language Understanding"
-    - Jupyter
+    - "Jupyter Notebook"
 
 - title: "Nodebooks: Introducing Node.js Data Science Notebooks"
   date: "2017-09-06"
@@ -1368,6 +1363,7 @@
     - Redis
     - Nodejs
     - OpenWhisk
+    - "IBM Cloud Functions"
 
 - title: "Medium.com, More Stats Please"
   date: "2017-09-27"
@@ -1381,7 +1377,7 @@
   strategies: 
     - notebooks-for-developers
   tags: 
-    - Jupyter
+    - "Jupyter Notebook"
     - Python
     - PixieDust
 
@@ -1395,7 +1391,6 @@
     - offline-first
   tags: 
     - JavaScript
-    - HTML
 
 - title: "Deploy Your Cloud Functions with Bluemix DevOps"
   date: "2017-10-04"
@@ -1408,6 +1403,7 @@
     - serverless-and-data
   tags: 
     - OpenWhisk
+    - "IBM Cloud Functions"
     - JavaScript
 
 - title: "Cloudant Envoy: Serverless Edition"
@@ -1426,6 +1422,7 @@
     - Cloudant
     - JavaScript
     - OpenWhisk
+    - "IBM Cloud Functions"
 
 - title: "Building an Ordering Application with Watson AI and PostgreSQL: Part I"
   date: "2017-06-13"
@@ -1473,7 +1470,7 @@
     - notebooks-for-developers
   tags: 
     - PixieDust
-    - Jupyter
+    - "Jupyter Notebook"
     - Python
 
 - title: "Making of a Smart Business Chatbot: Part 1"
@@ -1561,7 +1558,7 @@
   tags: 
     - Compose
     - PostgreSQL
-    - Jupyter
+    - "Jupyter Notebook"
     - Docker
 
 - title: "Visualizing Data with Jupyter Notebooks, PixieDust, and Compose MongoDB"
@@ -1578,7 +1575,7 @@
     - notebooks-for-developers
     - working-with-json
   tags: 
-    - Jupyter
+    - "Jupyter Notebook"
     - Compose
     - MongoDB
     - PixieDust
@@ -1597,7 +1594,7 @@
   strategies: 
     - notebooks-for-developers
   tags: 
-    - Jupyter
+    - "Jupyter Notebook"
     - Python
     - PixieDust
 
@@ -1698,7 +1695,7 @@
   strategies: 
     - offline-first
   tags: 
-    - Swift
+    - "Swift (iOS)"
     - Cloudant
 
 - title: "Shopping list demo using Kotlin and Cloudant Sync [native mobile app]"
@@ -1743,7 +1740,7 @@
     - Compose
     - PostgreSQL
     - "Watson Machine Learning"
-    - Jupyter
+    - "Jupyter Notebook"
     - Python
 
 - title: "A.I. for E.T."
@@ -1760,8 +1757,6 @@
   tags: 
     - Spark
     - "Object Storage"
-    - Db2
-    - "Deep Learning"
     - "Machine Learning"
 
 - title: "Couchimport: Import flat data into CouchDB efficiently."
@@ -1833,7 +1828,7 @@
   tags: 
     - "Watson Machine Learning"
     - Python
-    - Jupyter
+    - "Jupyter Notebook"
     - PixieDust
 
 - title: "Doing Moar Together"
@@ -1844,8 +1839,6 @@
     Medium: "https://medium.com/ibm-watson-data-lab/doing-moar-together-184678b9f864"
   strategies: 
     - offline-first
-  tags: 
-    - Agile
 
 - title: "Notebooks for Spreadsheet Users"
   date: "2017-10-24"
@@ -1859,7 +1852,7 @@
     - notebooks-for-developers
   tags: 
     - Python
-    - Jupyter
+    - "Jupyter Notebook"
     - PixieDust
 
 - title: "Go and Compose – MongoDB, Elasticsearch and PostgreSQL"
@@ -1951,7 +1944,7 @@
   tags: 
     - Compose
     - PostgreSQL
-    - Jupyter
+    - "Jupyter Notebook"
 
 - title: "Go and Compose – Redis, RethinkDB, and RabbitMQ"
   date: "2017-10-31"
@@ -1998,6 +1991,7 @@
   tags: 
     - Cloudant
     - OpenWhisk
+    - "IBM Cloud Functions"
     - Nodejs
 
 - title: "Discover Space on Twitter with Elasticsearch and Redis"
@@ -2018,8 +2012,6 @@
 - title: "Graph 101: Getting Started with Graphs"
   date: "2017-11-02"
   lead: john-oconnor
-  features: 
-    - graph-101
   headline: "Evaluate if a graph database will work for you, and learn how to import data."
   links: 
     Compose Articles: "https://compose.com/articles/graph-101-getting-started-with-graphs/"
@@ -2060,7 +2052,7 @@
     - notebooks-for-developers
     - partners
   tags: 
-    - Jupyter
+    - "Jupyter Notebook"
     - PixieDust
     - Nodejs
     - Mapbox
@@ -2069,8 +2061,6 @@
 - title: "Graph 101: Traversing and Querying JanusGraph using Gremlin"
   date: "2017-11-09"
   lead: john-oconnor
-  features: 
-    - graph-101
   headline: "Vertices and edges, oh my! Let's cover some basic graph DB queries."
   links: 
     Compose Articles: "https://compose.com/articles/graph-101-traversing-and-querying-janusgraph-using-gremlin/"
@@ -2083,8 +2073,6 @@
 - title: "Importing Graphs into JanusGraph"
   date: "2017-11-14"
   lead: dj-walker-morgan
-  features: 
-    - graph-101
   headline: "Using Gremlin I/O to load existing graph structures into a remote database."
   links: 
     Compose Articles: "https://compose.com/articles/importing-graphs-into-janusgraph/"
@@ -2105,6 +2093,7 @@
     - serverless-and-data
   tags: 
     - OpenWhisk
+    - "IBM Cloud Functions"
     - Cloudant
     - Compose
     - Elasticsearch
@@ -2125,6 +2114,7 @@
     - serverless-and-data
   tags:
     - OpenWhisk
+    - "IBM Cloud Functions"
     - Nodejs
     - Cloudant
 
@@ -2154,6 +2144,7 @@
   tags: 
     - Cloudant
     - OpenWhisk
+    - "IBM Cloud Functions"
 
 - title: "Sliding Through a Notebook"
   date: "2017-12-11"
@@ -2165,7 +2156,7 @@
   strategies: 
     - notebooks-for-developers
   tags: 
-    - Jupyter
+    - "Jupyter Notebook"
     - Python
 
 - title: "How to Handle Tagged Data with Redis Sets"
@@ -2204,6 +2195,7 @@
     - serverless-and-data
   tags: 
     - OpenWhisk
+    - "IBM Cloud Functions"
     - JavaScript
     - Cloudant
     - "Object Storage"
@@ -2224,7 +2216,9 @@
     - Compose
     - Redis
     - OpenWhisk
+    - "IBM Cloud Functions"
     - Python
+    - Alexa
 
 # start 2018 below
 
@@ -2238,6 +2232,7 @@
     - serverless-and-data
   tags: 
     - OpenWhisk
+    - "IBM Cloud Functions"
 
 - title: "Open Data Sets"
   date: "2018-01-30"
@@ -2249,7 +2244,7 @@
     - __
   tags: 
     - Cloudant
-    - Jupyter
+    - "Jupyter Notebook"
 
 - title: "Creating Partial Cloudant Indexes"
   date: "2018-01-10"
@@ -2303,7 +2298,7 @@
     - notebooks-for-developers
   tags: 
     - PixieDust
-    - Jupyter
+    - "Jupyter Notebook"
     - Nodejs
     - Python
 
