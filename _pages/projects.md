@@ -19,7 +19,7 @@ permalink: projects
   <section class="row">
     <div class="col m8">
       <div class="projects-search-results">
-        {% assign projects = site.data.projects | reverse %}
+        {% assign projects = site.data.projects | sort:"date" | reverse %}
         <ul>
           {% for proj in projects %}
           <li class="m12 strategy-project-info">
