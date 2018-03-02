@@ -379,8 +379,6 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/openobjectstore"
     developerWorks: "https://developer.ibm.com/clouddataservices/2016/12/07/build-a-simple-data-portal-with-python-and-ibm-object-storage/"
-  strategies: 
-    - __
   tags: 
     - "Object Storage"
     - Python
@@ -797,8 +795,6 @@
   headline: "Just deployment basics. Nothing fancy."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/zero-to-kubernetes-on-the-ibm-bluemix-container-service-fd104fd193c1"
-  strategies: 
-    - __
   tags: 
     - Kubernetes
     - Docker
@@ -1226,7 +1222,7 @@
     - get-connected-databases
   tags: 
     - Compose
-    - etcd
+    - Etcd
 
 - title: "Custom Cloudant Replication"
   date: "2017-08-22"
@@ -1781,8 +1777,6 @@
   headline: "The library helps you to read and write data between Spark and IBM’s Object Storage services."
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/ibmos2spark"
-  strategies: 
-    - ___
   tags: 
     - "Object Storage"
     - Spark
@@ -1971,8 +1965,6 @@
   links: 
     GitHub: "https://github.com/ibm-watson-data-lab/ibmos2spark/"
     Medium: "https://medium.com/ibm-watson-data-lab/ibm-object-storage-2-spark-library-f52cddf4c4f0"
-  strategies: 
-    - __
   tags: 
     - "Object Storage"
     - Python
@@ -2125,8 +2117,6 @@
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/deploy-to-ibm-cloud-with-travisci-e69ae2cbf647"
     GitHub: "https://github.com/lornajane/christmas-countdown"
-  strategies: 
-    - __
   tags: 
     - PHP
 
@@ -2240,8 +2230,6 @@
   headline: "Curated data, open and free for you to use."
   links: 
     dataset: "https://github.com/ibm-watson-data-lab/open-data"
-  strategies: 
-    - __
   tags: 
     - Cloudant
     - "Jupyter Notebook"
@@ -2512,8 +2500,6 @@
   date: "2018-02-12"
   lead: teri-chadbourne
   headline: "Preparing for new talk proposals with fresh perspectives."
-  strategies: 
-    - __
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/reflections-on-global-diversity-cfp-day-d26355c971"
 
@@ -2623,4 +2609,4 @@
     - machine-learning-for-developers
   tags: 
     - "Watson Machine Learning"
-    - "continuous learning"
+    - "Machine Learning"
