@@ -696,7 +696,7 @@
   tags: 
     - OpenWhisk
     - Cloudant
-    - "IBM CLoud Functions"
+    - "IBM Cloud Functions"
 
 - title: "Adding custom Alexa skills with OpenWhisk and Cloudant"
   date: "2017-03-27"
@@ -1112,7 +1112,7 @@
   strategies: 
     - offline-first
   tags: 
-    - "Progressivew Web App"
+    - "Progressive Web App"
     - JavaScript
     - PouchDB
 
