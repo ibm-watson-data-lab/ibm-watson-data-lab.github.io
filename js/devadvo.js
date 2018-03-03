@@ -1,4 +1,4 @@
-/* global $, telescopicIntro, recentArticles, authorLinks, siteStrategies, SimpleSearch, pageId */
+/* global $, telescopicIntro, recentArticles, authorLinks, siteStrategies, SimpleSearch, pageId, siteAuthors */
 
 var shuffleStrategies = function () {
   var li = $('.strategies-list > ul > li')
@@ -292,6 +292,11 @@ window.devadvo = {
             .css('display', 'block')
         })
       }
+
+      $('[data-search-facetkey="lead"]').text('Authors')
+      $('[data-search-query^="lead:"]').each(function () {
+        $(this).text(siteAuthors[$(this).text()])
+      })
     }
   }
 }
