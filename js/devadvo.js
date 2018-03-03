@@ -358,7 +358,7 @@ $(document).ready(function () {
     .addClass('bound')
     .attr('role', 'button')
     .on('click', function () {
-      var t = $(this).text()
+      var t = $(this).text().trim()
       t = t.indexOf(' ') === -1 ? t : ('"' + t + '"')
       window.location = '/projects?q=tags:' + t
     })
