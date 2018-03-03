@@ -312,7 +312,8 @@ var initSearch = function () {
     searchButton: false,
     facetsList: '.projects-search-facets'
   }, {
-    deepLinking: true
+    deepLinking: true,
+    params: 'sort="-date<string>"'
   })
 
   $('.projects-prev').on('click', function () {
