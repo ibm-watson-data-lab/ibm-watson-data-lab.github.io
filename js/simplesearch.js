@@ -770,14 +770,14 @@ var SimpleSearch = function (serviceUrl, callbacks, containers, configuration) {
     if (current.indexOf(query) > -1) {
       query = current.replace(query, '').replace(/((\sAND\s)+)/ig, ' AND ')
     } else if (current !== '*:*') {
-      var regex = new RegExp(keyvalue[0] + ':\".*?\"', 'i')
-      var facet = current.match(regex)
+      // var regex = new RegExp(keyvalue[0] + ':".*?"', 'i')
+      // var facet = current.match(regex)
 
-      if (facet) {
-        query = current.replace(facet, query)
-      } else {
+      // if (facet) {
+      //   query = current.replace(facet, query)
+      // } else {
         query += (' AND ' + current)
-      }
+      // }
     }
 
     query = query.trim()
