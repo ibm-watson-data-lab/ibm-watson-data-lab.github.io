@@ -30,6 +30,7 @@
     - Cloudant
     - PouchDB
     - Nodejs
+    - "Offline First"
 
 - title: "Data-Driven Shopper Insights"
   date: "2016-05-27"
@@ -72,6 +73,7 @@
   tags: 
     - Nodejs
     - PouchDB
+    - "Offline First"
 
 - title: "Caching Cloudant Requests With cachemachine"
   date: "2016-11-22"
@@ -200,6 +202,7 @@
   tags: 
     - Cloudant
     - "Swift (iOS)"
+    - "Offline First"
 
 - title: "Cloudant FoodTracker Part 2: Sync to the Cloud"
   date: "2016-06-08"
@@ -214,6 +217,7 @@
   tags: 
     - Cloudant
     - "Swift (iOS)"
+    - "Offline First"
 
 - title: "Cloudant FoodTracker Part 3: User Interface"
   date: "2016-06-30"
@@ -228,6 +232,7 @@
   tags: 
     - Cloudant
     - "Swift (iOS)"
+    - "Offline First"
 
 - title: "Location Tracker Swift Client [1]"
   date: "2016-06-14"
@@ -243,6 +248,7 @@
   tags: 
     - Cloudant
     - "Swift (iOS)"
+    - "Offline First"
 
 - title: "Location Tracker Node.js Server [1.5]"
   date: "2016-06-14"
@@ -258,6 +264,7 @@
   tags: 
     - Cloudant
     - Nodejs
+    - "Offline First"
 
 - title: "Location Tracker Envoy Server [2]"
   date: "2016-08-11"
@@ -273,6 +280,7 @@
   tags: 
     - Cloudant
     - Nodejs
+    - "Offline First"
 
 - title: "Scaling Offline First With Cloudant Envoy"
   date: "2016-07-11"
@@ -289,6 +297,7 @@
   tags: 
     - Cloudant
     - Nodejs
+    - "Offline First"
 
 - title: "Real-Time Q&A App With RethinkDB"
   date: "2016-09-13"
@@ -502,6 +511,7 @@
     - "Watson Conversation"
     - Slack
     - Cloudant
+    - Chatbots
 
 # Start 2017 below
 
@@ -569,6 +579,7 @@
     - Nodejs
     - PouchDB
     - "Progressive Web App"
+    - "Offline First"
     - "Watson Speech to Text"
     - "Watson Natural Language Understanding"
 
@@ -589,6 +600,7 @@
     - Slack
     - Tinkerpop
     - Nodejs
+    - Chatbots
 
 - title: "Realtime Infrastructure Made Simple"
   date: "2017-01-11"
@@ -677,6 +689,7 @@
     - PixieDust
     - "Watson Conversation"
     - Cloudant
+    - Chatbots
 
 - title: "Using Serverless Infrastructure to Build a Large-Scale Petition System"
   date: "2017-02-27"
@@ -692,6 +705,7 @@
     - OpenWhisk
     - Cloudant
     - "IBM Cloud Functions"
+    - Serverless
 
 - title: "Adding custom Alexa skills with OpenWhisk and Cloudant"
   date: "2017-03-27"
@@ -707,6 +721,7 @@
     - Alexa
     - Cloudant
     - "IBM Cloud Functions"
+    - Serverless
 
 - title: "Offline Sync for Progressive Web Apps"
   date: "2017-04-06"
@@ -723,6 +738,7 @@
     - Hoodie
     - PouchDB
     - "Progressive Web App"
+    - "Offline First"
 
 - title: "Analysing Cloudant JSON in RunKit JavaScript Notebooks"
   date: "2017-03-16"
@@ -785,6 +801,8 @@
     - OpenWhisk
     - "IBM Cloud Functions"
     - "Watson Conversation"
+    - Serverless
+    - Chatbots
 
 - title: "Zero to Kubernetes on the IBM Bluemix Container Service"
   date: "2017-04-18"
@@ -837,6 +855,7 @@
   tags: 
     - JavaScript
     - PouchDB
+    - "Offline First"
 
 - title: "Simple Data Visualization in Apache CouchDB™"
   date: "2017-05-09"
@@ -1017,6 +1036,7 @@
     - Redis
     - Compose
     - "IBM Cloud Functions"
+    - Serverless
 
 - title: "Querying Your PouchDB Database With SQL"
   date: "2017-07-31"
@@ -1044,6 +1064,7 @@
   tags: 
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
 
 - title: "A Fancier Graph for an Already-Smarter Chatbot"
   date: "2017-07-27"
@@ -1063,6 +1084,7 @@
     - Compose
     - JanusGraph
     - Nodejs
+    - Chatbots
 
 - title: "Got Zip Code Data? Prep It for Analytics."
   date: "2017-08-15"
@@ -1094,6 +1116,7 @@
     - OpenWhisk
     - "IBM Cloud Functions"
     - Nodejs
+    - Serverless
 
 - title: "Rethinking Offline First sync for Service Workers"
   date: "2017-03-16"
@@ -1108,6 +1131,7 @@
     - "Progressive Web App"
     - JavaScript
     - PouchDB
+    - "Offline First"
 
 - title: "CouchDB, PouchDB and Hoodie as a Stack for Progressive Web Apps"
   date: "2017-11-30"
@@ -1123,6 +1147,7 @@
     - CouchDB
     - PouchDB
     - Hoodie
+    - "Offline First"
 
 - title: "Using React and Preact to Build My First Offline First Apps"
   date: "2017-09-05"
@@ -1136,6 +1161,7 @@
   tags: 
     - "Progressive Web App"
     - JavaScript
+    - "Offline First"
 
 - title: "Mastering PostgreSQL Tools: Filters and Foreign Data Wrappers"
   date: "2017-06-07"
@@ -1238,6 +1264,7 @@
     - JavaScript
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
 
 - title: "Using Watson Machine Learning to Predict a Post's Potential"
   date: "2017-08-30"
@@ -1336,6 +1363,7 @@
   tags: 
     - PouchDB
     - JavaScript
+    - "Offline First"
 
 - title: "Custom Indexers for Cloudant"
   date: "2017-09-26"
@@ -1356,6 +1384,7 @@
     - Nodejs
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
 
 - title: "Medium.com, More Stats Please"
   date: "2017-09-27"
@@ -1383,6 +1412,7 @@
     - offline-first
   tags: 
     - JavaScript
+    - "Offline First"
 
 - title: "Deploy Your Cloud Functions with Bluemix DevOps"
   date: "2017-10-04"
@@ -1397,12 +1427,11 @@
     - OpenWhisk
     - "IBM Cloud Functions"
     - JavaScript
+    - Serverless
 
 - title: "Cloudant Envoy: Serverless Edition"
   date: "2017-10-05"
   lead: glynn-bird
-  features: 
-    - offline-first
   headline: "The CouchDB one-database-per-user pattern, now with less infrastructure."
   links: 
     GitHub: "https://github.com/glynnbird/envoy-serverless"
@@ -1415,6 +1444,8 @@
     - JavaScript
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
+    - "Offline First"
 
 - title: "Building an Ordering Application with Watson AI and PostgreSQL: Part I"
   date: "2017-06-13"
@@ -1478,6 +1509,7 @@
   tags: 
     - Nodejs
     - Slack
+    - Chatbots
 
 - title: "Making of a Smart Business Chatbot: Part 2"
   date: "2017-08-02"
@@ -1493,6 +1525,7 @@
     - Nodejs
     - Watson Conversation
     - Slack
+    - Chatbots
 
 - title: "Connecting PHP to Compose for MySQL on Bluemix"
   date: "2017-08-23"
@@ -1537,6 +1570,7 @@
     - JanusGraph
     - Watson Conversation
     - Nodejs
+    - Chatbots
 
 - title: "Getting Started with Compose PostgreSQL and Jupyter Notebooks"
   date: "2017-09-20"
@@ -1603,6 +1637,7 @@
   tags: 
     - JavaScript
     - "Progressive Web App"
+    - "Offline First"
 
 - title: "Shopping list demo using Preact and PouchDB [Progressive Web App]"
   date: "2017-09-27"
@@ -1618,6 +1653,7 @@
     - PouchDB
     - Preactjs
     - "Progressive Web App"
+    - "Offline First"
 
 - title: "Shopping list demo using Ember.js and PouchDB [Progressive Web App]"
   date: "2017-09-28"
@@ -1633,6 +1669,7 @@
     - PouchDB
     - Emberjs
     - "Progressive Web App"
+    - "Offline First"
 
 - title: "Shopping list demo using React Native and PouchDB [hybrid mobile app]"
   date: "2017-09-28"
@@ -1647,6 +1684,7 @@
   tags: 
     - PouchDB
     - Reactjs
+    - "Offline First"
 
 - title: "Shopping list demo using Ionic and PouchDB [hybrid mobile app]"
   date: "2017-09-28"
@@ -1661,6 +1699,7 @@
   tags: 
     - PouchDB
     - Ionic
+    - "Offline First"
 
 - title: "Shopping list demo using Cordova and PouchDB [hybrid mobile app]"
   date: "2017-09-23"
@@ -1675,6 +1714,7 @@
   tags: 
     - PouchDB
     - Cordova
+    - "Offline First"
 
 - title: "Shopping list demo using Swift and Cloudant Sync [native mobile app]"
   date: "2017-09-28"
@@ -1689,6 +1729,7 @@
   tags: 
     - "Swift (iOS)"
     - Cloudant
+    - "Offline First"
 
 - title: "Shopping list demo using Kotlin and Cloudant Sync [native mobile app]"
   date: "2017-09-28"
@@ -1703,6 +1744,7 @@
   tags: 
     - Kotlin
     - Cloudant
+    - "Offline First"
 
 - title: "Shopping list demo using Electron and PouchDB [desktop app]"
   date: "2017-10-05"
@@ -1717,6 +1759,7 @@
   tags: 
     - PouchDB
     - Electron
+    - "Offline First"
 
 - title: "Better Decision Making with Watson Machine Learning and Compose"
   date: "2017-10-12"
@@ -1829,6 +1872,8 @@
     Medium: "https://medium.com/ibm-watson-data-lab/doing-moar-together-184678b9f864"
   strategies: 
     - offline-first
+  tags:
+    - "Offline First"
 
 - title: "Notebooks for Spreadsheet Users"
   date: "2017-10-24"
@@ -1980,6 +2025,7 @@
     - Cloudant
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
     - Nodejs
 
 - title: "Discover Space on Twitter with Elasticsearch and Redis"
@@ -2082,6 +2128,7 @@
   tags: 
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
     - Cloudant
     - Compose
     - Elasticsearch
@@ -2103,6 +2150,7 @@
   tags:
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
     - Nodejs
     - Cloudant
 
@@ -2131,6 +2179,7 @@
     - Cloudant
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
 
 - title: "Sliding Through a Notebook"
   date: "2017-12-11"
@@ -2182,6 +2231,7 @@
   tags: 
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
     - JavaScript
     - Cloudant
     - "Object Storage"
@@ -2203,6 +2253,7 @@
     - Redis
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
     - Python
     - Alexa
 
@@ -2219,6 +2270,7 @@
   tags: 
     - OpenWhisk
     - "IBM Cloud Functions"
+    - Serverless
 
 - title: "Open Data Sets"
   date: "2018-01-30"
@@ -2333,6 +2385,7 @@
     - PouchDB
     - Vuejs
     - "Progressive Web App"
+    - "Offline First"
 
 - title: "Shopping list demo using React and PouchDB [Progressive Web App]"
   date: "2018-01-19"
@@ -2349,6 +2402,7 @@
     - PouchDB
     - Reactjs
     - "Progressive Web App"
+    - "Offline First"
 
 - title: "Shopping list demo using Polymer and PouchDB [Progressive Web App]"
   date: "2018-01-26"
@@ -2367,6 +2421,7 @@
     - PouchDB
     - Polymer
     - "Progressive Web App"
+    - "Offline First"
 
 - title: "Shopping list demo using vanilla JavaScript and PouchDB [Progressive Web App]"
   date: "2018-01-23"
@@ -2384,6 +2439,7 @@
     - PouchDB
     - JavaScript
     - "Progressive Web App"
+    - "Offline First"
 
 - title: "Deploying a Simple Machine Learning App with Node.js and Watson ML"
   date: "2018-02-08"
@@ -2591,6 +2647,7 @@
     - offline-first
   tags: 
     - "Progressive Web App"
+    - "Offline First"
     - PHP
 
 - title: "Keeping Your Machine Learning Models Up-To-Date"
