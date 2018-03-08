@@ -2606,3 +2606,39 @@
   tags: 
     - "Watson Machine Learning"
     - "Machine Learning"
+
+- title: "Making Your App Awesome When the Network Isn’t (Part 1)"
+  date: "2018-03-08"
+  lead: teri-chadbourne
+  features: 
+    - offline-camp
+  headline: "A beginner’s guide to offline data storage and sync with PouchDB & Apache CouchDB™."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-1-3ed530c2523"
+    GitHub: "https://github.com/ibm-watson-data-lab/offline-first-project-manager"
+  strategies: 
+    - offline-first
+  tags: 
+    - "Offline First"
+    - "Progressive Web App"
+    - JavaScript
+    - PouchDB
+    - CouchDB
+    - Cloudant
+
+- title: "NodeJS, MongoDB, Elasticsearch and PostgreSQL: The Compose Grand Tour"
+  date: "2018-03-08"
+  lead: dj-walker-morgan
+  features: 
+    - compose-grandtour
+  headline: "A trip to visit all the databases of Compose with as many languages and drivers as possible."
+  links: 
+    Compose Articles: "https://www.compose.com/articles/nodejs-mongodb-elasticsearch-and-postgresql-the-compose-grand-tour/"
+    GitHub: "https://github.com/compose-grandtour/node/tree/master/example"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Nodejs
+    - MongoDB
+    - Elasticsearch
+    - PostgreSQL
