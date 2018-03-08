@@ -45,4 +45,8 @@ permalink: projects
   {% for strategy in site.strategies %}
   siteStrategies['{{ strategy.permalink }}'] = '{{ strategy.title }}';
   {% endfor %}
+  var siteAuthors = {};
+  {% for author in site.authors %}
+  siteAuthors['{{ author.permalink }}'] = "{{ author.title }}";
+  {% endfor %}
 </script>
