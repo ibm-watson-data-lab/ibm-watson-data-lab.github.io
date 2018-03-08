@@ -143,7 +143,6 @@
   date: "2016-12-19"
   lead: va-barbosa
   features: 
-    - weather-and-data
     - pixiedust-for-jupyter
   headline: "Know about delayed flights before they happen."
   links: 
