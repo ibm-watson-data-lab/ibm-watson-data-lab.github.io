@@ -224,9 +224,9 @@ window.devadvo = {
           .attr('role', 'button')
           .on('click', function () {
             var t = $(this).text()
-            t = t.indexOf(' ') === -1 ? t : ('"' + t + '"')
-            window.simplesearchUtil.search('tags:' + t + '')
-            //window.simplesearchUtil.search('tags:' + '"' + $(this).text() + '"')
+            t = 'tags:' + (t.indexOf(' ') === -1 ? t : ('"' + t + '"'))
+            var q = window.simplesearchUtil.queryString(t)
+            window.simplesearchUtil.search(q)
           })
       })
 
