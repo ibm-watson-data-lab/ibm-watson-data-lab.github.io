@@ -41,9 +41,9 @@ var initTelescopicText = function (telescopicTextJSON, telescopicTextContainer) 
   var telescopicTextContent = compose(textobj)
 
   $(telescopicTextContainer).html(telescopicTextContent)
-  var reset = $('<i class="fa fa-reply telescopic-reset" tabindex"0"></i>')
+  var reset = $('<i class="fa fa-reply telescopic-reset" tabindex"0" role="button"></i>')
   reset.on('click', function () {
-    $('.telescopic-content:not(.hidden').addClass('hidden')
+    $('.telescopic-content:not(.hidden)').addClass('hidden')
     $('.telescopic-root.hidden').removeClass('hidden')
   })
   $(telescopicTextContainer).append(reset)
