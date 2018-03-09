@@ -850,6 +850,9 @@ var SimpleSearch = function (serviceUrl, callbacks, containers, configuration) {
       for (var cfg in c) {
         config[cfg] = c[cfg]
       }
+    },
+    queryString: function (query) {
+      return sanitizeQuery(inputField && inputField.value ? inputField.value : '', query)
     }
   }
 }
