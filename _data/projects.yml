@@ -45,6 +45,22 @@
     - "Jupyter Notebook"
     - Python
 
+- title: "Faceted Westeros: Easy Frontends for Simple Search API Using GoT Data"
+  date: "2016-05-12"
+  lead: va-barbosa
+  features: 
+    - simple-search
+  headline: "Custom frontends for Simple Search Service-based sites."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/simple-search-js"
+    developerWorks: "https://developer.ibm.com/clouddataservices/2016/05/12/easy-frontends-for-simple-search-api-got-data/"
+    demo: "http://sss-got-theme.mybluemix.net/"
+  strategies: 
+    - working-with-json
+  tags: 
+    - Cloudant
+    - JavaScript
+
 - title: "Simple Logging Service: Our Metrics Collector App Rebuilt on a Microservices Stack"
   date: "2016-03-03"
   lead: glynn-bird
@@ -74,6 +90,33 @@
     - Nodejs
     - PouchDB
     - "Offline First"
+
+- title: "Get Started With CouchDB Using PHP and Guzzle"
+  date: "2016-07-27"
+  lead: lorna-mitchell
+  headline: "How to use CouchDB in PHP applications, using the excellent PHP HTTP library Guzzle."
+  links: 
+    developerWorks: "https://developer.ibm.com/clouddataservices/2016/07/27/get-started-with-couchdb-php-guzzle/"
+  strategies: 
+    - get-connected-databases
+    - working-with-json
+  tags: 
+    - CouchDB
+    - Cloudant
+    - PHP
+
+- title: "Put Messages into RabbitMQ from Your PHP Application"
+  date: "2016-09-16"
+  lead: lorna-mitchell
+  headline: "How to adapt an existing PHP application to create jobs on a queue using RabbitMQ."
+  links: 
+    developerWorks: "https://developer.ibm.com/clouddataservices/2016/09/16/rabbitmq-from-php/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - RabbitMQ
+    - Compose
+    - PHP
 
 - title: "Caching Cloudant Requests With cachemachine"
   date: "2016-11-22"
@@ -379,6 +422,21 @@
     - Redis
     - Compose
 
+- title: "Blazingly Fast Geospatial Queries with Redis"
+  date: "2016-11-16"
+  lead: glynn-bird
+  headline: "Redis provides simple commands that you can use like building blocks to assemble your own data structures, including geospatial functions that use lat lon data."
+  links: 
+    GitHub: "https://gist.github.com/glynnbird/9b9237ba0f471725118b07f4f0e89df4"
+    developerWorks: "https://developer.ibm.com/clouddataservices/2016/11/16/blazingly-fast-geospatial-queries-with-redis/"
+    dataset: "https://www.ordnancesurvey.co.uk/business-and-government/products/code-point-open.html"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - Redis
+    - Python
+
 - title: "Browse Your Object Store From the Web"
   date: "2016-12-07"
   lead: raj-singh
@@ -494,6 +552,15 @@
     - "Jupyter Notebook"
     - Python
 
+- title: "OSCON Europe Talk Review: Open Source Datastores at Yelp"
+  date: "2016-11-21"
+  lead: lorna-mitchell
+  headline: "'Building a Powerful Data Tier from Open Source Datastores'"
+  links: 
+    developerWorks: "https://developer.ibm.com/clouddataservices/2016/11/21/oscon-europe-open-source-datastores/"
+  strategies: 
+    - get-connected-databases
+
 - title: "Persisting Data for a Smarter Chatbot"
   date: "2016-12-12"
   lead: mark-watson
@@ -514,6 +581,19 @@
 
 # Start 2017 below
 
+- title: "Build Scalable Webhooks with a Queue and Workers Setup"
+  date: "2017-01-16"
+  lead: lorna-mitchell
+  headline: "Get asynchronous with webhooks + RabbitMQ."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/build-scalable-webhooks-with-a-queue-and-workers-setup-3b2cbc228220"
+    GitHub: "https://github.com/ibm-watson-data-lab/guestbook"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - RabbitMQ
+
 - title: "Cloudant and Node.js Made Simple with the cloudant-quickstart (formerly silverlining) Library"
   date: "2017-01-20"
   lead: glynn-bird
@@ -527,6 +607,29 @@
   tags: 
     - Cloudant
     - Nodejs
+
+- title: "Handling Failure Successfully in RabbitMQ"
+  date: "2017-01-30"
+  lead: lorna-mitchell
+  headline: "Get your ducks in a row. Design message queues to manage problems."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/handling-failure-successfully-in-rabbitmq-22ffa982b60f"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - RabbitMQ
+
+- title: "Create a Custom Domain for Cloudant Using Cloudflare"
+  date: "2017-01-18"
+  lead: glynn-bird
+  headline: "What’s in a name? Proxy to get speed and protection too."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/create-a-custom-domain-for-cloudant-using-cloudflare-e32f11b33967"
+  strategies: 
+    - working-with-json
+  tags: 
+    - Cloudant
 
 - title: "Sync Your Search Index in a Snap"
   date: "2017-02-22"
@@ -682,6 +785,7 @@
     Notebook: "http://ibm.biz/sxswappmetrics"
   strategies: 
     - notebooks-for-developers
+    - machine-learning-for-developers
   tags: 
     - "Jupyter Notebook"
     - "Apache Spark"
@@ -796,6 +900,7 @@
     nmp: "https://www.npmjs.com/package/concierge-chatbot"
   strategies: 
     - serverless-and-data
+    - machine-learning-for-developers
   tags: 
     - OpenWhisk
     - "IBM Cloud Functions"
@@ -1027,6 +1132,7 @@
   headline: "Use an in-memory datastore for a little light persistence."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/add-redis-to-your-serverless-application-e22381123d9"
+    YouTube: "https://youtu.be/WJgL5hM7DKQ?list=PLp4wchugWzHuxK9KaaoPA7Qh8hSGBJOXu"
   strategies: 
     - serverless-and-data
   tags: 
@@ -1436,8 +1542,8 @@
     GitHub: "https://github.com/glynnbird/envoy-serverless"
     Medium: "https://medium.com/ibm-watson-data-lab/cloudant-envoy-serverless-edition-d68b08d536d7"
   strategies: 
-    - offline-first
     - serverless-and-data
+    - working-with-json
   tags: 
     - Cloudant
     - JavaScript
@@ -2020,6 +2126,7 @@
     demo: "https://glynnbird.github.io/markettrader/public/index.html"
   strategies: 
     - serverless-and-data
+    - working-with-json
   tags: 
     - Cloudant
     - OpenWhisk
@@ -2084,6 +2191,7 @@
   strategies: 
     - notebooks-for-developers
     - partners
+    - working-with-json
   tags: 
     - "Jupyter Notebook"
     - PixieDust
@@ -2124,11 +2232,14 @@
     Medium: "https://medium.com/ibm-watson-data-lab/making-a-cloudant-elasticsearch-hybrid-6bf9610f4456"
   strategies: 
     - serverless-and-data
+    - working-with-json
   tags: 
     - OpenWhisk
     - "IBM Cloud Functions"
     - Serverless
     - Cloudant
+    - Compose
+    - CouchDB
     - Compose
     - Elasticsearch
     - Nodejs
@@ -2227,6 +2338,7 @@
   strategies: 
     - working-with-json
     - serverless-and-data
+    - offline-first
   tags: 
     - OpenWhisk
     - "IBM Cloud Functions"
@@ -2234,6 +2346,7 @@
     - JavaScript
     - Cloudant
     - "Object Storage"
+    - "Offline First"
 
 - title: "Going Serverless with IBM Cloud Functions and Compose Redis"
   date: "2017-12-21"
@@ -2698,3 +2811,46 @@
     - MongoDB
     - Elasticsearch
     - PostgreSQL
+
+- title: "The Visual Python Debugger for Jupyter Notebooks You’ve Always Wanted"
+  date: "2018-03-09"
+  lead: david-taieb
+  features: 
+    - pixiedust-for-jupyter
+  headline: "Introducing PixieDebugger."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/the-visual-python-debugger-for-jupyter-notebooks-youve-always-wanted-761713babc62"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - PixieDust
+    - "Jupyter Notebook"
+
+- title: "Keeping Your Secrets Between Cloud Object Storage and Your Browser (Part 1)"
+  date: "2018-03-12"
+  lead: glynn-bird
+  headline: "Upload edition."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/cos-uploader"
+    Medium: "https://medium.com/ibm-watson-data-lab/keeping-your-secrets-between-cloud-object-storage-and-your-browser-part-1-68f4b83bbd38"
+  strategies: 
+    - serverless-and-data
+  tags: 
+    - Serverless
+    - OpenWhisk
+    - Nodejs
+    - "Object Storage"
+
+- title: "Making Your App Awesome When the Network Isn’t (Part 2)"
+  date: "2018-03-13"
+  lead: teri-chadbourne
+  headline: "A beginner’s guide to ensuring quick page loads — offline or not — with service workers."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-2-669ee36e2f81"
+    GitHub: "https://github.com/ibm-watson-data-lab/offline-first-project-manager"
+  strategies: 
+    - offline-first
+  tags: 
+    - "Offline First"
+    - JavaScript
+    - "Progressive Web App"
