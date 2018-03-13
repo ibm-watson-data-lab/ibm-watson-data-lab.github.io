@@ -41,9 +41,9 @@ var initTelescopicText = function (telescopicTextJSON, telescopicTextContainer) 
   var telescopicTextContent = compose(textobj)
 
   $(telescopicTextContainer).html(telescopicTextContent)
-  var reset = $('<i class="fa fa-reply telescopic-reset" tabindex"0"></i>')
+  var reset = $('<i class="fa fa-reply telescopic-reset" tabindex"0" role="button"></i>')
   reset.on('click', function () {
-    $('.telescopic-content:not(.hidden').addClass('hidden')
+    $('.telescopic-content:not(.hidden)').addClass('hidden')
     $('.telescopic-root.hidden').removeClass('hidden')
   })
   $(telescopicTextContainer).append(reset)
@@ -224,9 +224,9 @@ window.devadvo = {
           .attr('role', 'button')
           .on('click', function () {
             var t = $(this).text()
-            t = t.indexOf(' ') === -1 ? t : ('"' + t + '"')
-            window.simplesearchUtil.search('tags:' + t + '')
-            //window.simplesearchUtil.search('tags:' + '"' + $(this).text() + '"')
+            t = 'tags:' + (t.indexOf(' ') === -1 ? t : ('"' + t + '"'))
+            var q = window.simplesearchUtil.queryString(t)
+            window.simplesearchUtil.search(q)
           })
       })
 
