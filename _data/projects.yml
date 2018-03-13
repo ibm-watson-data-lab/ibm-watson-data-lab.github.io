@@ -45,6 +45,22 @@
     - "Jupyter Notebook"
     - Python
 
+- title: "Faceted Westeros: Easy Frontends for Simple Search API Using GoT Data"
+  date: "2016-05-12"
+  lead: va-barbosa
+  features: 
+    - simple-search
+  headline: "Custom frontends for Simple Search Service-based sites."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/simple-search-js"
+    developerWorks: "https://developer.ibm.com/clouddataservices/2016/05/12/easy-frontends-for-simple-search-api-got-data/"
+    demo: "http://sss-got-theme.mybluemix.net/"
+  strategies: 
+    - working-with-json
+  tags: 
+    - Cloudant
+    - JavaScript
+
 - title: "Simple Logging Service: Our Metrics Collector App Rebuilt on a Microservices Stack"
   date: "2016-03-03"
   lead: glynn-bird
@@ -565,6 +581,19 @@
 
 # Start 2017 below
 
+- title: "Build Scalable Webhooks with a Queue and Workers Setup"
+  date: "2017-01-16"
+  lead: lorna-mitchell
+  headline: "Get asynchronous with webhooks + RabbitMQ."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/build-scalable-webhooks-with-a-queue-and-workers-setup-3b2cbc228220"
+    GitHub: "https://github.com/ibm-watson-data-lab/guestbook"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - RabbitMQ
+
 - title: "Cloudant and Node.js Made Simple with the cloudant-quickstart (formerly silverlining) Library"
   date: "2017-01-20"
   lead: glynn-bird
@@ -578,6 +607,18 @@
   tags: 
     - Cloudant
     - Nodejs
+
+- title: "Handling Failure Successfully in RabbitMQ"
+  date: "2017-01-30"
+  lead: lorna-mitchell
+  headline: "Get your ducks in a row. Design message queues to manage problems."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/handling-failure-successfully-in-rabbitmq-22ffa982b60f"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - RabbitMQ
 
 - title: "Create a Custom Domain for Cloudant Using Cloudflare"
   date: "2017-01-18"
@@ -2771,3 +2812,45 @@
     - Elasticsearch
     - PostgreSQL
 
+- title: "The Visual Python Debugger for Jupyter Notebooks You’ve Always Wanted"
+  date: "2018-03-09"
+  lead: david-taieb
+  features: 
+    - pixiedust-for-jupyter
+  headline: "Introducing PixieDebugger."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/the-visual-python-debugger-for-jupyter-notebooks-youve-always-wanted-761713babc62"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - PixieDust
+    - "Jupyter Notebook"
+
+- title: "Keeping Your Secrets Between Cloud Object Storage and Your Browser (Part 1)"
+  date: "2018-03-12"
+  lead: glynn-bird
+  headline: "Upload edition."
+  links: 
+    GitHub: "https://github.com/ibm-watson-data-lab/cos-uploader"
+    Medium: "https://medium.com/ibm-watson-data-lab/keeping-your-secrets-between-cloud-object-storage-and-your-browser-part-1-68f4b83bbd38"
+  strategies: 
+    - serverless-and-data
+  tags: 
+    - Serverless
+    - OpenWhisk
+    - Nodejs
+    - "Object Storage"
+
+- title: "Making Your App Awesome When the Network Isn’t (Part 2)"
+  date: "2018-03-13"
+  lead: teri-chadbourne
+  headline: "A beginner’s guide to ensuring quick page loads — offline or not — with service workers."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-2-669ee36e2f81"
+    GitHub: "https://github.com/ibm-watson-data-lab/offline-first-project-manager"
+  strategies: 
+    - offline-first
+  tags: 
+    - "Offline First"
+    - JavaScript
+    - "Progressive Web App"
