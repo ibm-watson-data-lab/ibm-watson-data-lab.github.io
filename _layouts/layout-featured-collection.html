@@ -14,7 +14,7 @@ layout: default
         {% for strategy in strategies %}
           {% for thisstrategy in thisstrategies %}
             {% if strategy.permalink == thisstrategy %}
-              {{ strategy.title }} / Collection
+              <a href="{{ site.baseurl }}/{{ strategy.permalink }}">{{ strategy.title }}</a> / Collection
             {% endif %}
           {% endfor %}
         {% endfor %}

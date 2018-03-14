@@ -779,6 +779,10 @@ section.row > .col {
   margin-bottom: 14px;
 }
 
+.breadcrumb a {
+  color: #777677 !important;
+}
+
 .featured-collection section,
 .coc-page section,
 .author-page section {
