@@ -173,6 +173,14 @@ window.devadvo = {
         }
         return row
       })
+      // filter unwanted facets
+      if (window.devadvo.hiddenfacets) {
+        window.devadvo.hiddenfacets.forEach(function (f) {
+          if (results.data.counts.hasOwnProperty(f)) {
+            delete results.data.counts[f]
+          }
+        })
+      }
     }
     return results
   },
@@ -260,7 +268,7 @@ window.devadvo = {
             .toggleClass('expanded')
             .next('.simplesearch-facet-value-list')
             .slideToggle('slow')
-          
+
           var facet = $(this).attr('data-search-facetkey')
           if ($(this).hasClass('expanded') && window.devadvo.expandedfacets.indexOf(facet) === -1) {
             window.devadvo.expandedfacets.push(facet)
@@ -302,6 +310,7 @@ window.devadvo = {
 }
 
 var initSearch = function () {
+  window.devadvo.hiddenfacets = ['features', 'strategies']
   window.devadvo.expandedfacets = ['tags']
   window.simplesearchUtil = new SimpleSearch('https://advo-projects.mybluemix.net', {
     onSuccess: window.devadvo.searchOnSuccess,
