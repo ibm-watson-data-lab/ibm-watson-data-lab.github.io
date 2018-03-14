@@ -1,5 +1,7 @@
 /* global $, telescopicIntro, recentArticles, authorLinks, siteStrategies, SimpleSearch, pageId, siteAuthors */
 
+var MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
 var shuffleStrategies = function () {
   var li = $('.strategies-list > ul > li')
   li.detach().sort(function (a, b) {
@@ -305,6 +307,11 @@ window.devadvo = {
       $('[data-search-query^="lead:"]').each(function () {
         $(this).text(siteAuthors[$(this).text()])
       })
+      $('[data-search-query^="month:"]').closest('li.simplesearch-facet-value')
+        .sort(function (a, b) {
+          return MONTH_NAMES.indexOf($(a).find('.simplesearch-facet-value-name').text()) - MONTH_NAMES.indexOf($(b).find('.simplesearch-facet-value-name').text())
+        })
+        .appendTo('[data-search-facetkey="month"] + ul')
     }
   }
 }
