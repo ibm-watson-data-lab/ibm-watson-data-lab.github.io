@@ -1,5 +1,7 @@
 /* global $, telescopicIntro, recentArticles, authorLinks, siteStrategies, SimpleSearch, pageId, siteAuthors */
 
+var MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
 var shuffleStrategies = function () {
   var li = $('.strategies-list > ul > li')
   li.detach().sort(function (a, b) {
@@ -173,6 +175,14 @@ window.devadvo = {
         }
         return row
       })
+      // filter unwanted facets
+      if (window.devadvo.hiddenfacets) {
+        window.devadvo.hiddenfacets.forEach(function (f) {
+          if (results.data.counts.hasOwnProperty(f)) {
+            delete results.data.counts[f]
+          }
+        })
+      }
     }
     return results
   },
@@ -260,7 +270,7 @@ window.devadvo = {
             .toggleClass('expanded')
             .next('.simplesearch-facet-value-list')
             .slideToggle('slow')
-          
+
           var facet = $(this).attr('data-search-facetkey')
           if ($(this).hasClass('expanded') && window.devadvo.expandedfacets.indexOf(facet) === -1) {
             window.devadvo.expandedfacets.push(facet)
@@ -297,11 +307,17 @@ window.devadvo = {
       $('[data-search-query^="lead:"]').each(function () {
         $(this).text(siteAuthors[$(this).text()])
       })
+      $('[data-search-query^="month:"]').closest('li.simplesearch-facet-value')
+        .sort(function (a, b) {
+          return MONTH_NAMES.indexOf($(a).find('.simplesearch-facet-value-name').text()) - MONTH_NAMES.indexOf($(b).find('.simplesearch-facet-value-name').text())
+        })
+        .appendTo('[data-search-facetkey="month"] + ul')
     }
   }
 }
 
 var initSearch = function () {
+  window.devadvo.hiddenfacets = ['features', 'strategies']
   window.devadvo.expandedfacets = ['tags']
   window.simplesearchUtil = new SimpleSearch('https://advo-projects.mybluemix.net', {
     onSuccess: window.devadvo.searchOnSuccess,
