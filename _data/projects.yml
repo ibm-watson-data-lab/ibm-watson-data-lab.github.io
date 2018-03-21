@@ -1,6 +1,7 @@
 # Context at /strategies and /help.
 
 - title: "Metrics Collector: Analyze Web Metrics, Even With AJAX."
+  id: metrics-collector-analyze-metrics
   date: "2015-08-25"
   lead: raj-singh
   headline: "Lightweight tracking to record user actions on a single-page webapp."
@@ -17,6 +18,7 @@
 # Start 2016 below
 
 - title: "Field Work: Offline Editing and Mapping of Geospatial Data"
+  id: offline-geo-fieldwork
   date: "2016-03-07"
   lead: raj-singh
   headline: "A demo app designed for utilities repair personnel who need to capture events in work orders."
@@ -33,6 +35,7 @@
     - "Offline First"
 
 - title: "Data-Driven Shopper Insights"
+  id: data-driven-shopper-insights
   date: "2016-05-27"
   lead: raj-singh
   headline: "Crunch open demographics data, combined with your own sales data."
@@ -46,6 +49,7 @@
     - Python
 
 - title: "Faceted Westeros: Easy Frontends for Simple Search API Using GoT Data"
+  id: simple-search-frontend-got
   date: "2016-05-12"
   lead: va-barbosa
   features: 
@@ -62,6 +66,7 @@
     - JavaScript
 
 - title: "Simple Logging Service: Our Metrics Collector App Rebuilt on a Microservices Stack"
+  id: simple-logging-service
   date: "2016-03-03"
   lead: glynn-bird
   headline: "Instead of writing data to Cloudant, this project adds data to a variety of outputs depending on the runtime environment."
@@ -78,6 +83,7 @@
     - Compose
 
 - title: "Offline-First QR Code Badge Scanner"
+  id: offline-first-qr-scanner
   date: "2016-09-12"
   lead: glynn-bird
   headline: "Build a data collection app that captures and stores QR Code data, even when your network is unavailable."
@@ -92,6 +98,7 @@
     - "Offline First"
 
 - title: "Get Started With CouchDB Using PHP and Guzzle"
+  id: couchdb-php-get-started
   date: "2016-07-27"
   lead: lorna-mitchell
   headline: "How to use CouchDB in PHP applications, using the excellent PHP HTTP library Guzzle."
@@ -106,6 +113,7 @@
     - PHP
 
 - title: "Put Messages into RabbitMQ from Your PHP Application"
+  id: rabbitmq-php-messages
   date: "2016-09-16"
   lead: lorna-mitchell
   headline: "How to adapt an existing PHP application to create jobs on a queue using RabbitMQ."
@@ -119,6 +127,7 @@
     - PHP
 
 - title: "Caching Cloudant Requests With cachemachine"
+  id: cloudant-cachemachine
   date: "2016-11-22"
   lead: glynn-bird
   headline: "Increase app response time and spare your data service. Use cachemachine and Cloudant's Node.js library to cache any HTTP service with Redis as the cache store."
@@ -135,6 +144,7 @@
     - Compose
 
 - title: "Logshare: Stream Your Log Data With Colleagues"
+  id: logshare-stream-data
   date: "2016-03-14"
   lead: glynn-bird
   headline: "A Node.js app for sharing logs in a terminal window or on a webpage."
@@ -150,6 +160,7 @@
     - Redis
 
 - title: "Weather Forecast with PixieDust"
+  id: pixiedust-weather-forecast
   date: "2016-10-06"
   lead: margriet-groenendijk
   features: 
@@ -166,6 +177,7 @@
     - PixieDust
 
 - title: "Sentiment Analysis of Reddit AMAs"
+  id: sentiment-analysis-reddit
   date: "2016-06-23"
   headline: "Unlock the hidden sentiments of redditors."
   links: 
@@ -183,6 +195,7 @@
     - "Watson Tone Analyzer"
 
 - title: "Predict Flight Delays with Apache Spark"
+  id: predict-flight-delays
   date: "2016-12-19"
   lead: va-barbosa
   features: 
@@ -201,6 +214,7 @@
     - PixieDust
 
 - title: "Simple Search Service"
+  id: simple-search-service
   date: "2016-07-11"
   lead: glynn-bird
   features: 
@@ -218,6 +232,7 @@
     - Redis
 
 - title: "Easy Frontends for Simple Search API"
+  id: simple-search-js
   date: "2016-05-12"
   lead: va-barbosa
   features: 
@@ -232,6 +247,7 @@
     - JavaScript
 
 - title: "Cloudant FoodTracker Part 1: The Datastore"
+  id: cloudant-foodtracker-1
   date: "2016-01-25"
   features: 
     - food-tracker
@@ -247,6 +263,7 @@
     - "Offline First"
 
 - title: "Cloudant FoodTracker Part 2: Sync to the Cloud"
+  id: cloudant-foodtracker-2
   date: "2016-06-08"
   features: 
     - food-tracker
@@ -262,6 +279,7 @@
     - "Offline First"
 
 - title: "Cloudant FoodTracker Part 3: User Interface"
+  id: cloudant-foodtracker-3
   date: "2016-06-30"
   features: 
     - food-tracker
@@ -277,6 +295,7 @@
     - "Offline First"
 
 - title: "Location Tracker Swift Client [1]"
+  id: localtion-tracker-swift
   date: "2016-06-14"
   lead: mark-watson
   features: 
@@ -293,6 +312,7 @@
     - "Offline First"
 
 - title: "Location Tracker Node.js Server [1.5]"
+  id: localtion-tracker-nodejs
   date: "2016-06-14"
   lead: mark-watson
   features: 
@@ -309,6 +329,7 @@
     - "Offline First"
 
 - title: "Location Tracker Envoy Server [2]"
+  id: localtion-tracker-envoy
   date: "2016-08-11"
   lead: mark-watson
   features: 
@@ -325,6 +346,7 @@
     - "Offline First"
 
 - title: "Scaling Offline First With Cloudant Envoy"
+  id: offline-first-envoy
   date: "2016-07-11"
   lead: glynn-bird
   features: 
@@ -342,6 +364,7 @@
     - "Offline First"
 
 - title: "Real-Time Q&A App With RethinkDB"
+  id: rethinkdb-real-time-qa
   date: "2016-09-13"
   headline: "Get real-time, with changefeeds in RethinkDB."
   links: 
@@ -357,6 +380,7 @@
     - Vuejs
 
 - title: "Plug into the Cloudant Node.js Library"
+  id: cloudant-nodejs-library
   date: "2016-09-23"
   lead: glynn-bird
   headline: "JavaScript all the way down."
@@ -371,6 +395,7 @@
     - Nodejs
 
 - title: "CouchDB Document Copy and Transform Service"
+  id: couchdb-copy-transform
   date: "2016-09-28"
   lead: patrick-titzler
   features: 
@@ -387,6 +412,7 @@
     - Nodejs
 
 - title: "Seven Databases in Seven Days"
+  id: seven-dbs-seven-days
   date: "2016-11-28"
   lead: lorna-mitchell
   features: 
@@ -409,6 +435,7 @@
     - RethinkDB
 
 - title: "Introducing the Simple Autocomplete Service"
+  id: autocomplete-service
   date: "2016-05-31"
   lead: glynn-bird
   headline: "Easily add autocomplete to your web form fields. Simply upload your data set to create a fast and efficient autocomplete API."
@@ -423,6 +450,7 @@
     - Compose
 
 - title: "Blazingly Fast Geospatial Queries with Redis"
+  id: redis-geo-queries
   date: "2016-11-16"
   lead: glynn-bird
   headline: "Redis provides simple commands that you can use like building blocks to assemble your own data structures, including geospatial functions that use lat lon data."
@@ -438,6 +466,7 @@
     - Python
 
 - title: "Browse Your Object Store From the Web"
+  id: object-store-browser
   date: "2016-12-07"
   lead: raj-singh
   headline: "Simple data portal with Python and IBM Object Storage."
@@ -449,6 +478,7 @@
     - Python
 
 - title: "Deploy Your PHP Application to Bluemix"
+  id: bluemix-php-deploy
   date: "2016-12-21"
   lead: lorna-mitchell
   headline: "Add RabbitMQ to your existing app to send notifications."
@@ -467,6 +497,7 @@
     - RabbitMQ
 
 - title: "Importing JSON Documents with nosqlimport"
+  id: nosqlimport-json-doc
   date: "2016-09-19"
   lead: glynn-bird
   features: 
@@ -485,6 +516,7 @@
     - Elasticsearch
 
 - title: "Simple CouchDB and Cloudant Backup"
+  id: couchdb-cloudant-backup
   date: "2016-03-22"
   lead: glynn-bird
   features: 
@@ -502,6 +534,7 @@
     - Cloudant
 
 - title: "Simple Service Registry: Distributed Config Management for Microservices"
+  id: simple-service-registry
   date: "2016-12-14"
   headline: "Microservices are great, but how do we wire them all together at scale and without downtime?"
   links: 
@@ -516,6 +549,7 @@
     - Compose
 
 - title: "Sentiment Analysis of Twitter Hashtags With Spark"
+  id: sentiment-analysis-twitter
   date: "2016-12-20"
   lead: david-taieb
   features: 
@@ -535,6 +569,7 @@
     - Scala
 
 - title: "SETI@IBMCloud: SETI data, publicly available, from IBM"
+  id: ibm-cloud-seti-data
   date: "2016-09-29"
   lead: adam-cox
   headline: "Raw data from the SETI Institute for you to crunch in the search for extraterrestrial life."
@@ -553,6 +588,7 @@
     - Python
 
 - title: "OSCON Europe Talk Review: Open Source Datastores at Yelp"
+  id: oscon-yelp-talk-review
   date: "2016-11-21"
   lead: lorna-mitchell
   headline: "'Building a Powerful Data Tier from Open Source Datastores'"
@@ -562,6 +598,7 @@
     - get-connected-databases
 
 - title: "Persisting Data for a Smarter Chatbot"
+  id: chatbot-persist-data
   date: "2016-12-12"
   lead: mark-watson
   features: 
@@ -582,6 +619,7 @@
 # Start 2017 below
 
 - title: "Build Scalable Webhooks with a Queue and Workers Setup"
+  id: webhooks-queue-workers
   date: "2017-01-16"
   lead: lorna-mitchell
   headline: "Get asynchronous with webhooks + RabbitMQ."
@@ -595,6 +633,7 @@
     - RabbitMQ
 
 - title: "Cloudant and Node.js Made Simple with the cloudant-quickstart (formerly silverlining) Library"
+  id: cloudant-quickstart-silverlining
   date: "2017-01-20"
   lead: glynn-bird
   headline: "A library for new users."
@@ -609,6 +648,7 @@
     - Nodejs
 
 - title: "Handling Failure Successfully in RabbitMQ"
+  id: rabbitmq-handle-fail
   date: "2017-01-30"
   lead: lorna-mitchell
   headline: "Get your ducks in a row. Design message queues to manage problems."
@@ -621,6 +661,7 @@
     - RabbitMQ
 
 - title: "Create a Custom Domain for Cloudant Using Cloudflare"
+  id: cloudant-custom-domain
   date: "2017-01-18"
   lead: glynn-bird
   headline: "What’s in a name? Proxy to get speed and protection too."
@@ -632,6 +673,7 @@
     - Cloudant
 
 - title: "Sync Your Search Index in a Snap"
+  id: search-index-sync
   date: "2017-02-22"
   lead: patrick-titzler
   features: 
@@ -648,6 +690,7 @@
     - Nodejs
 
 - title: "Installing Web Apps with Electron"
+  id: electron-web-apps
   date: "2017-02-13"
   lead: glynn-bird
   features: 
@@ -664,6 +707,7 @@
     - Nodejs
 
 - title: "Voice of InterConnect"
+  id: voice-of-interconnect
   date: "2017-04-18"
   lead: bradley-holt
   headline: "Proof that Progressive Web Apps can do some serious analysis."
@@ -686,6 +730,7 @@
     - "Watson Natural Language Understanding"
 
 - title: "Adding a Recommendation Feature to Your App Using a Graph Database"
+  id: graph-db-recommendation-feature
   date: "2017-02-18"
   lead: mark-watson
   features: 
@@ -705,6 +750,7 @@
     - Chatbots
 
 - title: "Realtime Infrastructure Made Simple"
+  id: real-time-infrastructure-esy
   date: "2017-01-11"
   headline: "Live event updates for your web app with our Simple Notification Service."
   links: 
@@ -723,6 +769,7 @@
     - Compose
 
 - title: "Web application state, à la Dogfight (1983)"
+  id: web-app-dogfight
   date: "2017-02-07"
   lead: glynn-bird
   headline: "Adding real-time notifications to your Node.js app"
@@ -738,6 +785,7 @@
     - Nodejs
 
 - title: "Mapping for Data Science with PixieDust and Mapbox"
+  id: pixiedust-mapbox-map-data-science
   date: "2017-06-14"
   lead: raj-singh
   features: 
@@ -757,6 +805,7 @@
     - PixieDust
 
 - title: "I am Not a Data Scientist (But I play one in this blog post, thanks to PixieDust)"
+  id: i-am-not-a-data-scientist
   date: "2017-03-15"
   lead: brad-noble
   features: 
@@ -773,6 +822,7 @@
     - PixieDust
 
 - title: "The Most Popular Search Term at SXSW, According to Our Chatbot"
+  id: chatbot-popular-search-terms-sxsw
   date: "2017-04-10"
   lead: mark-watson
   features: 
@@ -795,6 +845,7 @@
     - Chatbots
 
 - title: "Using Serverless Infrastructure to Build a Large-Scale Petition System"
+  id: serverless-petition-system
   date: "2017-02-27"
   lead: glynn-bird
   headline: "An example web app using OpenWhisk and Cloudant."
@@ -811,6 +862,7 @@
     - Serverless
 
 - title: "Adding custom Alexa skills with OpenWhisk and Cloudant"
+  id: cloudant-openwhisk-alexa-skills
   date: "2017-03-27"
   lead: glynn-bird
   headline: "Set up your Alexa skill to cost you less and scale well."
@@ -827,6 +879,7 @@
     - Serverless
 
 - title: "Offline Sync for Progressive Web Apps"
+  id: offline-sync-pwa
   date: "2017-04-06"
   lead: bradley-holt
   headline: "Building Offline First Progressive Web Apps with Apache CouchDB, Hoodie, and PouchDB."
@@ -844,6 +897,7 @@
     - "Offline First"
 
 - title: "Analysing Cloudant JSON in RunKit JavaScript Notebooks"
+  id: cloudant-runkit-js-notebook
   date: "2017-03-16"
   lead: glynn-bird
   headline: "Using the simplified cloudant-quickstart (formerly silverlining) npm module."
@@ -857,6 +911,7 @@
     - Nodejs
 
 - title: "Moving data from DynamoDB to Cloudant or CouchDB"
+  id: couchdb-cloudant-dynamodb-move
   date: "2017-03-24"
   lead: glynn-bird
   features: 
@@ -874,6 +929,7 @@
     - Nodejs
 
 - title: "Data Visualization Right in the Cloudant Dashboard"
+  id: cloudant-dahsboard-data-vis
   date: "2017-04-07"
   lead: va-barbosa
   headline: "User script for quickly vizualizing aggregated results."
@@ -888,6 +944,7 @@
     - Nodejs
 
 - title: "Create a Serverless, Watson-Powered Chatbot for Your Business"
+  id: serverless-watson-chatbot
   date: "2017-04-11"
   lead: glynn-bird
   features:
@@ -909,6 +966,7 @@
     - Chatbots
 
 - title: "Zero to Kubernetes on the IBM Bluemix Container Service"
+  id: zero-to-kubernetes-bluemix-containers
   date: "2017-04-18"
   lead: mark-watson
   headline: "Just deployment basics. Nothing fancy."
@@ -919,6 +977,7 @@
     - Docker
 
 - title: "You Too Can Make Magic (in Jupyter Notebooks with PixieDust)"
+  id: pixiedust-you-make-magic
   date: "2017-04-26"
   lead: va-barbosa
   features: 
@@ -934,6 +993,7 @@
     - PixieDust
 
 - title: "Share the (PixieDust) Magic on PyPI"
+  id: pixiedust-share-magic-pypi
   date: "2017-05-01"
   lead: va-barbosa
   features: 
@@ -948,6 +1008,7 @@
     - Python
 
 - title: "PouchDB: The Swiss Army Knife of Databases"
+  id: pouchdb-swiss-army-db
   date: "2017-05-04"
   lead: glynn-bird
   headline: "Use PouchDB in the browser, as a client for a remote database, or on the server side."
@@ -962,6 +1023,7 @@
     - "Offline First"
 
 - title: "Simple Data Visualization in Apache CouchDB™"
+  id: couchdb-chango
   date: "2017-05-09"
   lead: va-barbosa
   headline: "D3, right in the Fauxton dashboard, via userscript."
@@ -975,6 +1037,7 @@
     - JavaScript
 
 - title: "Diff Your Couch-Style Databases with couchdiff"
+  id: couchdiff-db-diff
   date: "2017-05-10"
   lead: glynn-bird
   features: 
@@ -991,6 +1054,7 @@
     - Cloudant
 
 - title: "Navigating SXSW via Cognitive Chatbot"
+  id: chatbo-navigate-sxsw
   date: "2017-03-22"
   lead: raj-singh
   features: 
@@ -1012,6 +1076,7 @@
     - "Watson Conversation"
 
 - title: "Simulating E.T. Radio Signals"
+  id: simulate-et-radio-signals
   date: "2017-04-19"
   lead: adam-cox
   features: 
@@ -1026,6 +1091,7 @@
     - Spark
 
 - title: "Choosing a Cloudant Library"
+  id: cloudant-library-choose
   date: "2017-06-12"
   lead: glynn-bird
   headline: "Which level of abstraction is just right for you?"
@@ -1040,6 +1106,7 @@
     - PouchDB
 
 - title: "Queueing API Requests to Use Cloudant More Efficiently"
+  id: cloudant-api-queueing
   date: "2017-06-19"
   lead: glynn-bird
   headline: "Who limits the rate-limiter?"
@@ -1054,6 +1121,7 @@
     - Nodejs
 
 - title: "Scraping OpenStreetMap and Exploring POI Data in Cloudant and Jupyter Notebooks"
+  id: cloudant-notebook-map-poi
   date: "2017-07-13"
   lead: margriet-groenendijk
   headline: "Easy access to all points of interest data."
@@ -1070,6 +1138,7 @@
     - PixieDust
 
 - title: "Querying your Cloudant database with SQL"
+  id: cloudant-sql-query
   date: "2017-07-18"
   lead: glynn-bird
   headline: "Updating the silverlining Node.js library to support the basics of SQL."
@@ -1085,6 +1154,7 @@
     - Nodejs
 
 - title: "Defensive IBM Object Storage Containers"
+  id: object-storage-defensive-containers
   date: "2017-07-21"
   lead: adam-cox
   features:
@@ -1098,6 +1168,7 @@
     - "Object Storage"
 
 - title: "CouchDB Writes: Piecemeal, Bulk, or Batch?"
+  id: couchdb-writes-piece-bulk-batch
   date: "2017-07-25"
   lead: glynn-bird
   headline: "Which write API endpoint is the right write call for you?"
@@ -1110,6 +1181,7 @@
     - CouchDB
 
 - title: "Building a Poem Generator App Using Watson APIs"
+  id: watson-api-poem-generator
   date: "2017-07-28"
   headline: "A way with words and code."
   links: 
@@ -1125,6 +1197,7 @@
     - "Watson Natural Language Understanding"
 
 - title: "Add Redis To Your Serverless Application"
+  id: serverless-add-redis
   date: "2017-08-10"
   lead: lorna-mitchell
   features:
@@ -1144,6 +1217,7 @@
     - Serverless
 
 - title: "Querying Your PouchDB Database With SQL"
+  id: pouchdb-silverlining-sql
   date: "2017-07-31"
   lead: glynn-bird
   headline: "Adapting the silverlining npm module to work with in-browser database PouchDB."
@@ -1159,6 +1233,7 @@
     - PouchDB
 
 - title: "Trigger Periodic OpenWhisk Actions"
+  id: openwhisk-periodic-action-trigger
   date: "2017-08-02"
   lead: lorna-mitchell
   headline: "Distributed cron jobs using the Alarm package."
@@ -1172,6 +1247,7 @@
     - Serverless
 
 - title: "A Fancier Graph for an Already-Smarter Chatbot"
+  id: chatbot-fancier-graph
   date: "2017-07-27"
   lead: mark-watson
   features: 
@@ -1192,6 +1268,7 @@
     - Chatbots
 
 - title: "Got Zip Code Data? Prep It for Analytics."
+  id: zip-code-data-analytics-prep
   date: "2017-08-15"
   lead: raj-singh
   headline: "Using fine-grained U.S. Census data and Jupyter Notebooks to better understand your customers."
@@ -1207,6 +1284,7 @@
     - Mapbox
 
 - title: "Serverless Autocomplete"
+  id: serverless-autocomplete
   date: "2017-08-21"
   lead: glynn-bird
   headline: "Which way of deploying an autocomplete service is right for you?"
@@ -1224,6 +1302,7 @@
     - Serverless
 
 - title: "Rethinking Offline First sync for Service Workers"
+  id: offline-first-sync-service-workers
   date: "2017-03-16"
   features: 
     - offline-camp
@@ -1239,6 +1318,7 @@
     - "Offline First"
 
 - title: "CouchDB, PouchDB and Hoodie as a Stack for Progressive Web Apps"
+  id: couchdb-pouchdb-hoodie-pwa-stack
   date: "2017-11-30"
   features: 
     - offline-camp
@@ -1255,6 +1335,7 @@
     - "Offline First"
 
 - title: "Using React and Preact to Build My First Offline First Apps"
+  id: offline-first-react-preact
   date: "2017-09-05"
   features: 
     - offline-camp
@@ -1269,6 +1350,7 @@
     - "Offline First"
 
 - title: "Mastering PostgreSQL Tools: Filters and Foreign Data Wrappers"
+  id: postgresql-tools-filters-wrappers
   date: "2017-06-07"
   headline: "How to streamline database imports."
   links: 
@@ -1280,6 +1362,7 @@
     - PostgreSQL
 
 - title: "Integration Testing Against Real Databases"
+  id: database-integration-test
   date: "2017-07-12"
   headline: "The most fragile part of automated testing is the connection to external systems."
   links: 
@@ -1295,6 +1378,7 @@
     - Docker
 
 - title: "Push Notifications with MongoDB"
+  id: mongodb-push-notification
   date: "2017-07-18"
   headline: "How to leverage Compose MongoDB to send more effective push notifications."
   links: 
@@ -1307,6 +1391,7 @@
     - JavaScript
 
 - title: "How to Enable a Redis Cache for PostgreSQL with Entity Framework 6"
+  id: redis-cache-postgresql-entity
   date: "2017-07-17"
   headline: "Can we cache cheaply and transparently to the application?"
   links: 
@@ -1320,6 +1405,7 @@
     - "C#"
 
 - title: "Mastering PostgreSQL Tools: Full-Text Search and Phrase Search"
+  id: postgresql-full-text-phrase-search
   date: "2017-07-25"
   headline: "Getting the most out of full-text and phrase search in PostgreSQL 9.6."
   links: 
@@ -1331,6 +1417,7 @@
     - PostgreSQL
 
 - title: "From SQL to Scylla - User and Session Management"
+  id: scylla-user-session-management
   date: "2017-07-31"
   headline: "How SQL database techniques can translate over to NoSQL databases like Scylla."
   links: 
@@ -1342,6 +1429,7 @@
     - ScyllaDB
 
 - title: "Utilizing Etcd3 with Go"
+  id: etcd-with-go
   date: "2017-08-08"
   headline: "With etcd3 powering many cloud applications, it's time to learn how you can use it."
   links: 
@@ -1353,6 +1441,7 @@
     - Etcd
 
 - title: "Custom Cloudant Replication"
+  id: cloudant-customr-replication
   date: "2017-08-22"
   lead: glynn-bird
   features: 
@@ -1372,6 +1461,7 @@
     - Serverless
 
 - title: "Using Watson Machine Learning to Predict a Post's Potential"
+  id: watson-ml-predict-post
   date: "2017-08-30"
   lead: __
   features: 
@@ -1389,6 +1479,7 @@
     - "Jupyter Notebook"
 
 - title: "Analyzing Podcast Metadata Using Jupyter Notebooks"
+  id: notebook-analyze-podcast
   date: "2017-09-05"
   lead: patrick-titzler
   features: 
@@ -1405,6 +1496,7 @@
     - "Jupyter Notebook"
 
 - title: "Nodebooks: Introducing Node.js Data Science Notebooks"
+  id: notebook-nodebook
   date: "2017-09-06"
   lead: glynn-bird
   features: 
@@ -1421,6 +1513,7 @@
     - Python
 
 - title: "Nodebooks: Sharing Data Between Node.js & Python"
+  id: nodebooks-sharing
   date: "2017-09-12"
   lead: glynn-bird
   features: 
@@ -1438,6 +1531,7 @@
     - Python
 
 - title: "Nodebooks: Visualising Data the Node.js Way"
+  id: notebooks-visualising
   date: "2017-09-12"
   lead: glynn-bird
   features: 
@@ -1455,6 +1549,7 @@
     - Python
 
 - title: "Offline First Drum Machine"
+  id: offline-first-drum-machine
   date: "2017-10-03"
   lead: glynn-bird
   features: 
@@ -1471,6 +1566,7 @@
     - "Offline First"
 
 - title: "Custom Indexers for Cloudant"
+  id: cloudant-custom-indexers
   date: "2017-09-26"
   lead: glynn-bird
   features: 
@@ -1492,6 +1588,7 @@
     - Serverless
 
 - title: "Medium.com, More Stats Please"
+  id: more-medium-stats
   date: "2017-09-27"
   lead: patrick-titzler
   features: 
@@ -1508,6 +1605,7 @@
     - PixieDust
 
 - title: "How to Build the Fastest Website in the World"
+  id: fastest-website-in-the-world
   date: "2017-10-03"
   lead: glynn-bird
   headline: "From the Amp project and Google’s Lighthouse, to Offline First and service workers."
@@ -1520,6 +1618,7 @@
     - "Offline First"
 
 - title: "Deploy Your Cloud Functions with Bluemix DevOps"
+  id: cloud-functions-devops
   date: "2017-10-04"
   lead: lorna-mitchell
   headline: "Collaborate on GitHub, and automatically deploy when code hits master."
@@ -1535,6 +1634,7 @@
     - Serverless
 
 - title: "Cloudant Envoy: Serverless Edition"
+  id: cloudant-envoy-serverless
   date: "2017-10-05"
   lead: glynn-bird
   headline: "The CouchDB one-database-per-user pattern, now with less infrastructure."
@@ -1553,6 +1653,7 @@
     - "Offline First"
 
 - title: "Building an Ordering Application with Watson AI and PostgreSQL: Part I"
+  id: postgresql-watson-ai-order-app-1
   date: "2017-06-13"
   lead: abdullah-alger
   headline: "An IBM Bluemix application that lets Watson interact with users via Twilio's SMS service, then sends their data over to Compose PostgreSQL."
@@ -1569,6 +1670,7 @@
     - Twilio
 
 - title: "Building an Ordering Application with Watson AI and PostgreSQL: Part II"
+  id: postgresql-watson-ai-order-app-2
   date: "2017-06-19"
   lead: abdullah-alger
   headline: "In part II, you'll tie together your services with Node.js and deploy to Bluemix."
@@ -1585,6 +1687,7 @@
     - Twilio
 
 - title: "pixiedust_peacetech"
+  id: pixiedust-peacetech
   date: "2017-05-22"
   lead: david-taieb
   features: 
@@ -1602,6 +1705,7 @@
     - Python
 
 - title: "Making of a Smart Business Chatbot: Part 1"
+  id: chatbot-business-1
   date: "2017-07-21"
   lead: john-oconnor
   features: 
@@ -1617,6 +1721,7 @@
     - Chatbots
 
 - title: "Making of a Smart Business Chatbot: Part 2"
+  id: chatbot-business-2
   date: "2017-08-02"
   lead: john-oconnor
   features: 
@@ -1633,6 +1738,7 @@
     - Chatbots
 
 - title: "Connecting PHP to Compose for MySQL on Bluemix"
+  id: mysql-php-bluemix
   date: "2017-08-23"
   lead: lorna-mitchell
   headline: "It's simple to to connect Compose for MySQL on Bluemix with PHP."
@@ -1646,6 +1752,7 @@
     - PHP
 
 - title: "The Transporter 0.4 series has begun"
+  id: transporter-04-series
   date: "2017-08-29"
   lead: dj-walker-morgan
   features: 
@@ -1661,6 +1768,7 @@
     - JavaScript
 
 - title: "Making of a Smart Business Chatbot: Part 3"
+  id: chatbot-business-3
   date: "2017-08-24"
   lead: john-oconnor
   features: 
@@ -1678,6 +1786,7 @@
     - Chatbots
 
 - title: "Getting Started with Compose PostgreSQL and Jupyter Notebooks"
+  id: notebook-postgresql-getting-started
   date: "2017-09-20"
   lead: abdullah-alger
   headline: "Connect to Compose PostgreSQL and run a Jupyter Notebook environment within Docker to analyze a Titantic data set."
@@ -1693,6 +1802,7 @@
     - Docker
 
 - title: "Visualizing Data with Jupyter Notebooks, PixieDust, and Compose MongoDB"
+  id: pixiedust-mongodb-visualize-data
   date: "2017-10-02"
   lead: abdullah-alger
   features: 
@@ -1714,6 +1824,7 @@
     - Nodejs
 
 - title: "Deploy Your Analytics as Web Apps Using PixieDust’s 1.1 Release"
+  id: pixiedust-web-apps-deploy
   date: "2017-10-09"
   lead: david-taieb
   features: 
@@ -1730,6 +1841,7 @@
     - PixieDust
 
 - title: "Offline First Sample Implementations"
+  id: offline-first-sample-implementations
   date: "2017-09-25"
   lead: bradley-holt
   features: 
@@ -1745,6 +1857,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using Preact and PouchDB [Progressive Web App]"
+  id: offline-first-shopping-preact-pouchdb
   date: "2017-09-27"
   lead: raj-singh
   features: 
@@ -1761,6 +1874,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using Ember.js and PouchDB [Progressive Web App]"
+  id: offline-first-shopping-emberjs-pouchdb
   date: "2017-09-28"
   lead: va-barbosa
   features: 
@@ -1777,6 +1891,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using React Native and PouchDB [hybrid mobile app]"
+  id: offline-first-shopping-react-native-pouchdb
   date: "2017-09-28"
   lead: mark-watson
   features: 
@@ -1792,6 +1907,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using Ionic and PouchDB [hybrid mobile app]"
+  id: offline-first-shopping-ionic-pouchdb
   date: "2017-09-28"
   lead: mark-watson
   features: 
@@ -1807,6 +1923,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using Cordova and PouchDB [hybrid mobile app]"
+  id: offline-first-shopping-cordova-pouchdb
   date: "2017-09-23"
   lead: glynn-bird
   features: 
@@ -1822,6 +1939,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using Swift and Cloudant Sync [native mobile app]"
+  id: offline-first-shopping-swift-cloudant-sync
   date: "2017-09-28"
   lead: mark-watson
   features: 
@@ -1837,6 +1955,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using Kotlin and Cloudant Sync [native mobile app]"
+  id: offline-first-shopping-kotlin-cloudant-sync
   date: "2017-09-28"
   lead: mark-watson
   features: 
@@ -1852,6 +1971,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using Electron and PouchDB [desktop app]"
+  id: offline-first-shopping-electron-pouchdb
   date: "2017-10-05"
   lead: va-barbosa
   features: 
@@ -1867,6 +1987,7 @@
     - "Offline First"
 
 - title: "Better Decision Making with Watson Machine Learning and Compose"
+  id: watson-ml-compose-decision-making
   date: "2017-10-12"
   lead: abdullah-alger
   features: 
@@ -1884,6 +2005,7 @@
     - Python
 
 - title: "A.I. for E.T."
+  id: ai-for-et
   date: "2017-10-11"
   lead: adam-cox
   features:
@@ -1900,6 +2022,7 @@
     - "Machine Learning"
 
 - title: "Couchimport: Import flat data into CouchDB efficiently."
+  id: couchdb-couchimport
   date: "2017-10-17"
   lead: glynn-bird
   features: 
@@ -1916,6 +2039,7 @@
     - Cloudant
 
 - title: "ibmos2spark: Less Cutty-Pastey for Your Object Storage Credentials"
+  id: ibmos2spark-credentials
   date: "2017-10-12"
   lead: adam-cox
   headline: "The library helps you to read and write data between Spark and IBM’s Object Storage services."
@@ -1926,6 +2050,7 @@
     - Spark
 
 - title: "ToolUp: PostgreSQL Studio 2.0"
+  id: postgresql-studio
   date: "2017-10-19"
   lead: john-oconnor
   headline: "Using PostgreSQL Studio to administer Compose for PostgreSQL in the cloud."
@@ -1938,6 +2063,7 @@
     - PostgreSQL
 
 - title: "Watson Machine Learning for Developers"
+  id: watson-ml-developers
   date: "2017-10-18"
   lead: mark-watson
   features: 
@@ -1951,6 +2077,7 @@
     - "Watson Machine Learning"
 
 - title: "Building Your First Machine Learning System"
+  id: first-machine-learning-system
   date: "2017-10-18"
   lead: mark-watson
   features: 
@@ -1970,6 +2097,7 @@
     - PixieDust
 
 - title: "Doing Moar Together"
+  id: doing-moar-together
   date: "2017-10-20"
   lead: maureen-mcelaney
   headline: "Using Agile Methodologies to produce reference implementations for Progressive Web Apps."
@@ -1981,6 +2109,7 @@
     - "Offline First"
 
 - title: "Notebooks for Spreadsheet Users"
+  id: notebooks-spreadsheet
   date: "2017-10-24"
   lead: glynn-bird
   features: 
@@ -1996,6 +2125,7 @@
     - PixieDust
 
 - title: "Go and Compose – MongoDB, Elasticsearch and PostgreSQL"
+  id: mongodb-elasticsearch-postgresql-go-compose
   date: "2017-10-24"
   lead: dj-walker-morgan
   features:
@@ -2013,6 +2143,7 @@
     - PostgreSQL
 
 - title: "Search in Reverse: Real-Time Updates for Data as It Enters Your System"
+  id: search-reverse-real-time-updates
   date: "2017-10-27"
   lead: abdullah-alger
   features: 
@@ -2030,6 +2161,7 @@
     - Nodejs
 
 - title: "Compose Compare: MongoDB vs. PostgreSQL"
+  id: mongodb-postgresql-compose-compare
   date: "2017-10-10"
   lead: john-oconnor
   headline: "Which database is the best fit for your project?"
@@ -2044,6 +2176,7 @@
     - PostgreSQL
 
 - title: "Go and Simplifying Scylla with Gocqlx"
+  id: scylla-gocqlx-simplify
   date: "2017-10-17"
   lead: dj-walker-morgan
   features:
@@ -2060,6 +2193,7 @@
     - Go
 
 - title: "Share Your Jupyter Notebook Charts on the Web"
+  id: pixiedust-notebooks-share-charts-web
   date: "2017-10-20"
   lead: david-taieb
   features: 
@@ -2074,6 +2208,7 @@
     - PixieDust
 
 - title: "Securing Notebooks on IBM's Data Science Experience"
+  id: notebooks-dsx-secure
   date: "2017-10-31"
   lead: abdullah-alger
   headline: "Be secure in sharing less in your Jupyter Notebooks."
@@ -2087,6 +2222,7 @@
     - "Jupyter Notebook"
 
 - title: "Go and Compose – Redis, RethinkDB, and RabbitMQ"
+  id: redis-rethinkdb-rabbitmq-go-compose
   date: "2017-10-31"
   lead: dj-walker-morgan
   features:
@@ -2105,6 +2241,7 @@
     - RabbitMQ
 
 - title: "IBM Object Storage 2 Spark Library"
+  id: object-storage-spark-library
   date: "2017-11-03"
   lead: adam-cox
   headline: "Read and write data between Spark and IBM’s Object Storage services."
@@ -2117,6 +2254,7 @@
     - R
 
 - title: "Tracking Your Cryptocurrency Portfolio With Serverless Functions"
+  id: serverless-tracking-cryptocurrency
   date: "2017-11-16"
   lead: glynn-bird
   headline: "Monitor your Bitcoin hoard with IBM Cloud Functions writing data to Cloudant."
@@ -2135,6 +2273,7 @@
     - Nodejs
 
 - title: "Discover Space on Twitter with Elasticsearch and Redis"
+  id: elasticsearch-redis-twitter-space
   date: "2017-11-01"
   lead: abdullah-alger
   headline: "Count Elasticsearch percolated queries using a sorted set. Use Redis to count the number of uniques using HyperLogLog."
@@ -2150,6 +2289,7 @@
     - Nodejs
 
 - title: "Graph 101: Getting Started with Graphs"
+  id: graphs-getting-started
   date: "2017-11-02"
   lead: john-oconnor
   headline: "Evaluate if a graph database will work for you, and learn how to import data."
@@ -2163,6 +2303,7 @@
     - Groovy
 
 - title: "Go and Compose – etcd v3, Scylla, and MySQL"
+  id: etcd-scyla-mysql-go-compose
   date: "2017-11-07"
   lead: dj-walker-morgan
   features:
@@ -2180,6 +2321,7 @@
     - MySQL
 
 - title: "Mapping the Songs of Bruce Springsteen"
+  id: bruce-springsteen-songs-mapping
   date: "2017-11-22"
   lead: glynn-bird
   features: 
@@ -2200,6 +2342,7 @@
     - Cloudant
 
 - title: "Graph 101: Traversing and Querying JanusGraph using Gremlin"
+  id: janusgraph-gremlin-traverse-query
   date: "2017-11-09"
   lead: john-oconnor
   headline: "Vertices and edges, oh my! Let's cover some basic graph DB queries."
@@ -2212,6 +2355,7 @@
     - JanusGraph
 
 - title: "Importing Graphs into JanusGraph"
+  id: janusgraph-importing
   date: "2017-11-14"
   lead: dj-walker-morgan
   headline: "Using Gremlin I/O to load existing graph structures into a remote database."
@@ -2224,6 +2368,7 @@
     - JanusGraph
 
 - title: "Making a Cloudant/Elasticsearch Hybrid"
+  id: cloudant-elasticsearch-hybrid
   date: "2017-11-30"
   lead: glynn-bird
   headline: "Using serverless functions to move Cloudant data as it changes."
@@ -2245,6 +2390,7 @@
     - Nodejs
 
 - title: "Building a Serverless Data Pipeline"
+  id: serverless-data-pipeline
   date: "2017-11-28"
   lead: lorna-mitchell
   features:
@@ -2265,6 +2411,7 @@
     - Cloudant
 
 - title: "Deploy to IBM Cloud With TravisCI"
+  id: cloud-travisci-deploy
   date: "2017-12-06"
   lead: lorna-mitchell
   headline: "Getting started with automated deployment in a few simple steps."
@@ -2275,6 +2422,7 @@
     - PHP
 
 - title: "Using Your Own Domain Name With Cloudant"
+  id: cloudant-domain-name
   date: "2017-12-07"
   lead: glynn-bird
   features: 
@@ -2292,6 +2440,7 @@
     - Serverless
 
 - title: "Sliding Through a Notebook"
+  id: notebook-slides
   date: "2017-12-11"
   lead: margriet-groenendijk
   headline: "Write slides where you code."
@@ -2305,6 +2454,7 @@
     - Python
 
 - title: "How to Handle Tagged Data with Redis Sets"
+  id: redis-handle-tagged-data
   date: "2017-12-13"
   lead: lorna-mitchell
   headline: "Sets are a powerful data structure in Redis. Learn how to use them to your advantage."
@@ -2317,6 +2467,7 @@
     - Redis
 
 - title: "Looking inside Books with PostgreSQL's hstore"
+  id: postgresql-hstore-books
   date: "2017-12-20"
   lead: abdullah-alger
   headline: "PostgreSQL is versatile. Let's explore hstore, a key-value model that is less-used but conveniently flexible."
@@ -2329,6 +2480,7 @@
     - PostgreSQL
 
 - title: "Detaching Cloudant Attachments to Object Storage with Serverless Functions"
+  id: cloudant-attachment-object-storage-serverless
   date: "2017-12-21"
   lead: glynn-bird
   headline: "Build a pipeline to move Cloudant attachments to object storage using IBM Cloud Functions."
@@ -2349,6 +2501,7 @@
     - "Offline First"
 
 - title: "Going Serverless with IBM Cloud Functions and Compose Redis"
+  id: serverless-functions-redis
   date: "2017-12-21"
   lead: lorna-mitchell
   features: 
@@ -2372,6 +2525,7 @@
 # start 2018 below
 
 - title: "Three Great Serverless Use Cases"
+  id: serverless-use-cases
   date: "2018-01-03"
   lead: lorna-mitchell
   headline: "The design patterns for serverless functions that are here to stay."
@@ -2385,6 +2539,7 @@
     - Serverless
 
 - title: "Open Data Sets"
+  id: open-data-sets
   date: "2018-01-30"
   lead: raj-singh
   headline: "Curated data, open and free for you to use."
@@ -2395,6 +2550,7 @@
     - "Jupyter Notebook"
 
 - title: "Creating Partial Cloudant Indexes"
+  id: cloudant-indexes-partial
   date: "2018-01-10"
   lead: glynn-bird
   headline: "Filter data before it’s indexed to get the most out of your storage."
@@ -2406,6 +2562,7 @@
     - Cloudant
 
 - title: "How to Get Logs with Node.js and the Compose API"
+  id: compose-api-nodejs-logs
   date: "2018-01-10"
   lead: dj-walker-morgan
   headline: "Meet the logfile API. Locate deployments, find log files, and download them from Node.js."
@@ -2417,6 +2574,7 @@
     - Nodejs
 
 - title: "Python and Compose - MongoDB, Elasticsearch and PostgreSQL"
+  id: mongodb-elasticsearch-postgresql-python-compose
   date: "2018-01-17"
   features:
     - compose-grand-tour
@@ -2434,6 +2592,7 @@
     - PostgreSQL
 
 - title: "Sharing Variables Between Python & Node.js in Jupyter Notebooks"
+  id: notebooks-python-nodejs-sharing
   date: "2018-01-27"
   lead: glynn-bird
   features: 
@@ -2451,6 +2610,7 @@
     - Python
 
 - title: "API Caching with Redis and Node.js"
+  id: redis-nodejs-api-caching
   date: "2018-01-24"
   lead: dj-walker-morgan
   headline: "Make your applications run quickly and predictably."
@@ -2465,6 +2625,7 @@
     - Redis
 
 - title: "Python and Compose - Redis, RethinkDB, and RabbitMQ"
+  id: redis-rethinkdb-rabbitmq-python-compose
   date: "2018-01-25"
   features: 
     - compose-grand-tour
@@ -2482,6 +2643,7 @@
     - RabbitMQ
 
 - title: "Shopping list demo using Vue.js and PouchDB [Progressive Web App]"
+  id: offline-first-shopping-vuejs-pouchdb
   date: "2018-01-29"
   lead: glynn-bird
   features: 
@@ -2500,6 +2662,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using React and PouchDB [Progressive Web App]"
+  id: offline-first-shopping-react-pouchdb
   date: "2018-01-19"
   lead: raj-singh
   features: 
@@ -2517,6 +2680,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using Polymer and PouchDB [Progressive Web App]"
+  id: offline-first-shopping-polymer-pouchdb
   date: "2018-01-26"
   lead: bradley-holt
   features: 
@@ -2536,6 +2700,7 @@
     - "Offline First"
 
 - title: "Shopping list demo using vanilla JavaScript and PouchDB [Progressive Web App]"
+  id: offline-first-shopping-javascript-pouchdb
   date: "2018-01-23"
   lead: va-barbosa
   features: 
@@ -2554,6 +2719,7 @@
     - "Offline First"
 
 - title: "Deploying a Simple Machine Learning App with Node.js and Watson ML"
+  id: watson-ml-nodejs-simple-machine-learning
   date: "2018-02-08"
   lead: mark-watson
   features: 
@@ -2570,6 +2736,7 @@
     - Nodejs
 
 - title: "Code-First Database Design with Entity Framework and PostgreSQL"
+  id: postgresql-entity-code-first
   date: "2018-01-11"
   headline: "How to use the Entity Framework in C# to create a table in a Compose PostgreSQL database."
   links: 
@@ -2582,6 +2749,7 @@
     - "C#"
 
 - title: "Building Your Own Data Transport with Compose Transporter"
+  id: transporter-building-your-own
   date: "2018-01-31"
   features:
     - loading-json
@@ -2597,6 +2765,7 @@
     - Go
 
 - title: "Powering PHP With JanusGraph"
+  id: janusgraph-php-powering
   date: "2018-02-06"
   headline: "Introducing the Gremlin-OGM PHP library."
   links: 
@@ -2609,6 +2778,7 @@
     - PHP
 
 - title: "My First Pull Request for the Open Source PixieDust Project"
+  id: pixiedust-first-pull-request
   date: "2018-01-31"
   lead: margriet-groenendijk
   features: 
@@ -2623,6 +2793,7 @@
     - Python
 
 - title: "Easy PostgreSQL Performance Stats with pgHero and Docker"
+  id: postgresql-pghero-docker-performance
   date: "2018-02-08"
   lead: dj-walker-morgan
   headline: "PostgreSQL is packed full of stats, but they are not always easy to interpret."
@@ -2636,6 +2807,7 @@
     - Docker
 
 - title: "Painless Container Management with Rancher 2.0, Kubernetes, and IBM Cloud"
+  id: rancher-kubernetes-cloud-painless
   date: "2018-02-06"
   lead: john-oconnor
   headline: "Part one of becoming a Jolly Rancher®."
@@ -2646,6 +2818,7 @@
     - Docker
 
 - title: "Building the Soul of a New Transporter Adaptor"
+  id: transporter-adapter-building
   date: "2018-02-13"
   features: 
     - loading-json
@@ -2661,6 +2834,7 @@
     - Go
 
 - title: "Reflections on Global Diversity CFP Day"
+  id: cfp-day-global-diversity
   date: "2018-02-12"
   lead: teri-chadbourne
   headline: "Preparing for new talk proposals with fresh perspectives."
@@ -2668,6 +2842,7 @@
     Medium: "https://medium.com/ibm-watson-data-lab/reflections-on-global-diversity-cfp-day-d26355c971"
 
 - title: "Python and Compose - Scylla and Compose for MySQL"
+  id: scylla-mysql-python
   date: "2018-02-15"
   features: 
     - compose-grand-tour
@@ -2684,6 +2859,7 @@
     - MySQL
 
 - title: "Building an API Cache with Redis and Node"
+  id: redis-nodejs-api-cache
   date: "2018-02-13"
   features:
     - mapbox
@@ -2702,6 +2878,7 @@
     - Mapbox
 
 - title: "Keeping Local Documents Local in a CouchDB-Style Replication Job"
+  id: couchdb-keeping-local-documents
   date: "2018-02-20"
   lead: glynn-bird
   features: 
@@ -2717,6 +2894,7 @@
     - PouchDB
 
 - title: "Tuning it up to 11 - Transporter and the Cloudant Adaptor"
+  id: cloudant-transporter-adapter
   date: "2018-02-20"
   features: 
     - loading-json
@@ -2734,6 +2912,7 @@
     - Go
 
 - title: "Cloudant and CouchDB Replication with couchreplicate"
+  id: couchreplicate-cloudant-couchdb
   date: "2018-02-22"
   lead: glynn-bird
   features: 
@@ -2750,6 +2929,7 @@
     - JavaScript
 
 - title: "'Service Workers & their role in PWAs' — Ipsha Bhidonia"
+  id: offline-pwa-service-workers
   date: "2018-02-26"
   lead: lorna-mitchell
   headline: "Recapping an excellent PHP UK Conference talk on the inner workings of Progressive Web Apps."
@@ -2763,6 +2943,7 @@
     - PHP
 
 - title: "Keeping Your Machine Learning Models Up-To-Date"
+  id: machine-models-up-to-date
   date: "2018-03-01"
   lead: mark-watson
   features: 
@@ -2777,6 +2958,7 @@
     - "Machine Learning"
 
 - title: "Making Your App Awesome When the Network Isn’t (Part 1)"
+  id: offline-awesome-app-1
   date: "2018-03-08"
   lead: teri-chadbourne
   features: 
@@ -2796,6 +2978,7 @@
     - Cloudant
 
 - title: "NodeJS, MongoDB, Elasticsearch and PostgreSQL: The Compose Grand Tour"
+  id: elasticsearch-postgresql-mongodb-nodejs-grand-tour
   date: "2018-03-08"
   lead: dj-walker-morgan
   features: 
@@ -2813,6 +2996,7 @@
     - PostgreSQL
 
 - title: "The Visual Python Debugger for Jupyter Notebooks You’ve Always Wanted"
+  id: pixiedust-notebooks-python-debugger
   date: "2018-03-09"
   lead: david-taieb
   features: 
@@ -2827,6 +3011,7 @@
     - "Jupyter Notebook"
 
 - title: "Keeping Your Secrets Between Cloud Object Storage and Your Browser (Part 1)"
+  id: object-storage-keeping-secrets-1
   date: "2018-03-12"
   lead: glynn-bird
   headline: "Upload edition."
@@ -2842,6 +3027,7 @@
     - "Object Storage"
 
 - title: "Making Your App Awesome When the Network Isn’t (Part 2)"
+  id: object-storage-keeping-secrets-2
   date: "2018-03-13"
   lead: teri-chadbourne
   headline: "A beginner’s guide to ensuring quick page loads — offline or not — with service workers."
