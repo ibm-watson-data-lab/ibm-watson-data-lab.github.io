@@ -32,7 +32,7 @@
               }
             }
 
-            indy("default", str, false);
+            indy('default', str, false);
             indy('title', doc['title'], false);
             indy('date', doc['date'], false);
             indy('headline', doc['headline'], false);
