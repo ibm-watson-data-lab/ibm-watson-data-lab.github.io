@@ -23,6 +23,16 @@
               }
             };
 
+            delete doc._id;
+            delete doc._rev;
+            var str = '';
+            for (var key in doc) {
+              if (doc[key]) {
+                str += doc[key].toString() + ' ';
+              }
+            }
+
+            indy("default", str, false);
             indy('title', doc['title'], false);
             indy('date', doc['date'], false);
             indy('headline', doc['headline'], false);
@@ -30,10 +40,5 @@
             indy('strategies', doc['strategies'], true);
             indy('features', doc['features'], true);
             indy('tags', doc['tags'], true);
-
-            delete doc._id;
-            delete doc._rev;
-            var str = Object.values(doc).join('') + ' ';
-            index('default', str, false);
           }
         }
