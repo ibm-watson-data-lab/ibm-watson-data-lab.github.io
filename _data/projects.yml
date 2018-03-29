@@ -2765,8 +2765,6 @@
 - title: "Keeping Your Machine Learning Models Up-To-Date"
   date: "2018-03-01"
   lead: mark-watson
-  features: 
-    - your-first-machine-learning-system
   headline: "Continuous learning with IBM Watson Machine Learning (part 1)."
   links: 
     Medium: "https://medium.com/ibm-watson-data-lab/keeping-your-machine-learning-models-up-to-date-f1ead546591b"
@@ -2855,95 +2853,94 @@
     - JavaScript
     - "Progressive Web App"
 
-- title: ""
-  date: "2018--"
-  lead: __
-  features: 
-    - 
-  headline: "."
+- title: "Keeping Your Secrets Between Cloud Object Storage and Your Browser (Part 2)"
+  date: "2018-03-20"
+  lead: glynn-bird
+  headline: "Download edition."
   links: 
-    GitHub: ""
-    Medium: ""
-    Compose Articles: ""
+    Medium: "https://medium.com/ibm-watson-data-lab/keeping-your-secrets-between-cloud-object-storage-and-your-browser-part-2-3991e39e5403"
   strategies: 
-    - 
+    - serverless-and-data
   tags: 
-    - 
+    - "Object Storage"
+    - Serverless
+    - OpenWhisk
+    - Nodejs
 
-- title: ""
-  date: "2018--"
-  lead: __
-  features: 
-    - 
-  headline: "."
+- title: "How to stunnel to Redis On-Demand With stunredis"
+  date: "2018-03-15"
+  lead: dj-walker-morgan
+  headline: "Introducing stunredis, a script to turn the trickiness of configuring a TLS/SSL tunnel for Redis into an automated breeze."
   links: 
-    GitHub: ""
-    Medium: ""
-    Compose Articles: ""
+    GitHub: "https://github.com/ibm-watson-data-lab/stunredis"
+    Compose Articles: "https://compose.com/articles/how-to-stunnel-to-redis-on-demand-with-stunredis/"
   strategies: 
-    - 
+    - get-connected-databases
   tags: 
-    - 
+    - Compose
+    - Redis
 
-- title: ""
-  date: "2018--"
-  lead: __
+- title: "Quick Access to IBM Cloud Service Credentials from a Python Notebook"
+  date: "2018-03-21"
+  lead: patrick-titzler
   features: 
-    - 
-  headline: "."
+    - pixiedust-for-jupyter
+  headline: "See all your orgs, spaces, and services together in one place."
   links: 
-    GitHub: ""
-    Medium: ""
-    Compose Articles: ""
+    Medium: "https://medium.com/ibm-watson-data-lab/quick-access-to-ibm-cloud-service-credentials-from-a-python-notebook-1f39ee2aa4f3"
+    Notebook: "https://raw.githubusercontent.com/ibm-watson-data-lab/cf-service-credential-browser/master/notebooks/browse_cf_services.ipynb"
   strategies: 
-    - 
+    - get-connected-databases
+    - notebooks-for-developers
   tags: 
-    - 
+    - "Jupyter Notebook"
+    - PixieDust
+    - Python
 
-- title: ""
-  date: "2018--"
-  lead: __
+- title: "From Node.js to Redis and RabbitMQ: The Compose Grand Tour"
+  date: "2018-03-21"
+  lead: dj-walker-morgan
   features: 
-    - 
-  headline: "."
+    - compose-grand-tour
+  headline: "We'll look at connecting to Redis with both popular drivers and plugging into RabbitMQ."
   links: 
-    GitHub: ""
-    Medium: ""
-    Compose Articles: ""
+    Compose Articles: "https://www.compose.com/articles/from-nodejs-to-redis-and-rabbitmq/"
+    GitHub: "https://github.com/compose-grandtour/node"
   strategies: 
-    - 
+    - get-connected-databases
   tags: 
-    - 
+    - Compose
+    - Nodejs
+    - Redis
+    - RabbitMQ
 
-- title: ""
-  date: "2018--"
-  lead: __
-  features: 
-    - 
-  headline: "."
+- title: "Build a Data Catalog in Minutes With IBM Cloud Object Storage"
+  date: "2018-03-28"
+  lead: raj-singh
+  headline: "Easily upload datasets and publish metadata (part 1)."
   links: 
-    GitHub: ""
-    Medium: ""
-    Compose Articles: ""
+    Medium: "https://medium.com/ibm-watson-data-lab/build-a-data-catalog-in-minutes-with-ibm-cloud-object-storage-c22f928ddd9e"
   strategies: 
-    - 
+    - get-connected-databases
   tags: 
-    - 
+    - "Object Storage"
 
-- title: ""
-  date: "2018--"
-  lead: __
+- title: "To Scylla and RethinkDB - The Node.js Compose Grand Tour"
+  date: "2018-03-28"
+  lead: dj-walker-morgan
   features: 
-    - 
-  headline: "."
+    - compose-grand-tour
+  headline: "The Node.js segment of the Grand Tour of database connections continues with Scylla and RethinkDB.."
   links: 
-    GitHub: ""
-    Medium: ""
-    Compose Articles: ""
+    Compose Articles: "https://www.compose.com/articles/to-scylla-and-rethinkdb-the-node-js-compose-grand-tour/"
+    GitHub: "https://github.com/compose-grandtour/node"
   strategies: 
-    - 
+    - get-connected-databases
   tags: 
-    - 
+    - Compose
+    - Nodejs
+    - ScyllaDB
+    - RethinkDB
 
 - title: "Analyzing Data with IBM Cloud SQL Query"
   date: "2018-03-29"
