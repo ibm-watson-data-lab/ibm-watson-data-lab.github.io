@@ -50,7 +50,7 @@ const main = params => {
     } else if (body.ref !== `refs/heads/${branch}`) {
       // not the branch we want
       console.warn(`from_github.main: want branch 'refs/heads/${branch}' got '${body.ref}'`)
-      return Promise.reject(webResponse('Not the branch we want', 400))
+      return Promise.reject(webResponse('Not the branch we want', 202))
     } else if (!body['head_commit']) {
       // missing head_commit
       console.warn(`from_github.main: missing head_commit: ${body.ref}`)
@@ -90,7 +90,7 @@ const fromwebhook = (files, branch, body) => {
   if (changes.length > 0) {
     return Promise.resolve({ files: changes })
   } else {
-    return Promise.reject(webResponse('No watched files changed', 200))
+    return Promise.reject(webResponse('No watched files changed', 202))
   }
 }
 
