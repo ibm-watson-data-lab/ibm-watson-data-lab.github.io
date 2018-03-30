@@ -53,7 +53,7 @@ const dispatchactions = (files, packageName) => {
   })
 
   return Promise.all(actions).then(results => {
-    return webResponse(`${results.length} 'parse_xxxx' action(s) initiated`)
+    return webResponse(`${results.length} 'parse_xxxx' action(s) initiated`, 202)
   })
 }
 
