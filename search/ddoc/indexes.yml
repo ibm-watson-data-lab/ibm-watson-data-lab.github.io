@@ -1,0 +1,44 @@
+--- 
+- 
+  _id: _design/search
+  indexes: 
+    search: 
+      index: |
+        function (doc) {
+          if (!doc._id.match(/^_design/)) {
+            var indy = function(key, value, facet) {
+              var t = typeof value;
+              if (key === 'date' && value) {
+                index(key, value, {facet: facet, index: 'not_analyzed'});
+                var d = new Date(value)
+                var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+                index('year', d.getFullYear().toString(), {facet: true});
+                index('month', months[d.getMonth()], {facet: true});
+              } else if ((t == 'string' && value !== '__') || t == 'number' || t == 'boolean') {
+                index(key, value, {facet: facet});
+              } else if (t == 'object' && value !== null) {
+                for(var i in value) {
+                  index(key, value[i], {facet: facet});
+                }
+              }
+            };
+
+            delete doc._id;
+            delete doc._rev;
+            var str = '';
+            for (var key in doc) {
+              if (doc[key]) {
+                str += doc[key].toString() + ' ';
+              }
+            }
+
+            indy('default', str, false);
+            indy('title', doc['title'], false);
+            indy('date', doc['date'], false);
+            indy('headline', doc['headline'], false);
+            indy('lead', doc['lead'], true);
+            indy('strategies', doc['strategies'], true);
+            indy('features', doc['features'], true);
+            indy('tags', doc['tags'], true);
+          }
+        }

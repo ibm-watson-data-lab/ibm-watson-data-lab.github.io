@@ -1,0 +1,6 @@
+{
+  "COUCHDB_URL": "https://username:password@username.cloudant.com",
+  "COUCHDB_DBNAME": "projects",
+  "FILES": ["_data/projects.yml"],
+  "GIT_BRANCH": "master"
+}
