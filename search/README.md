@@ -15,7 +15,7 @@ More specifically, when updates to `_data/projects.yml` are pushed to the `maste
 Specified files from the repo are converted to JSON and saved into an instance of [Apache CouchDB](https://couchdb.apache.org/)/[IBM Cloudant](https://cloudant.com) NoSQL database via IBM Cloud Functions (Apache OpenWhisk) actions. To configure the actions:
 
 1. Confirm the [IBM Cloud Functions](https://console.ng.bluemix.net/openwhisk/getting-started) CLI is installed and available
-2. Update the `config.json` file accordingly, where:
+2. Update the [`config.json`](https://github.com/ibm-watson-data-lab/ibm-watson-data-lab.github.io/blob/master/search/github_to_cloudant/config.json) file accordingly, where:
 
   * `COUCHDB_URL` - the fully qualified URL to the Cloudant/CouchDB instance
   * `COUCHDB_DBNAME` - the name of the database to use. It must already exist in the Cloudant/CouchDB instance.
@@ -23,7 +23,7 @@ Specified files from the repo are converted to JSON and saved into an instance o
   * `GIT_BRANCH` - the name of the branch (e.g., `master`) to watch for updates. Default is `master`.
   * `GIT_SECRET` - the secret/key used to secure the webhook. Not required, but if set should match the secret set for the GitHub Webhook secret
 
-3. Run the script to create the actions:
+3. Run the [`deploy.sh`](https://github.com/ibm-watson-data-lab/ibm-watson-data-lab.github.io/blob/master/search/github_to_cloudant/deploy.sh) script to create the actions:
 
   ```
   ./deploy.sh [-p packagename] [-c configfile]
