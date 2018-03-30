@@ -3040,6 +3040,7 @@
     - "Progressive Web App"
 
 - title: "Keeping Your Secrets Between Cloud Object Storage and Your Browser (Part 2)"
+  _id: object-storage-keeping-secrets-2
   date: "2018-03-20"
   lead: glynn-bird
   headline: "Download edition."
@@ -3054,6 +3055,7 @@
     - Nodejs
 
 - title: "How to stunnel to Redis On-Demand With stunredis"
+  _id: stunnel-to-redis
   date: "2018-03-15"
   lead: dj-walker-morgan
   headline: "Introducing stunredis, a script to turn the trickiness of configuring a TLS/SSL tunnel for Redis into an automated breeze."
@@ -3067,6 +3069,7 @@
     - Redis
 
 - title: "Quick Access to IBM Cloud Service Credentials from a Python Notebook"
+  _id: quick-access-credentials-notebook
   date: "2018-03-21"
   lead: patrick-titzler
   features: 
@@ -3084,6 +3087,7 @@
     - Python
 
 - title: "From Node.js to Redis and RabbitMQ: The Compose Grand Tour"
+  _id: nodejs-redis-rabbit-mq-grand-tour
   date: "2018-03-21"
   lead: dj-walker-morgan
   features: 
@@ -3101,6 +3105,7 @@
     - RabbitMQ
 
 - title: "Build a Data Catalog in Minutes With IBM Cloud Object Storage"
+  _id: build-data-catalog-cos
   date: "2018-03-28"
   lead: raj-singh
   headline: "Easily upload datasets and publish metadata (part 1)."
@@ -3112,6 +3117,7 @@
     - "Object Storage"
 
 - title: "To Scylla and RethinkDB - The Node.js Compose Grand Tour"
+  _id: scylla-rethinkdb-nodejs-grand-tour
   date: "2018-03-28"
   lead: dj-walker-morgan
   features: 
@@ -3129,6 +3135,7 @@
     - RethinkDB
 
 - title: "Analyzing Data with IBM Cloud SQL Query"
+  _id: analyzing-data-cloud-sql-query
   date: "2018-03-29"
   lead: abdullah-alger
   features: 

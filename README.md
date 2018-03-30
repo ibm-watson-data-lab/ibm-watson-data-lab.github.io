@@ -37,22 +37,23 @@ Add projects at the bottom of the projects.yml file in the _data folder. Each pr
 
 ```
 - title:    Persisting Data for a Smarter Chatbot
-  headline: You'll need more than just log data to take your chatbot to the next level.
-  story:    In which we use data services to provide a more personal chatbot experience, save money by reducing third-party API calls, and perform analysis on past chatbot conversations.
+  _id: chatbot-persist-data
+  date: "2016-12-12"
+  lead: mark-watson
+  features: 
+    - smart-chatbots
+  headline: "You'll need more than just log data to take your chatbot to the next level."
   links: 
-    Medium: https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2
-    GitHub: https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant
-  img:      img/smarter-chatbot.jpg
-  thumb:    img/smarter-chatbot-thumb.jpg
-  features:   
-    - watson-and-data
+    GitHub: "https://github.com/ibm-watson-data-lab/watson-recipe-bot-python-cloudant"
+    Medium: "https://medium.com/ibm-watson-data-lab/persisting-data-for-a-smarter-chatbot-be599480f7b2"
   strategies: 
-    - differentiators
+    - machine-learning-for-developers
+    - get-connected-databases
   tags: 
-    - Watson Conversation
+    - "Watson Conversation"
     - Slack
-    - Spoonacular
     - Cloudant
+    - Chatbots
 ```
 
 Anything added to the projects.yml file will appear on the Projects page, with the most recently added projects appearing at the top of the list.
