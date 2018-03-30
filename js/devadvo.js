@@ -377,13 +377,13 @@ $(document).ready(function () {
     initSearch()
   } else {
     $('.strategy-project-tags li:not(.bound)')
-    .addClass('bound')
-    .attr('role', 'button')
-    .on('click', function () {
-      var t = $(this).text().trim()
-      t = t.indexOf(' ') === -1 ? t : ('"' + t + '"')
-      window.location = '/projects?q=tags:' + t
-    })
+      .addClass('bound')
+      .attr('role', 'button')
+      .on('click', function () {
+        var t = $(this).text().trim()
+        t = t.indexOf(' ') === -1 ? t : ('"' + t + '"')
+        window.location = '/projects?q=tags:' + t
+      })
   }
 
   $('[data-author-img]').each(function (index, author) {

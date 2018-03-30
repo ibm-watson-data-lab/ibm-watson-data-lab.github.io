@@ -25,6 +25,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - search
 
 include:
   - _pages
