@@ -1,6 +1,6 @@
-# Project Search
+# Projects Search
 
-The [Project search page](https://ibm-watson-data-lab.github.io/projects) is powered by the [Simple Search Service](https://github.com/ibm-watson-data-lab/simple-search-service) and the [SimpleSearchJS](https://github.com/ibm-watson-data-lab/simple-search-js), but the data for the search service is maintained in the [`_data/projects.yml`](https://github.com/ibm-watson-data-lab/ibm-watson-data-lab.github.io/blob/master/_data/projects.yml) file. In addition, the search index is modified from the default provided by the search service and is maintained in the [`search/ddoc/indexes.yml`]((https://github.com/ibm-watson-data-lab/ibm-watson-data-lab.github.io/blob/master/search/ddoc/indexes.yml)) file.
+The [Projects search page](https://ibm-watson-data-lab.github.io/projects) is powered by the [Simple Search Service](https://github.com/ibm-watson-data-lab/simple-search-service) and the [SimpleSearchJS](https://github.com/ibm-watson-data-lab/simple-search-js), but the data for the search service is maintained in the [`_data/projects.yml`](https://github.com/ibm-watson-data-lab/ibm-watson-data-lab.github.io/blob/master/_data/projects.yml) file. In addition, the search index is modified from the default provided by the search service and is maintained in the [`search/ddoc/indexes.yml`](https://github.com/ibm-watson-data-lab/ibm-watson-data-lab.github.io/blob/master/search/ddoc/indexes.yml) file.
 
 The Simple Search Service is automatically updated via serverless actions. The actions are triggered by a GitHub webhook whenever changes to files in the repo are pushed.
 
