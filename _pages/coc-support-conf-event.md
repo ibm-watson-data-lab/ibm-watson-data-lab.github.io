@@ -6,7 +6,7 @@ layout: layout-about
 
 ### Support for Conferences and Events
 
-The Developer Advocacy team at IBM Watson Data Platform values the safety and security of our users and the communities they participate in. While our Code of Conduct covers any events that our team funds, we will also not sponsor conferences and events that have not implemented a code of conduct specifically addressing harassment and discrimination. We want to be sure that any events we fund have policies and procedures in place for handling harassment. It's especially important to us that real-life events take steps to protect the physical and mental security of their participants. An acceptable code of conduct meets the following criteria:
+The Developer Advocacy team at IBM Watson Data Platform values the safety and security of our users and the communities they participate in. While our [Code of Conduct](https://ibm-watson-data-lab.github.io/code-of-conduct) covers any events that our team funds, we will also not sponsor conferences and events that have not implemented a code of conduct specifically addressing harassment and discrimination. We want to be sure that any events we fund have policies and procedures in place for handling harassment. It's especially important to us that real-life events take steps to protect the physical and mental security of their participants. An acceptable code of conduct meets the following criteria:
 
 <ul class="browser-default">
 	<li>Applies to all participants (organizers, attendees, speakers, exhibitors, project contributors, etc.)</li>
