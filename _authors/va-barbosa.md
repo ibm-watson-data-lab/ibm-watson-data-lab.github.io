@@ -1,32 +1,33 @@
 ---
-title:      Va Barbosa
+title:      va barbosa
 permalink:  va-barbosa
 layout:     layout-authors
 headline:   I work on everything.
 location:		United States - East
 specialties:
- - UI
- - Jekyll
+ - UI/UX
+ - Serverless
+ - Offline First
+ - PWA
+ - NoSQL
+ - SQL
  - Jupyter Notebooks
  - Microservices
- - NoSQL
- - Serverless
- - Offline
- - SQL
+ - Jekyll
 languages:
  - JavaScript
- - NodeJS
+ - Node.js
  - HTML
  - CSS
+ - Java
  - Python
  - Vue.js
+ - jQuery
  - AngularJS
- - JQuery
- - Java
+ - ReactJS
  - D3
 links:
  - https://github.com/vabarbosa
- - 
  - https://medium.com/@vabarbosa
  - http://vabarbosa.com
  - https://stackoverflow.com/users/5446300
@@ -34,4 +35,4 @@ links:
  - va@us.ibm.com
 ---
 
-Code rules everything around me.
+code rules everything around me
