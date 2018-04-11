@@ -3156,3 +3156,37 @@
     - "Jupyter Notebook"
     - Python
     - Mapbox
+
+- title: "Elasticsearch, Bulk Uploading and the High-Level Java REST Client - Part 1"
+  _id: elasticsearch-bulk-upload-high-level-java
+  date: "2018-04-04"
+  lead: dj-walker-morgan
+  features:
+    - loading-json
+  headline: "A practical look at the relatively new High-Level Java REST Client for Elasticsearch uploads."
+  links: 
+    GitHub: "https://github.com/compose-ex/elasticsearchupload"
+    Compose Articles: "https://www.compose.com/articles/compose-elasticsearch-bulk-uploading-and-the-high-level-java-rest-client-part-1/"
+  strategies: 
+    - get-connected-databases
+    - working-with-json
+  tags: 
+    - Compose
+    - Elasticsearch
+    - Java
+
+- title: "Protecting Your Website Forms With Serverless CAPTCHA"
+  _id: serverless-captcha-00
+  date: "2018-04-11"
+  lead: glynn-bird
+  headline: "Click here if you are not a robot."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/protecting-your-website-forms-with-serverless-captcha-27e3ed2794a0"
+  strategies: 
+    - serverless-and-data
+  tags: 
+    - Serverless
+    - OpenWhisk
+    - "IBM Cloud Functions"
+    - Nodejs
+
