@@ -3122,7 +3122,7 @@
   lead: dj-walker-morgan
   features: 
     - compose-grand-tour
-  headline: "The Node.js segment of the Grand Tour of database connections continues with Scylla and RethinkDB.."
+  headline: "The Node.js segment of the Grand Tour of database connections continues with Scylla and RethinkDB."
   links: 
     Compose Articles: "https://www.compose.com/articles/to-scylla-and-rethinkdb-the-node-js-compose-grand-tour/"
     GitHub: "https://github.com/compose-grandtour/node"
@@ -3190,3 +3190,95 @@
     - "IBM Cloud Functions"
     - Nodejs
 
+- title: "Failing Over Yourself to Succeed"
+  _id: fail-to-succeed
+  date: "2018-04-19"
+  lead: dj-walker-morgan
+  headline: "How to do fully automatic, seamless failover on the various Compose databases."
+  links: 
+    Compose Articles: "https://compose.com/articles/failing-over-yourself-to-succeed/"
+  strategies: 
+    - get-connected-databases
+  tags:
+    - Compose
+    - MongoDB
+
+- title: "Compose Tooltips for MongoDB, PostgreSQL and Elasticsearch"
+  _id: compose-tooltips-mongo-postgres-elastic-001
+  date: "2018-04-25"
+  lead: dj-walker-morgan
+  headline: "What's new and interesting in database tooling for Compose users?"
+  links: 
+    Compose Articles: "https://compose.com/articles/compose-tooltips-for-mongodb-postgresql-and-elasticsearch/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - MongoDB 
+    - PostgreSQL
+    - Elasticsearch
+
+- title: "Elasticsearch, Bulk Uploading and the High-Level Java REST Client - Part 2"
+  _id: elasticsearch-bulk-upload-high-level-java-02
+  date: "2018-04-18"
+  lead: dj-walker-morgan
+  features:
+    - loading-json
+  headline: "How to use the BulkProcessor to bulk up all your Elasticsearch updates."
+  links: 
+    GitHub: "https://github.com/compose-ex/elasticsearchupload"
+    Compose Articles: "https://compose.com/articles/elasticsearch-bulk-uploading-and-the-high-level-java-rest-client-part-2/"
+  strategies: 
+    - get-connected-databases
+    - working-with-json
+  tags: 
+    - Compose
+    - Elasticsearch
+    - Java
+
+- title: "Etcd and Compose for MySQL - NodeJS Grand Tour"
+  _id: etcd-mysql-nodejs-compose-grandtour
+  date: "2018-04-12"
+  lead: dj-walker-morgan
+  features: 
+    - compose-grand-tour
+  headline: "The last leg of the NodeJS journey stopping at etcd and MySQL."
+  links: 
+    Compose Articles: "https://compose.com/articles/etcd-and-compose-for-mysql-the-last-leg-of-the-nodejs-grand-tour/"
+    GitHub: "https://github.com/compose-grandtour/node"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - Nodejs
+    - MySQL
+    - etcd
+
+- title: "Not the Chart You’re Looking for? Filter and Try Again."
+  _id: pixiedust-filter-charts-va-01
+  date: "2018-04-17"
+  lead: va-barbosa
+  features: 
+    - pixiedust-for-jupyter
+  headline: "Filtering data with PixieDust."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/not-the-chart-youre-looking-for-filter-and-try-again-cf48be9d1010"
+  strategies: 
+    - notebooks-for-developers
+  tags: 
+    - PixieDust
+    - Jupyter
+
+- title: "Cloudant Fundamentals: The Document"
+  _id: cloudant-fundamentals-doc-01
+  date: "2018-04-27"
+  lead: glynn-bird
+  headline: "General tips on data modeling (part 1 of 10)."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/cloudant-fundamentals-the-document-855c5ab92051"
+  strategies: 
+    - working-with-json
+    - get-connected-databases
+  tags: 
+    - Cloudant
+    - CouchDB
