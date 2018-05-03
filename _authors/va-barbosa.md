@@ -2,17 +2,17 @@
 title:      va barbosa
 permalink:  va-barbosa
 layout:     layout-authors
-headline:   I work on everything.
+headline:   code rules everything around me
 location:		United States - East
 specialties:
  - UI/UX
+ - Web Accessibility
  - Serverless
  - Offline First
  - PWA
  - NoSQL
  - SQL
  - Jupyter Notebooks
- - Microservices
  - Jekyll
 languages:
  - JavaScript
@@ -35,4 +35,9 @@ links:
  - va@us.ibm.com
 ---
 
-code rules everything around me
+
+_developer advocate. amateur photographer. promoter of unconventional orthography._
+
+crafting beautiful web applications and delivering exceptional user experiences is what drives me. it is fueled by a passion to help others and guided by an enthusiasm for open source technology.
+
+experienced electronic technician, soldier, support engineer, software engineer, and developer advocate, i bring a highly versatile and broad skill set along with an appetite for learning.
