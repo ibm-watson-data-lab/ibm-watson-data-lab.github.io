@@ -3282,3 +3282,62 @@
   tags: 
     - Cloudant
     - CouchDB
+
+- title: "Unstructured data vs Personal Information"
+  _id: unsrtuctured-vs-personal-info
+  date: "2018-05-02"
+  lead: dj-walker-morgan
+  headline: "With GDPR, we're being reminded how much personal information is scattered through our organizations and databases."
+  links: 
+    Compose Articles: "https://www.compose.com/articles/unstructured-data-vs-personal-information-2/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+
+- title: "How Compose does... MongoDB"
+  _id: how-compose-does-mongodb
+  date: "2018-05-09"
+  lead: dj-walker-morgan
+  headline: "In this series, we'll look at each of the Compose databases and how & why we configure them."
+  links: 
+    Compose Articles: "https://www.compose.com/articles/how-compose-does-mongodb/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - MongoDB
+
+- title: "Road Trip Through Database Country"
+  _id: roadtrip-thru-db-country
+  date: "2018-05-03"
+  lead: lorna-mitchell
+  headline: "You have options in the modern database landscape. Let’s go touring.."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/road-trip-through-database-country-50a696940611"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - MySQL
+    - CouchDB
+    - RethinkDB
+    - MongoDB
+    - Elasticsearch
+    - JanusGraph
+    - Neo4j
+    - PostgreSQL
+    - Redis
+
+- title: "Cloudant Fundamentals: The _id"
+  _id: cloudant-fundatmentals-02
+  date: "2018-05-14"
+  lead: glynn-bird
+  headline: "Unlocking the mysteries of the unique _id field (part 2 of 10)."
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/cloudant-fundamentals-the-id-f6c7c88fbc75"
+  strategies: 
+    - get-connected-databases
+    - working-with-json
+  tags: 
+    - Cloudant
+    - CouchDB
