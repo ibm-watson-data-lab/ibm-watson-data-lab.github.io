@@ -7,7 +7,7 @@ permalink: about
 
 ### About
 
-We are a team of developer advocates who work to make data simple and accessible on the IBM Watson Data Platform.
+We are a team of developer advocates who work to make data simple and accessible on the IBM Cloud.
 
 ### Team
 
