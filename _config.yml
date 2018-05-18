@@ -4,8 +4,8 @@
 # which you are expected to set up once and rarely need to edit after that.
 
 locale                   : "en"
-title                    : "IBM Watson Data Lab"
-description              : "Things you can make with data, on the IBM Watson Data Platform"
+title                    : "The Data Lab"
+description              : "Things you can make with data, by your friends @ IBM CODAIT"
 url                      : "https://ibm-watson-data-lab.github.io"
 baseurl                  : ""
 repository               : "ibm-watson-data-lab/ibm-watson-data-lab.github.io"
