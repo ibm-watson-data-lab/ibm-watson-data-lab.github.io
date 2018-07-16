@@ -3341,3 +3341,30 @@
   tags: 
     - Cloudant
     - CouchDB
+
+- title: "Cloudant Fundamentals : The _rev token"
+  _id: cloudant-fundatmentals-03
+  date: "2018-05-22"
+  lead: glynn-bird
+  headline: "The basics of CouchDB-style revision system that make the database unique (part 3 of 10)"
+  links: 
+    Medium: "https://medium.com/ibm-watson-data-lab/cloudant-fundamentals-the-rev-token-fb0fc19a3145"
+  strategies: 
+    - get-connected-databases
+    - working-with-json
+  tags: 
+    - Cloudant
+    - CouchDB
+
+- title: "MongoDB and the Trouble with DBRefs"
+  _id: mongodb-dbref-trouble
+  date: "2018-05-31"
+  lead: dj-walker-morgan
+  headline: "DBrefs don't work anywhere as well as the name suggests. Join us as we look at the feature that no one should use and why."
+  links: 
+    Compose Articles: "https://compose.com/articles/mongodb-and-the-trouble-with-dbrefs/"
+  strategies: 
+    - get-connected-databases
+  tags: 
+    - Compose
+    - MongoDB
