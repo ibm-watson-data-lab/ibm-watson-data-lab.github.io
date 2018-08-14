@@ -36,7 +36,7 @@ links:
 ---
 
 
-_developer advocate. amateur photographer. promoter of unconventional orthography._
+_crioulo de cova rodela_
 
 crafting beautiful web applications and delivering exceptional user experiences is what drives me. it is fueled by a passion to help others and guided by an enthusiasm for open source technology.
 
