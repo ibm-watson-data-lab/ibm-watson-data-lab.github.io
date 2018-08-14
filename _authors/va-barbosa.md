@@ -36,8 +36,6 @@ links:
 ---
 
 
-_crioulo de cova rodela_
-
 crafting beautiful web applications and delivering exceptional user experiences is what drives me. it is fueled by a passion to help others and guided by an enthusiasm for open source technology.
 
 experienced electronic technician, soldier, support engineer, software engineer, and developer advocate, i bring a highly versatile and broad skill set along with an appetite for learning.
