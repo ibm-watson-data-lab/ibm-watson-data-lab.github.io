@@ -2,7 +2,7 @@
 title:      va barbosa
 permalink:  va-barbosa
 layout:     layout-authors
-headline:   code rules everything around me
+headline:   crioulo de cova rodela
 location:		United States - East
 specialties:
  - UI/UX
