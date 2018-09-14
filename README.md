@@ -1,3 +1,9 @@
+# ⛔️ DEPRECATED
+
+_This site is no longer maintained. Please consider following our [Medium site](https://medium.com/ibm-watson-data-lab) to stay up to date._
+
+---
+
 # IBM Watson Data Lab 
 
 A GitHub pages site that showcases our projects, our team, and our code of conduct.
